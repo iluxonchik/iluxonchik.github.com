@@ -1,6 +1,6 @@
 name: ProgBlog
-description: Programming/Software Development & related.
-meta_description: "Programming, Software Development and Related."
+description: Programming/Software Development & related
+meta_description: "Programming, Software Development and Related"
 
 markdown: redcarpet
 highlighter: pygments
