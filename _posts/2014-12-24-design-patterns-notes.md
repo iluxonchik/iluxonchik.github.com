@@ -2,7 +2,7 @@
 layout: post
 title:  "Design Patterns Notes"
 date:   2014-12-24 22:12:00
-categories: Design Patterns, Java, Notes
+categories: design patterns
 ---
 
 # Design Patterns#
@@ -293,4 +293,3 @@ method**, combined with a **static variable** (to make sure that there is
         [CommandUML]:http://www.dofactory.com/images/diagrams/net/command.gif "Command UML"
 
         [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
-        
