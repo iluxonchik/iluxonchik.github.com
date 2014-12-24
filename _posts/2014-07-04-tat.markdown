@@ -1,9 +1,0 @@
----
-layout: post
-title:  "Making The C# YouTube API v3 Examples Work"
-date:   2013-07-04 10:18:00
-categories: c#, .NET, API, YouTube
----
-Greetings, if you have tried executing some code examples from [https://developers.google.com/youtube/v3/code_samples/dotnet](https://developers.google.com/youtube/v3/code_samples/dotnet "Google Developers YouTube API v3 .NET Code Examples") you might've run into some execution problems.
-
-
