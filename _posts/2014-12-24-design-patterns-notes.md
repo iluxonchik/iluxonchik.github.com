@@ -49,7 +49,7 @@ method**, combined with a **static variable** (to make sure that there is
   }
   ```
 
-  ## Command ##
+## Command ##
   ![Command UML][CommandUML]
 
   The **Command** Pattern encapsulates a request as an object, thereby letting you
