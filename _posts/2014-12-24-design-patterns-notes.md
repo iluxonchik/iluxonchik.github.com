@@ -4,10 +4,11 @@ title:  "Design Patterns Notes"
 date:   2014-12-24 22:12:00
 categories: design patterns
 ---
+[SingletonUML]: http://zenit.senecac.on.ca/wiki/imgs/Singleton_UML.png "Singleton UML"
+[CommandUML]:http://www.dofactory.com/images/diagrams/net/command.gif "Command UML"
+[Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
 
-# Design Patterns#
-
-** Post Status**: Updating
+**Post Status**: Updating
 
 This isn't really a post per say, it's more of a collection of notes on some
 most common design patterns. Maybe some of you will find them useful. All of
@@ -15,7 +16,8 @@ the code examples are in Java. This hasn't really been proof-read, so there migh
 be errors.
 
 ## Singleton ##
-![Singleton UML Diagram][SingletonUML]
+
+![Singleton UML Di][SingletonUML]
 
 The **Singleton** Pattern ensures that there is only one instance of the class
 and provides a global point to access that instance.
@@ -237,6 +239,7 @@ method**, combined with a **static variable** (to make sure that there is
       }
       ```
       Which produces the following output:
+
       ```
       ON!
       Sound is at 1
@@ -272,6 +275,7 @@ method**, combined with a **static variable** (to make sure that there is
 
       Besides that, the **undo()** method would also have to be added to the **Command**
       interface:
+
       ```java
       public interface Command {
         public void execute();
@@ -285,11 +289,5 @@ method**, combined with a **static variable** (to make sure that there is
         times, just like pressing Ctrl + Z on your keyboard multiple times will do more
         than one undo).
 
-        In a similiar manner you could also extend the pattern to other functionality,
-        such as queing or logging.
-
-
-        [SingletonUML]: http://zenit.senecac.on.ca/wiki/imgs/Singleton_UML.png "Singleton UML"
-        [CommandUML]:http://www.dofactory.com/images/diagrams/net/command.gif "Command UML"
-
-        [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
+      In a similiar manner you could also extend the pattern to other functionality,
+      such as queing or logging.
