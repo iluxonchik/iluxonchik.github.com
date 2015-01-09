@@ -6,6 +6,7 @@ categories: design patterns
 ---
 [SingletonUML]: http://zenit.senecac.on.ca/wiki/imgs/Singleton_UML.png "Singleton UML"
 [CommandUML]:http://www.dofactory.com/images/diagrams/net/command.gif "Command UML"
+[IteratorUML]: http://upload.wikimedia.org/wikipedia/commons/1/13/Iterator_UML_class_diagram.svg "Iterator UML"
 [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
 
 **Post Status**: Updating
@@ -252,7 +253,7 @@ requests, and support undoable operations.
   doing it, all it knows is that it has an **execute()** method. Also note that
   the **execute()** is doing very little himself, the main work is done my the
   receiver through some method.
-  
+
 ### Implementing the "Undo" Operation ###
 
 In its simplest form, the **undo** operation is pretty straight forward.
@@ -296,3 +297,225 @@ than one undo).
 
 In a similar manner you could also extend the pattern to other functionality,
 such as queing or logging.
+
+## Iterator ##
+![Iterator UML][IteratorUML]
+
+The **Iterator** Pattern provides a way to access the elements of an aggregate
+object (an object that contains an aggregate of something) sequentially without
+exposing its underlying representation.
+
+So let's say you have an object that contains a collection of items and you
+want to iterate through every item. But there is a problem here: let's say you
+know what items you're accessing, but you don't know how they are stored,
+they might be in an **ArrayList**, **HashMap**, **LinkedList**, etc. Now how can
+you abstract the internal implementation (i.e. **how** the items are stored) away
+and have an interface that allows you to access those elements in a consistent
+manner, whichever the internal implementation is. The answer is (you've guessed it!)
+the **Iterator** Pattern.
+
+So as mentioned before the **Iterator** Pattern allows you to step through the
+elements of an aggregate without knowing how the things are represented under
+the hood. It also allows to write **polymorphic code** that works with any of
+the aggregates (it doesn't matter if it's an ArrayList, a HashTable or even a
+LinkedList, it's an aggregate, that's all we care about).
+
+The Iterator Pattern takes the responsibility of traversing the elements and
+gives that responsibility to the **iterator object**, not the **aggregate object**.
+This makes all the sense, since the aggregate object doesn't have to know how
+to iterate through items, all it has to know is how to store and manage them. It
+has to know which objects have been traversed already and which ones haven't.
+
+In its simplest form, the **Iterator** Pattern consists of an Iterator interface,
+which contains two methods:
+* **next()**, which returns the next object in the aggregation that hasn't been
+iterated through yet.
+* **hasNext()** which returns a boolean indicating whether there are more items
+to be iterated through.
+
+### Example ###
+Let's say you asked two of your friends to provide a list of their favorite songs.
+Your idea is simple: iterate through both of the lists (lists of songs, no one is
+talking about Java **Lists** here) and display the info of each one of the songs
+(title and author). You then realized that you didn't specify the format in which
+you want the songs to be sent (ArrayList, HashTable, LinkedList, etc) and you need
+to be able to iterate over the lists in a consistent way, without depending on
+the type of the aggregation.
+
+You'll have to create a concrete iterator for every type of the aggregation,
+so let's say one of your friends send the songs in an **HashTable** and the other
+in a **LinkedList**.
+
+Below is a possible solution using the **Iterartor** Pattern.
+
+```java
+public class Song {
+  private String name;
+  private String artist;
+
+  public Song(String name, String artist) {
+    this.name = name;
+    this.artist = artist;
+  }
+
+  public String getName() { return name; }
+  public String getArtist() { return artist; }
+}
+```
+
+```java
+import java.util.LinkedList;
+
+public class EastCoastMusic {
+
+  LinkedList<Song> eastCoastSongs;
+
+  public EastCoastMusic() {
+    eastCoastSongs = new LinkedList<Song>();
+
+    Song s1 = new Song("Nas Is Coming", "NAS");
+    Song s2 = new Song("What Up Gangsta", "50 Cent");
+    Song s3 = new Song("Warrior","Lloyd Banks");
+
+    eastCoastSongs.add(s1);
+    eastCoastSongs.add(s2);
+    eastCoastSongs.add(s3);
+  }
+
+  public Iterator iterator() {
+    return new LinkedListIterator(eastCoastSongs);
+  }
+}
+```
+
+```java
+import java.util.Hashtable;
+
+public class WestCoastMusic {
+
+  Hashtable<Integer, Song> westCoastSongs;
+  int indexKey;
+
+  public WestCoastMusic() {
+    westCoastSongs = new Hashtable<Integer, Song>();
+    indexKey = 0;
+
+    Song s1 = new Song("Still Dre", "Dr.Dre");
+    Song s2 = new Song("Let's Ride", "The Game");
+    Song s3 = new Song("What's My Name?","Snoop Dogg");
+
+    westCoastSongs.put(indexKey++, s1);
+    westCoastSongs.put(indexKey++, s2);
+    westCoastSongs.put(indexKey++, s3);
+
+  }
+
+  public Iterator iterator() {
+    return new HashTableIterator(westCoastSongs);
+  }
+}
+```
+
+```java
+public interface Iterator {
+  public boolean hasNext();
+  public Object next();
+}
+```
+
+```java
+import java.util.LinkedList;
+
+public class LinkedListIterator implements Iterator {
+
+  LinkedList<Song> songs;
+
+  public LinkedListIterator(LinkedList<Song> songs) {
+
+    this.songs = songs;
+  }
+
+  public boolean hasNext() {
+    return songs.peek() != null;
+  }
+  public Object next() {
+    return songs.pop();
+  }
+}
+
+```
+
+```java
+import java.util.Hashtable;
+
+public class HashTableIterator implements Iterator {
+
+  Hashtable<Integer, Song> songs;
+  int indexKey; // songs are indexed by integers
+
+  public HashTableIterator(Hashtable<Integer, Song> songs) {
+    this.songs = songs;
+    indexKey = 0;
+  }
+
+  public Song next() {
+    return songs.get(indexKey++);
+  }
+
+  public boolean hasNext() {
+    return songs.get(indexKey) != null;
+  }
+
+
+}
+```
+
+```java
+public class Main {
+  public static void main(String args[]) {
+
+    WestCoastMusic westCoastMusic = new WestCoastMusic();
+    EastCoastMusic eastCoastMusic = new EastCoastMusic();
+
+    // First, iterate through the West Coast Music list
+    displaySongs(westCoastMusic.iterator());
+    // Now, iterate through the East Coast Music list
+    displaySongs(eastCoastMusic.iterator());
+  }
+
+  public static void displaySongs(Iterator iterator) {
+    Song song;
+
+    while(iterator.hasNext()) {
+      song = (Song)iterator.next();
+      System.out.println("Name: " + song.getName() +
+      " Artist: " + song.getArtist() + "\n");
+    }
+  }
+}
+```
+
+The application above produces the following output:
+```
+Name: Still Dre Artist: Dr.Dre
+
+Name: Let's Ride Artist: The Game
+
+Name: What's My Name? Artist: Snoop Dogg
+
+Name: Nas Is Coming Artist: NAS
+
+Name: What Up Gangsta Artist: 50 Cent
+
+Name: Warrior Artist: Lloyd Banks
+
+```
+Note how by using the **Iterator** pattern we decoupled our application
+(in this case just the **Main** class) from the underlying implementation
+of each aggregation.
+
+All we had to do to our friends code is implement the
+**Iterator** interface (which we defined) and add the **iterator()** method
+to their classes. If we didn't use the pattern, when iterating through the
+list of songs in the **Main** class, we would have to make a separate method
+for each aggregation we wanted to traverse.
