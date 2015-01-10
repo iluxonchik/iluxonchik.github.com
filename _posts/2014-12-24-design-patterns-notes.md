@@ -497,6 +497,7 @@ public class Main {
 ```
 
 The application above produces the following output:
+
 ```
 Name: Still Dre Artist: Dr.Dre
 
@@ -511,6 +512,7 @@ Name: What Up Gangsta Artist: 50 Cent
 Name: Warrior Artist: Lloyd Banks
 
 ```
+
 Note how by using the **Iterator** pattern we decoupled our application
 (in this case just the **Main** class) from the underlying implementation
 of each aggregation.
