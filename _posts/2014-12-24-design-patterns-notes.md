@@ -7,6 +7,7 @@ categories: design patterns
 [SingletonUML]: http://zenit.senecac.on.ca/wiki/imgs/Singleton_UML.png "Singleton UML"
 [CommandUML]:http://www.dofactory.com/images/diagrams/net/command.gif "Command UML"
 [IteratorUML]: http://upload.wikimedia.org/wikipedia/commons/1/13/Iterator_UML_class_diagram.svg "Iterator UML"
+[CompositeUML]: http://www.codeproject.com/KB/wiki-aspnet/667251/480px-Composite_UML_class_diagram.svg.png "CompositeUML"
 [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
 
 **Post Status**: Updating
@@ -519,3 +520,194 @@ All we had to do to our friends code is implement the
 to their classes. If we didn't use the pattern, when iterating through the
 list of songs in the **Main** class, we would have to make a separate method
 for each aggregation we wanted to traverse.
+
+## Composite ##
+![CompositeUML][CompositeUML]
+The **Composite** pattern allows you treat objects and compositions of objects
+uniformly. It allows you to **compose objects into tree structures** to represent
+**part-hole-hierarquies** (components can be divided into smaller and smaller components).
+
+The idea here is really simple: you have an object A that supports some operations,
+then you have another object B that is an aggregation of objects of type A.
+The **composite** pattern allows you treat both of them using the same interface.
+Let's say object A is **a sheep** and supports the **sheer()** operation. So to
+sheer a **single sheep** you simply call the **sheer** method on a **sheep object**.
+Now, object B is a **group of sheep**. How do you **sheer a group of sheep**?
+Simple, **the same way you would sheer an individual sheep**: by calling the
+**sheer** method on the object B. Note that the object B can contain sheep
+or other objects of the same type(of the type of object B).
+
+So basically, the **composite** pattern allows us to **ignore** the differences
+between compositions of objects and individual objects.
+
+### Example ###
+
+In this example, we will use the sheep example introduced above. So the idea is
+simple: each sheep has a name and the only operation it supports is sheer().
+
+Now, you sheer a sheep by simply calling the **sheer()** method on it,
+but how can you sheer a **group** of sheep? The same way, by calling the
+**sheer()** method on it. As mentioned before, the goal is to **inore**
+the differences between an individual object and a group of objects, so
+we will define an abstract class, which is extended by both: an **individual
+sheep** and a **group of sheep** (here, it'll be called **SheepComoponent**).
+This approach will also allow SheepComponents to contain other
+SheepComponents.
+
+Below is a possible solution to the problem:
+
+```java
+public abstract class SheepComponent {
+
+  public void add(SheepComponent sheepComponent) {
+    throw new UnsupportedOperationException();
+  }
+
+  public void remove(SheepComponent sheepComponent) {
+    throw new UnsupportedOperationException();
+  }
+
+  public SheepComponent getComponent(int index) {
+    throw new UnsupportedOperationException();
+  }
+
+  public String getSheepName() {
+    throw new UnsupportedOperationException();
+  }
+
+  public void sheer() {
+    throw new UnsupportedOperationException();
+  }
+}
+```
+
+```java
+public class Sheep extends SheepComponent {
+  String name;
+
+  public Sheep(String name) {this.name = name; }
+
+  @Override
+  public String getSheepName() { return name; }
+
+  @Override
+  public void sheer() {
+    System.out.println("Sheering " + getSheepName() +
+    "...\n");
+  }
+}
+
+```
+
+```java
+import java.util.ArrayList;
+
+public class SheepGroup extends SheepComponent {
+
+  String groupName;
+  ArrayList<SheepComponent> sheepComponents;
+
+  public SheepGroup(String name) {
+    sheepComponents = new ArrayList<SheepComponent>();
+    groupName = name;
+  }
+
+  public String getGroupName() {return groupName; }
+
+  @Override
+  public void add(SheepComponent sheepComponent) {
+    sheepComponents.add(sheepComponent);
+  }
+
+  @Override
+  public void remove(SheepComponent sheepComponent) {
+    sheepComponents.remove(sheepComponent);
+  }
+
+  @Override
+  public SheepComponent getComponent(int index) {
+    return sheepComponents.get(index);
+  }
+
+  @Override
+  public void sheer() {
+    Sheep sheep;
+    int numOfSheep = sheepComponents.size();
+    System.out.println("Group Name: " + groupName +
+    "\n" + "---" + "\n");
+
+    // NOTE: The Iterator pattern is more suitable here
+    for (int i = 0; i < numOfSheep; i++) {
+      sheepComponents.get(i).sheer();
+    }
+
+  }
+}
+```
+
+```java
+public class Main {
+
+  public static void main(String agrs[]) {
+    SheepGroup sg1 = new SheepGroup("Sheep Group 1");
+
+    Sheep s1 = new Sheep("Sheep 1");
+    Sheep s2 = new Sheep("Sheep 2");
+    Sheep s3 = new Sheep("Sheep 3");
+    Sheep s4 = new Sheep("Sheep 4");
+    Sheep s5 = new Sheep("Sheep 5");
+
+    sg1.add(s2);
+    sg1.add(s3);
+    sg1.add(s4);
+    sg1.add(s5);
+
+    s1.sheer();
+    sg1.sheer();
+
+    SheepGroup sg2 = new SheepGroup("SheepGroup 2");
+    sg2.add(s1);
+    // Now, compose a group of sheep with another group of sheep
+    sg2.add(sg1);
+    Sheep s6 = new Sheep("Sheep 6");
+    sg2.add(s6);
+    sg2.sheer();
+  }
+}
+```
+
+The output of the application above is:
+
+ ```
+ Sheering Sheep 1...
+
+ Group Name: Sheep Group 1
+ ---
+
+ Sheering Sheep 2...
+
+ Sheering Sheep 3...
+
+ Sheering Sheep 4...
+
+ Sheering Sheep 5...
+
+ Group Name: SheepGroup 2
+ ---
+
+ Sheering Sheep 1...
+
+ Group Name: Sheep Group 1
+ ---
+
+ Sheering Sheep 2...
+
+ Sheering Sheep 3...
+
+ Sheering Sheep 4...
+
+ Sheering Sheep 5...
+
+ Sheering Sheep 6...
+
+ ```
