@@ -8,6 +8,7 @@ categories: design patterns
 [CommandUML]:http://www.dofactory.com/images/diagrams/net/command.gif "Command UML"
 [IteratorUML]: http://upload.wikimedia.org/wikipedia/commons/1/13/Iterator_UML_class_diagram.svg "Iterator UML"
 [CompositeUML]: http://www.codeproject.com/KB/wiki-aspnet/667251/480px-Composite_UML_class_diagram.svg.png "CompositeUML"
+[VisitorUML]:http://www.lepus.org.uk/spec/gof/uml/Visitor.png "VisitorUML"
 [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
 
 **Post Status**: Updating
@@ -713,3 +714,260 @@ The output of the application above is:
  Sheering Sheep 6...
 
  ```
+
+## Visitor ##
+![VisitorUML][VisitorUML]
+
+The **Visitor** pattern allows you to add new methods to the classes without
+changing them too much. You can add operations to a **Composite** structure
+without changing the structure itself.
+
+Visitor is very useful when you have some unrelated operations that need to
+be performed on an object in an object structure and you don't want to
+"pollute" their classes by adding new methods to them to perform those operations.
+This pattern allows you to keep related operations together defined in a
+**separate class**. This is very useful when your object structure is shared
+by many applications, but only some of those applications actually use those
+extra operations, since visitor allows you to put those operations only in the
+applications that need them.
+
+So let's say you have the class code written and now you're wondering what
+changes you'll have to make to the class for it to support the **visitor** pattern.
+Okay, make sure you have a piece of paper and pen to write them down. Not really,
+actually all you have to do is **add an accept() method to your class** (it's a
+convention to call the method accept(), you can name it whatever you want).
+Yes, that's it! All you have to do for your classes to support the **visitor**
+pattern is **add a single method**. That's what we're basically going to do,
+except we're going to put this method in an **Interface**, we'll call it
+**"Visistable"** (this name makes sense, since the class **will be visted** by
+a visitor).
+
+Okay, now how do we create those "visitors"? Simple, first we create another
+interface called **Visitor** (again, this name is just a convention).
+And what will that interface contain? It will contain **the new operations we
+want to add**. Now, since we're putting them in an interface, those operations
+have to be related (i.e. be somehow related, belong to the same "group").
+
+Now you might be wondering what will you do if you had more than just one
+group of operations? Well, in that case you would have to add another **accept()**
+method to your **Visitable** interface (use method overloading).
+
+### Example ###
+
+Let's say you have a store and your store sells three products: drinks, food and
+gadgets. Each of those three objects has a price. Here is how your code looks now:
+
+```java
+public class Drink {
+  double price;
+
+  public Drink(double price) { this.price = price; }
+  public double getPrice() { return price; }
+}
+```
+
+```java
+public class Gadget {
+  double price;
+
+  public Gadget(double price) { this.price = price; }
+  public double getPrice() { return price; }
+}
+```
+
+```java
+public class Food {
+  double price;
+
+  public Food(double price) { this.price = price; }
+  public double getPrice() { return price; }
+}
+```
+
+(Okay, a better choice would be to add an abstract class from which those methods
+derive, but I want to enforce the idea that **the classes don't have to be related
+in any way**).
+
+Now you are asked to be able to calculate taxes for each product(the tax is 21%).
+That's where the visitor comes in. First you'll create a **Visitor** interface
+and add three **visit()** methods there. Then you'll create a new class: **a
+concrete visitor**, which implements the **Visitor** interface. Then, we'll create
+a **Visitable** interface and add the **accept()** method to it, which takes
+an object of type **Visitor** as an argument. The **Food**, **Drink** and **Gadgets**
+classes will implement the **Visitable** interface. Now your code will look
+something like this:
+
+```java
+public interface Visitable {
+  public double accept(Visitor visitor);
+}
+```
+
+```java
+public interface Visitor {
+  public double visit(Drink drink);
+  public double visit(Food food);
+  public double visit(Gadget gadget);
+}
+```
+
+```java
+public class NormalTaxVisitor implements Visitor {
+  final double TAX_VALUE  = 0.21;
+
+  public double visit(Drink drink) {
+    return drink.getPrice() * TAX_VALUE + drink.getPrice();
+  }
+
+  public double visit(Food food){
+    return food.getPrice() * TAX_VALUE + food.getPrice();
+  }
+  public double visit(Gadget gadget) {
+    return gadget.getPrice() * TAX_VALUE + gadget.getPrice();
+  }
+}
+```
+
+```java
+public class Drink implements Visitable {
+
+  double price;
+
+  public Drink(double price) { this.price = price; }
+  public double getPrice() { return price; }
+
+  public double accept(Visitor visitor) { return visitor.visit(this); }
+}
+```
+
+```java
+public class Food implements Visitable {
+
+  double price;
+
+  public Food(double price) { this.price = price; }
+  public double getPrice() { return price; }
+
+  public double accept(Visitor visitor) { return visitor.visit(this); }
+
+}
+```
+
+```java
+public class Gadget implements Visitable {
+
+  double price;
+
+  public Gadget(double price) { this.price = price; }
+  public double getPrice() { return price; }
+
+  public double accept(Visitor visitor) { return visitor.visit(this); }
+
+}
+```
+Now you are asked to add yet another type of tax: a holiday tax. It's basically
+the same as the previous one, except the tax value is now 18% and you always
+subtract two cents (0.02) from the value after tax (here we'll ignore that you
+can get negative or zero values). Well, that's simple, just create a new class
+**HolidayTaxVisitor**, implement the **Visitor** interface and add override the
+methods with the requested functionality. Your new class will look something like
+this:
+
+```java
+public class HolidayTaxVisitor implements Visitor {
+  final double TAX_VALUE  = 0.18;
+  final double DISCOUNT  = 0.02;
+
+  public double visit(Drink drink) {
+    return drink.getPrice() * TAX_VALUE + drink.getPrice() - DISCOUNT;
+  }
+
+  public double visit(Food food){
+    return food.getPrice() * TAX_VALUE + food.getPrice() - DISCOUNT;
+  }
+  public double visit(Gadget gadget) {
+    return gadget.getPrice() * TAX_VALUE + gadget.getPrice() - DISCOUNT;
+  }
+}
+```
+
+And now an example application:
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    Drink d = new Drink(1.50);
+    Food f = new Food(2.75);
+    Gadget g = new Gadget(7.25);
+
+    NormalTaxVisitor ntv = new NormalTaxVisitor();
+    HolidayTaxVisitor htv = new HolidayTaxVisitor();
+
+    System.out.println("Drink price after normal tax: " +
+    d.accept(ntv) + "\n");
+
+    System.out.println("Drink price after holiday tax: " +
+    d.accept(htv) + "\n");
+
+    System.out.println("Food price after normal tax: " +
+    f.accept(ntv) + "\n");
+
+    System.out.println("Food price after holiday tax: " +
+    f.accept(htv) + "\n");
+
+    System.out.println("Gadget price after normal tax: " +
+    g.accept(ntv) + "\n");
+
+    System.out.println("Gadget price after holiday tax: " +
+    g.accept(htv) + "\n");
+  }
+}
+```
+
+The output of the Main class above is the following:
+
+```
+Drink price after normal tax: 1.815
+
+Drink price after holiday tax: 1.75
+
+Food price after normal tax: 3.3275
+
+Food price after holiday tax: 3.225
+
+Gadget price after normal tax: 8.7725
+
+Gadget price after holiday tax: 8.535
+
+```
+
+Now what if you wanted a different group of operations, not related in any
+way to tax calculation? Let's say you wanted to be able to print out the name of
+the class of which an object is instance of. Well, in that case you'd have to
+create a new visitor interface, for example **NameVisitor**, create a concrete
+instance, which implements that interface, for example **NormalNameVisitor**
+and add a new **accept()** method to the **Visitable** interface.
+
+```java
+public interface NameVisitor {
+  public String visit(Drink drink);
+  public String visit(Food food);
+  public String visit(Gadget gadget);
+}
+```
+
+```java
+public class NormalNameVisitor implements NameVisitor {
+  public String visit(Drink drink) { return "Drink"; }
+  public String visit(Food food) { return "Food"; }
+  public String visit(Gadget gadget) { return "Gadget"; }
+}
+
+```
+
+```java
+public interface Visitable {
+  public double accept(Visitor visitor);
+  public String accept(NameVisitor visitor);
+}
+```
