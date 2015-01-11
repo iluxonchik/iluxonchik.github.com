@@ -9,6 +9,7 @@ categories: design patterns
 [IteratorUML]: http://upload.wikimedia.org/wikipedia/commons/1/13/Iterator_UML_class_diagram.svg "Iterator UML"
 [CompositeUML]: http://www.codeproject.com/KB/wiki-aspnet/667251/480px-Composite_UML_class_diagram.svg.png "CompositeUML"
 [VisitorUML]:http://www.lepus.org.uk/spec/gof/uml/Visitor.png "VisitorUML"
+[FactoryMethodUML]: http://www.apwebco.com/images/FactoryMethod.jpg "FactoryMethodUML"
 [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
 
 **Post Status**: Updating
@@ -716,6 +717,7 @@ The output of the application above is:
  ```
 
 ## Visitor ##
+
 ![VisitorUML][VisitorUML]
 
 The **Visitor** pattern allows you to add new methods to the classes without
@@ -970,4 +972,95 @@ public interface Visitable {
   public double accept(Visitor visitor);
   public String accept(NameVisitor visitor);
 }
+```
+
+## Factory Method ##
+
+![FactoryMethodUML][FactoryMethodUML]
+
+The idea behind the **Factory Method** pattern is to be able to decide which
+class you want to instantiate **dynamically** (i.e. at **runtime**). Basically
+you will have a method that will return one of several possible classes that
+**share a common superclass**. The **factory method** has this name, because
+it's responsible for "manufacturing" an object. This pattern allows you
+to encapsulate object creation in a method: the **factory method**.
+
+The typical implementation uses a single class with a single method (the
+**factory method**) and this method returns an object based on the input passed
+as an argument. Which object is it? Well, that depends on the passed parameter.
+
+### Example ###
+
+Let's say that you have a **Fruit** superclass that has two subclasses:
+**Apple** and **Orange**. You want your application to be able to instantiate
+each one of the subclasses dynamically, because you don't know which fruit you'll
+need (it might depend on the user input, for example).
+
+All you'll have to do is create a **FruitFactory** class and add a **makeFruit()**
+method to it, which accepts, for example a string and returns a **Fruit** (note
+it returns the generic **Fruit** object, not a concrete **Apple** or **Orange**).
+
+To simplify things, let's say that to create an apple you pass the "Apple" string
+as an argument and to create an orange you use the "Orange" string.
+
+Below is a possible solution:
+
+```java
+public abstract class Fruit {
+  final String type;
+
+  public Fruit(String type) { this.type = type; }
+
+  public String getType() { return type; }
+}
+```
+
+```java
+public class Apple extends Fruit {
+  public Apple() { super("Apple"); }
+}
+```
+
+```java
+public class Orange extends Fruit {
+  public Orange() { super("Orange"); }
+}
+```
+
+```java
+public class FruitFactory {
+  public Fruit makeFruit(String type) {
+    Fruit fruit = null;
+
+    if (type == "Apple")
+    fruit = new Apple();
+
+    else if(type == "Orange")
+    fruit = new Orange();
+
+    return fruit;
+  }
+}
+```
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    Fruit fruit;
+    FruitFactory fruitFactory = new FruitFactory();
+
+    fruit = fruitFactory.makeFruit("Apple");
+    System.out.println("The fruit is an " + fruit.getType() + ".");
+
+    fruit = fruitFactory.makeFruit("Orange");
+    System.out.println("The fruit is an " + fruit.getType() + ".");
+  }
+}
+```
+
+The Main class above produces the following output:
+
+```
+The fruit is an Apple.
+The fruit is an Orange.
 ```
