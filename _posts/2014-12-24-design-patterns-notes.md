@@ -10,6 +10,7 @@ categories: design patterns
 [CompositeUML]: http://www.codeproject.com/KB/wiki-aspnet/667251/480px-Composite_UML_class_diagram.svg.png "CompositeUML"
 [VisitorUML]:http://www.lepus.org.uk/spec/gof/uml/Visitor.png "VisitorUML"
 [FactoryMethodUML]: http://www.apwebco.com/images/FactoryMethod.jpg "FactoryMethodUML"
+[StrategyUML]: https://www.clear.rice.edu/comp212/99-fall/handouts/week4/design2.gif "StrategyUML"
 [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
 
 **Post Status**: Updating
@@ -1063,4 +1064,186 @@ The Main class above produces the following output:
 ```
 The fruit is an Apple.
 The fruit is an Orange.
+```
+## Strategy ##
+
+![StrategyUML][StrategyUML]
+
+The **Strategy** pattern lets you define a family of algorithms, encapsulates
+each one, and makes them interchangable. It lets the algorithms vary independently
+from clients that use it.
+
+This pattern is very useful in cases when you have many **hierarchically related**
+classes that differ only in their behaviour. Strategy allows you to confugure
+every induvidual class in the hierarchy with **one of the many behaviours**.
+Another use case for it is when you have many variants of an algorithm.
+
+### Example ###
+
+Let's say you have the class structure below:
+
+```java
+public abstract class Animal {
+  String name;
+  String sound;
+
+  public Animal(String name, String sound) {
+    this.name = name;
+    this.sound = sound;
+  }
+
+  public void makeSound() {System.out.println(name + " says: " + sound + ".\n");}
+}
+```
+
+```java
+public class Dog extends Animal {
+  public Dog(String name) { super(name, "Ruff Ruff"); }
+}
+```
+
+```java
+public class Cat extends Animal {
+  public Cat(String name) { super(name, "Meow"); }
+}
+```
+
+Now you are asked to create a **Bird** class, which is also a subclass of the
+Animal class. The thing about the Bird class, is that it needs to be able to fly.
+You must also keep a common interface for all of the three subclasses, that means
+you can't just add a **fly()** method to the Bird class, from now on every animal
+must print "Can't fly!" or "Flying!" when the **fly()** method is invoked on
+an **Animal** object.
+
+So how can we solve this? Well, we surely can just add a "fly()" method to
+the abstract class (or implement an interface) and override its behaviour in every
+subclass. But this creates several problems:
+
+* code duplication.
+* the change in super class will **break** the code in subclasses.
+* implementing an inteface wich only has one method in it is usually a bad approach.
+
+So what can we do to avoid those problems? Well, since all of our classes only
+differ in one behaviour (some fly and some don't) it's the right time to use
+the **Strategy** pattern!
+
+What we'll do instead is instead of **inheriting** the ability to fly, we will
+compose the class with objects which have the correct ability built-in (in out
+case we will only add one object).
+
+This approach will give us many benefits, for example:
+
+* it's possible to create many types of "flying" without affecting the **Animal**
+class or any of its subclasses (since the "types of flying" are separate classes).
+* we are **decoupling**, that means we are **encapsulating the behavior that
+varies**(in our case the behaviour is the ability to fly).
+* it's possible to change the ability at **runtime**. That means we can, for example,
+create an object that couldn't fly before and make it flyable!
+
+What we'll do is create an interface called **Fly**, it will only have one method:
+**fly()** (which is the behaviour we want to encapsulate) and then for every
+"type of flying" we will create a subclass, each one implementing the **Fly**
+interface (in our case it will be two classes: **CanFly** and **CantFly**).
+We'll also have to add a new varibale to the **Animal** class of type **Fly**.
+
+Anyways, here is a possible soluition using the **Strategy** pattern, with
+an example of a client application that uses it:
+
+```java
+public interface Fly {
+  public String fly();
+}
+```
+
+```java
+public class CanFly implements Fly {
+  public String fly() { return "Flying!";}
+}
+```
+
+```java
+public class CantFly implements Fly {
+  public String fly() { return "Can't fly!"; }
+}
+```
+
+```java
+public abstract class Animal implements Fly {
+  String name;
+  String sound;
+
+  Fly flyBehaviour; // new variable!
+
+  public Animal(String name, String sound) {
+    this.name = name;
+    this.sound = sound;
+  }
+
+  public void makeSound() {System.out.println(name + " says: " + sound + ".\n");}
+
+  /* New methods below */
+  public String fly() { return name + ": " + flyBehaviour.fly() + "\n"; }
+
+  // allow to change the flying ability dynamically
+  public void setFlyingBehaviour(Fly flyBehaviour) {
+    this.flyBehaviour = flyBehaviour;
+  }
+}
+```
+
+```java
+public class Dog extends Animal {
+  public Dog(String name) {
+    super(name, "Ruff Ruff");
+    flyBehaviour = new CantFly();
+  }
+}
+```
+
+```java
+public class Cat extends Animal {
+  public Cat(String name) {
+    super(name, "Meow");
+    flyBehaviour =  new CantFly();
+  }
+}
+```
+
+```java
+public class Bird extends Animal {
+  public Bird(String name) {
+    super(name, "Tweet");
+    flyBehaviour =  new CanFly();
+  }
+}
+```
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    Animal cat = new Cat("Mittens");
+    Animal dog = new Dog("Rufus");
+    Animal bird = new Bird("Tweetie");
+
+    System.out.println(cat.fly());
+    System.out.println(dog.fly());
+    System.out.println(bird.fly());
+
+    // Rufus can fly now!
+    dog.setFlyingBehaviour(new CanFly());
+    System.out.println(dog.fly());
+  }
+}
+```
+
+The main class produces the following output:
+
+```
+Mittens: Can't fly!
+
+Rufus: Can't fly!
+
+Tweetie: Flying!
+
+Rufus: Flying!
 ```
