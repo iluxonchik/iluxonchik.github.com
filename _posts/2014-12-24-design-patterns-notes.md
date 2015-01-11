@@ -11,7 +11,11 @@ categories: design patterns
 [VisitorUML]:http://www.lepus.org.uk/spec/gof/uml/Visitor.png "VisitorUML"
 [FactoryMethodUML]: http://www.apwebco.com/images/FactoryMethod.jpg "FactoryMethodUML"
 [StrategyUML]: https://www.clear.rice.edu/comp212/99-fall/handouts/week4/design2.gif "StrategyUML"
+[StateUML]: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/State_Design_Pattern_UML_Class_Diagram.svg/400px-State_Design_Pattern_UML_Class_Diagram.svg.png "StateUML"
 [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
+
+
+[FiniteStateMachineWiki]: http://en.wikipedia.org/wiki/Finite-state_machine "FiniteStateMachineWikipedia"
 
 **Post Status**: Updating
 
@@ -1246,4 +1250,135 @@ Rufus: Can't fly!
 Tweetie: Flying!
 
 Rufus: Flying!
+```
+
+## State ##
+
+![StateUML][StateUML]
+
+The **State** pattern allows to modify its behavior when its internal state
+changes. The object will also appear to change its class. It actually mimics
+the [finite state machine][FiniteStateMachineWiki]: you have different states
+and certain actions make you transition from one state to another.
+
+This pattern encapsulates every state into a separate class (all those states
+derive from a common class). If you have an object and you completely change
+its behavior, it appears that the object changed it class (in reality you will
+just be using composition to give the appearance of class change by referencing
+different state objects).
+
+The **State** pattern is a great way to get rid of if statements, but
+it usually requires a large amount of extra classes to be created.
+
+Each state has a reference to the object whose state it represents and is able
+to change it dynamically (usually through a setter method).
+
+## Example ##
+
+Too keep it simple, consider the following problem:
+You have an automatic door with two buttons: **open** and **close**.
+You have four states:
+
+* open
+* closed
+
+
+The transitions between the states are intuitive: for example, if a door is
+closed, by pressing the **open** button, the door will go to the "open" state.
+To simplify, you can't interrupt an opening/closing action(there are no
+intermediate **DoorOpeningState** and **DoorClosingState** classes).
+
+What you'll do is create an abstract **DoorState** class, with two operations:
+
+* openDoor()
+* closeDoor()
+
+Then, you will create two subclasses: **DoorOpenState**, **DoorClosedState**.
+Each one of the states will have a reference to the **Door** object (passed as
+an argument in the constructor) whose state it represents and it will be able
+to change its state through the **setStateMethod()** which will be a part of the
+Doors interface.
+
+In this example, the **Door** class will contain references to every possible
+state which will be instantiated when a new **Door** object is created.
+
+Below is a possible solution to the problem.
+
+```java
+public abstract class DoorState {
+  Door door;
+  public abstract void open();
+  public abstract void close();
+
+  public DoorState(Door door) { this.door = door; }
+}
+```
+
+```java
+public class DoorOpenState extends DoorState {
+  public DoorOpenState(Door door) { super(door); }
+
+  public void open() { System.out.println("Door is already open!\n"); }  
+  public void close() {
+    System.out.println("Closing door... New state: DoorClosedState.\n");
+    door.setState(door.DOOR_CLOSED_STATE);
+  }
+}
+```
+
+```java
+public class DoorClosedState extends DoorState {
+  public DoorClosedState(Door door) { super(door); }
+
+
+  public void open() {
+    System.out.println("Opening door... New state: DoorOpen.\n");
+    door.setState(door.DOOR_OPEN_STATE);
+  }
+  public void close() { System.out.println("Door is already closed!\n"); }  
+}
+```
+
+```java
+public class Door {
+  public final DoorState DOOR_OPEN_STATE = new DoorOpenState(this);
+  public final DoorState DOOR_CLOSED_STATE =  new DoorClosedState(this);
+
+
+  DoorState state;
+
+  public Door() {
+    // initially, the door is closed
+    setState(DOOR_CLOSED_STATE);
+  }
+
+  public void open() { state.open(); }
+  public void close() { state.close(); }
+
+  public void setState(DoorState newState) { state = newState; }
+}
+```
+
+
+```java
+public class Main {
+
+  public static void main(String[] args) {
+    Door door = new Door();
+
+    door.open();
+    door.close();
+    door.close();
+  }
+}
+```
+
+The output of the application above is:
+
+```
+Opening door... New state: DoorOpen.
+
+Closing door... New state: DoorClosedState.
+
+Door is already closed!
 ```
