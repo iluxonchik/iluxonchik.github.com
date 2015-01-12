@@ -12,6 +12,7 @@ categories: design patterns
 [FactoryMethodUML]: http://www.apwebco.com/images/FactoryMethod.jpg "FactoryMethodUML"
 [StrategyUML]: https://www.clear.rice.edu/comp212/99-fall/handouts/week4/design2.gif "StrategyUML"
 [StateUML]: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/State_Design_Pattern_UML_Class_Diagram.svg/400px-State_Design_Pattern_UML_Class_Diagram.svg.png "StateUML"
+[AbstractFactoryUML]: http://i.imgur.com/zOjmV6V.png "AbstractFactoryUML"
 [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
 
 
@@ -1381,4 +1382,262 @@ Opening door... New state: DoorOpen.
 Closing door... New state: DoorClosedState.
 
 Door is already closed!
+```
+
+## Abstract Factory ##
+
+![AbstractFactoryUML][AbstractFactoryUML]
+
+The **Abstract Factory** pattern provides an interface for creating families of
+related or depended objects without specifying their concrete classes.
+
+The idea if an abstract factory is to define a common interface for a group of
+factories, then use those factories to produce objects. It provides an abstract
+type for creating a family of products and **subclasses** of that abstract type
+define how those products are produced. To use a specific factory, you'll have
+to instantiate it and pass into some code that is written against the **abstract
+type**.
+
+#### Factory Method vs Abstract Factory ####
+
+It's important to understand the difference between the **Abstract Factory** and
+the **Factory Method** patterns. While both are really good at **decoupling
+applications from specific implementations**, they do it in different ways.
+Both of the patterns **create objects**, but they do it in a different way:
+
+* **Factory Method** uses **classes** - the objects are created through
+**inheritance**.
+* **Abstract Factory** uses **objects** - the objects are created through
+**object composition**.
+
+Often the **Abstract Factory** uses **Factory Methods** to implement its concrete
+factories. The concrete factories use a factory method to create their products
+(they are used purely to create products).
+
+### Example ###
+
+Consider the example from the **Factory Method** section. Well, here we also have
+fruit, except that one of the farmers has discovered a new sort of fruit:
+the **Advanced Fruit**. What distinguishes a "normal" **Fruit** from an
+**AdvancedFruit**? Well, unlike the "normal" **Fruit**, all **AdvancedFruit** have
+guns and engines!
+
+The farmer in question is only producing **AdvancedApple** and **AdvancedOrange**
+types of **AdvancedFruit**, so those are the ones that will be covered in this
+example.
+
+What distinguished an **AdvancedApple** from an **AdvancedOrange**? Well,
+while **AdvancedApple** has a **BlueGun** and a **V16Engine**, the
+**AdvancedOrange** has a **RedGun** and a **V8Engine**.
+
+Hmmm... Isn't that a good place to use the **Abstact Factory** pattern to
+abstract out the specific gun and engine creation? Note, that both, advanced apples
+and oranges have guns and engines, except that they are of different types.
+We sure can come up with a common abstract interface to produce those pieces of
+equipment and then have two specific implementations of those: one for the
+advanced apples and one for the advanced oranges.
+
+When defining an abstract interface for out factories we have to question
+**what makes an AdvancedFruit an AdvancedFruit?** Well, it's the fact
+that every **AdvancedFruit** has an **Engine** and a **Gun**.
+
+Out abstract interface only will have to methods: **makeEngine()** and **makeGun()**
+(we'll call it the **AdvancedFruitFactory**). Then in **AdvancedAppleFactory** and
+**AdvancedOrangeFactory** we'll make those methods return the correct **Engine** and
+**Gun** objects.
+
+Now every advanced fruit will receive a concrete factory in its constructor,
+because it's through a method call on the **AdvancedFuit** object, that
+the specific engine and gun will be "given" to it.
+
+Below is a possible solution to the problem:
+
+```java
+public abstract class Fruit {
+  final String type;
+
+  public Fruit(String type) { this.type = type; }
+
+  public String getType() { return type; }
+}
+```
+
+```java
+public abstract class AdvancedFruit extends Fruit {
+  Engine engine;
+  Gun gun;
+
+  public AdvancedFruit(String name) { super(name); }
+
+  public void printInfo() { System.out.println("Name: " + type +
+  " Gun: " + gun.toString() + " Engine: " + engine.toString() + "\n"); }
+
+  public abstract void makeFruit();
+}
+```
+
+```java
+public class AdvancedApple extends AdvancedFruit {
+  AdvancedFruitFactory aff;
+
+  public AdvancedApple(String type, AdvancedFruitFactory aff) {
+    super(type);
+    this.aff = aff;
+  }
+
+  public AdvancedApple(AdvancedFruitFactory aff) { this("Generic AdvancedApple", aff); }
+
+  public void makeFruit() {
+    engine = aff.makeEngine();
+    gun = aff.maneGun();
+  }
+}
+```
+
+```java
+public class AdvancedOrange extends AdvancedFruit {
+  AdvancedFruitFactory aff;
+
+  public AdvancedOrange(String type, AdvancedFruitFactory aff) {
+    super(type);
+    this.aff = aff;
+  }
+
+  public AdvancedOrange(AdvancedFruitFactory aff) { this("Generic AdvancedOrange", aff); }
+
+  public void makeFruit() {
+    engine = aff.makeEngine();
+    gun = aff.maneGun();
+  }
+}
+```
+
+```java
+public abstract class AdvancedFruitBuilding {
+
+  // Hey, that's the Factory Method! Except now it "protected" and not "public"
+  protected abstract AdvancedFruit makeAdvancedFruit(String typeOfFruit);
+
+  public AdvancedFruit orderAdvancedFruit(String typeOfFruit) {
+    // First, create the requested AdvcancedFruit
+    AdvancedFruit af = makeAdvancedFruit(typeOfFruit);
+
+    // Now, complete each AdvancedFruit with its specific properties
+    af.makeFruit();
+
+    return af;
+  }
+}
+```
+
+```java
+public class NaturalAdvancedFruitBuilding extends AdvancedFruitBuilding {
+  /* A Specific Builder */
+
+  // Hey! It's a factory method! It's used to create concrete products
+  protected AdvancedFruit makeAdvancedFruit(String typeOfFruit) {
+    AdvancedFruit af = null;
+
+    if (typeOfFruit == "Apple") {
+      // For Advanced Apples, we will use the AdvancedAppleFactory
+      AdvancedFruitFactory aff = new AdvancedAppleFactory();
+      af = new AdvancedApple(aff);
+    }
+    else if (typeOfFruit == "Orange") {
+      // For Advanced Oranges, we will use the AdvancedOrangeFactory
+      AdvancedFruitFactory aff = new AdvancedOrangeFactory();
+      af = new AdvancedOrange(aff);
+    }
+
+    return af;
+  }
+}
+```
+
+```java
+public interface AdvancedFruitFactory {
+  /* The abstract factory interface */
+  public Engine makeEngine();
+  public Gun maneGun();
+}
+```
+
+```java
+public class AdvancedAppleFactory implements AdvancedFruitFactory {
+  /* A specific factory that produces engines and guns for adv. apples */
+  public Engine makeEngine() { return new V16Engine(); }
+  public Gun maneGun() { return new BlueGun(); }
+}
+```
+
+```java
+public class AdvancedOrangeFactory implements AdvancedFruitFactory {
+  /* A specific factory that produces engines and guns for adv. oranges */
+  public Engine makeEngine() { return new V8Engine(); }
+  public Gun maneGun() { return new RedGun(); }
+}
+```
+
+```java
+public interface Engine {
+
+  public String toString();
+}
+```
+
+```java
+public interface Gun {
+
+  public String toString();
+}
+```
+
+```java
+public class V16Engine implements Engine {
+
+  public String toString() { return "V16 Engine"; }
+}
+```
+
+```java
+public class V8Engine implements Engine {
+
+  public String toString() { return "V8 Engine"; }
+}
+
+```
+
+```java
+public class BlueGun implements Gun {
+
+  public String toString() { return "Blue Gun"; }
+}
+```
+
+```java
+public class RedGun implements Gun {
+  public String toString() { return "Red Gun"; }
+}
+```
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    AdvancedFruitBuilding afb = new NaturalAdvancedFruitBuilding();
+    AdvancedFruit apple = afb.orderAdvancedFruit("Apple");
+    AdvancedFruit orange = afb.orderAdvancedFruit("Orange");
+
+    apple.printInfo();
+
+    orange.printInfo();
+  }
+}
+```
+
+The output of the **Main** class is as follows:
+
+```
+Name: Generic AdvancedApple Gun: Blue Gun Engine: V16 Engine
+
+Name: Generic AdvancedOrange Gun: Red Gun Engine: V8 Engine
 ```
