@@ -14,6 +14,7 @@ categories: design patterns
 [StateUML]: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/State_Design_Pattern_UML_Class_Diagram.svg/400px-State_Design_Pattern_UML_Class_Diagram.svg.png "StateUML"
 [AbstractFactoryUML]: http://i.imgur.com/zOjmV6V.png "AbstractFactoryUML"
 [TemplateMethodUML]: http://i.imgur.com/0T25SDX.png "TemplateMethodUML"
+[ObserverUML]: http://i.imgur.com/mJ8MsjG.png "ObserverUML"
 [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
 
 
@@ -1839,3 +1840,175 @@ to be changing the algorithm.
 certain method or not.
 * Make a method abstract when you want to force the user to override the method.
 * Create a hook when you want to make a part of your algorithm totally optional.
+
+## Observer ##
+
+![ObserverUML][ObserverUML]
+
+The **Observer** pattern defines a one-to-many dependency between objects
+so that when one object changes state all of its dependents get notified and
+updated automatically.
+
+A good analogy is a newspaper. A newspaper (the **Subject**) can have zero
+or more subscribers (**Observers**) and every time a new edition comes out
+(the newspaper, i.e. the **Subject** changes), the subscribers receive the new
+edition in the mail (i.e. the **Observers** get notified and updated about that
+change.
+
+### Example ###
+
+Consider you have a **Subject**: a Facebook user. Anyone can subscribe to it
+and they receive updates every time the **Subject** updates its status or
+"likes" something.
+
+Of course you could put each "observer" in an infinite loop testing whether
+there has been a new status update or a new like, but that would be extremely
+uneficient! The **Template** pattern provides a much more elegant and
+resourse-friendly solution.
+
+Below is a possible solution to the problem:
+
+```java
+public interface Subject {
+  public void registerObserver(Observer o);
+  public void unregisterObserver(Observer o);
+  public void notifyObservers();
+}
+```
+
+```java
+public interface Observer {
+  public void update(String status, String contentLiked);
+}
+```
+
+```java
+/* This is the user to whom users "subscribe" */
+import java.util.ArrayList;
+
+public class FacebookUserSubject implements Subject {
+  ArrayList<Observer> observers;
+  String status;
+  String lastContentLiked;
+
+  public FacebookUserSubject() {
+    observers = new ArrayList<Observer>();
+    status = "";
+    lastContentLiked = "";
+  }
+
+  public void registerObserver(Observer o) {
+    observers.add(o);
+  }
+
+  public void unregisterObserver(Observer o) {
+    // get the index of the observer
+    int index = observers.indexOf(o);
+    // unregister the observer
+    observers.remove(index);
+  }
+
+  public void notifyObservers() {
+    // All of the oservers have the update() method,
+    // that's the one we use to notify them of a change.
+
+    for(Observer o : observers)
+    o.update(status, lastContentLiked);
+  }
+
+  public void setStatus(String newStatus) {
+    status = newStatus;
+    // status has been updated! notify the subscribers
+    notifyObservers();
+  }
+
+  public void setLastLiked(String newLike) {
+    lastContentLiked = newLike;
+    // last like has been updated! notify the subscribers
+    notifyObservers();
+  }
+}
+```
+
+```java
+/* This is an Observer. It "subscirbes" to FacebookUserSubjects */
+
+public class Subscriber implements Observer {
+
+  // Keep track of Subjects state
+  String status;
+  String lastContentLiked;
+
+  public void update(String status, String lastContentLiked) {
+    this.status = status;
+    this.lastContentLiked = lastContentLiked;
+
+    printSubjectState();
+  }
+
+  public void printSubjectState() {
+    System.out.println("Status: " + status + "|**| Last Liked: " + lastContentLiked + "\n");
+  }
+}
+```
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    FacebookUserSubject facebookUser = new FacebookUserSubject();
+
+    Observer o1 = new Subscriber();
+    Observer o2 = new Subscriber();
+    Observer o3 = new Subscriber();
+
+    facebookUser.setStatus("First status update!");
+    facebookUser.setLastLiked("FistLike");
+
+    facebookUser.registerObserver(o1);
+    facebookUser.setStatus("Second status update!");
+    facebookUser.setLastLiked("SecondLike");
+
+    facebookUser.registerObserver(o2);
+    facebookUser.registerObserver(o3);
+    facebookUser.setStatus("Third status update!");
+    facebookUser.setLastLiked("ThirdLike");
+
+    facebookUser.unregisterObserver(o1);
+    facebookUser.setStatus("Forth status update!");
+    facebookUser.setLastLiked("ForthLike");
+
+    facebookUser.unregisterObserver(o2);
+    facebookUser.unregisterObserver(o3);
+    facebookUser.setStatus("Fifth status update!");
+    facebookUser.setLastLiked("FifthLike");
+  }
+}
+```
+
+The output of the application is as follows:
+
+```
+Status: Second status update!|**| Last Liked: FistLike
+
+Status: Second status update!|**| Last Liked: SecondLike
+
+Status: Third status update!|**| Last Liked: SecondLike
+
+Status: Third status update!|**| Last Liked: SecondLike
+
+Status: Third status update!|**| Last Liked: SecondLike
+
+Status: Third status update!|**| Last Liked: ThirdLike
+
+Status: Third status update!|**| Last Liked: ThirdLike
+
+Status: Third status update!|**| Last Liked: ThirdLike
+
+Status: Forth status update!|**| Last Liked: ThirdLike
+
+Status: Forth status update!|**| Last Liked: ThirdLike
+
+Status: Forth status update!|**| Last Liked: ForthLike
+
+Status: Forth status update!|**| Last Liked: ForthLike
+```
