@@ -13,6 +13,7 @@ categories: design patterns
 [StrategyUML]: https://www.clear.rice.edu/comp212/99-fall/handouts/week4/design2.gif "StrategyUML"
 [StateUML]: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/State_Design_Pattern_UML_Class_Diagram.svg/400px-State_Design_Pattern_UML_Class_Diagram.svg.png "StateUML"
 [AbstractFactoryUML]: http://i.imgur.com/zOjmV6V.png "AbstractFactoryUML"
+[TemplateMethodUML]: http://i.imgur.com/0T25SDX.png "TemplateMethodUML"
 [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
 
 
@@ -1641,3 +1642,200 @@ Name: Generic AdvancedApple Gun: Blue Gun Engine: V16 Engine
 
 Name: Generic AdvancedOrange Gun: Red Gun Engine: V8 Engine
 ```
+
+## Template Method ##
+
+![TemplateMethodUML][TemplateMethodUML]
+
+The **Template Method** defines the skeleton of an algorithm in a method,
+deferring some steps to the subclasses. This pattern allows the subclasses
+to change certain parts of the algorithm without changing the algorithm's
+structure.
+
+So let's say you have a generic algorithm, for example an algorithm for making tea.
+The general(abstract) idea is simple:
+
+1. Boil water.
+2. Put tea bag in cup.
+3. Pour in the boiled water(still hot).
+4. Add condiments.
+
+The general algorithm is simple, however it can vary. Some prefer
+tea bags, while others prefer to use loose leafs. Some like to pour
+in water at 100ªC, while others prefer it a bit cooler. Some like to add condiments
+and some don't.
+
+So there are variations to the algorithm, but in essence, the algorithm doesn't
+change.
+
+That's where the **Template Method** comes in. Basically you define an abstract
+template method, and then let the subclasses customize parts of it(or even the
+whole algorithm). This customization is obtained using **method overriding** and
+the so called **hooks** (mehods that return True/False).
+
+### Example ###
+
+Consider two types of cars: **SportsCar** and **CityCar**. The generic
+algorithm for car creation is the following:
+
+1. Add chassis.
+2. Add body.
+3. Add wheels.
+4. Add windows.
+5. Add air conditioning.
+6. Add radio.
+
+That's the general algorithm that all cars follow, the **SportsCar** however,
+doesn't have air conditioning or radio and it uses a different type of wheels
+(sports wheels), while the **CityCar** uses regular wheels has A/C and radio.
+All of the cars **must have** a chassis, a body and windows.
+
+A possible solution using the **Template Method** can be found right below:
+
+```java
+public abstract class Car {
+
+  // The template method is final, so that the
+  // subclasses can't change the generic algorithm,
+  // they can only customize it.
+  public final void makeCar() {
+
+    addChassis();
+    addBody();
+    addWheels();
+    addWindows();
+
+    if(carNeedsAC())
+    // only add A/C if needed
+    addAC();
+
+    if (carNeedsRadio())
+    // only add radio if needed
+    addRadio();
+  }
+
+  public void addChassis() {
+    // All cars have the same chassis,
+    // this can't be changed.
+    System.out.println("Adding chassis...\n");
+  }
+
+  public void addBody() {
+    System.out.println("Adding body...\n");
+  }
+
+  public void addWindows() {
+    System.out.println("Adding windows...\n");
+  }
+
+  public void addAC() {
+    System.out.println("Adding A/C...\n");
+  }
+
+  public void addRadio() {
+    System.out.println("Adding radio...\n");
+  }
+
+  // Let specific cars, explicityly specfy the
+  // wheels they want to use.
+  public abstract void addWheels();
+
+  // "Hooks" : let the cars costumize if they need
+  // some parts or not.
+  public abstract boolean carNeedsAC();
+  public abstract boolean carNeedsRadio();
+
+}
+```
+
+```java
+public class SportsCar extends Car {
+  public void addWheels() {
+    System.out.println("Adding sports wheels...\n");
+  }
+
+  public boolean carNeedsAC() {
+    return false;
+  }
+
+  public boolean carNeedsRadio() {
+    return false;
+  }
+}
+```
+
+```java
+public class CityCar extends Car {
+  public void addWheels() {
+    System.out.println("Adding regular wheels...\n");
+  }
+
+  public boolean carNeedsAC() {
+    return true;
+  }
+
+  public boolean carNeedsRadio() {
+    return true;
+  }
+}
+```
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    Car sc = new SportsCar();
+    Car cc = new CityCar();
+
+    System.out.println("Sports Car Production Begin!\n---\n");
+    sc.makeCar();
+    System.out.println("Sports Car Production End!\n---\n");
+
+    System.out.println("Sports Car Production Begin!\n---\n");
+    cc.makeCar();
+    System.out.println("City Car Production End!\n---\n");
+
+  }
+}
+```
+
+The output of the client application is:
+
+```
+Sports Car Production Begin!
+---
+
+Adding chassis...
+
+Adding body...
+
+Adding sports wheels...
+
+Adding windows...
+
+Sports Car Production End!
+---
+
+Sports Car Production Begin!
+---
+
+Adding chassis...
+
+Adding body...
+
+Adding regular wheels...
+
+Adding windows...
+
+Adding A/C...
+
+Adding radio...
+
+City Car Production End!
+---
+```
+* The template method is declared **final** because we don't want the subclasses
+to be changing the algorithm.
+* Have some "hooks" that return booleans, to decide whether we should run a
+certain method or not.
+* Make a method abstract when you want to force the user to override the method.
+* Create a hook when you want to make a part of your algorithm totally optional.
