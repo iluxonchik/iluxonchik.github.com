@@ -16,6 +16,8 @@ categories: design patterns
 [TemplateMethodUML]: http://i.imgur.com/0T25SDX.png "TemplateMethodUML"
 [ObserverUML]: http://i.imgur.com/mJ8MsjG.png "ObserverUML"
 [DecoratorUML] : http://i.imgur.com/EqwKf6e.png "DecoratorUML"
+[AdapterUML] : http://i.imgur.com/B6Vxbm0.png "AdapterUML"
+[ACAdapter] : https://www.safaribooksonline.com/library/view/head-first-design/0596007124/httpatomoreillycomsourceoreillyimages1419096.png.jpg "AdapterACImage"
 [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
 
 
@@ -2032,7 +2034,7 @@ you would have to create another subclass, which only aggravates the problem.
 The pattern gives you the capabilities of inheritance, but with functionality
 added at runtime.
 
-## Example ##
+### Example ###
 
 Let's say a car dealership is selling a certain model of a car. It's base price
 (for model with no extras) is $100.000, but you can also add extras like
@@ -2159,3 +2161,148 @@ Note, that on second and third "decorations" you are actually passing a
 until a **getDescription()** reaches a plain return of a string (here it happens
 in the **BasicCar** class). This is why it's both, the decorator and the
 decorated (the car) must implement **a common** interface.
+
+## Adapter ##
+
+![AdapterUML][AdapterUML]
+
+The **Adapter** design pattern converts the interface of a class into another
+interface that the client expects. Adapter lets classes work together that
+couldn't otherwise because they have incompatible interfaces.
+
+This is usually the right pattern to go with when you want to use an existing
+class without modifying it, but its interface doesn't match the one that you need.
+
+Adapters in OO are just like adapters in real life. Have you ever needed to use
+an electronic device with an US AC plug in Europe? Well, since the European
+wall outlet (the client) expects a different "shape" of adapter what do you do?
+Change the wall outlet? Of course not! You use an **adapter** to adapt the US
+AC Plug into a Europe AC plug, as shown in the image below (image from
+*www.safaribooksonline.com*).
+
+![ACAdapter][ACAdapter]
+
+(This is kind of *off-topic*, but not all European wall outlets looks like that,
+in fact I believe I've never encountered one that's of the same shape as in the
+image, but they do exist.)
+
+### Example ###
+
+Let's say that you have a duck simulator application. What does it do? Well,
+it simulates ducks by invoking **quack()** and **fly()** methods on various ducks.
+
+Everything has been going good, until your users demanded that you include turkeys
+from another popular simulator "Turkey Simulator" straight into your game.
+The developers of "Turckey Simulator" are willing to share they turkey classes
+from they gigantic turkey database with you. That's great, except for one thing:
+all of the turkey classes have a different interface: instead of the **quack()**
+method, they have **gobble()** and despite the **fly()** method having the same
+name, they don't really fly the same way as the ducks do. You are certainly
+not going to change every class provided by the "Turkey Simulator" team, since
+that would take too much time and you would have to do that to every new turkey
+added, besides that, to ensure the quality of the turkeys used, they gave you
+the permission to **use** their code, but **not modify** it.
+
+To solve our problem, we will create a new **TurkeyAdapter** class, which will
+store a reference to the turkey that it is adapting into a duck as well as
+implement the same interface as the **Duck** class is using.
+
+Below is a possible solution using the pattern:
+
+```java
+public interface Duck {
+  public void quack();
+  public void fly();
+}
+```
+
+```java
+public interface Turkey {
+  public void gobble();
+  public void fly();
+
+}
+```
+
+```java
+public class MallardDuck implements Duck {
+  public void quack() {
+    System.out.println("Quack!");
+  }
+
+  public void fly() {
+    System.out.println("Flying!");
+  }
+}
+```
+
+```java
+public class WildTurkey implements Turkey {
+  public void gobble() {
+    System.out.println("Gobble!");
+  }
+
+  public void fly() {
+    System.out.println("Flying a short distance.");
+  }
+}
+```
+
+```java
+public class TurkeyAdapter implements Duck {
+  Turkey turkey;
+
+  public TurkeyAdapter(Turkey turkey) { this.turkey = turkey; }
+
+  public void quack() {
+    turkey.gobble();
+  }
+
+  public void fly() {
+    for (int i = 0; i < 5; i++) {
+      turkey.fly();
+    }
+  }
+}
+```
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    Duck md = new MallardDuck();
+    Turkey wt = new WildTurkey();
+
+    System.out.println("Duck\n---");
+    md.fly();
+    md.fly();
+    System.out.println("---\n");
+
+    // adapt turkey to the duck's interface
+    TurkeyAdapter turkeyAdapter = new TurkeyAdapter(wt);
+    System.out.println("Turkey\n---");
+    turkeyAdapter.fly();
+    turkeyAdapter.quack();
+    System.out.println("---\n");
+  }
+}
+```
+
+The application outputs the following:
+
+```
+Duck
+---
+Flying!
+Flying!
+---
+
+Turkey
+---
+Flying a short distance.
+Flying a short distance.
+Flying a short distance.
+Flying a short distance.
+Flying a short distance.
+Gobble!
+---
+```
