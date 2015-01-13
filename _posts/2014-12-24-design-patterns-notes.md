@@ -16,7 +16,8 @@ categories: design patterns
 [TemplateMethodUML]: http://i.imgur.com/0T25SDX.png "TemplateMethodUML"
 [ObserverUML]: http://i.imgur.com/mJ8MsjG.png "ObserverUML"
 [DecoratorUML] : http://i.imgur.com/EqwKf6e.png "DecoratorUML"
-[AdapterUML] : http://i.imgur.com/B6Vxbm0.png "AdapterUML"
+[ObjectAdapterUML] : http://i.imgur.com/B6Vxbm0.png "ObjectAdapterUML"
+[ClassAdapterUML] : http://i.imgur.com/2mR56JX.png "ClassAdapterUML"
 [ACAdapter] : https://www.safaribooksonline.com/library/view/head-first-design/0596007124/httpatomoreillycomsourceoreillyimages1419096.png.jpg "AdapterACImage"
 [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
 
@@ -2164,7 +2165,7 @@ decorated (the car) must implement **a common** interface.
 
 ## Adapter ##
 
-![AdapterUML][AdapterUML]
+![ObjectAdapterUML][ObjectAdapterUML]
 
 The **Adapter** design pattern converts the interface of a class into another
 interface that the client expects. Adapter lets classes work together that
@@ -2306,3 +2307,16 @@ Flying a short distance.
 Gobble!
 ---
 ```
+
+There are two kind of adapters: **class adapter** and **object adapter**.
+This text only covered the **object adapters**. Class adapters aren't possible
+in Java, since they require **multiple inheritance**.
+
+#### Object Adapter vs Class Adapter ####
+
+The only difference between a class and an object adapter is that in the
+in **class adapters**, the Target and the Adaptee are subclassed to create the
+Adapter. In **object adapters** object **composition** is used to pass the requests
+to an adaptee. Below is the **class adapter** UML.
+
+![ClassAdapterUML][ClassAdapterUML]
