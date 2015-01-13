@@ -15,6 +15,7 @@ categories: design patterns
 [AbstractFactoryUML]: http://i.imgur.com/zOjmV6V.png "AbstractFactoryUML"
 [TemplateMethodUML]: http://i.imgur.com/0T25SDX.png "TemplateMethodUML"
 [ObserverUML]: http://i.imgur.com/mJ8MsjG.png "ObserverUML"
+[DecoratorUML] : http://i.imgur.com/EqwKf6e.png "DecoratorUML"
 [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
 
 
@@ -2012,3 +2013,149 @@ Status: Forth status update!|**| Last Liked: ForthLike
 
 Status: Forth status update!|**| Last Liked: ForthLike
 ```
+
+## Decorator ##
+
+![DecoratorUML][DecoratorUML]
+
+The **Decorator** design pattern allows you to attach additional responsibilities
+to an object dynamically. It provides a flexible **alternative to subclassing**
+for extending functionality.
+
+This is usually a great choice of a pattern whenever you want to be able to
+add responsibilities to individual objects dynamically (at **runtime**) without
+affecting other objects. The responsibilities you add can be withdrawn later on,
+also dynamically. Sometimes extension by subclassing is simply impractical:
+you you might have a large amount of independent extentions and that would
+produce an explosion of subclasses and every time you added a new extentsion,
+you would have to create another subclass, which only aggravates the problem.
+The pattern gives you the capabilities of inheritance, but with functionality
+added at runtime.
+
+## Example ##
+
+Let's say a car dealership is selling a certain model of a car. It's base price
+(for model with no extras) is $100.000, but you can also add extras like
+**AirConditioning**(extra $5.000), **Spoiler**(extra $3.000) and a custom **BodyKit**
+(extra $15.000).
+
+One way to solve this would to create a subclass for every possible combination,
+but that would give you 7 subclasses just for the cars(3! + 1 = 7)!
+And what if you wanted to add another extra? You can understand the way this is
+heading...
+
+This seems like the right place to use the **Decorator** pattern. We want to
+add responsibilities dynamically.
+
+First, we'll create the **Car** interface, which is the **common** interface for
+every car and every extra. Then, we'll create a **BasiCar** model, which represents
+the most **basic** car, which then will be **decorated** by extras. All of the
+extras derive from the **CarDecorator**, which, just as the **BasicCar**, implements
+the **Car** interface. The decorator will store a reference to the object it
+decorates. In the decorator's superclass we want to implement the interface
+of the object that that group of decorators will be decorating.
+
+Here is a possible way to solve this exercise:
+
+```java
+public interface Car {
+
+  public String getDescription();
+  public int getPrice();
+}
+```
+
+```java
+public class BasicCar implements Car {
+
+  public String getDescription() { return "Basic Car Model"; }
+
+  public int getPrice() { return 100000; }
+}
+```
+
+```java
+public abstract class CarDecorator implements Car {
+
+  protected Car car; // referrence to the car that is being decorated
+
+  public CarDecorator(Car car) { this.car = car; }
+
+}
+```
+
+```java
+public class BodyKit extends CarDecorator {
+
+  public BodyKit(Car car) { super(car); }
+
+  public String getDescription() {
+    return car.getDescription() + " + Body Kit"; }
+
+    public int getPrice() { return car.getPrice() + 15000; }
+}
+```
+
+```java
+public class AC extends CarDecorator {
+
+  public AC(Car car) { super(car); }
+
+  public String getDescription() {
+    return car.getDescription() + " + A/C"; }
+
+    public int getPrice() { return car.getPrice() + 5000; }
+}
+```
+
+```java
+public class Spoiler extends CarDecorator {
+
+  public Spoiler(Car car) { super(car); }
+
+  public String getDescription() {
+    return car.getDescription() + " + Spoiler"; }
+
+    public int getPrice() { return car.getPrice() + 3000; }
+}
+```
+
+```java
+public class Main {
+
+  public static void main(String[] args) {
+
+    Car car = new BasicCar();
+    System.out.println(car.getDescription() + " |**| Price : " + car.getPrice());
+
+    // add a Body Kit to the car
+    CarDecorator bk = new BodyKit(car);
+    System.out.println(bk.getDescription() + " |**| Price : " + bk.getPrice());
+
+    // add A/C to the car
+    CarDecorator ac = new AC(bk);
+    System.out.println(ac.getDescription() + " |**| Price : " + ac.getPrice());
+
+    // add a Spoiler to the car
+    CarDecorator sp = new Spoiler(ac);
+    System.out.println(sp.getDescription() + " |**| Price : " + sp.getPrice());
+
+  }
+}
+```
+
+The application outputs:
+
+```
+Basic Car Model |**| Price : 100000
+Basic Car Model + Body Kit |**| Price : 115000
+Basic Car Model + Body Kit + A/C |**| Price : 120000
+Basic Car Model + Body Kit + A/C + Spoiler |**| Price : 123000
+```
+
+Note, that on second and third "decorations" you are actually passing a
+**CarDecorator** and not a **BasicCar** object, so when you call
+**getDescription()** on one, it calls the **getDescription()** on another,
+until a **getDescription()** reaches a plain return of a string (here it happens
+in the **BasicCar** class). This is why it's both, the decorator and the
+decorated (the car) must implement **a common** interface.
