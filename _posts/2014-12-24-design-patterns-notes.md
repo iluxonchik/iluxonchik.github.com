@@ -15,10 +15,10 @@ categories: design patterns
 [AbstractFactoryUML]: http://i.imgur.com/zOjmV6V.png "AbstractFactoryUML"
 [TemplateMethodUML]: http://i.imgur.com/0T25SDX.png "TemplateMethodUML"
 [ObserverUML]: http://i.imgur.com/mJ8MsjG.png "ObserverUML"
-[DecoratorUML] : http://i.imgur.com/EqwKf6e.png "DecoratorUML"
-[ObjectAdapterUML] : http://i.imgur.com/B6Vxbm0.png "ObjectAdapterUML"
-[ClassAdapterUML] : http://i.imgur.com/2mR56JX.png "ClassAdapterUML"
-[ACAdapter] : https://www.safaribooksonline.com/library/view/head-first-design/0596007124/httpatomoreillycomsourceoreillyimages1419096.png.jpg "AdapterACImage"
+[DecoratorUML]: http://i.imgur.com/EqwKf6e.png "DecoratorUML"
+[ObjectAdapterUML]: http://i.imgur.com/B6Vxbm0.png "ObjectAdapterUML"
+[ClassAdapterUML]: http://i.imgur.com/2mR56JX.png "ClassAdapterUML"
+[ACAdapter]: https://www.safaribooksonline.com/library/view/head-first-design/0596007124/httpatomoreillycomsourceoreillyimages1419096.png.jpg "AdapterACImage"
 [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
 
 
@@ -2320,3 +2320,17 @@ Adapter. In **object adapters** object **composition** is used to pass the reque
 to an adaptee. Below is the **class adapter** UML.
 
 ![ClassAdapterUML][ClassAdapterUML]
+
+
+## Facade ##
+
+The **Facade** pattern provides a unified interface to a set of interfaces in a
+subsystem. Facade defines a higher-level interface that makes the subsystem easier
+to use.
+
+This pattern also allows you to avoid tight coupling between clients and subsystems,
+as well as provides a simple default view of the subsystem that is good enough for
+most clients. Only the clients that need more customizability will look beyond the
+pattern
+
+### Example ###
