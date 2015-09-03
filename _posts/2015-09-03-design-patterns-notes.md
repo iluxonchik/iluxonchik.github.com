@@ -1,35 +1,57 @@
 ---
 layout: post
-title:  "Design Patterns Notes"
-date:   2014-12-24 22:12:00
+title:  "Design Patterns Notes - An Overview Of Design Patterns"
+date:   2015-09-03 18:00:00
 categories: design patterns
 ---
 [SingletonUML]: http://zenit.senecac.on.ca/wiki/imgs/Singleton_UML.png "Singleton UML"
 [CommandUML]:http://www.dofactory.com/images/diagrams/net/command.gif "Command UML"
 [IteratorUML]: http://upload.wikimedia.org/wikipedia/commons/1/13/Iterator_UML_class_diagram.svg "Iterator UML"
-[CompositeUML]: http://www.codeproject.com/KB/wiki-aspnet/667251/480px-Composite_UML_class_diagram.svg.png "CompositeUML"
-[VisitorUML]:http://www.lepus.org.uk/spec/gof/uml/Visitor.png "VisitorUML"
-[FactoryMethodUML]: http://www.apwebco.com/images/FactoryMethod.jpg "FactoryMethodUML"
-[StrategyUML]: https://www.clear.rice.edu/comp212/99-fall/handouts/week4/design2.gif "StrategyUML"
-[StateUML]: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/State_Design_Pattern_UML_Class_Diagram.svg/400px-State_Design_Pattern_UML_Class_Diagram.svg.png "StateUML"
-[AbstractFactoryUML]: http://i.imgur.com/zOjmV6V.png "AbstractFactoryUML"
-[TemplateMethodUML]: http://i.imgur.com/0T25SDX.png "TemplateMethodUML"
-[ObserverUML]: http://i.imgur.com/mJ8MsjG.png "ObserverUML"
-[DecoratorUML]: http://i.imgur.com/EqwKf6e.png "DecoratorUML"
-[ObjectAdapterUML]: http://i.imgur.com/B6Vxbm0.png "ObjectAdapterUML"
-[ClassAdapterUML]: http://i.imgur.com/2mR56JX.png "ClassAdapterUML"
-[ACAdapter]: https://www.safaribooksonline.com/library/view/head-first-design/0596007124/httpatomoreillycomsourceoreillyimages1419096.png.jpg "AdapterACImage"
+[CompositeUML]: http://www.codeproject.com/KB/wiki-aspnet/667251/480px-Composite_UML_class_diagram.svg.png "Composite UML"
+[VisitorUML]:http://www.lepus.org.uk/spec/gof/uml/Visitor.png "Visitor UML"
+[FactoryMethodUML]: http://www.apwebco.com/images/FactoryMethod.jpg "Factory Method UML"
+[StrategyUML]: https://www.clear.rice.edu/comp212/99-fall/handouts/week4/design2.gif "Strategy UML"
+[StateUML]: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/State_Design_Pattern_UML_Class_Diagram.svg/400px-State_Design_Pattern_UML_Class_Diagram.svg.png "State UML"
+[AbstractFactoryUML]: http://i.imgur.com/zOjmV6V.png "Abstract Factory UML"
+[TemplateMethodUML]: http://i.imgur.com/0T25SDX.png "Template Method UML"
+[ObserverUML]: http://i.imgur.com/mJ8MsjG.png "Observer UML"
+[DecoratorUML]: http://i.imgur.com/EqwKf6e.png "Decorator UML"
+[ObjectAdapterUML]: http://i.imgur.com/B6Vxbm0.png "Object Adapter UML"
+[ClassAdapterUML]: http://i.imgur.com/2mR56JX.png "Class Adapter UML"
+[FacadeUML]: http://i.imgur.com/dtlmdsM.png "Facade UML"
+[ACAdapter]: https://www.safaribooksonline.com/library/view/head-first-design/0596007124/httpatomoreillycomsourceoreillyimages1419096.png.jpg "Adapter AC Image"
 [Button]: http://www.willyoupressthebutton.com/images/mygtukas.png "Button"
 
 
-[FiniteStateMachineWiki]: http://en.wikipedia.org/wiki/Finite-state_machine "FiniteStateMachineWikipedia"
+[FiniteStateMachineWiki]: http://en.wikipedia.org/wiki/Finite-state_machine "Finite State Machine Wikipedia"
 
-**Post Status**: Updating
+# Introduction #
 
-This isn't really a post per say, it's more of a collection of notes on some
-most common design patterns. Maybe some of you will find them useful. All of
-the code examples are in Java. This hasn't really been proof-read, so there might
-be errors.
+This blog post is a collection of notes on some more common design patterns.
+Each design pattern is explained in simple terms and includes an example.
+
+
+This is written mainly for beginners, but it's also useful if you need to
+refreshen your understanding of a certain design pattern. I highly suggest you
+to further explore each pattern covered here, since this post's goal is to simply
+give you an overview of them. I've included some additional sources at the end of
+the post.
+
+I've written this because mainly it's not always easy to understand what a pattern
+is about in its essence, since many of the explanations out there are either
+domain-specific or include examples that are somewhat complex. In my opinion, it's
+a lot easier to to undestand them once you have a general idea of what the pattern
+does. This is why I've used somewhat "childish" examples here: those should help
+you concentrate on the pattern and not the domain details.
+
+All of the code examples are in Java, but only the basic syntax is used, so if you're
+coming from a language like C# or have basic Java knowledge, you should have not problems
+in undestanding this post. Even though a specific programming language is used here,
+the concepts are domain-independent and can be applied to other languages.
+The default access modifiers for member variables are used, to make the code interpertation
+more accessible to beginners.
+
+# Design Patterns ##
 
 ## Singleton ##
 
@@ -53,8 +75,8 @@ Below is an example implementation in Java. This version uses **lazy initializat
 
 ```java
 public class Singleton {
-  private static Singleton instance = null;
-  private Singleton() { }
+  static Singleton instance = null;
+  Singleton() { }
 
   public static Singleton getInstance() {
     if (instance == null) {
@@ -114,8 +136,8 @@ requests, and support undoable operations.
 
   ```java
   public class SoundSystem {
-    private int soundLevel;
-    private int state; // 0:off 1:on
+    int soundLevel;
+    int state; // 0:off 1:on
 
     public SoundSystem() {
       soundLevel = 0;
@@ -365,8 +387,8 @@ Below is a possible solution using the **Iterartor** Pattern.
 
 ```java
 public class Song {
-  private String name;
-  private String artist;
+  String name;
+  String artist;
 
   public Song(String name, String artist) {
     this.name = name;
@@ -2324,6 +2346,8 @@ to an adaptee. Below is the **class adapter** UML.
 
 ## Facade ##
 
+![FacadeUML][FacadeUML]
+
 The **Facade** pattern provides a unified interface to a set of interfaces in a
 subsystem. Facade defines a higher-level interface that makes the subsystem easier
 to use.
@@ -2331,6 +2355,277 @@ to use.
 This pattern also allows you to avoid tight coupling between clients and subsystems,
 as well as provides a simple default view of the subsystem that is good enough for
 most clients. Only the clients that need more customizability will look beyond the
-pattern
+pattern.
+
+So in other words, the pattern allows you to take a complex subsystem and make it easier
+to use by implementing a Facade class, that provides one, more simple interface.
+It not only **simplifies an interface**, as well as **decouples a client from a subsystem of
+components**.
 
 ### Example ###
+
+As an example consider that you have a home theater system installed at your place.
+Suppose it consists of a DVD player, a projector, a screen, a sound system and
+lighs. Each one of the components is defined in it's own class:
+
+```java
+public class DVDPlayer {
+
+	public void turnOn() {
+		System.out.println("Turning DVD On...");
+	}
+	
+	public void turnOff() {
+		System.out.println("Turning DVD Off...");
+	}
+	
+	public void play() {
+		System.out.println("Starting movie playback...");
+	}
+	
+	public void stop() {
+		System.out.println("Stopping movie playback...");
+	}
+}
+```
+
+```java
+public class Projector {
+	
+	public void turnOn() {
+		System.out.println("Turning Projector On...");
+	}
+	
+	public void turnOff() {
+		System.out.println("Turning Projector On...");
+	}
+	
+	public void start() {
+		System.out.println("Projecting started...");
+	}
+	
+	public void stop() {
+		System.out.println("Projecting stopped...");
+	}
+}
+```
+
+```java
+public class Screen {
+	
+	public void turnOn() {
+		System.out.println("Turning Screen On...");
+	}
+	
+	public void turnOff() {
+		System.out.println("Turning Screen Off...");
+	}
+}
+```
+
+```java
+public class SoundSystem {
+	int volume;
+	
+	public SoundSystem(int volume) {
+		this.volume = volume;
+	}
+	
+	public SoundSystem() {
+		this(0);
+	}
+	
+	public void turnOn() {
+		System.out.println("Turning Sound System On...");
+	}
+	
+	public void turnOff() {
+		System.out.println("Turning Sound System Off...");
+	}
+	
+	public void setVolume(int value) {
+		if (value > -1)
+			volume = value;
+		else
+			volume = 0;
+		
+		System.out.println("Volume set to: " + volume);
+	}
+	
+}
+```
+
+```java
+public class Lights {
+	
+	int intensity;
+	
+	public Lights(int intensity) {
+		this.intensity = intensity;
+	}
+	
+	public Lights() {
+		this(0);
+	}
+	
+	public void setIntensity(int value) {
+		if (value > -1)
+			intensity = value;
+		else
+			intensity = 0;
+		
+		System.out.println("Intensity set to: " + intensity);
+	}
+	
+	public void dim(int value) {
+		System.out.println("Dimming the lights...");
+		setIntensity(intensity - value);
+		
+	}
+	
+}
+```
+
+Okay, now let's say you want to watch a movie. In order to do that, you have to perform a few tasks:
+
+1. Turn the screen on
+2. Turn the projector on
+3. Turn the DVD player on
+4. Set the sound to `5`
+5. Set the light's intensity to `1`
+6. Start the DVD playback
+
+The code to do that without using the pattern would look something like this:
+
+```java
+    // Variables are properly initialized before
+		screen.turnOn();
+		projector.turnOn();
+		dvdPlayer.turnOn();
+		soundSystem.setVolume(5);
+		lights.setIntensity(1);
+		dvdPlayer.play();
+```
+
+Here are some issues with that approach:
+
+* It's complex
+* Let's say you want to reset everything after the movie is over, wouldn't you have to do everything again, but
+in reverse order?
+* If you decide to change your system, and let's say put your phone on silence when the movie starts, as well as
+set the volume to `7` instead of `5`, you're going to have to change your code in every place you've used it
+* Wouldn't it be as complex to play a music CD or turn on the radio?
+
+So what can we do here? The **complexity** of the current approach is evident. **Facade** pattern to the rescue!
+What we're going to do is create a Facade for our home theater system. To do this, we'll create a `HomeTheaterFacade`
+class which exposes a few methods such as `watchMovie()`, `stopMovie()`, `playCD()`, etc.
+
+What are going be the contents of those methods? Well, it's going to be all that complex code that was mentioned above.
+Here is a possible implementation:
+
+```java
+public class HomeTheaterFacade {
+	DVDPlayer dvdPlayer;
+	Lights lights;
+	Projector projector;
+	Screen screen;
+	SoundSystem soundSystem;
+	
+	public HomeTheaterFacade(DVDPlayer dvdPlayer,
+					Lights lights,
+					Projector projector,
+					Screen screen,
+					SoundSystem soundSystem) {
+		
+		this.dvdPlayer = dvdPlayer;
+		this.lights = lights;
+		this.projector = projector;
+		this.screen = screen;
+		this.soundSystem = soundSystem;
+	}
+	
+	public void watchMovie() {
+		System.out.println("Get ready for the movie...");
+		screen.turnOn();
+		projector.turnOn();
+		dvdPlayer.turnOn();
+		soundSystem.setVolume(5);
+		lights.setIntensity(1);
+		dvdPlayer.play();
+	}
+	
+	public void endMovie() {
+    System.out.println("Ending movie playback...");
+		dvdPlayer.stop();
+		lights.setIntensity(5);
+		soundSystem.setVolume(0);
+		dvdPlayer.turnOff();
+		projector.turnOff();
+		screen.turnOff();
+	}
+	
+	// Other methods such as playCD(), ...
+	
+}
+```
+
+Now to watch a movie all we have to do is call the `watchMovie()` method on the `HomeTheaterFacade` object.
+The code is now a lot simpler and if we at some point decide to change the steps in any of the methods, the
+only place where we need to modify the code is in the `HomeTheaterFacade` class, since you **decoupled your
+client implementation from any one subsystem**.
+
+Here is how the application that uses `HomeTheaterFacade` would look like:
+
+```java
+public class Main {
+	
+	public static void main(String[] args) {
+		DVDPlayer dvdPlayer = new DVDPlayer();
+		Lights lights = new Lights(5);
+		Screen screen = new Screen();
+		Projector projector = new Projector();
+		SoundSystem soundSystem = new SoundSystem();
+		
+		HomeTheaterFacade homeTheaterFacade = new HomeTheaterFacade(dvdPlayer,
+				lights, projector, screen, soundSystem);
+		
+		homeTheaterFacade.watchMovie();
+		homeTheaterFacade.endMovie();
+	}
+	
+}
+```
+
+It produces the following output:
+
+```
+Get ready for the movie...
+Turning Screen On...
+Turning Projector On...
+Turning DVD On...
+Volume set to: 5
+Intensity set to: 1
+Starting movie playback...
+Ending movie playback...
+Stopping movie playback...
+Intensity set to: 5
+Volume set to: 0
+Turning DVD Off...
+Turning Projector On...
+Turning Screen Off...
+```
+
+
+#### Facade vs Adapter ####
+
+Facades and adapters may wrap multiple classes, but a **facade's intent is to simplify**,
+while an **adapter's intent is to convert one interface to another**.
+
+# Addtional Resources
+
+This post was heavily based on the [Head First Design Patterns](http://shop.oreilly.com/product/9780596007126.do) book.
+It provides an easy to read and undestand introduction to the topic. I would suggest you reading it if you're new
+to design patterns. It's also a good book if you need to quickly refreshen some of the concepts.
+
+Another great book, probably the most well-known one is [Design patterns : elements of reusable object-oriented software](http://www.amazon.co.uk/Design-patterns-elements-reusable-object-oriented/dp/0201633612).
+It's  more complex, but it explores real world examples.
