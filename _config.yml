@@ -2,6 +2,9 @@ name: G'd Up Code
 description: Programming/Software Development & Related
 meta_description: "Programming, Software Development and Related"
 
+exclude: [vendor]
+gems: [jekyll-paginate]
+
 markdown: redcarpet
 highlighter: pygments
 logo: false

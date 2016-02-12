@@ -1,2 +1,8 @@
 source 'https://rubygems.org'
-gem 'github-pages'
+
+ruby "2.2.4"
+
+gem "jekyll"
+gem "jekyll-paginate"
+gem "pygments.rb"
+gem "redcarpet"
