@@ -1,5 +1,5 @@
 name: G'd Up Code
-description: Programming/Software Development & Related
+description: Programming/Software Development and Related
 meta_description: "Programming, Software Development and Related"
 
 exclude: [vendor]
@@ -9,6 +9,9 @@ markdown: redcarpet
 highlighter: pygments
 logo: false
 paginate: 15
+baseurl: /
+domain_name: 'http://iluxonchik.github.io/'
+# google_analytics: 'UA-XXXXXXXX-X'
 
 # Details for the RSS feed generator
 url:            'iluxonchik.github.io'
