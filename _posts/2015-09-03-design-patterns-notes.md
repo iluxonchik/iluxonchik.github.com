@@ -3,6 +3,7 @@ layout: post
 title:  "Design Patterns Notes - An Overview Of Design Patterns"
 date:   2015-09-03 18:00:00
 categories: design patterns
+excerpt: A collection of notes on some of the most common design patterns.
 ---
 [SingletonUML]: http://zenit.senecac.on.ca/wiki/imgs/Singleton_UML.png "Singleton UML"
 [CommandUML]:http://www.dofactory.com/images/diagrams/net/command.gif "Command UML"
