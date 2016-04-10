@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  "Design Patterns Notes - An Overview Of Design Patterns"
-date:   2015-09-03 18:00:00
-categories: design patterns
-excerpt: A collection of notes on some of the most common design patterns.
+description: "A collection of notes on some of the most common design patterns."
+tags: [design patterns, object oriented]
 ---
 [SingletonUML]: http://zenit.senecac.on.ca/wiki/imgs/Singleton_UML.png "Singleton UML"
 [CommandUML]:http://www.dofactory.com/images/diagrams/net/command.gif "Command UML"
@@ -38,7 +37,7 @@ to further explore each pattern covered here, since this post's goal is to simpl
 give you an overview of them. I've included some additional sources at the end of
 the post.
 
-I've written this because mainly it's not always easy to understand what a pattern
+I've written this mainly because it's not always easy to understand what a pattern
 is about in its essence, since many of the explanations out there are either
 domain-specific or include examples that are somewhat complex. In my opinion, it's
 a lot easier to to undestand them once you have a general idea of what the pattern
@@ -74,7 +73,7 @@ Below is an example implementation in Java. This version uses **lazy initializat
 (the instance of the class isn't created until it's first requested via the
 **getInstance()** method).
 
-```java
+{% highlight java %}
 public class Singleton {
   static Singleton instance = null;
   Singleton() { }
@@ -86,7 +85,7 @@ public class Singleton {
     return instance;
   }
 }
-```
+{% endhighlight %}
 
 ## Command ##
 ![Command UML][CommandUML]
@@ -114,183 +113,185 @@ requests, and support undoable operations.
   done by the receiever, and that's what happens in the **execute()** method,
   receiver's methods get called.
 
-  ### Example ###
-  Let's say you have a remote control that controls the volume and the on/off state
-  of your awesome sound system. For simplicity, let's assume that your remote
-  control is actually a single button, which you can reprogram to do different actions
-  (like voulume up, volume donw, on and off).
+### Example
 
-  <center>![Button][Button]</center>
+Let's say you have a remote control that controls the volume and the on/off state
+of your awesome sound system. For simplicity, let's assume that your remote
+control is actually a single button, which you can reprogram to do different actions
+(like voulume up, volume donw, on and off).
 
-  The first thing to do is to create the **Command** interface, which in this
-  version, will contain the minimum (i.e. only the **execute()** method).
+<center><img src="http://www.willyoupressthebutton.com/images/mygtukas.png"></center>
 
-  Next step will be to create four command classes (TurnOnCommand, TurnOffCommand,
-  VolumeUpCommand and VolumeDownCommand). Each of those classes will have a
-  reference to the **receiver** (in this case, the sound system), the **execute()**
-  method and a constructor.
+The first thing to do is to create the **Command** interface, which in this
+version, will contain the minimum (i.e. only the **execute()** method).
 
-  Now, just to demonstrate how the Command Pattern will be used, there will also
-  be a button, which will have a referece to the command, a method to activate the
-  command (**press()**) and a **setCommand()** method, so that different commands
-  can be assigned to the same button.
+Next step will be to create four command classes (TurnOnCommand, TurnOffCommand,
+VolumeUpCommand and VolumeDownCommand). Each of those classes will have a
+reference to the **receiver** (in this case, the sound system), the **execute()**
+method and a constructor.
 
-  ```java
-  public class SoundSystem {
-    int soundLevel;
-    int state; // 0:off 1:on
+Now, just to demonstrate how the Command Pattern will be used, there will also
+be a button, which will have a referece to the command, a method to activate the
+command (**press()**) and a **setCommand()** method, so that different commands
+can be assigned to the same button.
 
-    public SoundSystem() {
-      soundLevel = 0;
-      state = 0;
-    }
+{% highlight java %}
+public class SoundSystem {
+  int soundLevel;
+  int state; // 0:off 1:on
 
-    public void volumeUp() {
-      soundLevel++;
-      System.out.println("Sound is at " + soundLevel);
-    }
-
-    public void volumeDown() {
-      soundLevel--;
-      System.out.println("Sound is at " + soundLevel);
-    }
-
-    public void turnOn() {
-      state = 1;
-      System.out.println("ON!");
-    }
-
-    public void turnOff() {
-      state = 0;
-      System.out.println("OFF!");
-    }
+  public SoundSystem() {
+    soundLevel = 0;
+    state = 0;
   }
-  ```
 
-  ```java
-  public interface Command {
-    public void execute();
+  public void volumeUp() {
+    soundLevel++;
+    System.out.println("Sound is at " + soundLevel);
   }
-  ```
 
-  ```java
-  public class TurnOnCommand implements Command {
-    SoundSystem receiver;
-
-    public TurnOnCommand(SoundSystem soundSystem) {
-      receiver = soundSystem;
-    }
-
-    public void execute() {
-      receiver.turnOn();
-    }
+  public void volumeDown() {
+    soundLevel--;
+    System.out.println("Sound is at " + soundLevel);
   }
-  ```
 
-  ```java
-  public class TurnOffCommand implements Command {
-    SoundSystem receiver;
-
-    public TurnOffCommand(SoundSystem soundSystem) {
-      receiver = soundSystem;
-    }
-
-    public void execute() {
-      receiver.turnOff();
-    }
+  public void turnOn() {
+    state = 1;
+    System.out.println("ON!");
   }
-  ```
 
-  ```java
-  public class VolumeUpCommand implements Command {
-    SoundSystem receiver;
-
-    public VolumeUpCommand(SoundSystem soundSystem) {
-      receiver = soundSystem;
-    }
-
-    public void execute() {
-      receiver.volumeUp();
-    }
+  public void turnOff() {
+    state = 0;
+    System.out.println("OFF!");
   }
-  ```
+}
+{% endhighlight %}
 
-  ```java
-  public class VolumeDownCommand implements Command {
-    SoundSystem receiver;
+{% highlight java %}
+public interface Command {
+  public void execute();
+}
+{% endhighlight %}
 
-    public VolumeDownCommand(SoundSystem soundSystem) {
-      receiver = soundSystem;
-    }
+{% highlight java %}
+public class TurnOnCommand implements Command {
+  SoundSystem receiver;
 
-    public void execute() {
-      receiver.volumeDown();
-    }
+  public TurnOnCommand(SoundSystem soundSystem) {
+    receiver = soundSystem;
   }
-  ```
 
-  ```java
-  public class Button {
-    Command activeCommand;
-
-    public Button() { }
-
-    public void setCommand(Command command) {
-      activeCommand = command;
-    }
-
-    public void press() {
-      activeCommand.execute();
-    }
+  public void execute() {
+    receiver.turnOn();
   }
-  ```
-  And just to show an example of usage, consider the main class below.
+}
+{% endhighlight %}
 
-  ```java
-  public class ButtonTest {
-    public static void main(String[] args) {
-      SoundSystem soundSystem = new SoundSystem();
-      Button button = new Button();
+{% highlight java %}
+public class TurnOffCommand implements Command {
+  SoundSystem receiver;
 
-      // Create some commands
-      Command turnOnCommand = new TurnOnCommand(soundSystem);
-      Command turnOffCommand = new TurnOffCommand(soundSystem);
-      Command volumeUpCommand = new VolumeUpCommand(soundSystem);
-      Command volumeDownCommand = new VolumeDownCommand(soundSystem);
-
-      // Assign an action to the button
-      button.setCommand(turnOnCommand);
-      button.press();
-
-      // Change the button's action
-      button.setCommand(volumeUpCommand);
-      button.press();
-      button.press();
-      button.press();
-
-      button.setCommand(volumeDownCommand);
-      button.press();
-
-      // Turn off after usage to save electric energy!
-      button.setCommand(turnOffCommand);
-      button.press();
-    }
+  public TurnOffCommand(SoundSystem soundSystem) {
+    receiver = soundSystem;
   }
-  ```
-  Which produces the following output:
 
-  ```
+  public void execute() {
+    receiver.turnOff();
+  }
+}
+{% endhighlight %}
+
+{% highlight java %}
+public class VolumeUpCommand implements Command {
+  SoundSystem receiver;
+
+  public VolumeUpCommand(SoundSystem soundSystem) {
+    receiver = soundSystem;
+  }
+
+  public void execute() {
+    receiver.volumeUp();
+  }
+}
+{% endhighlight %}
+
+{% highlight java %}
+public class VolumeDownCommand implements Command {
+  SoundSystem receiver;
+
+  public VolumeDownCommand(SoundSystem soundSystem) {
+    receiver = soundSystem;
+  }
+
+  public void execute() {
+    receiver.volumeDown();
+  }
+}
+{% endhighlight %}
+
+{% highlight java %}
+public class Button {
+  Command activeCommand;
+
+  public Button() { }
+
+  public void setCommand(Command command) {
+    activeCommand = command;
+  }
+
+  public void press() {
+    activeCommand.execute();
+  }
+}
+{% endhighlight %}
+And just to show an example of usage, consider the main class below.
+
+{% highlight java %}
+public class ButtonTest {
+  public static void main(String[] args) {
+    SoundSystem soundSystem = new SoundSystem();
+    Button button = new Button();
+
+    // Create some commands
+    Command turnOnCommand = new TurnOnCommand(soundSystem);
+    Command turnOffCommand = new TurnOffCommand(soundSystem);
+    Command volumeUpCommand = new VolumeUpCommand(soundSystem);
+    Command volumeDownCommand = new VolumeDownCommand(soundSystem);
+
+    // Assign an action to the button
+    button.setCommand(turnOnCommand);
+    button.press();
+
+    // Change the button's action
+    button.setCommand(volumeUpCommand);
+    button.press();
+    button.press();
+    button.press();
+
+    button.setCommand(volumeDownCommand);
+    button.press();
+
+    // Turn off after usage to save electric energy!
+    button.setCommand(turnOffCommand);
+    button.press();
+  }
+}
+{% endhighlight %}
+Which produces the following output:
+
+  {% raw %}
   ON!
   Sound is at 1
   Sound is at 2
   Sound is at 3
   Sound is at 2
   OFF!
-  ```
-  Note that the command invoker doesn't know what the command is doing or how it's,
-  doing it, all it knows is that it has an **execute()** method. Also note that
-  the **execute()** is doing very little himself, the main work is done my the
-  receiver through some method.
+  {% endraw %}
+
+Note that the command invoker doesn't know what the command is doing or how it's,
+doing it, all it knows is that it has an **execute()** method. Also note that
+the **execute()** is doing very little himself, the main work is done my the
+receiver through some method.
 
 ### Implementing the "Undo" Operation ###
 
@@ -299,7 +300,7 @@ For example, what would the **undo** be for the **VolumeUpCommand**? Well,
 if that command increases the volume by 1, then the **undo** would decrease it
 by one. So the **VolumeUpCommand** would now look something like this:
 
-```java
+{% highlight java %}
 public class VolumeUpCommand implements Command {
   SoundSystem receiver;
 
@@ -315,17 +316,17 @@ public class VolumeUpCommand implements Command {
     receiver.volumeDown();
   }
 }
-```
+{% endhighlight %}
 
 Besides that, the **undo()** method would also have to be added to the **Command**
 interface:
 
-```java
+{% highlight java %}
 public interface Command {
   public void execute();
   public void undo();
 }
-```
+{% endhighlight %}
 
 You could also store all of the commands in a list, for example, and that
 would allow you to go through that list, calling **undo()** on every command
@@ -386,7 +387,7 @@ in a **LinkedList**.
 
 Below is a possible solution using the **Iterartor** Pattern.
 
-```java
+{% highlight java %}
 public class Song {
   String name;
   String artist;
@@ -399,9 +400,9 @@ public class Song {
   public String getName() { return name; }
   public String getArtist() { return artist; }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 import java.util.LinkedList;
 
 public class EastCoastMusic {
@@ -424,9 +425,9 @@ public class EastCoastMusic {
     return new LinkedListIterator(eastCoastSongs);
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 import java.util.Hashtable;
 
 public class WestCoastMusic {
@@ -452,16 +453,16 @@ public class WestCoastMusic {
     return new HashTableIterator(westCoastSongs);
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public interface Iterator {
   public boolean hasNext();
   public Object next();
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 import java.util.LinkedList;
 
 public class LinkedListIterator implements Iterator {
@@ -481,9 +482,9 @@ public class LinkedListIterator implements Iterator {
   }
 }
 
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 import java.util.Hashtable;
 
 public class HashTableIterator implements Iterator {
@@ -506,9 +507,9 @@ public class HashTableIterator implements Iterator {
 
 
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Main {
   public static void main(String args[]) {
 
@@ -531,24 +532,24 @@ public class Main {
     }
   }
 }
-```
+{% endhighlight %}
 
 The application above produces the following output:
 
-```
-Name: Still Dre Artist: Dr.Dre
+    {% raw %}
+    Name: Still Dre Artist: Dr.Dre
 
-Name: Let's Ride Artist: The Game
+    Name: Let's Ride Artist: The Game
 
-Name: What's My Name? Artist: Snoop Dogg
+    Name: What's My Name? Artist: Snoop Dogg
 
-Name: Nas Is Coming Artist: NAS
+    Name: Nas Is Coming Artist: NAS
 
-Name: What Up Gangsta Artist: 50 Cent
+    Name: What Up Gangsta Artist: 50 Cent
 
-Name: Warrior Artist: Lloyd Banks
+    Name: Warrior Artist: Lloyd Banks
 
-```
+    {% endraw %}
 
 Note how by using the **Iterator** pattern we decoupled our application
 (in this case just the **Main** class) from the underlying implementation
@@ -595,7 +596,7 @@ SheepComponents.
 
 Below is a possible solution to the problem:
 
-```java
+{% highlight java %}
 public abstract class SheepComponent {
 
   public void add(SheepComponent sheepComponent) {
@@ -618,9 +619,9 @@ public abstract class SheepComponent {
     throw new UnsupportedOperationException();
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Sheep extends SheepComponent {
   String name;
 
@@ -636,9 +637,9 @@ public class Sheep extends SheepComponent {
   }
 }
 
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 import java.util.ArrayList;
 
 public class SheepGroup extends SheepComponent {
@@ -682,9 +683,9 @@ public class SheepGroup extends SheepComponent {
 
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Main {
 
   public static void main(String agrs[]) {
@@ -713,43 +714,43 @@ public class Main {
     sg2.sheer();
   }
 }
-```
+{% endhighlight %}
 
 The output of the application above is:
 
- ```
- Sheering Sheep 1...
+     {% raw %}
+     Sheering Sheep 1...
 
- Group Name: Sheep Group 1
- ---
+     Group Name: Sheep Group 1
+     ---
 
- Sheering Sheep 2...
+     Sheering Sheep 2...
 
- Sheering Sheep 3...
+     Sheering Sheep 3...
 
- Sheering Sheep 4...
+     Sheering Sheep 4...
 
- Sheering Sheep 5...
+     Sheering Sheep 5...
 
- Group Name: SheepGroup 2
- ---
+     Group Name: SheepGroup 2
+     ---
 
- Sheering Sheep 1...
+     Sheering Sheep 1...
 
- Group Name: Sheep Group 1
- ---
+     Group Name: Sheep Group 1
+     ---
 
- Sheering Sheep 2...
+     Sheering Sheep 2...
 
- Sheering Sheep 3...
+     Sheering Sheep 3...
 
- Sheering Sheep 4...
+     Sheering Sheep 4...
 
- Sheering Sheep 5...
+     Sheering Sheep 5...
 
- Sheering Sheep 6...
+     Sheering Sheep 6...
 
- ```
+     {% endraw %}
 
 ## Visitor ##
 
@@ -794,32 +795,32 @@ method to your **Visitable** interface (use method overloading).
 Let's say you have a store and your store sells three products: drinks, food and
 gadgets. Each of those three objects has a price. Here is how your code looks now:
 
-```java
+{% highlight java %}
 public class Drink {
   double price;
 
   public Drink(double price) { this.price = price; }
   public double getPrice() { return price; }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Gadget {
   double price;
 
   public Gadget(double price) { this.price = price; }
   public double getPrice() { return price; }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Food {
   double price;
 
   public Food(double price) { this.price = price; }
   public double getPrice() { return price; }
 }
-```
+{% endhighlight %}
 
 (Okay, a better choice would be to add an abstract class from which those methods
 derive, but I want to enforce the idea that **the classes don't have to be related
@@ -834,21 +835,21 @@ an object of type **Visitor** as an argument. The **Food**, **Drink** and **Gadg
 classes will implement the **Visitable** interface. Now your code will look
 something like this:
 
-```java
+{% highlight java %}
 public interface Visitable {
   public double accept(Visitor visitor);
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public interface Visitor {
   public double visit(Drink drink);
   public double visit(Food food);
   public double visit(Gadget gadget);
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class NormalTaxVisitor implements Visitor {
   final double TAX_VALUE  = 0.21;
 
@@ -863,9 +864,9 @@ public class NormalTaxVisitor implements Visitor {
     return gadget.getPrice() * TAX_VALUE + gadget.getPrice();
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Drink implements Visitable {
 
   double price;
@@ -875,9 +876,9 @@ public class Drink implements Visitable {
 
   public double accept(Visitor visitor) { return visitor.visit(this); }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Food implements Visitable {
 
   double price;
@@ -888,9 +889,9 @@ public class Food implements Visitable {
   public double accept(Visitor visitor) { return visitor.visit(this); }
 
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Gadget implements Visitable {
 
   double price;
@@ -901,7 +902,7 @@ public class Gadget implements Visitable {
   public double accept(Visitor visitor) { return visitor.visit(this); }
 
 }
-```
+{% endhighlight %}
 Now you are asked to add yet another type of tax: a holiday tax. It's basically
 the same as the previous one, except the tax value is now 18% and you always
 subtract two cents (0.02) from the value after tax (here we'll ignore that you
@@ -910,7 +911,7 @@ can get negative or zero values). Well, that's simple, just create a new class
 methods with the requested functionality. Your new class will look something like
 this:
 
-```java
+{% highlight java %}
 public class HolidayTaxVisitor implements Visitor {
   final double TAX_VALUE  = 0.18;
   final double DISCOUNT  = 0.02;
@@ -926,11 +927,11 @@ public class HolidayTaxVisitor implements Visitor {
     return gadget.getPrice() * TAX_VALUE + gadget.getPrice() - DISCOUNT;
   }
 }
-```
+{% endhighlight %}
 
 And now an example application:
 
-```java
+{% highlight java %}
 public class Main {
   public static void main(String[] args) {
     Drink d = new Drink(1.50);
@@ -959,24 +960,24 @@ public class Main {
     g.accept(htv) + "\n");
   }
 }
-```
+{% endhighlight %}
 
 The output of the Main class above is the following:
 
-```
-Drink price after normal tax: 1.815
+    {% raw %}
+    Drink price after normal tax: 1.815
 
-Drink price after holiday tax: 1.75
+    Drink price after holiday tax: 1.75
 
-Food price after normal tax: 3.3275
+    Food price after normal tax: 3.3275
 
-Food price after holiday tax: 3.225
+    Food price after holiday tax: 3.225
 
-Gadget price after normal tax: 8.7725
+    Gadget price after normal tax: 8.7725
 
-Gadget price after holiday tax: 8.535
+    Gadget price after holiday tax: 8.535
 
-```
+    {% endraw %}
 
 Now what if you wanted a different group of operations, not related in any
 way to tax calculation? Let's say you wanted to be able to print out the name of
@@ -985,29 +986,29 @@ create a new visitor interface, for example **NameVisitor**, create a concrete
 instance, which implements that interface, for example **NormalNameVisitor**
 and add a new **accept()** method to the **Visitable** interface.
 
-```java
+{% highlight java %}
 public interface NameVisitor {
   public String visit(Drink drink);
   public String visit(Food food);
   public String visit(Gadget gadget);
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class NormalNameVisitor implements NameVisitor {
   public String visit(Drink drink) { return "Drink"; }
   public String visit(Food food) { return "Food"; }
   public String visit(Gadget gadget) { return "Gadget"; }
 }
 
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public interface Visitable {
   public double accept(Visitor visitor);
   public String accept(NameVisitor visitor);
 }
-```
+{% endhighlight %}
 
 ## Factory Method ##
 
@@ -1040,7 +1041,7 @@ as an argument and to create an orange you use the "Orange" string.
 
 Below is a possible solution:
 
-```java
+{% highlight java %}
 public abstract class Fruit {
   final String type;
 
@@ -1048,21 +1049,21 @@ public abstract class Fruit {
 
   public String getType() { return type; }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Apple extends Fruit {
   public Apple() { super("Apple"); }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Orange extends Fruit {
   public Orange() { super("Orange"); }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class FruitFactory {
   public Fruit makeFruit(String type) {
     Fruit fruit = null;
@@ -1076,9 +1077,9 @@ public class FruitFactory {
     return fruit;
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Main {
   public static void main(String[] args) {
     Fruit fruit;
@@ -1091,15 +1092,16 @@ public class Main {
     System.out.println("The fruit is an " + fruit.getType() + ".");
   }
 }
-```
+{% endhighlight %}
 
 The Main class above produces the following output:
 
-```
-The fruit is an Apple.
-The fruit is an Orange.
-```
-## Strategy ##
+    {% raw %}
+    The fruit is an Apple.
+    The fruit is an Orange.
+    {% endraw %}
+
+## Strategy
 
 ![StrategyUML][StrategyUML]
 
@@ -1116,7 +1118,7 @@ Another use case for it is when you have many variants of an algorithm.
 
 Let's say you have the class structure below:
 
-```java
+{% highlight java %}
 public abstract class Animal {
   String name;
   String sound;
@@ -1128,19 +1130,19 @@ public abstract class Animal {
 
   public void makeSound() {System.out.println(name + " says: " + sound + ".\n");}
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Dog extends Animal {
   public Dog(String name) { super(name, "Ruff Ruff"); }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Cat extends Animal {
   public Cat(String name) { super(name, "Meow"); }
 }
-```
+{% endhighlight %}
 
 Now you are asked to create a **Bird** class, which is also a subclass of the
 Animal class. The thing about the Bird class, is that it needs to be able to fly.
@@ -1183,25 +1185,25 @@ We'll also have to add a new varibale to the **Animal** class of type **Fly**.
 Anyways, here is a possible soluition using the **Strategy** pattern, with
 an example of a client application that uses it:
 
-```java
+{% highlight java %}
 public interface Fly {
   public String fly();
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class CanFly implements Fly {
   public String fly() { return "Flying!";}
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class CantFly implements Fly {
   public String fly() { return "Can't fly!"; }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public abstract class Animal implements Fly {
   String name;
   String sound;
@@ -1223,36 +1225,36 @@ public abstract class Animal implements Fly {
     this.flyBehaviour = flyBehaviour;
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Dog extends Animal {
   public Dog(String name) {
     super(name, "Ruff Ruff");
     flyBehaviour = new CantFly();
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Cat extends Animal {
   public Cat(String name) {
     super(name, "Meow");
     flyBehaviour =  new CantFly();
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Bird extends Animal {
   public Bird(String name) {
     super(name, "Tweet");
     flyBehaviour =  new CanFly();
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Main {
   public static void main(String[] args) {
     Animal cat = new Cat("Mittens");
@@ -1268,21 +1270,21 @@ public class Main {
     System.out.println(dog.fly());
   }
 }
-```
+{% endhighlight %}
 
 The main class produces the following output:
 
-```
-Mittens: Can't fly!
+    {% raw %}
+    Mittens: Can't fly!
 
-Rufus: Can't fly!
+    Rufus: Can't fly!
 
-Tweetie: Flying!
+    Tweetie: Flying!
 
-Rufus: Flying!
-```
+    Rufus: Flying!
+    {% endraw %}
 
-## State ##
+## State
 
 ![StateUML][StateUML]
 
@@ -1303,7 +1305,7 @@ it usually requires a large amount of extra classes to be created.
 Each state has a reference to the object whose state it represents and is able
 to change it dynamically (usually through a setter method).
 
-## Example ##
+## Example
 
 Too keep it simple, consider the following problem:
 You have an automatic door with two buttons: **open** and **close**.
@@ -1334,7 +1336,7 @@ state which will be instantiated when a new **Door** object is created.
 
 Below is a possible solution to the problem.
 
-```java
+{% highlight java %}
 public abstract class DoorState {
   Door door;
   public abstract void open();
@@ -1342,9 +1344,9 @@ public abstract class DoorState {
 
   public DoorState(Door door) { this.door = door; }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class DoorOpenState extends DoorState {
   public DoorOpenState(Door door) { super(door); }
 
@@ -1354,9 +1356,9 @@ public class DoorOpenState extends DoorState {
     door.setState(door.DOOR_CLOSED_STATE);
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class DoorClosedState extends DoorState {
   public DoorClosedState(Door door) { super(door); }
 
@@ -1367,9 +1369,9 @@ public class DoorClosedState extends DoorState {
   }
   public void close() { System.out.println("Door is already closed!\n"); }  
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Door {
   public final DoorState DOOR_OPEN_STATE = new DoorOpenState(this);
   public final DoorState DOOR_CLOSED_STATE =  new DoorClosedState(this);
@@ -1387,10 +1389,10 @@ public class Door {
 
   public void setState(DoorState newState) { state = newState; }
 }
-```
+{% endhighlight %}
 
 
-```java
+{% highlight java %}
 public class Main {
 
   public static void main(String[] args) {
@@ -1401,17 +1403,17 @@ public class Main {
     door.close();
   }
 }
-```
+{% endhighlight %}
 
 The output of the application above is:
 
-```
-Opening door... New state: DoorOpen.
+    {% raw %}
+    Opening door... New state: DoorOpen.
 
-Closing door... New state: DoorClosedState.
+    Closing door... New state: DoorClosedState.
 
-Door is already closed!
-```
+    Door is already closed!
+    {% endraw %}
 
 ## Abstract Factory ##
 
@@ -1481,7 +1483,7 @@ the specific engine and gun will be "given" to it.
 
 Below is a possible solution to the problem:
 
-```java
+{% highlight java %}
 public abstract class Fruit {
   final String type;
 
@@ -1489,9 +1491,9 @@ public abstract class Fruit {
 
   public String getType() { return type; }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public abstract class AdvancedFruit extends Fruit {
   Engine engine;
   Gun gun;
@@ -1503,9 +1505,9 @@ public abstract class AdvancedFruit extends Fruit {
 
   public abstract void makeFruit();
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class AdvancedApple extends AdvancedFruit {
   AdvancedFruitFactory aff;
 
@@ -1521,9 +1523,9 @@ public class AdvancedApple extends AdvancedFruit {
     gun = aff.maneGun();
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class AdvancedOrange extends AdvancedFruit {
   AdvancedFruitFactory aff;
 
@@ -1539,9 +1541,9 @@ public class AdvancedOrange extends AdvancedFruit {
     gun = aff.maneGun();
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public abstract class AdvancedFruitBuilding {
 
   // Hey, that's the Factory Method! Except now it "protected" and not "public"
@@ -1557,9 +1559,9 @@ public abstract class AdvancedFruitBuilding {
     return af;
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class NaturalAdvancedFruitBuilding extends AdvancedFruitBuilding {
   /* A Specific Builder */
 
@@ -1581,75 +1583,75 @@ public class NaturalAdvancedFruitBuilding extends AdvancedFruitBuilding {
     return af;
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public interface AdvancedFruitFactory {
   /* The abstract factory interface */
   public Engine makeEngine();
   public Gun maneGun();
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class AdvancedAppleFactory implements AdvancedFruitFactory {
   /* A specific factory that produces engines and guns for adv. apples */
   public Engine makeEngine() { return new V16Engine(); }
   public Gun maneGun() { return new BlueGun(); }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class AdvancedOrangeFactory implements AdvancedFruitFactory {
   /* A specific factory that produces engines and guns for adv. oranges */
   public Engine makeEngine() { return new V8Engine(); }
   public Gun maneGun() { return new RedGun(); }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public interface Engine {
 
   public String toString();
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public interface Gun {
 
   public String toString();
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class V16Engine implements Engine {
 
   public String toString() { return "V16 Engine"; }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class V8Engine implements Engine {
 
   public String toString() { return "V8 Engine"; }
 }
 
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class BlueGun implements Gun {
 
   public String toString() { return "Blue Gun"; }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class RedGun implements Gun {
   public String toString() { return "Red Gun"; }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Main {
   public static void main(String[] args) {
     AdvancedFruitBuilding afb = new NaturalAdvancedFruitBuilding();
@@ -1661,15 +1663,15 @@ public class Main {
     orange.printInfo();
   }
 }
-```
+{% endhighlight %}
 
 The output of the **Main** class is as follows:
 
-```
-Name: Generic AdvancedApple Gun: Blue Gun Engine: V16 Engine
+    {% raw %}
+    Name: Generic AdvancedApple Gun: Blue Gun Engine: V16 Engine
 
-Name: Generic AdvancedOrange Gun: Red Gun Engine: V8 Engine
-```
+    Name: Generic AdvancedOrange Gun: Red Gun Engine: V8 Engine
+    {% endraw %}
 
 ## Template Method ##
 
@@ -1720,7 +1722,7 @@ All of the cars **must have** a chassis, a body and windows.
 
 A possible solution using the **Template Method** can be found right below:
 
-```java
+{% highlight java %}
 public abstract class Car {
 
   // The template method is final, so that the
@@ -1774,9 +1776,9 @@ public abstract class Car {
   public abstract boolean carNeedsRadio();
 
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class SportsCar extends Car {
   public void addWheels() {
     System.out.println("Adding sports wheels...\n");
@@ -1790,9 +1792,9 @@ public class SportsCar extends Car {
     return false;
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class CityCar extends Car {
   public void addWheels() {
     System.out.println("Adding regular wheels...\n");
@@ -1806,9 +1808,9 @@ public class CityCar extends Car {
     return true;
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Main {
   public static void main(String[] args) {
     Car sc = new SportsCar();
@@ -1824,43 +1826,44 @@ public class Main {
 
   }
 }
-```
+{% endhighlight %}
 
 The output of the client application is:
 
-```
-Sports Car Production Begin!
----
+    {% raw %}
+    Sports Car Production Begin!
+    ---
 
-Adding chassis...
+    Adding chassis...
 
-Adding body...
+    Adding body...
 
-Adding sports wheels...
+    Adding sports wheels...
 
-Adding windows...
+    Adding windows...
 
-Sports Car Production End!
----
+    Sports Car Production End!
+    ---
 
-Sports Car Production Begin!
----
+    Sports Car Production Begin!
+    ---
 
-Adding chassis...
+    Adding chassis...
 
-Adding body...
+    Adding body...
 
-Adding regular wheels...
+    Adding regular wheels...
 
-Adding windows...
+    Adding windows...
 
-Adding A/C...
+    Adding A/C...
 
-Adding radio...
+    Adding radio...
 
-City Car Production End!
----
-```
+    City Car Production End!
+    ---
+    {% endraw %}
+
 * The template method is declared **final** because we don't want the subclasses
 to be changing the algorithm.
 * Have some "hooks" that return booleans, to decide whether we should run a
@@ -1895,21 +1898,21 @@ resourse-friendly solution.
 
 Below is a possible solution to the problem:
 
-```java
+{% highlight java %}
 public interface Subject {
   public void registerObserver(Observer o);
   public void unregisterObserver(Observer o);
   public void notifyObservers();
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public interface Observer {
   public void update(String status, String contentLiked);
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 /* This is the user to whom users "subscribe" */
 import java.util.ArrayList;
 
@@ -1955,9 +1958,9 @@ public class FacebookUserSubject implements Subject {
     notifyObservers();
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 /* This is an Observer. It "subscirbes" to FacebookUserSubjects */
 
 public class Subscriber implements Observer {
@@ -1977,9 +1980,9 @@ public class Subscriber implements Observer {
     System.out.println("Status: " + status + "|**| Last Liked: " + lastContentLiked + "\n");
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Main {
   public static void main(String[] args) {
     FacebookUserSubject facebookUser = new FacebookUserSubject();
@@ -2010,35 +2013,35 @@ public class Main {
     facebookUser.setLastLiked("FifthLike");
   }
 }
-```
+{% endhighlight %}
 
 The output of the application is as follows:
 
-```
-Status: Second status update!|**| Last Liked: FistLike
+    {% raw %}
+    Status: Second status update!|**| Last Liked: FistLike
 
-Status: Second status update!|**| Last Liked: SecondLike
+    Status: Second status update!|**| Last Liked: SecondLike
 
-Status: Third status update!|**| Last Liked: SecondLike
+    Status: Third status update!|**| Last Liked: SecondLike
 
-Status: Third status update!|**| Last Liked: SecondLike
+    Status: Third status update!|**| Last Liked: SecondLike
 
-Status: Third status update!|**| Last Liked: SecondLike
+    Status: Third status update!|**| Last Liked: SecondLike
 
-Status: Third status update!|**| Last Liked: ThirdLike
+    Status: Third status update!|**| Last Liked: ThirdLike
 
-Status: Third status update!|**| Last Liked: ThirdLike
+    Status: Third status update!|**| Last Liked: ThirdLike
 
-Status: Third status update!|**| Last Liked: ThirdLike
+    Status: Third status update!|**| Last Liked: ThirdLike
 
-Status: Forth status update!|**| Last Liked: ThirdLike
+    Status: Forth status update!|**| Last Liked: ThirdLike
 
-Status: Forth status update!|**| Last Liked: ThirdLike
+    Status: Forth status update!|**| Last Liked: ThirdLike
 
-Status: Forth status update!|**| Last Liked: ForthLike
+    Status: Forth status update!|**| Last Liked: ForthLike
 
-Status: Forth status update!|**| Last Liked: ForthLike
-```
+    Status: Forth status update!|**| Last Liked: ForthLike
+    {% endraw %}
 
 ## Decorator ##
 
@@ -2083,24 +2086,24 @@ of the object that that group of decorators will be decorating.
 
 Here is a possible way to solve this exercise:
 
-```java
+{% highlight java %}
 public interface Car {
 
   public String getDescription();
   public int getPrice();
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class BasicCar implements Car {
 
   public String getDescription() { return "Basic Car Model"; }
 
   public int getPrice() { return 100000; }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public abstract class CarDecorator implements Car {
 
   protected Car car; // referrence to the car that is being decorated
@@ -2108,9 +2111,9 @@ public abstract class CarDecorator implements Car {
   public CarDecorator(Car car) { this.car = car; }
 
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class BodyKit extends CarDecorator {
 
   public BodyKit(Car car) { super(car); }
@@ -2120,9 +2123,9 @@ public class BodyKit extends CarDecorator {
 
     public int getPrice() { return car.getPrice() + 15000; }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class AC extends CarDecorator {
 
   public AC(Car car) { super(car); }
@@ -2132,9 +2135,9 @@ public class AC extends CarDecorator {
 
     public int getPrice() { return car.getPrice() + 5000; }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Spoiler extends CarDecorator {
 
   public Spoiler(Car car) { super(car); }
@@ -2144,9 +2147,9 @@ public class Spoiler extends CarDecorator {
 
     public int getPrice() { return car.getPrice() + 3000; }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Main {
 
   public static void main(String[] args) {
@@ -2168,16 +2171,16 @@ public class Main {
 
   }
 }
-```
+{% endhighlight %}
 
 The application outputs:
 
-```
-Basic Car Model |**| Price : 100000
-Basic Car Model + Body Kit |**| Price : 115000
-Basic Car Model + Body Kit + A/C |**| Price : 120000
-Basic Car Model + Body Kit + A/C + Spoiler |**| Price : 123000
-```
+    {% raw %}
+    Basic Car Model |**| Price : 100000
+    Basic Car Model + Body Kit |**| Price : 115000
+    Basic Car Model + Body Kit + A/C |**| Price : 120000
+    Basic Car Model + Body Kit + A/C + Spoiler |**| Price : 123000
+    {% endraw %}
 
 Note, that on second and third "decorations" you are actually passing a
 **CarDecorator** and not a **BasicCar** object, so when you call
@@ -2233,22 +2236,22 @@ implement the same interface as the **Duck** class is using.
 
 Below is a possible solution using the pattern:
 
-```java
+{% highlight java %}
 public interface Duck {
   public void quack();
   public void fly();
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public interface Turkey {
   public void gobble();
   public void fly();
 
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class MallardDuck implements Duck {
   public void quack() {
     System.out.println("Quack!");
@@ -2258,9 +2261,9 @@ public class MallardDuck implements Duck {
     System.out.println("Flying!");
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class WildTurkey implements Turkey {
   public void gobble() {
     System.out.println("Gobble!");
@@ -2270,9 +2273,9 @@ public class WildTurkey implements Turkey {
     System.out.println("Flying a short distance.");
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class TurkeyAdapter implements Duck {
   Turkey turkey;
 
@@ -2288,9 +2291,9 @@ public class TurkeyAdapter implements Duck {
     }
   }
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Main {
   public static void main(String[] args) {
     Duck md = new MallardDuck();
@@ -2309,27 +2312,27 @@ public class Main {
     System.out.println("---\n");
   }
 }
-```
+{% endhighlight %}
 
 The application outputs the following:
 
-```
-Duck
----
-Flying!
-Flying!
----
+    {% raw %}
+    Duck
+    ---
+    Flying!
+    Flying!
+    ---
 
-Turkey
----
-Flying a short distance.
-Flying a short distance.
-Flying a short distance.
-Flying a short distance.
-Flying a short distance.
-Gobble!
----
-```
+    Turkey
+    ---
+    Flying a short distance.
+    Flying a short distance.
+    Flying a short distance.
+    Flying a short distance.
+    Flying a short distance.
+    Gobble!
+    ---
+    {% endraw %}
 
 There are two kind of adapters: **class adapter** and **object adapter**.
 This text only covered the **object adapters**. Class adapters aren't possible
@@ -2369,7 +2372,7 @@ As an example consider that you have a home theater system installed at your pla
 Suppose it consists of a DVD player, a projector, a screen, a sound system and
 lighs. Each one of the components is defined in it's own class:
 
-```java
+{% highlight java %}
 public class DVDPlayer {
 
 	public void turnOn() {
@@ -2388,9 +2391,9 @@ public class DVDPlayer {
 		System.out.println("Stopping movie playback...");
 	}
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Projector {
 	
 	public void turnOn() {
@@ -2409,9 +2412,9 @@ public class Projector {
 		System.out.println("Projecting stopped...");
 	}
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Screen {
 	
 	public void turnOn() {
@@ -2422,9 +2425,9 @@ public class Screen {
 		System.out.println("Turning Screen Off...");
 	}
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class SoundSystem {
 	int volume;
 	
@@ -2454,9 +2457,9 @@ public class SoundSystem {
 	}
 	
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 public class Lights {
 	
 	int intensity;
@@ -2485,7 +2488,7 @@ public class Lights {
 	}
 	
 }
-```
+{% endhighlight %}
 
 Okay, now let's say you want to watch a movie. In order to do that, you have to perform a few tasks:
 
@@ -2498,7 +2501,7 @@ Okay, now let's say you want to watch a movie. In order to do that, you have to 
 
 The code to do that without using the pattern would look something like this:
 
-```java
+{% highlight java %}
     // Variables are properly initialized before
 		screen.turnOn();
 		projector.turnOn();
@@ -2506,7 +2509,7 @@ The code to do that without using the pattern would look something like this:
 		soundSystem.setVolume(5);
 		lights.setIntensity(1);
 		dvdPlayer.play();
-```
+{% endhighlight %}
 
 Here are some issues with that approach:
 
@@ -2524,7 +2527,7 @@ class which exposes a few methods such as `watchMovie()`, `stopMovie()`, `playCD
 What are going be the contents of those methods? Well, it's going to be all that complex code that was mentioned above.
 Here is a possible implementation:
 
-```java
+{% highlight java %}
 public class HomeTheaterFacade {
 	DVDPlayer dvdPlayer;
 	Lights lights;
@@ -2568,7 +2571,7 @@ public class HomeTheaterFacade {
 	// Other methods such as playCD(), ...
 	
 }
-```
+{% endhighlight %}
 
 Now to watch a movie all we have to do is call the `watchMovie()` method on the `HomeTheaterFacade` object.
 The code is now a lot simpler and if we at some point decide to change the steps in any of the methods, the
@@ -2577,7 +2580,7 @@ client implementation from any one subsystem**.
 
 Here is how the application that uses `HomeTheaterFacade` would look like:
 
-```java
+{% highlight java %}
 public class Main {
 	
 	public static void main(String[] args) {
@@ -2595,26 +2598,26 @@ public class Main {
 	}
 	
 }
-```
+{% endhighlight %}
 
 It produces the following output:
 
-```
-Get ready for the movie...
-Turning Screen On...
-Turning Projector On...
-Turning DVD On...
-Volume set to: 5
-Intensity set to: 1
-Starting movie playback...
-Ending movie playback...
-Stopping movie playback...
-Intensity set to: 5
-Volume set to: 0
-Turning DVD Off...
-Turning Projector On...
-Turning Screen Off...
-```
+    {% raw %}
+    Get ready for the movie...
+    Turning Screen On...
+    Turning Projector On...
+    Turning DVD On...
+    Volume set to: 5
+    Intensity set to: 1
+    Starting movie playback...
+    Ending movie playback...
+    Stopping movie playback...
+    Intensity set to: 5
+    Volume set to: 0
+    Turning DVD Off...
+    Turning Projector On...
+    Turning Screen Off...
+    {% endraw %}
 
 
 #### Facade vs Adapter ####

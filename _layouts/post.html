@@ -1,101 +1,65 @@
----
-layout: default
-disqus: false
-archive: false
----
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include head.html %}
+</head>
 
-<main class="content" role="main">
+<body id="post" {% if page.image.feature %}class="feature"{% endif %}>
 
-    <article class="post">
-        <header class="post-header">
-            <a id="blog-logo" href="{{ site.baseurl }}">
-                {% if site.logo %}
-                    <img src="{{site.logo}}" alt="{{ site.name }}" />
-                {% else %}
-                    <span class="blog-title">{{ site.name }}</span>
-                {%endif%} 
-            </a>
-        </header>
-        
-        <span class="post-meta">
-        	<time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-        	{% if page.categories %}
-        		on
-	        	{% for category in page.categories %}
-	        	    {{category}}
-	        	{% endfor %}
-	        {% endif %}
-       	</span>
+{% include browser-upgrade.html %}
+{% include navigation.html %}
 
-        <h1 class="post-title">{{ page.title }}</h1>
+{% if page.image.feature %}
+<div class="entry-header">
+  {% if page.image.credit %}<div class="image-credit">Image source: {% if page.image.creditlink %}<a href="{{ page.image.creditlink }}">{% endif %}{{ page.image.credit }}{% if page.image.creditlink %}</a>{% endif %}</div><!-- /.image-credit -->{% endif %}
+  <div class="entry-image">
+    <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+{% endif %}
 
-        <section class="post-content">
-            {{content}}
-        </section>
-
-        {% if page.archive %}
-        <section class="archive">
-        	<h5>Archive</h5>
-    		<ul>
-    			{% for post in site.posts %}
-    				<li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
-    			{% endfor %}	
-    		</ul>
-        </section>
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        {% if page.link %}
+          <h1 class="entry-title"><i class="fa fa-bookmark permalink"></i> <a href="{{ page.link }}">{{ page.title }}</a></h1>
+        {% else %}
+          <h1 class="entry-title"><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
         {% endif %}
+        <h2><span class="entry-date date published"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></span></h2>
+        {% if site.reading_time %}
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          {% include read-time.html %}
+        </p><!-- /.entry-reading-time -->
+        {% endif %}
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      {{ content }}
+      <footer class="entry-meta">
+        <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="tag"><span class="term">{{ tag }}</span></a>{% unless forloop.last %}{% endunless %}{% endfor %}</span>
+        {% if page.modified %}<span>Updated on <span class="entry-date date updated"><time datetime="{{ page.modified }}">{{ page.modified | date: "%B %d, %Y" }}</time></span></span>
+        <span class="author vcard"><span class="fn">{{ site.owner.name }}</span></span>{% endif %}
+        {% if page.share != false %}{% include social-share.html %}{% endif %}
+      </footer>
+    </div><!-- /.entry-content -->
+    {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
+    {% if site.related_posts.size > 0 %}{% include read-more.html %}{% endif %}
+  </article>
+</div><!-- /#main -->
 
-        <footer class="post-footer">
-        	<!-- If we want to display author's name and bio -->
-            {% if site.author %}
-                <section class="author">
-                	<header> <a href="{{ site.baseurl }}"> <img class="profile" src="/assets/images/profile.png" alt="Author's profile picture"></a></header>
-                	<article>
-                		<!-- Author Name -->
-                    	<h4> {{ site.author }} </h4>
-                    	<!-- Author Bio -->
-                    	<p> 
-                    		 <!-- Here goes the author description. You might want to place some links too in here -->
-                    	</p>
-                    </article>
-                </section>                
-            {% endif %}
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrapper -->
 
-            <section class="share">
-                <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text={{page.title}}&amp;url={{site.url}}{{ page.url }}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <span class="hidden">Twitter</span>
-                </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <span class="hidden">Facebook</span>
-                </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url={{site.url}}{{page.url}}"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <span class="hidden">Google+</span>
-                </a>
-            </section>
-            
-            {% if page.disqus %}
-            <section class="disqus">
-            	<div id="disqus_thread"></div>
-            	<script type="text/javascript">
+{% include scripts.html %}	        
 
-            	    var disqus_shortname = ''; 
-            		var disqus_developer = 0; // developer mode is on
-            	    (function() {
-            	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            	        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            	    })();
-            	</script>
-            	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            </section>
-            {% endif %}
-        	
-        </footer>
-
-    </article>
-
-</main>
+</body>
+</html>

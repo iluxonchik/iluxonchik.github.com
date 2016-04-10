@@ -1,8 +1,7 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby "2.2.4"
-
-gem "jekyll"
+gem "jekyll", "~> 3.0"
+gem "jekyll-sitemap"
+gem "octopress"
 gem "jekyll-paginate"
-gem "pygments.rb"
-gem "redcarpet"
+gem "jekyll-gist"
