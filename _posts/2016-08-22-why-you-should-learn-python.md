@@ -50,7 +50,7 @@ int main(void) {
 Now the same thing in Python:
 
 {% highlight python %}
-with open(hello.txt) as f:
+with open('hello.txt') as f:
     for line in f:
         print(line)
 
@@ -273,7 +273,7 @@ the first paragraph:
 > tree for self). name is the attribute name. This method should return 
 > the (computed) attribute value or raise an AttributeError exception.
 
-So what happens is that if you try to access an attribute that does not exit
+So what happens is that if you try to access an attribute that does not exist
 `__getattr__(self, name)` of that object will be called, with `name` being
 the name of the attribute you tried to access as a string.
 
@@ -457,3 +457,7 @@ make sure you check this out. Please note that this book contains Python 2 code,
 * [Violent Python: A Cookbook for Hackers, Forensic Analysts, Penetration Testers and Security Engineers](https://www.amazon.com/Violent-Python-Cookbook-Penetration-Engineers/dp/1597499579) - 
 more on the same topic as above, you'll learn how to write practical scripts for pentesting,
 forensic analysis and security in general.
+
+**EDIT**:
+
+* Thanks to [David Oster](https://disqus.com/by/david_oster/) for pointing out some typos
