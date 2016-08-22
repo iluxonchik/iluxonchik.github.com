@@ -186,7 +186,7 @@ Here’s how you could do it in C:</p>
 
 <p>Now the same thing in Python:</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">hello</span><span class="o">.</span><span class="n">txt</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'hello.txt'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
         <span class="k">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span></code></pre></figure>
 
@@ -415,7 +415,7 @@ tree for self). name is the attribute name. This method should return
 the (computed) attribute value or raise an AttributeError exception.</p>
 </blockquote>
 
-<p>So what happens is that if you try to access an attribute that does not exit
+<p>So what happens is that if you try to access an attribute that does not exist
 <code class="highlighter-rouge">__getattr__(self, name)</code> of that object will be called, with <code class="highlighter-rouge">name</code> being
 the name of the attribute you tried to access as a string.</p>
 
@@ -605,6 +605,12 @@ make sure you check this out. Please note that this book contains Python 2 code,
 more on the same topic as above, you’ll learn how to write practical scripts for pentesting,
 forensic analysis and security in general.</p>
   </li>
+</ul>
+
+<p><strong>EDIT</strong>:</p>
+
+<ul>
+  <li>Thanks to <a href="https://disqus.com/by/david_oster/">David Oster</a> for pointing out some typos</li>
 </ul>
 
   </div><!-- /.entry-content -->
