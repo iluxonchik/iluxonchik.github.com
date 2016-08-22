@@ -2,26 +2,506 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">G'd Up Code</title>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="//iluxonchik.github.io/feed.xml" />
-<link rel="alternate" type="text/html" href="//iluxonchik.github.io" />
-<updated>2016-04-10T17:51:05+01:00</updated>
-<id>//iluxonchik.github.io/</id>
+<link rel="self" type="application/atom+xml" href="https://iluxonchik.github.io/feed.xml" />
+<link rel="alternate" type="text/html" href="https://iluxonchik.github.io" />
+<updated>2016-08-22T13:36:45+01:00</updated>
+<id>https://iluxonchik.github.io/</id>
 <author>
   <name>iluxonchik</name>
-  <uri>//iluxonchik.github.io/</uri>
+  <uri>https://iluxonchik.github.io/</uri>
   
 </author>
 
 
 <entry>
+  <title type="html"><![CDATA[Why You Should Learn Python]]></title>
+ <link rel="alternate" type="text/html" href="https://iluxonchik.github.io/why-you-should-learn-python/" />
+  <id>https://iluxonchik.github.io/why-you-should-learn-python</id>
+  <published>2016-08-22T00:00:00+01:00</published>
+  <updated>2016-08-22T00:00:00+01:00</updated>
+  <author>
+    <name>iluxonchik</name>
+    <uri>https://iluxonchik.github.io</uri>
+    <email></email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;My first encounter with Python was a part of the introductory course to programming. Well, I actually played with it on my own before, so I already was familiar with its syntax when the course began, but I didn’t do any real project in it before that course. Even though I thought it’s a great language to introduce people to programming, I wasn’t a big fan of it. It’s not that I disliked the language, it was more of a “meh” attitude.
+The reason was simple: there was “too much magic”. Coming from  a background of languages such as C an Java, which are a lot more more explicit in terms of what’s going on under the hood, Python was the complete opposite of that.&lt;/p&gt;
+
+&lt;p&gt;Another issue was that Python seemed a lot less structured: writing large, complex programs seemed to be a tougher task to achieve than, for example in Java, where you have some strict rules
+when it comes to the structure of the program (for instance the one public class per file rule), Python on the other hand, 
+gives you a lot more freedom in such things.&lt;/p&gt;
+
+&lt;p&gt;Another thing is strict typing and debugging: since Python is an interpreted language, finding bugs
+wasn’t as easy: if you have a syntax error in C, the program will simply not compile, on the other hand, in interpreted languages, the problem might go unnoticed for quite some time, until the execution reaches that particular line of code. Trying to pass a string where an integer is
+expected? &lt;code class=&quot;highlighter-rouge&quot;&gt;cc&lt;/code&gt; will go crazy at you, while Python’s interpreter won’t mind at all (there are some tool that address that problem though, like 
+&lt;a href=&quot;http://mypy-lang.org/&quot;&gt;mypy&lt;/a&gt;, but I’m talking about vanilla Python). What I just mentioned here is a general downside of interpreted languages 
+and are not exclusive or particular to Python, but those were some of the main reasons of my initial attitude towards it.&lt;/p&gt;
+
+&lt;p&gt;One more thing that I found a little annoying is the &lt;strong&gt;required indentation&lt;/strong&gt;. Our teachers (that were great, by the way!) sold that as being a “good thing”, since 
+“it forced us to a cleaner code writing style”. And that is true, but it was a bit annoying, when your code doesn’t work as expected, you
+analyze the code trying to hunt the bug and can’t seem to find it, until after some time you notice that one of the lines in your &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; statement
+has an extra space.&lt;/p&gt;
+
+&lt;p&gt;I had a discussion with a colleague about Python, telling him how I’m not sure why I wasn’t a huge fan of the language before, he asked me with a laughing tone “What’s not to like about Python? The fact that it reads almost like English?”. The answer to that question is “yes”. Since the
+language does so many things for you under the hood, sometimes it’s not clear what’s happening. Let’s take as an example file reading. Suppose you
+want to read the contents of a file and print them out, line by line.
+Here’s how you could do it in C:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;FILE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;256&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// assuming a line won&#39;t contain more than 256 chars
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;fp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hello.txt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;r&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fgets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;256&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;pritnf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%s&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;fclose&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now the same thing in Python:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;txt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now, many people will consider that as an advantage, however, while in the first case it’s pretty clear what’s happening:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;We obtain a file pointer to a file&lt;/li&gt;
+  &lt;li&gt;Read the bytes from each line into a buffer, and then print that line from that same buffer&lt;/li&gt;
+  &lt;li&gt;Close the stream&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In the Python’s example none of that is obvious, it just sort of “magically” works. Now, while one might argue that it’s a good thing, since it abstracts
+the programmer away from the implementation details (and I agree with that), I like to know exactly what’s happening.&lt;/p&gt;
+
+&lt;p&gt;It’s interesting that many of the things that I mentioned as disadvantages, I know consider advantages. To be fair, there is no “magic” in Python,
+if you dive in a little deeper, you’ll find out that there is no actual magic involved, it’s just the way the language interprets your code, and
+from that perspective, I find it fascinating. If you share the same feelings, I suggest you to investigate further about how the language works,
+if something seems like “magic”, find out what’s actually happening, things will become a lot clearer and that “magic” will turn into “convenience”.&lt;/p&gt;
+
+&lt;p&gt;My opinion on those points has changed a lot, specially after I decided to give the language another go, in fact I’m now a big fan of Python!
+Now you might be wondering where I’m going to try to convince you that learning Python is a good idea, don’t worry that part is coming next.
+As a closing point to the introduction, I want to mention that this was my personal feeling towards the language, was just a &lt;strong&gt;personal preference&lt;/strong&gt;. I didn’t try to convince people that they should learn C, because if you’re programming in Python “you’re not a real programmer” (in fact,
+I don’t believe in that). When people asked me which language they should learn as their first, I usually suggested Python, for many of the reasons that I mentioned above as “disadvantages”. My feelings were mostly based on my personal interests, I was doing some more low-level stuff at the time, so as you might imagine, Python didn’t fit in that picture.&lt;/p&gt;
+
+&lt;h1 id=&quot;python-the-good-parts&quot;&gt;Python: The Good Parts&lt;/h1&gt;
+
+&lt;p&gt;After jacking the title for this section from a popular (and great) &lt;a href=&quot;http://shop.oreilly.com/product/9780596517748.do&quot;&gt;JavaScript book&lt;/a&gt;, it’s time to begin the topic of this blog post: why you
+(yes, you!) should learn Python.&lt;/p&gt;
+
+&lt;h2 id=&quot;universal-scripting-language&quot;&gt;1. Universal Scripting Language&lt;/h2&gt;
+
+&lt;p&gt;This was one of the main reasons why I decided to give Python a second go. I was working on various projects with various people,
+naturally different people used different operating systems. In my case, I was usually switching between Windows and Linux. To give a
+concrete example, on one of the projects I wrote a script that automated testing in a project, only to realize that I was the 
+only one who was taking advantage of it, since it was written in &lt;code class=&quot;highlighter-rouge&quot;&gt;PowerShell&lt;/code&gt; and I was the only one using Windows. Now there was
+natural “bash is so much better” from my colleagues, while I tried to explain them that &lt;code class=&quot;highlighter-rouge&quot;&gt;PowerShell&lt;/code&gt; followed a completely different paradigm and that it had its strong points (for example, it exposes the &lt;code class=&quot;highlighter-rouge&quot;&gt;.NET&lt;/code&gt; framework interface),
+it’s an Object-Oriented scripting language, quite different from &lt;code class=&quot;highlighter-rouge&quot;&gt;bash&lt;/code&gt;. Now I’m not going to discuss which one is better, since that’s not the focus of this post.&lt;/p&gt;
+
+&lt;p&gt;So how could this problem solved? Hmmm… now, is there a language that is script-friendly and runs on all major operating systems? You’ve 
+guessed it, that language is &lt;code class=&quot;highlighter-rouge&quot;&gt;Python&lt;/code&gt;. Besides running on all major operating systems, it also includes functionality useful for scripting out of the box.
+The standard library includes a handful of utilities that provide a common interface for operating system dependent functionality.
+To provide a simple and straightforward example, let’s assume that you wanted to get a list of names of all files in a directory and then do
+something with those names. In UNIX, you’d have something like:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;f &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;; &lt;span class=&quot;k&quot;&gt;do &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Processing &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$f&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; file...&quot;&lt;/span&gt;; &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;While in PowerShell, you’d go with something similar to:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;Get-ChildItem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;.&quot;&lt;/span&gt; | 
+&lt;span class=&quot;k&quot;&gt;Foreach&lt;/span&gt;-Object &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$_&lt;/span&gt;.Name
+    &lt;span class=&quot;nb&quot;&gt;Write-Output&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Processing &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; file...&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;An equivalent functionality in Python can be achieved with:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;listdir&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;listdir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;.&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;Processing {} file...&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now, besides running on Linux, MacOSX and Windows, in my opinion, it’s also more readable. The example above is a very simple script,
+for more complex examples the difference in readability is even more obvious.&lt;/p&gt;
+
+&lt;p&gt;As I mentioned earlier, Python comes with great libraries out of the box, for the purpose of replacing shell scripting, the ones that you’ll find the most useful are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.python.org/3/library/os.html&quot;&gt;os&lt;/a&gt; - provides OS independent functionality, like working with paths and reading/writing files.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.python.org/3/library/subprocess.html&quot;&gt;subprocess&lt;/a&gt; - to spawn new processes and interact with their input/output streams and return codes.
+You can use this to launch programs already installed on your system, but note that this might not be the best option if you’re worried about the portablity of your script.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.python.org/3/library/shutil.html&quot;&gt;shutil&lt;/a&gt; - offers high-level operations on files and collections of files.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.python.org/3/library/argparse.html&quot;&gt;argparse&lt;/a&gt; - parsing command-line arguments and building command-line interfaces&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Alright, let’s say you get the point, cross-platformness (is that even a real word?) and readability sounds great, but you really like the UNIX-like shell syntax.
+Good news, you can have the best of the both worlds! Check out &lt;a href=&quot;http://plumbum.readthedocs.io/en/latest/&quot;&gt;Plumbum&lt;/a&gt;, it’s a Python module (more on that topic later on),
+whose motto is &lt;em&gt;“Never write shell scripts again”&lt;/em&gt;. What it does is mimics the shell syntax, while keeping it cross-platform.&lt;/p&gt;
+
+&lt;h3 id=&quot;you-dont-have-to-ditch-shell-scripting-altogether&quot;&gt;You Don’t Have To Ditch Shell Scripting Altogether&lt;/h3&gt;
+
+&lt;p&gt;While it’s possible to completely substitute shell scripts with Python, you don’t have to, since Python scripts naturally fit into the command chaining philosophy of UNIX, all you have 
+to do is make them read from &lt;code class=&quot;highlighter-rouge&quot;&gt;sys.stdin&lt;/code&gt; (standard input) and write to &lt;code class=&quot;highlighter-rouge&quot;&gt;sys.stdout&lt;/code&gt; (standard output). Let’s look at an example. Let’s say that you a have file with each line 
+containing a word and you want to know which words appear in the file and how many times. This time we don’t want to go “all Python”, we’re actually going to chain the &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt;
+command with our Python script, which we’ll call &lt;code class=&quot;highlighter-rouge&quot;&gt;namecount.py&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let’s say we have a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;names.txt&lt;/code&gt; with the following content:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat
+dog
+mouse
+bird
+cat
+cat
+dog
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This is how our script will be used: &lt;code class=&quot;highlighter-rouge&quot;&gt;$&amp;gt; cat names.txt | namecount.py&lt;/code&gt;. And &lt;code class=&quot;highlighter-rouge&quot;&gt;PowerShell&lt;/code&gt; folks: &lt;code class=&quot;highlighter-rouge&quot;&gt;$&amp;gt; Get-Content names.txt | python namecount.py&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The expected output is something like (order might vary):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bird    1
+mouse   1
+cat     3
+dog     2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here is the source of &lt;code class=&quot;highlighter-rouge&quot;&gt;namecount.py&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/env python3&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;count_names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;names&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stdin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;readlines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+            
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stdout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{0}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;{1}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;count_names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Having the information displayed unordered is not the most readable thing, and you’ll probably want that ordered by the number of occurrences, so let’s do that.
+We’ll use the piping mechanism again and offload the job of sorting our output to the built-in commands. To sort our list numerically, in descending order
+all we have to is &lt;code class=&quot;highlighter-rouge&quot;&gt;$&amp;gt; cat names.txt | namecount.py | sort -rn&lt;/code&gt;. And if you’re using &lt;code class=&quot;highlighter-rouge&quot;&gt;PowerShell&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;$&amp;gt; Get-Content names.txt | python namecount.py | Sort-Object { [int]$_.split()[-1] } -Descending&lt;/code&gt;
+(you can almost hear the UNIX folks complain about how verbose the PowerShell version is).&lt;/p&gt;
+
+&lt;p&gt;This time our output is deterministic and we’ll get:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat     3
+dog     2
+bird    1
+mouse   1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;(As a side-note, if you’re using &lt;code class=&quot;highlighter-rouge&quot;&gt;PowerShell&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; is an alias for &lt;code class=&quot;highlighter-rouge&quot;&gt;Get-Content&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;sort&lt;/code&gt; is an alias for &lt;code class=&quot;highlighter-rouge&quot;&gt;Sort-Object&lt;/code&gt;, so the commands above can be also written as:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;$&amp;gt; cat names.txt | python namecount.py&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;$&amp;gt; Get-Content names.txt | python namecount.py | sort { [int]$_.split()[-1] } -Descending&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;Hopefully I have convinced you that Python might be a good substitute at least for some of your scripts and that you don’t have to ditch shell scripting altogether, since you 
+can incorporate Python scripts into your existing workflow and toolbox, with the added benefits of it being cross-platform, more readable and having a rich library collection 
+at your disposal (more on that later on).&lt;/p&gt;
+
+&lt;h2 id=&quot;a-lot-of-great-libraries&quot;&gt;2. A Lot Of Great Libraries&lt;/h2&gt;
+
+&lt;p&gt;Python has a very rich library collection. I mean, there is a library for &lt;a href=&quot;https://xkcd.com/353/&quot;&gt;almost anything&lt;/a&gt; (fun fact: if you type &lt;code class=&quot;highlighter-rouge&quot;&gt;import antigravity&lt;/code&gt; in your Python interpreter, it opens a new browser window which leads you to that xkdc comic, now how awesome is that?). I’m not a big fan of programming just by “stacking one library onto another”, but you don’t have to. Just because there are a lot of libraries, doesn’t mean that you have to use them all. While I don’t like to just stack libraries one onto another (which looks more like &lt;a href=&quot;https://en.wikipedia.org/wiki/Component-based_software_engineering&quot;&gt;CBSE&lt;/a&gt;) I obviously recognize their use and do use them.&lt;/p&gt;
+
+&lt;p&gt;For example, I decided to play around with &lt;a href=&quot;https://en.wikipedia.org/wiki/Markov_chain&quot;&gt;Markov Chains&lt;/a&gt;, so I came up with an idea for a project: grab all of the lyrics from an artist, build a Markov Chain with that and then generate songs from them. The idea is that the generated songs should reflect the artists style. So I hacked around with that project for a bit, and the result was &lt;a href=&quot;https://github.com/iluxonchik/lyricist&quot;&gt;lyricst&lt;/a&gt; (this is more like a proof of concept than a complete, fully tested project, as I said, I just hacked around for a bit, so don’t go to hard on it. It does include a command line-interface and some documentation with examples, if you want to play around). I decided that a great place to get lyrics form would be &lt;a href=&quot;http://rap.genius.com/&quot;&gt;RAPGenius&lt;/a&gt;, since it’s actively used and usually up to date).&lt;/p&gt;
+
+&lt;p&gt;So to get all of the artists lyrics, I would have to scrape them from the website and work with HTML. Luckily, Python is great for web scraping and has great libraries like &lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/bs4/doc/&quot;&gt;BeautifulSoup&lt;/a&gt; to work with HTML. So this is what I did, used BeautifulSoup to get all of the info from the page I needed (which was basically the song lyrics) and then use that info to build MarkovChains. Of course I could’ve used regular expressions or built my own HTML parser, but the existence of such libraries allowed me to concentrate on what was the real goal for this project: play around with Markov Chains, while also making it more interesting, then let’s say, just reading some text from files.&lt;/p&gt;
+
+&lt;h2 id=&quot;great-for-pentesting&quot;&gt;3. Great For Pentesting&lt;/h2&gt;
+
+&lt;p&gt;If you’re into penetration testing or simply like to hack around with stems, Python is your friend! The fact that Python comes pre-installed on almost any Linux and MAC OS machine, has a rich library
+collection, very comprehensive syntax and is a scripting language, makes it a great language for that purpose.&lt;/p&gt;
+
+&lt;p&gt;Another reason why I decided to give Python a second go (besides the one mentioned in previous section) is that I’m interested in security and Python seemed like
+a perfect choice for pentesting. One of my first encounters in that world was &lt;a href=&quot;http://www.secdev.org/projects/scapy/&quot;&gt;Scapy&lt;/a&gt; (or &lt;a href=&quot;https://github.com/phaethon/scapy&quot;&gt;Scapy3k&lt;/a&gt;, for Python3) and tell you what, I was impressed. Scapy is used for network packet creation, capture and manipulation. It has a straightforward API and great documentation. You can easily create packets on various layers (I’m talking about the &lt;a href=&quot;https://en.wikipedia.org/wiki/OSI_model&quot;&gt;OSI
+model&lt;/a&gt;) or capture them for analysis and modification. You can even export the &lt;code class=&quot;highlighter-rouge&quot;&gt;.pcap&lt;/code&gt; files and open them in WireShark. It doesn’t stop at network packet capture though,
+there is a wide array of great libraries for that purpose, but I’m not going to cover them here, since that is not the topic of this post and it deserves a post just for itself.&lt;/p&gt;
+
+&lt;p&gt;Some of you might say, “Oh, that’s great, but I’m interested in exploiting Windows machines, and those don’t come with Python pre-installed”. No worries, you can always compile your Python
+script to a standalone &lt;code class=&quot;highlighter-rouge&quot;&gt;.exe&lt;/code&gt;, using &lt;a href=&quot;http://www.py2exe.org/&quot;&gt;py2exe&lt;/a&gt;. The executables can get a little big (depending from the number of libraries you’re using in your script), but usually it’s nothing major.&lt;/p&gt;
+
+&lt;p&gt;If you’re intrigued, however, check out this &lt;a href=&quot;https://github.com/dloss/python-pentest-tools&quot;&gt;list of Python pentesting tools&lt;/a&gt;. At the end of this post I also include some book recommendations.&lt;/p&gt;
+
+&lt;h1 id=&quot;a-hackers-language&quot;&gt;4. A Hacker’s Language&lt;/h1&gt;
+
+&lt;p&gt;Python is a very malleable language. You can customize the way it works in many ways. From &lt;a href=&quot;&quot;&gt;altering the way imports work&lt;/a&gt; to &lt;a href=&quot;&quot;&gt;messing with classes before they are created&lt;/a&gt;. Those are just some of the examples. This also makes it very powerful scripting language (as mentioned in section &lt;strong&gt;1&lt;/strong&gt;) and great for pentesting (section &lt;strong&gt;3&lt;/strong&gt;), since it gives you a lot of freedom with your scripts.&lt;/p&gt;
+
+&lt;p&gt;I won’t go deep into those topics, but I will describe the “WOW” moment that I had with this. So, I was doing some webscraping (Python is great for this task!), and one of the tools I used was &lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/bs4/doc/&quot;&gt;BeautifulSoup&lt;/a&gt;. This was one of my “learning Python” projects. BeautifulSoup’s syntax for working with HTML is very clean and intuitive and one of the reasons for  that is the fact that Python gives you a lot of freedom when it comes to customizing its behavior). After playing a bit with the API, I noticed that there was some “magic”. The situation was similar
+to this one:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;bs4&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;&amp;lt;p class=&quot;someclass&quot;&amp;gt;Hello&amp;lt;/p&amp;gt;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;html.parser&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;What the code above does is creates a BeautifulSoup instance from the string passed as the first argument. The second argument just tells that I want to use the Python’s built-in HTML parser (BeautifulSoup
+can work with &lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/bs4/doc/#specifying-the-parser-to-use&quot;&gt;various parsers&lt;/a&gt;). &lt;code class=&quot;highlighter-rouge&quot;&gt;soup.p&lt;/code&gt; returns a &lt;code class=&quot;highlighter-rouge&quot;&gt;Tag&lt;/code&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;bs4.element.Tag&lt;/code&gt;) object, which represents the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag
+passed as the first argument.&lt;/p&gt;
+
+&lt;p&gt;The output of the code above is:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;p class=&quot;someclass&quot;&amp;gt;Hello&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now you might wondering, “where’s the magic part you were talking about”? Well, this part comes up next. The thing is that the code above can be adapted to &lt;strong&gt;any tag&lt;/strong&gt;, even the custom ones. This means
+that the code below works just fine:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;bs4&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;
+ 
+&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;&amp;lt;foobarfoo class=&quot;someclass&quot;&amp;gt;Hello&amp;lt;/foobarfoo&amp;gt;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;html.parser&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foobarfoo&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The output is the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;foobarfoo class=&quot;someclass&quot;&amp;gt;Hello&amp;lt;/foobarfoo&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;When I realized that that works just fine, I was like “whaaaaa?”. Now, the first example can be easily implemented, I mean the most straightforward way is just to define an attribute (instance variable) for every possible HTML tag, and then during parsing assign values different from &lt;code class=&quot;highlighter-rouge&quot;&gt;None&lt;/code&gt; to them, in case those elements are found. But this explanation does not work for the second example, there is no way that could’ve been done for all possible string combinations. I wanted to know what was going on and how it was working, so I cracked open BeautifulSoups source code and started digging.
+It’s probably no surprise that I didn’t find any attributes named &lt;code class=&quot;highlighter-rouge&quot;&gt;p&lt;/code&gt; and the parsing functions didn’t assign values to them. After some googling, I found what was going on: &lt;strong&gt;magic methods&lt;/strong&gt;. What are 
+&lt;strong&gt;magic methods&lt;/strong&gt; and why they are called like that? Well, informally, magic methods are methods that give the “magic” to your classes. Those methods are always surrounded by double underscores (for example
+&lt;code class=&quot;highlighter-rouge&quot;&gt;__init__()&lt;/code&gt;). They are described in the &lt;a href=&quot;https://docs.python.org/3/reference/datamodel.html&quot;&gt;DataModel model section&lt;/a&gt;) in Python docs.&lt;/p&gt;
+
+&lt;p&gt;The specific magic method that allows BeautifulSoup to have this functionality 
+is &lt;code class=&quot;highlighter-rouge&quot;&gt;__getattr__(self, name)__&lt;/code&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;self&lt;/code&gt; in Python refers the object instance, 
+similar to &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; in Java). If we go to the docs, here’s what we’ll find in 
+the first paragraph:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Called when an attribute lookup has not found the attribute in the usual
+places (i.e. it is not an instance attribute nor is it found in the class
+tree for self). name is the attribute name. This method should return 
+the (computed) attribute value or raise an AttributeError exception.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So what happens is that if you try to access an attribute that does not exit
+&lt;code class=&quot;highlighter-rouge&quot;&gt;__getattr__(self, name)&lt;/code&gt; of that object will be called, with &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; being
+the name of the attribute you tried to access as a string.&lt;/p&gt;
+
+&lt;p&gt;Let me show you an example. So let’s say you have a &lt;code class=&quot;highlighter-rouge&quot;&gt;Person&lt;/code&gt; class with a
+&lt;code class=&quot;highlighter-rouge&quot;&gt;first_name&lt;/code&gt; attribute. Let’s give the users of our API the ability
+to access the same value using &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt;. Here’s how our class will look like:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;first_name&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__getattr__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;name&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_name&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;AttributeError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;Person object has no attribute &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&#39;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;{}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&#39;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Let’s play a little with the class above in the interactive console:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;person = Person(&#39;Jason&#39;)
+&amp;gt;&amp;gt;&amp;gt; person.first_name
+&#39;Jason&#39;
+
+&amp;gt;&amp;gt;&amp;gt; person.name
+&#39;Jason&#39;
+
+&amp;gt;&amp;gt;&amp;gt; person.abc
+Traceback (most recent call last):
+  File &quot;&amp;lt;stdin&amp;gt;&quot;, line 1, in &amp;lt;module&amp;gt;
+  File &quot;&amp;lt;stdin&amp;gt;&quot;, line 7, in __getattr__
+AttributeError: Person object has no attribute &#39;abc&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This means that we can just “make-up” object attributes on the fly, 
+isn’t that awesome? So you can make your &lt;code class=&quot;highlighter-rouge&quot;&gt;Dog&lt;/code&gt; secretly be able to
+“meow” as well, besides barking:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt; 
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Dog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;bark&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;Ruff, ruff!&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__getattr__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;meow&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+           &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;Meeeeeeow&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;AttributeError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;I don&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&#39;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;t know what you&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&#39;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;re talking about...&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; snoop = Dog()
+
+&amp;gt;&amp;gt;&amp;gt; snoop.bark()
+Ruff, ruff!
+
+&amp;gt;&amp;gt;&amp;gt; snoop.meow()
+Meeeeeeow
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can also add attributes on the fly, without &lt;a href=&quot;https://docs.oracle.com/javase/tutorial/reflect/&quot;&gt;reflection&lt;/a&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;object.__dict__&lt;/code&gt; is a 
+(dictionary)[https://docs.python.org/3.5/library/stdtypes.html#typesmapping]
+containing the the &lt;code class=&quot;highlighter-rouge&quot;&gt;object&lt;/code&gt;’s attributes and their values (note that I said
+&lt;code class=&quot;highlighter-rouge&quot;&gt;object&lt;/code&gt;.&lt;strong&gt;dict&lt;/strong&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;object&lt;/code&gt; is an object instance, there is also a &lt;code class=&quot;highlighter-rouge&quot;&gt;class&lt;/code&gt;.&lt;strong&gt;dict&lt;/strong&gt;, which is a dictionary of the &lt;code class=&quot;highlighter-rouge&quot;&gt;class&lt;/code&gt;es attributes).&lt;/p&gt;
+
+&lt;p&gt;This means that the this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Dog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;Doggy Dogg&#39;&lt;/span&gt;        &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Is equivalent to this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Dog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__dict__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;name&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;Doggy Dogg&#39;&lt;/span&gt;        &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Both of the versions share the same output:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;snoop = Dog()
+
+&amp;gt;&amp;gt;&amp;gt; snoop.name
+&#39;Doggy Dogg&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;At this point you might be thinking, this is all great, but how is this useful?
+The answer is simple: &lt;strong&gt;magical APIs&lt;/strong&gt;. Have you ever used some Python library
+that just feels like magic? This is one of the things that allows them to be so
+“magical”. It’s not really magic though, once you understand what’s happening behind the scenes.&lt;/p&gt;
+
+&lt;p&gt;If you’re interested more in that topic, check out the &lt;a href=&quot;https://docs.python.org/3.5/howto/descriptor.html&quot;&gt;Description Protocol&lt;/a&gt; page in the docs.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-object-oriented-aspect&quot;&gt;The Object-Oriented Aspect&lt;/h2&gt;
+
+&lt;p&gt;The object-oriented aspect of Python might seem a little “hacked in”. For example, there are no private instance variables or methods
+in classes. So if you want to make an instance variable or a method private in a class, you’ll have to stick to conventions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;using one leading underscore (&lt;code class=&quot;highlighter-rouge&quot;&gt;_&lt;/code&gt;) for non-public instance variables and methods&lt;/li&gt;
+  &lt;li&gt;using two leading underscores (&lt;code class=&quot;highlighter-rouge&quot;&gt;__&lt;/code&gt;) for instance variables and methods will mangle their name&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let’s explore an example, suppose you have the following class:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;public&#39;&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_private&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;public&#39;&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__secret&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;secret&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Let’s jump into the interpreter:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; foo = Foo()
+&amp;gt;&amp;gt;&amp;gt; foo.public
+&#39;public&#39;
+&amp;gt;&amp;gt;&amp;gt; foo._private
+&#39;public&#39;
+&amp;gt;&amp;gt;&amp;gt; foo.__secret
+Traceback (most recent call last):
+  File &quot;&amp;lt;stdin&amp;gt;&quot;, line 1, in &amp;lt;module&amp;gt;
+AttributeError: &#39;Foo&#39; object has no attribute &#39;__secret&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As you can see, nothing is stopping you from accessing the &lt;code class=&quot;highlighter-rouge&quot;&gt;_secret&lt;/code&gt; instance variable, but what
+happened in the last case? Does that mean variables starting with &lt;code class=&quot;highlighter-rouge&quot;&gt;__&lt;/code&gt; are really private?
+The answer is &lt;strong&gt;no&lt;/strong&gt;, it’s name is just mangled. In essence, instead of being called &lt;code class=&quot;highlighter-rouge&quot;&gt;__secret&lt;/code&gt;,
+its name have been changed to &lt;code class=&quot;highlighter-rouge&quot;&gt;_Foo__secret&lt;/code&gt; by Mr.Python himself.
+You can still access it, if you really want to:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; foo._Foo__secret
+&#39;secret&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;However, &lt;a href=&quot;https://www.python.org/dev/peps/pep-0008/#method-names-and-instance-variables&quot;&gt;PEP8&lt;/a&gt; suggests to only use leading double underscores to avoid name conflicts
+with attributes in classes designed to be subclassed. “PEP”, stands for “Python Enhancement Proposal”,
+it’s used for describing Python features or processes. If you want a new feature to be added to the
+language, you create a PEP, so the whole community can see it and discuss it. You can
+&lt;a href=&quot;https://www.python.org/dev/peps/pep-0001/&quot;&gt;read more about PEPs here&lt;/a&gt;. And yes, the description
+of what a PEP is a PEP itself, how Meta is that?&lt;/p&gt;
+
+&lt;p&gt;As you can see, Python puts a lot of trust in the programmers.&lt;/p&gt;
+
+&lt;p&gt;I won’t go much further into the OO topic here, since again, that deserves a post (or even a series of them) just for itself.&lt;/p&gt;
+
+&lt;p&gt;I do want to give you a heads up that it might get some getting used to, it might not seem as “natural”
+as it is in languages like Java, but you know what, it’s just a different way of doing things.
+As another example, you don’t have &lt;a href=&quot;https://msdn.microsoft.com/en-us/library/k535acbf.aspx&quot;&gt;abstract classes&lt;/a&gt;, you have to use decorators to achieve that
+behavior.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;Hopefully this post gave you some insight into why you should consider giving Python a go.
+This post is coming from someone who feels “guilty” for talking not so good about Python in
+the past and is now all over the hype train. In my defense, it was just a “personal preference thing”,
+when people asked me about which language they should learn first, for instance, I usually suggested
+Python.&lt;/p&gt;
+
+&lt;p&gt;If you’re still undecided, just give it a go! Try it out for an hour or two, read some more stuff
+about it. If you like learning from a book, I also got you covered, check out &lt;a href=&quot;http://shop.oreilly.com/product/0636920032519.do&quot;&gt;Fluent Python&lt;/a&gt;
+The section right below has some more.&lt;/p&gt;
+
+&lt;h1 id=&quot;book-recommendations&quot;&gt;Book Recommendations&lt;/h1&gt;
+
+&lt;p&gt;As promised, here comes the book recommendation section. I will keep this one short, only
+putting books that I’ve read/had experience with myself.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://shop.oreilly.com/product/0636920032519.do&quot;&gt;Fluent Python&lt;/a&gt; - &lt;strong&gt;GREAT&lt;/strong&gt; book about 
+Python 3. Whether you are a novice, intermediate or an experienced Python programmer. Covers the ins
+and outs of the language.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://shop.oreilly.com/product/0636920034391.do&quot;&gt;Web Scraping With Python&lt;/a&gt; - the title says it all, it’s a book about webscraping with Python. You’ll explore how you can scrape the web for content,
+parse HTML and much more. I would say this book is good for novice and possibly intermediate people in webscraping area. Even if you’ve never used Python before, you can still follow along. It does not
+go into any advanced topics.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.nostarch.com/blackhatpython&quot;&gt;Black Hat Python&lt;/a&gt; - oh this one’s fun! You’ll build
+reverse SSH shells, trojans and much more! If you want to know how Python can be used in pentesting,
+make sure you check this out. Please note that this book contains Python 2 code, &lt;a href=&quot;https://github.com/iluxonchik/blackhat-python-book&quot;&gt;I do have a repo, however, that uses Python 3&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.amazon.com/Violent-Python-Cookbook-Penetration-Engineers/dp/1597499579&quot;&gt;Violent Python: A Cookbook for Hackers, Forensic Analysts, Penetration Testers and Security Engineers&lt;/a&gt; - 
+more on the same topic as above, you’ll learn how to write practical scripts for pentesting,
+forensic analysis and security in general.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/why-you-should-learn-python/&quot;&gt;Why You Should Learn Python&lt;/a&gt; was originally published by iluxonchik at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;G'd Up Code&lt;/a&gt; on August 22, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
   <title type="html"><![CDATA[Design Patterns Notes - An Overview Of Design Patterns]]></title>
- <link rel="alternate" type="text/html" href="//iluxonchik.github.io/design-patterns-notes/" />
-  <id>//iluxonchik.github.io/design-patterns-notes</id>
+ <link rel="alternate" type="text/html" href="https://iluxonchik.github.io/design-patterns-notes/" />
+  <id>https://iluxonchik.github.io/design-patterns-notes</id>
   <published>2015-09-03T00:00:00+01:00</published>
   <updated>2015-09-03T00:00:00+01:00</updated>
   <author>
     <name>iluxonchik</name>
-    <uri>//iluxonchik.github.io</uri>
+    <uri>https://iluxonchik.github.io</uri>
     <email></email>
   </author>
   <content type="html">
@@ -2440,7 +2920,7 @@ to design patterns. It’s also a good book if you need to quickly refreshen som
 &lt;p&gt;Another great book, probably the most well-known one is &lt;a href=&quot;http://www.amazon.co.uk/Design-patterns-elements-reusable-object-oriented/dp/0201633612&quot;&gt;Design patterns : elements of reusable object-oriented software&lt;/a&gt;.
 It’s  more complex, but it explores real world examples.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;//iluxonchik.github.io/design-patterns-notes/&quot;&gt;Design Patterns Notes - An Overview Of Design Patterns&lt;/a&gt; was originally published by iluxonchik at &lt;a href=&quot;//iluxonchik.github.io&quot;&gt;G'd Up Code&lt;/a&gt; on September 03, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/design-patterns-notes/&quot;&gt;Design Patterns Notes - An Overview Of Design Patterns&lt;/a&gt; was originally published by iluxonchik at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;G'd Up Code&lt;/a&gt; on September 03, 2015.&lt;/p&gt;
   </content>
 </entry>
 

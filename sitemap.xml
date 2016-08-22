@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>//iluxonchik.github.io/design-patterns-notes/</loc>
+<loc>https://iluxonchik.github.io/why-you-should-learn-python/</loc>
+<lastmod>2016-08-22T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>https://iluxonchik.github.io/design-patterns-notes/</loc>
 <lastmod>2015-09-03T00:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>//iluxonchik.github.io/404.html</loc>
+<loc>https://iluxonchik.github.io/404.html</loc>
 </url>
 <url>
-<loc>//iluxonchik.github.io/tags/</loc>
+<loc>https://iluxonchik.github.io/posts/</loc>
 </url>
 <url>
-<loc>//iluxonchik.github.io/posts/</loc>
+<loc>https://iluxonchik.github.io/tags/</loc>
 </url>
 <url>
-<loc>//iluxonchik.github.io/</loc>
+<loc>https://iluxonchik.github.io/</loc>
 </url>
 <url>
-<loc>//iluxonchik.github.io/about/</loc>
+<loc>https://iluxonchik.github.io/about/</loc>
 </url>
 </urlset>
