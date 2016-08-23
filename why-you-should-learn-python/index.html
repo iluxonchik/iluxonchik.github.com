@@ -131,7 +131,7 @@ Reading time ~21 minutes
       <h1 id="introduction">Introduction</h1>
 
 <p>My first encounter with Python was a part of the introductory course to programming. Well, I actually played with it on my own before, so I already was familiar with its syntax when the course began, but I didn’t do any real project in it before that course. Even though I thought it’s a great language to introduce people to programming, I wasn’t a big fan of it. It’s not that I disliked the language, it was more of a “meh” attitude.
-The reason was simple: there was “too much magic”. Coming from  a background of languages such as C an Java, which are a lot more more explicit in terms of what’s going on under the hood, Python was the complete opposite of that.</p>
+The reason was simple: there was “too much magic”. Coming from  a background of languages such as C an Java, which are a lot more explicit in terms of what’s going on under the hood, Python was the complete opposite of that.</p>
 
 <p>Another issue was that Python seemed a lot less structured: writing large, complex programs seemed to be a tougher task to achieve than, for example in Java, where you have some strict rules
 when it comes to the structure of the program (for instance the one public class per file rule), Python on the other hand, 
@@ -161,7 +161,7 @@ Here’s how you could do it in C:</p>
 </span>    <span class="n">fp</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="s">"hello.txt"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">);</span>
 
     <span class="k">while</span><span class="p">(</span><span class="n">fgets</span><span class="p">(</span><span class="n">buff</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="n">fp</span><span class="p">))</span> <span class="p">{</span>
-        <span class="n">pritnf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span> <span class="n">buff</span><span class="p">)</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span> <span class="n">buff</span><span class="p">);</span>
     <span class="p">}</span>
 
     <span class="n">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
@@ -594,7 +594,10 @@ forensic analysis and security in general.</p>
 <p><strong>EDIT</strong>:</p>
 
 <ul>
-  <li>Thanks to <a href="https://disqus.com/by/david_oster/">David Oster</a> for pointing out some typos</li>
+  <li>Thanks to <a href="https://disqus.com/by/david_oster/">David Oster</a> and <a href="https://twitter.com/Keyaku">Keyaku</a> for pointing out some typos</li>
+  <li>As per <a href="https://twitter.com/jyf1987/status/767906122200080384">jyf1987’s suggestion</a>,
+ here is a <code class="highlighter-rouge">namescount.py</code> version using <code class="highlighter-rouge">collections.defaultdict</code>: <a href="https://gist.github.com/iluxonchik/348838b3547abf09587d5b4bcbb56f26">namescount.py using defaultdict</a>.
+ I’m keeping the original one in the post, because the goal was to be more explicit, so that people new to Python would have less trouble understanding it</li>
 </ul>
 
       <footer class="entry-meta">
