@@ -8,7 +8,7 @@ tags: [python]
 # Introduction
 
 My first encounter with Python was a part of the introductory course to programming. Well, I actually played with it on my own before, so I already was familiar with its syntax when the course began, but I didn't do any real project in it before that course. Even though I thought it's a great language to introduce people to programming, I wasn't a big fan of it. It's not that I disliked the language, it was more of a "meh" attitude.
-The reason was simple: there was "too much magic". Coming from  a background of languages such as C an Java, which are a lot more more explicit in terms of what's going on under the hood, Python was the complete opposite of that. 
+The reason was simple: there was "too much magic". Coming from  a background of languages such as C an Java, which are a lot more explicit in terms of what's going on under the hood, Python was the complete opposite of that. 
 
 Another issue was that Python seemed a lot less structured: writing large, complex programs seemed to be a tougher task to achieve than, for example in Java, where you have some strict rules
 when it comes to the structure of the program (for instance the one public class per file rule), Python on the other hand, 
@@ -39,7 +39,7 @@ int main(void) {
     fp = fopen("hello.txt", "r");
 
     while(fgets(buff, 256, fp)) {
-        pritnf("%s", buff)
+        printf("%s", buff);
     }
 
     fclose(fp);
@@ -460,4 +460,7 @@ forensic analysis and security in general.
 
 **EDIT**:
 
-* Thanks to [David Oster](https://disqus.com/by/david_oster/) for pointing out some typos
+* Thanks to [David Oster](https://disqus.com/by/david_oster/) and [Keyaku](https://twitter.com/Keyaku) for pointing out some typos
+* As per [jyf1987's suggestion](https://twitter.com/jyf1987/status/767906122200080384),
+ here is a `namescount.py` version using `collections.defaultdict`: [namescount.py using defaultdict](https://gist.github.com/iluxonchik/348838b3547abf09587d5b4bcbb56f26).
+ I'm keeping the original one in the post, because the goal was to be more explicit, so that people new to Python would have less trouble understanding it
