@@ -400,10 +400,10 @@ Let's jump into the interpreter:
       File "<stdin>", line 1, in <module>
     AttributeError: 'Foo' object has no attribute '__secret'
 
-As you can see, nothing is stopping you from accessing the `_secret` instance variable, but what
+As you can see, nothing is stopping you from accessing the `_private` instance variable, but what
 happened in the last case? Does that mean variables starting with `__` are really private?
-The answer is **no**, it's name is just mangled. In essence, instead of being called `__secret`,
-its name have been changed to `_Foo__secret` by Mr.Python himself.
+The answer is **no**, their name is just mangled. In essence, instead of being called `__secret`,
+its name has been changed to `_Foo__secret` by Mr.Python himself.
 You can still access it, if you really want to:
 
     >>> foo._Foo__secret
@@ -460,7 +460,7 @@ forensic analysis and security in general.
 
 **EDIT**:
 
-* Thanks to [David Oster](https://disqus.com/by/david_oster/) and [Keyaku](https://twitter.com/Keyaku) for pointing out some typos
+* Thanks to [David Oster](https://disqus.com/by/david_oster/), [Keyaku](https://twitter.com/Keyaku) and [Chris](https://disqus.com/by/disqus_CGYriX8NW3/) for pointing out some typos.
 * As per [jyf1987's suggestion](https://twitter.com/jyf1987/status/767906122200080384),
  here is a `namescount.py` version using `collections.defaultdict`: [namescount.py using defaultdict](https://gist.github.com/iluxonchik/348838b3547abf09587d5b4bcbb56f26).
- I'm keeping the original one in the post, because the goal was to be more explicit, so that people new to Python would have less trouble understanding it
+ I'm keeping the original one in the post, because the goal was to be more explicit, so that people new to Python would have less trouble understanding it.
