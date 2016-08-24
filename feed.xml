@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="https://iluxonchik.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="https://iluxonchik.github.io" />
-<updated>2016-08-23T17:40:12+01:00</updated>
+<updated>2016-08-24T13:11:15+01:00</updated>
 <id>https://iluxonchik.github.io/</id>
 <author>
   <name>iluxonchik</name>
@@ -421,10 +421,10 @@ AttributeError: &#39;Foo&#39; object has no attribute &#39;__secret&#39;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;As you can see, nothing is stopping you from accessing the &lt;code class=&quot;highlighter-rouge&quot;&gt;_secret&lt;/code&gt; instance variable, but what
+&lt;p&gt;As you can see, nothing is stopping you from accessing the &lt;code class=&quot;highlighter-rouge&quot;&gt;_private&lt;/code&gt; instance variable, but what
 happened in the last case? Does that mean variables starting with &lt;code class=&quot;highlighter-rouge&quot;&gt;__&lt;/code&gt; are really private?
-The answer is &lt;strong&gt;no&lt;/strong&gt;, it’s name is just mangled. In essence, instead of being called &lt;code class=&quot;highlighter-rouge&quot;&gt;__secret&lt;/code&gt;,
-its name have been changed to &lt;code class=&quot;highlighter-rouge&quot;&gt;_Foo__secret&lt;/code&gt; by Mr.Python himself.
+The answer is &lt;strong&gt;no&lt;/strong&gt;, their name is just mangled. In essence, instead of being called &lt;code class=&quot;highlighter-rouge&quot;&gt;__secret&lt;/code&gt;,
+its name has been changed to &lt;code class=&quot;highlighter-rouge&quot;&gt;_Foo__secret&lt;/code&gt; by Mr.Python himself.
 You can still access it, if you really want to:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; foo._Foo__secret
@@ -491,10 +491,10 @@ forensic analysis and security in general.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;EDIT&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Thanks to &lt;a href=&quot;https://disqus.com/by/david_oster/&quot;&gt;David Oster&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/Keyaku&quot;&gt;Keyaku&lt;/a&gt; for pointing out some typos&lt;/li&gt;
+  &lt;li&gt;Thanks to &lt;a href=&quot;https://disqus.com/by/david_oster/&quot;&gt;David Oster&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/Keyaku&quot;&gt;Keyaku&lt;/a&gt; and &lt;a href=&quot;https://disqus.com/by/disqus_CGYriX8NW3/&quot;&gt;Chris&lt;/a&gt; for pointing out some typos.&lt;/li&gt;
   &lt;li&gt;As per &lt;a href=&quot;https://twitter.com/jyf1987/status/767906122200080384&quot;&gt;jyf1987’s suggestion&lt;/a&gt;,
  here is a &lt;code class=&quot;highlighter-rouge&quot;&gt;namescount.py&lt;/code&gt; version using &lt;code class=&quot;highlighter-rouge&quot;&gt;collections.defaultdict&lt;/code&gt;: &lt;a href=&quot;https://gist.github.com/iluxonchik/348838b3547abf09587d5b4bcbb56f26&quot;&gt;namescount.py using defaultdict&lt;/a&gt;.
- I’m keeping the original one in the post, because the goal was to be more explicit, so that people new to Python would have less trouble understanding it&lt;/li&gt;
+ I’m keeping the original one in the post, because the goal was to be more explicit, so that people new to Python would have less trouble understanding it.&lt;/li&gt;
 &lt;/ul&gt;
 
     &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/why-you-should-learn-python/&quot;&gt;Why You Should Learn Python&lt;/a&gt; was originally published by iluxonchik at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;G'd Up Code&lt;/a&gt; on August 22, 2016.&lt;/p&gt;

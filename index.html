@@ -540,10 +540,10 @@ AttributeError: 'Foo' object has no attribute '__secret'
 </code></pre>
 </div>
 
-<p>As you can see, nothing is stopping you from accessing the <code class="highlighter-rouge">_secret</code> instance variable, but what
+<p>As you can see, nothing is stopping you from accessing the <code class="highlighter-rouge">_private</code> instance variable, but what
 happened in the last case? Does that mean variables starting with <code class="highlighter-rouge">__</code> are really private?
-The answer is <strong>no</strong>, it’s name is just mangled. In essence, instead of being called <code class="highlighter-rouge">__secret</code>,
-its name have been changed to <code class="highlighter-rouge">_Foo__secret</code> by Mr.Python himself.
+The answer is <strong>no</strong>, their name is just mangled. In essence, instead of being called <code class="highlighter-rouge">__secret</code>,
+its name has been changed to <code class="highlighter-rouge">_Foo__secret</code> by Mr.Python himself.
 You can still access it, if you really want to:</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; foo._Foo__secret
@@ -610,10 +610,10 @@ forensic analysis and security in general.</p>
 <p><strong>EDIT</strong>:</p>
 
 <ul>
-  <li>Thanks to <a href="https://disqus.com/by/david_oster/">David Oster</a> and <a href="https://twitter.com/Keyaku">Keyaku</a> for pointing out some typos</li>
+  <li>Thanks to <a href="https://disqus.com/by/david_oster/">David Oster</a>, <a href="https://twitter.com/Keyaku">Keyaku</a> and <a href="https://disqus.com/by/disqus_CGYriX8NW3/">Chris</a> for pointing out some typos.</li>
   <li>As per <a href="https://twitter.com/jyf1987/status/767906122200080384">jyf1987’s suggestion</a>,
  here is a <code class="highlighter-rouge">namescount.py</code> version using <code class="highlighter-rouge">collections.defaultdict</code>: <a href="https://gist.github.com/iluxonchik/348838b3547abf09587d5b4bcbb56f26">namescount.py using defaultdict</a>.
- I’m keeping the original one in the post, because the goal was to be more explicit, so that people new to Python would have less trouble understanding it</li>
+ I’m keeping the original one in the post, because the goal was to be more explicit, so that people new to Python would have less trouble understanding it.</li>
 </ul>
 
   </div><!-- /.entry-content -->
