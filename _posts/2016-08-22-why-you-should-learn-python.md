@@ -65,7 +65,7 @@ Now, many people will consider that as an advantage, however, while in the first
 In the Python's example none of that is obvious, it just sort of "magically" works. Now, while one might argue that it's a good thing, since it abstracts
 the programmer away from the implementation details (and I agree with that), I like to know exactly what's happening.
 
-It's interesting that many of the things that I mentioned as disadvantages, I know consider advantages. To be fair, there is no "magic" in Python,
+It's interesting that many of the things that I mentioned as disadvantages, I now consider advantages. To be fair, there is no "magic" in Python,
 if you dive in a little deeper, you'll find out that there is no actual magic involved, it's just the way the language interprets your code, and
 from that perspective, I find it fascinating. If you share the same feelings, I suggest you to investigate further about how the language works,
 if something seems like "magic", find out what's actually happening, things will become a lot clearer and that "magic" will turn into "convenience".
@@ -224,7 +224,7 @@ If you're intrigued, however, check out this [list of Python pentesting tools](h
 
 # 4. A Hacker's Language
 
-Python is a very malleable language. You can customize the way it works in many ways. From [altering the way imports work]() to [messing with classes before they are created](). Those are just some of the examples. This also makes it very powerful scripting language (as mentioned in section **1**) and great for pentesting (section **3**), since it gives you a lot of freedom with your scripts.
+Python is a very malleable language. You can customize the way it works in many ways. From [altering the way imports work](http://xion.org.pl/2012/05/06/hacking-python-imports/) to [messing with classes before they are created](https://jakevdp.github.io/blog/2012/12/01/a-primer-on-python-metaclasses/). Those are just some of the examples. This also makes it very powerful scripting language (as mentioned in section **1**) and great for pentesting (section **3**), since it gives you a lot of freedom with your scripts.
 
 I won't go deep into those topics, but I will describe the "WOW" moment that I had with this. So, I was doing some webscraping (Python is great for this task!), and one of the tools I used was [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/). This was one of my "learning Python" projects. BeautifulSoup's syntax for working with HTML is very clean and intuitive and one of the reasons for  that is the fact that Python gives you a lot of freedom when it comes to customizing its behavior). After playing a bit with the API, I noticed that there was some "magic". The situation was similar
 to this one:
@@ -460,7 +460,7 @@ forensic analysis and security in general.
 
 **EDIT**:
 
-* Thanks to [David Oster](https://disqus.com/by/david_oster/), [Keyaku](https://twitter.com/Keyaku) and [Chris](https://disqus.com/by/disqus_CGYriX8NW3/) for pointing out some typos.
+* Thanks to [David Oster](https://disqus.com/by/david_oster/), [Keyaku](https://twitter.com/Keyaku), [Chris](https://disqus.com/by/disqus_CGYriX8NW3/), [muellermartin](https://twitter.com/muellermartin) and [foobarwtf](https://disqus.com/by/foobarwtf/) for pointing out some typos.
 * As per [jyf1987's suggestion](https://twitter.com/jyf1987/status/767906122200080384),
  here is a `namescount.py` version using `collections.defaultdict`: [namescount.py using defaultdict](https://gist.github.com/iluxonchik/348838b3547abf09587d5b4bcbb56f26).
  I'm keeping the original one in the post, because the goal was to be more explicit, so that people new to Python would have less trouble understanding it.
