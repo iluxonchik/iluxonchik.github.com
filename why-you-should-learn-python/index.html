@@ -185,7 +185,7 @@ Here’s how you could do it in C:</p>
 <p>In the Python’s example none of that is obvious, it just sort of “magically” works. Now, while one might argue that it’s a good thing, since it abstracts
 the programmer away from the implementation details (and I agree with that), I like to know exactly what’s happening.</p>
 
-<p>It’s interesting that many of the things that I mentioned as disadvantages, I know consider advantages. To be fair, there is no “magic” in Python,
+<p>It’s interesting that many of the things that I mentioned as disadvantages, I now consider advantages. To be fair, there is no “magic” in Python,
 if you dive in a little deeper, you’ll find out that there is no actual magic involved, it’s just the way the language interprets your code, and
 from that perspective, I find it fascinating. If you share the same feelings, I suggest you to investigate further about how the language works,
 if something seems like “magic”, find out what’s actually happening, things will become a lot clearer and that “magic” will turn into “convenience”.</p>
@@ -348,7 +348,7 @@ script to a standalone <code class="highlighter-rouge">.exe</code>, using <a hre
 
 <h1 id="a-hackers-language">4. A Hacker’s Language</h1>
 
-<p>Python is a very malleable language. You can customize the way it works in many ways. From <a href="">altering the way imports work</a> to <a href="">messing with classes before they are created</a>. Those are just some of the examples. This also makes it very powerful scripting language (as mentioned in section <strong>1</strong>) and great for pentesting (section <strong>3</strong>), since it gives you a lot of freedom with your scripts.</p>
+<p>Python is a very malleable language. You can customize the way it works in many ways. From <a href="http://xion.org.pl/2012/05/06/hacking-python-imports/">altering the way imports work</a> to <a href="https://jakevdp.github.io/blog/2012/12/01/a-primer-on-python-metaclasses/">messing with classes before they are created</a>. Those are just some of the examples. This also makes it very powerful scripting language (as mentioned in section <strong>1</strong>) and great for pentesting (section <strong>3</strong>), since it gives you a lot of freedom with your scripts.</p>
 
 <p>I won’t go deep into those topics, but I will describe the “WOW” moment that I had with this. So, I was doing some webscraping (Python is great for this task!), and one of the tools I used was <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a>. This was one of my “learning Python” projects. BeautifulSoup’s syntax for working with HTML is very clean and intuitive and one of the reasons for  that is the fact that Python gives you a lot of freedom when it comes to customizing its behavior). After playing a bit with the API, I noticed that there was some “magic”. The situation was similar
 to this one:</p>
@@ -594,7 +594,7 @@ forensic analysis and security in general.</p>
 <p><strong>EDIT</strong>:</p>
 
 <ul>
-  <li>Thanks to <a href="https://disqus.com/by/david_oster/">David Oster</a>, <a href="https://twitter.com/Keyaku">Keyaku</a> and <a href="https://disqus.com/by/disqus_CGYriX8NW3/">Chris</a> for pointing out some typos.</li>
+  <li>Thanks to <a href="https://disqus.com/by/david_oster/">David Oster</a>, <a href="https://twitter.com/Keyaku">Keyaku</a>, <a href="https://disqus.com/by/disqus_CGYriX8NW3/">Chris</a>, <a href="https://twitter.com/muellermartin">muellermartin</a> and <a href="https://disqus.com/by/foobarwtf/">foobarwtf</a> for pointing out some typos.</li>
   <li>As per <a href="https://twitter.com/jyf1987/status/767906122200080384">jyf1987’s suggestion</a>,
  here is a <code class="highlighter-rouge">namescount.py</code> version using <code class="highlighter-rouge">collections.defaultdict</code>: <a href="https://gist.github.com/iluxonchik/348838b3547abf09587d5b4bcbb56f26">namescount.py using defaultdict</a>.
  I’m keeping the original one in the post, because the goal was to be more explicit, so that people new to Python would have less trouble understanding it.</li>

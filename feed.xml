@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="https://iluxonchik.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="https://iluxonchik.github.io" />
-<updated>2016-08-24T13:52:26+01:00</updated>
+<updated>2016-08-25T13:19:39+01:00</updated>
 <id>https://iluxonchik.github.io/</id>
 <author>
   <name>iluxonchik</name>
@@ -82,7 +82,7 @@ Here’s how you could do it in C:&lt;/p&gt;
 &lt;p&gt;In the Python’s example none of that is obvious, it just sort of “magically” works. Now, while one might argue that it’s a good thing, since it abstracts
 the programmer away from the implementation details (and I agree with that), I like to know exactly what’s happening.&lt;/p&gt;
 
-&lt;p&gt;It’s interesting that many of the things that I mentioned as disadvantages, I know consider advantages. To be fair, there is no “magic” in Python,
+&lt;p&gt;It’s interesting that many of the things that I mentioned as disadvantages, I now consider advantages. To be fair, there is no “magic” in Python,
 if you dive in a little deeper, you’ll find out that there is no actual magic involved, it’s just the way the language interprets your code, and
 from that perspective, I find it fascinating. If you share the same feelings, I suggest you to investigate further about how the language works,
 if something seems like “magic”, find out what’s actually happening, things will become a lot clearer and that “magic” will turn into “convenience”.&lt;/p&gt;
@@ -245,7 +245,7 @@ script to a standalone &lt;code class=&quot;highlighter-rouge&quot;&gt;.exe&lt;/
 
 &lt;h1 id=&quot;a-hackers-language&quot;&gt;4. A Hacker’s Language&lt;/h1&gt;
 
-&lt;p&gt;Python is a very malleable language. You can customize the way it works in many ways. From &lt;a href=&quot;&quot;&gt;altering the way imports work&lt;/a&gt; to &lt;a href=&quot;&quot;&gt;messing with classes before they are created&lt;/a&gt;. Those are just some of the examples. This also makes it very powerful scripting language (as mentioned in section &lt;strong&gt;1&lt;/strong&gt;) and great for pentesting (section &lt;strong&gt;3&lt;/strong&gt;), since it gives you a lot of freedom with your scripts.&lt;/p&gt;
+&lt;p&gt;Python is a very malleable language. You can customize the way it works in many ways. From &lt;a href=&quot;http://xion.org.pl/2012/05/06/hacking-python-imports/&quot;&gt;altering the way imports work&lt;/a&gt; to &lt;a href=&quot;https://jakevdp.github.io/blog/2012/12/01/a-primer-on-python-metaclasses/&quot;&gt;messing with classes before they are created&lt;/a&gt;. Those are just some of the examples. This also makes it very powerful scripting language (as mentioned in section &lt;strong&gt;1&lt;/strong&gt;) and great for pentesting (section &lt;strong&gt;3&lt;/strong&gt;), since it gives you a lot of freedom with your scripts.&lt;/p&gt;
 
 &lt;p&gt;I won’t go deep into those topics, but I will describe the “WOW” moment that I had with this. So, I was doing some webscraping (Python is great for this task!), and one of the tools I used was &lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/bs4/doc/&quot;&gt;BeautifulSoup&lt;/a&gt;. This was one of my “learning Python” projects. BeautifulSoup’s syntax for working with HTML is very clean and intuitive and one of the reasons for  that is the fact that Python gives you a lot of freedom when it comes to customizing its behavior). After playing a bit with the API, I noticed that there was some “magic”. The situation was similar
 to this one:&lt;/p&gt;
@@ -491,7 +491,7 @@ forensic analysis and security in general.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;EDIT&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Thanks to &lt;a href=&quot;https://disqus.com/by/david_oster/&quot;&gt;David Oster&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/Keyaku&quot;&gt;Keyaku&lt;/a&gt; and &lt;a href=&quot;https://disqus.com/by/disqus_CGYriX8NW3/&quot;&gt;Chris&lt;/a&gt; for pointing out some typos.&lt;/li&gt;
+  &lt;li&gt;Thanks to &lt;a href=&quot;https://disqus.com/by/david_oster/&quot;&gt;David Oster&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/Keyaku&quot;&gt;Keyaku&lt;/a&gt;, &lt;a href=&quot;https://disqus.com/by/disqus_CGYriX8NW3/&quot;&gt;Chris&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/muellermartin&quot;&gt;muellermartin&lt;/a&gt; and &lt;a href=&quot;https://disqus.com/by/foobarwtf/&quot;&gt;foobarwtf&lt;/a&gt; for pointing out some typos.&lt;/li&gt;
   &lt;li&gt;As per &lt;a href=&quot;https://twitter.com/jyf1987/status/767906122200080384&quot;&gt;jyf1987’s suggestion&lt;/a&gt;,
  here is a &lt;code class=&quot;highlighter-rouge&quot;&gt;namescount.py&lt;/code&gt; version using &lt;code class=&quot;highlighter-rouge&quot;&gt;collections.defaultdict&lt;/code&gt;: &lt;a href=&quot;https://gist.github.com/iluxonchik/348838b3547abf09587d5b4bcbb56f26&quot;&gt;namescount.py using defaultdict&lt;/a&gt;.
  I’m keeping the original one in the post, because the goal was to be more explicit, so that people new to Python would have less trouble understanding it.&lt;/li&gt;
