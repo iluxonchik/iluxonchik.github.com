@@ -4,13 +4,539 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="https://iluxonchik.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="https://iluxonchik.github.io" />
-<updated>2016-08-25T14:14:13+01:00</updated>
+<updated>2016-09-08T02:53:30+01:00</updated>
 <id>https://iluxonchik.github.io/</id>
 <author>
   <name>iluxonchik</name>
   <uri>https://iluxonchik.github.io/</uri>
   
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Demystifying The Regular Expression That Checks If A Number Is Prime]]></title>
+ <link rel="alternate" type="text/html" href="https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/" />
+  <id>https://iluxonchik.github.io/regular-expression-check-if-number-is-prime</id>
+  <published>2016-09-08T00:00:00+01:00</published>
+  <updated>2016-09-08T00:00:00+01:00</updated>
+  <author>
+    <name>iluxonchik</name>
+    <uri>https://iluxonchik.github.io</uri>
+    <email></email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;A while back I was researching the most efficient way to check if a number is
+prime. This lead me to find the following piece of code:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;isPrime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;matches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;.?|(..+?)\\1+&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;I was intrigued. While this might not be the most efficient way, it’s
+certainly one of the less obvious ones, so my curiosity kicked in.
+How on Earth could a match for the &lt;code class=&quot;highlighter-rouge&quot;&gt;.?|(..+?)\1+&lt;/code&gt; regular expression tell that
+a number is &lt;strong&gt;not&lt;/strong&gt; prime (once it’s converted to its &lt;a href=&quot;https://en.wikipedia.org/wiki/Unary_numeral_system&quot;&gt;unary representation&lt;/a&gt;)?&lt;/p&gt;
+
+&lt;p&gt;If you’re interested, read on, I’ll try to dissect this regular expression and
+explain what’s really going on. The explanation will be programming language
+agnostic, &lt;a href=&quot;#4-code-examples&quot;&gt;I will, however, provide&lt;/a&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Python&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Perl&lt;/code&gt; versions
+of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Java&lt;/code&gt; code above and explain why they are slightly different.&lt;/p&gt;
+
+&lt;p&gt;I will explain how the regular expression &lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$|^(..+?)\1+$&lt;/code&gt; can filter out
+any prime numbers. Why this one and not &lt;code class=&quot;highlighter-rouge&quot;&gt;.?|(..+?)\1+&lt;/code&gt; (the one used in &lt;code class=&quot;highlighter-rouge&quot;&gt;Java&lt;/code&gt; code example above)?
+Well, this has to do with the way &lt;a href=&quot;https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#matches-java.lang.String-&quot;&gt;String.matches()&lt;/a&gt; works, which &lt;a href=&quot;#3-the-java-case&quot;&gt;I’ll explain later&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;While there are some blog posts on this topic, I found them to not go deep enough
+and give just a high level overview, not explaining some of the important details well enough.
+Here, I’ll try to lay it out with enough detail so that anyone can follow and understand.
+The goal is to make it simple to understand for any one - whether you are a regular expression
+guru or this is the first time you’ve heard about them, anyone should be able to follow along.&lt;/p&gt;
+
+&lt;h1 id=&quot;prime-numbers-and-regular-expressions---the-theory&quot;&gt;1. Prime Numbers and Regular Expressions - The Theory&lt;/h1&gt;
+
+&lt;p&gt;Let’s start at a higher level. But wait, first, let’s get every one on the same
+page and begin with some definitions. If you know know what a prime number is
+and are familiar with regular expression, feel free to &lt;a href=&quot;#the-regular-expression-that-tells-if-a-number-is-prime&quot;&gt;skip this section&lt;/a&gt;.
+I will try to explain how every bit of the regular expression works, so that even
+people who are new or unfamiliar with them can follow along.&lt;/p&gt;
+
+&lt;h2 id=&quot;prime-numbers&quot;&gt;Prime Numbers&lt;/h2&gt;
+
+&lt;p&gt;First, a &lt;strong&gt;prime number&lt;/strong&gt; is any natural number greater than &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; &lt;strong&gt;that is only divisible by 1 and the number itself, without leaving a remainder&lt;/strong&gt;.
+Here’s a list of the fist &lt;code class=&quot;highlighter-rouge&quot;&gt;8&lt;/code&gt; prime numbers: &lt;code class=&quot;highlighter-rouge&quot;&gt;2, 3, 5, 7, 11, 13, 17, 19&lt;/code&gt;.
+For example, &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt; is prime because you can only divide it by &lt;code class=&quot;highlighter-rouge&quot;&gt;1 &lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt; 
+without leaving a remainder. Sure we can divide it by &lt;code class=&quot;highlighter-rouge&quot;&gt;2&lt;/code&gt;, but that
+would leave a remainder of &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt;, since &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt; = &lt;code class=&quot;highlighter-rouge&quot;&gt;2&lt;/code&gt;*&lt;code class=&quot;highlighter-rouge&quot;&gt;2&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt;.
+The number &lt;code class=&quot;highlighter-rouge&quot;&gt;4&lt;/code&gt;, on the other hand, is &lt;strong&gt;not prime&lt;/strong&gt;, since we can divide it
+by &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;2&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;4&lt;/code&gt; without leaving a remainder.&lt;/p&gt;
+
+&lt;h2 id=&quot;regular-expressions&quot;&gt;Regular Expressions&lt;/h2&gt;
+
+&lt;p&gt;Okay, now let’s get to the regular expression (A.K.A. regex) syntax. Now, there are quite a few regex
+flavors, I’m not going to focus on any specific one, since that is not the
+point of this post. The concepts described here
+work in a similar manner in all of the most common flavors, so don’t worry
+about it. If you want to learn more about regular expressions, check out
+&lt;a href=&quot;http://www.regular-expressions.info/&quot;&gt;Regular-Expressions.info&lt;/a&gt;, it’s a great
+resource to learn regex and later use it as a reference.&lt;/p&gt;
+
+&lt;p&gt;Here’s a cheatsheet with the concepts that will be needed for the explanation
+that follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; - matches the position before the first character in the string&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt; - matches the position right after the last character in the string&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; - matches any character, except line break characters (for example, it does not match &lt;code class=&quot;highlighter-rouge&quot;&gt;\n&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;alternation-operator&quot;&gt;&lt;/a&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; - matches everything that’s either to the left or the right of it. You can think of it as an &lt;strong&gt;or&lt;/strong&gt; operator.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;(&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;)&lt;/code&gt; delimit a &lt;strong&gt;capturing group&lt;/strong&gt;. By placing a part of a regular expression between parentheses, you’re grouping that part of the regular expression together. This allows you to apply &lt;strong&gt;quantifiers&lt;/strong&gt; (like &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;)
+to the entire group or restrict alternation (&lt;em&gt;i.e.&lt;/em&gt; “or”: &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt;) to part of the
+regular expression. Besides that, parentheses also create a &lt;strong&gt;numbered capturing group&lt;/strong&gt;, which you can refer to later with &lt;strong&gt;backreferences&lt;/strong&gt; (&lt;a href=&quot;capturing-groups-and-backreferences&quot;&gt;more on that below&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;backref&quot;&gt;&lt;/a&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\&amp;lt;number_here&amp;gt;&lt;/code&gt; - &lt;strong&gt;backreferences&lt;/strong&gt; match the same text as previously matched by a capturing group. The &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;number_here&amp;gt;&lt;/code&gt; is the &lt;strong&gt;group number&lt;/strong&gt; (remember the discussion above? The one that says that parentheses create a &lt;strong&gt;numbered capturing group&lt;/strong&gt;? That’s where it comes in). I’ll give an example to clarify things in a little bit, so if you’re confused, hang on!&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; - matches the preceding token (for example, it can be a character or a group of characters, if the preceding token is a &lt;strong&gt;capturing group&lt;/strong&gt;) &lt;strong&gt;one or more times&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; - matches the preceding token &lt;strong&gt;zero or more times&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;greedy-qmrk&quot;&gt;&lt;/a&gt;if &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; is used after &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; quantifiers, it makes that quantifier &lt;strong&gt;non-greedy&lt;/strong&gt; (&lt;a href=&quot;#greedy-and-non-greedy-quantifiers&quot;&gt;more on that below&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;capturing-groups-and-backreferences&quot;&gt;Capturing Groups and Backreferences&lt;/h3&gt;
+
+&lt;p&gt;As promised, let’s clarify how &lt;strong&gt;capturing groups&lt;/strong&gt; and &lt;strong&gt;backreferences&lt;/strong&gt; work together.&lt;/p&gt;
+
+&lt;p&gt;As I mentioned, parentheses create &lt;strong&gt;numbered capturing groups&lt;/strong&gt;. What do I
+mean by that? Well, that means that when you use parentheses, you create a
+group that matches some characters and you can refer to those &lt;strong&gt;matched characters&lt;/strong&gt; later on. The numbers are given to the groups in the order they
+appear in the regular expression, beginning with &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt;. For example, let’s say
+you have the following regular expression: &lt;code class=&quot;highlighter-rouge&quot;&gt;^aa(bb)cc(dd)$&lt;/code&gt;. Note, that in this
+case, we have &lt;code class=&quot;highlighter-rouge&quot;&gt;2&lt;/code&gt; groups. They are numbered as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/7T2JC1A.png&quot; alt=&quot;Regular Expression capturing group numbers&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This means that we can refer to the characters matched by them later using
+&lt;strong&gt;backreferences&lt;/strong&gt;. If we want to refer to what is matched by &lt;code class=&quot;highlighter-rouge&quot;&gt;(bb)&lt;/code&gt;, we use
+&lt;code class=&quot;highlighter-rouge&quot;&gt;\1&lt;/code&gt; (we use &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; because we’re referring to the &lt;strong&gt;capturing group #1&lt;/strong&gt;). To refer to the characters matched by &lt;code class=&quot;highlighter-rouge&quot;&gt;(dd)&lt;/code&gt; we use &lt;code class=&quot;highlighter-rouge&quot;&gt;\2&lt;/code&gt;. Putting that together,
+the the regular expression &lt;code class=&quot;highlighter-rouge&quot;&gt;^aa(bb)cc(dd)\1$&lt;/code&gt; matches the string &lt;code class=&quot;highlighter-rouge&quot;&gt;aabbccddbb&lt;/code&gt;.
+Note how we used &lt;code class=&quot;highlighter-rouge&quot;&gt;\1&lt;/code&gt; to refer to the last &lt;code class=&quot;highlighter-rouge&quot;&gt;bb&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;\1&lt;/code&gt; refers to &lt;strong&gt;what was matched&lt;/strong&gt; by the group &lt;code class=&quot;highlighter-rouge&quot;&gt;(bb)&lt;/code&gt;, which in this case, was the sting &lt;code class=&quot;highlighter-rouge&quot;&gt;bb&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now note that I emphasize on &lt;strong&gt;what was matched&lt;/strong&gt;. I really mean the 
+characters that &lt;strong&gt;were matched&lt;/strong&gt; and not ones that &lt;strong&gt;can be matched&lt;/strong&gt;.
+This means, that the regular expression &lt;code class=&quot;highlighter-rouge&quot;&gt;^aa(.+)cc(dd)\1$&lt;/code&gt;
+&lt;strong&gt;does match&lt;/strong&gt; the sting &lt;code class=&quot;highlighter-rouge&quot;&gt;aaHELLOccddHELLO&lt;/code&gt;, but &lt;strong&gt;does not&lt;/strong&gt; match the sting
+&lt;code class=&quot;highlighter-rouge&quot;&gt;aaHELLOccddGOODBYE&lt;/code&gt;, since it cannot find what was matched by the &lt;strong&gt;group #1&lt;/strong&gt; (in this case it’s the character sequence &lt;code class=&quot;highlighter-rouge&quot;&gt;HELLO&lt;/code&gt;) after the character sequence &lt;code class=&quot;highlighter-rouge&quot;&gt;dd&lt;/code&gt; (it finds &lt;code class=&quot;highlighter-rouge&quot;&gt;GOODBYE&lt;/code&gt; there).&lt;/p&gt;
+
+&lt;h3 id=&quot;greedy-and-non-greedy-quantifiers&quot;&gt;Greedy and Non-Greedy Quantifiers&lt;/h3&gt;
+
+&lt;p&gt;If you remember correctly, in the cheatseheet above, I mentioned that &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt;
+&lt;a href=&quot;#greedy-qmrk&quot;&gt;can be used to make the preceding quantifier non-greedy&lt;/a&gt;.
+Well, okay, but what does that actually mean? &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; is greedy quantifier, this
+means that &lt;strong&gt;it will try to repeat the preceding token as many times as possible&lt;/strong&gt;, &lt;em&gt;i.e.&lt;/em&gt; it will try to consume as much input as it can. The same
+is true for the &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; quantifier.&lt;/p&gt;
+
+&lt;p&gt;For example, let’s say we have the string &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;The Documentary&amp;lt;/p&amp;gt; (2005)&lt;/code&gt; and
+the regular expression &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;.+&amp;gt;&lt;/code&gt;. Now, you might think that it will match
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt;, but that’s not true. The matched string will actually be &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;The Documentary&amp;lt;/p&amp;gt;&lt;/code&gt;. Why is that? Well, that has to do with the fact mentioned
+above: the &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; &lt;strong&gt;will try to consume as much input as it can&lt;/strong&gt;, so that means
+that it will not stop at the first &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;, but rather at the last one.&lt;/p&gt;
+
+&lt;p&gt;Now how do we go about making a quantifier &lt;strong&gt;non-greedy&lt;/strong&gt;? Well, you might
+be already tired of hearing that (since I’ve already mentioned it twice),
+but &lt;strong&gt;in order to make a greedy quantifier non-greedy, you put a question mark (?) in front of it&lt;/strong&gt;. 
+It’s really as simple as that. In case you’re still confused, don’t worry,
+let’s see an example.&lt;/p&gt;
+
+&lt;p&gt;Suppose we have the same string: &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;The Documentary&amp;lt;/p&amp;gt; (2005)&lt;/code&gt;, but this
+time, we only want to match what is between the first &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;.
+How would we go about that? Well, all we have to do is add &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; in front of
+the &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;. This will lead us to the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;.+?&amp;gt;&lt;/code&gt; regex. “Uhhh, okay…”, you might wonder,
+“But what does that actually do?”. Well, it will make the &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; quantifier
+&lt;strong&gt;non-greedy&lt;/strong&gt;. This means that it &lt;strong&gt;will make the quantifier consume as little input as possible&lt;/strong&gt;.
+Well, in our case, the “as little as possible” is &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt;, which is
+exactly what we want! To be precise, it will match both of the &lt;code class=&quot;highlighter-rouge&quot;&gt;p&lt;/code&gt;’s: &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; and
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/p&amp;gt;&lt;/code&gt;, but we can easily get what we want by asking for the fist match (&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;a-little-note-on--and-&quot;&gt;A Little Note On ^ and $&lt;/h3&gt;
+
+&lt;p&gt;Since we’re on it, I’ll take a moment to quickly explain what the &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; and
+&lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt; actually do. If you remember correctly, &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; matches the position right
+before the first character in the string and &lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt; matches the position right after the last character in the string. Note how in both of the regular
+expressions above (&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;.+&amp;gt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;.+?&amp;gt;&lt;/code&gt;) we did not use them. What does that
+mean? Well, that means that &lt;strong&gt;the match does not have to begin at the start of the string and end at the end of the string&lt;/strong&gt;.
+Taking the second, non-greedy, regex (&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;.+?&amp;gt;&lt;/code&gt;) and the sting &lt;code class=&quot;highlighter-rouge&quot;&gt;The Game - &amp;lt;p&amp;gt;The Documentary&amp;lt;/p&amp;gt; (2005)&lt;/code&gt;, we would still obtain our expected matches (&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/p&amp;gt;&lt;/code&gt;),
+since we’re not forcing it to begin at the beginning of the string and end
+at the end of the string.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-regular-expression-that-tells-if-a-number-is-prime&quot;&gt;2. The Regular Expression That Tells If A Number Is Prime&lt;/h1&gt;
+
+&lt;p&gt;Phew, so we’re finally done with the theoretical introduction and now, since we’ve
+already have everything we need under the belt, we’re ready to dive into
+the analysis of how the &lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$|^(..+?)\1+$&lt;/code&gt; regular expression can match
+&lt;strong&gt;non-prime&lt;/strong&gt; numbers (in their unary form).&lt;/p&gt;
+
+&lt;p&gt;You can ignore the &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; in the regular expression, it’s there for performance reasons (&lt;a href=&quot;#what-about-the&quot;&gt;explained below&lt;/a&gt;) - 
+it makes the &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; non-greedy. If it confuses you, just ignore it and consider 
+that the regex is actually &lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$|^(..+)\1+$&lt;/code&gt;, it works as well, but it’s slower (with some exceptions, like when the number &lt;strong&gt;is&lt;/strong&gt; prime, where the &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; makes no difference whatsoever).
+After explaining how this regular expression works, I’ll also &lt;a href=&quot;#what-about-the&quot;&gt;explain&lt;/a&gt; what that &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; does there,
+you shouldn’t have any trouble understanding it after you understand the inner workings of this
+regex.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&quot;unary-representation&quot;&gt;&lt;/a&gt;All of the discussion below assumes that we have the number represented in
+its &lt;a href=&quot;https://en.wikipedia.org/wiki/Unary_numeral_system&quot;&gt;unary form&lt;/a&gt; (or base-1, if you prefer). It doesn’t actually have to be represented as
+a sequence of &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt;s, it can be a sequence of any characters that are
+matched by &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;. This means that &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt; does not have to be represented as
+&lt;code class=&quot;highlighter-rouge&quot;&gt;11111&lt;/code&gt;, it might as well be represented as &lt;code class=&quot;highlighter-rouge&quot;&gt;fffff&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;BBBBB&lt;/code&gt;. As long
+as there are &lt;strong&gt;five characters&lt;/strong&gt;, we’re good to go. Please note, that the
+characters have to be the same, &lt;strong&gt;no mixtures of characters are allowed&lt;/strong&gt;,
+this means that we &lt;strong&gt;cannot&lt;/strong&gt; represent &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt; as &lt;code class=&quot;highlighter-rouge&quot;&gt;ffffB&lt;/code&gt;, since here we have a mixture
+of two different characters.&lt;/p&gt;
+
+&lt;h2 id=&quot;high-level-overview&quot;&gt;High Level Overview&lt;/h2&gt;
+
+&lt;p&gt;Let’s begin with a high level overview and then dive into the details.
+Our &lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$|^(..+?)\1+$&lt;/code&gt; regular expression consists of two parts: &lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$&lt;/code&gt; and
+&lt;code class=&quot;highlighter-rouge&quot;&gt;^(..+?)\1+$&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;As a heads-up, I just want to say that I’m lying a little in the explanation
+in the &lt;a href=&quot;#hlw-regex-2&quot;&gt;paragraph&lt;/a&gt; about the &lt;code class=&quot;highlighter-rouge&quot;&gt;^(..+?)\1+$&lt;/code&gt; regex. The lie has to do with the order in which the regex engine
+checks for multiples, it actually starts with the highest number and goes to the lowest,
+and not how I explain it here. But feel free to ignore that distinction here, 
+since the regular expression still matches the same thing, it just does it in more
+steps (so I’ll actually be explaining how &lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$|^(..+?)\1+?$&lt;/code&gt; works: notice the extra &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; after the &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m doing this because I believe this explanation is less verbose and easier to understand.
+And don’t worry, I explain how I lied and &lt;a href=&quot;#the-shocking-truth&quot;&gt;reveal the shocking truth&lt;/a&gt;
+later on, so keep on reading. Well, maybe it’s not really that shocking, but 
+I wanna keep you engaged, so I’ll stick to that naming.&lt;/p&gt;
+
+&lt;p&gt;The regex engine will first try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$&lt;/code&gt;, then, if it fails, it will try to
+match &lt;code class=&quot;highlighter-rouge&quot;&gt;^(..+?)\1+$&lt;/code&gt;. Note that &lt;strong&gt;the number of characters matched corresponds to the matched number&lt;/strong&gt;,
+&lt;em&gt;i.e.&lt;/em&gt; if 3 characters are matched, that means that number &lt;code class=&quot;highlighter-rouge&quot;&gt;3&lt;/code&gt; was matched, if 
+26 characters are matched, that means that the number &lt;code class=&quot;highlighter-rouge&quot;&gt;26&lt;/code&gt; was matched.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$&lt;/code&gt; matches strings with zero or one characters (corresponds to the numbers
+&lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt;, respectively).&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&quot;hlw-regex-2&quot;&gt; &lt;/a&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^(..+?)\1+$&lt;/code&gt; first tries to match 2 characters (corresponds to the number 2),
+then 4 characters (corresponds to the number 4), then 6 characters, then 8
+characters and so on. Basically it will try to match &lt;strong&gt;multiples of 2&lt;/strong&gt;.
+If that fails, it will try to first match 3 characters (corresponds to the number 3),
+then 6 characters (corresponds to the number 6), then 9 characters, then 12 characters
+and so on. This means that it will try to match &lt;strong&gt;multiples of 3&lt;/strong&gt;. If that fails,
+it proceeds to try match &lt;strong&gt;multiples of 4&lt;/strong&gt;, then if that fails it will try
+to match &lt;strong&gt;multiples of 5&lt;/strong&gt; and so on, until the number whose multiple it tries to match is
+the length of the string (&lt;strong&gt;failure&lt;/strong&gt; case) or there is a successful match (&lt;strong&gt;success&lt;/strong&gt; case).&lt;/p&gt;
+
+&lt;h2 id=&quot;diving-deeper&quot;&gt;Diving Deeper&lt;/h2&gt;
+
+&lt;p&gt;Note, that both of parts of the regular expression begin with a &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; symbol and end with a &lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt; symbol, this 
+forces to what’s in between those symbols (&lt;code class=&quot;highlighter-rouge&quot;&gt;.?&lt;/code&gt; in the first case and &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+)\1+&lt;/code&gt; in the second case) 
+&lt;strong&gt;to start at the beginning of the string and end at the end of the string&lt;/strong&gt;. 
+In our case that string is the &lt;a href=&quot;#unary-representation&quot;&gt;unary representation of the number&lt;/a&gt;. 
+Both of the parts are separated separated by an &lt;a href=&quot;#alternation-operator&quot;&gt;alternation operator&lt;/a&gt;,
+this means that &lt;strong&gt;either only one of them will be matched or neither will&lt;/strong&gt;.
+If the number is prime, a match &lt;strong&gt;will not&lt;/strong&gt; occur. If the number is not prime a
+match &lt;strong&gt;will&lt;/strong&gt; occur. To summarize, we concluded that:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;either &lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;^(..+?)\1+$&lt;/code&gt; will be matched&lt;/li&gt;
+  &lt;li&gt;the match has to be on the whole string, &lt;em&gt;i.e.&lt;/em&gt; &lt;strong&gt;start at the beginning of the string and end at the end of the string&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Okay, but what does each one those parts matches? Keep in mind that &lt;strong&gt;if a match occurs, it means that the number is not prime&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-the--regular-expression-works&quot;&gt;How The ^.?$ Regular Expression Works&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$&lt;/code&gt; will match 0 or 1 characters. This match will be successful if:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the string contains &lt;strong&gt;only 1 character&lt;/strong&gt; - this means that we’re dealing with
+number &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; and, by definition, &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; &lt;strong&gt;is not prime&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;the string contains &lt;strong&gt;0 characters&lt;/strong&gt; - this means that we’re dealing with
+number &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; is certainly &lt;strong&gt;not prime&lt;/strong&gt;, since we can divide &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; by anything
+we want, except for &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; itself, of course.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If we’re given the sting &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$&lt;/code&gt; will match it, since we have only one 
+character in our string (&lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt;). The match will also occur if we provide an empty 
+string, since, as explained before, &lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$&lt;/code&gt; will match either an empty string (0
+characters) or a string with only 1 character.&lt;/p&gt;
+
+&lt;p&gt;Okay, so far so so good, we certainly want our regex to recognize &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; as
+non-primes. But that’s not enough, since there are numbers other than
+&lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; that are not prime. This is where the second part of the regular
+expression comes in.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-the-1-regular-expression-works&quot;&gt;How The ^(..+?)\1+$ Regular Expression Works&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^(..+?)\1+$&lt;/code&gt; will first try to match multiples of 2, then multiples of 3, then
+multiples of 4, then multiples 5, then multiples of 6 and so on, until the multiple
+of the number it tries to match is the length of the string or there is a successful match.&lt;/p&gt;
+
+&lt;p&gt;But how does it actually work? Well, let’s dissect it!&lt;/p&gt;
+
+&lt;p&gt;Let’s focus on the parentheses now, here we have &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+?)&lt;/code&gt; (remember, &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; just 
+makes this expression &lt;a href=&quot;greedy-and-non-greedy-quantifiers&quot;&gt;non-greedy&lt;/a&gt;). Notice
+that we have a &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; here, which means “one or more of the preceding token”.
+This regex will first try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;(..)&lt;/code&gt; (2 characters), then &lt;code class=&quot;highlighter-rouge&quot;&gt;(...)&lt;/code&gt; (3 characters), 
+then &lt;code class=&quot;highlighter-rouge&quot;&gt;(....)&lt;/code&gt;  (4 characters), and so on, until the length of the string we’re 
+matching against is reached or there is a successful match.&lt;/p&gt;
+
+&lt;p&gt;After matching for some number of characters (let’s call that number &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt;, the regular expression will try to
+see if the string’s length is multiple of &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt;. How does it do that? Well, there’s
+a &lt;a href=&quot;backref&quot;&gt;backreference&lt;/a&gt;. This takes us to the second
+part of the regex: &lt;code class=&quot;highlighter-rouge&quot;&gt;\1+&lt;/code&gt;. Now, &lt;a href=&quot;capturing-groups-and-backreferences&quot;&gt;as explained before&lt;/a&gt;
+this will try to repeat the match in &lt;strong&gt;capturing group #1&lt;/strong&gt; one or more times (&lt;a href=&quot;#the-shocking-lie&quot;&gt;actually it’s more “more or one times, I’m lying a little bit”&lt;/a&gt;)
+This means that first, it will try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;x * 2&lt;/code&gt; characters in the string, 
+then &lt;code class=&quot;highlighter-rouge&quot;&gt;x * 3&lt;/code&gt;, then &lt;code class=&quot;highlighter-rouge&quot;&gt;x * 4&lt;/code&gt;, and so on. If it succeeds in any of those matches,
+it returns it (and this means that the number &lt;strong&gt;is not&lt;/strong&gt; prime). If it fails (it will fail when &lt;code class=&quot;highlighter-rouge&quot;&gt;x * &amp;lt;number&amp;gt;&lt;/code&gt; exceeds the length of the string we’re matching against),
+it will try the same thing, but with &lt;code class=&quot;highlighter-rouge&quot;&gt;x+1&lt;/code&gt; characters, &lt;em&gt;i.e&lt;/em&gt;, first &lt;code class=&quot;highlighter-rouge&quot;&gt;(x+1) * 2&lt;/code&gt;, 
+then &lt;code class=&quot;highlighter-rouge&quot;&gt;(x+1) * 3&lt;/code&gt;, then &lt;code class=&quot;highlighter-rouge&quot;&gt;(x+1) * 4&lt;/code&gt; and so on (because now the &lt;code class=&quot;highlighter-rouge&quot;&gt;\1+&lt;/code&gt; backreference
+refers to &lt;code class=&quot;highlighter-rouge&quot;&gt;x+1&lt;/code&gt; characters). If the number of characters matched by &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+?)&lt;/code&gt; reaches
+the &lt;strong&gt;length of the string we’re matching against&lt;/strong&gt;, the regex matching process will stop and return a failure. If there is a successful match, it will be returned.&lt;/p&gt;
+
+&lt;h3 id=&quot;example-time&quot;&gt;Example Time&lt;/h3&gt;
+
+&lt;p&gt;Now, I’ll sketch some examples to make sure you got everything. I will provide
+one example where a regular expression &lt;strong&gt;succeeds&lt;/strong&gt; to match and one where it
+&lt;strong&gt;fails&lt;/strong&gt; to match. Again, &lt;a href=&quot;#the-shocking-lie&quot;&gt;I’m lying&lt;/a&gt; in the order of sub-steps (the nested ones, &lt;em&gt;i.e&lt;/em&gt; the ones that have a &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;, like &lt;code class=&quot;highlighter-rouge&quot;&gt;2.1&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;3.2&lt;/code&gt;, etc), just a little.&lt;/p&gt;
+
+&lt;p&gt;As an example of &lt;strong&gt;where a match succeeds&lt;/strong&gt;, let’s consider the string &lt;code class=&quot;highlighter-rouge&quot;&gt;1111111&lt;/code&gt;. The length of the string we’re matching against is &lt;code class=&quot;highlighter-rouge&quot;&gt;6&lt;/code&gt;. 
+Now, 6 is &lt;strong&gt;not&lt;/strong&gt; a prime number, so we expect the regex to succeed with the match. Let’s see
+a sketch of how it will work:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; It will try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$&lt;/code&gt;. No luck. The left side of &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; returns a &lt;strong&gt;failure&lt;/strong&gt;
+&lt;strong&gt;2.&lt;/strong&gt; It try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;^(..+?)\1+$&lt;/code&gt; (the right side of &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt;). It begins with &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+?)&lt;/code&gt; matching &lt;code class=&quot;highlighter-rouge&quot;&gt;11&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;2.1&lt;/strong&gt; The backreference &lt;code class=&quot;highlighter-rouge&quot;&gt;\1+&lt;/code&gt; will try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;11&lt;/code&gt; twice (&lt;em&gt;i.e&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;1111&lt;/code&gt;). No luck.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;2.2&lt;/strong&gt; The backreference &lt;code class=&quot;highlighter-rouge&quot;&gt;\1+&lt;/code&gt; will try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;11&lt;/code&gt; trice (&lt;em&gt;i.e&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;111111&lt;/code&gt;). &lt;strong&gt;Success!&lt;/strong&gt;. Right side of &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; returns &lt;strong&gt;success&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Woah, that was fast! Since the right side of &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; &lt;strong&gt;succeeded&lt;/strong&gt;,
+our regular expression &lt;strong&gt;succeeds&lt;/strong&gt; with the match, which means our number is &lt;strong&gt;not&lt;/strong&gt; prime.&lt;/p&gt;
+
+&lt;p&gt;As an example of &lt;strong&gt;where a match fails&lt;/strong&gt;, let’s consider the string &lt;code class=&quot;highlighter-rouge&quot;&gt;11111&lt;/code&gt;. The length of the string we’re matching against is &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt;. 
+Now, 5 is a prime number, so we expect the regex to fail to match anything. Let’s see
+a sketch of how it will work:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; It will try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$&lt;/code&gt;. No luck. The left side of &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; returns a &lt;strong&gt;failure&lt;/strong&gt;
+&lt;strong&gt;2.&lt;/strong&gt; It try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;^(..+?)\1+$&lt;/code&gt; (the right side of &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt;). It begins with &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+?)&lt;/code&gt; matching &lt;code class=&quot;highlighter-rouge&quot;&gt;11&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;2.1&lt;/strong&gt; The backreference &lt;code class=&quot;highlighter-rouge&quot;&gt;\1+&lt;/code&gt; will try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;11&lt;/code&gt; twice (&lt;em&gt;i.e&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;1111&lt;/code&gt;). No luck.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;2.2&lt;/strong&gt; The backreference &lt;code class=&quot;highlighter-rouge&quot;&gt;\1+&lt;/code&gt; will try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;11&lt;/code&gt; trice (&lt;em&gt;i.e&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;111111&lt;/code&gt;). No luck. &lt;strong&gt;Length of string exceeded&lt;/strong&gt; (6 &amp;gt; 5). Backreference returns a &lt;strong&gt;failure&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+?)&lt;/code&gt; now matches &lt;code class=&quot;highlighter-rouge&quot;&gt;111&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;3.1&lt;/strong&gt; The backreference &lt;code class=&quot;highlighter-rouge&quot;&gt;\1+&lt;/code&gt; will try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;111&lt;/code&gt; twice (&lt;em&gt;i.e&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;111111&lt;/code&gt;). No luck. &lt;strong&gt;Length of string exceeded&lt;/strong&gt; (6 &amp;gt; 5). Backreference returns a &lt;strong&gt;failure&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+?)&lt;/code&gt; now matches &lt;code class=&quot;highlighter-rouge&quot;&gt;1111&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;4.1&lt;/strong&gt; The backreference &lt;code class=&quot;highlighter-rouge&quot;&gt;\1+&lt;/code&gt; will try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;1111&lt;/code&gt; twice (&lt;em&gt;i.e&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;11111111&lt;/code&gt;). No luck. &lt;strong&gt;Length of string exceeded&lt;/strong&gt; (8 &amp;gt; 5). Backreference returns a &lt;strong&gt;failure&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;5.&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+?)&lt;/code&gt; now matches &lt;code class=&quot;highlighter-rouge&quot;&gt;11111&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;5.1&lt;/strong&gt; The backreference &lt;code class=&quot;highlighter-rouge&quot;&gt;\1+&lt;/code&gt; will try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;11111&lt;/code&gt; twice (&lt;em&gt;i.e&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;1111111111&lt;/code&gt;). No luck. &lt;strong&gt;Length of string exceeded&lt;/strong&gt; (10 &amp;gt; 5). Backreference returns a &lt;strong&gt;failure&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;5.&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+?)&lt;/code&gt; will try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;1111111&lt;/code&gt;. No luck. &lt;strong&gt;Length of string exceeded&lt;/strong&gt; (6 &amp;gt; 5). &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+?)&lt;/code&gt; returns a &lt;strong&gt;failure&lt;/strong&gt;. The right side of &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; returns a &lt;strong&gt;failure&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now since both sides of &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; failed to match anything, the regular expression &lt;strong&gt;fails&lt;/strong&gt;
+to match anything, which means our number is prime.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-about-the-&quot;&gt;What About The ?&lt;/h3&gt;
+
+&lt;p&gt;Well, I mentioned that you can ignore the &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; symbol in the regular expression,
+since &lt;strong&gt;it’s there only for performance reasons&lt;/strong&gt;, and that’s true, but there is no
+need to keep its purpose a mystery, so I’ll explain what it actually does there.&lt;/p&gt;
+
+&lt;p&gt;As mentioned before, &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; makes the preceding &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; &lt;a href=&quot;#greedy-and-non-greedy-quantifiers&quot;&gt;non-greedy&lt;/a&gt;. What does it mean in practice? 
+Let’s say our string is &lt;code class=&quot;highlighter-rouge&quot;&gt;111111111111111&lt;/code&gt; (corresponds to the number 15). Let’s call
+&lt;code class=&quot;highlighter-rouge&quot;&gt;L&lt;/code&gt; the length of the string. In our case, &lt;code class=&quot;highlighter-rouge&quot;&gt;L=15&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;With the &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; present there, &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; will try to match its preceding token (in this case &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;) &lt;strong&gt;as few times as possible&lt;/strong&gt;. This means that first &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+?)&lt;/code&gt; will
+try to match &lt;code class=&quot;highlighter-rouge&quot;&gt;..&lt;/code&gt;, then &lt;code class=&quot;highlighter-rouge&quot;&gt;...&lt;/code&gt;, then &lt;code class=&quot;highlighter-rouge&quot;&gt;....&lt;/code&gt; and then &lt;code class=&quot;highlighter-rouge&quot;&gt;.....&lt;/code&gt;,
+after which our whole regex (&lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$|^(..+?)\1+$&lt;/code&gt;) would &lt;strong&gt;succeed&lt;/strong&gt;. So first, we’ll be testing the divisibility
+by 2, then by 3, then by 4 and then by 5, after which we would have a match.
+Notice that the number of steps in &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+?)&lt;/code&gt; was &lt;strong&gt;4&lt;/strong&gt; (first it matches 2, then 3, then 4 and then 5).&lt;/p&gt;
+
+&lt;p&gt;If we omitted the &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt;, &lt;em&gt;i.e&lt;/em&gt; if we had &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+)&lt;/code&gt;, then it would go the other way around: first it would try to
+match &lt;code class=&quot;highlighter-rouge&quot;&gt;...............&lt;/code&gt; (the number 15, which is our &lt;code class=&quot;highlighter-rouge&quot;&gt;L&lt;/code&gt;), then &lt;code class=&quot;highlighter-rouge&quot;&gt;..............&lt;/code&gt; (the number 14, &lt;em&gt;i.e&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;L-1&lt;/code&gt;),
+and so on until &lt;code class=&quot;highlighter-rouge&quot;&gt;.....&lt;/code&gt;, after which the whole regex would &lt;strong&gt;succeed&lt;/strong&gt;. Notice
+that even though the result was the same as in &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+?)&lt;/code&gt;, in &lt;code class=&quot;highlighter-rouge&quot;&gt;(..+)&lt;/code&gt; the number of steps was &lt;strong&gt;11&lt;/strong&gt;
+instead of &lt;strong&gt;4&lt;/strong&gt;. By definition, &lt;strong&gt;any divisor of L must be no greater than L/2&lt;/strong&gt;, so that means that
+means that &lt;strong&gt;8&lt;/strong&gt; steps were &lt;strong&gt;absolutely wasted computation&lt;/strong&gt;, since first we tested
+the divisibility by 15, then 14, then 13, and so on until 5 (we could only
+hope for a match from number &lt;strong&gt;7&lt;/strong&gt; and downwards, since &lt;code class=&quot;highlighter-rouge&quot;&gt;L/2 = 15/2 = 7.5&lt;/code&gt;
+and the first integer smaller than &lt;code class=&quot;highlighter-rouge&quot;&gt;7.5&lt;/code&gt; is &lt;code class=&quot;highlighter-rouge&quot;&gt;7&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;the-shocking-lie&quot;&gt;The Shocking Lie&lt;/h2&gt;
+
+&lt;p&gt;As I mentioned before, I actually lied in the explanation of how the multiples of a number
+are matched. Let’s say we have the string &lt;code class=&quot;highlighter-rouge&quot;&gt;111111111111111&lt;/code&gt; (number 15).&lt;/p&gt;
+
+&lt;p&gt;The way I explained it before was that the regular expression would begin
+to test for divisibility by &lt;code class=&quot;highlighter-rouge&quot;&gt;2&lt;/code&gt;. It would do so by first trying to match
+&lt;code class=&quot;highlighter-rouge&quot;&gt;2*2&lt;/code&gt; characters, then &lt;code class=&quot;highlighter-rouge&quot;&gt;2*3&lt;/code&gt;, then &lt;code class=&quot;highlighter-rouge&quot;&gt;2*4&lt;/code&gt;, then &lt;code class=&quot;highlighter-rouge&quot;&gt;2*5&lt;/code&gt;, then &lt;code class=&quot;highlighter-rouge&quot;&gt;2*6&lt;/code&gt;, then &lt;code class=&quot;highlighter-rouge&quot;&gt;2*7&lt;/code&gt;,
+after which it would fail to match &lt;code class=&quot;highlighter-rouge&quot;&gt;2*8&lt;/code&gt;, so it would try its luck with testing
+for divisibility by &lt;code class=&quot;highlighter-rouge&quot;&gt;3&lt;/code&gt;, by first trying to match for &lt;code class=&quot;highlighter-rouge&quot;&gt;3*2&lt;/code&gt; characters, then for
+&lt;code class=&quot;highlighter-rouge&quot;&gt;3*3&lt;/code&gt; characters, then for &lt;code class=&quot;highlighter-rouge&quot;&gt;3*4&lt;/code&gt; and then for &lt;code class=&quot;highlighter-rouge&quot;&gt;3*5&lt;/code&gt;, where it would succeed.
+This is actually what would happen if the regular expression was &lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$|^(..+?)\1+?$&lt;/code&gt;
+(notice the &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; at the end), &lt;em&gt;i.e.&lt;/em&gt;, if the &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;following the backreference was
+&lt;a href=&quot;#greedy-and-non-greedy-quantifiers&quot;&gt;non-greedy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;What actually happens is the opposite. It would still try to test
+for the divisibility by &lt;code class=&quot;highlighter-rouge&quot;&gt;2&lt;/code&gt;, first, but instead of trying to match for &lt;code class=&quot;highlighter-rouge&quot;&gt;2*2&lt;/code&gt; characters,
+it would begin with trying to match for &lt;code class=&quot;highlighter-rouge&quot;&gt;2*7&lt;/code&gt;, then for &lt;code class=&quot;highlighter-rouge&quot;&gt;2*6&lt;/code&gt;, then for &lt;code class=&quot;highlighter-rouge&quot;&gt;2*5&lt;/code&gt;,
+then for &lt;code class=&quot;highlighter-rouge&quot;&gt;2*4&lt;/code&gt;, then for &lt;code class=&quot;highlighter-rouge&quot;&gt;2*3&lt;/code&gt; and then for &lt;code class=&quot;highlighter-rouge&quot;&gt;2*2&lt;/code&gt;, after which it would fail and, once again,
+try its luck with divisibility by &lt;code class=&quot;highlighter-rouge&quot;&gt;3&lt;/code&gt;, by first trying to match for &lt;code class=&quot;highlighter-rouge&quot;&gt;3*5&lt;/code&gt; characters,
+where it would succeed right away.&lt;/p&gt;
+
+&lt;p&gt;Notice, that in the second case, which is what happens in reality,
+&lt;strong&gt;less steps are required&lt;/strong&gt;: &lt;strong&gt;11&lt;/strong&gt; in the first case vs &lt;strong&gt;7&lt;/strong&gt; in the second (in reality, &lt;strong&gt;both of the cases would require more steps than presented here&lt;/strong&gt;,
+the goal of this explanation is not count them all, but to transmit the idea of what’s happening in both cases, it’s just a sketch of what’s going on under the hood).
+While both versions are &lt;strong&gt;equivalent&lt;/strong&gt;, the one explained in this blog post, is more efficient.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-java-case&quot;&gt;3. The Java Case&lt;/h1&gt;
+
+&lt;p&gt;Here’s the piece of Java code that started all of this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;isPrime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;matches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;.?|(..+?)\\1+&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;If you remember correctly, I said that due to the peculiarities of the way
+&lt;a href=&quot;https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#matches-java.lang.String-&quot;&gt;String.matches&lt;/a&gt; works in Java, the regular expression that matches
+non-prime numbers is not the one in the code example above (&lt;code class=&quot;highlighter-rouge&quot;&gt;.?|(..+?)\1+&lt;/code&gt;),
+but it’s actually &lt;code class=&quot;highlighter-rouge&quot;&gt;^.?$|^(..+?)\1+$&lt;/code&gt;. Why? Well, turns out &lt;code class=&quot;highlighter-rouge&quot;&gt;String.matches()&lt;/code&gt;
+&lt;strong&gt;matches on the whole string&lt;/strong&gt;, not on any substring of the string.
+Basically, it “automatically inserts” all of the &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt; present in the regex 
+I explained in this post.&lt;/p&gt;
+
+&lt;p&gt;If you’re looking for a way not to force the match on the whole string in Java, you can use
+&lt;a href=&quot;https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html&quot;&gt;Pattern&lt;/a&gt;, &lt;a href=&quot;https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html&quot;&gt;Matcher&lt;/a&gt; and &lt;a href=&quot;https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html#find--&quot;&gt;Matcher.find()&lt;/a&gt; method.&lt;/p&gt;
+
+&lt;p&gt;Other than that, it’s pretty much self explanatory: if the match succeeds, then
+the number is &lt;strong&gt;not&lt;/strong&gt; prime. In case of a successful match, &lt;code class=&quot;highlighter-rouge&quot;&gt;String.matches()&lt;/code&gt;
+returns &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt; (number is &lt;strong&gt;not&lt;/strong&gt; prime), otherwise, it return &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; (number is prime),
+so to obtain the desired functionality we negate what the method returns.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;new String(new char[n])&lt;/code&gt; returns a &lt;code class=&quot;highlighter-rouge&quot;&gt;String&lt;/code&gt;of &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; null characters (the &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; in our regex matches them).&lt;/p&gt;
+
+&lt;h1 id=&quot;code-examples&quot;&gt;4. Code Examples&lt;/h1&gt;
+
+&lt;p&gt;Now, as promised, it’s time for some code examples!&lt;/p&gt;
+
+&lt;h2 id=&quot;java&quot;&gt;Java&lt;/h2&gt;
+
+&lt;p&gt;Although I already presented this code example twice in this post,
+I’ll do it here again, just to keep it organized.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;isPrime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;matches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;.?|(..+?)\\1+&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
+
+&lt;p&gt;I’ve &lt;a href=&quot;https://iluxonchik.github.io/why-you-should-learn-python/&quot;&gt;expressed my sympathy for Python before&lt;/a&gt;, so of course I have to include
+this one here.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;is_prime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r&#39;^.?$|^(..+?)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;1+$&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;1&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;javascript&quot;&gt;JavaScript&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Java is to JavaScript as car is to carpet.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That’s a joke I like. I didn’t come up with it and I don’t really know its
+first source, so I don’t know whom to credit. Anyways, I’m actually going to
+give you two versions here, one which works in &lt;a href=&quot;https://github.com/lukehoban/es6features&quot;&gt;ES6&lt;/a&gt;
+and one that works in previous versions.&lt;/p&gt;
+
+&lt;p&gt;First, the ECMAScript 6 version:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;isPrime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;re&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/^.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;$|^&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;..+&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;?)\1&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;+$/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;1&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The feature that’s only available in ECMAScript 6 is the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat&quot;&gt;String.prototype.repeat()&lt;/a&gt;
+method.&lt;/p&gt;
+
+&lt;p&gt;If you gotta use previous versions of ES, you can always fall back to
+&lt;a href=&quot;https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/join&quot;&gt;Array.prototype.join()&lt;/a&gt;.
+Note, however, that we’re passing &lt;code class=&quot;highlighter-rouge&quot;&gt;n+1&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;join()&lt;/code&gt;, since it actually
+places those characters &lt;strong&gt;in between&lt;/strong&gt; array elements. So if we have, let’s say,
+&lt;code class=&quot;highlighter-rouge&quot;&gt;10&lt;/code&gt; array elements, there are only &lt;code class=&quot;highlighter-rouge&quot;&gt;9&lt;/code&gt; “in-betweens”. Here’s the version
+that will work in versions prior to ECMAScript 6:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;isPrime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;re&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/^.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;$|^&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;..+&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;?)\1&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;+$/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;1&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;perl&quot;&gt;Perl&lt;/h2&gt;
+
+&lt;p&gt;Last, but not least, it’s time for Perl. I’m including this here because the
+regular expression we’ve been exploring in this blog post has been popularized
+by Perl. I’m talking about the one-liner &lt;code class=&quot;highlighter-rouge&quot;&gt;perl -wle &#39;print &quot;Prime&quot; if (1 x shift) !~ /^1?$|^(11+?)\1+$/&#39; &amp;lt;number&amp;gt;&lt;/code&gt;
+(replace &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;number&amp;gt;&lt;/code&gt; with an actual number).&lt;/p&gt;
+
+&lt;p&gt;Also, since I haven’t played around with Perl before, this seemed like a good
+opportunity to do so. So here we go:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;sub&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;is_prime&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=~&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/^.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;$|^&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;..+&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;?)\1&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;+$/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Since Perl isn’t the most popular language right now, it might happen that
+you’re not familiar with its syntax. Now, I’ve had about 15 mins with it, so
+I’m pretty much an expert, so I’ll take the liberty to briefly explain the
+syntax above:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sub&lt;/code&gt; - defines a new subroutine (function)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1x&amp;lt;number&amp;gt;&lt;/code&gt; - here we’re using the repetition operator &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt;, this will
+basically repeat the number &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;number&amp;gt;&lt;/code&gt; of times and return the result as a string.
+This is similar to what &lt;code class=&quot;highlighter-rouge&quot;&gt;&#39;1&#39;*&amp;lt;number&amp;gt;&lt;/code&gt; would do in Python or &lt;code class=&quot;highlighter-rouge&quot;&gt;&#39;1&#39;.repeat(&amp;lt;number&amp;gt;)&lt;/code&gt;
+in JavaScript.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=~&lt;/code&gt; is the match test operator, it will return true if the regular expression
+(its right-hand side) has a match on the string (its left-hand side).&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;!&lt;/code&gt; is the negation operator&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I included this brief explanation, because, I myself, don’t like being left
+in mystery about what a certain passage of code does and the explanation didn’t
+take up much space anyways.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;That’s all folks! Hopefully, you’re now demystified about how a regular expression
+can check if a number is prime. Keep in mind, that this is far from efficient,
+there are a lot more efficient algorithms for this task,
+but it is, nonetheless, a fun and interesting thing.&lt;/p&gt;
+
+&lt;p&gt;I encourage you to go to a website like &lt;a href=&quot;https://regex101.com/&quot;&gt;regex101&lt;/a&gt; and
+play around, specially if you’re still not 100% clear about how everything
+explained here works. One of the cool things about this website is that
+it includes an explanation of the regular expression (column on the right),
+as well as the number of steps the regex engine had to make (rectangle right above
+the modifiers box) - it’s a good way to see the performance differences (through the number of steps taken)
+in the greedy and non-greedy cases.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions or suggestions, feel free to post them in the
+comment section below or &lt;a href=&quot;https://iluxonchik.github.io/about/&quot;&gt;get in touch with me via a different medium&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/&quot;&gt;Demystifying The Regular Expression That Checks If A Number Is Prime&lt;/a&gt; was originally published by iluxonchik at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;G'd Up Code&lt;/a&gt; on September 08, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
 <entry>
