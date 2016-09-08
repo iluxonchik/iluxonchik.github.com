@@ -468,7 +468,7 @@ opportunity to do so. So here we go:
 
 {% highlight javascript %}
 sub is_prime {
-    return !((1x@_[0]) =~ /^.?$|^(..+?)\1+$/);
+    return !((1x$_[0]) =~ /^.?$|^(..+?)\1+$/);
 }
 {% endhighlight %}
 
@@ -478,6 +478,7 @@ I'm pretty much an expert, so I'll take the liberty to briefly explain the
 syntax above:
 
 * `sub` - defines a new subroutine (function)
+* `$_[0]` - we're accessing the first parameter passed in to our subroutine
 * `1x<number>` - here we're using the repetition operator `x`, this will
 basically repeat the number `1` `<number>` of times and return the result as a string.
 This is similar to what `'1'*<number>` would do in Python or `'1'.repeat(<number>)`
@@ -507,3 +508,9 @@ in the greedy and non-greedy cases.
 
 If you have any questions or suggestions, feel free to post them in the
 comment section below or [get in touch with me via a different medium](https://iluxonchik.github.io/about/).
+
+**EDIT**:
+
+* Thanks to [joshuamy](https://twitter.com/joshuamy) for pointing out a typo in
+Perl code
+
