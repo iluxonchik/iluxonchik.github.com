@@ -275,7 +275,7 @@ Now, I'll sketch some examples to make sure you got everything. I will provide
 one example where a regular expression **succeeds** to match and one where it
 **fails** to match. Again, [I'm lying](#the-shocking-lie) in the order of sub-steps (the nested ones, *i.e* the ones that have a `.`, like `2.1`, `3.2`, etc), just a little.
 
-As an example of **where a match succeeds**, let's consider the string `1111111`. The length of the string we're matching against is `6`. 
+As an example of **where a match succeeds**, let's consider the string `111111`. The length of the string we're matching against is `6`. 
 Now, 6 is **not** a prime number, so we expect the regex to succeed with the match. Let's see
 a sketch of how it will work:
 
@@ -513,4 +513,12 @@ comment section below or [get in touch with me via a different medium](https://i
 
 * Thanks to [joshuamy](https://twitter.com/joshuamy) for pointing out a typo in
 Perl code
-
+* Thanks to [Keen](https://disqus.com/by/disqus_kM1gQBMfK7/) for pointing out 
+a typo in the post
+* Thanks to [Russel](https://disqus.com/by/disqus_527bF1C8Ck/) for submitting [a Swift 2 code example](https://gist.github.com/iluxonchik/72e8e090fdad0c6468cba5584a7da5fe)
+* I didn't want to get into the topic of regular/non-regular languages and related, since
+it's theory that isn't crucial for the topic of this post, but as [lanzaa](https://www.reddit.com/user/lanzaa/)
+pointed out, [there is a difference between "regex" and "regular expression"](https://en.m.wikipedia.org/wiki/Regular_expression#Patterns_for_non-regular_languages).
+What was covered in this blog post wasn't a regular expression, but rather a regex.
+In the "real world", however (outside of academia), those terms are used
+interchangeably
