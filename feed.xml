@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="https://iluxonchik.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="https://iluxonchik.github.io" />
-<updated>2016-09-08T15:22:08+01:00</updated>
+<updated>2016-09-09T15:14:57+01:00</updated>
 <id>https://iluxonchik.github.io/</id>
 <author>
   <name>iluxonchik</name>
@@ -299,7 +299,7 @@ the &lt;strong&gt;length of the string we’re matching against&lt;/strong&gt;, 
 one example where a regular expression &lt;strong&gt;succeeds&lt;/strong&gt; to match and one where it
 &lt;strong&gt;fails&lt;/strong&gt; to match. Again, &lt;a href=&quot;#the-shocking-lie&quot;&gt;I’m lying&lt;/a&gt; in the order of sub-steps (the nested ones, &lt;em&gt;i.e&lt;/em&gt; the ones that have a &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;, like &lt;code class=&quot;highlighter-rouge&quot;&gt;2.1&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;3.2&lt;/code&gt;, etc), just a little.&lt;/p&gt;
 
-&lt;p&gt;As an example of &lt;strong&gt;where a match succeeds&lt;/strong&gt;, let’s consider the string &lt;code class=&quot;highlighter-rouge&quot;&gt;1111111&lt;/code&gt;. The length of the string we’re matching against is &lt;code class=&quot;highlighter-rouge&quot;&gt;6&lt;/code&gt;. 
+&lt;p&gt;As an example of &lt;strong&gt;where a match succeeds&lt;/strong&gt;, let’s consider the string &lt;code class=&quot;highlighter-rouge&quot;&gt;111111&lt;/code&gt;. The length of the string we’re matching against is &lt;code class=&quot;highlighter-rouge&quot;&gt;6&lt;/code&gt;. 
 Now, 6 is &lt;strong&gt;not&lt;/strong&gt; a prime number, so we expect the regex to succeed with the match. Let’s see
 a sketch of how it will work:&lt;/p&gt;
 
@@ -540,8 +540,16 @@ comment section below or &lt;a href=&quot;https://iluxonchik.github.io/about/&qu
 &lt;ul&gt;
   &lt;li&gt;Thanks to &lt;a href=&quot;https://twitter.com/joshuamy&quot;&gt;joshuamy&lt;/a&gt; for pointing out a typo in
 Perl code&lt;/li&gt;
+  &lt;li&gt;Thanks to &lt;a href=&quot;https://disqus.com/by/disqus_kM1gQBMfK7/&quot;&gt;Keen&lt;/a&gt; for pointing out 
+a typo in the post&lt;/li&gt;
+  &lt;li&gt;Thanks to &lt;a href=&quot;https://disqus.com/by/disqus_527bF1C8Ck/&quot;&gt;Russel&lt;/a&gt; for submitting &lt;a href=&quot;https://gist.github.com/iluxonchik/72e8e090fdad0c6468cba5584a7da5fe&quot;&gt;a Swift 2 code example&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I didn’t want to get into the topic of regular/non-regular languages and related, since
+it’s theory that isn’t crucial for the topic of this post, but as &lt;a href=&quot;https://www.reddit.com/user/lanzaa/&quot;&gt;lanzaa&lt;/a&gt;
+pointed out, &lt;a href=&quot;https://en.m.wikipedia.org/wiki/Regular_expression#Patterns_for_non-regular_languages&quot;&gt;there is a difference between “regex” and “regular expression”&lt;/a&gt;.
+What was covered in this blog post wasn’t a regular expression, but rather a regex.
+In the “real world”, however (outside of academia), those terms are used
+interchangeably&lt;/li&gt;
 &lt;/ul&gt;
-
 
     &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/&quot;&gt;Demystifying The Regular Expression That Checks If A Number Is Prime&lt;/a&gt; was originally published by iluxonchik at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;G'd Up Code&lt;/a&gt; on September 08, 2016.&lt;/p&gt;
   </content>
