@@ -156,4 +156,17 @@ There are some differences between the two, but those are smaller than the ones 
 to the `TLS 1.0` protocol, the IETF TLS WG also released a released a series of extensions
 to the `TLS` protocol which can be found in other RFCs.
 
-In August 2006, `TLS 1.1` was released, fixing some cryptographic problems.
+In August 2006, `TLS 1.1` was released, fixing some cryptographic problems, among other things.
+For example, the implicit `IV` was replaced with an explicit `IV` in order to protect from
+some `CBC` attacks. Another change was that premature closes (i.e. if the TLS connection is closed without a proper `close_notify` alert) didn't make a `TLS` session non-resumable anymore.
+
+A few years later, in 2009, `TLS 1.2` was released. Some of changes were:
+
+* instead of using the hardcoded `MD5/SHA-1` combination in the Pseudo Random Funcion (PRF), the PRF to be used is now specified in the cipher suite.
+
+* the `MD5/SHA-1` combination is the digital signature is replaced with a single has, which is negotiated during the handshake
+
+* TLS Extensions definition and AES Cipher Suites were merged in from other RFCs (*i.e.* the TLS extension mechanism is now defined in the `TLS 1.2`s RFC, instead of being part of a separate [RFC 4366](https://tools.ietf.org/html/rfc4366))
+
+This concludes the introductory section of this blog post and we will begin
+diving into `TLS 1.2` in the next section. 
