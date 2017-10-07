@@ -5,6 +5,8 @@ description: A comprehensive technical overview of the SSL/TLS protocol.
 tags: [ssl, tls, tls 1.2, protocol, explanation]
 ---
 
+{% include figure.html %}
+
 # Introduction
 
 SSL/TLS is one of the most used and important protocols nowadays.
@@ -67,7 +69,7 @@ standardized protocol.
 Here's an image that will give you a visual of the version evolution of the SLL and TLS
 protocols:
 
-![SSL and TLS protocols version history](../images/posts/ssl_tls_overview/ssl-tls-version-history-iluxonchik.png)
+{% include figure.html url="../images/posts/ssl_tls_overview/ssl-tls-version-history-iluxonchik.png" num="1" term=":" description="SSL and TLS Protocols Version History" %}
 
 SSL 1.0 was never actually released to the public and was only used inside the Netscape Communications,
 since it had several security flaws and shortcomings. SSL 2.0 was the first publically
@@ -169,4 +171,26 @@ A few years later, in 2009, `TLS 1.2` was released. Some of changes were:
 * TLS Extensions definition and AES Cipher Suites were merged in from other RFCs (*i.e.* the TLS extension mechanism is now defined in the `TLS 1.2`s RFC, instead of being part of a separate [RFC 4366](https://tools.ietf.org/html/rfc4366))
 
 This concludes the introductory section of this blog post and we will begin
-diving into `TLS 1.2` in the next section. 
+diving into `TLS 1.2` in the next section.
+
+# The TLS Protocol
+
+In this section we'll be looking into the TLS protocol. While here we'll be
+focusing on `TLS 1.2`, since it's the latest version of the protocol at the
+time of writing of this post (`TLS 1.3` is currently in draft state), the
+description below is valid for previous versions of `TLS` (`TLS 1.0` and `TLS 1.1`),
+as well as `SSL 3.0` and vice-versa. This is due to the fact that the main parts
+remain the same in all of them, there are differences in some parts, like
+the supported cipher suites (some get removed, some get added), the generation of
+the keying material (there are changes in the `Pseudo Random Function (PRF)` used,
+and `Message Authentication Code (MAC)` generation), among others, but the
+central ideas suffer very little change.
+
+## Introduction
+
+`Trasnsport Layer Security (TLS)` is a **client/server** protocol that runs on top of a
+**connection-oriented and reliable transport protocol**, such as `TCP`. In the
+[TCP/IP protocol stack](https://en.wikipedia.org/wiki/Internet_protocol_suite), the `SSL` and `TLS` protocols
+are placed **between the Transport Layer and the Application Layer**, as shown in the image below:
+
+{% include figure.html url="../images/posts/ssl_tls_overview/tls-in-tcp-ip-iluxonchik.png" num="2" term=":" description="SSL/TLS/DTLS Protocol Placement In The TCP/IP Protocol Stack" %}
