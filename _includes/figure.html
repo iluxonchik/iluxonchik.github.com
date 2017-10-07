@@ -16,7 +16,17 @@ Args:
 {% assign img_desc = '<b>Figure ' | append: include.num | append: include.term | append: '</b> '  | append: include.description %}
 {% endif %}
 
-<table class="image">
+<style>
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+</style>
+
+<table>
     <caption align="bottom">{{ img_desc }}</caption>
-    <tr><td><img src="{{ include.url }}" alt="{{ include.description }}"/></td></tr>
+    <tr><td><img class="centered" src="{{ include.url }}" alt="{{ include.description }}"/></td></tr>
 </table>
