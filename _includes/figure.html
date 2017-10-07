@@ -1,0 +1,22 @@
+{% comment %}
+Adds an image figure with a description.
+
+Args:
+    * description: the description of the figure (i.e. the caption)
+    * num: if provided, a bold 'Figure <num>' will be added before the image
+        description.
+    * term: if provided, this is added right after the <num> argument (as a
+        terminator of the "Figure <num>" string.)
+    * url: the url of the image
+{% endcomment %}
+
+{% if include.num == null %}
+    {% assign img_desc  = include.description %}
+{% else %}
+{% assign img_desc = '<b>Figure ' | append: include.num | append: include.term | append: '</b> '  | append: include.description %}
+{% endif %}
+
+<table class="image">
+    <caption align="bottom">{{ img_desc }}</caption>
+    <tr><td><img src="{{ include.url }}" alt="{{ include.description }}"/></td></tr>
+</table>
