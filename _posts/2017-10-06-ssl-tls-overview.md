@@ -166,7 +166,7 @@ A few years later, in 2009, `TLS 1.2` was released. Some of changes were:
 
 * instead of using the hardcoded `MD5/SHA-1` combination in the Pseudo Random Funcion (PRF), the PRF to be used is now specified in the cipher suite.
 
-* the `MD5/SHA-1` combination is the digital signature is replaced with a single has, which is negotiated during the handshake
+* the `MD5/SHA-1` combination is the digital signature is replaced with a single hash, which is negotiated during the handshake
 
 * TLS Extensions definition and AES Cipher Suites were merged in from other RFCs (*i.e.* the TLS extension mechanism is now defined in the `TLS 1.2`s RFC, instead of being part of a separate [RFC 4366](https://tools.ietf.org/html/rfc4366))
 
@@ -194,3 +194,51 @@ central ideas suffer very little change.
 are placed **between the Transport Layer and the Application Layer**, as shown in the image below:
 
 {% include figure.html url="../images/posts/ssl_tls_overview/tls-in-tcp-ip-iluxonchik.png" num="2" term=":" description="SSL/TLS/DTLS Protocol Placement In The TCP/IP Protocol Stack" %}
+
+### Programming Model: Developer Centered
+
+From the beginning, the idea of the protocol was to **make the application developer's life easier**.
+To use `SSL/TLS` all the developer has to do is create a **secure connection**, instead
+of a "normal" one, in a way that it's as simple as possible. To achieve that goal,
+the `SSL/TLS` layer was inserted between the **Transport Layer** and the **Application Layer**.
+Its goal is to **establish secure connections** and **transmit data over these secure connections**.
+
+The famous [end-to-end principle](https://en.wikipedia.org/wiki/End-to-end_principle) suggests that security services should be provided
+at **higher levels** and this philosophy was adopted in the `SSL/TLS` protocols:
+all of the encryption and authentication takes places at the **end-points** (*i.e* the "computers").
+
+## Security Services
+
+`SSL/TLS` provides the following security services:
+
+* **authentication** - both, **peer entity** and **data origin** authentication.
+    - **peer entity authentication** - we can be sure that we're talking to certain entity, for example, `www.google.com`.
+    - **data origin authentication** - we can be sure that the data that we're receiving is coming from the expected entity (for example, we can be sure that the `index.html` file sent to us when we connected to `www.google.com` in fact came from `www.google.com`) and that it **was not modified** (*i.e* tampered with) en route by an attacker (**data integrity**).
+
+* **confidentiality** - the data transmitted between the communicating entities (the client and the server) is **encrypted**.
+
+* **integrity** - we can be sure that the data was not modified or forged.
+
+Even though the `SSL/TLS` protocols use public key cryptography, they **don't provide non-repudiation services**: neither **non-repudiation with proof of origin**, nor **non-repudiation with proof of delivery**.
+
+* **non-repudiation with proof of origin** - addresses the user denying they have sent the message.
+* **non-repudiation with proof of delivery** - addressed the user denying they have received the message.
+
+This is due to the fact that instead of using digital signatures, the messages are `MAC`ed instead (to be more precise, the messages are `HMAC`ed).
+By definition, a `MAC` requires a **secret** (*i.e.* a key) as an input, which means that both communicating parties **share the same secret key**,
+which means that the **non-repudiation** guarantees is dropped, since more than one party knows the secret key (non-repudiation is based on a secret key that is only known to a **single entity**, that's how you can say `"this message was sent by X"`, since `X` is the only entity that knows that secret key).
+
+**You are not required to use all of the 3 services** in every situation. You can think
+of `SSL/TLS` as a framework that allows you to select which security services you
+want to provide for a communication session. For example, you might ignore certificate
+authenticity validation, which means you disable the **authentication** guarantee.
+Here is a visual of what I mean, just to give you a mental image:
+
+{% include figure.html url="../images/posts/ssl_tls_overview/ssl-tls-as-a-framework-iluxonchik.png" num="3" term=":" description="Security Services In SSL/TLS Are Optional" %}
+
+As a matter of fact, you can choose not use any of security services, which means
+that you're basically "not even using `SSL/TLS`", since everything is transfered
+in plaintext (no confidentiality), nothing is authenticated (no authentication) and
+the integrity of the messages is not checked (no integrity).
+
+The services used are negotiated durint the [Handshake](#todo) phase.
