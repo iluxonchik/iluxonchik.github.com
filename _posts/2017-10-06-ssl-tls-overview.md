@@ -186,6 +186,18 @@ the keying material (there are changes in the `Pseudo Random Function (PRF)` use
 and `Message Authentication Code (MAC)` generation), among others, but the
 central ideas suffer very little change.
 
+As you will notice, there are frequent references to the `SSL` protocol in the text,
+that is because both are very similar. When I say `SSL`, I'm actually referring to `SSL 3.0`,
+even thought the same information migt be true for prior versions of the protocol as well.
+I'm not overloading the post with a lot of extra information, the `SSL` part comes in "for free", since most of what is true
+for `TLS` is also true for `SLL` (`TLS 1.0` is just `SSL 3.0` with a few extra things, remember?).
+If you go searching for more information about the topic, you'll notice that a lot
+of times that information refers to `SSL` and not `TLS`. Most probably this information
+is still valuable and valid, that's why I think its important for me to underline
+the similarities between both of them: that way you're better prepared for "the real world". In fact, some people
+use the term `SSL` when in fact they're talking about `TLS`.
+
+
 ## Introduction
 
 `Trasnsport Layer Security (TLS)` is a **client/server** protocol that runs on top of a
@@ -241,4 +253,58 @@ that you're basically "not even using `SSL/TLS`", since everything is transfered
 in plaintext (no confidentiality), nothing is authenticated (no authentication) and
 the integrity of the messages is not checked (no integrity).
 
-The services used are negotiated durint the [Handshake](#todo) phase.
+The services used are negotiated during the [Handshake](#todo) phase.
+
+## SSL/TLS Subprotocols
+
+As mentioned before, `SSL/TLS` is an **intermediate layer** between the **Transport Layer**
+and the **Application Layer**. It has two main functions:
+
+* establish **secure connections** between the communicating peers (*i.e.* connections that are authentic and confidential).
+* use the secure connection to **securely transmit higher-layer protocol data** from one peer to another.
+To accomplish this, the `SSL/TLS` layer must **fragment the data to be sent** into manageable pieces.
+Those pieces are called **fragments**. Each fragment is then compressed, authenticated with a `MAC`,
+encrypted, prepended with a header and transmitted to the recipient. Each one of those
+fragments is called a **TLS Record** (or an **SSL Record**, in case of `SSL`). The
+recipient, upon receiving a `TLS Record` (or an `SSL Record`) must then decrypt it,
+verify its `MAC`, decompress it, reassemble and then **deliver it to a higher-layer protocol** (usually the **Application Layer**).
+
+As an example, this is what happens in case of `HTTPS`, which is basically `HTTP` running over `SSL/TLS` (all of the data sent via `HTTP` is sent via "secure sockets/connections" instead of "normal ones").
+First, your browser establishes a secure connection with the server. Then they begin
+communicating over that secure connection/channel.Let's consider the case where
+you download an `mp3` file from a website (*i.e.* from a server). Fist, the web sever passes the
+data to be transfered (in our case the `mp3` file) to the `SSL/TLS layer`.
+The `mp3` file might be too big to send all at once, so it might need to be fragmented.
+Let's say that our `mp3` file is `10MB` in size and and that the `SSL/TLS layer`
+decides to fragment it into `10` pieces, `1MB` each (**NOTE:** realistically, the
+fragments would me much smaller in size, I used this size just to keep it simple).
+So the web server grabs the first `MB` of the file, compresses it, adds a `MAC` to it,
+encrypts it and prepends a header. Congratulations, our fragment just became a
+`TLS Record` (or an `SSL Record`)! This means that it's now ready to be sent over the network.
+The `SSL/TLS layer` then puts this `SSL/TLS Record` on the network, sending it to your web browser.
+Your web browser receives it, decrypts it, verifies its `MAC` and decompresses it.
+The web server and the web browser perform the same process for the remaining
+`9` fragments. Once all of them have been received and processed by your web browser,
+they are now ready to be reassembled into the original `mp3` file that was sent to you
+by the web sever.
+
+Below is an image depicting the placement of the `SSL` and `TLS` protocols.
+The names are listed for the case of the `SSL` protocol:
+you have `SSL Handshake Protocol`, `SSL Change Cipher Spec Protocol`,
+`SSL Alert Protocol` and `SSL Record Protocol`. For the case of `TLS` the names
+are exactly the same, simply replace `SSL` by `TLS`, so they become: `TLS Handshake Protocol`,
+`TLS Change Cipher Spec Protocol`, `TLS Alert Protocol` and `TLS Record Protocol`.
+
+{% include figure.html url="../images/posts/ssl_tls_overview/ssl-tls-sub-protocols-iluxonchik.png" num="4" term=":" description="SSL/TLS (sub)layers and (sub)protocols" %}
+
+As you can see, it consists of **2 layers** and **5 sub-protocols**. The **lower layer**
+is the `SSL/TLS Record Protocol` and its stacked on top of a reliable,
+connection-oriented transfer protocol, such as 'TCP'.
+
+The **higher layer** is stacked on top of the `SSL/TLS Record Protocol` and it
+consists of `4` protocols:
+
+* **SSL/TLS Handshake Protocol** -
+* **SSL/TLS Change Cipher Spec Protocol** -
+* **SSL/TLS Alert Protocol** -
+* **SSL Application Data Protocol** -
