@@ -294,17 +294,41 @@ you have `SSL Handshake Protocol`, `SSL Change Cipher Spec Protocol`,
 `SSL Alert Protocol` and `SSL Record Protocol`. For the case of `TLS` the names
 are exactly the same, simply replace `SSL` by `TLS`, so they become: `TLS Handshake Protocol`,
 `TLS Change Cipher Spec Protocol`, `TLS Alert Protocol` and `TLS Record Protocol`.
+Please note that not all of the discussion below is valid for `TLS 1.3` (for example,
+the `Change Cipher Spec Protocol` has been **removed** from `TLS 1.3`), the main idea, however,
+remains the same.
 
 {% include figure.html url="../images/posts/ssl_tls_overview/ssl-tls-sub-protocols-iluxonchik.png" num="4" term=":" description="SSL/TLS (sub)layers and (sub)protocols" %}
 
 As you can see, it consists of **2 layers** and **5 sub-protocols**. The **lower layer**
 is the `SSL/TLS Record Protocol` and its stacked on top of a reliable,
-connection-oriented transfer protocol, such as 'TCP'.
+connection-oriented transfer protocol, such as 'TCP'. The `SSL Record Protocol` is
+used to **encapsulate higher-layer protocol data**.
 
 The **higher layer** is stacked on top of the `SSL/TLS Record Protocol` and it
 consists of `4` protocols:
 
-* **SSL/TLS Handshake Protocol** -
-* **SSL/TLS Change Cipher Spec Protocol** -
-* **SSL/TLS Alert Protocol** -
-* **SSL Application Data Protocol** -
+* **SSL/TLS Handshake Protocol** - the **core protocol** of `SSL/TLS`. It allows the
+communicating peers to **authenticate** one to another and to **negotiate** a **cipher suite** (used to cryptographically protect the data in terms of confidentiality, authenticity and integrity) and a **compression method** (compression is optional and it's used to compress the fragmented data).
+* **SSL/TLS Change Cipher Spec Protocol** - used to change or set the initial encryption settings, such as the algorithms used and the keys. The **SSL/TLS Handshake Protocol**
+is used to **negotiate** the security parameters, but those parameters only **start being used** after a `ChangeCipherSpec` message. For example, the client and the server
+might negotiate that they will be using `AES` to encrypt the data, using a newly negotiated key. Just negotiating doesn't actually "activate" anything, the
+data only starts being encrypted with `AES` using that new key after a `ChangeCipherSpec` message. This might happen either in the beginning of the communication or whenever
+the communicating peers decide to change the encryption/authentication algorithms and the corresponding keys.
+* **SSL/TLS Alert Protocol** - allows the communicating peers to signal potential problems.
+* **SSL/TLS Application Data Protocol** - used to **securely transmit data**.
+This is the protocol that actually transfers the data that the peers send (for example,
+it's the protocol that actually transfers the `mp3` file that you're downloading from the server).
+The `3` previous protocols are more of the "boo keeping protocols", they are necessary,
+but they don't actually transfer any application data. The `SSL/TLS Application Data Protocol`
+takes the data from a higher layer (usually the **Application Layer**) and feeds it into
+the `SSL Record Protocol` for **cryptographic protection** and **secure transmission**.
+
+The `SSL/TLS` protocol is **self-delimiting**, meaning that it can determine
+the beginning and end of an `SSL/TLS message` inside an `SSL/TLS record`
+or `TCP` segment, without any help of `TCP`. For that, as we will see later on,
+`length` fields are used: each `SSL/TLS record` has a `length` field, as well
+as each **message** carried inside an `SSL/TLS record` also has a `length` field.
+An `SSL/TLS Record` **can carry more than one** `SSL/TLS message`.
+
+»»»»» TALK ABOUT TLS CONN AND SESSIONS »»»»»»»»»
