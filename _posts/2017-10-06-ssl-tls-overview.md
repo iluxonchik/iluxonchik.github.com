@@ -5,8 +5,6 @@ description: A comprehensive technical overview of the SSL/TLS protocol.
 tags: [ssl, tls, tls 1.2, protocol, explanation]
 ---
 
-{% include figure.html %}
-
 # Introduction
 
 SSL/TLS is one of the most used and important protocols nowadays.
@@ -223,13 +221,15 @@ all of the encryption and authentication takes places at the **end-points** (*i.
 
 `SSL/TLS` provides the following security services:
 
-* **authentication** - both, **peer entity** and **data origin** authentication.
+* **authentication** - both, **peer entity** and **data origin** authentication. Peer's identity is authenticated using **asymmetric**, or **public key**, **cryptography** (for exmaple, `RSA`, `DSA`, etc).
     - **peer entity authentication** - we can be sure that we're talking to certain entity, for example, `www.google.com`.
     - **data origin authentication** - we can be sure that the data that we're receiving is coming from the expected entity (for example, we can be sure that the `index.html` file sent to us when we connected to `www.google.com` in fact came from `www.google.com`) and that it **was not modified** (*i.e* tampered with) en route by an attacker (**data integrity**).
 
-* **confidentiality** - the data transmitted between the communicating entities (the client and the server) is **encrypted**.
+* **confidentiality** - the data transmitted between the communicating entities (the client and the server) is **encrypted**. **Symmetric cryptography** is used of data encryption (for exmaple, `AES`, `RC4`, etc).
 
-* **integrity** - we can be sure that the data was not modified or forged.
+* **integrity** - we can be sure that the data was not modified or forged. This
+is achieved through the use of a **keyed MAC**. **Secure hash functions** (for example,
+`SHA-1`) are used for `MAC` computations.
 
 Even though the `SSL/TLS` protocols use public key cryptography, they **don't provide non-repudiation services**: neither **non-repudiation with proof of origin**, nor **non-repudiation with proof of delivery**.
 
@@ -331,4 +331,194 @@ or `TCP` segment, without any help of `TCP`. For that, as we will see later on,
 as each **message** carried inside an `SSL/TLS record` also has a `length` field.
 An `SSL/TLS Record` **can carry more than one** `SSL/TLS message`.
 
-»»»»» TALK ABOUT TLS CONN AND SESSIONS »»»»»»»»»
+### SSL/TLS Handshake Protocol Steps
+
+Before we proceed any further, I will give a visual of the exchanged messages during the
+`SSL/TLS Handshake Protocol`. Take a look at this image, this will help you
+to understand the discussion below, since there are frequent references
+to exchanged messages and various `Handshake Protocol Steps`. We will come back to this
+image later, so don't stress if you're confused about something.
+
+{% include figure.html url="../images/posts/ssl_tls_overview/ssl-tls-handshake-protocol-iluxonchik.png" num="5" term=":" description="SSL/TLS Handshake Protocol Steps" %}
+
+The messages between square brackets (`[` and `]`) are not always sent.
+Also note that even though `ChangeCipherSpec` is represented as a message, it's
+actually a protocol of itself, separate from the `Handshake Protocol`
+(not true for `TLS 1.3`, since it has been removed from the protocol altogether).
+Explanations of all of this are coming later on in this text.
+
+## SSL/TLS Connections and Sessions
+
+It's important to distinguish between an **SSL/TLS session** and an **SSL/TLS connection**:
+
+* **SSL/TLS session** - association between two communicating peers that's
+created by the `SSL Handshake Protocol`. The **SSL/TLS session** defines
+a set of parameters (cryptographic and others) that are used by **SSL/TLS connections**
+**associated with an SSL/TLS Session** to cryptographically protect and compress the
+transmitted data. A single `SSL/TLS session` can be **shared among multiple SSL/TLS connections**. An `SSL/TLS session`'s main purpose is to **avoid the expensive negotiation of new parameters for each SSL/TLS connection**.
+
+* **SSL/TLS connection** - used to actually **transmit the data between two communicating peers**. That data is encrypted (although technically, as we've seen before, encryption is actually optional) and compressed (unlike encryption, compression is rarely used). For this to be possible, it's necessary to **establish some parameters**, such as the `secret keys` to encrypt and authenticate the transmitted data.
+This "parameter establishment" is done when an **SSL/TLS session** is created,
+during the `SSL/TLS Handshake Protocol`. **A single SSL/TLS session might have multiple SSL/TLS connections associated** to it. This relation is depicted in **Figure 6** below.
+
+{% include figure.html url="../images/posts/ssl_tls_overview/ssl-tls-session-to-connection-relation-iluxonchik.png" num="6" term=":" description="SSL/TLS Session and Connection Multiplicity Relation" %}
+
+In the text above I mentioned "cryptographic parameters" and "other parameters".
+I don't want to keep you wondering what those "other parameters" might be, so
+I'll give you a concrete example of one: the compression method used. The communicating
+peers might decide to use no compression (`null` compression method) or `DEFLATE`
+compression (Note: [deflate compression method is insecure](https://en.wikipedia.org/wiki/BREACH) and support for compression was removed in [TLS 1.3](https://tools.ietf.org/html/draft-ietf-tls-tls13-21)). You can refer to [RFC 3749](https://tools.ietf.org/html/rfc3749) for a description of TLS compression algorithms.
+
+## Connection States: Current Read/Write State and Pending Read/Write State
+
+`SSL` and `TLS` connections are **stateful**, meaning that both: the client and
+the server must keep some **state information**. It's the responsibility of the
+`SSL/TLS Handshake Protocol` to establish, coordinate and synchronize
+sate on the client and the server side.
+
+Both, the client and the sever, have `4` states in total:
+
+* **pending write state** - pending state (*i.e.* **not** currently in use, but potentially will be, in the future) that contains information
+used when sending (*i.e* writing) data to the other peer. This includes information
+such as the symmetric encryption algorithm used and the secret key in use with that algorithm,
+when sending data to the other peer. This encryption algorithm and key are **not used** to send
+data yet, but they potentially might be in the future.
+
+* **current write state** - current state (*i.e.* currently in use) that contains information
+used when sending (*i.e* writing) data to the other peer. This includes information
+such as the symmetric encryption algorithm used and the secret key in use with that algorithm,
+when sending data to the other peer. This encryption algorithm and key are **used** to send
+data at this moment.
+
+* **pending read state** - pending state (*i.e.* **not** currently in use, but potentially will be, in the future) that contains information
+used when receiving (*i.e* reading) data from the other peer. This includes information
+such as the symmetric encryption algorithm used and the secret key in use with that algorithm,
+when receiving data from the other peer. This encryption algorithm and key are **not used** to decrypt the received
+data yet, but they potentially might be in the future.
+
+* **current read state** - current state (*i.e.* currently in use) that contains information
+used when receiving (*i.e* reading) data from the other peer. This includes information
+such as the symmetric encryption algorithm used and the secret key in use with that algorithm,
+when receiving data from the other peer. This encryption algorithm and key are **used** to decrypt the received
+data at this moment.
+
+**All records are processed under the current read and write states**.
+
+### Transition From Pending Read/Write State To Current Read Write State
+
+An entity (*i.e* the client or the server) can transform its `pending write state`
+into its `current write state` and its `pending read state` into its `current read state`.
+This transitions from `pending write/read states` to `current write/read states` occur
+on **sending/receival** of a `ChangeCipherSpec` message, accordingly. The rules are as follows:
+
+* when an entity (*i.e.* the client or the server) **sends** a `ChangeCipherSpec`
+message, then it **copies the** `pending write state` **into the** `current write state`.
+The `read` states remain unchanged.
+
+* when an entity **receives a** `ChangeCipherSpec` message, then it
+**copies the** `pending read state` **into** the `current read state`. The
+`write` states ramain unchanged.
+
+Those transitions are pictured below:
+
+
+{% include figure.html url="../images/posts/ssl_tls_overview/changecipherspec-state-transitions-iluxonchik.png" num="7" term=":" description="ChangeCipherSpec and State Transitions" %}
+
+
+You've been hearing about that **state** and the **state transitions**, but what
+does actually that state holds? A `TLS state` consists of the following elements (their names are as they appear in the [RFC 5246, which describes the TLS 1.2 protocol](https://tools.ietf.org/html/rfc5246)):
+
+**TLS Session State Elements**:
+
+The `Handshake Protocol` is responsible for **negotiating a session** and it consists
+of the following elements:
+
+* `session identifier` - arbitrary byte sequence **chosen by the server** to identify an active or a resumable session state (maximum length of `32 bytes`).
+* `peer certificate` - `X.509v3` certificate of the other peer (if available, otherwise it's `null`).
+* `compression method` - the algorithm used to compress data prior to encryption.
+* `cipher spec` - Specifies the Pseudorandom Function (`PRF`) used to generate keying
+material, the bulk data encryption algorithm (such as `null`, `AES`, etc.) and the
+`MAC` algorithm (such as `HMAC-SHA1`) in use.  It also defines cryptographic attributes
+such as the `mac_length`.
+* `master secret` - `48-byte` secret shared between the client and server.
+* `is resumable` - a flag indicating whether the session can be used to initiate new connections. Many `SSL/TLS` connections can be instantiated using the same session,
+through the **resumption feature** of the `SSL/TLS Handshake Protocol`.
+
+The items above are then used to **generate the Security Parameters** (see right below)
+to be used by the `Record Layer` when protecting application data.
+
+**TLS Security Parameter Elements**:
+
+* `connection end` - information whether this entity is **considered** the `client`
+or the `server` in this connection.
+* `PRF algorithm` - algorithm used to generate keys from the `master secret` (more on this later).
+* `bulk encryption algorithm`- algorithm to be used for bulk data encryption (*i.e.* the application data exchanged between the communicating peers). This specification
+includes the `key size` of this algorithm, whether it is a `block`, `stream`, or `AEAD` cipher, the `block size` of the cipher (if appropriate), and the `lengths` of explicit and implicit initialization vectors (`IV`s or nonces).
+* `MAC algorithm` - algorithm used for message authentication. This specification
+includes the `size` of `MAC` algorithm's output.
+* `compression algorithm` - algorithm used for compression. Includes all of the
+information required by the algorithm to do the compression.
+* `master secret` - `48-byte` secret shared between the client and server.
+* `client random` - A `32-byte` value provided by the client.
+* `server random` - A `32-byte` value provided by the server.
+
+Note that the `master secret` is included in both: the **TLS Session State Elements**
+and the **TLS Security Parameters**, this is not a typo.
+The `Record Layer` will use the security parameters above to generate the following `6`
+items (**Note**: some of the parameters below are not required by all of the ciphers,
+so they can be empty):
+
+* `client write MAC key` - key used to authenticate data written(sent) by the client (*i.e.* it's the secret key that's the input of the `MAC` function).
+* `server write MAC key` - key used to authenticate data written(sent) by the server (*i.e.* it's the secret key that's the input of the `MAC` function).
+* `client write encryption key` - the key used to encrypt data written by the client.
+* `server write encryption key` - the key used to encrypt data written by the server.
+* `client write IV` - `IV` used by the client when writing (sending) data.
+* `server write IV` - `IV` used by the client when writing (sending) data.
+
+We will be discussing how these items are generated later in the text. Once the
+**Security Parameters** have been set and the `6` keys above generated, the
+**connection states can be instantiated by making them the current states**.
+
+**TLS Connection State Elements**:
+
+Each connection state includes the following elements:
+
+* `compression state` - the current state of the compression algorithm.
+* `cipher state` - the current state of the encryption algorithm. Consists of the
+key for that connection. If a stream cipher is used, this will also contain any necessary state information to allow the stream cipher to encrypt and decrypt the data.
+* `MAC key` - the `MAC` key in use for this connection.
+* `sequence number` - each `connection state` has a `64-bit` sequence number, which
+is maintained **separately for read and write states** (*i.e* there is one `sequence number` for the **received** records and one for the **sent** records). Whenever
+a `connection state` is made **active**, this `sequence number` must be set to `0`.
+The `sequence number` is **incremented after each record**: the first record
+transmitted under a **particular session state** must use the `sequence number` `0`.
+
+#### The Content Of The Read And Write States
+
+Now, okay, that's a lot of info and in the middle of all of this you might still
+be a little bit confused what do the `read` and the `write` states contain, so
+let's make it clear now.
+
+The `read states contains`:
+
+* the symmetric algorithm used for bulk data encryption
+* the `MAC` algorithm used
+* the compression algorithm
+* the `MAC` key used for received data
+* the symmetric key used for received data
+* the `IV` used for received data
+
+The `write state contains`:
+
+* the symmetric algorithm used for bulk data encryption
+* the `MAC` algorithm used
+* the compression algorithm
+* the `MAC` key used for sent data
+* the symmetric key used for sent data
+* the `IV` used for sent data
+
+#### A Few Things To Note
+
+
+In both `SSL` and `TLS` those elements are the same,
+the only thing that differs is the terminology.

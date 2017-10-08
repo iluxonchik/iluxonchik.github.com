@@ -22,11 +22,12 @@ IMG.centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
 }
 
 </style>
 
 <table>
     <caption align="bottom">{{ img_desc }}</caption>
-    <tr><td><img class="centered" src="{{ include.url }}" alt="{{ include.description }}"/></td></tr>
+    <tr><td style="max-width: 600px"><img class="centered" src="{{ include.url }}" alt="{{ include.description }}"/></td></tr>
 </table>
