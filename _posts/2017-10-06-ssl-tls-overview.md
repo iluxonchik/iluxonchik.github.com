@@ -640,6 +640,200 @@ After the key exchange is complete, both, the client and the server have
 now established a `premater secret` (it's **the same** on the both sides) and
 are now ready to generate a `master secret from it`.
 
-### TLS 1.2 Master Secret Generation
+## TLS 1.2 Master Secret Generation
 
---- TODO: descrive PRF ---
+The information in this section is valid only for `TLS 1.2`, since it uses a new
+simpler `PRF` construction.
+
+### TLS PRF
+
+The primary use of the `TLS Pseudorandom Function (PRF)` is to **generate the keying material needed for a TLS connection** (*i.e.* the `master secret` and the items from [Table 1](#TODO)).
+
+The `TLS` protocol employs a `PRF` that takes as input a `secret`, a `seed` and
+a `label`, outputting an arbitrily long bit sequence. This is illustared in the image below:
+
+{% include figure.html url="../images/posts/ssl_tls_overview/tls-prf-iluxonchik.png" num="7" term=":" description="TLS PRF Overview" %}
+
+#### Which Hash Fucntion Is Used In TLS PRF?
+
+The `PRF` uses a **hash function in its construction**. Now, you might be thinking
+that there are many  Remember that one of the [Security Parameters](#TODO) above is `PRF algorithm`?
+Well, that's where the **hash function to be used in the PRF** is specified.
+The [Security Parameters](#TODO) are determied during the `TLS Handshake Protocol`
+and are then provided to the `TLS Record Layer` in order to initialize a connection state.
+
+Even though we haven't covered the [Handshake Protocol](#TODO) yet, you might
+be comming back to this section after, since you won't see anything about the
+specification of the `PRF algorithm` in it: it's not exchanged in any of the messages.
+Well, this is because a **cipher suite implicitly defines a PRF algorithm (i.e. the hash function used in PRF)**.
+For all of the `cipher suites` defined in the [RFC 5246, specifying TLS 1.2](https://tools.ietf.org/html/rfc5246#page-14) and in `TLS` documents published
+prior to the publication of the `RFC 5246` when `TLS 1.2` is negotiated, **PRF** with the `SHA-256`
+hash function **MUST** be used.
+
+What about the **new cipher suites**, that may be added in the future? Well, they
+must **explicitly specify a hash function to be used in PRF** and that hash function
+should be `SHA-256` or **stronger**.
+
+#### TLS P_hash Function
+
+The `TLS PRF` uses an auxiliary **data expansion function** `P_hash(secret, seed)`,
+which uses a **single cryptographic** `hash` function to expand a `secret` and a `seed` into
+an **arbitrary quantity of output**. This means that you can use the `P_hash(secret, seed)`
+function to generate anywhere from `1` to `infinite` `bits` of output.
+
+The `P_hash(secret, seed)` function is defiend as follows:
+
+    P_hash(secret, seed) = HMAC_hash(secret, A(1) + seed) +
+                           HMAC_hash(secret, A(2) + seed) +
+                           HMAC_hash(secret, A(3) + seed) + ...
+
+where `+` indicates concatenation.
+
+The `A()` function is defined as follows:
+
+    A(0) = seed
+    A(i) = HMAC_hash(secret, A(i-1))
+
+Notice that the `A()` function is **recursive**. Let's see some example values:
+
+    A(1) = HMAC_hash(secret, A(0)) = HMAC_hash(secret, seed)
+
+    A(2) = HMAC_hash(secret, A(1)) = HMAC_hash(secret, HMAC_hash(secret, A(0))) =
+         = HMAC_hash(secret, HMAC_hash(secret, seed))
+
+    A(3) = HMAC_hash(secret, A(2)) = HMAC_hash(secret, HMAC_hash(secret, A(1)))
+         = HMAC_hash(secret, HMAC_hash(secret, HMAC_hash(secret, A(0))))
+         = HMAC_hash(secret, HMAC_hash(secret, HMAC_hash(secret, seed)))
+
+A graphical representaion of the `A()` function functionality is depicted below:
+
+{% include figure.html url="../images/posts/ssl_tls_overview/a-function-tls-prf-iluxochik.png" num="8" term=":" description="TLS PRF's A Function" %}
+
+The `P_hash(secret, seed)` funciton can be iterated as many times as needed in order to
+produce the required number of `bits`. For example, if we need to generate `89 bytes` of data
+using `P_SHA-256(secret, seed)`, then the `P_SHA-256(secret, seed)` function will have to be iterated
+`3` times, all the way through `A(3)`. Note that this will yield `96 bytes` of data, since `SHA-256` (and conseqently `HMAC_SHA-256`) outputs`32 bytes`. How do we get the required `89 bytes` from this?
+Easy, we simply discart the last `7 bytes`, which will leave us with the required `89 bytes`.
+
+#### TLS 1.2 PRF
+
+Now we can finally define the `TLS 1.2`'s `PRF`:
+
+`PRF(secret, label, seed) = P_hash(secret, label + seed)`
+
+`label` is an `ASCII` string, without a trailing `null` character.
+
+Note that the `hash` in `P_hash` and `HMAC_hash` is just a placeholder and is replaced by a specific **hash function**.
+For example, if we're using `SHA-256` as the **hash function in our PRF**, then
+our `P_hash` function will be actually named `P_SHA-256` and the `HMAC_hash` function's name
+will be `HMAC_SHA-256`. What does `HMAC_SHA-256` mean in practice? Well, remember that, by definiton,
+[HMAC](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code) is: ![HMAC Definition](../images/posts/ssl_tls_overview/hmac-iluxonchik.svg), where `H` is a cryptographic hash function,
+so in the case of `HMAC_SHA-256`, `H` is the `SHA-256` function.
+
+## Using PRF To Generate The Keying Material
+
+Okay, so now that we have the `PRF` defined, we can use to **generate the keying material needed for a TLS connection**. Remember that the keying material includes `7` items: the `master secret` and the `6` items
+from [Table 1](#TODO).
+
+Both sides: the client and the server will perform the generation described below and both of them
+will generate identical keys.
+
+### TLS Master Secret Generation
+
+Remember the `permaster secret` that is generated during the `key exchange`?
+Well, we'll now use the **variable-lenght** `permaster secret` to genreate a `48-byte` long
+`master secret`.
+
+`master secret` = `PRF(premaster secret, "master secret", ClientHello.random + ServerHello.random)[0..47]`
+
+Okay, let's dissect it:
+
+* `premaster secret` - the secret generated during the key exchange. It's the `secret` input parameter value of the `PRF(secret, label, seed)` function.
+* `"master secret"` - the `label` input parameter value of the `PRF(secret, label, seed)` function.
+* `ClientHello.random` - `32-byte` long random value provided by the client during the `Handshake Protocol` (more on this later).
+* `SeverHello.random` - `32-byte` long random value provided by the server during the `Handshake Protocol` (more on this later).
+* `ClientHello.random + ServerHello.random` forms the `seed` input paramter of the `PRF(secret, label, seed)` function.
+* `[0..47]` - this simply means that we'll only use the first `48-bytes` of the output of the `PRF(secret, label, seed)`, since the `master secret` is always `48-byte` long.
+
+### Generating The Rest Of The Keying Material
+
+Okay, so we have the `master secret` generated, now what? Well, the `48-byte`
+`master secret` will be used as the **source of entropy** to generate the rest of
+the keys needed for a `TLS` connection (the items from [Table 1](#TODO)).
+
+The remaining key values are taken from a `key block` of appropriate size, which is
+generated as follows:
+
+`key_block = PRF(master secret, "key expansion", ServerHello.random + ClientHello.random)`
+
+where:
+
+* `master secret` - `secret` input parameter value of the `PRF(secret, label, seed)` function.
+* `"key expansion"` - `label` input parameter value of the `PRF(secret, label, seed)` function.
+* `ServerHello.random + ClientHello.random` - `seed` input parameter value of the `PRF(secret, label, seed)` function.
+
+The `key block` is then partitioned into the following items:
+
+    client_write_MAC_key[SecurityParameters.mac_key_length]
+    server_write_MAC_key[SecurityParameters.mac_key_length]
+    client_write_key[SecurityParameters.enc_key_length]
+    server_write_key[SecurityParameters.enc_key_length]
+    client_write_IV[SecurityParameters.fixed_iv_length]
+    server_write_IV[SecurityParameters.fixed_iv_length]
+
+Note that the length of each one of the keys is dependant on the **negotiated Security Parameters**.
+For example, a cipher suite that uses `3DES` in `CBC` mode and `SHA-1` requires
+`2*24=48 bytes` for the `3DES` keys, `2*8=16 bytes` for the `IV`s and `2*20=40 bytes` for the `MAC` keys:
+
+    client_write_MAC_key[0..19]
+    server_write_MAC_key[20..39]
+    client_write_key[40..63]
+    server_write_key[64..87]
+    client_write_IV[88..95]
+    server_write_IV[96..103]
+
+Therefore, a grand total of `104 bytes` (`[0..103]`) of keying material is needed. Considering that our
+`PRF(secret, label, seed)` is using `SHA-256`, we will need it to generate `128 bytes` of data (iterations up to `A(4)`), which means that `128-104=24 bytes` of the `key_block` will be discarted.
+
+#### Implicit and Explicit IVs
+
+In `TLS 1.2`, `client_write_IV` and `server_write_IV` are only genreated for **implicit nonce** techniques used in [AEAD Ciphers](https://tools.ietf.org/html/rfc5246#page-24). Since `TLS 1.1`, `IV`s (or `nonce`s) are **explicit and random**. This means that **for each encrypted fragment** there is a **different, randomly generated IV**, that is sent along the encrypted record (the `TLSCipherText`). This was done as a response to a vulnerability [[BEAST](http://netifera.com/research/beast/beast_DRAFT_0621.pdf)] when using **implicit IVs**.
+
+## Message Authenticaton (MAC)
+
+The `TLS Record Layer` uses a keyed `Message Authentication Code (MAC)` to protect
+messae integrity. The cipher suites defined in the [RFC 5246](https://tools.ietf.org/html/rfc5246#ref-HMAC) use
+a construction known as `HMAC`, [which I've already talked about before](#TODO). Other cipher suites,
+**may define their own MAC constructions**, if needed. This means that the `MAC` function in use is tied to the `cipher suite` in use.
+
+`HMAC` is nothing more than a function: it's a specific type of `MAC` which uses a **cryptographic hash funciton** and a **secret cryptographic key**. It's defined as follows:
+
+![HMAC Definition](../images/posts/ssl_tls_overview/hmac-iluxonchik.svg)
+
+where:
+
+* `H` is a cryptographic hash function
+* `K` is the secret key
+* `m` is the message to be authenticated
+* `K'` is another secret key, derived from the original key `K` (by padding `K` to the right with extra zeroes to the input block size of the hash function, or by hashing `K` if it is longer than that block size)
+* `||` denotes concatenation
+* `⊕` denotes exclusive or (XOR)
+* `opad` is the outer padding (`0x5c5c5c…5c5c`, one-block-long hexadecimal constant)
+* `ipad` is the inner padding (`0x363636…3636`, one-block-long hexadecimal constant)
+
+You don't need to worry about all of the details of the `HMAC` to undestand the way `TLS` works, it's enough
+to keep just a general idea.
+
+# SSL/TLS Protocols
+
+As mentioned above, `SSL` and `TLS` (up to and including `TLS 1.2`) consists of `5` protocols:
+the `SSL/TLS Record Protocol`, the `SSL/TLS Handshake Protocol`, the `SSL/TLS Change Cipher Spec Protocol`,
+the `SSL Alert Protocol` and the `SSL/TLS Appplication Data Protocol`. Those protocols have almost the same
+names in `SSL` and `TLS`, the only part that changes is `SSL` or `TLS` part, so if we're in `SSL`, the protocol
+is called `SSL Record Protocol`, while if we're in `TLS`, it's called `TLS Record Protocol`.
+
+We will now explore each one of those `5` protocols.
+
+## SSL/TLS Record Protocol
+
+--- TODO ---
