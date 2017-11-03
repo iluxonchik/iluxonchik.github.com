@@ -587,8 +587,7 @@ will be derived from it.
 When it comes to the **key exchange methods** you have quite a few to choose
 from in `TLS 1.2`. Some of them are in the **base spec** (*i.e* the RFC 5246, defining the `TLS 1.2` protocol, while others are in separate `RFCs`).
 In this section, I will only be talking about the key exchange methods that
-are in the **base spec**. The [ECC-based key exchanged methods](#TODO), which
-come in the form of [TLS Extensions](#TODO) will be covered later in this text.
+are in the **base spec**.
 
 **Key exchange methods** refer to the ways you can exchange **cryptographic keys**
 and `SLL/TLS` offers various options when it comes to that:
@@ -620,7 +619,9 @@ There are `3` possibilities when it comes to the `Diffie-Hellman` key exchange:
     a `Diffie-Hellman` exchange is performed to generate an **ephemeral key**.
     The `Diffie-Hellman` parameters are dynamically **generated** and **authenticated** in some way. Usually, the `Diffie-Hellman` parameters are
     **digitally signed** using the sender's private `RSA` key (`DHE_RSA`) or the
-    sender's private `DSS` key (`DHE_DSS`). Examples of `cipher suite` names using `DHE` are `TLS_DHE_RSA_WITH_AES_128_CBC_SHA256` and `TLS_DHE_DSS_WITH_AES_128_CBC_SHA256`.
+    sender's private `DSS` key (`DHE_DSS`). Note, that only the server signs the `public Diffie-Hellman`
+    value, when sending them to the client.
+     Examples of `cipher suite` names using `DHE` are `TLS_DHE_RSA_WITH_AES_128_CBC_SHA256` and `TLS_DHE_DSS_WITH_AES_128_CBC_SHA256`.
     - `anonymous Diffie-Hellman key exchange (DH_annon)` - a `Diffie-Hellman`
     key exchange is performed, an **ephemeral key** is generated, but the
     **Diffie-Hellman parameters are not authenticated**, which means that the resulting key exchange is **susceptible to man-in-the-middle (MITM) attacks**.
@@ -639,6 +640,18 @@ There are `3` possibilities when it comes to the `Diffie-Hellman` key exchange:
 After the key exchange is complete, both, the client and the server have
 now established a `premater secret` (it's **the same** on the both sides) and
 are now ready to generate a `master secret from it`.
+
+Please note, that there are other ways to exchange keys that
+will be used to generate the `premaster secret`. Those are usually defined in other `RFC`s. Some of the most notable examples are:
+
+* the [ECC-based key exchanged methods](#TODO), which
+come in the form of [TLS Extensions](#TODO) will be covered later in this text
+* there are also [Pre-Shared Key Ciphersuites](https://tools.ietf.org/html/rfc4279), where the communicating
+parties don't have to exchange any keying material at all (in some of those cipher suites), since there
+is a `pre-shared symmetric key` that they both already possess (this `shared secret` is put there usin an out-of-bound method). This creates new challenges, such
+as how this `shared secret` should be placed there securely and how to update it. This topic deservers a blog post
+of its own and will not be covered here.
+* [RAW Public Keys](https://tools.ietf.org/html/rfc7250), which have challenges similiar to the one in `PSK`
 
 ## TLS 1.2 Master Secret Generation
 
@@ -802,7 +815,7 @@ In `TLS 1.2`, `client_write_IV` and `server_write_IV` are only genreated for **i
 ## Message Authenticaton (MAC)
 
 The `TLS Record Layer` uses a keyed `Message Authentication Code (MAC)` to protect
-messae integrity. The cipher suites defined in the [RFC 5246](https://tools.ietf.org/html/rfc5246#ref-HMAC) use
+message integrity. The cipher suites defined in the [RFC 5246](https://tools.ietf.org/html/rfc5246#ref-HMAC) use
 a construction known as `HMAC`, [which I've already talked about before](#TODO). Other cipher suites,
 **may define their own MAC constructions**, if needed. This means that the `MAC` function in use is tied to the `cipher suite` in use.
 
@@ -824,6 +837,43 @@ where:
 You don't need to worry about all of the details of the `HMAC` to undestand the way `TLS` works, it's enough
 to keep just a general idea.
 
+### AEAD Ciphers, AE and AEAD
+
+Note that the `MAC` computation described above is **not needed for AEAD ciphers**, since **message authentication** is already included in such ciphers.
+Now, I did mention **AEAD** ciphers above, but never explained what they are,
+so this seems like a good time to do it. The description I'm providing is a general overview and the details will depend on the cipher used,
+however, it is suffient for the scope of this blog post.
+
+Instead of describing what an **AEAD** is, I'll describe what **AE** is first, since one concept builds on top of another.
+**AE** stands for **Authenticated Encryption** and **AEAD** stands for **Authenticated Encryption with Associated Data**.
+A **block cipher mode of operation** is an algorithm that uses a block cipher to provide a service such as confidentiality or authenticity.
+**AE** or **AEAD** is a block cipher mode that **encrypts and authenticates a plaintext simultaneously**.
+An **AE** cipher produces the pair `(ciphertext, MAC)` and provides **confidentiality**, **integrity** and **authenticity** simultaneously.
+The decryption process takes the `(ciphertext, MAC)` pair, checks if the `MAC` is correct and if it is,
+decrytpts the message. To be a little more precise, when **encrypting**, the input to the cipher is `(key, nonce, plaintext)`, which results in a `(ciphertext, MAC)`
+output. If we're decrypting, the inputs are `(key, nonce, ciphertext, MAC)` and the output is the `plaintext`. This mechanism is pictured below:
+
+
+{% include figure.html url="../images/posts/ssl_tls_overview/aead-ciphers-encryption-decryption-iluxonchik.png" num="9" term=":" description="AE and AEAD Ciphers Encryption and Decryption" %}
+
+
+Since the output of an **AE cipher** already includes the `MAC`, there is no need to compute it again.
+
+The difference from **AE** to **AEAD** ciphers, comes from the optional additional input parameter that an **AEAD** cipher takes:
+the `addtional authenticated data`, that is **only authenticated, but not encrypted** (that's where the **AD**(Additional Data) in **AEAD** comes from).
+In case of `TLS 1.2`, `additional authenticated data = sequence_number + TLSCompressed.type + TLSCompressed.version + TLSCompressed.length`, where `+`
+denotes concatenation. `TLSCompressed` is a type of a `TLS Record structure` which is basically an optionally compressed plaintext fragment, while
+the fields such as `.type` are fields of the `TLS Record Header`. It's natural to be a little lost now, since those things are covered in the
+the [SSL/TLS Record Protocol](#TODO) section right below, so you might want to come back here if you're confused.
+
+Some of the **AEAD** cipher suites have shorter authentication tags (*i.e* shorter `MAC`s), which makes them more suitable for low-bandwidth
+networks, since messages that are sent are smaller. An example of such a cipher suite is `TLS_PSK_WITH_AES_128_CCM_8`, which is a `Pre-Shared Key (PSK) Cipher Suite`
+(meaning that the `key` between the communicating devices is pre-shared) which uses `AES-CCM` with `128-bit` keys and has an `8-octet` authentication tag (*i.e.* `MAC`), which
+means that the `MAC` length is `8*8=64 bytes`.
+
+If you're interested more in the topic of `AEAD ciphers`, check out the [RFC 3610](https://tools.ietf.org/html/rfc3610),wich describes the `CBC-MAC (CCM)`
+and also [RFC 6655](https://tools.ietf.org/html/rfc6655), which describes AES-CCM cipher suites for TLS.
+
 # SSL/TLS Protocols
 
 As mentioned above, `SSL` and `TLS` (up to and including `TLS 1.2`) consists of `5` protocols:
@@ -836,4 +886,45 @@ We will now explore each one of those `5` protocols.
 
 ## SSL/TLS Record Protocol
 
---- TODO ---
+The record layer is the lowest layer in `SSL/TLS`. It's the layer that runs
+right on top of `TCP/IP` and it serves as **encapsulation for the remaning 4 sub-protocols**.
+To `Record Layer` is to the other `4` sub-protocols what `TCP/IP` is to `HTTP`.
+The `SSL/TLS Record Layer` takes arbitrary-length data and **fragments** it into manageable pieces.
+Each fragment is then optionally compressed and cryptographically protected,
+using the negotiated compression method, cipher suite and security parameters.
+
+An `SSL/TLS Record` must go through some processing before it's ready to be sent
+over the network. This processing involves `3` basic steps:
+
+1. Fragmentation
+2. Compression (usually `null`)
+3. Cryptographic Protection (`MAC` + encryption)
+
+These steps, alongside some additional information, are pictured below:
+
+{% include figure.html url="../images/posts/ssl_tls_overview/#TODO-PHOTO-OF-DIAGRAM" num="10" term=":" description="TLS Record Processing" %}
+
+1. **Fragmentation** - The `TLS Record Layer` takes arbitrary-length data and **fragments** it into manageable pieces.
+Each one of the resulting "pieces"/fragments is called `TLSPlaintext`. The `TLSPlaintext` block has a maximum size
+of 2^14 bytes. Client message boundaries **are not preserved**, wich means that **multiple messages**
+of the **same type** may be placed into the **same fragment** or a **single message** may be
+fragmented accross **several records**.
+2. **Compression** - The `TLS Record Layer` compresses the `TLSPlaintext` structure
+according to the negotiated compression method stored in the `session state`. The
+result is a new structure, called `TLSCompressed`. The `SSL/TLS` specification
+states that the compression **cannot** increase the length of the fragment by more than
+`1024-bytes`. Please note, that the usual compression method is `null`, *i.e.* no compression
+is used, in fact, it's strongly recommended not to use compression at all, due to security
+issues that it might causes. As I already mentioned before, support for compression has been
+removed from TLS 1.3 alltogether, [for this same reason](https://www.ietf.org/mail-archive/web/tls/current/msg11619.html).
+3. **Record Payload Protection** - 
+
+
+
+
+
+
+# Things To Mention:
+
+* ServerHelloDone means that the server will not respond anything until the client responds.
+* Tell which security services SSL/TLS supports in the intro
