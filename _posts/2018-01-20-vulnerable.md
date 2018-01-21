@@ -88,3 +88,77 @@ field, we can see that the value that that's placed in the "Mobile phone number"
 {% include figure.html url="../images/posts/aut_gov_vuln/manual_change.png" num="1" term=":" description="Manually changing the value of the hidden input " %}
 
 {% include figure.html url="../images/posts/aut_gov_vuln/manual_change_result.png" num="1" term=":" description="The hidden input value is the one that gets echoed back" %}
+
+# Unlimited Login Attempts
+
+Another thing that I've noticed was that there was no protection
+against the number of login attempts whatsoever. This means that you
+can easily bruteforce a `PIN` of any user, since it's a numeric value with
+only `4` to `6` digits.
+
+This went against what I was told when I activated the "Digital Mobile Key"
+system, since I was assured that the number of login attempts per
+mobile number is limited.
+
+To show this, I wrote a simple Proof Of Concept (POF) in Python. Please note,
+that this can be optimized a lot, but due to the lack of time I didn't go
+into optimizing this down to individual requests.
+
+
+
+A quick reverse-engineering of the authentication process showed that
+in order to access the login page, you need to go thought a specific
+sequence of steps, you can't just go to the login page directly.
+
+In that sequence of steps, you're sending and receiving various
+cookies. Among those, there are `3` different session ids that you
+get through this process and a request that checks if your browser supports JavaScript.
+
+In order to access a page, you need to do a `GET` request with a `RequestId` parameter:
+
+{% include figure.html url="../images/posts/aut_gov_vuln/get_requestid.png" num="1" term=":" description="GET request to access the login page" %}
+
+A `GET` with the `RequestId` and a `Cookie` is sent. Since the website
+uses `ASP.NET` and I have experience with the `.NET`framework, I
+immediately recognized the 'RequestId' as being an [UUID structure](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379358.aspx).
+
+With every `POST` request a `humanCheck` value is sent. This value is
+set on document load:
+
+{% highlight js %}
+$(document).ready(function () {
+            $('#humanCheck').val('8FBB298A-DE46-4657-88E8-95F1F1224784');
+            $("#inputMobile").intlTelInput();
+        });
+{% endhighlight %}
+
+Now, when writing the `POF` bot, I thought that that was a unique
+value generated on every request, acting as a nonce. But I was
+surprised, and not in a good way: this value is fixed. I've tried
+with different IP's, different browsers, the value remained the
+same:
+
+I was in disbelief, I even resorted to comparing the strings
+computationally, who knows, maybe I was missing something. But no,
+the JavaScript code above seemed to be totally fixed, unless the
+value is based on something like the month, but that does not
+change the narrative: this is equivalent to considering it fixed.
+
+{% raw %}
+Python 3.6.4 (default, Dec 23 2017, 19:07:07)
+[GCC 7.2.1 20171128] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> str_1 = '8FBB298A-DE46-4657-88E8-95F1F1224784' # Firefox, US IP
+>>> str_2 = '8FBB298A-DE46-4657-88E8-95F1F1224784' # Chrome, PT IP
+>>> str_1 == str_2
+True
+{% endraw %}
+
+Each request to an authentication attempt does not provide you
+with any new, unique cookies either.
+
+I also found a way to discover if a phone number is registered
+or not. If it's not registered, there is not limit to the number
+of attempts that you can make. If it is,there are. This makes
+the ambiguous message "Either you phone number or PIN are wrong"
+useless, since you can easily find that out.
