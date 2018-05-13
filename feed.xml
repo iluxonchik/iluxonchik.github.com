@@ -1,16 +1,818 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text">G'd Up Code</title>
+<title type="text">The Codeumentary</title>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="https://iluxonchik.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="https://iluxonchik.github.io" />
-<updated>2016-11-02T09:16:16+00:00</updated>
+<updated>2018-05-13T17:04:53+01:00</updated>
 <id>https://iluxonchik.github.io/</id>
 <author>
-  <name>iluxonchik</name>
+  <name>Illya Gerasymchuk</name>
   <uri>https://iluxonchik.github.io/</uri>
-  
+  <email>illya@iluxonchik.me</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Chave Móvel Digial's Log Out Button Does Not Log The User Out]]></title>
+ <link rel="alternate" type="text/html" href="https://iluxonchik.github.io/chave-movel-digital-does-not-log-out/" />
+  <id>https://iluxonchik.github.io/chave-movel-digital-does-not-log-out</id>
+  <published>2018-05-13T17:00:03+01:00</published>
+  <updated>2018-05-13T17:00:03+01:00</updated>
+  <author>
+    <name>Illya Gerasymchuk</name>
+    <uri>https://iluxonchik.github.io</uri>
+    <email>illya@iluxonchik.me</email>
+  </author>
+  <content type="html">
+    &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/weak-security-of-portuguese-government/&quot;&gt;Part 1 - The Weak Security Of The Portuguese Government’s Authentication System&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/chave-movel-digital-xss&quot;&gt;Part 2 - Chave Móvel Digital Multiple XSS Vulnerabilites&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/chave-movel-digital-phone-number-information-leakage&quot;&gt;Part 3 - Chave Móvel Digital Phone Number Leakage&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Part 4 - Chave Móvel Digital Log Out Not Working&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;In this blog post I will show you that the “Log Out” button does
+not actually log the user out.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-log-out-button-does-not-log-you-out&quot;&gt;The Log Out Button Does Not Log You Out&lt;/h1&gt;
+
+&lt;p&gt;If you click on “Sair”, which translates to “Log Out” you’re not
+actually logged out. It doesn’t matter if you try to login straight away,
+try to login in a new tab or try to login in a new window. The only
+way to actually log out is to close the browser and open it again.&lt;/p&gt;
+
+&lt;p&gt;The video below demonstrates the issue in action.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/f5I1wwP0_UM&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I’ve tested this in Google Chrome on Android and the problem was present
+there too. This is an issue. Let’s say that the user logs on a device that’s
+not his. After he’s finished with his tasks he clicks on “Log Out”,
+thinking that his session has been terminated. This means that the
+attacker can simply open the website, click on “Log In” and
+obtain access to the victim’s account.&lt;/p&gt;
+
+&lt;p&gt;A little bit of exploring reveled the problem. The only think that
+clicking “Log Out” does is redirecting the user’s browser to
+&lt;code class=&quot;highlighter-rouge&quot;&gt;https://www.autenticacao.gov.pt/c/portal/logout&lt;/code&gt;. This page, in turn,
+redirects the user back to the home page and sets some
+cookies to an empty string, namely &lt;code class=&quot;highlighter-rouge&quot;&gt;COMPANY_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;LOGIN&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;PASSWORD&lt;/code&gt; and
+&lt;code class=&quot;highlighter-rouge&quot;&gt;REMEMBER ME&lt;/code&gt;. I’m not sure what they are, since I haven’t seen them
+used anywhere else on the site. I assume it’s some code that was ported
+for somewhere, but was never adjusted to a different authentication
+mechanism (I just hope they weren’t storing the password in plain text
+there).&lt;/p&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 1:&lt;/b&gt; Cookies Set By The Log Out Page&lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/logout_cookies.png&quot; alt=&quot;Cookies Set By The Log Out Page&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;What the page fails to do, is clean the &lt;code class=&quot;highlighter-rouge&quot;&gt;ASPXAUTH&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ASP.Net_SessionId&lt;/code&gt;
+cookies. In &lt;code class=&quot;highlighter-rouge&quot;&gt;ASP.NET&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;ASPXAUTH&lt;/code&gt; is a cookie used to identity if the user is
+authenticated and the &lt;code class=&quot;highlighter-rouge&quot;&gt;ASP.Net_SessionId&lt;/code&gt; is a cookie used to identify the
+user’s session on the server.&lt;/p&gt;
+
+&lt;p&gt;Those cookie’s expiration date is not set, which means that they will have
+the life time of a session cookie,  meaning that they will get removed once
+the client is shut down. This explains why closing and opening the browser
+again actually logs the user out.&lt;/p&gt;
+
+&lt;p&gt;The solution to this problem is to simply clear the &lt;code class=&quot;highlighter-rouge&quot;&gt;ASPXAUTH&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ASP.Net_SessionId&lt;/code&gt; on the log out page.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;In this blog post I demonstrated that the “Log Out” button does not actually
+log the user out, since it fails to clean the authentication cookie.
+This opens a window to unauthorized account access.&lt;/p&gt;
+
+&lt;p&gt;This blog post ends the series of blog posts related to the security
+weaknesses and vulnerabilities found in the Portuguese government’s
+authentication system &lt;code class=&quot;highlighter-rouge&quot;&gt;autenticacao.gov.pt&lt;/code&gt; and &lt;em&gt;Chave Móvel Digital&lt;/em&gt;.
+The issues described throughout these blog posts were not a result of a
+thorough analysis, but rather what I found in about 30 minutes.
+This leads me to believe that a more detailed study of the system’s
+security is likely to reveal many more problems.&lt;/p&gt;
+
+&lt;p&gt;I hope that the described issues will be fixed very soon,
+since they put millions of Portuguese citizens at risk. The agency
+responsible for these systems should take security more seriously
+and not as an afterthought.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/chave-movel-digital-does-not-log-out/&quot;&gt;Chave Móvel Digial&#39;s Log Out Button Does Not Log The User Out&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;The Codeumentary&lt;/a&gt; on May 13, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Chave Móvel Digital Phone Number Leakage]]></title>
+ <link rel="alternate" type="text/html" href="https://iluxonchik.github.io/chave-movel-digital-phone-number-information-leakage/" />
+  <id>https://iluxonchik.github.io/chave-movel-digital-phone-number-information-leakage</id>
+  <published>2018-05-13T17:00:02+01:00</published>
+  <updated>2018-05-13T17:00:02+01:00</updated>
+  <author>
+    <name>Illya Gerasymchuk</name>
+    <uri>https://iluxonchik.github.io</uri>
+    <email>illya@iluxonchik.me</email>
+  </author>
+  <content type="html">
+    &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/weak-security-of-portuguese-government/&quot;&gt;Part 1 - The Weak Security Of The Portuguese Government’s Authentication System&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/chave-movel-digital-xss&quot;&gt;Part 2 - Chave Móvel Digital Multiple XSS Vulnerabilites&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Part 3 - Chave Móvel Digital Phone Number Leakage&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/chave-movel-digital-does-not-log-out&quot;&gt;Part 4 - Chave Móvel Digital Log Out Not Working&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;In this blog post I will be exploring the information leakage regarding
+if a phone number is registered or not. The system has a protection
+measure which can be easily bypassed. I will also provide proof-of-concept
+code.&lt;/p&gt;
+
+&lt;h1 id=&quot;determining-if-a-phone-number-is-registered-with-an-account&quot;&gt;Determining If A Phone Number Is Registered With An Account&lt;/h1&gt;
+
+&lt;p&gt;If you enter a wrong phone number and PIN combination, you will be
+presented with the following message:&lt;/p&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 1:&lt;/b&gt; The System Ties To Hide Information&lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/ambig_msg.png&quot; alt=&quot;The System Ties To Hide Information&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The error message reads:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+O número de telemóvel ou o PIN estão errados ou registo inexistente
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Which translates to:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+Either the phone number or the PIN are incorrect or the account
+is not registered.
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This might seem like a good thing: the system tries to give the
+attacker the least information possible. The problem is that
+this is useless, since it can be easily bypassed.&lt;/p&gt;
+
+&lt;p&gt;The issue is that if the phone number is registered, after &lt;code class=&quot;highlighter-rouge&quot;&gt;3&lt;/code&gt; failed
+attempts, your account will be temporary locked. If the phone number is not
+registered, no lock in will occur.&lt;/p&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 2:&lt;/b&gt; Error Message When The Number Is Registered&lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/auth_err_msg.png&quot; alt=&quot;Error Message When The Number Is Registered&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The good news is that if you enter the wrong &lt;code class=&quot;highlighter-rouge&quot;&gt;PIN&lt;/code&gt; is entered again,
+the temporary lockout period will be extended. Sometimes, you might be
+asked to solve a captcha. My personal experience, however, suggests that
+some simple machine learning can be used to bypass it. A better solution
+here would be to use a more sophisticated solution, like Google’s &lt;a href=&quot;https://www.google.com/recaptcha/intro/v3beta.html&quot;&gt;ReCaptcha&lt;/a&gt;.&lt;/p&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 3:&lt;/b&gt; A Simple Captcha Is Used&lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/simple_captcha.png&quot; alt=&quot;A Simple Captcha Is Used&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Once you know that a phone number is registered in the system, you
+could apply social engineering attacks to obtain access to the user’s account.
+For example, in Portugal, you can send SMS messages with any Sender ID.
+Services like &lt;a href=&quot;https://aws.amazon.com/sns/pricing/&quot;&gt;Amazon SNS&lt;/a&gt; are cheap
+and easy to use. When you receive your second-factor authentication code,
+it comes from the sender &lt;code class=&quot;highlighter-rouge&quot;&gt;CMD&lt;/code&gt; (it stands for &lt;em&gt;Chave Móvel Digital&lt;/em&gt;, or
+  Digital Mobile Key, in English). What an attacker could do is send the
+user an SMS message with the sender id &lt;code class=&quot;highlighter-rouge&quot;&gt;CMD&lt;/code&gt; saying that there is an issue
+with the user’s account and that he needs to follow the provided link
+to solve it. The link could perhaps exploit the &lt;a href=&quot;https://iluxonchik.github.io/chave-movel-digital-xss/&quot;&gt;XSS vulnerability described in the previous post&lt;/a&gt;
+to get the user’s PIN.&lt;/p&gt;
+
+&lt;p&gt;While not being a critical issue, it renders the existing protection system
+useless. What they could instead do is treat all of the numbers the same:
+lock the access to all of them, regardless of the fact if they are
+registered or not. This should, however, be done with some care.
+If you follow the naive approach of inserting every entered phone
+number into the database and counting the number of login attempts,
+the attacker might be able to flood the database with numbers. Careful
+system design is needed here to prevent DoS attacks.&lt;/p&gt;
+
+&lt;p&gt;The same trick works with e-mail and Twitter authentication. These two
+authentication methods are, however, not enabled by default.&lt;/p&gt;
+
+&lt;h1 id=&quot;proof-of-concept&quot;&gt;Proof-Of-Concept&lt;/h1&gt;
+
+&lt;p&gt;I wrote a simple &lt;a href=&quot;https://github.com/iluxonchik/autenticacao-gov-pt-bruteforcer-pof&quot;&gt;proof-of-concept code&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A quick reverse-engineering of the authentication process showed that in order to access the login page, you need to go thought a specific sequence of steps, you can’t just go to the login page directly.&lt;/p&gt;
+
+&lt;p&gt;In that sequence of steps, your browser exchanges cookies with the server.
+Among those, there are &lt;code class=&quot;highlighter-rouge&quot;&gt;3&lt;/code&gt; different session ids that you get through this
+process and a request that checks if your browser supports JavaScript.&lt;/p&gt;
+
+&lt;p&gt;With every &lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt; request a &lt;code class=&quot;highlighter-rouge&quot;&gt;humanCheck&lt;/code&gt; value is sent. This value is
+set on document load:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ready&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;#humanCheck&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;8FBB298A-DE46-4657-88E8-95F1F1224784&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#inputMobile&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;intlTelInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;I initially thought that that was a unique
+value generated on every request, acting as a nonce. Further analysis
+showed that this value is fixed. I’ve tried
+with different IP’s, different browsers and the value remained the
+same.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;As demonstrated in this blog post, while the system tries to be ambiguous by not
+exposing if the phone number is registered with an account or not, it can be
+easily bypassed.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;/chave-movel-digital-does-not-log-out&quot;&gt;next and final blog post of this series&lt;/a&gt; I will explore another issue: the fact
+that the “Log Out” button does not actually log you out.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/chave-movel-digital-phone-number-information-leakage/&quot;&gt;Chave Móvel Digital Phone Number Leakage&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;The Codeumentary&lt;/a&gt; on May 13, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Chave Móvel Digital Multiple XSS Vulnerabilities]]></title>
+ <link rel="alternate" type="text/html" href="https://iluxonchik.github.io/chave-movel-digital-xss/" />
+  <id>https://iluxonchik.github.io/chave-movel-digital-xss</id>
+  <published>2018-05-13T17:00:01+01:00</published>
+  <updated>2018-05-13T17:00:01+01:00</updated>
+  <author>
+    <name>Illya Gerasymchuk</name>
+    <uri>https://iluxonchik.github.io</uri>
+    <email>illya@iluxonchik.me</email>
+  </author>
+  <content type="html">
+    &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/weak-security-of-portuguese-government/&quot;&gt;Part 1 - The Weak Security Of The Portuguese Government’s Authentication System&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Part 2 - Chave Móvel Digital Multiple XSS Vulnerabilites&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/chave-movel-digital-phone-number-information-leakage&quot;&gt;Part 3 - Chave Móvel Digital Phone Number Leakage&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/chave-movel-digital-does-not-log-out&quot;&gt;Part 4 - Chave Móvel Digital Log Out Not Working&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;In this blog post, I will be exploring the Reflected Cross-Site-Scripting (XSS) vulnerability present in the Portuguese government’s authentication
+system’s website &lt;a href=&quot;https://www.autenticacao.gov.pt/&quot;&gt;www.autenticacao.gov.pt&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The XSS vulnerability is present in the &lt;em&gt;Chave Móvel Digital&lt;/em&gt; (CMD) login page.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-xss-vulnerability&quot;&gt;The XSS Vulnerability&lt;/h1&gt;
+
+&lt;p&gt;At the moment of writing this post, there are 3 ways that you can authenticate
+yourself:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the second-factor code is sent to your mobile phone number&lt;/li&gt;
+  &lt;li&gt;the second-factor code is sent to your e-mail&lt;/li&gt;
+  &lt;li&gt;the second-factor code is sent to your as a private Twitter message&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 1:&lt;/b&gt; Chave Movel Digital Authentication Options&lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/auth_opts.png&quot; alt=&quot;Chave Movel Digital Authentication Options&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;I’m going to choose the phone number authentication method, since
+this is the only one that’s required. The other two are not activated by
+default. The XSS vulnerability seems to only work on the
+mobile phone number and Twitter authentication methods. E-mail authentication
+seems to be doing input sanitization correctly. There are two separate places where you can login:
+the “Personal Area”, which only allows mobile phone number login, and the
+regular one, which allows the 3 authentication methods described above.
+The XSS vulnerability works in both places.&lt;/p&gt;
+
+&lt;p&gt;This is how the main login page looks like:&lt;/p&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 2:&lt;/b&gt; Digital Mobile Key login page&lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/login_page.png&quot; alt=&quot;Digital Mobile Key login page&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;To login to the portal, you need to enter your mobile phone number and a
+numeric &lt;code class=&quot;highlighter-rouge&quot;&gt;PIN&lt;/code&gt;. The &lt;code class=&quot;highlighter-rouge&quot;&gt;Mobile phone number&lt;/code&gt; field is the one that will be used
+to exploit the &lt;code class=&quot;highlighter-rouge&quot;&gt;XSS&lt;/code&gt; vulnerability. Throughout this section I will be using
+&lt;code class=&quot;highlighter-rouge&quot;&gt;1234&lt;/code&gt; as the &lt;code class=&quot;highlighter-rouge&quot;&gt;PIN&lt;/code&gt; number.&lt;/p&gt;
+
+&lt;p&gt;Now let’s see what happens when I try to enter a phone number that consists
+only of letters (&lt;code class=&quot;highlighter-rouge&quot;&gt;Hello, World&quot;&lt;/code&gt;):&lt;/p&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 3:&lt;/b&gt; Digital Mobile Key login page&lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/enter_text.png&quot; alt=&quot;Digital Mobile Key login page&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;And now let’s click on “Authenticate”:&lt;/p&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 4:&lt;/b&gt; User input gets copied without validation&lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/enter_text_authenticate.png&quot; alt=&quot;User input gets copied without validation&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Even though the page says &lt;code class=&quot;highlighter-rouge&quot;&gt;The phone field only allows numbers&lt;/code&gt;, at the bottom, it
+still copies the input that I provided verbatim to the same field.
+At this point I was pretty sure that the page is vulnerable to &lt;code class=&quot;highlighter-rouge&quot;&gt;XSS&lt;/code&gt;.
+So I looked at the source code to see how it can be exploited:&lt;/p&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 5:&lt;/b&gt; The input is copied to the value attribute&lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/value_attr_input.png&quot; alt=&quot;The input is copied to the value attribute&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Okay, so the input is you provided initially is copied to the &lt;code class=&quot;highlighter-rouge&quot;&gt;value&lt;/code&gt;
+attribute of the &lt;code class=&quot;highlighter-rouge&quot;&gt;inputMobile&lt;/code&gt; element. So let’s try to show a very simple
+&lt;code class=&quot;highlighter-rouge&quot;&gt;XSS&lt;/code&gt; that would inject a new &lt;code class=&quot;highlighter-rouge&quot;&gt;span&lt;/code&gt; element into the page and would comment
+out some of the &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt;. For this, in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Mobile phone number&lt;/code&gt; field, we’ll
+input the following text: &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot; &amp;lt;span&amp;gt; Hello, World &amp;lt;/span&amp;gt; &amp;lt;!--&lt;/code&gt;.&lt;/p&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 1:&lt;/b&gt; A simple XSS input&lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/xss_input.png&quot; alt=&quot;A simple XSS input&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;And here is the result:&lt;/p&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 6:&lt;/b&gt; Successful result of an XSS injection&lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/xss_result.png&quot; alt=&quot;Successful result of an XSS injection&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;As you can see, our custom &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt;was successfully injected into the page.
+The rest of the page wasn’t commented out only because there is another
+closing &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt; comment tag (&lt;code class=&quot;highlighter-rouge&quot;&gt;--&amp;gt;&lt;/code&gt;) present in the page’s source.&lt;/p&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 1:&lt;/b&gt; Resulting HTML from the XSS attack&lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/xss_source.png&quot; alt=&quot;Resulting HTML from the XSS attack&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Whenever the text in the “Mobile phone number” field is
+changed, the &lt;code class=&quot;highlighter-rouge&quot;&gt;ShowPrint()&lt;/code&gt; function is called. The only thing that it does is
+copies the value from the &lt;code class=&quot;highlighter-rouge&quot;&gt;inputMobile&lt;/code&gt; element to the &lt;code class=&quot;highlighter-rouge&quot;&gt;MainContent_hiddenMobile&lt;/code&gt; attribute:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ShowPrint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mobileValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;inputMobile&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MainContent_hiddenMobile&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mobileValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Why this is done is not obvious, since both of the fields get &lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt;ed to the
+the backend when you click on “Authenticate”:&lt;/p&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 1:&lt;/b&gt; Both of the attribute values get sent&lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/form_data.png&quot; alt=&quot;Both of the attribute values get sent&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;However, if we manually change the value of the &lt;code class=&quot;highlighter-rouge&quot;&gt;MainContent_hiddenMobile&lt;/code&gt;
+field to &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello, Reader&lt;/code&gt; and leave &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello, World&lt;/code&gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;inputMobile&lt;/code&gt;
+field, we can see that the value that that’s placed in the “Mobile phone number” box in the failed login page is the one from &lt;code class=&quot;highlighter-rouge&quot;&gt;MainContent_hiddenMobile&lt;/code&gt;.&lt;/p&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 7:&lt;/b&gt; Manually changing the value of the hidden input &lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/manual_change.png&quot; alt=&quot;Manually changing the value of the hidden input &quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;style&gt;
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;caption align=&quot;bottom&quot;&gt;&lt;b&gt;Figure 8:&lt;/b&gt; The hidden input value is the one that gets echoed back&lt;/caption&gt;
+    &lt;tr&gt;&lt;td style=&quot;max-width: 600px&quot;&gt;&lt;img class=&quot;centered&quot; src=&quot;../images/posts/aut_gov_vuln/manual_change_result.png&quot; alt=&quot;The hidden input value is the one that gets echoed back&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;In this blog post I showed you the &lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt; XSS vulnerability present
+in the Portuguese government’s &lt;code class=&quot;highlighter-rouge&quot;&gt;autenticacao.gov.pt&lt;/code&gt; &lt;em&gt;Chave Móvel Digital&lt;/em&gt;
+login page.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;/chave-movel-digital-phone-number-information-leakage&quot;&gt;next blog post&lt;/a&gt; I will show you how you can find out if a
+mobile phone number is registered with &lt;em&gt;Chave Móvel Digital&lt;/em&gt; or not,
+making the existing ambiguous “Either the mobile number or the PIN are
+incorrect” message useless and opening the door for various social
+engineering attacks.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/chave-movel-digital-xss/&quot;&gt;Chave Móvel Digital Multiple XSS Vulnerabilities&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;The Codeumentary&lt;/a&gt; on May 13, 2018.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[The Weak Security Of The Portuguese Government's Authentication System]]></title>
+ <link rel="alternate" type="text/html" href="https://iluxonchik.github.io/weak-security-of-portuguese-government/" />
+  <id>https://iluxonchik.github.io/weak-security-of-portuguese-government</id>
+  <published>2018-05-13T17:00:00+01:00</published>
+  <updated>2018-05-13T17:00:00+01:00</updated>
+  <author>
+    <name>Illya Gerasymchuk</name>
+    <uri>https://iluxonchik.github.io</uri>
+    <email>illya@iluxonchik.me</email>
+  </author>
+  <content type="html">
+    &lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Part 1 - The Weak Security Of The Portuguese Government’s Authentication System&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/chave-movel-digital-xss&quot;&gt;Part 2 - Chave Móvel Digital Multiple XSS Vulnerabilites&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/chave-movel-digital-phone-number-information-leakage&quot;&gt;Part 3 - Chave Móvel Digital Phone Number Leakage&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/chave-movel-digital-does-not-log-out&quot;&gt;Part 4 - Chave Móvel Digital Log Out Not Working&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Back in January 2018, after about half an hour of exploring
+the “secure” authentication system provided by the Portuguese government
+I found various security issues and vulnerabilities. I will briefly
+explore them in a series of blog posts.&lt;/p&gt;
+
+&lt;p&gt;In this first blog post I will explain what is &lt;code class=&quot;highlighter-rouge&quot;&gt;autenticacao.gov.pt&lt;/code&gt; and
+&lt;em&gt;Chave Móvel Digital&lt;/em&gt;, as well as the sensitive information that they
+are supposed to be restricting the access too. I will also explore the
+overall weak security that the system has.&lt;/p&gt;
+
+&lt;p&gt;This whole series of blog posts is a result of my findings in a short
+period of time. It’s a compilation of the notes that I took, as a draft
+to be submitted to responsible agency, as part of responsible disclosure.
+A more thorough security audit is likely to reveal a lot
+more problems. If about 30 minutes is all to took to find those problems,
+what more would a malicious, motivated attacker would find.&lt;/p&gt;
+
+&lt;p&gt;I’m hoping that the issues will be fixed as soon as possible.&lt;/p&gt;
+
+&lt;h1 id=&quot;responsible-disclosure&quot;&gt;Responsible Disclosure&lt;/h1&gt;
+
+&lt;p&gt;On January 21st I emailed &lt;code class=&quot;highlighter-rouge&quot;&gt;ama@ama.pt&lt;/code&gt; (email of the responsible agency),
+describing the vulnerabilities and security issues, as well as offering
+a more detailed description draft and Proof-Of-Concept code, but
+obtained no answer.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-autenticacaogovpt-and-chave-movel-digital-cmd&quot;&gt;What Is Autenticacao.gov.pt and Chave Movel Digital (CMD)?&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://autenticacao.gov.pt&quot;&gt;Autenticacao.gov.pt’s homepage&lt;/a&gt; has the
+following text:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+O sítio oficial dos meios de identificação eletrónica,
+assinatura digital e autenticação segura do Estado.
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;which translates to:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+The official site of the means of electronic identification, digital signature
+and state&#39;s secure authentication.
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Basically, it’s an authentication system that allows the Portuguese citizens
+to authenticate to administrative public services. Once authenticated, you can, among other things:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;register a birth of a child&lt;/li&gt;
+  &lt;li&gt;register a vehicle&lt;/li&gt;
+  &lt;li&gt;register a company&lt;/li&gt;
+  &lt;li&gt;request a birth certificate&lt;/li&gt;
+  &lt;li&gt;obtain the criminal record of an individual or a company&lt;/li&gt;
+  &lt;li&gt;submit/consult revenue of an individual or a company&lt;/li&gt;
+  &lt;li&gt;sign documents&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;New functionalities are constantly added. As you can see, it is a very
+useful system, since it allows you to save a lot of time. It allows you
+to do many things from the comfort of your home and in minutes, instead
+of spending hours at the pubic administrative services.&lt;/p&gt;
+
+&lt;p&gt;Despite being very useful, it does expose some sensitive personal
+information and allows you to do some sensitive actions. If this
+gets into the wrong hands, it can lead to many problems, such as
+identity theft.&lt;/p&gt;
+
+&lt;p&gt;For this reason, it is very important to have a secure authentication system.
+This is what &lt;em&gt;Chave Móvel Digital (CMD)&lt;/em&gt;, which translates to Digital
+Mobile Key, supposedly does. The main problem with it is that its security
+is questionable.&lt;/p&gt;
+
+&lt;h1 id=&quot;bad-security-from-the-ground-up&quot;&gt;Bad Security From The Ground Up&lt;/h1&gt;
+
+&lt;p&gt;So now let’s briefly talk about the security of the &lt;em&gt;Chave Móvel Digital&lt;/em&gt; authentication system.
+In December of 2017 me and my girlfriend went to a Christmas fair. Among other
+things, there were various company booths. One of them was VR-related, so
+we decided to go in and check it out. After playing around with the Microsoft’s
+HoloLens for a little bit, we were approached by a lady there that asked us
+if we have already activated the &lt;em&gt;Chave Móvel Digital&lt;/em&gt; system. After
+explaining to me what that was, she told me that it soon would be mandatory
+to have it activated. I could either do it there now or go to the public
+administrative organs, wait in queue for hours and do it there.&lt;/p&gt;
+
+&lt;p&gt;Motivated by the interest in the security of this new system and the potential
+future time savings (bureaucracy is a big issue in Portugal), I decided
+to activate it there.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-authentication-process&quot;&gt;The Authentication Process&lt;/h3&gt;
+
+&lt;p&gt;Let’s look at the authentication process. To login using the &lt;em&gt;Chave Móvel Digital&lt;/em&gt; system you have to enter your
+mobile phone number and your PIN. If the entered details are correct, a
+code is sent to your mobile number, which you have to enter to login.&lt;/p&gt;
+
+&lt;p&gt;The issues here are the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PIN can only be 4-8 numeric digits&lt;/li&gt;
+  &lt;li&gt;SMS as the only second factor authentication option&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The first one is the most serious one. PIN is essentially your password.
+The issue here is that it only be &lt;strong&gt;numeric&lt;/strong&gt; its length is &lt;strong&gt;limited&lt;/strong&gt; to
+be between 4 and 8 characters.&lt;/p&gt;
+
+&lt;p&gt;Let’s look at the numbers. &lt;code class=&quot;highlighter-rouge&quot;&gt;8&lt;/code&gt; digit numeric-only passwords means that
+there are &lt;code class=&quot;highlighter-rouge&quot;&gt;10^8 = 100000000&lt;/code&gt; possible combinations. This is nothing for
+modern computer. For example, let’s see how long will it take to generate
+all of the possible combinations on my machine. Assuming that the file
+&lt;code class=&quot;highlighter-rouge&quot;&gt;gen.py&lt;/code&gt; contains the following code:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# gen.py file contents&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;99999999&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Here is what &lt;code class=&quot;highlighter-rouge&quot;&gt;time python gen.py&lt;/code&gt; gives us:&lt;/p&gt;
+
+&lt;p&gt;$ time python gen.py
+python gen.py  3.20s user 0.01s system 99% cpu 3.208 total&lt;/p&gt;
+
+&lt;p&gt;While this is not the most accurate way of measuring the process execution
+time, it’s good enough to transmit the idea of how easy this task is for
+modern computers. It’s &lt;code class=&quot;highlighter-rouge&quot;&gt;2018&lt;/code&gt; and the Portuguese government
+seems to think that 4 to 8 digit passwords are secure.&lt;/p&gt;
+
+&lt;p&gt;As an interesting note, when I was signing up with the system, the lady
+told me that from her experience people usually choose &lt;code class=&quot;highlighter-rouge&quot;&gt;4&lt;/code&gt; digit PINs, so
+that they’re the same as their phone PINs. This seems like a reasonable
+assumption to take. In this case, the easy task is made even easier, since
+the number of possible combinations is lowered to &lt;code class=&quot;highlighter-rouge&quot;&gt;10^4 = 10000&lt;/code&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# gen.py file contents&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9999&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Here is what &lt;code class=&quot;highlighter-rouge&quot;&gt;time python gen.py&lt;/code&gt; gives us:&lt;/p&gt;
+
+&lt;p&gt;$ time python gen.py
+python gen.py  0.01s user 0.01s system 98% cpu 0.015 total&lt;/p&gt;
+
+&lt;p&gt;Why can’t you use passwords that contain numbers, letters and special
+characters? Maybe it’s a legacy issue, but you could definitely write some
+middleware that would take care of that. The system is supposed to protect
+very sensitive data, after all.&lt;/p&gt;
+
+&lt;p&gt;As an example, let me present to you a very simple solution that would make
+the system more secure. It would do it so by allowing the users to use
+a password that consists of numbers, letters and special characters, while
+keeping the core legacy backend unchanged. I’m going to take the following
+assumptions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the backend requires a 4-8 digit &lt;code class=&quot;highlighter-rouge&quot;&gt;PIN&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;all of the PINs are stored in plain text&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A very simple solution would be to do the following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;When the user is registering/changing his password: hash the password provided by the user with the phone number and store it in the database. Generate an digit PIN and store it. This PIN will never be revealed to the user.&lt;/li&gt;
+  &lt;li&gt;When the users tries to log in: hash the provided password with the phone
+number and compare this result to the one that you have stored in the
+database.
+    &lt;ul&gt;
+      &lt;li&gt;if they are equal, send an “OK” to the backend, which will then
+  obtain the PIN from the database and use it as needed&lt;/li&gt;
+      &lt;li&gt;if they are not equal, fail the authentication&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I am in no way suggesting that this is the best solution, because it is not.
+It is, however, a very simple one, that would require very little changes
+to the overall system and keeping the core legacy backend unchanged.
+All you would have to do is add a new table to the database (this way you
+  will keep your existing tables unchanged) for the password hash and
+change the authentication code in the middlware between the client and the
+backend system. Even if the system is different from the one in my assumptions,
+you can adopt the solution with relative ease.&lt;/p&gt;
+
+&lt;p&gt;The second point relates to only allowing SMS as the second-factor
+authentication. While being a lot better than not using two-factor
+authentication at all, it’s not the most secure option.
+Let me give you two examples. By using some social engineering, if an attacker
+can get access to your personal information, they can contact your phone
+company and move your phone number to a new SIM. By exploiting the &lt;a href=&quot;https://www.theguardian.com/technology/2016/apr/19/ss7-hack-explained-mobile-phone-vulnerability-snooping-texts-calls&quot;&gt;vulnerabilities in the
+SS7 protocol&lt;/a&gt; the attacker can
+read all of your text messages.&lt;/p&gt;
+
+&lt;p&gt;Allowing the use of other authentication options, such as Google Authenticator
+would make the second-factor authentication a lot more secure. In general,
+I have a feeling that the engineers assumed that there was no need for
+strong passwords, since two-factor authentication is required and
+only the user has the access to his mobile phone number. This assumption
+is, of course, incorrect. While it is true, that if you’re using a &lt;strong&gt;good
+second-factor authentication&lt;/strong&gt;, it’s safe to weaken your password,
+this does not apply to making your password a trivial 4-8 digit one.&lt;/p&gt;
+
+&lt;p&gt;Now, this just smelled &lt;strong&gt;bad security&lt;/strong&gt;. I was certain that I could more problems. I was correct. The security issues that I’m going to be describing in this series of blog posts were found after about 30 minutes of
+exploring.&lt;/p&gt;
+
+&lt;p&gt;There is now an option to receive your second-factor code
+as a private message on Twitter or be sent to your e-mail address. Those
+are not enabled by default and you have to do it yourself. I am not
+sure when those options were added. In any case,
+when logging in into your “Personal Area”, you only have the option of
+using your mobile phone number.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;In this first post of the four-part series I described why the security
+of the authentication system is flawed. This is also what motivated me
+to explore further: I was sure that it wouldn’t be hard to find more issues,
+since the “security” of this “secure authentication system” did seem
+like an afterthought.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;/chave-movel-digital-xss&quot;&gt;next blog post&lt;/a&gt;, I will be describing the multiple XSS vulnerabilities
+present in the authentication page.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/weak-security-of-portuguese-government/&quot;&gt;The Weak Security Of The Portuguese Government&#39;s Authentication System&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;The Codeumentary&lt;/a&gt; on May 13, 2018.&lt;/p&gt;
+  </content>
+</entry>
 
 
 <entry>
@@ -20,9 +822,9 @@
   <published>2016-09-08T00:00:00+01:00</published>
   <updated>2016-09-08T00:00:00+01:00</updated>
   <author>
-    <name>iluxonchik</name>
+    <name>Illya Gerasymchuk</name>
     <uri>https://iluxonchik.github.io</uri>
-    <email></email>
+    <email>illya@iluxonchik.me</email>
   </author>
   <content type="html">
     &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
@@ -551,7 +1353,7 @@ In the “real world”, however (outside of academia), those terms are used
 interchangeably&lt;/li&gt;
 &lt;/ul&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/&quot;&gt;Demystifying The Regular Expression That Checks If A Number Is Prime&lt;/a&gt; was originally published by iluxonchik at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;G'd Up Code&lt;/a&gt; on September 08, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/&quot;&gt;Demystifying The Regular Expression That Checks If A Number Is Prime&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;The Codeumentary&lt;/a&gt; on September 08, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -563,9 +1365,9 @@ interchangeably&lt;/li&gt;
   <published>2016-08-22T00:00:00+01:00</published>
   <updated>2016-08-22T00:00:00+01:00</updated>
   <author>
-    <name>iluxonchik</name>
+    <name>Illya Gerasymchuk</name>
     <uri>https://iluxonchik.github.io</uri>
-    <email></email>
+    <email>illya@iluxonchik.me</email>
   </author>
   <content type="html">
     &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
@@ -1040,7 +1842,7 @@ forensic analysis and security in general.&lt;/p&gt;
  I’m keeping the original one in the post, because the goal was to be more explicit, so that people new to Python would have less trouble understanding it.&lt;/li&gt;
 &lt;/ul&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/why-you-should-learn-python/&quot;&gt;Why You Should Learn Python&lt;/a&gt; was originally published by iluxonchik at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;G'd Up Code&lt;/a&gt; on August 22, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/why-you-should-learn-python/&quot;&gt;Why You Should Learn Python&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;The Codeumentary&lt;/a&gt; on August 22, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -1052,9 +1854,9 @@ forensic analysis and security in general.&lt;/p&gt;
   <published>2015-09-03T00:00:00+01:00</published>
   <updated>2015-09-03T00:00:00+01:00</updated>
   <author>
-    <name>iluxonchik</name>
+    <name>Illya Gerasymchuk</name>
     <uri>https://iluxonchik.github.io</uri>
-    <email></email>
+    <email>illya@iluxonchik.me</email>
   </author>
   <content type="html">
     
@@ -3472,7 +4274,7 @@ to design patterns. It’s also a good book if you need to quickly refreshen som
 &lt;p&gt;Another great book, probably the most well-known one is &lt;a href=&quot;http://www.amazon.co.uk/Design-patterns-elements-reusable-object-oriented/dp/0201633612&quot;&gt;Design patterns : elements of reusable object-oriented software&lt;/a&gt;.
 It’s  more complex, but it explores real world examples.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/design-patterns-notes/&quot;&gt;Design Patterns Notes - An Overview Of Design Patterns&lt;/a&gt; was originally published by iluxonchik at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;G'd Up Code&lt;/a&gt; on September 03, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/design-patterns-notes/&quot;&gt;Design Patterns Notes - An Overview Of Design Patterns&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;The Codeumentary&lt;/a&gt; on September 03, 2015.&lt;/p&gt;
   </content>
 </entry>
 
