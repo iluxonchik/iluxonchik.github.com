@@ -49,15 +49,18 @@
 
        <!-- Social Profile Buttons -->
        {% if site.owner.github %}
-           <a class="github-button" href="https://github.com/{{ site.owner.github }}" data-style="mega" aria-label="Follow @iluxonchik on GitHub">Follow @iluxonchik</a>  
+           <a class="github-button" href="https://github.com/{{ site.owner.github }}" data-style="mega" aria-label="Follow @iluxonchik on GitHub">Follow @iluxonchik</a>
        {% endif %}
 
        {% if site.owner.twitter  %}
-            <a href="https://twitter.com/{{ site.owner.twitter }}" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @iluxonchik</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            <a href="https://twitter.com/{{ site.owner.twitter }}" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @iluxonchik</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
        {% endif %}
 
-       {% if site.owner.snapchat %}
-         <iframe src="https://scbutton.com/src/button.html?username={{ site.owner.snapchat }}&invert=false&large=true" frameborder="0" scrolling="no" height="28px" width="115.1875px"></iframe>
+
+       {% if site.owner.instagram %}
+        <a href="http://instagram.com/{{ site.owner.instagram }}" title="{{ site.owner.name}} on Instagram" target="_blank">
+          <i class="fa fa-instagram" style="font-size:29px;color:black;"></i>
+        <span style="color:black;">Instagram</span></a>
        {% endif %}
       <!-- //Social Profile Buttons -->
 
@@ -74,7 +77,7 @@
   </footer>
 </div><!-- /.footer-wrapper -->
 
-{% include scripts.html %}	        
+{% include scripts.html %}
 
 {% if site.owner.github %}
     <!-- Social Profile Buttons GitHub -->

@@ -899,6 +899,7 @@ over the network. This processing involves `3` basic steps:
 1. Fragmentation
 2. Compression (usually `null`)
 3. Cryptographic Protection (`MAC` + encryption)
+4. Append the `TLS Record Header` (encapsulate the packet in the `TLS Record Portocol`)
 
 These steps, alongside some additional information, are pictured below:
 
@@ -906,9 +907,13 @@ These steps, alongside some additional information, are pictured below:
 
 1. **Fragmentation** - The `TLS Record Layer` takes arbitrary-length data and **fragments** it into manageable pieces.
 Each one of the resulting "pieces"/fragments is called `TLSPlaintext`. The `TLSPlaintext` block has a maximum size
-of 2^14 bytes. Client message boundaries **are not preserved**, wich means that **multiple messages**
-of the **same type** may be placed into the **same fragment** or a **single message** may be
+of 2^14 bytes. Message boundaries are handled differently, **depending on the ContentType**.
+The `ContentType` may be one of the following: `change_cipher_spec(20)` (`ChangeCipherSpec` protocol message), `alert(21)` (`Alert` protocol message),
+`handshake(22)`(`Handshake` protocol message), `application_data(23)` (`ApplicationData` protocol message).
+This means that client message boundaries **are not preserved**: **multiple messages**
+of the **same ContentType** may be placed into the **same fragment** or a **single message** may be
 fragmented accross **several records**.
+
 2. **Compression** - The `TLS Record Layer` compresses the `TLSPlaintext` structure
 according to the negotiated compression method stored in the `session state`. The
 result is a new structure, called `TLSCompressed`. The `SSL/TLS` specification
@@ -917,8 +922,24 @@ states that the compression **cannot** increase the length of the fragment by mo
 is used, in fact, it's strongly recommended not to use compression at all, due to security
 issues that it might causes. As I already mentioned before, support for compression has been
 removed from TLS 1.3 alltogether, [for this same reason](https://www.ietf.org/mail-archive/web/tls/current/msg11619.html).
-3. **Record Payload Protection** - 
 
+3. **Record Payload Protection** - encryption and `MAC` functions transform a `TLSCompressed` structure
+into a `TLSCipherText`. The decryption functions reverse this process, by transforming a `TLSCipherText`
+into a `TLSCompressed`. The `MAC` of a record also includes a **sequence number** in order to make
+missing, extra or repeated messages detectable.
+
+<pre>   
+     type(1 byte)
+      |
+      |   version
+      |     |
+      |     |
+    +----+----+----+----+----+
+    |    |    |    |    |    |
+    |    |    |    |    |    | TLS Record header
+    +----+----+----+----+----+
+
+</pre>
 
 
 

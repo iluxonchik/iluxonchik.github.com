@@ -1,5 +1,5 @@
-title:            G'd Up Code
-description:      Programming, Software Development and Realted
+title:            The Codeumentary
+description:      Programming, Security and Realted
 disqus_shortname: iluxonchik
 reading_time:     true
 words_per_minute: 200
@@ -9,31 +9,31 @@ url:              https://iluxonchik.github.io
 
 # Owner/author information
 owner:
-  name:           iluxonchik
+  name:           Illya Gerasymchuk
   avatar:         avatar.png
   bio:            "I <3 coding"
-  email:          
+  email:          illya@iluxonchik.me
   # Social networking links used in footer. Update and remove as you like.
-  twitter:       iluxonchik 
-  facebook:       
-  github:        iluxonchik 
-  snapchat:      iluxonchik         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
+  twitter:       iluxonchik
+  facebook:
+  github:        iluxonchik
+  snapchat:      
+  stackexchange:
+  linkedin:      iluxonchik
+  instagram:     iluxonchik.meow
+  flickr:
   tumblr:
   # google plus id, include the '+', eg +mmistakes
   google_plus:
 
 # Background image to be tiled on all pages
-background: 
+background:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics: UA-83065535-1   
-google_verify:      
+google_analytics: UA-83065535-1
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Lisbon
