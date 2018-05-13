@@ -1,0 +1,765 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Demystifying The Regular Expression That Checks If A Number Is Prime &#8211; G'd Up Code</title>
+<meta name="description" content="Ever wondered how the ^.?$|^(..+?)\1+$ regular expression can tell you if a number is not prime? In this blog post you'll learn how and why it works. Code examples in Java, JavaScript, Python and Perl are provided.">
+<meta name="keywords" content="regular expressions, explanation">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://iluxonchik.github.io/images/">
+<meta name="twitter:title" content="Demystifying The Regular Expression That Checks If A Number Is Prime">
+<meta name="twitter:description" content="Ever wondered how the ^.?$|^(..+?)\1+$ regular expression can tell you if a number is not prime? In this blog post you'll learn how and why it works. Code examples in Java, JavaScript, Python and Perl are provided.">
+<meta name="twitter:creator" content="@iluxonchik">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Demystifying The Regular Expression That Checks If A Number Is Prime">
+<meta property="og:description" content="Ever wondered how the ^.?$|^(..+?)\1+$ regular expression can tell you if a number is not prime? In this blog post you'll learn how and why it works. Code examples in Java, JavaScript, Python and Perl are provided.">
+<meta property="og:url" content="https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/">
+<meta property="og:site_name" content="G'd Up Code">
+
+
+
+
+
+<link rel="canonical" href="https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/">
+<link href="https://iluxonchik.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="G'd Up Code Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://iluxonchik.github.io/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="https://iluxonchik.github.io/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://iluxonchik.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://iluxonchik.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://iluxonchik.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://iluxonchik.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://iluxonchik.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://iluxonchik.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+</head>
+
+<body id="post" >
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="https://iluxonchik.github.io/">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="https://iluxonchik.github.io/images/avatar.png" alt="iluxonchik photo" class="author-photo">
+					<h4>iluxonchik</h4>
+					<p>I <3 coding</p>
+				</li>
+				<li><a href="https://iluxonchik.github.io/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				
+				<li>
+					<a href="https://twitter.com/iluxonchik"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="https://github.com/iluxonchik"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+				<li>
+					<a href="https://www.snapchat.com/add/iluxonchik"><i class="fa fa-fw fa-snapchat"></i> Snapchat</a>
+				</li>
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="https://iluxonchik.github.io/posts/">All Posts</a></li>
+				<li><a href="https://iluxonchik.github.io/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/" rel="bookmark" title="Demystifying The Regular Expression That Checks If A Number Is Prime">Demystifying The Regular Expression That Checks If A Number Is Prime</a></h1>
+        
+        <h2><span class="entry-date date published"><time datetime="2016-09-08T00:00:00+01:00">September 08, 2016</time></span></h2>
+        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
+Reading time ~24 minutes
+        </p><!-- /.entry-reading-time -->
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <h1 id="introduction">Introduction</h1>
+
+<p>A while back I was researching the most efficient way to check if a number is
+prime. This lead me to find the following piece of code:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">isPrime</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="o">!</span><span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="k">new</span> <span class="kt">char</span><span class="o">[</span><span class="n">n</span><span class="o">]).</span><span class="na">matches</span><span class="o">(</span><span class="s">".?|(..+?)\\1+"</span><span class="o">);</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>I was intrigued. While this might not be the most efficient way, it’s
+certainly one of the less obvious ones, so my curiosity kicked in.
+How on Earth could a match for the <code class="highlighter-rouge">.?|(..+?)\1+</code> regular expression tell that
+a number is <strong>not</strong> prime (once it’s converted to its <a href="https://en.wikipedia.org/wiki/Unary_numeral_system">unary representation</a>)?</p>
+
+<p>If you’re interested, read on, I’ll try to dissect this regular expression and
+explain what’s really going on. The explanation will be programming language
+agnostic, <a href="#4-code-examples">I will, however, provide</a> <code class="highlighter-rouge">Python</code>, <code class="highlighter-rouge">JavaScript</code> and <code class="highlighter-rouge">Perl</code> versions
+of the <code class="highlighter-rouge">Java</code> code above and explain why they are slightly different.</p>
+
+<p>I will explain how the regular expression <code class="highlighter-rouge">^.?$|^(..+?)\1+$</code> can filter out
+any prime numbers. Why this one and not <code class="highlighter-rouge">.?|(..+?)\1+</code> (the one used in <code class="highlighter-rouge">Java</code> code example above)?
+Well, this has to do with the way <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#matches-java.lang.String-">String.matches()</a> works, which <a href="#3-the-java-case">I’ll explain later</a>.</p>
+
+<p>While there are some blog posts on this topic, I found them to not go deep enough
+and give just a high level overview, not explaining some of the important details well enough.
+Here, I’ll try to lay it out with enough detail so that anyone can follow and understand.
+The goal is to make it simple to understand for any one - whether you are a regular expression
+guru or this is the first time you’ve heard about them, anyone should be able to follow along.</p>
+
+<h1 id="prime-numbers-and-regular-expressions---the-theory">1. Prime Numbers and Regular Expressions - The Theory</h1>
+
+<p>Let’s start at a higher level. But wait, first, let’s get every one on the same
+page and begin with some definitions. If you know know what a prime number is
+and are familiar with regular expression, feel free to <a href="#the-regular-expression-that-tells-if-a-number-is-prime">skip this section</a>.
+I will try to explain how every bit of the regular expression works, so that even
+people who are new or unfamiliar with them can follow along.</p>
+
+<h2 id="prime-numbers">Prime Numbers</h2>
+
+<p>First, a <strong>prime number</strong> is any natural number greater than <code class="highlighter-rouge">1</code> <strong>that is only divisible by 1 and the number itself, without leaving a remainder</strong>.
+Here’s a list of the fist <code class="highlighter-rouge">8</code> prime numbers: <code class="highlighter-rouge">2, 3, 5, 7, 11, 13, 17, 19</code>.
+For example, <code class="highlighter-rouge">5</code> is prime because you can only divide it by <code class="highlighter-rouge">1 </code> and <code class="highlighter-rouge">5</code> 
+without leaving a remainder. Sure we can divide it by <code class="highlighter-rouge">2</code>, but that
+would leave a remainder of <code class="highlighter-rouge">1</code>, since <code class="highlighter-rouge">5</code> = <code class="highlighter-rouge">2</code>*<code class="highlighter-rouge">2</code> + <code class="highlighter-rouge">1</code>.
+The number <code class="highlighter-rouge">4</code>, on the other hand, is <strong>not prime</strong>, since we can divide it
+by <code class="highlighter-rouge">1</code>, <code class="highlighter-rouge">2</code> and <code class="highlighter-rouge">4</code> without leaving a remainder.</p>
+
+<h2 id="regular-expressions">Regular Expressions</h2>
+
+<p>Okay, now let’s get to the regular expression (A.K.A. regex) syntax. Now, there are quite a few regex
+flavors, I’m not going to focus on any specific one, since that is not the
+point of this post. The concepts described here
+work in a similar manner in all of the most common flavors, so don’t worry
+about it. If you want to learn more about regular expressions, check out
+<a href="http://www.regular-expressions.info/">Regular-Expressions.info</a>, it’s a great
+resource to learn regex and later use it as a reference.</p>
+
+<p>Here’s a cheatsheet with the concepts that will be needed for the explanation
+that follows:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">^</code> - matches the position before the first character in the string</li>
+  <li><code class="highlighter-rouge">$</code> - matches the position right after the last character in the string</li>
+  <li><code class="highlighter-rouge">.</code> - matches any character, except line break characters (for example, it does not match <code class="highlighter-rouge">\n</code>)</li>
+  <li><a name="alternation-operator"></a><code class="highlighter-rouge">|</code> - matches everything that’s either to the left or the right of it. You can think of it as an <strong>or</strong> operator.</li>
+  <li><code class="highlighter-rouge">(</code> and <code class="highlighter-rouge">)</code> delimit a <strong>capturing group</strong>. By placing a part of a regular expression between parentheses, you’re grouping that part of the regular expression together. This allows you to apply <strong>quantifiers</strong> (like <code class="highlighter-rouge">+</code>)
+to the entire group or restrict alternation (<em>i.e.</em> “or”: <code class="highlighter-rouge">|</code>) to part of the
+regular expression. Besides that, parentheses also create a <strong>numbered capturing group</strong>, which you can refer to later with <strong>backreferences</strong> (<a href="capturing-groups-and-backreferences">more on that below</a>)</li>
+  <li><a name="backref"></a><code class="highlighter-rouge">\&lt;number_here&gt;</code> - <strong>backreferences</strong> match the same text as previously matched by a capturing group. The <code class="highlighter-rouge">&lt;number_here&gt;</code> is the <strong>group number</strong> (remember the discussion above? The one that says that parentheses create a <strong>numbered capturing group</strong>? That’s where it comes in). I’ll give an example to clarify things in a little bit, so if you’re confused, hang on!</li>
+  <li><code class="highlighter-rouge">+</code> - matches the preceding token (for example, it can be a character or a group of characters, if the preceding token is a <strong>capturing group</strong>) <strong>one or more times</strong></li>
+  <li><code class="highlighter-rouge">*</code> - matches the preceding token <strong>zero or more times</strong></li>
+  <li><a name="greedy-qmrk"></a>if <code class="highlighter-rouge">?</code> is used after <code class="highlighter-rouge">+</code> or <code class="highlighter-rouge">*</code> quantifiers, it makes that quantifier <strong>non-greedy</strong> (<a href="#greedy-and-non-greedy-quantifiers">more on that below</a>)</li>
+</ul>
+
+<h3 id="capturing-groups-and-backreferences">Capturing Groups and Backreferences</h3>
+
+<p>As promised, let’s clarify how <strong>capturing groups</strong> and <strong>backreferences</strong> work together.</p>
+
+<p>As I mentioned, parentheses create <strong>numbered capturing groups</strong>. What do I
+mean by that? Well, that means that when you use parentheses, you create a
+group that matches some characters and you can refer to those <strong>matched characters</strong> later on. The numbers are given to the groups in the order they
+appear in the regular expression, beginning with <code class="highlighter-rouge">1</code>. For example, let’s say
+you have the following regular expression: <code class="highlighter-rouge">^aa(bb)cc(dd)$</code>. Note, that in this
+case, we have <code class="highlighter-rouge">2</code> groups. They are numbered as follows:</p>
+
+<p><img src="http://i.imgur.com/7T2JC1A.png" alt="Regular Expression capturing group numbers" /></p>
+
+<p>This means that we can refer to the characters matched by them later using
+<strong>backreferences</strong>. If we want to refer to what is matched by <code class="highlighter-rouge">(bb)</code>, we use
+<code class="highlighter-rouge">\1</code> (we use <code class="highlighter-rouge">1</code> because we’re referring to the <strong>capturing group #1</strong>). To refer to the characters matched by <code class="highlighter-rouge">(dd)</code> we use <code class="highlighter-rouge">\2</code>. Putting that together,
+the the regular expression <code class="highlighter-rouge">^aa(bb)cc(dd)\1$</code> matches the string <code class="highlighter-rouge">aabbccddbb</code>.
+Note how we used <code class="highlighter-rouge">\1</code> to refer to the last <code class="highlighter-rouge">bb</code>. <code class="highlighter-rouge">\1</code> refers to <strong>what was matched</strong> by the group <code class="highlighter-rouge">(bb)</code>, which in this case, was the sting <code class="highlighter-rouge">bb</code>.</p>
+
+<p>Now note that I emphasize on <strong>what was matched</strong>. I really mean the 
+characters that <strong>were matched</strong> and not ones that <strong>can be matched</strong>.
+This means, that the regular expression <code class="highlighter-rouge">^aa(.+)cc(dd)\1$</code>
+<strong>does match</strong> the sting <code class="highlighter-rouge">aaHELLOccddHELLO</code>, but <strong>does not</strong> match the sting
+<code class="highlighter-rouge">aaHELLOccddGOODBYE</code>, since it cannot find what was matched by the <strong>group #1</strong> (in this case it’s the character sequence <code class="highlighter-rouge">HELLO</code>) after the character sequence <code class="highlighter-rouge">dd</code> (it finds <code class="highlighter-rouge">GOODBYE</code> there).</p>
+
+<h3 id="greedy-and-non-greedy-quantifiers">Greedy and Non-Greedy Quantifiers</h3>
+
+<p>If you remember correctly, in the cheatseheet above, I mentioned that <code class="highlighter-rouge">?</code>
+<a href="#greedy-qmrk">can be used to make the preceding quantifier non-greedy</a>.
+Well, okay, but what does that actually mean? <code class="highlighter-rouge">+</code> is greedy quantifier, this
+means that <strong>it will try to repeat the preceding token as many times as possible</strong>, <em>i.e.</em> it will try to consume as much input as it can. The same
+is true for the <code class="highlighter-rouge">*</code> quantifier.</p>
+
+<p>For example, let’s say we have the string <code class="highlighter-rouge">&lt;p&gt;The Documentary&lt;/p&gt; (2005)</code> and
+the regular expression <code class="highlighter-rouge">&lt;.+&gt;</code>. Now, you might think that it will match
+<code class="highlighter-rouge">&lt;p&gt;</code>, but that’s not true. The matched string will actually be <code class="highlighter-rouge">&lt;p&gt;The Documentary&lt;/p&gt;</code>. Why is that? Well, that has to do with the fact mentioned
+above: the <code class="highlighter-rouge">+</code> <strong>will try to consume as much input as it can</strong>, so that means
+that it will not stop at the first <code class="highlighter-rouge">&gt;</code>, but rather at the last one.</p>
+
+<p>Now how do we go about making a quantifier <strong>non-greedy</strong>? Well, you might
+be already tired of hearing that (since I’ve already mentioned it twice),
+but <strong>in order to make a greedy quantifier non-greedy, you put a question mark (?) in front of it</strong>. 
+It’s really as simple as that. In case you’re still confused, don’t worry,
+let’s see an example.</p>
+
+<p>Suppose we have the same string: <code class="highlighter-rouge">&lt;p&gt;The Documentary&lt;/p&gt; (2005)</code>, but this
+time, we only want to match what is between the first <code class="highlighter-rouge">&lt;</code> and <code class="highlighter-rouge">&gt;</code>.
+How would we go about that? Well, all we have to do is add <code class="highlighter-rouge">?</code> in front of
+the <code class="highlighter-rouge">+</code>. This will lead us to the <code class="highlighter-rouge">&lt;.+?&gt;</code> regex. “Uhhh, okay…”, you might wonder,
+“But what does that actually do?”. Well, it will make the <code class="highlighter-rouge">+</code> quantifier
+<strong>non-greedy</strong>. This means that it <strong>will make the quantifier consume as little input as possible</strong>.
+Well, in our case, the “as little as possible” is <code class="highlighter-rouge">&lt;p&gt;</code>, which is
+exactly what we want! To be precise, it will match both of the <code class="highlighter-rouge">p</code>’s: <code class="highlighter-rouge">&lt;p&gt;</code> and
+<code class="highlighter-rouge">&lt;/p&gt;</code>, but we can easily get what we want by asking for the fist match (<code class="highlighter-rouge">&lt;p&gt;</code>).</p>
+
+<h3 id="a-little-note-on--and-">A Little Note On ^ and $</h3>
+
+<p>Since we’re on it, I’ll take a moment to quickly explain what the <code class="highlighter-rouge">^</code> and
+<code class="highlighter-rouge">$</code> actually do. If you remember correctly, <code class="highlighter-rouge">^</code> matches the position right
+before the first character in the string and <code class="highlighter-rouge">$</code> matches the position right after the last character in the string. Note how in both of the regular
+expressions above (<code class="highlighter-rouge">&lt;.+&gt;</code> and <code class="highlighter-rouge">&lt;.+?&gt;</code>) we did not use them. What does that
+mean? Well, that means that <strong>the match does not have to begin at the start of the string and end at the end of the string</strong>.
+Taking the second, non-greedy, regex (<code class="highlighter-rouge">&lt;.+?&gt;</code>) and the sting <code class="highlighter-rouge">The Game - &lt;p&gt;The Documentary&lt;/p&gt; (2005)</code>, we would still obtain our expected matches (<code class="highlighter-rouge">&lt;p&gt;</code> and <code class="highlighter-rouge">&lt;/p&gt;</code>),
+since we’re not forcing it to begin at the beginning of the string and end
+at the end of the string.</p>
+
+<h1 id="the-regular-expression-that-tells-if-a-number-is-prime">2. The Regular Expression That Tells If A Number Is Prime</h1>
+
+<p>Phew, so we’re finally done with the theoretical introduction and now, since we’ve
+already have everything we need under the belt, we’re ready to dive into
+the analysis of how the <code class="highlighter-rouge">^.?$|^(..+?)\1+$</code> regular expression can match
+<strong>non-prime</strong> numbers (in their unary form).</p>
+
+<p>You can ignore the <code class="highlighter-rouge">?</code> in the regular expression, it’s there for performance reasons (<a href="#what-about-the">explained below</a>) - 
+it makes the <code class="highlighter-rouge">+</code> non-greedy. If it confuses you, just ignore it and consider 
+that the regex is actually <code class="highlighter-rouge">^.?$|^(..+)\1+$</code>, it works as well, but it’s slower (with some exceptions, like when the number <strong>is</strong> prime, where the <code class="highlighter-rouge">?</code> makes no difference whatsoever).
+After explaining how this regular expression works, I’ll also <a href="#what-about-the">explain</a> what that <code class="highlighter-rouge">?</code> does there,
+you shouldn’t have any trouble understanding it after you understand the inner workings of this
+regex.</p>
+
+<p><a name="unary-representation"></a>All of the discussion below assumes that we have the number represented in
+its <a href="https://en.wikipedia.org/wiki/Unary_numeral_system">unary form</a> (or base-1, if you prefer). It doesn’t actually have to be represented as
+a sequence of <code class="highlighter-rouge">1</code>s, it can be a sequence of any characters that are
+matched by <code class="highlighter-rouge">.</code>. This means that <code class="highlighter-rouge">5</code> does not have to be represented as
+<code class="highlighter-rouge">11111</code>, it might as well be represented as <code class="highlighter-rouge">fffff</code> or <code class="highlighter-rouge">BBBBB</code>. As long
+as there are <strong>five characters</strong>, we’re good to go. Please note, that the
+characters have to be the same, <strong>no mixtures of characters are allowed</strong>,
+this means that we <strong>cannot</strong> represent <code class="highlighter-rouge">5</code> as <code class="highlighter-rouge">ffffB</code>, since here we have a mixture
+of two different characters.</p>
+
+<h2 id="high-level-overview">High Level Overview</h2>
+
+<p>Let’s begin with a high level overview and then dive into the details.
+Our <code class="highlighter-rouge">^.?$|^(..+?)\1+$</code> regular expression consists of two parts: <code class="highlighter-rouge">^.?$</code> and
+<code class="highlighter-rouge">^(..+?)\1+$</code>.</p>
+
+<p>As a heads-up, I just want to say that I’m lying a little in the explanation
+in the <a href="#hlw-regex-2">paragraph</a> about the <code class="highlighter-rouge">^(..+?)\1+$</code> regex. The lie has to do with the order in which the regex engine
+checks for multiples, it actually starts with the highest number and goes to the lowest,
+and not how I explain it here. But feel free to ignore that distinction here, 
+since the regular expression still matches the same thing, it just does it in more
+steps (so I’ll actually be explaining how <code class="highlighter-rouge">^.?$|^(..+?)\1+?$</code> works: notice the extra <code class="highlighter-rouge">?</code> after the <code class="highlighter-rouge">+</code>.</p>
+
+<p>I’m doing this because I believe this explanation is less verbose and easier to understand.
+And don’t worry, I explain how I lied and <a href="#the-shocking-truth">reveal the shocking truth</a>
+later on, so keep on reading. Well, maybe it’s not really that shocking, but 
+I wanna keep you engaged, so I’ll stick to that naming.</p>
+
+<p>The regex engine will first try to match <code class="highlighter-rouge">^.?$</code>, then, if it fails, it will try to
+match <code class="highlighter-rouge">^(..+?)\1+$</code>. Note that <strong>the number of characters matched corresponds to the matched number</strong>,
+<em>i.e.</em> if 3 characters are matched, that means that number <code class="highlighter-rouge">3</code> was matched, if 
+26 characters are matched, that means that the number <code class="highlighter-rouge">26</code> was matched.</p>
+
+<p><code class="highlighter-rouge">^.?$</code> matches strings with zero or one characters (corresponds to the numbers
+<code class="highlighter-rouge">0</code> and <code class="highlighter-rouge">1</code>, respectively).</p>
+
+<p><a name="hlw-regex-2"> </a><code class="highlighter-rouge">^(..+?)\1+$</code> first tries to match 2 characters (corresponds to the number 2),
+then 4 characters (corresponds to the number 4), then 6 characters, then 8
+characters and so on. Basically it will try to match <strong>multiples of 2</strong>.
+If that fails, it will try to first match 3 characters (corresponds to the number 3),
+then 6 characters (corresponds to the number 6), then 9 characters, then 12 characters
+and so on. This means that it will try to match <strong>multiples of 3</strong>. If that fails,
+it proceeds to try match <strong>multiples of 4</strong>, then if that fails it will try
+to match <strong>multiples of 5</strong> and so on, until the number whose multiple it tries to match is
+the length of the string (<strong>failure</strong> case) or there is a successful match (<strong>success</strong> case).</p>
+
+<h2 id="diving-deeper">Diving Deeper</h2>
+
+<p>Note, that both of parts of the regular expression begin with a <code class="highlighter-rouge">^</code> symbol and end with a <code class="highlighter-rouge">$</code> symbol, this 
+forces to what’s in between those symbols (<code class="highlighter-rouge">.?</code> in the first case and <code class="highlighter-rouge">(..+)\1+</code> in the second case) 
+<strong>to start at the beginning of the string and end at the end of the string</strong>. 
+In our case that string is the <a href="#unary-representation">unary representation of the number</a>. 
+Both of the parts are separated separated by an <a href="#alternation-operator">alternation operator</a>,
+this means that <strong>either only one of them will be matched or neither will</strong>.
+If the number is prime, a match <strong>will not</strong> occur. If the number is not prime a
+match <strong>will</strong> occur. To summarize, we concluded that:</p>
+
+<ul>
+  <li>either <code class="highlighter-rouge">^.?$</code> or <code class="highlighter-rouge">^(..+?)\1+$</code> will be matched</li>
+  <li>the match has to be on the whole string, <em>i.e.</em> <strong>start at the beginning of the string and end at the end of the string</strong></li>
+</ul>
+
+<p>Okay, but what does each one those parts matches? Keep in mind that <strong>if a match occurs, it means that the number is not prime</strong>.</p>
+
+<h3 id="how-the--regular-expression-works">How The ^.?$ Regular Expression Works</h3>
+
+<p><code class="highlighter-rouge">^.?$</code> will match 0 or 1 characters. This match will be successful if:</p>
+
+<ul>
+  <li>the string contains <strong>only 1 character</strong> - this means that we’re dealing with
+number <code class="highlighter-rouge">1</code> and, by definition, <code class="highlighter-rouge">1</code> <strong>is not prime</strong>.</li>
+  <li>the string contains <strong>0 characters</strong> - this means that we’re dealing with
+number <code class="highlighter-rouge">0</code>, and <code class="highlighter-rouge">0</code> is certainly <strong>not prime</strong>, since we can divide <code class="highlighter-rouge">0</code> by anything
+we want, except for <code class="highlighter-rouge">0</code> itself, of course.</li>
+</ul>
+
+<p>If we’re given the sting <code class="highlighter-rouge">1</code>, <code class="highlighter-rouge">^.?$</code> will match it, since we have only one 
+character in our string (<code class="highlighter-rouge">1</code>). The match will also occur if we provide an empty 
+string, since, as explained before, <code class="highlighter-rouge">^.?$</code> will match either an empty string (0
+characters) or a string with only 1 character.</p>
+
+<p>Okay, so far so so good, we certainly want our regex to recognize <code class="highlighter-rouge">0</code> and <code class="highlighter-rouge">1</code> as
+non-primes. But that’s not enough, since there are numbers other than
+<code class="highlighter-rouge">0</code> and <code class="highlighter-rouge">1</code> that are not prime. This is where the second part of the regular
+expression comes in.</p>
+
+<h3 id="how-the-1-regular-expression-works">How The ^(..+?)\1+$ Regular Expression Works</h3>
+
+<p><code class="highlighter-rouge">^(..+?)\1+$</code> will first try to match multiples of 2, then multiples of 3, then
+multiples of 4, then multiples 5, then multiples of 6 and so on, until the multiple
+of the number it tries to match is the length of the string or there is a successful match.</p>
+
+<p>But how does it actually work? Well, let’s dissect it!</p>
+
+<p>Let’s focus on the parentheses now, here we have <code class="highlighter-rouge">(..+?)</code> (remember, <code class="highlighter-rouge">?</code> just 
+makes this expression <a href="greedy-and-non-greedy-quantifiers">non-greedy</a>). Notice
+that we have a <code class="highlighter-rouge">+</code> here, which means “one or more of the preceding token”.
+This regex will first try to match <code class="highlighter-rouge">(..)</code> (2 characters), then <code class="highlighter-rouge">(...)</code> (3 characters), 
+then <code class="highlighter-rouge">(....)</code>  (4 characters), and so on, until the length of the string we’re 
+matching against is reached or there is a successful match.</p>
+
+<p>After matching for some number of characters (let’s call that number <code class="highlighter-rouge">x</code>, the regular expression will try to
+see if the string’s length is multiple of <code class="highlighter-rouge">x</code>. How does it do that? Well, there’s
+a <a href="backref">backreference</a>. This takes us to the second
+part of the regex: <code class="highlighter-rouge">\1+</code>. Now, <a href="capturing-groups-and-backreferences">as explained before</a>
+this will try to repeat the match in <strong>capturing group #1</strong> one or more times (<a href="#the-shocking-lie">actually it’s more “more or one times, I’m lying a little bit”</a>)
+This means that first, it will try to match <code class="highlighter-rouge">x * 2</code> characters in the string, 
+then <code class="highlighter-rouge">x * 3</code>, then <code class="highlighter-rouge">x * 4</code>, and so on. If it succeeds in any of those matches,
+it returns it (and this means that the number <strong>is not</strong> prime). If it fails (it will fail when <code class="highlighter-rouge">x * &lt;number&gt;</code> exceeds the length of the string we’re matching against),
+it will try the same thing, but with <code class="highlighter-rouge">x+1</code> characters, <em>i.e</em>, first <code class="highlighter-rouge">(x+1) * 2</code>, 
+then <code class="highlighter-rouge">(x+1) * 3</code>, then <code class="highlighter-rouge">(x+1) * 4</code> and so on (because now the <code class="highlighter-rouge">\1+</code> backreference
+refers to <code class="highlighter-rouge">x+1</code> characters). If the number of characters matched by <code class="highlighter-rouge">(..+?)</code> reaches
+the <strong>length of the string we’re matching against</strong>, the regex matching process will stop and return a failure. If there is a successful match, it will be returned.</p>
+
+<h3 id="example-time">Example Time</h3>
+
+<p>Now, I’ll sketch some examples to make sure you got everything. I will provide
+one example where a regular expression <strong>succeeds</strong> to match and one where it
+<strong>fails</strong> to match. Again, <a href="#the-shocking-lie">I’m lying</a> in the order of sub-steps (the nested ones, <em>i.e</em> the ones that have a <code class="highlighter-rouge">.</code>, like <code class="highlighter-rouge">2.1</code>, <code class="highlighter-rouge">3.2</code>, etc), just a little.</p>
+
+<p>As an example of <strong>where a match succeeds</strong>, let’s consider the string <code class="highlighter-rouge">111111</code>. The length of the string we’re matching against is <code class="highlighter-rouge">6</code>. 
+Now, 6 is <strong>not</strong> a prime number, so we expect the regex to succeed with the match. Let’s see
+a sketch of how it will work:</p>
+
+<p><strong>1.</strong> It will try to match <code class="highlighter-rouge">^.?$</code>. No luck. The left side of <code class="highlighter-rouge">|</code> returns a <strong>failure</strong>
+<strong>2.</strong> It try to match <code class="highlighter-rouge">^(..+?)\1+$</code> (the right side of <code class="highlighter-rouge">|</code>). It begins with <code class="highlighter-rouge">(..+?)</code> matching <code class="highlighter-rouge">11</code>:</p>
+
+<ul>
+  <li><strong>2.1</strong> The backreference <code class="highlighter-rouge">\1+</code> will try to match <code class="highlighter-rouge">11</code> twice (<em>i.e</em> <code class="highlighter-rouge">1111</code>). No luck.</li>
+  <li><strong>2.2</strong> The backreference <code class="highlighter-rouge">\1+</code> will try to match <code class="highlighter-rouge">11</code> trice (<em>i.e</em> <code class="highlighter-rouge">111111</code>). <strong>Success!</strong>. Right side of <code class="highlighter-rouge">|</code> returns <strong>success</strong></li>
+</ul>
+
+<p>Woah, that was fast! Since the right side of <code class="highlighter-rouge">|</code> <strong>succeeded</strong>,
+our regular expression <strong>succeeds</strong> with the match, which means our number is <strong>not</strong> prime.</p>
+
+<p>As an example of <strong>where a match fails</strong>, let’s consider the string <code class="highlighter-rouge">11111</code>. The length of the string we’re matching against is <code class="highlighter-rouge">5</code>. 
+Now, 5 is a prime number, so we expect the regex to fail to match anything. Let’s see
+a sketch of how it will work:</p>
+
+<p><strong>1.</strong> It will try to match <code class="highlighter-rouge">^.?$</code>. No luck. The left side of <code class="highlighter-rouge">|</code> returns a <strong>failure</strong>
+<strong>2.</strong> It try to match <code class="highlighter-rouge">^(..+?)\1+$</code> (the right side of <code class="highlighter-rouge">|</code>). It begins with <code class="highlighter-rouge">(..+?)</code> matching <code class="highlighter-rouge">11</code>:</p>
+
+<ul>
+  <li><strong>2.1</strong> The backreference <code class="highlighter-rouge">\1+</code> will try to match <code class="highlighter-rouge">11</code> twice (<em>i.e</em> <code class="highlighter-rouge">1111</code>). No luck.</li>
+  <li><strong>2.2</strong> The backreference <code class="highlighter-rouge">\1+</code> will try to match <code class="highlighter-rouge">11</code> trice (<em>i.e</em> <code class="highlighter-rouge">111111</code>). No luck. <strong>Length of string exceeded</strong> (6 &gt; 5). Backreference returns a <strong>failure</strong>.</li>
+</ul>
+
+<p><strong>3.</strong> <code class="highlighter-rouge">(..+?)</code> now matches <code class="highlighter-rouge">111</code>:</p>
+
+<ul>
+  <li><strong>3.1</strong> The backreference <code class="highlighter-rouge">\1+</code> will try to match <code class="highlighter-rouge">111</code> twice (<em>i.e</em> <code class="highlighter-rouge">111111</code>). No luck. <strong>Length of string exceeded</strong> (6 &gt; 5). Backreference returns a <strong>failure</strong>.</li>
+</ul>
+
+<p><strong>4.</strong> <code class="highlighter-rouge">(..+?)</code> now matches <code class="highlighter-rouge">1111</code>:</p>
+
+<ul>
+  <li><strong>4.1</strong> The backreference <code class="highlighter-rouge">\1+</code> will try to match <code class="highlighter-rouge">1111</code> twice (<em>i.e</em> <code class="highlighter-rouge">11111111</code>). No luck. <strong>Length of string exceeded</strong> (8 &gt; 5). Backreference returns a <strong>failure</strong>.</li>
+</ul>
+
+<p><strong>5.</strong> <code class="highlighter-rouge">(..+?)</code> now matches <code class="highlighter-rouge">11111</code>:</p>
+
+<ul>
+  <li><strong>5.1</strong> The backreference <code class="highlighter-rouge">\1+</code> will try to match <code class="highlighter-rouge">11111</code> twice (<em>i.e</em> <code class="highlighter-rouge">1111111111</code>). No luck. <strong>Length of string exceeded</strong> (10 &gt; 5). Backreference returns a <strong>failure</strong>.</li>
+</ul>
+
+<p><strong>5.</strong> <code class="highlighter-rouge">(..+?)</code> will try to match <code class="highlighter-rouge">1111111</code>. No luck. <strong>Length of string exceeded</strong> (6 &gt; 5). <code class="highlighter-rouge">(..+?)</code> returns a <strong>failure</strong>. The right side of <code class="highlighter-rouge">|</code> returns a <strong>failure</strong></p>
+
+<p>Now since both sides of <code class="highlighter-rouge">|</code> failed to match anything, the regular expression <strong>fails</strong>
+to match anything, which means our number is prime.</p>
+
+<h3 id="what-about-the-">What About The ?</h3>
+
+<p>Well, I mentioned that you can ignore the <code class="highlighter-rouge">?</code> symbol in the regular expression,
+since <strong>it’s there only for performance reasons</strong>, and that’s true, but there is no
+need to keep its purpose a mystery, so I’ll explain what it actually does there.</p>
+
+<p>As mentioned before, <code class="highlighter-rouge">?</code> makes the preceding <code class="highlighter-rouge">+</code> <a href="#greedy-and-non-greedy-quantifiers">non-greedy</a>. What does it mean in practice? 
+Let’s say our string is <code class="highlighter-rouge">111111111111111</code> (corresponds to the number 15). Let’s call
+<code class="highlighter-rouge">L</code> the length of the string. In our case, <code class="highlighter-rouge">L=15</code>.</p>
+
+<p>With the <code class="highlighter-rouge">?</code> present there, <code class="highlighter-rouge">+</code> will try to match its preceding token (in this case <code class="highlighter-rouge">.</code>) <strong>as few times as possible</strong>. This means that first <code class="highlighter-rouge">(..+?)</code> will
+try to match <code class="highlighter-rouge">..</code>, then <code class="highlighter-rouge">...</code>, then <code class="highlighter-rouge">....</code> and then <code class="highlighter-rouge">.....</code>,
+after which our whole regex (<code class="highlighter-rouge">^.?$|^(..+?)\1+$</code>) would <strong>succeed</strong>. So first, we’ll be testing the divisibility
+by 2, then by 3, then by 4 and then by 5, after which we would have a match.
+Notice that the number of steps in <code class="highlighter-rouge">(..+?)</code> was <strong>4</strong> (first it matches 2, then 3, then 4 and then 5).</p>
+
+<p>If we omitted the <code class="highlighter-rouge">?</code>, <em>i.e</em> if we had <code class="highlighter-rouge">(..+)</code>, then it would go the other way around: first it would try to
+match <code class="highlighter-rouge">...............</code> (the number 15, which is our <code class="highlighter-rouge">L</code>), then <code class="highlighter-rouge">..............</code> (the number 14, <em>i.e</em> <code class="highlighter-rouge">L-1</code>),
+and so on until <code class="highlighter-rouge">.....</code>, after which the whole regex would <strong>succeed</strong>. Notice
+that even though the result was the same as in <code class="highlighter-rouge">(..+?)</code>, in <code class="highlighter-rouge">(..+)</code> the number of steps was <strong>11</strong>
+instead of <strong>4</strong>. By definition, <strong>any divisor of L must be no greater than L/2</strong>, so that means that
+means that <strong>8</strong> steps were <strong>absolutely wasted computation</strong>, since first we tested
+the divisibility by 15, then 14, then 13, and so on until 5 (we could only
+hope for a match from number <strong>7</strong> and downwards, since <code class="highlighter-rouge">L/2 = 15/2 = 7.5</code>
+and the first integer smaller than <code class="highlighter-rouge">7.5</code> is <code class="highlighter-rouge">7</code>).</p>
+
+<h2 id="the-shocking-lie">The Shocking Lie</h2>
+
+<p>As I mentioned before, I actually lied in the explanation of how the multiples of a number
+are matched. Let’s say we have the string <code class="highlighter-rouge">111111111111111</code> (number 15).</p>
+
+<p>The way I explained it before was that the regular expression would begin
+to test for divisibility by <code class="highlighter-rouge">2</code>. It would do so by first trying to match
+<code class="highlighter-rouge">2*2</code> characters, then <code class="highlighter-rouge">2*3</code>, then <code class="highlighter-rouge">2*4</code>, then <code class="highlighter-rouge">2*5</code>, then <code class="highlighter-rouge">2*6</code>, then <code class="highlighter-rouge">2*7</code>,
+after which it would fail to match <code class="highlighter-rouge">2*8</code>, so it would try its luck with testing
+for divisibility by <code class="highlighter-rouge">3</code>, by first trying to match for <code class="highlighter-rouge">3*2</code> characters, then for
+<code class="highlighter-rouge">3*3</code> characters, then for <code class="highlighter-rouge">3*4</code> and then for <code class="highlighter-rouge">3*5</code>, where it would succeed.
+This is actually what would happen if the regular expression was <code class="highlighter-rouge">^.?$|^(..+?)\1+?$</code>
+(notice the <code class="highlighter-rouge">?</code> at the end), <em>i.e.</em>, if the <code class="highlighter-rouge">+</code>following the backreference was
+<a href="#greedy-and-non-greedy-quantifiers">non-greedy</a>.</p>
+
+<p>What actually happens is the opposite. It would still try to test
+for the divisibility by <code class="highlighter-rouge">2</code>, first, but instead of trying to match for <code class="highlighter-rouge">2*2</code> characters,
+it would begin with trying to match for <code class="highlighter-rouge">2*7</code>, then for <code class="highlighter-rouge">2*6</code>, then for <code class="highlighter-rouge">2*5</code>,
+then for <code class="highlighter-rouge">2*4</code>, then for <code class="highlighter-rouge">2*3</code> and then for <code class="highlighter-rouge">2*2</code>, after which it would fail and, once again,
+try its luck with divisibility by <code class="highlighter-rouge">3</code>, by first trying to match for <code class="highlighter-rouge">3*5</code> characters,
+where it would succeed right away.</p>
+
+<p>Notice, that in the second case, which is what happens in reality,
+<strong>less steps are required</strong>: <strong>11</strong> in the first case vs <strong>7</strong> in the second (in reality, <strong>both of the cases would require more steps than presented here</strong>,
+the goal of this explanation is not count them all, but to transmit the idea of what’s happening in both cases, it’s just a sketch of what’s going on under the hood).
+While both versions are <strong>equivalent</strong>, the one explained in this blog post, is more efficient.</p>
+
+<h1 id="the-java-case">3. The Java Case</h1>
+
+<p>Here’s the piece of Java code that started all of this:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">isPrime</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="o">!</span><span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="k">new</span> <span class="kt">char</span><span class="o">[</span><span class="n">n</span><span class="o">]).</span><span class="na">matches</span><span class="o">(</span><span class="s">".?|(..+?)\\1+"</span><span class="o">);</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>If you remember correctly, I said that due to the peculiarities of the way
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#matches-java.lang.String-">String.matches</a> works in Java, the regular expression that matches
+non-prime numbers is not the one in the code example above (<code class="highlighter-rouge">.?|(..+?)\1+</code>),
+but it’s actually <code class="highlighter-rouge">^.?$|^(..+?)\1+$</code>. Why? Well, turns out <code class="highlighter-rouge">String.matches()</code>
+<strong>matches on the whole string</strong>, not on any substring of the string.
+Basically, it “automatically inserts” all of the <code class="highlighter-rouge">^</code> and <code class="highlighter-rouge">$</code> present in the regex 
+I explained in this post.</p>
+
+<p>If you’re looking for a way not to force the match on the whole string in Java, you can use
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html">Pattern</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html">Matcher</a> and <a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html#find--">Matcher.find()</a> method.</p>
+
+<p>Other than that, it’s pretty much self explanatory: if the match succeeds, then
+the number is <strong>not</strong> prime. In case of a successful match, <code class="highlighter-rouge">String.matches()</code>
+returns <code class="highlighter-rouge">true</code> (number is <strong>not</strong> prime), otherwise, it return <code class="highlighter-rouge">false</code> (number is prime),
+so to obtain the desired functionality we negate what the method returns.</p>
+
+<p><code class="highlighter-rouge">new String(new char[n])</code> returns a <code class="highlighter-rouge">String</code>of <code class="highlighter-rouge">n</code> null characters (the <code class="highlighter-rouge">.</code> in our regex matches them).</p>
+
+<h1 id="code-examples">4. Code Examples</h1>
+
+<p>Now, as promised, it’s time for some code examples!</p>
+
+<h2 id="java">Java</h2>
+
+<p>Although I already presented this code example twice in this post,
+I’ll do it here again, just to keep it organized.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">isPrime</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="o">!</span><span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="k">new</span> <span class="kt">char</span><span class="o">[</span><span class="n">n</span><span class="o">]).</span><span class="na">matches</span><span class="o">(</span><span class="s">".?|(..+?)\\1+"</span><span class="o">);</span>
+<span class="o">}</span></code></pre></figure>
+
+<h2 id="python">Python</h2>
+
+<p>I’ve <a href="https://iluxonchik.github.io/why-you-should-learn-python/">expressed my sympathy for Python before</a>, so of course I have to include
+this one here.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">is_prime</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s">r'^.?$|^(..+?)</span><span class="err">\</span><span class="s">1+$'</span><span class="p">,</span> <span class="s">'1'</span><span class="o">*</span><span class="n">n</span><span class="p">)</span></code></pre></figure>
+
+<h2 id="javascript">JavaScript</h2>
+
+<blockquote>
+  <p>Java is to JavaScript as car is to carpet.</p>
+</blockquote>
+
+<p>That’s a joke I like. I didn’t come up with it and I don’t really know its
+first source, so I don’t know whom to credit. Anyways, I’m actually going to
+give you two versions here, one which works in <a href="https://github.com/lukehoban/es6features">ES6</a>
+and one that works in previous versions.</p>
+
+<p>First, the ECMAScript 6 version:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">isPrime</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">re</span> <span class="o">=</span> <span class="sr">/^.</span><span class="se">?</span><span class="sr">$|^</span><span class="se">(</span><span class="sr">..+</span><span class="se">?)\1</span><span class="sr">+$/</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">!</span><span class="nx">re</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s1">'1'</span><span class="p">.</span><span class="nx">repeat</span><span class="p">(</span><span class="nx">n</span><span class="p">));</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>The feature that’s only available in ECMAScript 6 is the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat">String.prototype.repeat()</a>
+method.</p>
+
+<p>If you gotta use previous versions of ES, you can always fall back to
+<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/join">Array.prototype.join()</a>.
+Note, however, that we’re passing <code class="highlighter-rouge">n+1</code> to <code class="highlighter-rouge">join()</code>, since it actually
+places those characters <strong>in between</strong> array elements. So if we have, let’s say,
+<code class="highlighter-rouge">10</code> array elements, there are only <code class="highlighter-rouge">9</code> “in-betweens”. Here’s the version
+that will work in versions prior to ECMAScript 6:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">isPrime</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">re</span> <span class="o">=</span> <span class="sr">/^.</span><span class="se">?</span><span class="sr">$|^</span><span class="se">(</span><span class="sr">..+</span><span class="se">?)\1</span><span class="sr">+$/</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">!</span><span class="nx">re</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nb">Array</span><span class="p">(</span><span class="nx">n</span><span class="o">+</span><span class="mi">1</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">'1'</span><span class="p">));</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="perl">Perl</h2>
+
+<p>Last, but not least, it’s time for Perl. I’m including this here because the
+regular expression we’ve been exploring in this blog post has been popularized
+by Perl. I’m talking about the one-liner <code class="highlighter-rouge">perl -wle 'print "Prime" if (1 x shift) !~ /^1?$|^(11+?)\1+$/' &lt;number&gt;</code>
+(replace <code class="highlighter-rouge">&lt;number&gt;</code> with an actual number).</p>
+
+<p>Also, since I haven’t played around with Perl before, this seemed like a good
+opportunity to do so. So here we go:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">sub</span> <span class="nx">is_prime</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="o">!</span><span class="p">((</span><span class="mi">1</span><span class="nx">x$_</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">=~</span> <span class="sr">/^.</span><span class="se">?</span><span class="sr">$|^</span><span class="se">(</span><span class="sr">..+</span><span class="se">?)\1</span><span class="sr">+$/</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Since Perl isn’t the most popular language right now, it might happen that
+you’re not familiar with its syntax. Now, I’ve had about 15 mins with it, so
+I’m pretty much an expert, so I’ll take the liberty to briefly explain the
+syntax above:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">sub</code> - defines a new subroutine (function)</li>
+  <li><code class="highlighter-rouge">$_[0]</code> - we’re accessing the first parameter passed in to our subroutine</li>
+  <li><code class="highlighter-rouge">1x&lt;number&gt;</code> - here we’re using the repetition operator <code class="highlighter-rouge">x</code>, this will
+basically repeat the number <code class="highlighter-rouge">1</code> <code class="highlighter-rouge">&lt;number&gt;</code> of times and return the result as a string.
+This is similar to what <code class="highlighter-rouge">'1'*&lt;number&gt;</code> would do in Python or <code class="highlighter-rouge">'1'.repeat(&lt;number&gt;)</code>
+in JavaScript.</li>
+  <li><code class="highlighter-rouge">=~</code> is the match test operator, it will return true if the regular expression
+(its right-hand side) has a match on the string (its left-hand side).</li>
+  <li><code class="highlighter-rouge">!</code> is the negation operator</li>
+</ul>
+
+<p>I included this brief explanation, because, I myself, don’t like being left
+in mystery about what a certain passage of code does and the explanation didn’t
+take up much space anyways.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>That’s all folks! Hopefully, you’re now demystified about how a regular expression
+can check if a number is prime. Keep in mind, that this is far from efficient,
+there are a lot more efficient algorithms for this task,
+but it is, nonetheless, a fun and interesting thing.</p>
+
+<p>I encourage you to go to a website like <a href="https://regex101.com/">regex101</a> and
+play around, specially if you’re still not 100% clear about how everything
+explained here works. One of the cool things about this website is that
+it includes an explanation of the regular expression (column on the right),
+as well as the number of steps the regex engine had to make (rectangle right above
+the modifiers box) - it’s a good way to see the performance differences (through the number of steps taken)
+in the greedy and non-greedy cases.</p>
+
+<p>If you have any questions or suggestions, feel free to post them in the
+comment section below or <a href="https://iluxonchik.github.io/about/">get in touch with me via a different medium</a>.</p>
+
+<p><strong>EDIT</strong>:</p>
+
+<ul>
+  <li>Thanks to <a href="https://twitter.com/joshuamy">joshuamy</a> for pointing out a typo in
+Perl code</li>
+  <li>Thanks to <a href="https://disqus.com/by/disqus_kM1gQBMfK7/">Keen</a> for pointing out 
+a typo in the post</li>
+  <li>Thanks to <a href="https://disqus.com/by/disqus_527bF1C8Ck/">Russel</a> for submitting <a href="https://gist.github.com/iluxonchik/72e8e090fdad0c6468cba5584a7da5fe">a Swift 2 code example</a></li>
+  <li>I didn’t want to get into the topic of regular/non-regular languages and related, since
+it’s theory that isn’t crucial for the topic of this post, but as <a href="https://www.reddit.com/user/lanzaa/">lanzaa</a>
+pointed out, <a href="https://en.m.wikipedia.org/wiki/Regular_expression#Patterns_for_non-regular_languages">there is a difference between “regex” and “regular expression”</a>.
+What was covered in this blog post wasn’t a regular expression, but rather a regex.
+In the “real world”, however (outside of academia), those terms are used
+interchangeably</li>
+</ul>
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="https://iluxonchik.github.io/tags/#regular expressions" title="Pages tagged regular expressions" class="tag"><span class="term">regular expressions</span></a><a href="https://iluxonchik.github.io/tags/#explanation" title="Pages tagged explanation" class="tag"><span class="term">explanation</span></a></span>
+        
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div><!-- /.social-share -->
+
+       <!-- Social Profile Buttons -->
+       
+           <a class="github-button" href="https://github.com/iluxonchik" data-style="mega" aria-label="Follow @iluxonchik on GitHub">Follow @iluxonchik</a>  
+       
+
+       
+            <a href="https://twitter.com/iluxonchik" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @iluxonchik</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> 
+       
+
+       
+         <iframe src="https://scbutton.com/src/button.html?username=iluxonchik&invert=false&large=true" frameborder="0" scrolling="no" height="28px" width="115.1875px"></iframe>
+       
+      <!-- //Social Profile Buttons -->
+
+      </footer>
+    </div><!-- /.entry-content -->
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    <div class="read-more">
+  
+    <div class="read-more-header">
+      <a href="https://iluxonchik.github.io/why-you-should-learn-python/" class="read-more-btn">Read More</a>
+    </div><!-- /.read-more-header -->
+    <div class="read-more-content">
+      <h3><a href="https://iluxonchik.github.io/why-you-should-learn-python/" title="Why You Should Learn Python">Why You Should Learn Python</a></h3>
+      <p>Why Python is awesome and you should at least give it a try. <a href="https://iluxonchik.github.io/why-you-should-learn-python/">Continue reading</a></p>
+    </div><!-- /.read-more-content -->
+  
+  <div class="read-more-list">
+    
+      <div class="list-item">
+        <h4><a href="https://iluxonchik.github.io/design-patterns-notes/" title="Design Patterns Notes - An Overview Of Design Patterns">Design Patterns Notes - An Overview Of Design Patterns</a></h4>
+        <span>Published on September 03, 2015</span>
+      </div><!-- /.list-item -->
+    
+  </div><!-- /.read-more-list -->
+</div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2016 iluxonchik. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://iluxonchik.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://iluxonchik.github.io/assets/js/scripts.min.js"></script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83065535-1', 'auto');  
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
+
+
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'iluxonchik'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	        
+
+
+    <!-- Social Profile Buttons GitHub -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- //Social Profile Buttons GitHub -->
+
+
+</body>
+</html>
