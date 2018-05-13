@@ -25,6 +25,9 @@ way to actually log out is to close the browser and open it again.
 
 The video below demonstrates the issue in action.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f5I1wwP0_UM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
 I've tested this in Google Chrome on Android and the problem was present
 there too. This is an issue. Let's say that the user logs on a device that's
 not his. After he's finished with his tasks he clicks on "Log Out",
