@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Chave Móvel Digial's Log Out Button Does Not Log The User Out"
+title:  "Chave Móvel Digital's Log Out Button Does Not Log The User Out"
 description: The Log Out button in the Portuguese government's authentication system does not log the user out. This opens a window to unauthorized account access.
 tags: [chave movel digital, cmd, digital mobile key, portugal, authentication, vulnerability]
 date:   2018-05-13 16:00:03 -0000
