@@ -86,7 +86,7 @@ is questionable.
 # Bad Security From The Ground Up
 
 So now let's briefly talk about the security of the *Chave Móvel Digital* authentication system.
-In December of 2017 me and my girlfriend went to a Christmas fair. Among other
+In December of 2017 me and [my girlfriend](https://www.facebook.com/daria.ianklovich/) went to a Christmas fair. Among other
 things, there were various company booths. One of them was VR-related, so
 we decided to go in and check it out. After playing around with the Microsoft's
 HoloLens for a little bit, we were approached by a lady there that asked us
