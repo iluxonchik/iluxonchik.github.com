@@ -623,6 +623,11 @@ IMG.centered {
     <tr><td style="max-width: 600px"><img class="centered" src="../images/posts/aut_gov_vuln/xss_source.png" alt="Resulting HTML from the XSS attack" /></td></tr>
 </table>
 
+<p>Below is a video demonstration of how this vulnerability can be exploited
+to inject arbitrary JavaScript code into the page.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jG8ZWBNqRyg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
 <p>Whenever the text in the “Mobile phone number” field is
 changed, the <code class="highlighter-rouge">ShowPrint()</code> function is called. The only thing that it does is
 copies the value from the <code class="highlighter-rouge">inputMobile</code> element to the <code class="highlighter-rouge">MainContent_hiddenMobile</code> attribute:</p>
