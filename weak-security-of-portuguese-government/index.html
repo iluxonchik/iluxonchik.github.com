@@ -129,7 +129,7 @@
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
           
-Reading time ~8 minutes
+Reading time ~9 minutes
         </p><!-- /.entry-reading-time -->
         
       </div><!-- /.header-title-wrap -->
@@ -264,14 +264,22 @@ all of the possible combinations on my machine. Assuming that the file
 python gen.py  3.20s user 0.01s system 99% cpu 3.208 total</p>
 
 <p>While this is not the most accurate way of measuring the process execution
-time, it’s good enough to transmit the idea of how easy this task is for
-modern computers. It’s <code class="highlighter-rouge">2018</code> and the Portuguese government
+time, it’s good enough to transmit the idea of how quick modern computers are
+at generating the entire key space. This is to give you an intuition of
+<strong>how small the number of possible PINs is</strong>. It’s <code class="highlighter-rouge">2018</code> and the Portuguese government
 seems to think that 4 to 8 digit passwords are secure.</p>
+
+<p>Let’s compare this to an <code class="highlighter-rouge">8</code> character long password that allows
+numbers (10 different: <code class="highlighter-rouge">0-9</code>), letters (52 different: <code class="highlighter-rouge">a-z</code> and <code class="highlighter-rouge">A-Z</code>) and special characters (32 different). For every position we would have
+<code class="highlighter-rouge">10 + 52 + 32 = 94</code> possible values. This means that there would be a total of
+<code class="highlighter-rouge">94^8=6095689385000000</code> possible combinations. If we use the rule of three
+to estimate how long it would take my computer to generate the entire key
+space, we would see that it would come out to <strong>more than 6 years</strong>.</p>
 
 <p>As an interesting note, when I was signing up with the system, the lady
 told me that from her experience people usually choose <code class="highlighter-rouge">4</code> digit PINs, so
 that they’re the same as their phone PINs. This seems like a reasonable
-assumption to take. In this case, the easy task is made even easier, since
+assumption to take. In this case, the simple task is made even simpler, since
 the number of possible combinations is lowered to <code class="highlighter-rouge">10^4 = 10000</code>:</p>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># gen.py file contents</span>
@@ -283,13 +291,32 @@ the number of possible combinations is lowered to <code class="highlighter-rouge
 <p>$ time python gen.py
 python gen.py  0.01s user 0.01s system 98% cpu 0.015 total</p>
 
-<p>Why can’t you use passwords that contain numbers, letters and special
-characters? Maybe it’s a legacy issue, but you could definitely write some
+<p>I presented the time measurements just to give you an idea of <strong>how
+small the possible key space is</strong>. Of course, we can’t conclude that the PIN
+will be bruteforced in <code class="highlighter-rouge">3</code> seconds. The system limits the number of
+attempts that you can perform. However, if you think that this makes bruteforcing
+impossible, you’re wrong. I will now demonstrate why.</p>
+
+<p>Let’s assume that the number of login attempts is limited to 3 (in reality,
+<code class="highlighter-rouge">autenticacao.gov.pt</code> <strong>allows more than 3 attempts</strong>). Let’s also assume that a lot of people will in fact
+use a <code class="highlighter-rouge">4</code> digit long PIN. This means that for each individual user there will
+be a <code class="highlighter-rouge">3/10000</code> chance of guessing his PIN. Pretty unlikely, right?
+Well, this number also means that <strong>for every 10000 accounts the attacker
+will guess the PIN of 3 of them</strong>.</p>
+
+<p>To make the things worse, the numbers above are assuming a totally random
+distribution of PINs, which is not true. A <a href="https://www.popsci.com/technology/article/2012-09/infographic-day-fastest-way-crack-4-digit-pin-number">data analysis of almost 3.4 million four digit passwords</a> showed that <code class="highlighter-rouge">1234</code>, <code class="highlighter-rouge">0000</code> and <code class="highlighter-rouge">1111</code>
+make up almost <code class="highlighter-rouge">20%</code> of used passwords. Considering this, the probability
+of guessing the PIN of a single account would be about <code class="highlighter-rouge">2000/10000</code>.
+Therefore, <strong>for every 10000 accounts the attacker would guess the PIN of 2000 of them</strong>.</p>
+
+<p>Why doesn’t the system allow passwords that contain numbers, letters and special
+characters? Maybe it comes down to a legacy issue, but it is definitely possible to write
 middleware that would take care of that. The system is supposed to protect
 very sensitive data, after all.</p>
 
 <p>As an example, let me present to you a very simple solution that would make
-the system more secure. It would do it so by allowing the users to use
+the existing system more secure. It would do it so by allowing the users to use
 a password that consists of numbers, letters and special characters, while
 keeping the core legacy backend unchanged. I’m going to take the following
 assumptions:</p>
@@ -302,7 +329,7 @@ assumptions:</p>
 <p>A very simple solution would be to do the following:</p>
 
 <ol>
-  <li>When the user is registering/changing his password: hash the password provided by the user with the phone number and store it in the database. Generate an digit PIN and store it. This PIN will never be revealed to the user.</li>
+  <li>When the user is registering/changing his password: hash the password provided by the user with the phone number and store it in the database. Generate an 8 digit PIN and store it. This PIN will never be revealed to the user.</li>
   <li>When the users tries to log in: hash the provided password with the phone
 number and compare this result to the one that you have stored in the
 database.
