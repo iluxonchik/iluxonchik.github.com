@@ -85,6 +85,10 @@ closing `HTML` comment tag (`-->`) present in the page's source.
 
 {% include figure.html url="../images/posts/aut_gov_vuln/xss_source.png" num="1" term=":" description="Resulting HTML from the XSS attack" %}
 
+Below is a video demonstration of how this vulnerability can be exploited
+to inject arbitrary JavaScript code into the page.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jG8ZWBNqRyg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Whenever the text in the "Mobile phone number" field is
 changed, the `ShowPrint()` function is called. The only thing that it does is
