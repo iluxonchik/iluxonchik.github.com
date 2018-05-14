@@ -138,14 +138,22 @@ python gen.py  3.20s user 0.01s system 99% cpu 3.208 total
 {% endraw %}
 
 While this is not the most accurate way of measuring the process execution
-time, it's good enough to transmit the idea of how easy this task is for
-modern computers. It's `2018` and the Portuguese government
+time, it's good enough to transmit the idea of how quick modern computers are
+at generating the entire key space. This is to give you an intuition of
+**how small the number of possible PINs is**. It's `2018` and the Portuguese government
 seems to think that 4 to 8 digit passwords are secure.
+
+Let's compare this to an `8` character long password that allows
+numbers (10 different: `0-9`), letters (52 different: `a-z` and `A-Z`) and special characters (32 different). For every position we would have
+`10 + 52 + 32 = 94` possible values. This means that there would be a total of
+`94^8=6095689385000000` possible combinations. If we use the rule of three
+to estimate how long it would take my computer to generate the entire key
+space, we would see that it would come out to **more than 6 years**.
 
 As an interesting note, when I was signing up with the system, the lady
 told me that from her experience people usually choose `4` digit PINs, so
 that they're the same as their phone PINs. This seems like a reasonable
-assumption to take. In this case, the easy task is made even easier, since
+assumption to take. In this case, the simple task is made even simpler, since
 the number of possible combinations is lowered to `10^4 = 10000`:
 
 {% highlight python %}
@@ -165,13 +173,32 @@ python gen.py  0.01s user 0.01s system 98% cpu 0.015 total
 
 {% endraw %}
 
-Why can't you use passwords that contain numbers, letters and special
-characters? Maybe it's a legacy issue, but you could definitely write some
+I presented the time measurements just to give you an idea of **how
+small the possible key space is**. Of course, we can't conclude that the PIN
+will be bruteforced in `3` seconds. The system limits the number of
+attempts that you can perform. However, if you think that this makes bruteforcing
+impossible, you're wrong. I will now demonstrate why.
+
+Let's assume that the number of login attempts is limited to 3 (in reality,
+`autenticacao.gov.pt` **allows more than 3 attempts**). Let's also assume that a lot of people will in fact
+use a `4` digit long PIN. This means that for each individual user there will
+be a `3/10000` chance of guessing his PIN. Pretty unlikely, right?
+Well, this number also means that **for every 10000 accounts the attacker
+will guess the PIN of 3 of them**.
+
+To make the things worse, the numbers above are assuming a totally random
+distribution of PINs, which is not true. A [data analysis of almost 3.4 million four digit passwords](https://www.popsci.com/technology/article/2012-09/infographic-day-fastest-way-crack-4-digit-pin-number) showed that `1234`, `0000` and `1111`
+make up almost `20%` of used passwords. Considering this, the probability
+of guessing the PIN of a single account would be about `2000/10000`.
+Therefore, **for every 10000 accounts the attacker would guess the PIN of 2000 of them**.
+
+Why doesn't the system allow passwords that contain numbers, letters and special
+characters? Maybe it comes down to a legacy issue, but it is definitely possible to write
 middleware that would take care of that. The system is supposed to protect
 very sensitive data, after all.
 
 As an example, let me present to you a very simple solution that would make
-the system more secure. It would do it so by allowing the users to use
+the existing system more secure. It would do it so by allowing the users to use
 a password that consists of numbers, letters and special characters, while
 keeping the core legacy backend unchanged. I'm going to take the following
 assumptions:
@@ -181,7 +208,7 @@ assumptions:
 
 A very simple solution would be to do the following:
 
-1. When the user is registering/changing his password: hash the password provided by the user with the phone number and store it in the database. Generate an digit PIN and store it. This PIN will never be revealed to the user.
+1. When the user is registering/changing his password: hash the password provided by the user with the phone number and store it in the database. Generate an 8 digit PIN and store it. This PIN will never be revealed to the user.
 2. When the users tries to log in: hash the provided password with the phone
 number and compare this result to the one that you have stored in the
 database.
