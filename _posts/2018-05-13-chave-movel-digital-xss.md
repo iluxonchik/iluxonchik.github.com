@@ -2,7 +2,7 @@
 layout: post
 title:  "Chave Móvel Digital Multiple XSS Vulnerabilities"
 description: Multiple Reflected Cross-Site-Scripting (XSS) vulnerabilities found in the Portuguese government's Chave Móvel Digital authentication system.
-tags: [chave movel digital, cmd, digital mobile key, portugal, authentication, vulnerability, xss]
+tags: [security]
 date:   2018-05-13 16:00:01 -0000
 ---
 

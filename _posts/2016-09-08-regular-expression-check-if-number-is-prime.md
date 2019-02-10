@@ -2,7 +2,7 @@
 layout: post
 title:  "Demystifying The Regular Expression That Checks If A Number Is Prime"
 description: Ever wondered how the ^.?$|^(..+?)\1+$ regular expression can tell you if a number is not prime? In this blog post you'll learn how and why it works. Code examples in Java, JavaScript, Python and Perl are provided.
-tags: [regular expressions, explanation]
+tags: [explanation, python, java]
 ---
 
 # Introduction

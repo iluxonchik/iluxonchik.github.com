@@ -2,7 +2,7 @@
 layout: post
 title:  "The Weak Security Of The Portuguese Government's Authentication System"
 description: The weak security of Autenticacao.gov.pt and Chave Movel Digital. This is part one of a series of blog posts that explores the weak security and various vulnerabilities found in the Portuguese Government's secure authenticate system.
-tags: [chave movel digital, cmd, digital mobile key, portugal, authentication, vulnerability]
+tags: [security]
 date:   2018-05-13 16:00:00 -0000
 ---
 

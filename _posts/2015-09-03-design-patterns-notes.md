@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Design Patterns Notes - An Overview Of Design Patterns"
-description: "A collection of notes on some of the most common design patterns."
-tags: [design patterns, object oriented]
+description: "The most common design patterns explained."
+tags: [java, explanation]
 ---
 [SingletonUML]: http://zenit.senecac.on.ca/wiki/imgs/Singleton_UML.png "Singleton UML"
 [CommandUML]:http://www.dofactory.com/images/diagrams/net/command.gif "Command UML"
@@ -40,15 +40,15 @@ the post.
 I've written this mainly because it's not always easy to understand what a pattern
 is about in its essence, since many of the explanations out there are either
 domain-specific or include examples that are somewhat complex. In my opinion, it's
-a lot easier to to undestand them once you have a general idea of what the pattern
+a lot easier to to understand them once you have a general idea of what the pattern
 does. This is why I've used somewhat "childish" examples here: those should help
 you concentrate on the pattern and not the domain details.
 
 All of the code examples are in Java, but only the basic syntax is used, so if you're
 coming from a language like C# or have basic Java knowledge, you should have not problems
-in undestanding this post. Even though a specific programming language is used here,
+in understanding this post. Even though a specific programming language is used here,
 the concepts are domain-independent and can be applied to other languages.
-The default access modifiers for member variables are used, to make the code interpertation
+The default access modifiers for member variables are used, to make the code interpretation
 more accessible to beginners.
 
 # Design Patterns ##
@@ -66,7 +66,7 @@ thus possibly creating more than one instance of the class) and a **static
 method**, combined with a **static variable** (to make sure that there is
 only one instance of the class in the application, instead of calling
 **"new"**, we ask the class itself to provide an instance and since we never
-directly instanciate it, the method has to be static). The class itself will
+directly instantiate it, the method has to be static). The class itself will
 be responsible for keeping track of its sole instance.
 
 Below is an example implementation in Java. This version uses **lazy initialization**
@@ -107,10 +107,10 @@ requests, and support undoable operations.
 
   The key in this pattern is an abstract **Command** class (or an interface), which
   declares an interface for executing operations. In its most simple form,
-  this inteface has an **execute()** method. A **concrete commad** then has an
-  **instance variable of the receiever**, whose methods are called in the **execute()**.
+  this interface has an **execute()** method. A **concrete command** then has an
+  **instance variable of the receiver**, whose methods are called in the **execute()**.
   The command itself doesn't  perform any complex operations, those have to be
-  done by the receiever, and that's what happens in the **execute()** method,
+  done by the receiver, and that's what happens in the **execute()** method,
   receiver's methods get called.
 
 ### Example
@@ -118,7 +118,7 @@ requests, and support undoable operations.
 Let's say you have a remote control that controls the volume and the on/off state
 of your awesome sound system. For simplicity, let's assume that your remote
 control is actually a single button, which you can reprogram to do different actions
-(like voulume up, volume donw, on and off).
+(like volume up, volume down, on and off).
 
 <center><img src="http://www.willyoupressthebutton.com/images/mygtukas.png"></center>
 

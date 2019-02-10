@@ -2,7 +2,7 @@
 layout: post
 title:  "Chave Móvel Digital Phone Number Leakage"
 description: Chave Móvel Digtial leaks registered phone numbers and e-mail addresses.
-tags: [chave movel digital, cmd, digital mobile key, portugal, authentication, vulnerability]
+tags: [security]
 date:   2018-05-13 16:00:02 -0000
 ---
 
