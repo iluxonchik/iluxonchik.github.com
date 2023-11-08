@@ -116,48 +116,6 @@ article {
 /* Adjustments to `article` */
 
 
-/* Responsive Design */
-@media (max-width: 600px) {
-
-    /* Adjust the breakpoint as needed */
-    article {
-        height: calc(100vh - 10px);
-        /* Less padding on mobile */
-        width: calc(100vw - 10px);
-        /* Article takes up almost the whole screen */
-        max-width: none;
-        /* Article can be full width on small screens */
-    }
-}
-
-/* Desktops and larger screens */
-@media (min-width: 600px) {
-    article {
-        max-width: 80%;
-        /* Adjust this value to control width on desktop */
-    }
-}
-
-@media (min-width: 700px) {
-    article {
-        max-width: 75%;
-    }
-}
-
-@media (min-width: 800px) {
-    article {
-        max-width: 60%;
-    }
-}
-
-
-@media (min-width: 900px) {
-    article {
-        max-width: 50%;
-        /* Adjust this value to control width on desktop */
-    }
-}
-
 article {
     display: flex;
     flex-direction: column;
@@ -216,14 +174,55 @@ article {
   }
   
   
-  /* Media query adjustments */
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 1.5em; /* Example size, adjust as needed */
+ 
+/* Responsive Design */
+@media (max-width: 400px) {
+    .h1 {
+        font-size: 1.2em;
     }
-  
-    .fa {
-      font-size: 1.2em; /* Example size, adjust as needed */
+    .profile-image {
+        width: 100pt;
     }
-  }
-  
+}
+
+@media (max-width: 600px) {
+
+    /* Adjust the breakpoint as needed */
+    article {
+        height: calc(100vh - 10px);
+        /* Less padding on mobile */
+        width: calc(100vw - 10px);
+        /* Article takes up almost the whole screen */
+        max-width: none;
+        /* Article can be full width on small screens */
+    }
+}
+
+/* Desktops and larger screens */
+@media (min-width: 600px) {
+    article {
+        max-width: 80%;
+        /* Adjust this value to control width on desktop */
+    }
+}
+
+@media (min-width: 700px) {
+    article {
+        max-width: 75%;
+    }
+}
+
+@media (min-width: 800px) {
+    article {
+        max-width: 60%;
+    }
+}
+
+
+@media (min-width: 900px) {
+    article {
+        max-width: 50%;
+        /* Adjust this value to control width on desktop */
+    }
+}
+
