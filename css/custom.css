@@ -78,7 +78,6 @@ main {
             oklch(0.35 0.37 330),
             oklch(0.3 0.37 310));
     display: grid;
-    height: 100svh;
     place-items: center;
 }
 
@@ -172,9 +171,7 @@ article {
     margin: 10pt;
     margin-left: 0pt;
   }
-  
-  
- 
+
 /* Responsive Design */
 @media (max-width: 400px) {
     .h1 {
