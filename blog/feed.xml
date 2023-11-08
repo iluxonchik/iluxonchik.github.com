@@ -2,26 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">The Codeumentary</title>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="https://iluxonchik.github.io/feed.xml" />
-<link rel="alternate" type="text/html" href="https://iluxonchik.github.io" />
+<link rel="self" type="application/atom+xml" href="./feed.xml" />
+<link rel="alternate" type="text/html" href="." />
 <updated>2019-02-10T13:12:00+00:00</updated>
-<id>https://iluxonchik.github.io/</id>
+<id>./</id>
 <author>
   <name>Illya Gerasymchuk</name>
-  <uri>https://iluxonchik.github.io/</uri>
+  <uri>./</uri>
   <email>illya@iluxonchik.me</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[Chave Móvel Digital's Log Out Button Does Not Log The User Out]]></title>
- <link rel="alternate" type="text/html" href="https://iluxonchik.github.io/chave-movel-digital-does-not-log-out/" />
-  <id>https://iluxonchik.github.io/chave-movel-digital-does-not-log-out</id>
+ <link rel="alternate" type="text/html" href="./chave-movel-digital-does-not-log-out/" />
+  <id>./chave-movel-digital-does-not-log-out</id>
   <published>2018-05-13T17:00:03+01:00</published>
   <updated>2018-05-13T17:00:03+01:00</updated>
   <author>
     <name>Illya Gerasymchuk</name>
-    <uri>https://iluxonchik.github.io</uri>
+    <uri>.</uri>
     <email>illya@iluxonchik.me</email>
   </author>
   <content type="html">
@@ -113,20 +113,20 @@ since they put millions of Portuguese citizens at risk. The agency
 responsible for these systems should take security more seriously
 and not as an afterthought.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/chave-movel-digital-does-not-log-out/&quot;&gt;Chave Móvel Digital&#39;s Log Out Button Does Not Log The User Out&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;The Codeumentary&lt;/a&gt; on May 13, 2018.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;./chave-movel-digital-does-not-log-out/&quot;&gt;Chave Móvel Digital&#39;s Log Out Button Does Not Log The User Out&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;.&quot;&gt;The Codeumentary&lt;/a&gt; on May 13, 2018.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Chave Móvel Digital Phone Number Leakage]]></title>
- <link rel="alternate" type="text/html" href="https://iluxonchik.github.io/chave-movel-digital-phone-number-information-leakage/" />
-  <id>https://iluxonchik.github.io/chave-movel-digital-phone-number-information-leakage</id>
+ <link rel="alternate" type="text/html" href="./chave-movel-digital-phone-number-information-leakage/" />
+  <id>./chave-movel-digital-phone-number-information-leakage</id>
   <published>2018-05-13T17:00:02+01:00</published>
   <updated>2018-05-13T17:00:02+01:00</updated>
   <author>
     <name>Illya Gerasymchuk</name>
-    <uri>https://iluxonchik.github.io</uri>
+    <uri>.</uri>
     <email>illya@iluxonchik.me</email>
   </author>
   <content type="html">
@@ -233,7 +233,7 @@ it comes from the sender &lt;code class=&quot;highlighter-rouge&quot;&gt;CMD&lt;
   Digital Mobile Key, in English). What an attacker could do is send the
 user an SMS message with the sender id &lt;code class=&quot;highlighter-rouge&quot;&gt;CMD&lt;/code&gt; saying that there is an issue
 with the user’s account and that he needs to follow the provided link
-to solve it. The link could perhaps exploit the &lt;a href=&quot;https://iluxonchik.github.io/chave-movel-digital-xss/&quot;&gt;XSS vulnerability described in the previous post&lt;/a&gt;
+to solve it. The link could perhaps exploit the &lt;a href=&quot;./chave-movel-digital-xss/&quot;&gt;XSS vulnerability described in the previous post&lt;/a&gt;
 to get the user’s PIN.&lt;/p&gt;
 
 &lt;p&gt;While not being a critical issue, it renders the existing protection system
@@ -281,20 +281,20 @@ easily bypassed.&lt;/p&gt;
 &lt;p&gt;In the &lt;a href=&quot;/chave-movel-digital-does-not-log-out&quot;&gt;next and final blog post of this series&lt;/a&gt; I will explore another issue: the fact
 that the “Log Out” button does not actually log you out.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/chave-movel-digital-phone-number-information-leakage/&quot;&gt;Chave Móvel Digital Phone Number Leakage&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;The Codeumentary&lt;/a&gt; on May 13, 2018.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;./chave-movel-digital-phone-number-information-leakage/&quot;&gt;Chave Móvel Digital Phone Number Leakage&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;.&quot;&gt;The Codeumentary&lt;/a&gt; on May 13, 2018.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Chave Móvel Digital Multiple XSS Vulnerabilities]]></title>
- <link rel="alternate" type="text/html" href="https://iluxonchik.github.io/chave-movel-digital-xss/" />
-  <id>https://iluxonchik.github.io/chave-movel-digital-xss</id>
+ <link rel="alternate" type="text/html" href="./chave-movel-digital-xss/" />
+  <id>./chave-movel-digital-xss</id>
   <published>2018-05-13T17:00:01+01:00</published>
   <updated>2018-05-13T17:00:01+01:00</updated>
   <author>
     <name>Illya Gerasymchuk</name>
-    <uri>https://iluxonchik.github.io</uri>
+    <uri>.</uri>
     <email>illya@iluxonchik.me</email>
   </author>
   <content type="html">
@@ -571,20 +571,20 @@ making the existing ambiguous “Either the mobile number or the PIN are
 incorrect” message useless and opening the door for various social
 engineering attacks.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/chave-movel-digital-xss/&quot;&gt;Chave Móvel Digital Multiple XSS Vulnerabilities&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;The Codeumentary&lt;/a&gt; on May 13, 2018.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;./chave-movel-digital-xss/&quot;&gt;Chave Móvel Digital Multiple XSS Vulnerabilities&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;.&quot;&gt;The Codeumentary&lt;/a&gt; on May 13, 2018.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[The Weak Security Of The Portuguese Government's Authentication System]]></title>
- <link rel="alternate" type="text/html" href="https://iluxonchik.github.io/weak-security-of-portuguese-government/" />
-  <id>https://iluxonchik.github.io/weak-security-of-portuguese-government</id>
+ <link rel="alternate" type="text/html" href="./weak-security-of-portuguese-government/" />
+  <id>./weak-security-of-portuguese-government</id>
   <published>2018-05-13T17:00:00+01:00</published>
   <updated>2018-05-13T17:00:00+01:00</updated>
   <author>
     <name>Illya Gerasymchuk</name>
-    <uri>https://iluxonchik.github.io</uri>
+    <uri>.</uri>
     <email>illya@iluxonchik.me</email>
   </author>
   <content type="html">
@@ -842,20 +842,20 @@ like an afterthought.&lt;/p&gt;
 &lt;p&gt;In the &lt;a href=&quot;/chave-movel-digital-xss&quot;&gt;next blog post&lt;/a&gt;, I will be describing the multiple XSS vulnerabilities
 present in the authentication page.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/weak-security-of-portuguese-government/&quot;&gt;The Weak Security Of The Portuguese Government&#39;s Authentication System&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;The Codeumentary&lt;/a&gt; on May 13, 2018.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;./weak-security-of-portuguese-government/&quot;&gt;The Weak Security Of The Portuguese Government&#39;s Authentication System&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;.&quot;&gt;The Codeumentary&lt;/a&gt; on May 13, 2018.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Demystifying The Regular Expression That Checks If A Number Is Prime]]></title>
- <link rel="alternate" type="text/html" href="https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/" />
-  <id>https://iluxonchik.github.io/regular-expression-check-if-number-is-prime</id>
+ <link rel="alternate" type="text/html" href="./regular-expression-check-if-number-is-prime/" />
+  <id>./regular-expression-check-if-number-is-prime</id>
   <published>2016-09-08T00:00:00+01:00</published>
   <updated>2016-09-08T00:00:00+01:00</updated>
   <author>
     <name>Illya Gerasymchuk</name>
-    <uri>https://iluxonchik.github.io</uri>
+    <uri>.</uri>
     <email>illya@iluxonchik.me</email>
   </author>
   <content type="html">
@@ -1277,7 +1277,7 @@ I’ll do it here again, just to keep it organized.&lt;/p&gt;
 
 &lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
 
-&lt;p&gt;I’ve &lt;a href=&quot;https://iluxonchik.github.io/why-you-should-learn-python/&quot;&gt;expressed my sympathy for Python before&lt;/a&gt;, so of course I have to include
+&lt;p&gt;I’ve &lt;a href=&quot;./why-you-should-learn-python/&quot;&gt;expressed my sympathy for Python before&lt;/a&gt;, so of course I have to include
 this one here.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;is_prime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
@@ -1367,7 +1367,7 @@ the modifiers box) - it’s a good way to see the performance differences (throu
 in the greedy and non-greedy cases.&lt;/p&gt;
 
 &lt;p&gt;If you have any questions or suggestions, feel free to post them in the
-comment section below or &lt;a href=&quot;https://iluxonchik.github.io/about/&quot;&gt;get in touch with me via a different medium&lt;/a&gt;.&lt;/p&gt;
+comment section below or &lt;a href=&quot;./about/&quot;&gt;get in touch with me via a different medium&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;EDIT&lt;/strong&gt;:&lt;/p&gt;
 
@@ -1385,20 +1385,20 @@ In the “real world”, however (outside of academia), those terms are used
 interchangeably&lt;/li&gt;
 &lt;/ul&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/regular-expression-check-if-number-is-prime/&quot;&gt;Demystifying The Regular Expression That Checks If A Number Is Prime&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;The Codeumentary&lt;/a&gt; on September 08, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;./regular-expression-check-if-number-is-prime/&quot;&gt;Demystifying The Regular Expression That Checks If A Number Is Prime&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;.&quot;&gt;The Codeumentary&lt;/a&gt; on September 08, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Why You Should Learn Python]]></title>
- <link rel="alternate" type="text/html" href="https://iluxonchik.github.io/why-you-should-learn-python/" />
-  <id>https://iluxonchik.github.io/why-you-should-learn-python</id>
+ <link rel="alternate" type="text/html" href="./why-you-should-learn-python/" />
+  <id>./why-you-should-learn-python</id>
   <published>2016-08-22T00:00:00+01:00</published>
   <updated>2016-08-22T00:00:00+01:00</updated>
   <author>
     <name>Illya Gerasymchuk</name>
-    <uri>https://iluxonchik.github.io</uri>
+    <uri>.</uri>
     <email>illya@iluxonchik.me</email>
   </author>
   <content type="html">
@@ -1874,20 +1874,20 @@ forensic analysis and security in general.&lt;/p&gt;
  I’m keeping the original one in the post, because the goal was to be more explicit, so that people new to Python would have less trouble understanding it.&lt;/li&gt;
 &lt;/ul&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/why-you-should-learn-python/&quot;&gt;Why You Should Learn Python&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;The Codeumentary&lt;/a&gt; on August 22, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;./why-you-should-learn-python/&quot;&gt;Why You Should Learn Python&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;.&quot;&gt;The Codeumentary&lt;/a&gt; on August 22, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Design Patterns Notes - An Overview Of Design Patterns]]></title>
- <link rel="alternate" type="text/html" href="https://iluxonchik.github.io/design-patterns-notes/" />
-  <id>https://iluxonchik.github.io/design-patterns-notes</id>
+ <link rel="alternate" type="text/html" href="./design-patterns-notes/" />
+  <id>./design-patterns-notes</id>
   <published>2015-09-03T00:00:00+01:00</published>
   <updated>2015-09-03T00:00:00+01:00</updated>
   <author>
     <name>Illya Gerasymchuk</name>
-    <uri>https://iluxonchik.github.io</uri>
+    <uri>.</uri>
     <email>illya@iluxonchik.me</email>
   </author>
   <content type="html">
@@ -4306,7 +4306,7 @@ to design patterns. It’s also a good book if you need to quickly refreshen som
 &lt;p&gt;Another great book, probably the most well-known one is &lt;a href=&quot;http://www.amazon.co.uk/Design-patterns-elements-reusable-object-oriented/dp/0201633612&quot;&gt;Design patterns : elements of reusable object-oriented software&lt;/a&gt;.
 It’s  more complex, but it explores real world examples.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://iluxonchik.github.io/design-patterns-notes/&quot;&gt;Design Patterns Notes - An Overview Of Design Patterns&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;https://iluxonchik.github.io&quot;&gt;The Codeumentary&lt;/a&gt; on September 03, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;./design-patterns-notes/&quot;&gt;Design Patterns Notes - An Overview Of Design Patterns&lt;/a&gt; was originally published by Illya Gerasymchuk at &lt;a href=&quot;.&quot;&gt;The Codeumentary&lt;/a&gt; on September 03, 2015.&lt;/p&gt;
   </content>
 </entry>
 
