@@ -1,0 +1,5 @@
+Contact: mailto:security@illya.sh
+Expires: 2032-03-02T02:03:00.000Z
+Preferred-Languages: en, pt, ru, ua, es
+Canonical: https://illya.sh/security.txt
+
