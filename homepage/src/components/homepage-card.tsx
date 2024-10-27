@@ -236,6 +236,16 @@ export function HomepageCard() {
                         </li>
                       </ul>
                     </div>
+                    <div>
+                      <h3 className="text-lg font-medium mb-2">Legal</h3>
+                      <ul className="space-y-2">
+                        <li>
+                          <a href="https://illya.sh/blog/posts/deposit-guarantee-scheme-japan-dia-dicj/" target="_blank" rel="noopener noreferrer" className="text-purple-500 hover:text-purple-700 transition-colors">
+                          Deposit Guarantee Scheme of Japan: DIA & DICJ
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </motion.div>
               </TabsContent>
