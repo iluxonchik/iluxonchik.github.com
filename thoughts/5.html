@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basic SEO / Title -->
+    <title>Illya&#x27;s Thoughts - Page 3</title> 
+    
+    <!-- Open Graph / Social Media Tags -->
+    <meta property="og:title" content="Illya&#x27;s Thoughts - Page 3" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://illya.sh/thoughts/5.html" />
+    <meta property="og:image" content="https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp" />
+    <meta property="og:description" content="Crypto, Finance, Blockchain, AI, DeFi, Web3 and Zero-Knowledge. Pursuing master&#x27;s in Law &amp; Financial Markets." />
+    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Illya&#x27;s Thoughts - Page 3" />
+    <meta name="twitter:description" content="Crypto, Finance, Blockchain, AI, DeFi, Web3 and Zero-Knowledge. Pursuing master&#x27;s in Law &amp; Financial Markets." />
+    <meta name="twitter:image" content="https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp" />
+    
+    <style>
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #f4f4f4; /* Slightly lighter grey */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 25px; /* More padding */
+            border: 1px solid #ddd; /* Softer border */
+            max-width: 750px; /* Slightly narrower */
+            width: 100%;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08); /* Softer shadow */
+        }
+
+        /* Profile Box Styling */
+        .profile-box {
+            border: 2px dashed #aaa; /* Lighter dashed border */
+            padding: 20px;
+            margin-bottom: 35px;
+            background-color: #fff;
+        }
+        .profile-content {
+            display: flex;
+            align-items: center; /* Vertically align image and details */
+            margin-bottom: 15px; /* Space between content and links */
+        }
+        .profile-img {
+            width: 70px; /* Slightly smaller */
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 1px solid #eee; /* Lighter border */
+            flex-shrink: 0; /* Prevent image from shrinking */
+        }
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; /* Allow details to take remaining space */
+        }
+        .profile-name {
+            font-weight: bold;
+            font-size: 1.3em; /* Larger name */
+            margin-bottom: 3px;
+        }
+        .profile-title {
+            color: #777; /* Slightly darker grey */
+            font-size: 1em;
+        }
+        .profile-links {
+            font-size: 0.95em;
+            color: #444;
+            text-align: center; /* Center the links below content */
+            width: 100%; /* Make links container take full width */
+            line-height: 1.6; /* Add line-height to help with spacing if links wrap */
+        }
+        .profile-links a {
+            text-decoration: none;
+            color: #007bff; /* Standard link blue */
+            margin: 0 8px; /* Spacing around links */
+            transition: color 0.2s ease;
+            white-space: nowrap; /* Prevent link text/emoji from breaking */
+            display: inline-block; /* Treat links as blocks for spacing */
+        }
+        .profile-links a:hover {
+            color: #0056b3; /* Darker blue on hover */
+        }
+
+
+        /* Thoughts Header - Section Title Style */
+        .thoughts-header {
+            border: none;
+            background-color: transparent;
+            padding: 0; 
+            display: block; 
+            font-size: 1.4em; 
+            font-weight: bold;
+            color: #333;
+            margin-top: 0; 
+            margin-bottom: 25px; 
+            padding-bottom: 8px; 
+            border-bottom: 2px solid #eee; 
+            text-align: left; 
+        }
+
+        /* Thought Box Styling */
+        .thought-box {
+            border: 2px dashed #aaa; 
+            padding: 15px;
+            margin-bottom: 25px; 
+            background-color: #fff;
+        }
+        .thought-header {
+            display: flex; /* Enable flexbox */
+            align-items: center; /* Align items vertically */
+            flex-wrap: wrap; /* Allow wrapping on small screens */
+            gap: 0.5em; /* Add some gap between items */
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            font-size: 0.95em;
+            color: #555; 
+        }
+        .thought-user-img { /* Style for the small user image */
+             width: 25px;
+             height: 25px;
+             border-radius: 50%;
+             object-fit: cover;
+             border: 1px solid #eee;
+             vertical-align: middle; /* Align with text */
+        }
+        /* .thought-header .user-icon { Removed } */
+        .thought-header .user-name {
+            font-weight: bold;
+            color: #333; 
+            margin: 0; /* Reset default margins */
+        }
+         .thought-header .separator {
+             margin: 0 0.2em; /* Small margin around separator */
+         }
+         .thought-header .date-time {
+             color: #666; /* Slightly lighter date */
+             flex-shrink: 0; /* Prevent date shrinking oddly */
+         }
+
+        .thought-content p {
+            margin-top: 0;
+            margin-bottom: 15px;
+            line-height: 1.5; 
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .thought-image {
+            margin-top: 15px; 
+        }
+        /* Container for the clickable image */
+        .thought-image .lightbox-trigger {
+            display: block; /* Make it a block to control width/margins */
+            /* Remove fixed max-width to allow full width */
+            /* max-width: 400px; */ 
+            width: 100%; /* Take full available width */
+            margin: 0 auto; /* Center the block if parent width allows */
+            cursor: pointer;
+            overflow: hidden; 
+            border-radius: 8px; /* Slightly larger radius, like Twitter */
+            border: 1px solid #ddd; /* Slightly darker border */
+            position: relative; /* For potential future overlays if needed */
+        }
+        .thought-image img.thought-img {
+            display: block; 
+            width: 100%; 
+            height: auto; 
+            transition: opacity 0.2s ease-in-out; /* Change hover effect */
+        }
+         .thought-image .lightbox-trigger:hover img.thought-img {
+              /* transform: scale(1.03); */ /* Remove scale, use opacity */
+              opacity: 0.9; 
+         }
+
+        /* Lightbox Overlay */
+        .lightbox-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9); /* Slightly darker */
+            display: none; 
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            padding: 15px; /* Slightly less padding */
+            box-sizing: border-box;
+        }
+        .lightbox-overlay.visible {
+            display: flex; 
+        }
+        .lightbox-content {
+            /* These ensure the container itself doesn't exceed viewport */
+            max-width: calc(100% - 40px); /* Max width considering padding */
+            max-height: calc(100% - 40px); /* Max height considering padding */
+            position: relative;
+            display: flex; /* Use flex to help center image if needed */
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox-content img {
+            display: block;
+            /* These ensure the image scales down to fit the container */
+            max-width: 100%;
+            max-height: 100%;
+            /* Explicitly set width/height to auto */
+            width: auto; 
+            height: auto;
+            object-fit: contain; 
+            border: none; /* Remove border from lightbox image */
+            box-shadow: 0 5px 30px rgba(0,0,0,0.5); /* Adjust shadow */
+        }
+        .lightbox-close {
+            position: absolute;
+            top: -10px; /* Adjust position */
+            right: -10px;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+            color: #000; /* Black 'X' */
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 24px; /* Larger 'X' */
+            font-weight: normal; /* Normal weight */
+            line-height: 28px; 
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: background-color 0.2s ease;
+        }
+        .lightbox-close:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                max-width: 100%;
+            }
+            .profile-content {
+                 align-items: flex-start; 
+            }
+            .profile-img {
+                width: 50px;
+                height: 50px;
+                margin-right: 15px;
+            }
+             .profile-name {
+                 font-size: 1.1em;
+             }
+             .profile-title {
+                 font-size: 0.9em;
+             }
+            .profile-links {
+                font-size: 0.9em;
+                text-align: center; 
+                margin-top: 10px; 
+            }
+            .profile-links a {
+                margin: 2px 5px; /* Add vertical margin if they wrap */
+                display: inline-block; /* Ensure margin applies */
+            }
+
+            .thoughts-header {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+            }
+            .thought-box {
+                padding: 12px;
+                margin-bottom: 20px;
+            }
+             .thought-header {
+                font-size: 0.9em; /* Slightly smaller font for header */
+                gap: 0.4em; /* Reduce gap */
+                padding-bottom: 8px; /* Reduce padding */
+             }
+             .thought-user-img {
+                 width: 20px; /* Even smaller image on mobile */
+                 height: 20px;
+             }
+             /* Optionally hide separator on very small screens if needed */
+             /* .thought-header .separator { display: none; } */
+
+             .thought-image .lightbox-trigger {
+                  /* No change needed, already takes full width */
+                  border-radius: 6px; /* Slightly smaller radius on mobile */
+             }
+
+             .lightbox-overlay {
+                  padding: 10px; /* Less padding on mobile */
+             }
+              .lightbox-content {
+                  max-width: 100%;
+                  max-height: 100%;
+              }
+             .lightbox-close {
+                 top: 5px; 
+                 right: 5px;
+                 width: 28px; /* Slightly smaller */
+                 height: 28px;
+                 font-size: 20px;
+                 line-height: 26px;
+             }
+
+            .pagination {
+                margin-top: 20px;
+                padding-top: 15px;
+                font-size: 0.85em; /* Smaller text on mobile */
+            }
+             .pagination a, .pagination span {
+                 padding: 6px 10px; /* Smaller padding */
+                 margin: 0 2px; /* Less margin */
+             }
+             .pagination span.page-info {
+                 display: none; /* Optionally hide page number on very small screens */
+             }
+        }
+
+        /* Pagination Styling */
+        .pagination {
+            margin-top: 30px; /* Space above pagination */
+            padding-top: 20px; /* Space below last thought */
+            border-top: 1px solid #eee; /* Separator line */
+            text-align: center;
+            display: flex; /* Use flexbox for alignment */
+            justify-content: space-between; /* Space out Prev, Info, Next */
+            align-items: center;
+        }
+        .pagination a, .pagination span {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 0 4px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            color: #007bff;
+            text-decoration: none;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            font-size: 0.9em;
+        }
+        .pagination a:hover {
+            background-color: #eee;
+            color: #0056b3;
+        }
+        .pagination span.disabled {
+            color: #aaa; /* Grey out disabled links/spans */
+            background-color: #f9f9f9;
+            cursor: default;
+            border-color: #eee;
+        }
+        .pagination span.page-info {
+             border: none; /* No border for page info */
+             color: #555;
+             background-color: transparent;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-box">
+    <div class="profile-content">
+        <img src="data/profile.png" alt="Profile Picture" class="profile-img">
+        <div class="profile-details">
+            <div class="profile-name">Illya Gerasymchuk</div>
+            <div class="profile-title">Entrepreneur / Engineer</div>
+        </div>
+    </div>
+    <div class="profile-links">
+        <a href="https://illya.sh" target="_blank">🏠 Homepage</a> &nbsp;&nbsp; <a href="mailto:hello@illya.sh" target="_blank">✉️ Email</a> &nbsp;&nbsp; <a href="https://t.me/illya_gerasymchuk" target="_blank">💬 Telegram</a> &nbsp;&nbsp; <a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a> &nbsp;&nbsp; <a href="https://github.com/iluxonchik" target="_blank">💻 GitHub</a> &nbsp;&nbsp; 
+    </div>
+</div>
+
+        <h2 class="thoughts-header">⬇️ My Thoughts ⬇️</h2>
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-31 15:34</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨Trump’s Tariffs Update - 🇨🇳, 🇯🇵, 🇰🇷<br><br>Not only tariffs are tanking the US economy, but their strongest partners are looking elsewhere<br><br>Unsurprisingly, Asia will find other buyers for their products - they have the upper hand, not 🇺🇸 or 🇪🇺 - a result of perpetual import deficits…</p>
+        <div class="thought-image">
+            <a href="data/images/fc5b8e72-6cfd-5bd8-a001-d329cfbb4801.jpg" class="lightbox-trigger"><img src="data/images/fc5b8e72-6cfd-5bd8-a001-d329cfbb4801.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-29 00:42</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨Update on Ethereum shorts:<br><br>Latest data shows that institutional investors reduced their short exposure by ≈60%<br><br>Not necessarily bullish - a lot of it is taking profits from the record net short positions<br><br>+ $1900 is a key weekly support level for #ETH, so a rebound is normal</p>
+        <div class="thought-image">
+            <a href="data/images/d2ae9f46-8dbc-5973-8815-f394cba6deb0.jpg" class="lightbox-trigger"><img src="data/images/d2ae9f46-8dbc-5973-8815-f394cba6deb0.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-27 16:18</span>
+    </div>
+    <div class="thought-content">
+        <p>📉 S&P 500, Motor Industry, NASDAQ, Bitcoin - all down <br><br>🥇Meanwhile gold hitting ATHs: http</p>
+        <div class="thought-image">
+            <a href="data/images/253187bd-79ee-585a-8b2a-f4e2a474df38.jpg" class="lightbox-trigger"><img src="data/images/253187bd-79ee-585a-8b2a-f4e2a474df38.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-27 15:29</span>
+    </div>
+    <div class="thought-content">
+        <p>🇺🇸 So the car tariffs are also inflationary<br><br>USA cars get credit incentives, by making interest payments tax deductible<br><br>So this means more expensive cars + more credit availability for them<br><br>You can’t make this up 😳</p>
+        <div class="thought-image">
+            <a href="data/images/89913a4b-1fe7-5c6e-afed-3e960b9a7c9c.jpg" class="lightbox-trigger"><img src="data/images/89913a4b-1fe7-5c6e-afed-3e960b9a7c9c.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-26 22:36</span>
+    </div>
+    <div class="thought-content">
+        <p>🎉 Congratulations to the American consumer who now has 2 options:<br><br>1. Pay 25% more for the car they want<br>2. Pay <25% more for a lower-quality domestically produced car<br><br>+ The income tax is here to stay ✌️<br><br>And you thought the Biden administration was doing questionable moves 😂  htt</p>
+        <div class="thought-image">
+            <a href="data/images/0ad2093e-fd96-506c-89d3-ff39d3c341a0.jpg" class="lightbox-trigger"><img src="data/images/0ad2093e-fd96-506c-89d3-ff39d3c341a0.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-26 21:30</span>
+    </div>
+    <div class="thought-content">
+        <p>Architecting your balance sheet around highly speculative & volatile instruments is a good idea, until it isn’t 💖<br><br>Although with 0% coupon the burden here is mostly on the investor 🤷‍♀️<br><br>The stock market is starting to resemble a casino more every day….  http</p>
+        <div class="thought-image">
+            <a href="data/images/86d016cb-54ff-5f02-9c93-145a0e19b27d.jpg" class="lightbox-trigger"><img src="data/images/86d016cb-54ff-5f02-9c93-145a0e19b27d.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-26 21:01</span>
+    </div>
+    <div class="thought-content">
+        <p>✅ It’s confirmed<br><br>You can now fully automate niche meme pages<br><br>With carefully crafted prompts and context it can generate a lot traffic and organic engagement</p>
+        <div class="thought-image">
+            <a href="data/images/96e6e807-e00d-5af7-b6b5-0e04d6a562e8.jpg" class="lightbox-trigger"><img src="data/images/96e6e807-e00d-5af7-b6b5-0e04d6a562e8.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-26 20:45</span>
+    </div>
+    <div class="thought-content">
+        <p>Today, I asked GPT-4o to create a meme about vibe coding<br><br>But you may need to be an AI language model to understand it 😳</p>
+        <div class="thought-image">
+            <a href="data/images/6142e374-ee03-5e15-bfb7-e434ef9dd7fc.jpg" class="lightbox-trigger"><img src="data/images/6142e374-ee03-5e15-bfb7-e434ef9dd7fc.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-26 20:25</span>
+    </div>
+    <div class="thought-content">
+        <p>The new GPT-4o image generator is cool, but who else thinks that in the next week or so some open-source Chinese model will it to dust? 😂🇨🇳<br><br>You can probably already find something close to it on huggingface</p>
+        <div class="thought-image">
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-26 03:45</span>
+    </div>
+    <div class="thought-content">
+        <p>🤯 GPT-4o new image gen is surprisingly good at generating comics & memes<br><br>Here’s an xkcd style webcomic about vibe coding ⬇️ http</p>
+        <div class="thought-image">
+            <a href="data/images/ac4a4955-9c76-55ca-bc6a-bca804fcbe90.jpg" class="lightbox-trigger"><img src="data/images/ac4a4955-9c76-55ca-bc6a-bca804fcbe90.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-25 21:13</span>
+    </div>
+    <div class="thought-content">
+        <p>Do you face the same philosophical issues with your cat?<br><br>I don’t think she sees the irony 😡</p>
+        <div class="thought-image">
+            <a href="data/images/71d3496d-bf8b-5f68-b3ec-253dacce6632.jpg" class="lightbox-trigger"><img src="data/images/71d3496d-bf8b-5f68-b3ec-253dacce6632.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-25 20:56</span>
+    </div>
+    <div class="thought-content">
+        <p>Original (left) ⬇️                     AI/GPT-4o (right) ⬇️</p>
+        <div class="thought-image">
+            <a href="data/images/0ecc3c10-0373-5163-98e6-83adf9f6e380.jpg" class="lightbox-trigger"><img src="data/images/0ecc3c10-0373-5163-98e6-83adf9f6e380.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-25 20:56</span>
+    </div>
+    <div class="thought-content">
+        <p>Original (left) ⬇️                AI - GPT-4o (right) ⬇️</p>
+        <div class="thought-image">
+            <a href="data/images/524120fa-2d9b-595a-b470-3e27cfdb3c2f.jpg" class="lightbox-trigger"><img src="data/images/524120fa-2d9b-595a-b470-3e27cfdb3c2f.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-25 20:55</span>
+    </div>
+    <div class="thought-content">
+        <p>Original (left) ⬇️                        AI (right) ⬇️</p>
+        <div class="thought-image">
+            <a href="data/images/82417516-7c9f-5f33-bc42-bd6062a27882.jpg" class="lightbox-trigger"><img src="data/images/82417516-7c9f-5f33-bc42-bd6062a27882.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-25 20:55</span>
+    </div>
+    <div class="thought-content">
+        <p>Original (left) ⬇️                   AI (right) ⬇️</p>
+        <div class="thought-image">
+            <a href="data/images/6b0b1215-ea0d-5f80-bfaf-4b12872e6d3d.jpg" class="lightbox-trigger"><img src="data/images/6b0b1215-ea0d-5f80-bfaf-4b12872e6d3d.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-25 20:55</span>
+    </div>
+    <div class="thought-content">
+        <p>Original (left) ⬇️         AI (right) ⬇️</p>
+        <div class="thought-image">
+            <a href="data/images/8dfaf7f4-7488-5647-a9e4-8293ec1cde39.jpg" class="lightbox-trigger"><img src="data/images/8dfaf7f4-7488-5647-a9e4-8293ec1cde39.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-25 20:50</span>
+    </div>
+    <div class="thought-content">
+        <p>2nd attempt was much better 😁</p>
+        <div class="thought-image">
+            <a href="data/images/06da1667-936c-5233-b7fa-fe744965f8bf.jpg" class="lightbox-trigger"><img src="data/images/06da1667-936c-5233-b7fa-fe744965f8bf.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-25 20:49</span>
+    </div>
+    <div class="thought-content">
+        <p></p>
+        <div class="thought-image">
+            <a href="data/images/fc661223-cb32-5502-bd1f-09501e5b8644.jpg" class="lightbox-trigger"><img src="data/images/fc661223-cb32-5502-bd1f-09501e5b8644.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-25 20:48</span>
+    </div>
+    <div class="thought-content">
+        <p>The new GPT 4o is also quite good as an image editor<br><br>It’s able to fairly accurately replicate & alter subjects<br><br>But maybe they should increase their training set on the anatomy of cats 😂<br><br>(expand the image) http</p>
+        <div class="thought-image">
+            <a href="data/images/8a626784-7e61-5e9a-bcdb-d160961c2b97.jpg" class="lightbox-trigger"><img src="data/images/8a626784-7e61-5e9a-bcdb-d160961c2b97.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-25 20:23</span>
+    </div>
+    <div class="thought-content">
+        <p>The new GPT 4o image generator is impressive!<br><br>You can ask ChatGPT to generate a UI design, and then pass it to Cursor/Claude/V0 for implementation<br><br>Character accuracy makes a big difference</p>
+        <div class="thought-image">
+            <a href="data/images/6ba59c65-7440-5897-98e4-c0dac94087f8.jpg" class="lightbox-trigger"><img src="data/images/6ba59c65-7440-5897-98e4-c0dac94087f8.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-25 16:30</span>
+    </div>
+    <div class="thought-content">
+        <p>Microcontrollers fostered IoT - Internet of Things<br><br>Vibe coding is fostering IoV - Internet of Vulnerabilities<br><br>But IoT is already IoV 😁</p>
+        <div class="thought-image">
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-25 13:41</span>
+    </div>
+    <div class="thought-content">
+        <p>🫧 Debt bubble about to pop<br><br>Borrowing is increasing & collateralization is decreasing<br><br>These are symptoms of a highly leveraged economy<br><br>Lowest (over)collateralization rate in 10 years. Surely a lot of that is caused by the huge amount of cheap credit issued during COVID, which… http</p>
+        <div class="thought-image">
+            <a href="data/images/c97d4462-908f-53ff-8aef-346330535651.jpg" class="lightbox-trigger"><img src="data/images/c97d4462-908f-53ff-8aef-346330535651.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-25 13:27</span>
+    </div>
+    <div class="thought-content">
+        <p>📈 Institutional investors have increased their reverse purchase agreements exposure ever since the central bank interest rates spiked<br><br>Repos are shorter-term loans, meaning they present a shorter commitment, thus less risk<br><br>Another message is clear: institutions are expecting…</p>
+        <div class="thought-image">
+            <a href="data/images/d8f381af-48b7-540a-b072-953747c1eef0.jpg" class="lightbox-trigger"><img src="data/images/d8f381af-48b7-540a-b072-953747c1eef0.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-25 10:10</span>
+    </div>
+    <div class="thought-content">
+        <p>Hedge funds are shorting $ETH in record numbers 😳</p>
+        <div class="thought-image">
+            <a href="data/images/9fcef424-b228-5ce3-b00c-6b50e50b886a.jpg" class="lightbox-trigger"><img src="data/images/9fcef424-b228-5ce3-b00c-6b50e50b886a.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-03-21 15:01</span>
+    </div>
+    <div class="thought-content">
+        <p>With the inflation trend…<br><br>not impossible 🤣🤣</p>
+        <div class="thought-image">
+            
+        </div>
+    </div>
+</div>
+
+        
+        <nav class="pagination"><a href="6.html" class="newer">← Newer</a><span class="page-info">Page 3 of 7</span><a href="4.html" class="older">Older →</a></nav>
+    </div>
+
+    <!-- Lightbox Structure (Initially Hidden) -->
+    <div id="lightbox" class="lightbox-overlay">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close">&times;</button>
+            <img src="" alt="Lightbox image">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = lightbox.querySelector('img');
+            const lightboxClose = lightbox.querySelector('.lightbox-close');
+            const triggers = document.querySelectorAll('.lightbox-trigger');
+
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent default link behavior
+                    const imgSrc = trigger.getAttribute('href');
+                    lightboxImg.setAttribute('src', imgSrc);
+                    lightbox.classList.add('visible');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling background
+                });
+            });
+
+            function closeLightbox() {
+                lightbox.classList.remove('visible');
+                lightboxImg.setAttribute('src', ''); // Clear image src
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+
+            // Close on button click
+            lightboxClose.addEventListener('click', closeLightbox);
+
+            // Close on clicking overlay background
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) { // Only close if overlay itself is clicked
+                    closeLightbox();
+                }
+            });
+
+            // Close on Escape key press
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && lightbox.classList.contains('visible')) {
+                    closeLightbox();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

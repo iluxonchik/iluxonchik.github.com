@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basic SEO / Title -->
+    <title>Illya&#x27;s Thoughts - Page 2</title> 
+    
+    <!-- Open Graph / Social Media Tags -->
+    <meta property="og:title" content="Illya&#x27;s Thoughts - Page 2" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://illya.sh/thoughts/6.html" />
+    <meta property="og:image" content="https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp" />
+    <meta property="og:description" content="Crypto, Finance, Blockchain, AI, DeFi, Web3 and Zero-Knowledge. Pursuing master&#x27;s in Law &amp; Financial Markets." />
+    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Illya&#x27;s Thoughts - Page 2" />
+    <meta name="twitter:description" content="Crypto, Finance, Blockchain, AI, DeFi, Web3 and Zero-Knowledge. Pursuing master&#x27;s in Law &amp; Financial Markets." />
+    <meta name="twitter:image" content="https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp" />
+    
+    <style>
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #f4f4f4; /* Slightly lighter grey */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 25px; /* More padding */
+            border: 1px solid #ddd; /* Softer border */
+            max-width: 750px; /* Slightly narrower */
+            width: 100%;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08); /* Softer shadow */
+        }
+
+        /* Profile Box Styling */
+        .profile-box {
+            border: 2px dashed #aaa; /* Lighter dashed border */
+            padding: 20px;
+            margin-bottom: 35px;
+            background-color: #fff;
+        }
+        .profile-content {
+            display: flex;
+            align-items: center; /* Vertically align image and details */
+            margin-bottom: 15px; /* Space between content and links */
+        }
+        .profile-img {
+            width: 70px; /* Slightly smaller */
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 1px solid #eee; /* Lighter border */
+            flex-shrink: 0; /* Prevent image from shrinking */
+        }
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; /* Allow details to take remaining space */
+        }
+        .profile-name {
+            font-weight: bold;
+            font-size: 1.3em; /* Larger name */
+            margin-bottom: 3px;
+        }
+        .profile-title {
+            color: #777; /* Slightly darker grey */
+            font-size: 1em;
+        }
+        .profile-links {
+            font-size: 0.95em;
+            color: #444;
+            text-align: center; /* Center the links below content */
+            width: 100%; /* Make links container take full width */
+            line-height: 1.6; /* Add line-height to help with spacing if links wrap */
+        }
+        .profile-links a {
+            text-decoration: none;
+            color: #007bff; /* Standard link blue */
+            margin: 0 8px; /* Spacing around links */
+            transition: color 0.2s ease;
+            white-space: nowrap; /* Prevent link text/emoji from breaking */
+            display: inline-block; /* Treat links as blocks for spacing */
+        }
+        .profile-links a:hover {
+            color: #0056b3; /* Darker blue on hover */
+        }
+
+
+        /* Thoughts Header - Section Title Style */
+        .thoughts-header {
+            border: none;
+            background-color: transparent;
+            padding: 0; 
+            display: block; 
+            font-size: 1.4em; 
+            font-weight: bold;
+            color: #333;
+            margin-top: 0; 
+            margin-bottom: 25px; 
+            padding-bottom: 8px; 
+            border-bottom: 2px solid #eee; 
+            text-align: left; 
+        }
+
+        /* Thought Box Styling */
+        .thought-box {
+            border: 2px dashed #aaa; 
+            padding: 15px;
+            margin-bottom: 25px; 
+            background-color: #fff;
+        }
+        .thought-header {
+            display: flex; /* Enable flexbox */
+            align-items: center; /* Align items vertically */
+            flex-wrap: wrap; /* Allow wrapping on small screens */
+            gap: 0.5em; /* Add some gap between items */
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            font-size: 0.95em;
+            color: #555; 
+        }
+        .thought-user-img { /* Style for the small user image */
+             width: 25px;
+             height: 25px;
+             border-radius: 50%;
+             object-fit: cover;
+             border: 1px solid #eee;
+             vertical-align: middle; /* Align with text */
+        }
+        /* .thought-header .user-icon { Removed } */
+        .thought-header .user-name {
+            font-weight: bold;
+            color: #333; 
+            margin: 0; /* Reset default margins */
+        }
+         .thought-header .separator {
+             margin: 0 0.2em; /* Small margin around separator */
+         }
+         .thought-header .date-time {
+             color: #666; /* Slightly lighter date */
+             flex-shrink: 0; /* Prevent date shrinking oddly */
+         }
+
+        .thought-content p {
+            margin-top: 0;
+            margin-bottom: 15px;
+            line-height: 1.5; 
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .thought-image {
+            margin-top: 15px; 
+        }
+        /* Container for the clickable image */
+        .thought-image .lightbox-trigger {
+            display: block; /* Make it a block to control width/margins */
+            /* Remove fixed max-width to allow full width */
+            /* max-width: 400px; */ 
+            width: 100%; /* Take full available width */
+            margin: 0 auto; /* Center the block if parent width allows */
+            cursor: pointer;
+            overflow: hidden; 
+            border-radius: 8px; /* Slightly larger radius, like Twitter */
+            border: 1px solid #ddd; /* Slightly darker border */
+            position: relative; /* For potential future overlays if needed */
+        }
+        .thought-image img.thought-img {
+            display: block; 
+            width: 100%; 
+            height: auto; 
+            transition: opacity 0.2s ease-in-out; /* Change hover effect */
+        }
+         .thought-image .lightbox-trigger:hover img.thought-img {
+              /* transform: scale(1.03); */ /* Remove scale, use opacity */
+              opacity: 0.9; 
+         }
+
+        /* Lightbox Overlay */
+        .lightbox-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9); /* Slightly darker */
+            display: none; 
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            padding: 15px; /* Slightly less padding */
+            box-sizing: border-box;
+        }
+        .lightbox-overlay.visible {
+            display: flex; 
+        }
+        .lightbox-content {
+            /* These ensure the container itself doesn't exceed viewport */
+            max-width: calc(100% - 40px); /* Max width considering padding */
+            max-height: calc(100% - 40px); /* Max height considering padding */
+            position: relative;
+            display: flex; /* Use flex to help center image if needed */
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox-content img {
+            display: block;
+            /* These ensure the image scales down to fit the container */
+            max-width: 100%;
+            max-height: 100%;
+            /* Explicitly set width/height to auto */
+            width: auto; 
+            height: auto;
+            object-fit: contain; 
+            border: none; /* Remove border from lightbox image */
+            box-shadow: 0 5px 30px rgba(0,0,0,0.5); /* Adjust shadow */
+        }
+        .lightbox-close {
+            position: absolute;
+            top: -10px; /* Adjust position */
+            right: -10px;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+            color: #000; /* Black 'X' */
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 24px; /* Larger 'X' */
+            font-weight: normal; /* Normal weight */
+            line-height: 28px; 
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: background-color 0.2s ease;
+        }
+        .lightbox-close:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                max-width: 100%;
+            }
+            .profile-content {
+                 align-items: flex-start; 
+            }
+            .profile-img {
+                width: 50px;
+                height: 50px;
+                margin-right: 15px;
+            }
+             .profile-name {
+                 font-size: 1.1em;
+             }
+             .profile-title {
+                 font-size: 0.9em;
+             }
+            .profile-links {
+                font-size: 0.9em;
+                text-align: center; 
+                margin-top: 10px; 
+            }
+            .profile-links a {
+                margin: 2px 5px; /* Add vertical margin if they wrap */
+                display: inline-block; /* Ensure margin applies */
+            }
+
+            .thoughts-header {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+            }
+            .thought-box {
+                padding: 12px;
+                margin-bottom: 20px;
+            }
+             .thought-header {
+                font-size: 0.9em; /* Slightly smaller font for header */
+                gap: 0.4em; /* Reduce gap */
+                padding-bottom: 8px; /* Reduce padding */
+             }
+             .thought-user-img {
+                 width: 20px; /* Even smaller image on mobile */
+                 height: 20px;
+             }
+             /* Optionally hide separator on very small screens if needed */
+             /* .thought-header .separator { display: none; } */
+
+             .thought-image .lightbox-trigger {
+                  /* No change needed, already takes full width */
+                  border-radius: 6px; /* Slightly smaller radius on mobile */
+             }
+
+             .lightbox-overlay {
+                  padding: 10px; /* Less padding on mobile */
+             }
+              .lightbox-content {
+                  max-width: 100%;
+                  max-height: 100%;
+              }
+             .lightbox-close {
+                 top: 5px; 
+                 right: 5px;
+                 width: 28px; /* Slightly smaller */
+                 height: 28px;
+                 font-size: 20px;
+                 line-height: 26px;
+             }
+
+            .pagination {
+                margin-top: 20px;
+                padding-top: 15px;
+                font-size: 0.85em; /* Smaller text on mobile */
+            }
+             .pagination a, .pagination span {
+                 padding: 6px 10px; /* Smaller padding */
+                 margin: 0 2px; /* Less margin */
+             }
+             .pagination span.page-info {
+                 display: none; /* Optionally hide page number on very small screens */
+             }
+        }
+
+        /* Pagination Styling */
+        .pagination {
+            margin-top: 30px; /* Space above pagination */
+            padding-top: 20px; /* Space below last thought */
+            border-top: 1px solid #eee; /* Separator line */
+            text-align: center;
+            display: flex; /* Use flexbox for alignment */
+            justify-content: space-between; /* Space out Prev, Info, Next */
+            align-items: center;
+        }
+        .pagination a, .pagination span {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 0 4px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            color: #007bff;
+            text-decoration: none;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            font-size: 0.9em;
+        }
+        .pagination a:hover {
+            background-color: #eee;
+            color: #0056b3;
+        }
+        .pagination span.disabled {
+            color: #aaa; /* Grey out disabled links/spans */
+            background-color: #f9f9f9;
+            cursor: default;
+            border-color: #eee;
+        }
+        .pagination span.page-info {
+             border: none; /* No border for page info */
+             color: #555;
+             background-color: transparent;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-box">
+    <div class="profile-content">
+        <img src="data/profile.png" alt="Profile Picture" class="profile-img">
+        <div class="profile-details">
+            <div class="profile-name">Illya Gerasymchuk</div>
+            <div class="profile-title">Entrepreneur / Engineer</div>
+        </div>
+    </div>
+    <div class="profile-links">
+        <a href="https://illya.sh" target="_blank">🏠 Homepage</a> &nbsp;&nbsp; <a href="mailto:hello@illya.sh" target="_blank">✉️ Email</a> &nbsp;&nbsp; <a href="https://t.me/illya_gerasymchuk" target="_blank">💬 Telegram</a> &nbsp;&nbsp; <a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a> &nbsp;&nbsp; <a href="https://github.com/iluxonchik" target="_blank">💻 GitHub</a> &nbsp;&nbsp; 
+    </div>
+</div>
+
+        <h2 class="thoughts-header">⬇️ My Thoughts ⬇️</h2>
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-05 15:23</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨 Financial Stress Index (FSI) UPDATE<br><br>👉 as expected, the risk is increasing<br><br>Sustained volatility will drive the rest up</p>
+        <div class="thought-image">
+            <a href="data/images/92bdf671-c313-541f-a770-4564f1b1dfb0.jpg" class="lightbox-trigger"><img src="data/images/92bdf671-c313-541f-a770-4564f1b1dfb0.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-05 14:33</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨 PHYSICAL GOLD RUSH<br><br>🏦 It’s not just Central Banks anymore<br><br>🤯 In the first 4 days of April 2025, over 52K COMEX 100 Gold Futures contracts have been requested for physical delivery<br><br>Only 4 days in & it’s already x2 of January interest<br><br>📈 Physical gold in high demand http</p>
+        <div class="thought-image">
+            <a href="data/images/d11b05a6-6b65-5f4f-882e-e04cc587f822.jpg" class="lightbox-trigger"><img src="data/images/d11b05a6-6b65-5f4f-882e-e04cc587f822.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-05 13:43</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨 Silver Physcial Delivery Demand HIGH<br><br>🌐 CME's COMEX & NYMEX Metal Delivery Notices show a MASSIVE demand for physical silver<br><br>🤯 16.1K futures contract for delivery/physical settlement, up x3 from a year ago<br><br>A.K.A. tariffs effect on silver<br><br>Investors are HOARDING silver http</p>
+        <div class="thought-image">
+            <a href="data/images/b2ea862e-15f6-5c89-967a-f2b12fac2103.jpg" class="lightbox-trigger"><img src="data/images/b2ea862e-15f6-5c89-967a-f2b12fac2103.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-05 00:22</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨🇨🇭 Switzerland 2 year bond yield went negative<br><br>Swiss Frank appreciates against major currencies like #EUR & #USD, so investors accept lower (sometimes even negative!) yields<br><br>Massive demand for #CHF 📈 http</p>
+        <div class="thought-image">
+            <a href="data/images/9d63e001-975c-5594-a1de-28be9d5fb930.jpg" class="lightbox-trigger"><img src="data/images/9d63e001-975c-5594-a1de-28be9d5fb930.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-04 21:31</span>
+    </div>
+    <div class="thought-content">
+        <p>🇷🇺🇪🇺 Russian Ruble vs Euro 🇪🇺🇷🇺<br><br>Past 6 months #RUB up against #EUR by 13%<br><br>🤯 Ruble is up 34% on Euro since January 2025 (YTD)</p>
+        <div class="thought-image">
+            <a href="data/images/7a29ab71-b14f-5315-ae96-4d85d8db403c.jpg" class="lightbox-trigger"><img src="data/images/7a29ab71-b14f-5315-ae96-4d85d8db403c.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-04 20:54</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨Silver back to August 2020 price<br><br>After a tariffs-induced pullback of 15% today, silver is now at start of COVID prices<br><br>🤯 So much inflation that still isn’t priced in <br><br>It will recover. And a lot!</p>
+        <div class="thought-image">
+            <a href="data/images/15bce4d4-da26-5a96-9c1b-080c65de1d2f.jpg" class="lightbox-trigger"><img src="data/images/15bce4d4-da26-5a96-9c1b-080c65de1d2f.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-04 20:19</span>
+    </div>
+    <div class="thought-content">
+        <p>🤖 I asked Grok 3 why silver is down today<br><br>DeepSearch said that this is likely due to a stronger USD<br><br>But #DXY is also down 😂</p>
+        <div class="thought-image">
+            <a href="data/images/c84b17be-4280-5182-8101-886f0d4d7b6c.jpg" class="lightbox-trigger"><img src="data/images/c84b17be-4280-5182-8101-886f0d4d7b6c.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-04 20:07</span>
+    </div>
+    <div class="thought-content">
+        <p>Who’s selling silver? 😭<br><br>📉 CDFs are down 15% on the day 🤯<br><br>I guess it’s a tariffs freebie 🤷‍♀️</p>
+        <div class="thought-image">
+            <a href="data/images/a982949b-2743-56fe-aa56-1be3fd79ec9e.jpg" class="lightbox-trigger"><img src="data/images/a982949b-2743-56fe-aa56-1be3fd79ec9e.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-04 11:48</span>
+    </div>
+    <div class="thought-content">
+        <p>🇨🇳China: announces tariffs on 5% of US exports<br><br>Bitcoin 🫠:</p>
+        <div class="thought-image">
+            <a href="data/images/019a5c8e-bb05-5ee3-af46-8c4101f11702.jpg" class="lightbox-trigger"><img src="data/images/019a5c8e-bb05-5ee3-af46-8c4101f11702.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-04 11:35</span>
+    </div>
+    <div class="thought-content">
+        <p>If you think 🇺🇸USD M2 is bad, look at 🇷🇺Russia's<br><br>In 3 years, Ruble DOUBLED in supply. Up by a 100%<br><br>How come despite this, Ruble maintained its value in FOREX?<br><br>The answer is GOLD, more specifically its expansion in the balance sheet of Central Bank of Russia<br><br>It works 🤷‍♀️</p>
+        <div class="thought-image">
+            <a href="data/images/0919384c-0ba2-5135-8636-6233ea81b7ef.jpg" class="lightbox-trigger"><img src="data/images/0919384c-0ba2-5135-8636-6233ea81b7ef.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-04 11:19</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨🇺🇸USD M2 Money Supply<br><br>⬆️ 790 days to increase M2 by $6.3T<br>⬇️ 550 days to decrease M2 by $1.1T<br>⬆️ 500 days to increase M2 by $1.1T<br><br>⏯️ QE never stopped, it merely paused<br><br>When inflation is blamed on tariffs, keep this in mind</p>
+        <div class="thought-image">
+            <a href="data/images/52ac116e-9221-5c15-89c4-2beb003702e1.jpg" class="lightbox-trigger"><img src="data/images/52ac116e-9221-5c15-89c4-2beb003702e1.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-04 11:05</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨🇺🇸 USD M2 Money Supply is almost back at pre-interest rate increase levels<br><br>That QT didn’t last after all 🤷‍♀️</p>
+        <div class="thought-image">
+            <a href="data/images/bb842943-144a-5c99-b2d3-35f048a15812.jpg" class="lightbox-trigger"><img src="data/images/bb842943-144a-5c99-b2d3-35f048a15812.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-03 19:08</span>
+    </div>
+    <div class="thought-content">
+        <p>Remember: FIAT currencies come & go<br><br>✨ Only Gold remains ✨ http</p>
+        <div class="thought-image">
+            <a href="data/images/592de67e-0292-5b18-82ba-e6adae8a92a2.jpg" class="lightbox-trigger"><img src="data/images/592de67e-0292-5b18-82ba-e6adae8a92a2.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-03 18:33</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨 Financial Stress Index Tariffs Update<br><br>Trump/US tariffs so far:<br>⬇️ Equity valuation down<br>⬆️ Volatility up<br>⬆️ Safe assets up<br>⬆️ Credit spread up<br><br>📈 A perfect setup for the increase of OFR's Financial Stress Index<br><br>Let’s see - it’s updated with a 2 day delay</p>
+        <div class="thought-image">
+            <a href="data/images/0ca005d4-42c7-5013-9f5d-ce6b36a739de.jpg" class="lightbox-trigger"><img src="data/images/0ca005d4-42c7-5013-9f5d-ce6b36a739de.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-03 17:28</span>
+    </div>
+    <div class="thought-content">
+        <p>🇪🇺 The best countermeasure that EU can take is swapping US securities for Gold<br><br>Gold is inversely correlated with USD. Such a decision can be done today and it will:<br><br>1️⃣be a response to the US<br>2️⃣increase value of EUR<br>3️⃣minimize consumer impact<br><br>Anything else will hurt the economy</p>
+        <div class="thought-image">
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-03 13:31</span>
+    </div>
+    <div class="thought-content">
+        <p>🤯 USD/EUR down 3 cents overnight<br><br>🇺🇸 An immediate response to Trump/USA import tariffs<br><br>This is Bitcoin-level volatility in FOREX<br><br>Volatility is a measure of risk. What does this mean for the US Dollar?</p>
+        <div class="thought-image">
+            <a href="data/images/1ee2207d-cd67-5ebb-bb69-de1991cf91a7.jpg" class="lightbox-trigger"><img src="data/images/1ee2207d-cd67-5ebb-bb69-de1991cf91a7.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-02 23:49</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨 Bitcoin Reacts To US Tariffs:<br><br>As expected, a massive BTC sell-off post Trump's tariffs announcement<br><br>The price peaked during the speech, and then dumped down more than 6% so far + US dollar index is down<br><br>A move away from riskier assets & USD into Gold & foreign currencies https://</p>
+        <div class="thought-image">
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-02 23:04</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨 🇷🇺🇨🇳🇪🇺🇯🇵 reacting to US tariffs<br><br>The initial FOREX response to tariffs is a net outflow from #USD<br><br>US dollar fell against major currencies. The Euro fell against both the Chinese Yuan/renminbi & the Russian Ruble<br><br>Interesting, but expected having #RUB & #Yuan gain from this https://</p>
+        <div class="thought-image">
+            <a href="data/images/44d7079b-9203-5c9d-a193-9d92e732ce57.jpg" class="lightbox-trigger"><img src="data/images/44d7079b-9203-5c9d-a193-9d92e732ce57.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-02 21:56</span>
+    </div>
+    <div class="thought-content">
+        <p>🔴 $BTC, $DXY & $XAU during Trump's tariffs speech<br><br>Interesting to observe the negative correlation between Bitcoin & US Dollar Index<br><br>Gold wasn’t clearly correlated with either. This makes sense - the tariffs lead to uncertainty regarding the reserve currency & central bank… https://t.co</p>
+        <div class="thought-image">
+            <a href="data/images/c21a113c-ba39-5fa4-a9af-d657c25fea09.jpg" class="lightbox-trigger"><img src="data/images/c21a113c-ba39-5fa4-a9af-d657c25fea09.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-02 18:00</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨 JUST IN: $87K Bitcoin<br><br>This is just a pre-tariffs announcements pump that will sell off once Trump speaks in a few hours, right? 😁</p>
+        <div class="thought-image">
+            <a href="data/images/71ee351e-e5c2-5280-a3a3-82e55fddd206.jpg" class="lightbox-trigger"><img src="data/images/71ee351e-e5c2-5280-a3a3-82e55fddd206.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+        
+        <nav class="pagination"><a href="index.html" class="newer">← Newer</a><span class="page-info">Page 2 of 7</span><a href="5.html" class="older">Older →</a></nav>
+    </div>
+
+    <!-- Lightbox Structure (Initially Hidden) -->
+    <div id="lightbox" class="lightbox-overlay">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close">&times;</button>
+            <img src="" alt="Lightbox image">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = lightbox.querySelector('img');
+            const lightboxClose = lightbox.querySelector('.lightbox-close');
+            const triggers = document.querySelectorAll('.lightbox-trigger');
+
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent default link behavior
+                    const imgSrc = trigger.getAttribute('href');
+                    lightboxImg.setAttribute('src', imgSrc);
+                    lightbox.classList.add('visible');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling background
+                });
+            });
+
+            function closeLightbox() {
+                lightbox.classList.remove('visible');
+                lightboxImg.setAttribute('src', ''); // Clear image src
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+
+            // Close on button click
+            lightboxClose.addEventListener('click', closeLightbox);
+
+            // Close on clicking overlay background
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) { // Only close if overlay itself is clicked
+                    closeLightbox();
+                }
+            });
+
+            // Close on Escape key press
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && lightbox.classList.contains('visible')) {
+                    closeLightbox();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
