@@ -158,25 +158,26 @@
         }
         /* Container for the clickable image */
         .thought-image .lightbox-trigger {
-            display: block; /* Make it a block to control width/margins */
-            /* Remove fixed max-width to allow full width */
-            /* max-width: 400px; */ 
-            width: 100%; /* Take full available width */
-            margin: 0 auto; /* Center the block if parent width allows */
+            display: block;
+            /* NEW: Add max-width for desktop consistency */
+            max-width: 550px;  /* Adjust as needed, provides consistency */
+            width: 100%; /* Still allows it to shrink */
+            /* Center the image container */
+            margin-left: auto;
+            margin-right: auto;
             cursor: pointer;
-            overflow: hidden; 
-            border-radius: 8px; /* Slightly larger radius, like Twitter */
+            overflow: hidden;
+            border-radius: 8px;
             border: 1px solid #ddd; /* Slightly darker border */
-            position: relative; /* For potential future overlays if needed */
+            position: relative;
         }
         .thought-image img.thought-img {
             display: block; 
             width: 100%; 
             height: auto; 
-            transition: opacity 0.2s ease-in-out; /* Change hover effect */
+            transition: opacity 0.2s ease-in-out; 
         }
          .thought-image .lightbox-trigger:hover img.thought-img {
-              /* transform: scale(1.03); */ /* Remove scale, use opacity */
               opacity: 0.9; 
          }
 
@@ -187,51 +188,53 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.9); /* Slightly darker */
-            display: none; 
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            padding: 15px; /* Slightly less padding */
+            /* Increased padding for margins around the maximized image */
+            padding: 40px;
             box-sizing: border-box;
         }
         .lightbox-overlay.visible {
             display: flex; 
         }
         .lightbox-content {
-            /* These ensure the container itself doesn't exceed viewport */
-            max-width: calc(100% - 40px); /* Max width considering padding */
-            max-height: calc(100% - 40px); /* Max height considering padding */
+            /* Container for the image, constrained by viewport padding */
+            /* Remove max-width/max-height, rely on parent padding */
             position: relative;
-            display: flex; /* Use flex to help center image if needed */
+            display: flex;
             justify-content: center;
             align-items: center;
+            /* Ensure the container itself fills the padded space */
+            width: 100%;
+            height: 100%;
         }
         .lightbox-content img {
+            /* Image itself scales down to fit container */
             display: block;
-            /* These ensure the image scales down to fit the container */
-            max-width: 100%;
-            max-height: 100%;
-            /* Explicitly set width/height to auto */
-            width: auto; 
+            max-width: 100%; /* Fit container width (respecting padding) */
+            max-height: 100%; /* Fit container height (respecting padding) */
+            width: auto;
             height: auto;
-            object-fit: contain; 
-            border: none; /* Remove border from lightbox image */
-            box-shadow: 0 5px 30px rgba(0,0,0,0.5); /* Adjust shadow */
+            object-fit: contain;
+            border: none;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.5);
         }
         .lightbox-close {
             position: absolute;
-            top: -10px; /* Adjust position */
+            top: -10px;
             right: -10px;
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
-            color: #000; /* Black 'X' */
+            background: rgba(255, 255, 255, 0.8);
+            color: #000;
             border: none;
             border-radius: 50%;
             width: 30px;
             height: 30px;
-            font-size: 24px; /* Larger 'X' */
-            font-weight: normal; /* Normal weight */
-            line-height: 28px; 
+            font-size: 24px;
+            font-weight: normal;
+            line-height: 28px;
             text-align: center;
             cursor: pointer;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -295,24 +298,20 @@
              /* .thought-header .separator { display: none; } */
 
              .thought-image .lightbox-trigger {
-                  /* No change needed, already takes full width */
-                  border-radius: 6px; /* Slightly smaller radius on mobile */
+                  /* Remove max-width on mobile to allow full width */
+                  max-width: 100%; 
+                  border-radius: 6px; 
              }
 
-             .lightbox-overlay {
-                  padding: 10px; /* Less padding on mobile */
-             }
-              .lightbox-content {
-                  max-width: 100%;
-                  max-height: 100%;
+             .lightbox-overlay { padding: 10px; }
+             .lightbox-content {
+                  /* Adjust max size slightly for smaller padding */
+                  max-width: calc(100vw - 20px);
+                  max-height: calc(100vh - 20px);
               }
              .lightbox-close {
-                 top: 5px; 
-                 right: 5px;
-                 width: 28px; /* Slightly smaller */
-                 height: 28px;
-                 font-size: 20px;
-                 line-height: 26px;
+                 top: 5px; right: 5px; width: 28px; height: 28px;
+                 font-size: 20px; line-height: 26px;
              }
 
             .pagination {
@@ -392,7 +391,13 @@
         <span class="date-time">2025-03-21 14:45</span>
     </div>
     <div class="thought-content">
-        <p>Over 10 years the Russian Central Bank has increased gold holdings by x4.5<br><br>🇷🇺 Gold is now 35% of all international reserves held by Russia 🤯<br><br>🇺🇸 Comparatively, for USA the number is 5%<br><br>This is why Russia and Ruble have been so resilient to sanctions</p>
+        <p>Over 10 years the Russian Central Bank has increased gold holdings by x4.5
+
+🇷🇺 Gold is now 35% of all international reserves held by Russia 🤯
+
+🇺🇸 Comparatively, for USA the number is 5%
+
+This is why Russia and Ruble have been so resilient to sanctions</p>
         <div class="thought-image">
             <a href="data/images/367869a2-39a6-5c2b-85d8-f0b9153553bd.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/367869a2-39a6-5c2b-85d8-f0b9153553bd.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -407,7 +412,11 @@
         <span class="date-time">2025-03-16 18:49</span>
     </div>
     <div class="thought-content">
-        <p>Just found GUN, already prototyping<br><br>It enables a decentralized, reactive, real-time, shared graph layer allowing you to build dApps right in the browser<br><br>Every visitor/user of your web app becomes a peer in the network of your application. The peers can communicate events &…</p>
+        <p>Just found GUN, already prototyping
+
+It enables a decentralized, reactive, real-time, shared graph layer allowing you to build dApps right in the browser
+
+Every visitor/user of your web app becomes a peer in the network of your application. The peers can communicate events &…</p>
         <div class="thought-image">
             
         </div>
@@ -422,7 +431,9 @@
         <span class="date-time">2025-03-09 23:42</span>
     </div>
     <div class="thought-content">
-        <p>Oh btw, this was also about option pricing<br><br>These bonds acted as synthetic call options, which were priced below the market value of calls on $MSTR at the time</p>
+        <p>Oh btw, this was also about option pricing
+
+These bonds acted as synthetic call options, which were priced below the market value of calls on $MSTR at the time</p>
         <div class="thought-image">
             
         </div>
@@ -437,7 +448,9 @@
         <span class="date-time">2025-02-27 19:43</span>
     </div>
     <div class="thought-content">
-        <p>Yeah crypto & stocks is fun, but have you tried orange juice futures? 😂<br><br>Almost 50% down since December 🤨 http</p>
+        <p>Yeah crypto & stocks is fun, but have you tried orange juice futures? 😂
+
+Almost 50% down since December 🤨 http</p>
         <div class="thought-image">
             <a href="data/images/3aa4121d-7fd6-5618-a1bd-47be318c8b5b.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/3aa4121d-7fd6-5618-a1bd-47be318c8b5b.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -452,7 +465,9 @@
         <span class="date-time">2025-02-12 15:29</span>
     </div>
     <div class="thought-content">
-        <p>I’m working on an Agent and was debugging why the responses from the LLM come as null/empty<br><br>Turns out function calling is currently broken on DeepSeek ☹️</p>
+        <p>I’m working on an Agent and was debugging why the responses from the LLM come as null/empty
+
+Turns out function calling is currently broken on DeepSeek ☹️</p>
         <div class="thought-image">
             <a href="data/images/cf04bb57-fece-5e28-bb10-b3041387d5c4.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/cf04bb57-fece-5e28-bb10-b3041387d5c4.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -467,7 +482,11 @@
         <span class="date-time">2025-02-03 15:09</span>
     </div>
     <div class="thought-content">
-        <p>🤯 Think about all of those US market outflows due to DeepSeek, Qwen & Co.<br><br>$NVDA's & other AI-related stock crash wasn’t just about cheaper AI-compute. The outflow also represents funds that may be potentially invested in the Chinese market<br><br>This point is often omitted 🤫 https://</p>
+        <p>🤯 Think about all of those US market outflows due to DeepSeek, Qwen & Co.
+
+$NVDA's & other AI-related stock crash wasn’t just about cheaper AI-compute. The outflow also represents funds that may be potentially invested in the Chinese market
+
+This point is often omitted 🤫 https://</p>
         <div class="thought-image">
             <a href="data/images/0d361c6b-b67e-5376-af0b-0b40ed1419dd.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/0d361c6b-b67e-5376-af0b-0b40ed1419dd.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -497,7 +516,11 @@
         <span class="date-time">2024-12-31 17:12</span>
     </div>
     <div class="thought-content">
-        <p>Are you building DeFi in the EU? Here’s what you need to know ⬇️<br><br>At the time of conceptualizing this “liquid futures protocol” I didn’t even know where to start with regard to its legal compliance<br><br>A few days ago I finalized a paper exploring how one can legally launch on-chain…</p>
+        <p>Are you building DeFi in the EU? Here’s what you need to know ⬇️
+
+At the time of conceptualizing this “liquid futures protocol” I didn’t even know where to start with regard to its legal compliance
+
+A few days ago I finalized a paper exploring how one can legally launch on-chain…</p>
         <div class="thought-image">
             <a href="data/images/76e0ce66-a227-5d67-aba9-8785602e51e4.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/76e0ce66-a227-5d67-aba9-8785602e51e4.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -512,7 +535,11 @@
         <span class="date-time">2024-12-25 18:44</span>
     </div>
     <div class="thought-content">
-        <p>🇪🇺 The future of Web3 & DeFi in the EU 🇪🇺<br><br>Legal compliance is fundamental for wide adoption of Web3 & DeFi. While security audits of DeFi protocols are a common practice, the same is not true for regulatory compliance audits<br><br>All investment services in the EU, including those… https://</p>
+        <p>🇪🇺 The future of Web3 & DeFi in the EU 🇪🇺
+
+Legal compliance is fundamental for wide adoption of Web3 & DeFi. While security audits of DeFi protocols are a common practice, the same is not true for regulatory compliance audits
+
+All investment services in the EU, including those… https://</p>
         <div class="thought-image">
             <a href="data/images/d0afdf4b-05de-5412-94a5-0089e766d268.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/d0afdf4b-05de-5412-94a5-0089e766d268.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -527,7 +554,11 @@
         <span class="date-time">2024-12-14 18:29</span>
     </div>
     <div class="thought-content">
-        <p>🚨JUST IN: Quantum Computer Hacked #Bitcoin<br><br>Satoshi Nakamoto has been suspiciously quiet since the news broke out 🤫<br><br>According to experts on social media, the recent advancements in quantum computing have just made Bitcoin obsolete. Of course, neither the market, nor…</p>
+        <p>🚨JUST IN: Quantum Computer Hacked #Bitcoin
+
+Satoshi Nakamoto has been suspiciously quiet since the news broke out 🤫
+
+According to experts on social media, the recent advancements in quantum computing have just made Bitcoin obsolete. Of course, neither the market, nor…</p>
         <div class="thought-image">
             <a href="data/images/e0c5dabe-72ad-5220-a84d-33b9ab516552.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/e0c5dabe-72ad-5220-a84d-33b9ab516552.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -542,7 +573,11 @@
         <span class="date-time">2024-12-02 18:34</span>
     </div>
     <div class="thought-content">
-        <p>Bad news for #USD 👎<br><br>The value of a currency is a direct reflection of the organic demand for it. Sanctions will decrease the demand for US Dollar, via disincentives <br><br>Plus, it’s the US consumer that will be paying for the tariffs, not the BRICS countries 🤷‍♀️</p>
+        <p>Bad news for #USD 👎
+
+The value of a currency is a direct reflection of the organic demand for it. Sanctions will decrease the demand for US Dollar, via disincentives 
+
+Plus, it’s the US consumer that will be paying for the tariffs, not the BRICS countries 🤷‍♀️</p>
         <div class="thought-image">
             
         </div>
@@ -557,7 +592,14 @@
         <span class="date-time">2024-11-24 17:06</span>
     </div>
     <div class="thought-content">
-        <p>👉 Sold at par<br>👉 0% coupon<br>👉 Unsecured debt<br>👉 Option to convert to equity at $672/share<br><br>For the loan of the principal you’re getting an option to buy $MSRT stock at $672 in 2029 - 60% higher than the current share price of ≈ $420<br><br>Why not just buy $BTC directly? 🤷‍♀️</p>
+        <p>👉 Sold at par
+👉 0% coupon
+👉 Unsecured debt
+👉 Option to convert to equity at $672/share
+
+For the loan of the principal you’re getting an option to buy $MSRT stock at $672 in 2029 - 60% higher than the current share price of ≈ $420
+
+Why not just buy $BTC directly? 🤷‍♀️</p>
         <div class="thought-image">
             
         </div>
@@ -572,7 +614,16 @@
         <span class="date-time">2024-11-21 14:27</span>
     </div>
     <div class="thought-content">
-        <p>Very interesting alternative USD market<br><br>Usual flow:<br>🇺🇸 buys oil from 🇸🇦, 🇸🇦 reinvest excess back into UST<br><br>New flow:<br>🇸🇦 reinvests excess into 🇨🇳-issued USD bonds<br><br>Result:<br>USD flows to 🇨🇳, instead of 🇺🇸, as the USD-denominated debt (bonds) are issued directly by 🇨🇳</p>
+        <p>Very interesting alternative USD market
+
+Usual flow:
+🇺🇸 buys oil from 🇸🇦, 🇸🇦 reinvest excess back into UST
+
+New flow:
+🇸🇦 reinvests excess into 🇨🇳-issued USD bonds
+
+Result:
+USD flows to 🇨🇳, instead of 🇺🇸, as the USD-denominated debt (bonds) are issued directly by 🇨🇳</p>
         <div class="thought-image">
             
         </div>
@@ -587,7 +638,11 @@
         <span class="date-time">2024-11-15 12:15</span>
     </div>
     <div class="thought-content">
-        <p>Part of Bitcoin's value derives from the total electricity cost of maintaining a decentralized, trustless, immutable ledger of transactions for >15 years<br><br>20% of GDP is spent on financial services. Blockchains remove intermediaries & improve efficiency<br><br>It’s apples to oranges 🤷‍♀️ https:/</p>
+        <p>Part of Bitcoin's value derives from the total electricity cost of maintaining a decentralized, trustless, immutable ledger of transactions for >15 years
+
+20% of GDP is spent on financial services. Blockchains remove intermediaries & improve efficiency
+
+It’s apples to oranges 🤷‍♀️ https:/</p>
         <div class="thought-image">
             
         </div>
@@ -602,7 +657,13 @@
         <span class="date-time">2024-11-05 23:36</span>
     </div>
     <div class="thought-content">
-        <p>🚀🎧 Podcast covering #BRICS Currency on the blockchain is out!<br><br>🔗🔈: <br><br>🤖 Smart contracts & #DeFi are an ideal match for #BRICSPay showcased at #BRICS2024 summit. Podcast & article exply why<br><br>🎤 AI Audio created with NotebookLM  https://</p>
+        <p>🚀🎧 Podcast covering #BRICS Currency on the blockchain is out!
+
+🔗🔈: 
+
+🤖 Smart contracts & #DeFi are an ideal match for #BRICSPay showcased at #BRICS2024 summit. Podcast & article exply why
+
+🎤 AI Audio created with NotebookLM  https://</p>
         <div class="thought-image">
             <a href="data/images/a778ee08-5c4d-5fa5-a552-172c1163f16e.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/a778ee08-5c4d-5fa5-a552-172c1163f16e.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -617,7 +678,11 @@
         <span class="date-time">2024-10-27 19:40</span>
     </div>
     <div class="thought-content">
-        <p>🇯🇵🎧 Added an audio version of the article<br><br>It’s an AI-generated podcast of the article using NotebookLM audio overview with custom sources & instructions<br><br>🔗   http</p>
+        <p>🇯🇵🎧 Added an audio version of the article
+
+It’s an AI-generated podcast of the article using NotebookLM audio overview with custom sources & instructions
+
+🔗   http</p>
         <div class="thought-image">
             <a href="data/images/144472f7-ef89-5089-bd5e-6b1e83936881.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/144472f7-ef89-5089-bd5e-6b1e83936881.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -632,7 +697,13 @@
         <span class="date-time">2024-10-27 17:50</span>
     </div>
     <div class="thought-content">
-        <p>1/10 🇯🇵 Ever wondered how Japan protects deposits when banks fail?<br><br>🤯 Their deposit insurance system handled 180+ financial institution failures, including the massive 90's banking crisis<br><br>👉 Here's how Japan's ¥10M deposit guarantee scheme works: <br><br>🧵</p>
+        <p>1/10 🇯🇵 Ever wondered how Japan protects deposits when banks fail?
+
+🤯 Their deposit insurance system handled 180+ financial institution failures, including the massive 90's banking crisis
+
+👉 Here's how Japan's ¥10M deposit guarantee scheme works: 
+
+🧵</p>
         <div class="thought-image">
             
         </div>
@@ -662,7 +733,13 @@
         <span class="date-time">2024-10-19 14:52</span>
     </div>
     <div class="thought-content">
-        <p>👀 Tried out the BRICS Pay demo. Gold/#XAU is one of the supported currencies (the only real money in the list!)<br><br>🌏 To be supported cross-border, within every member nation<br><br>💳 You can use VISA/Mastercard to load up your account<br><br>🇪🇺We urgently need an akin system in the #EU</p>
+        <p>👀 Tried out the BRICS Pay demo. Gold/#XAU is one of the supported currencies (the only real money in the list!)
+
+🌏 To be supported cross-border, within every member nation
+
+💳 You can use VISA/Mastercard to load up your account
+
+🇪🇺We urgently need an akin system in the #EU</p>
         <div class="thought-image">
             <a href="data/images/02b25834-cd45-539d-9202-1e44711d05cc.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/02b25834-cd45-539d-9202-1e44711d05cc.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -707,7 +784,13 @@
         <span class="date-time">2024-06-23 18:28</span>
     </div>
     <div class="thought-content">
-        <p>If you think you understand futures contracts, you must learn bond futures<br><br>Besides some differences, like dynamic settlement price, you will quickly realize how much #DeFi improves over #TradFi<br><br>The future of finance is on-chain<br><br>Simplicity, transparency & efficiency http</p>
+        <p>If you think you understand futures contracts, you must learn bond futures
+
+Besides some differences, like dynamic settlement price, you will quickly realize how much #DeFi improves over #TradFi
+
+The future of finance is on-chain
+
+Simplicity, transparency & efficiency http</p>
         <div class="thought-image">
             <a href="data/images/c6c9a57d-3c51-52a1-8322-034de9b094e8.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/c6c9a57d-3c51-52a1-8322-034de9b094e8.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -722,7 +805,12 @@
         <span class="date-time">2024-06-12 20:16</span>
     </div>
     <div class="thought-content">
-        <p>📚 Learning how derivatives are priced will make you realize that all the models are based on financing with an interest rate (IR). Future value of a derivative is discounted with an IR.<br><br>Where does this extra money come from? <br><br>🔎 Hint: <br>you may see it manifest as #inflation 😉</p>
+        <p>📚 Learning how derivatives are priced will make you realize that all the models are based on financing with an interest rate (IR). Future value of a derivative is discounted with an IR.
+
+Where does this extra money come from? 
+
+🔎 Hint: 
+you may see it manifest as #inflation 😉</p>
         <div class="thought-image">
             <a href="data/images/dcd8a94b-0c62-564b-b34c-ac92f1870593.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/dcd8a94b-0c62-564b-b34c-ac92f1870593.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -737,7 +825,9 @@
         <span class="date-time">2024-06-10 14:08</span>
     </div>
     <div class="thought-content">
-        <p>Forward rates compute the borrowing cost of money for a future period. They're derived from the existing interest rates in the market. Useful to compare investments, arbitrage on lend/borrow positions and even predict future inflation value<br><br>Here’s the concept visualized 👇</p>
+        <p>Forward rates compute the borrowing cost of money for a future period. They're derived from the existing interest rates in the market. Useful to compare investments, arbitrage on lend/borrow positions and even predict future inflation value
+
+Here’s the concept visualized 👇</p>
         <div class="thought-image">
             <a href="data/images/d0ad3514-0f42-5e2b-9f46-9ed5b25f0827.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/d0ad3514-0f42-5e2b-9f46-9ed5b25f0827.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -752,7 +842,11 @@
         <span class="date-time">2024-06-07 12:18</span>
     </div>
     <div class="thought-content">
-        <p>And the first rate cut comes from the European Central Bank (#ECB)<br><br>Federal Reserve (#FED) coming up next<br><br>A few days ago I tweeted about how a rate cut is imminent, as suggested by the Treasury Bond rates falling below the overnight exchange rate👇</p>
+        <p>And the first rate cut comes from the European Central Bank (#ECB)
+
+Federal Reserve (#FED) coming up next
+
+A few days ago I tweeted about how a rate cut is imminent, as suggested by the Treasury Bond rates falling below the overnight exchange rate👇</p>
         <div class="thought-image">
             
         </div>

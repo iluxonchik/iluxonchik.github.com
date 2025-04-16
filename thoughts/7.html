@@ -158,25 +158,26 @@
         }
         /* Container for the clickable image */
         .thought-image .lightbox-trigger {
-            display: block; /* Make it a block to control width/margins */
-            /* Remove fixed max-width to allow full width */
-            /* max-width: 400px; */ 
-            width: 100%; /* Take full available width */
-            margin: 0 auto; /* Center the block if parent width allows */
+            display: block;
+            /* NEW: Add max-width for desktop consistency */
+            max-width: 550px;  /* Adjust as needed, provides consistency */
+            width: 100%; /* Still allows it to shrink */
+            /* Center the image container */
+            margin-left: auto;
+            margin-right: auto;
             cursor: pointer;
-            overflow: hidden; 
-            border-radius: 8px; /* Slightly larger radius, like Twitter */
+            overflow: hidden;
+            border-radius: 8px;
             border: 1px solid #ddd; /* Slightly darker border */
-            position: relative; /* For potential future overlays if needed */
+            position: relative;
         }
         .thought-image img.thought-img {
             display: block; 
             width: 100%; 
             height: auto; 
-            transition: opacity 0.2s ease-in-out; /* Change hover effect */
+            transition: opacity 0.2s ease-in-out; 
         }
          .thought-image .lightbox-trigger:hover img.thought-img {
-              /* transform: scale(1.03); */ /* Remove scale, use opacity */
               opacity: 0.9; 
          }
 
@@ -187,51 +188,53 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.9); /* Slightly darker */
-            display: none; 
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            padding: 15px; /* Slightly less padding */
+            /* Increased padding for margins around the maximized image */
+            padding: 40px;
             box-sizing: border-box;
         }
         .lightbox-overlay.visible {
             display: flex; 
         }
         .lightbox-content {
-            /* These ensure the container itself doesn't exceed viewport */
-            max-width: calc(100% - 40px); /* Max width considering padding */
-            max-height: calc(100% - 40px); /* Max height considering padding */
+            /* Container for the image, constrained by viewport padding */
+            /* Remove max-width/max-height, rely on parent padding */
             position: relative;
-            display: flex; /* Use flex to help center image if needed */
+            display: flex;
             justify-content: center;
             align-items: center;
+            /* Ensure the container itself fills the padded space */
+            width: 100%;
+            height: 100%;
         }
         .lightbox-content img {
+            /* Image itself scales down to fit container */
             display: block;
-            /* These ensure the image scales down to fit the container */
-            max-width: 100%;
-            max-height: 100%;
-            /* Explicitly set width/height to auto */
-            width: auto; 
+            max-width: 100%; /* Fit container width (respecting padding) */
+            max-height: 100%; /* Fit container height (respecting padding) */
+            width: auto;
             height: auto;
-            object-fit: contain; 
-            border: none; /* Remove border from lightbox image */
-            box-shadow: 0 5px 30px rgba(0,0,0,0.5); /* Adjust shadow */
+            object-fit: contain;
+            border: none;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.5);
         }
         .lightbox-close {
             position: absolute;
-            top: -10px; /* Adjust position */
+            top: -10px;
             right: -10px;
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
-            color: #000; /* Black 'X' */
+            background: rgba(255, 255, 255, 0.8);
+            color: #000;
             border: none;
             border-radius: 50%;
             width: 30px;
             height: 30px;
-            font-size: 24px; /* Larger 'X' */
-            font-weight: normal; /* Normal weight */
-            line-height: 28px; 
+            font-size: 24px;
+            font-weight: normal;
+            line-height: 28px;
             text-align: center;
             cursor: pointer;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -295,24 +298,20 @@
              /* .thought-header .separator { display: none; } */
 
              .thought-image .lightbox-trigger {
-                  /* No change needed, already takes full width */
-                  border-radius: 6px; /* Slightly smaller radius on mobile */
+                  /* Remove max-width on mobile to allow full width */
+                  max-width: 100%; 
+                  border-radius: 6px; 
              }
 
-             .lightbox-overlay {
-                  padding: 10px; /* Less padding on mobile */
-             }
-              .lightbox-content {
-                  max-width: 100%;
-                  max-height: 100%;
+             .lightbox-overlay { padding: 10px; }
+             .lightbox-content {
+                  /* Adjust max size slightly for smaller padding */
+                  max-width: calc(100vw - 20px);
+                  max-height: calc(100vh - 20px);
               }
              .lightbox-close {
-                 top: 5px; 
-                 right: 5px;
-                 width: 28px; /* Slightly smaller */
-                 height: 28px;
-                 font-size: 20px;
-                 line-height: 26px;
+                 top: 5px; right: 5px; width: 28px; height: 28px;
+                 font-size: 20px; line-height: 26px;
              }
 
             .pagination {
@@ -392,7 +391,9 @@
         <span class="date-time">2025-04-07 19:21</span>
     </div>
     <div class="thought-content">
-        <p>TIL that you can pay taxes on vested securities/equities directly with that security<br><br>Code F on Form 4</p>
+        <p>TIL that you can pay taxes on vested securities/equities directly with that security
+
+Code F on Form 4</p>
         <div class="thought-image">
             <a href="data/images/a9880dd0-da01-5a57-993a-7db51de05673.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/a9880dd0-da01-5a57-993a-7db51de05673.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -407,7 +408,11 @@
         <span class="date-time">2025-04-07 19:15</span>
     </div>
     <div class="thought-content">
-        <p>Insider Trading Before Tariffs<br><br>If you’re curious about how insiders were buying/selling their equity positions, head over to @SECGov's EDGAR & check for Form 4 & 3 filings<br><br>Here’s the latest one from $AAPL</p>
+        <p>Insider Trading Before Tariffs
+
+If you’re curious about how insiders were buying/selling their equity positions, head over to @SECGov's EDGAR & check for Form 4 & 3 filings
+
+Here’s the latest one from $AAPL</p>
         <div class="thought-image">
             <a href="data/images/55daee73-ba3a-5d8e-9bff-ac34aa867d8f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/55daee73-ba3a-5d8e-9bff-ac34aa867d8f.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -437,24 +442,11 @@
         <span class="date-time">2025-04-07 03:15</span>
     </div>
     <div class="thought-content">
-        <p>Gold is down 6% from its ATH<br><br>Still better than equities, crypto & silver</p>
+        <p>Gold is down 6% from its ATH
+
+Still better than equities, crypto & silver</p>
         <div class="thought-image">
             <a href="data/images/9afb6291-ca02-569e-92e3-0dd5c97de835.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/9afb6291-ca02-569e-92e3-0dd5c97de835.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-07 01:59</span>
-    </div>
-    <div class="thought-content">
-        <p>BREAKING: S&P 500 Fell to 2021 Prices<br><br>#SPY futures / #US500 is down almost 5% since open<br><br>≈4 years of gains have been lost</p>
-        <div class="thought-image">
-            <a href="data/images/dfda5063-360c-537a-9e2f-3982b80f481e.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/dfda5063-360c-537a-9e2f-3982b80f481e.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
     </div>
 </div>
@@ -467,7 +459,11 @@
         <span class="date-time">2025-04-07 01:54</span>
     </div>
     <div class="thought-content">
-        <p>🚨BREAKING: S&P 500 Fell to 2021 Prices<br><br>#SPX futures / #US500 is down almost 5% since open<br><br>≈4 years of gains have been lost http</p>
+        <p>🚨BREAKING: S&P 500 Fell to 2021 Prices
+
+#SPX futures / #US500 is down almost 5% since open
+
+≈4 years of gains have been lost</p>
         <div class="thought-image">
             <a href="data/images/f1b7473f-b19d-58cb-a22c-7cf74874d23f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/f1b7473f-b19d-58cb-a22c-7cf74874d23f.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -497,7 +493,11 @@
         <span class="date-time">2025-04-06 19:34</span>
     </div>
     <div class="thought-content">
-        <p>🇷🇺 #MOEX down 22% since Feb<br><br>Expect it to bounce back very soon - as capital is moved away from USA & USD into alt currencies, which includes Ruble<br><br>Once the sanctions against Russia are dropped - that’s where Moscow Exchange Index will skyrocket 📈 http</p>
+        <p>🇷🇺 #MOEX down 22% since Feb
+
+Expect it to bounce back very soon - as capital is moved away from USA & USD into alt currencies, which includes Ruble
+
+Once the sanctions against Russia are dropped - that’s where Moscow Exchange Index will skyrocket 📈 http</p>
         <div class="thought-image">
             <a href="data/images/1e89aac7-a95f-505e-9d92-e265d199d521.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/1e89aac7-a95f-505e-9d92-e265d199d521.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -512,7 +512,11 @@
         <span class="date-time">2025-04-06 19:22</span>
     </div>
     <div class="thought-content">
-        <p>🚨 US Yield Curve UPDATE<br><br>Despite the falling $DXY, the yield curve is better (less inverted) than a 1y ago, but worse than 1 month ago<br><br>Expect a steeper inversion soon</p>
+        <p>🚨 US Yield Curve UPDATE
+
+Despite the falling $DXY, the yield curve is better (less inverted) than a 1y ago, but worse than 1 month ago
+
+Expect a steeper inversion soon</p>
         <div class="thought-image">
             <a href="data/images/a1cf110c-57dd-5419-b8e1-83c2bfa481bf.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/a1cf110c-57dd-5419-b8e1-83c2bfa481bf.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -527,7 +531,13 @@
         <span class="date-time">2025-04-06 19:04</span>
     </div>
     <div class="thought-content">
-        <p>This tariffs-induced volatility is the dream of every trader<br><br>Clearing houses are banking from fees & comissions<br><br>Finally, risky-assets/DeFi/crypto volatility coming to your favorite regulated exchange<br><br>What’s even the point of all the regulations in TradFi?</p>
+        <p>This tariffs-induced volatility is the dream of every trader
+
+Clearing houses are banking from fees & comissions
+
+Finally, risky-assets/DeFi/crypto volatility coming to your favorite regulated exchange
+
+What’s even the point of all the regulations in TradFi?</p>
         <div class="thought-image">
             
         </div>
@@ -542,7 +552,9 @@
         <span class="date-time">2025-04-06 18:54</span>
     </div>
     <div class="thought-content">
-        <p>🇮🇳 Indian Rupee's M2 supply makes it even worse<br><br>Net importer + currency inflation is a recipe for depreciation and external dependence</p>
+        <p>🇮🇳 Indian Rupee's M2 supply makes it even worse
+
+Net importer + currency inflation is a recipe for depreciation and external dependence</p>
         <div class="thought-image">
             <a href="data/images/e64f63af-3fec-5a7d-832e-aee8af7bf615.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/e64f63af-3fec-5a7d-832e-aee8af7bf615.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -557,7 +569,15 @@
         <span class="date-time">2025-04-06 17:59</span>
     </div>
     <div class="thought-content">
-        <p>🇧🇷🇷🇺🇮🇳🇨🇳🇿🇦 BRICS & Tariffs<br><br>Amid the collective chaos there is a group of nations set to benefit from President Trump's tariffs<br><br>HINT: it's not the USA ❌🇺🇸<br><br>BRICS got geopolitical justification for their existence<br><br>Tariff-free zone + local currency trade acts as insurance http</p>
+        <p>🇧🇷🇷🇺🇮🇳🇨🇳🇿🇦 BRICS & Tariffs
+
+Amid the collective chaos there is a group of nations set to benefit from President Trump's tariffs
+
+HINT: it's not the USA ❌🇺🇸
+
+BRICS got geopolitical justification for their existence
+
+Tariff-free zone + local currency trade acts as insurance http</p>
         <div class="thought-image">
             <a href="data/images/8dd15e45-b3fb-5050-8322-19da2fa542b4.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/8dd15e45-b3fb-5050-8322-19da2fa542b4.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -572,7 +592,11 @@
         <span class="date-time">2025-04-06 03:04</span>
     </div>
     <div class="thought-content">
-        <p>🇮🇳 India has accumulated a massive trade deficit<br><br>India imports from China, Russia & then exports to USA & UAE. The imports are also similar to exports & a lot of it is re-exports<br><br>This deficit isn’t sustainable of course https://t.co</p>
+        <p>🇮🇳 India has accumulated a massive trade deficit
+
+India imports from China, Russia & then exports to USA & UAE. The imports are also similar to exports & a lot of it is re-exports
+
+This deficit isn’t sustainable of course <a href="https://t.co" target="_blank">https://t.co</a></p>
         <div class="thought-image">
             <a href="data/images/9f80819d-d854-5440-b577-71a5dfa5a608.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/9f80819d-d854-5440-b577-71a5dfa5a608.jpg" alt="Thought Image" class="thought-img"></a>
         </div>

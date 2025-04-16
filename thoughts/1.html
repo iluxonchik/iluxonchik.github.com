@@ -158,25 +158,26 @@
         }
         /* Container for the clickable image */
         .thought-image .lightbox-trigger {
-            display: block; /* Make it a block to control width/margins */
-            /* Remove fixed max-width to allow full width */
-            /* max-width: 400px; */ 
-            width: 100%; /* Take full available width */
-            margin: 0 auto; /* Center the block if parent width allows */
+            display: block;
+            /* NEW: Add max-width for desktop consistency */
+            max-width: 550px;  /* Adjust as needed, provides consistency */
+            width: 100%; /* Still allows it to shrink */
+            /* Center the image container */
+            margin-left: auto;
+            margin-right: auto;
             cursor: pointer;
-            overflow: hidden; 
-            border-radius: 8px; /* Slightly larger radius, like Twitter */
+            overflow: hidden;
+            border-radius: 8px;
             border: 1px solid #ddd; /* Slightly darker border */
-            position: relative; /* For potential future overlays if needed */
+            position: relative;
         }
         .thought-image img.thought-img {
             display: block; 
             width: 100%; 
             height: auto; 
-            transition: opacity 0.2s ease-in-out; /* Change hover effect */
+            transition: opacity 0.2s ease-in-out; 
         }
          .thought-image .lightbox-trigger:hover img.thought-img {
-              /* transform: scale(1.03); */ /* Remove scale, use opacity */
               opacity: 0.9; 
          }
 
@@ -187,51 +188,53 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.9); /* Slightly darker */
-            display: none; 
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            padding: 15px; /* Slightly less padding */
+            /* Increased padding for margins around the maximized image */
+            padding: 40px;
             box-sizing: border-box;
         }
         .lightbox-overlay.visible {
             display: flex; 
         }
         .lightbox-content {
-            /* These ensure the container itself doesn't exceed viewport */
-            max-width: calc(100% - 40px); /* Max width considering padding */
-            max-height: calc(100% - 40px); /* Max height considering padding */
+            /* Container for the image, constrained by viewport padding */
+            /* Remove max-width/max-height, rely on parent padding */
             position: relative;
-            display: flex; /* Use flex to help center image if needed */
+            display: flex;
             justify-content: center;
             align-items: center;
+            /* Ensure the container itself fills the padded space */
+            width: 100%;
+            height: 100%;
         }
         .lightbox-content img {
+            /* Image itself scales down to fit container */
             display: block;
-            /* These ensure the image scales down to fit the container */
-            max-width: 100%;
-            max-height: 100%;
-            /* Explicitly set width/height to auto */
-            width: auto; 
+            max-width: 100%; /* Fit container width (respecting padding) */
+            max-height: 100%; /* Fit container height (respecting padding) */
+            width: auto;
             height: auto;
-            object-fit: contain; 
-            border: none; /* Remove border from lightbox image */
-            box-shadow: 0 5px 30px rgba(0,0,0,0.5); /* Adjust shadow */
+            object-fit: contain;
+            border: none;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.5);
         }
         .lightbox-close {
             position: absolute;
-            top: -10px; /* Adjust position */
+            top: -10px;
             right: -10px;
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
-            color: #000; /* Black 'X' */
+            background: rgba(255, 255, 255, 0.8);
+            color: #000;
             border: none;
             border-radius: 50%;
             width: 30px;
             height: 30px;
-            font-size: 24px; /* Larger 'X' */
-            font-weight: normal; /* Normal weight */
-            line-height: 28px; 
+            font-size: 24px;
+            font-weight: normal;
+            line-height: 28px;
             text-align: center;
             cursor: pointer;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -295,24 +298,20 @@
              /* .thought-header .separator { display: none; } */
 
              .thought-image .lightbox-trigger {
-                  /* No change needed, already takes full width */
-                  border-radius: 6px; /* Slightly smaller radius on mobile */
+                  /* Remove max-width on mobile to allow full width */
+                  max-width: 100%; 
+                  border-radius: 6px; 
              }
 
-             .lightbox-overlay {
-                  padding: 10px; /* Less padding on mobile */
-             }
-              .lightbox-content {
-                  max-width: 100%;
-                  max-height: 100%;
+             .lightbox-overlay { padding: 10px; }
+             .lightbox-content {
+                  /* Adjust max size slightly for smaller padding */
+                  max-width: calc(100vw - 20px);
+                  max-height: calc(100vh - 20px);
               }
              .lightbox-close {
-                 top: 5px; 
-                 right: 5px;
-                 width: 28px; /* Slightly smaller */
-                 height: 28px;
-                 font-size: 20px;
-                 line-height: 26px;
+                 top: 5px; right: 5px; width: 28px; height: 28px;
+                 font-size: 20px; line-height: 26px;
              }
 
             .pagination {
@@ -392,7 +391,13 @@
         <span class="date-time">2023-03-15 18:29</span>
     </div>
     <div class="thought-content">
-        <p>🚨📈 #Crypto DOWN‼️<br><br>Exactly as I pointed out yesterday<br><br>💡Markets are very easy to predict, you just have to listen at what they’re saying<br><br>Always remember: #DeFi on-chain data is your friend</p>
+        <p>🚨📈 #Crypto DOWN‼️
+
+Exactly as I pointed out yesterday
+
+💡Markets are very easy to predict, you just have to listen at what they’re saying
+
+Always remember: #DeFi on-chain data is your friend</p>
         <div class="thought-image">
             <a href="data/images/c06f45cf-3e7c-566a-876c-3cde481bd56c.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/c06f45cf-3e7c-566a-876c-3cde481bd56c.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -407,7 +412,13 @@
         <span class="date-time">2023-03-15 02:56</span>
     </div>
     <div class="thought-content">
-        <p>🚨📈 FIRST INDICATION OF #CRYPTO DOWNTREND<br><br>$ETH supply APY at 3% on #AAVE, the highest value this month<br><br>🩳The market is starting to short $ETH<br><br>💡REMINDER: Unfollow everyone saying that #Bitcoin is in a #BullMarket, as they have no idea what they are talking about</p>
+        <p>🚨📈 FIRST INDICATION OF #CRYPTO DOWNTREND
+
+$ETH supply APY at 3% on #AAVE, the highest value this month
+
+🩳The market is starting to short $ETH
+
+💡REMINDER: Unfollow everyone saying that #Bitcoin is in a #BullMarket, as they have no idea what they are talking about</p>
         <div class="thought-image">
             <a href="data/images/e651dc3a-5177-53fe-b5b1-2513e8101a94.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/e651dc3a-5177-53fe-b5b1-2513e8101a94.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -422,7 +433,11 @@
         <span class="date-time">2023-03-13 19:57</span>
     </div>
     <div class="thought-content">
-        <p>🚨📈A bounce back into the upper part of the previous weekly rectangle is NOT a #BulMarket signal<br><br>#Bitcoin will fall back down. So will the rest of the #crypto. Lower than previously<br><br>Prepare your #shorts</p>
+        <p>🚨📈A bounce back into the upper part of the previous weekly rectangle is NOT a #BulMarket signal
+
+#Bitcoin will fall back down. So will the rest of the #crypto. Lower than previously
+
+Prepare your #shorts</p>
         <div class="thought-image">
             <a href="data/images/d80c2cf5-c1bf-5f42-a057-e92775e629f8.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/d80c2cf5-c1bf-5f42-a057-e92775e629f8.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -437,7 +452,11 @@
         <span class="date-time">2023-03-13 19:47</span>
     </div>
     <div class="thought-content">
-        <p>🚀 #Bitcoin #BullMarket CONFIRMED <br><br>🚨 You MUST unfollow every single person saying that Bitcoin and #crypto entered a bull market, because they have no idea what they are talking about<br><br>➡️I challenge anyone to show me a single sign of reversal. There is none #TA</p>
+        <p>🚀 #Bitcoin #BullMarket CONFIRMED 
+
+🚨 You MUST unfollow every single person saying that Bitcoin and #crypto entered a bull market, because they have no idea what they are talking about
+
+➡️I challenge anyone to show me a single sign of reversal. There is none #TA</p>
         <div class="thought-image">
             <a href="data/images/2af759bd-c009-5e8d-8cd7-bd10b0c2c0a6.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2af759bd-c009-5e8d-8cd7-bd10b0c2c0a6.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -452,7 +471,9 @@
         <span class="date-time">2023-03-13 06:36</span>
     </div>
     <div class="thought-content">
-        <p>🚨📈 The failure and the bailout of $SVB and $SIVB has shifted the market's sentiment towards the #FED Funds Rate<br><br>A rate hike now seems less likely</p>
+        <p>🚨📈 The failure and the bailout of $SVB and $SIVB has shifted the market's sentiment towards the #FED Funds Rate
+
+A rate hike now seems less likely</p>
         <div class="thought-image">
             <a href="data/images/3083ce0c-69d0-54e1-bd95-6a669ebc8b07.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/3083ce0c-69d0-54e1-bd95-6a669ebc8b07.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -467,7 +488,11 @@
         <span class="date-time">2023-03-13 06:12</span>
     </div>
     <div class="thought-content">
-        <p>🚨 Despite the Goldman Sachs's statement regarding rate hikes and bank bailouts, currently the market is fully expecting a rate hike by 25bps<br><br>Although things may change, specially with the Biden's speech<br><br>In either case, QE is not yet back, so no bull market for #Bitcoin</p>
+        <p>🚨 Despite the Goldman Sachs's statement regarding rate hikes and bank bailouts, currently the market is fully expecting a rate hike by 25bps
+
+Although things may change, specially with the Biden's speech
+
+In either case, QE is not yet back, so no bull market for #Bitcoin</p>
         <div class="thought-image">
             <a href="data/images/114e72b0-a989-59c9-b635-ba97e935b2c7.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/114e72b0-a989-59c9-b635-ba97e935b2c7.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -497,7 +522,13 @@
         <span class="date-time">2023-03-12 21:28</span>
     </div>
     <div class="thought-content">
-        <p>🚨 $PAXG is trading at an $80 premium over $GOLD<br><br>The market sentiment is clear: there is a run from #crypto into #gold<br><br>Selling your cryptocurrency for $PAXG is a good hedge against both, #Bitcoin and $USD<br><br>You can always buy it back for a profit after</p>
+        <p>🚨 $PAXG is trading at an $80 premium over $GOLD
+
+The market sentiment is clear: there is a run from #crypto into #gold
+
+Selling your cryptocurrency for $PAXG is a good hedge against both, #Bitcoin and $USD
+
+You can always buy it back for a profit after</p>
         <div class="thought-image">
             <a href="data/images/84dc91ec-06df-5a64-8991-6be32aeec932.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/84dc91ec-06df-5a64-8991-6be32aeec932.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -512,7 +543,16 @@
         <span class="date-time">2023-03-12 17:54</span>
     </div>
     <div class="thought-content">
-        <p>🚨📈Bank failures will NOT drive $BTC price up<br><br>Most of crypto is financed by DEBT<br><br>As banks like SVB are failing, both the stock market and crypto prices will fall on Monday <br><br>How to profit:<br>1️⃣ Short #crypto<br>2️⃣ Buy #gold<br>3️⃣ Swap crypto for gold</p>
+        <p>🚨📈Bank failures will NOT drive $BTC price up
+
+Most of crypto is financed by DEBT
+
+As banks like SVB are failing, both the stock market and crypto prices will fall on Monday 
+
+How to profit:
+1️⃣ Short #crypto
+2️⃣ Buy #gold
+3️⃣ Swap crypto for gold</p>
         <div class="thought-image">
             <a href="data/images/ba3e9690-7956-512e-8933-8ace3a7237c9.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/ba3e9690-7956-512e-8933-8ace3a7237c9.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -527,7 +567,16 @@
         <span class="date-time">2023-03-12 06:13</span>
     </div>
     <div class="thought-content">
-        <p>🚨📈 $USDT APY on #AAVE is 60%<br><br>This means that people are shorting $USDT. The  market sentiment is that $USDT is overpriced.<br><br>How to profit:<br>1. Short $USDT<br>2. Lend $USDT for a high APR. Should last until Monday<br>3. Do both<br><br>This happened because of the depeg of $USDC</p>
+        <p>🚨📈 $USDT APY on #AAVE is 60%
+
+This means that people are shorting $USDT. The  market sentiment is that $USDT is overpriced.
+
+How to profit:
+1. Short $USDT
+2. Lend $USDT for a high APR. Should last until Monday
+3. Do both
+
+This happened because of the depeg of $USDC</p>
         <div class="thought-image">
             <a href="data/images/14113758-f1ce-5981-86c8-1b5e79241557.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/14113758-f1ce-5981-86c8-1b5e79241557.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -542,7 +591,9 @@
         <span class="date-time">2023-03-11 06:02</span>
     </div>
     <div class="thought-content">
-        <p>🚨📈 $USDT liquidity on #DEX pools decreased to almost ZERO, while $USDC liquidity almost doubled<br><br>This is a result of mass swapping of $USDC for $USDT</p>
+        <p>🚨📈 $USDT liquidity on #DEX pools decreased to almost ZERO, while $USDC liquidity almost doubled
+
+This is a result of mass swapping of $USDC for $USDT</p>
         <div class="thought-image">
             <a href="data/images/b2f732d6-e65c-55fc-aaf3-10d6651c8629.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/b2f732d6-e65c-55fc-aaf3-10d6651c8629.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -572,7 +623,11 @@
         <span class="date-time">2023-03-11 04:58</span>
     </div>
     <div class="thought-content">
-        <p>🚨📈 $USDC is the 2nd smart contract with the most gas usage on #Ethereum, second only to #Uniswap<br><br>$USDT is 4th,  since massive swapping from $USDC to $USDT is taking across all pools in #DEX <br><br>Depegging of $USDC can lead to the collapse of other #stablecoins and #crypto prices</p>
+        <p>🚨📈 $USDC is the 2nd smart contract with the most gas usage on #Ethereum, second only to #Uniswap
+
+$USDT is 4th,  since massive swapping from $USDC to $USDT is taking across all pools in #DEX 
+
+Depegging of $USDC can lead to the collapse of other #stablecoins and #crypto prices</p>
         <div class="thought-image">
             <a href="data/images/090908e5-75b4-5e49-89cc-2a6696828bdf.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/090908e5-75b4-5e49-89cc-2a6696828bdf.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -587,7 +642,13 @@
         <span class="date-time">2023-03-11 04:33</span>
     </div>
     <div class="thought-content">
-        <p>🚨📈 $USDT reserves are depleting across all #DEX pools that have $USDC. <br><br>It’s not just the #3pool on #Curve, #SUSD pool is in the same situation.<br><br>This is a result of massive liquidation of $USDC, due to SVB's collapse.<br><br>The depegging seems to be more likely by the minute 😳</p>
+        <p>🚨📈 $USDT reserves are depleting across all #DEX pools that have $USDC. 
+
+It’s not just the #3pool on #Curve, #SUSD pool is in the same situation.
+
+This is a result of massive liquidation of $USDC, due to SVB's collapse.
+
+The depegging seems to be more likely by the minute 😳</p>
         <div class="thought-image">
             <a href="data/images/43a980dc-c778-57b4-b5a3-d951beac4714.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/43a980dc-c778-57b4-b5a3-d951beac4714.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -602,7 +663,11 @@
         <span class="date-time">2023-03-11 04:26</span>
     </div>
     <div class="thought-content">
-        <p>🚨📈 $USDT reserves at the $USDC / $USDT 0.01% pool on #Uniswap are depleted 😳<br><br>This indicates a massive $USDC liquidation. <br><br>A lot of news saying that $USDC is safe despite #SVB collapse, but the market seems be saying otherwise…</p>
+        <p>🚨📈 $USDT reserves at the $USDC / $USDT 0.01% pool on #Uniswap are depleted 😳
+
+This indicates a massive $USDC liquidation. 
+
+A lot of news saying that $USDC is safe despite #SVB collapse, but the market seems be saying otherwise…</p>
         <div class="thought-image">
             <a href="data/images/12641037-9a65-5047-ac4b-e7c709ccbd0a.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/12641037-9a65-5047-ac4b-e7c709ccbd0a.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -617,7 +682,11 @@
         <span class="date-time">2023-03-11 04:14</span>
     </div>
     <div class="thought-content">
-        <p>🚨📈 $USDT reserves at #Curve's #3pool dropped below 3%!!<br><br>This is the reason why $BUSD is trading below $USDT at #Binance <br><br>It’s caused by mass swap of $USDC to $USDT across the DEXes. Same happening on #Uniswap</p>
+        <p>🚨📈 $USDT reserves at #Curve's #3pool dropped below 3%!!
+
+This is the reason why $BUSD is trading below $USDT at #Binance 
+
+It’s caused by mass swap of $USDC to $USDT across the DEXes. Same happening on #Uniswap</p>
         <div class="thought-image">
             <a href="data/images/fb1aab81-5429-506e-8545-c755aafd0c85.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/fb1aab81-5429-506e-8545-c755aafd0c85.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -632,7 +701,11 @@
         <span class="date-time">2023-03-11 04:02</span>
     </div>
     <div class="thought-content">
-        <p>🚨📈 Mass $USDC to $USDT swapping has caused $BUSD to fall below $USDT by more than 1%<br><br>As $USDT reserves across #DEX are depleting, it’s also affecting #CEX like #Binance <br><br>This is a result of the collapse of the Silicon Valley Bank, where $USDC has reserves</p>
+        <p>🚨📈 Mass $USDC to $USDT swapping has caused $BUSD to fall below $USDT by more than 1%
+
+As $USDT reserves across #DEX are depleting, it’s also affecting #CEX like #Binance 
+
+This is a result of the collapse of the Silicon Valley Bank, where $USDC has reserves</p>
         <div class="thought-image">
             <a href="data/images/53a373e8-5860-56b2-bba1-0e2c0d0ed0c9.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/53a373e8-5860-56b2-bba1-0e2c0d0ed0c9.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -647,7 +720,11 @@
         <span class="date-time">2023-03-11 03:47</span>
     </div>
     <div class="thought-content">
-        <p>🚨 $USDT reserves at #Curve are almost depleted, with less than 4% of it remaining in the #3pool<br><br>This is another sign of massive swapping of $USDC for $USDT, due to the collapse of #SVB<br><br>$USDC depegging is on the horizon!</p>
+        <p>🚨 $USDT reserves at #Curve are almost depleted, with less than 4% of it remaining in the #3pool
+
+This is another sign of massive swapping of $USDC for $USDT, due to the collapse of #SVB
+
+$USDC depegging is on the horizon!</p>
         <div class="thought-image">
             <a href="data/images/dee8bb18-5fb7-5cc5-9cfa-4406892df25b.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/dee8bb18-5fb7-5cc5-9cfa-4406892df25b.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -662,7 +739,9 @@
         <span class="date-time">2023-03-11 03:23</span>
     </div>
     <div class="thought-content">
-        <p>🚨 $USDC trading below $USD and $USDT above $USD<br><br>Looks like everyone is swapping $USDC for $USDT because of #SVB collapse</p>
+        <p>🚨 $USDC trading below $USD and $USDT above $USD
+
+Looks like everyone is swapping $USDC for $USDT because of #SVB collapse</p>
         <div class="thought-image">
             <a href="data/images/1bf048e4-28b8-5b28-a363-1de2cd9c1f21.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/1bf048e4-28b8-5b28-a363-1de2cd9c1f21.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -677,7 +756,11 @@
         <span class="date-time">2023-03-10 23:05</span>
     </div>
     <div class="thought-content">
-        <p>Saying that Silvergate represents crypto is like saying that you represent the US Dollar, because you have them in your wallet.<br><br>Not a single DEX collapsed for the same reasons. DeFi is building the best financial system in history.<br><br>#bitcoin #crypto #defi #dex</p>
+        <p>Saying that Silvergate represents crypto is like saying that you represent the US Dollar, because you have them in your wallet.
+
+Not a single DEX collapsed for the same reasons. DeFi is building the best financial system in history.
+
+#bitcoin #crypto #defi #dex</p>
         <div class="thought-image">
             
         </div>
@@ -707,7 +790,12 @@
         <span class="date-time">2023-02-19 20:36</span>
     </div>
     <div class="thought-content">
-        <p>CPI Inflation Exposed: Unveiling The True Cost<br><br>CPI Inflation Exposed: Unveiling the True Cost<br><br><br>#inflation #inflation2023 #InflationReductionAct #cpiinflation #cpi #explained #financialeducation #finance #money #FinancialFreedom</p>
+        <p>CPI Inflation Exposed: Unveiling The True Cost
+
+CPI Inflation Exposed: Unveiling the True Cost
+
+
+#inflation #inflation2023 #InflationReductionAct #cpiinflation #cpi #explained #financialeducation #finance #money #FinancialFreedom</p>
         <div class="thought-image">
             
         </div>
@@ -722,7 +810,9 @@
         <span class="date-time">2023-02-17 23:37</span>
     </div>
     <div class="thought-content">
-        <p>Exposing The Link Between CPI Inflation And Wages: <br><br>#inflation #inflationcrisis #InflationReductionAct #inflation2023 #wages</p>
+        <p>Exposing The Link Between CPI Inflation And Wages: 
+
+#inflation #inflationcrisis #InflationReductionAct #inflation2023 #wages</p>
         <div class="thought-image">
             
         </div>
@@ -737,7 +827,11 @@
         <span class="date-time">2023-02-17 23:36</span>
     </div>
     <div class="thought-content">
-        <p>ChatGPT Hack: Unleash The Full Power Of AI: <br><br>Also known as Jailbreak and DAN<br><br>#ChatGPT #OpenAI #BingChat #chatgpt3 #hack #hacks #hacking</p>
+        <p>ChatGPT Hack: Unleash The Full Power Of AI: 
+
+Also known as Jailbreak and DAN
+
+#ChatGPT #OpenAI #BingChat #chatgpt3 #hack #hacks #hacking</p>
         <div class="thought-image">
             
         </div>
@@ -752,7 +846,11 @@
         <span class="date-time">2023-02-13 02:49</span>
     </div>
     <div class="thought-content">
-        <p>Transform Your Voice Into Emimem With AI Magic: <br><br>This is how David Guetta did it.<br><br>#eminem #davidguetta #ai #artificalintelligence #deepfake #ChatGPT</p>
+        <p>Transform Your Voice Into Emimem With AI Magic: 
+
+This is how David Guetta did it.
+
+#eminem #davidguetta #ai #artificalintelligence #deepfake #ChatGPT</p>
         <div class="thought-image">
             
         </div>

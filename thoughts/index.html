@@ -158,25 +158,26 @@
         }
         /* Container for the clickable image */
         .thought-image .lightbox-trigger {
-            display: block; /* Make it a block to control width/margins */
-            /* Remove fixed max-width to allow full width */
-            /* max-width: 400px; */ 
-            width: 100%; /* Take full available width */
-            margin: 0 auto; /* Center the block if parent width allows */
+            display: block;
+            /* NEW: Add max-width for desktop consistency */
+            max-width: 550px;  /* Adjust as needed, provides consistency */
+            width: 100%; /* Still allows it to shrink */
+            /* Center the image container */
+            margin-left: auto;
+            margin-right: auto;
             cursor: pointer;
-            overflow: hidden; 
-            border-radius: 8px; /* Slightly larger radius, like Twitter */
+            overflow: hidden;
+            border-radius: 8px;
             border: 1px solid #ddd; /* Slightly darker border */
-            position: relative; /* For potential future overlays if needed */
+            position: relative;
         }
         .thought-image img.thought-img {
             display: block; 
             width: 100%; 
             height: auto; 
-            transition: opacity 0.2s ease-in-out; /* Change hover effect */
+            transition: opacity 0.2s ease-in-out; 
         }
          .thought-image .lightbox-trigger:hover img.thought-img {
-              /* transform: scale(1.03); */ /* Remove scale, use opacity */
               opacity: 0.9; 
          }
 
@@ -187,51 +188,53 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.9); /* Slightly darker */
-            display: none; 
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            padding: 15px; /* Slightly less padding */
+            /* Increased padding for margins around the maximized image */
+            padding: 40px;
             box-sizing: border-box;
         }
         .lightbox-overlay.visible {
             display: flex; 
         }
         .lightbox-content {
-            /* These ensure the container itself doesn't exceed viewport */
-            max-width: calc(100% - 40px); /* Max width considering padding */
-            max-height: calc(100% - 40px); /* Max height considering padding */
+            /* Container for the image, constrained by viewport padding */
+            /* Remove max-width/max-height, rely on parent padding */
             position: relative;
-            display: flex; /* Use flex to help center image if needed */
+            display: flex;
             justify-content: center;
             align-items: center;
+            /* Ensure the container itself fills the padded space */
+            width: 100%;
+            height: 100%;
         }
         .lightbox-content img {
+            /* Image itself scales down to fit container */
             display: block;
-            /* These ensure the image scales down to fit the container */
-            max-width: 100%;
-            max-height: 100%;
-            /* Explicitly set width/height to auto */
-            width: auto; 
+            max-width: 100%; /* Fit container width (respecting padding) */
+            max-height: 100%; /* Fit container height (respecting padding) */
+            width: auto;
             height: auto;
-            object-fit: contain; 
-            border: none; /* Remove border from lightbox image */
-            box-shadow: 0 5px 30px rgba(0,0,0,0.5); /* Adjust shadow */
+            object-fit: contain;
+            border: none;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.5);
         }
         .lightbox-close {
             position: absolute;
-            top: -10px; /* Adjust position */
+            top: -10px;
             right: -10px;
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
-            color: #000; /* Black 'X' */
+            background: rgba(255, 255, 255, 0.8);
+            color: #000;
             border: none;
             border-radius: 50%;
             width: 30px;
             height: 30px;
-            font-size: 24px; /* Larger 'X' */
-            font-weight: normal; /* Normal weight */
-            line-height: 28px; 
+            font-size: 24px;
+            font-weight: normal;
+            line-height: 28px;
             text-align: center;
             cursor: pointer;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -295,24 +298,20 @@
              /* .thought-header .separator { display: none; } */
 
              .thought-image .lightbox-trigger {
-                  /* No change needed, already takes full width */
-                  border-radius: 6px; /* Slightly smaller radius on mobile */
+                  /* Remove max-width on mobile to allow full width */
+                  max-width: 100%; 
+                  border-radius: 6px; 
              }
 
-             .lightbox-overlay {
-                  padding: 10px; /* Less padding on mobile */
-             }
-              .lightbox-content {
-                  max-width: 100%;
-                  max-height: 100%;
+             .lightbox-overlay { padding: 10px; }
+             .lightbox-content {
+                  /* Adjust max size slightly for smaller padding */
+                  max-width: calc(100vw - 20px);
+                  max-height: calc(100vh - 20px);
               }
              .lightbox-close {
-                 top: 5px; 
-                 right: 5px;
-                 width: 28px; /* Slightly smaller */
-                 height: 28px;
-                 font-size: 20px;
-                 line-height: 26px;
+                 top: 5px; right: 5px; width: 28px; height: 28px;
+                 font-size: 20px; line-height: 26px;
              }
 
             .pagination {
@@ -392,7 +391,13 @@
         <span class="date-time">2025-04-14 14:14</span>
     </div>
     <div class="thought-content">
-        <p>So how can you buy Russian securities in the EU?<br><br>Since 2022 it's unfeasible. IBKR & KIT Finance suspended trading<br><br>Deep researching with LLMs now, but it hasn’t been very fruitful so far <br><br>Once the sanctions are lifted you’ll see the prices explode</p>
+        <p>So how can you buy Russian securities in the EU?
+
+Since 2022 it's unfeasible. IBKR & KIT Finance suspended trading
+
+Deep researching with LLMs now, but it hasn’t been very fruitful so far 
+
+Once the sanctions are lifted you’ll see the prices explode</p>
         <div class="thought-image">
             <a href="data/images/05c08ac2-7a37-52b3-9ab3-8731f3810d44.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/05c08ac2-7a37-52b3-9ab3-8731f3810d44.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -407,7 +412,9 @@
         <span class="date-time">2025-04-14 12:58</span>
     </div>
     <div class="thought-content">
-        <p>2Y US Bond is a good factor/signal of FED funds rate, but there’s an even better one!<br><br>CME's 30-day FED Funds futures is a derivative for this exact purpose. The market prices them according to the expectations of upcoming FED Funds Rates</p>
+        <p>2Y US Bond is a good factor/signal of FED funds rate, but there’s an even better one!
+
+CME's 30-day FED Funds futures is a derivative for this exact purpose. The market prices them according to the expectations of upcoming FED Funds Rates</p>
         <div class="thought-image">
             <a href="data/images/36a86ead-0f95-5edf-9f18-312088f3fccc.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/36a86ead-0f95-5edf-9f18-312088f3fccc.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -422,7 +429,9 @@
         <span class="date-time">2025-04-14 12:27</span>
     </div>
     <div class="thought-content">
-        <p>This is definitely good news short-term for the USD!<br><br>Today, short-term funding got 1.25% cheaper for the US government, and once the FED lowers the interest rates, the yields will fall more. Now ofc this will lead to inflation & devaluation of USD, but that’s a a different story</p>
+        <p>This is definitely good news short-term for the USD!
+
+Today, short-term funding got 1.25% cheaper for the US government, and once the FED lowers the interest rates, the yields will fall more. Now ofc this will lead to inflation & devaluation of USD, but that’s a a different story</p>
         <div class="thought-image">
             <a href="data/images/89c121e3-19be-569d-ae46-e908de4d85bc.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/89c121e3-19be-569d-ae46-e908de4d85bc.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -437,7 +446,11 @@
         <span class="date-time">2025-04-14 12:24</span>
     </div>
     <div class="thought-content">
-        <p>Look at that liquidity moving from short-term Chinese bonds(CN01Y), to short-term US bonds(US02Y) <br><br>The market liked the removal of tariffs, however, you can’t undo the massive volatility over the past 2 weeks<br><br>Moreover, US Dollar index is still below 100</p>
+        <p>Look at that liquidity moving from short-term Chinese bonds(CN01Y), to short-term US bonds(US02Y) 
+
+The market liked the removal of tariffs, however, you can’t undo the massive volatility over the past 2 weeks
+
+Moreover, US Dollar index is still below 100</p>
         <div class="thought-image">
             <a href="data/images/5dfbbd9e-21a3-5add-8e65-ad989ab8cb06.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/5dfbbd9e-21a3-5add-8e65-ad989ab8cb06.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -452,7 +465,11 @@
         <span class="date-time">2025-04-12 09:54</span>
     </div>
     <div class="thought-content">
-        <p>Regarding the bond market collapse <br><br>US Treasury Securities are the main collateral used in repurchase agreements. Given that these are short-term, the yield spike is unlikely to lead to defaults<br><br>However, the fall in bond prices will reduce credit, adding to liquidity crunch</p>
+        <p>Regarding the bond market collapse 
+
+US Treasury Securities are the main collateral used in repurchase agreements. Given that these are short-term, the yield spike is unlikely to lead to defaults
+
+However, the fall in bond prices will reduce credit, adding to liquidity crunch</p>
         <div class="thought-image">
             <a href="data/images/d30f2c6d-06c6-546d-8eb3-e05dafdd0b9e.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/d30f2c6d-06c6-546d-8eb3-e05dafdd0b9e.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -467,7 +484,11 @@
         <span class="date-time">2025-04-12 09:47</span>
     </div>
     <div class="thought-content">
-        <p>Another important fact to mention regarding Russia, is that on top of sell-off of US securities & loading up on gold in record numbers, throughout 2025 Central Bank of Russia has kept interest rates at 21% <br><br>Result = massive savings<br><br>However, if EU or US did the same - their</p>
+        <p>Another important fact to mention regarding Russia, is that on top of sell-off of US securities & loading up on gold in record numbers, throughout 2025 Central Bank of Russia has kept interest rates at 21% 
+
+Result = massive savings
+
+However, if EU or US did the same - their</p>
         <div class="thought-image">
             <a href="data/images/df4dddf5-9060-507a-b228-5c40f7b70618.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/df4dddf5-9060-507a-b228-5c40f7b70618.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -482,7 +503,9 @@
         <span class="date-time">2025-04-12 09:29</span>
     </div>
     <div class="thought-content">
-        <p>Lower USD Index =  USD Devaluation = Higher premium for USD loans = Lower bond prices = Higher bond yields<br><br>It’s all connected</p>
+        <p>Lower USD Index =  USD Devaluation = Higher premium for USD loans = Lower bond prices = Higher bond yields
+
+It’s all connected</p>
         <div class="thought-image">
             <a href="data/images/fbd0eba1-291d-55fe-9782-9e0638533104.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/fbd0eba1-291d-55fe-9782-9e0638533104.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -512,7 +535,13 @@
         <span class="date-time">2025-04-11 21:55</span>
     </div>
     <div class="thought-content">
-        <p>US Treasury bond yields are acting as a risky asset<br><br>Over 2% daily moves is something you see in crypto <br><br>And I don’t believe the FED will be raising rates - so it’s a market-driven US debt premium increase<br><br>Lower rates incoming, but sovereign premium will still increase</p>
+        <p>US Treasury bond yields are acting as a risky asset
+
+Over 2% daily moves is something you see in crypto 
+
+And I don’t believe the FED will be raising rates - so it’s a market-driven US debt premium increase
+
+Lower rates incoming, but sovereign premium will still increase</p>
         <div class="thought-image">
             <a href="data/images/b3baaa11-c2af-5d21-ab7f-4e872acee456.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/b3baaa11-c2af-5d21-ab7f-4e872acee456.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -527,7 +556,11 @@
         <span class="date-time">2025-04-11 19:25</span>
     </div>
     <div class="thought-content">
-        <p>I think now you understand <br><br>Gold hitting ATH after ATH <br><br>Very concerning for USD</p>
+        <p>I think now you understand 
+
+Gold hitting ATH after ATH 
+
+Very concerning for USD</p>
         <div class="thought-image">
             <a href="data/images/25069b90-5379-5f38-b924-0928c8765b09.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/25069b90-5379-5f38-b924-0928c8765b09.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -542,7 +575,9 @@
         <span class="date-time">2025-04-11 19:00</span>
     </div>
     <div class="thought-content">
-        <p>Here’s a visual of how it looks like<br><br>A timeline of thoughts/short-form content/microblog</p>
+        <p>Here’s a visual of how it looks like
+
+A timeline of thoughts/short-form content/microblog</p>
         <div class="thought-image">
             <a href="data/images/2f6ddfe7-376f-5e1f-a429-24fd96598dc9.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2f6ddfe7-376f-5e1f-a429-24fd96598dc9.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -557,7 +592,13 @@
         <span class="date-time">2025-04-11 18:54</span>
     </div>
     <div class="thought-content">
-        <p>Just launched <br><br>I’ll use for short-form posts. Think Twitter/X, but self-hosted under my domain<br><br>It’s an MVP and for now contains a subset of X posts. Later I’ll make it real-timish and cross-post some of my content from here<br><br>Coded using Gemini 2.5 Pro</p>
+        <p>Just launched <a href="https://illya.sh/thoughts" target="_blank">https://illya.sh/thoughts</a>
+
+I’ll use for short-form posts. Think Twitter/X, but self-hosted under my domain
+
+It’s an MVP and for now contains a subset of X posts. Later I’ll make it real-timish and cross-post some of my content from here
+
+Coded using Gemini 2.5 Pro</p>
         <div class="thought-image">
             
         </div>
@@ -587,7 +628,9 @@
         <span class="date-time">2025-04-11 02:58</span>
     </div>
     <div class="thought-content">
-        <p>To clarify - here you’re stating with US Dollar and then buying either Ruble or Gold. It’s in this scenario that both investments have a similar yield<br><br>If you start with EUR, Ruble actually yields more than Gold - 9.3 vs 11% (in the past 3 months)</p>
+        <p>To clarify - here you’re stating with US Dollar and then buying either Ruble or Gold. It’s in this scenario that both investments have a similar yield
+
+If you start with EUR, Ruble actually yields more than Gold - 9.3 vs 11% (in the past 3 months)</p>
         <div class="thought-image">
             <a href="data/images/99d78a7a-3669-5afd-8563-18e118c048c6.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/99d78a7a-3669-5afd-8563-18e118c048c6.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -602,7 +645,13 @@
         <span class="date-time">2025-04-10 23:47</span>
     </div>
     <div class="thought-content">
-        <p>Regulated equities market, which is supposed to be low-risk became as volatile as crypto<br><br>Just look at NASDAQ, S&P500 & Co<br><br>Every time I open TradingView it’s a +-5%<br><br>Maybe more regulations will solve this? 😁</p>
+        <p>Regulated equities market, which is supposed to be low-risk became as volatile as crypto
+
+Just look at NASDAQ, S&P500 & Co
+
+Every time I open TradingView it’s a +-5%
+
+Maybe more regulations will solve this? 😁</p>
         <div class="thought-image">
             <a href="data/images/534922fb-d1c6-5764-9cb1-e0b1677729de.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/534922fb-d1c6-5764-9cb1-e0b1677729de.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -617,7 +666,15 @@
         <span class="date-time">2025-04-08 14:02</span>
     </div>
     <div class="thought-content">
-        <p>🇷🇺 Russia is immune to US tariffs <br><br>Russia's foreign reserves are as follows:<br>- 0.007% US Treasury bonds<br>- 35% Gold<br><br>Russia exports <1% to the US. Russia is a net exporter<br><br>This makes them protected from US sovereign risk (USD devaluation) & trade risk https:/</p>
+        <p>🇷🇺 Russia is immune to US tariffs 
+
+Russia's foreign reserves are as follows:
+- 0.007% US Treasury bonds
+- 35% Gold
+
+Russia exports <1% to the US. Russia is a net exporter
+
+This makes them protected from US sovereign risk (USD devaluation) & trade risk https:/</p>
         <div class="thought-image">
             <a href="data/images/844af59f-ba57-5422-bbdb-58a534b13d05.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/844af59f-ba57-5422-bbdb-58a534b13d05.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -632,7 +689,11 @@
         <span class="date-time">2025-04-08 01:15</span>
     </div>
     <div class="thought-content">
-        <p>🇪🇺🇺🇸US tariffs present a unique opportunity for EU's capital markets<br><br>Billions of $ are flowing out of US markets. Let that liquidity be parked in the EU. All that’s needed is inviting conditions<br><br>It can start with a small, less-regulated market subsection to allow seamless foreign funds flow</p>
+        <p>🇪🇺🇺🇸US tariffs present a unique opportunity for EU's capital markets
+
+Billions of $ are flowing out of US markets. Let that liquidity be parked in the EU. All that’s needed is inviting conditions
+
+It can start with a small, less-regulated market subsection to allow seamless foreign funds flow</p>
         <div class="thought-image">
             
         </div>
@@ -647,7 +708,9 @@
         <span class="date-time">2025-04-08 01:03</span>
     </div>
     <div class="thought-content">
-        <p>Of course, this also gives China leverage - if The People Bank's of China (China's Central Bank) dumps their US Securities in the market, it will skyrocket bond yields, by reducing their prices<br><br>Who will lend to the US then, and at what premium? And at 125% debt to GDP 😬</p>
+        <p>Of course, this also gives China leverage - if The People Bank's of China (China's Central Bank) dumps their US Securities in the market, it will skyrocket bond yields, by reducing their prices
+
+Who will lend to the US then, and at what premium? And at 125% debt to GDP 😬</p>
         <div class="thought-image">
             
         </div>
@@ -662,7 +725,11 @@
         <span class="date-time">2025-04-08 00:38</span>
     </div>
     <div class="thought-content">
-        <p>China is the 2nd largest holder of US Treasury bonds - a staggering 23% of their foreign exchange reserves<br><br>This makes China extremely exposed to US systemic risk. Which is why tariffs will hit them double hard - at exports and at renminbi/Yuan due to falling #DXY<br><br>Not saying</p>
+        <p>China is the 2nd largest holder of US Treasury bonds - a staggering 23% of their foreign exchange reserves
+
+This makes China extremely exposed to US systemic risk. Which is why tariffs will hit them double hard - at exports and at renminbi/Yuan due to falling #DXY
+
+Not saying they can’t sustain it though</p>
         <div class="thought-image">
             <a href="data/images/a36caf75-2329-5cfa-a3ef-9ff05afee55a.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/a36caf75-2329-5cfa-a3ef-9ff05afee55a.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -692,7 +759,22 @@
         <span class="date-time">2025-04-07 23:04</span>
     </div>
     <div class="thought-content">
-        <p>Sure, if you:<br><br> Put tariffs<br> Lower interest rates<br> Remove tariffs<br><br>the maket will skyrocket <br><br>But that also means increased:<br> Asset bubble<br> Inflation<br> Public debt/deficit<br><br>Tariff income won’t offset it<br><br>Monitor the hedge fund's shorts on risky assets, and when the</p>
+        <p>Sure, if you:
+
+ Put tariffs
+ Lower interest rates
+ Remove tariffs
+
+the maket will skyrocket 
+
+But that also means increased:
+ Asset bubble
+ Inflation
+ Public debt/deficit
+
+Tariff income won’t offset it
+
+Monitor the hedge fund's shorts on risky assets, and when the</p>
         <div class="thought-image">
             
         </div>
@@ -707,7 +789,11 @@
         <span class="date-time">2025-04-07 22:57</span>
     </div>
     <div class="thought-content">
-        <p>One of the core ideas behind the tariffs is to solve US's the trade deficit by incentivizing other countries to import from the US - I’m deriving this from the “tariff” formula<br><br>So by importing more from US - you get lower/no tariffs<br><br>That won’t work. Over the medium term the</p>
+        <p>One of the core ideas behind the tariffs is to solve US's the trade deficit by incentivizing other countries to import from the US - I’m deriving this from the “tariff” formula
+
+So by importing more from US - you get lower/no tariffs
+
+That won’t work. Over the medium term the</p>
         <div class="thought-image">
             
         </div>
@@ -722,7 +808,9 @@
         <span class="date-time">2025-04-07 20:31</span>
     </div>
     <div class="thought-content">
-        <p>Ruble is up 2.3% on the USD<br><br>No tariffs + little US exposure + gold works well</p>
+        <p>Ruble is up 2.3% on the USD
+
+No tariffs + little US exposure + gold works well</p>
         <div class="thought-image">
             <a href="data/images/bb82f7b6-cd92-5214-8c7a-70f0925e4ff1.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/bb82f7b6-cd92-5214-8c7a-70f0925e4ff1.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -752,7 +840,11 @@
         <span class="date-time">2025-04-07 19:48</span>
     </div>
     <div class="thought-content">
-        <p>Do not browse insider trading SEC filings on EDGAR directly<br><br>There’s a Python library called edgartools - much better, cleaner & you can directly extract the data<br><br>Now go find alpha factors that you can use next time worldwide tariffs are set</p>
+        <p>Do not browse insider trading SEC filings on EDGAR directly
+
+There’s a Python library called edgartools - much better, cleaner & you can directly extract the data
+
+Now go find alpha factors that you can use next time worldwide tariffs are set</p>
         <div class="thought-image">
             <a href="data/images/1490e261-688f-5f3f-93f3-e0a9240be226.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/1490e261-688f-5f3f-93f3-e0a9240be226.jpg" alt="Thought Image" class="thought-img"></a>
         </div>

@@ -158,25 +158,26 @@
         }
         /* Container for the clickable image */
         .thought-image .lightbox-trigger {
-            display: block; /* Make it a block to control width/margins */
-            /* Remove fixed max-width to allow full width */
-            /* max-width: 400px; */ 
-            width: 100%; /* Take full available width */
-            margin: 0 auto; /* Center the block if parent width allows */
+            display: block;
+            /* NEW: Add max-width for desktop consistency */
+            max-width: 550px;  /* Adjust as needed, provides consistency */
+            width: 100%; /* Still allows it to shrink */
+            /* Center the image container */
+            margin-left: auto;
+            margin-right: auto;
             cursor: pointer;
-            overflow: hidden; 
-            border-radius: 8px; /* Slightly larger radius, like Twitter */
+            overflow: hidden;
+            border-radius: 8px;
             border: 1px solid #ddd; /* Slightly darker border */
-            position: relative; /* For potential future overlays if needed */
+            position: relative;
         }
         .thought-image img.thought-img {
             display: block; 
             width: 100%; 
             height: auto; 
-            transition: opacity 0.2s ease-in-out; /* Change hover effect */
+            transition: opacity 0.2s ease-in-out; 
         }
          .thought-image .lightbox-trigger:hover img.thought-img {
-              /* transform: scale(1.03); */ /* Remove scale, use opacity */
               opacity: 0.9; 
          }
 
@@ -187,51 +188,53 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.9); /* Slightly darker */
-            display: none; 
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            padding: 15px; /* Slightly less padding */
+            /* Increased padding for margins around the maximized image */
+            padding: 40px;
             box-sizing: border-box;
         }
         .lightbox-overlay.visible {
             display: flex; 
         }
         .lightbox-content {
-            /* These ensure the container itself doesn't exceed viewport */
-            max-width: calc(100% - 40px); /* Max width considering padding */
-            max-height: calc(100% - 40px); /* Max height considering padding */
+            /* Container for the image, constrained by viewport padding */
+            /* Remove max-width/max-height, rely on parent padding */
             position: relative;
-            display: flex; /* Use flex to help center image if needed */
+            display: flex;
             justify-content: center;
             align-items: center;
+            /* Ensure the container itself fills the padded space */
+            width: 100%;
+            height: 100%;
         }
         .lightbox-content img {
+            /* Image itself scales down to fit container */
             display: block;
-            /* These ensure the image scales down to fit the container */
-            max-width: 100%;
-            max-height: 100%;
-            /* Explicitly set width/height to auto */
-            width: auto; 
+            max-width: 100%; /* Fit container width (respecting padding) */
+            max-height: 100%; /* Fit container height (respecting padding) */
+            width: auto;
             height: auto;
-            object-fit: contain; 
-            border: none; /* Remove border from lightbox image */
-            box-shadow: 0 5px 30px rgba(0,0,0,0.5); /* Adjust shadow */
+            object-fit: contain;
+            border: none;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.5);
         }
         .lightbox-close {
             position: absolute;
-            top: -10px; /* Adjust position */
+            top: -10px;
             right: -10px;
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
-            color: #000; /* Black 'X' */
+            background: rgba(255, 255, 255, 0.8);
+            color: #000;
             border: none;
             border-radius: 50%;
             width: 30px;
             height: 30px;
-            font-size: 24px; /* Larger 'X' */
-            font-weight: normal; /* Normal weight */
-            line-height: 28px; 
+            font-size: 24px;
+            font-weight: normal;
+            line-height: 28px;
             text-align: center;
             cursor: pointer;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -295,24 +298,20 @@
              /* .thought-header .separator { display: none; } */
 
              .thought-image .lightbox-trigger {
-                  /* No change needed, already takes full width */
-                  border-radius: 6px; /* Slightly smaller radius on mobile */
+                  /* Remove max-width on mobile to allow full width */
+                  max-width: 100%; 
+                  border-radius: 6px; 
              }
 
-             .lightbox-overlay {
-                  padding: 10px; /* Less padding on mobile */
-             }
-              .lightbox-content {
-                  max-width: 100%;
-                  max-height: 100%;
+             .lightbox-overlay { padding: 10px; }
+             .lightbox-content {
+                  /* Adjust max size slightly for smaller padding */
+                  max-width: calc(100vw - 20px);
+                  max-height: calc(100vh - 20px);
               }
              .lightbox-close {
-                 top: 5px; 
-                 right: 5px;
-                 width: 28px; /* Slightly smaller */
-                 height: 28px;
-                 font-size: 20px;
-                 line-height: 26px;
+                 top: 5px; right: 5px; width: 28px; height: 28px;
+                 font-size: 20px; line-height: 26px;
              }
 
             .pagination {
@@ -392,7 +391,11 @@
         <span class="date-time">2025-04-05 21:32</span>
     </div>
     <div class="thought-content">
-        <p>$VIX is a measure of expected volatility<br><br>It’s computed from option prices. The price of the option is the insurance/premium that the option seller/short charges<br><br>So higher option price = protection against more volatility</p>
+        <p>$VIX is a measure of expected volatility
+
+It’s computed from option prices. The price of the option is the insurance/premium that the option seller/short charges
+
+So higher option price = protection against more volatility</p>
         <div class="thought-image">
             
         </div>
@@ -422,7 +425,9 @@
         <span class="date-time">2025-04-05 20:13</span>
     </div>
     <div class="thought-content">
-        <p>Institutional longs were just reaching 2022 levels at Q2 2024<br><br>How do you think Q2 2025 will look like?</p>
+        <p>Institutional longs were just reaching 2022 levels at Q2 2024
+
+How do you think Q2 2025 will look like?</p>
         <div class="thought-image">
             <a href="data/images/371fcb01-0239-5d97-a0b6-cfbd79c7800d.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/371fcb01-0239-5d97-a0b6-cfbd79c7800d.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -437,7 +442,13 @@
         <span class="date-time">2025-04-05 19:05</span>
     </div>
     <div class="thought-content">
-        <p>Hedge Funds & High-Risk Loans<br><br>Leveraged loans are loans issued to high debt/risk entities - akin to subprime loans<br><br>Tariffs will hurt solvency. Only way out is FED lowering interest rates, so the debt can be refinanced cheaper<br><br>Otherwise the house of cards falls</p>
+        <p>Hedge Funds & High-Risk Loans
+
+Leveraged loans are loans issued to high debt/risk entities - akin to subprime loans
+
+Tariffs will hurt solvency. Only way out is FED lowering interest rates, so the debt can be refinanced cheaper
+
+Otherwise the house of cards falls</p>
         <div class="thought-image">
             <a href="data/images/a3c840ed-020a-5eb3-9098-2aca2f6c3e66.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/a3c840ed-020a-5eb3-9098-2aca2f6c3e66.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -452,7 +463,11 @@
         <span class="date-time">2025-04-05 17:23</span>
     </div>
     <div class="thought-content">
-        <p>Financial Stress Index (FSI) UPDATE<br><br> as expected, the risk is increasing<br><br>Sustained volatility will drive the rest up</p>
+        <p>Financial Stress Index (FSI) UPDATE
+
+ as expected, the risk is increasing
+
+Sustained volatility will drive the rest up</p>
         <div class="thought-image">
             <a href="data/images/92bdf671-c313-541f-a770-4564f1b1dfb0.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/92bdf671-c313-541f-a770-4564f1b1dfb0.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -467,7 +482,15 @@
         <span class="date-time">2025-04-05 16:33</span>
     </div>
     <div class="thought-content">
-        <p>PHYSICAL GOLD RUSH<br><br> It’s not just Central Banks anymore<br><br> In the first 4 days of April 2025, over 52K COMEX 100 Gold Futures contracts have been requested for physical delivery<br><br>Only 4 days in & it’s already x2 of January interest<br><br> Physical gold in high demand</p>
+        <p>PHYSICAL GOLD RUSH
+
+ It’s not just Central Banks anymore
+
+ In the first 4 days of April 2025, over 52K COMEX 100 Gold Futures contracts have been requested for physical delivery
+
+Only 4 days in & it’s already x2 of January interest
+
+ Physical gold in high demand</p>
         <div class="thought-image">
             <a href="data/images/d11b05a6-6b65-5f4f-882e-e04cc587f822.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/d11b05a6-6b65-5f4f-882e-e04cc587f822.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -497,7 +520,15 @@
         <span class="date-time">2025-04-05 15:43</span>
     </div>
     <div class="thought-content">
-        <p>Silver Physcial Delivery Demand HIGH<br><br> CME's COMEX & NYMEX Metal Delivery Notices show a MASSIVE demand for physical silver<br><br> 16.1K futures contract for delivery/physical settlement, up x3 from a year ago<br><br>A.K.A. tariffs effect on silver<br><br>Investors are HOARDING silver</p>
+        <p>Silver Physcial Delivery Demand HIGH
+
+ CME's COMEX & NYMEX Metal Delivery Notices show a MASSIVE demand for physical silver
+
+ 16.1K futures contract for delivery/physical settlement, up x3 from a year ago
+
+A.K.A. tariffs effect on silver
+
+Investors are HOARDING silver</p>
         <div class="thought-image">
             <a href="data/images/b2ea862e-15f6-5c89-967a-f2b12fac2103.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/b2ea862e-15f6-5c89-967a-f2b12fac2103.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -512,7 +543,11 @@
         <span class="date-time">2025-04-05 02:22</span>
     </div>
     <div class="thought-content">
-        <p>Switzerland 2 year bond yield went negative<br><br>Swiss Frank appreciates against major currencies like #EUR & #USD, so investors accept lower (sometimes even negative!) yields<br><br>Massive demand for #CHF</p>
+        <p>Switzerland 2 year bond yield went negative
+
+Swiss Frank appreciates against major currencies like #EUR & #USD, so investors accept lower (sometimes even negative!) yields
+
+Massive demand for #CHF</p>
         <div class="thought-image">
             <a href="data/images/9d63e001-975c-5594-a1de-28be9d5fb930.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/9d63e001-975c-5594-a1de-28be9d5fb930.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -527,7 +562,11 @@
         <span class="date-time">2025-04-04 23:31</span>
     </div>
     <div class="thought-content">
-        <p>Russian Ruble vs Euro <br><br>Past 6 months #RUB up against #EUR by 13%<br><br> Ruble is up 34% on Euro since January 2025 (YTD)</p>
+        <p>Russian Ruble vs Euro 
+
+Past 6 months #RUB up against #EUR by 13%
+
+ Ruble is up 34% on Euro since January 2025 (YTD)</p>
         <div class="thought-image">
             <a href="data/images/7a29ab71-b14f-5315-ae96-4d85d8db403c.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/7a29ab71-b14f-5315-ae96-4d85d8db403c.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -542,7 +581,13 @@
         <span class="date-time">2025-04-04 22:54</span>
     </div>
     <div class="thought-content">
-        <p>Silver back to August 2020 price<br><br>After a tariffs-induced pullback of 15% today, silver is now at start of COVID prices<br><br> So much inflation that still isn’t priced in <br><br>It will recover. And a lot!</p>
+        <p>Silver back to August 2020 price
+
+After a tariffs-induced pullback of 15% today, silver is now at start of COVID prices
+
+ So much inflation that still isn’t priced in 
+
+It will recover. And a lot!</p>
         <div class="thought-image">
             <a href="data/images/15bce4d4-da26-5a96-9c1b-080c65de1d2f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/15bce4d4-da26-5a96-9c1b-080c65de1d2f.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -557,7 +602,11 @@
         <span class="date-time">2025-04-04 22:19</span>
     </div>
     <div class="thought-content">
-        <p>🤖 I asked Grok 3 why silver is down today<br><br>DeepSearch said that this is likely due to a stronger USD<br><br>But #DXY is also down 😂</p>
+        <p>🤖 I asked Grok 3 why silver is down today
+
+DeepSearch said that this is likely due to a stronger USD
+
+But #DXY is also down 😂</p>
         <div class="thought-image">
             <a href="data/images/c84b17be-4280-5182-8101-886f0d4d7b6c.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/c84b17be-4280-5182-8101-886f0d4d7b6c.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -572,7 +621,11 @@
         <span class="date-time">2025-04-04 22:07</span>
     </div>
     <div class="thought-content">
-        <p>Who’s selling silver? 😭<br><br>📉 CDFs are down 15% on the day 🤯<br><br>I guess it’s a tariffs freebie 🤷‍♀️</p>
+        <p>Who’s selling silver? 😭
+
+📉 CDFs are down 15% on the day 🤯
+
+I guess it’s a tariffs freebie 🤷‍♀️</p>
         <div class="thought-image">
             <a href="data/images/a982949b-2743-56fe-aa56-1be3fd79ec9e.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/a982949b-2743-56fe-aa56-1be3fd79ec9e.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -587,7 +640,9 @@
         <span class="date-time">2025-04-04 13:48</span>
     </div>
     <div class="thought-content">
-        <p>🇨🇳China: announces tariffs on 5% of US exports<br><br>Bitcoin 🫠:</p>
+        <p>🇨🇳China: announces tariffs on 5% of US exports
+
+Bitcoin 🫠:</p>
         <div class="thought-image">
             <a href="data/images/019a5c8e-bb05-5ee3-af46-8c4101f11702.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/019a5c8e-bb05-5ee3-af46-8c4101f11702.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -602,7 +657,15 @@
         <span class="date-time">2025-04-04 13:35</span>
     </div>
     <div class="thought-content">
-        <p>If you think 🇺🇸USD M2 is bad, look at 🇷🇺Russia's<br><br>In 3 years, Ruble DOUBLED in supply. Up by a 100%<br><br>How come despite this, Ruble maintained its value in FOREX?<br><br>The answer is GOLD, more specifically its expansion in the balance sheet of Central Bank of Russia<br><br>It works 🤷‍♀️</p>
+        <p>If you think 🇺🇸USD M2 is bad, look at 🇷🇺Russia's
+
+In 3 years, Ruble DOUBLED in supply. Up by a 100%
+
+How come despite this, Ruble maintained its value in FOREX?
+
+The answer is GOLD, more specifically its expansion in the balance sheet of Central Bank of Russia
+
+It works 🤷‍♀️</p>
         <div class="thought-image">
             <a href="data/images/0919384c-0ba2-5135-8636-6233ea81b7ef.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/0919384c-0ba2-5135-8636-6233ea81b7ef.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -617,7 +680,15 @@
         <span class="date-time">2025-04-04 13:19</span>
     </div>
     <div class="thought-content">
-        <p>🚨🇺🇸USD M2 Money Supply<br><br>⬆️ 790 days to increase M2 by $6.3T<br>⬇️ 550 days to decrease M2 by $1.1T<br>⬆️ 500 days to increase M2 by $1.1T<br><br>⏯️ QE never stopped, it merely paused<br><br>When inflation is blamed on tariffs, keep this in mind</p>
+        <p>🚨🇺🇸USD M2 Money Supply
+
+⬆️ 790 days to increase M2 by $6.3T
+⬇️ 550 days to decrease M2 by $1.1T
+⬆️ 500 days to increase M2 by $1.1T
+
+⏯️ QE never stopped, it merely paused
+
+When inflation is blamed on tariffs, keep this in mind</p>
         <div class="thought-image">
             <a href="data/images/52ac116e-9221-5c15-89c4-2beb003702e1.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/52ac116e-9221-5c15-89c4-2beb003702e1.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -632,7 +703,9 @@
         <span class="date-time">2025-04-04 13:05</span>
     </div>
     <div class="thought-content">
-        <p>🚨🇺🇸 USD M2 Money Supply is almost back at pre-interest rate increase levels<br><br>That QT didn’t last after all 🤷‍♀️</p>
+        <p>🚨🇺🇸 USD M2 Money Supply is almost back at pre-interest rate increase levels
+
+That QT didn’t last after all 🤷‍♀️</p>
         <div class="thought-image">
             <a href="data/images/bb842943-144a-5c99-b2d3-35f048a15812.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/bb842943-144a-5c99-b2d3-35f048a15812.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -647,7 +720,9 @@
         <span class="date-time">2025-04-03 21:08</span>
     </div>
     <div class="thought-content">
-        <p>Remember: FIAT currencies come & go<br><br>✨ Only Gold remains ✨ http</p>
+        <p>Remember: FIAT currencies come & go
+
+✨ Only Gold remains ✨ http</p>
         <div class="thought-image">
             <a href="data/images/592de67e-0292-5b18-82ba-e6adae8a92a2.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/592de67e-0292-5b18-82ba-e6adae8a92a2.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -662,7 +737,17 @@
         <span class="date-time">2025-04-03 20:33</span>
     </div>
     <div class="thought-content">
-        <p>🚨 Financial Stress Index Tariffs Update<br><br>Trump/US tariffs so far:<br>⬇️ Equity valuation down<br>⬆️ Volatility up<br>⬆️ Safe assets up<br>⬆️ Credit spread up<br><br>📈 A perfect setup for the increase of OFR's Financial Stress Index<br><br>Let’s see - it’s updated with a 2 day delay</p>
+        <p>🚨 Financial Stress Index Tariffs Update
+
+Trump/US tariffs so far:
+⬇️ Equity valuation down
+⬆️ Volatility up
+⬆️ Safe assets up
+⬆️ Credit spread up
+
+📈 A perfect setup for the increase of OFR's Financial Stress Index
+
+Let’s see - it’s updated with a 2 day delay</p>
         <div class="thought-image">
             <a href="data/images/0ca005d4-42c7-5013-9f5d-ce6b36a739de.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/0ca005d4-42c7-5013-9f5d-ce6b36a739de.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -677,7 +762,15 @@
         <span class="date-time">2025-04-03 19:28</span>
     </div>
     <div class="thought-content">
-        <p>🇪🇺 The best countermeasure that EU can take is swapping US securities for Gold<br><br>Gold is inversely correlated with USD. Such a decision can be done today and it will:<br><br>1️⃣be a response to the US<br>2️⃣increase value of EUR<br>3️⃣minimize consumer impact<br><br>Anything else will hurt the economy</p>
+        <p>🇪🇺 The best countermeasure that EU can take is swapping US securities for Gold
+
+Gold is inversely correlated with USD. Such a decision can be done today and it will:
+
+1️⃣be a response to the US
+2️⃣increase value of EUR
+3️⃣minimize consumer impact
+
+Anything else will hurt the economy</p>
         <div class="thought-image">
             
         </div>
@@ -692,7 +785,13 @@
         <span class="date-time">2025-04-03 15:31</span>
     </div>
     <div class="thought-content">
-        <p>🤯 USD/EUR down 3 cents overnight<br><br>🇺🇸 An immediate response to Trump/USA import tariffs<br><br>This is Bitcoin-level volatility in FOREX<br><br>Volatility is a measure of risk. What does this mean for the US Dollar?</p>
+        <p>🤯 USD/EUR down 3 cents overnight
+
+🇺🇸 An immediate response to Trump/USA import tariffs
+
+This is Bitcoin-level volatility in FOREX
+
+Volatility is a measure of risk. What does this mean for the US Dollar?</p>
         <div class="thought-image">
             <a href="data/images/1ee2207d-cd67-5ebb-bb69-de1991cf91a7.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/1ee2207d-cd67-5ebb-bb69-de1991cf91a7.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -707,7 +806,13 @@
         <span class="date-time">2025-04-03 01:49</span>
     </div>
     <div class="thought-content">
-        <p>🚨 Bitcoin Reacts To US Tariffs:<br><br>As expected, a massive BTC sell-off post Trump's tariffs announcement<br><br>The price peaked during the speech, and then dumped down more than 6% so far + US dollar index is down<br><br>A move away from riskier assets & USD into Gold & foreign currencies https://</p>
+        <p>🚨 Bitcoin Reacts To US Tariffs:
+
+As expected, a massive BTC sell-off post Trump's tariffs announcement
+
+The price peaked during the speech, and then dumped down more than 6% so far + US dollar index is down
+
+A move away from riskier assets & USD into Gold & foreign currencies https://</p>
         <div class="thought-image">
             
         </div>
@@ -722,7 +827,13 @@
         <span class="date-time">2025-04-03 01:04</span>
     </div>
     <div class="thought-content">
-        <p>🚨 🇷🇺🇨🇳🇪🇺🇯🇵 reacting to US tariffs<br><br>The initial FOREX response to tariffs is a net outflow from #USD<br><br>US dollar fell against major currencies. The Euro fell against both the Chinese Yuan/renminbi & the Russian Ruble<br><br>Interesting, but expected having #RUB & #Yuan gain from this https://</p>
+        <p>🚨 🇷🇺🇨🇳🇪🇺🇯🇵 reacting to US tariffs
+
+The initial FOREX response to tariffs is a net outflow from #USD
+
+US dollar fell against major currencies. The Euro fell against both the Chinese Yuan/renminbi & the Russian Ruble
+
+Interesting, but expected having #RUB & #Yuan gain from this https://</p>
         <div class="thought-image">
             <a href="data/images/44d7079b-9203-5c9d-a193-9d92e732ce57.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/44d7079b-9203-5c9d-a193-9d92e732ce57.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -737,7 +848,11 @@
         <span class="date-time">2025-04-02 23:56</span>
     </div>
     <div class="thought-content">
-        <p>🔴 $BTC, $DXY & $XAU during Trump's tariffs speech<br><br>Interesting to observe the negative correlation between Bitcoin & US Dollar Index<br><br>Gold wasn’t clearly correlated with either. This makes sense - the tariffs lead to uncertainty regarding the reserve currency & central bank… https://t.co</p>
+        <p>🔴 $BTC, $DXY & $XAU during Trump's tariffs speech
+
+Interesting to observe the negative correlation between Bitcoin & US Dollar Index
+
+Gold wasn’t clearly correlated with either. This makes sense - the tariffs lead to uncertainty regarding the reserve currency & central bank… <a href="https://t.co" target="_blank">https://t.co</a></p>
         <div class="thought-image">
             <a href="data/images/c21a113c-ba39-5fa4-a9af-d657c25fea09.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/c21a113c-ba39-5fa4-a9af-d657c25fea09.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -752,7 +867,9 @@
         <span class="date-time">2025-04-02 20:00</span>
     </div>
     <div class="thought-content">
-        <p>🚨 JUST IN: $87K Bitcoin<br><br>This is just a pre-tariffs announcements pump that will sell off once Trump speaks in a few hours, right? 😁</p>
+        <p>🚨 JUST IN: $87K Bitcoin
+
+This is just a pre-tariffs announcements pump that will sell off once Trump speaks in a few hours, right? 😁</p>
         <div class="thought-image">
             <a href="data/images/71ee351e-e5c2-5280-a3a3-82e55fddd206.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/71ee351e-e5c2-5280-a3a3-82e55fddd206.jpg" alt="Thought Image" class="thought-img"></a>
         </div>

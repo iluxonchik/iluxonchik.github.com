@@ -158,25 +158,26 @@
         }
         /* Container for the clickable image */
         .thought-image .lightbox-trigger {
-            display: block; /* Make it a block to control width/margins */
-            /* Remove fixed max-width to allow full width */
-            /* max-width: 400px; */ 
-            width: 100%; /* Take full available width */
-            margin: 0 auto; /* Center the block if parent width allows */
+            display: block;
+            /* NEW: Add max-width for desktop consistency */
+            max-width: 550px;  /* Adjust as needed, provides consistency */
+            width: 100%; /* Still allows it to shrink */
+            /* Center the image container */
+            margin-left: auto;
+            margin-right: auto;
             cursor: pointer;
-            overflow: hidden; 
-            border-radius: 8px; /* Slightly larger radius, like Twitter */
+            overflow: hidden;
+            border-radius: 8px;
             border: 1px solid #ddd; /* Slightly darker border */
-            position: relative; /* For potential future overlays if needed */
+            position: relative;
         }
         .thought-image img.thought-img {
             display: block; 
             width: 100%; 
             height: auto; 
-            transition: opacity 0.2s ease-in-out; /* Change hover effect */
+            transition: opacity 0.2s ease-in-out; 
         }
          .thought-image .lightbox-trigger:hover img.thought-img {
-              /* transform: scale(1.03); */ /* Remove scale, use opacity */
               opacity: 0.9; 
          }
 
@@ -187,51 +188,53 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.9); /* Slightly darker */
-            display: none; 
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            padding: 15px; /* Slightly less padding */
+            /* Increased padding for margins around the maximized image */
+            padding: 40px;
             box-sizing: border-box;
         }
         .lightbox-overlay.visible {
             display: flex; 
         }
         .lightbox-content {
-            /* These ensure the container itself doesn't exceed viewport */
-            max-width: calc(100% - 40px); /* Max width considering padding */
-            max-height: calc(100% - 40px); /* Max height considering padding */
+            /* Container for the image, constrained by viewport padding */
+            /* Remove max-width/max-height, rely on parent padding */
             position: relative;
-            display: flex; /* Use flex to help center image if needed */
+            display: flex;
             justify-content: center;
             align-items: center;
+            /* Ensure the container itself fills the padded space */
+            width: 100%;
+            height: 100%;
         }
         .lightbox-content img {
+            /* Image itself scales down to fit container */
             display: block;
-            /* These ensure the image scales down to fit the container */
-            max-width: 100%;
-            max-height: 100%;
-            /* Explicitly set width/height to auto */
-            width: auto; 
+            max-width: 100%; /* Fit container width (respecting padding) */
+            max-height: 100%; /* Fit container height (respecting padding) */
+            width: auto;
             height: auto;
-            object-fit: contain; 
-            border: none; /* Remove border from lightbox image */
-            box-shadow: 0 5px 30px rgba(0,0,0,0.5); /* Adjust shadow */
+            object-fit: contain;
+            border: none;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.5);
         }
         .lightbox-close {
             position: absolute;
-            top: -10px; /* Adjust position */
+            top: -10px;
             right: -10px;
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
-            color: #000; /* Black 'X' */
+            background: rgba(255, 255, 255, 0.8);
+            color: #000;
             border: none;
             border-radius: 50%;
             width: 30px;
             height: 30px;
-            font-size: 24px; /* Larger 'X' */
-            font-weight: normal; /* Normal weight */
-            line-height: 28px; 
+            font-size: 24px;
+            font-weight: normal;
+            line-height: 28px;
             text-align: center;
             cursor: pointer;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -295,24 +298,20 @@
              /* .thought-header .separator { display: none; } */
 
              .thought-image .lightbox-trigger {
-                  /* No change needed, already takes full width */
-                  border-radius: 6px; /* Slightly smaller radius on mobile */
+                  /* Remove max-width on mobile to allow full width */
+                  max-width: 100%; 
+                  border-radius: 6px; 
              }
 
-             .lightbox-overlay {
-                  padding: 10px; /* Less padding on mobile */
-             }
-              .lightbox-content {
-                  max-width: 100%;
-                  max-height: 100%;
+             .lightbox-overlay { padding: 10px; }
+             .lightbox-content {
+                  /* Adjust max size slightly for smaller padding */
+                  max-width: calc(100vw - 20px);
+                  max-height: calc(100vh - 20px);
               }
              .lightbox-close {
-                 top: 5px; 
-                 right: 5px;
-                 width: 28px; /* Slightly smaller */
-                 height: 28px;
-                 font-size: 20px;
-                 line-height: 26px;
+                 top: 5px; right: 5px; width: 28px; height: 28px;
+                 font-size: 20px; line-height: 26px;
              }
 
             .pagination {
@@ -407,7 +406,11 @@
         <span class="date-time">2024-06-03 22:59</span>
     </div>
     <div class="thought-content">
-        <p>Besides inflation there is also discounting, which measures the time value of money<br><br>Discounting states that money today is worth more than tomorrow, since it can be invested to earn an interest<br><br>You can compute today’s value of future money using the formula below 👇</p>
+        <p>Besides inflation there is also discounting, which measures the time value of money
+
+Discounting states that money today is worth more than tomorrow, since it can be invested to earn an interest
+
+You can compute today’s value of future money using the formula below 👇</p>
         <div class="thought-image">
             <a href="data/images/9c32bba3-3c1f-5375-a980-0f5d8d74103b.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/9c32bba3-3c1f-5375-a980-0f5d8d74103b.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -422,7 +425,12 @@
         <span class="date-time">2024-06-03 01:03</span>
     </div>
     <div class="thought-content">
-        <p>🔴 Every time the Treasury Bond rate (#DGS10 / #US10Y) raises above the Fed Funds Rate (#FEDFUNDS / #EFFR), the Fed Funds Rate decreases dramatically<br><br>Historically, this has always been the case<br>and this is exactly what's happening now<br><br>Expect a rate cut from the #FED very soon</p>
+        <p>🔴 Every time the Treasury Bond rate (#DGS10 / #US10Y) raises above the Fed Funds Rate (#FEDFUNDS / #EFFR), the Fed Funds Rate decreases dramatically
+
+Historically, this has always been the case
+and this is exactly what's happening now
+
+Expect a rate cut from the #FED very soon</p>
         <div class="thought-image">
             <a href="data/images/2dc69da1-9321-55c5-9b33-559382d4a2d4.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2dc69da1-9321-55c5-9b33-559382d4a2d4.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -452,7 +460,13 @@
         <span class="date-time">2024-05-30 20:57</span>
     </div>
     <div class="thought-content">
-        <p>🌍 Imagine 24/7 global video surveillance that doesn't compromise privacy<br><br>🤯 Sounds impossible?<br><br>😎 Zero-Knowledge Proofs disagree<br><br>Here's why 🧵👇</p>
+        <p>🌍 Imagine 24/7 global video surveillance that doesn't compromise privacy
+
+🤯 Sounds impossible?
+
+😎 Zero-Knowledge Proofs disagree
+
+Here's why 🧵👇</p>
         <div class="thought-image">
             <a href="data/images/0804f423-a913-5581-a166-1f019068ac4d.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/0804f423-a913-5581-a166-1f019068ac4d.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -467,7 +481,9 @@
         <span class="date-time">2024-05-27 16:13</span>
     </div>
     <div class="thought-content">
-        <p>Linguistic vocal communication is such a wild concept 🤯<br><br>Like, I can take an abstract concept that I have in my mind, transform it into vibrations, transmit it wirelessly over air and have another individual parse it back into a similar abstract concept, now in their mind</p>
+        <p>Linguistic vocal communication is such a wild concept 🤯
+
+Like, I can take an abstract concept that I have in my mind, transform it into vibrations, transmit it wirelessly over air and have another individual parse it back into a similar abstract concept, now in their mind</p>
         <div class="thought-image">
             
         </div>
@@ -482,7 +498,15 @@
         <span class="date-time">2024-05-26 15:01</span>
     </div>
     <div class="thought-content">
-        <p>🚨 PRIVACY IS A MYTH! 🕵️‍♂️<br><br>Digital privacy is fundamentally unfeasible, unless we rely on verifiable computation constructs like Zero-Knowledge Proofs (#ZKP) 🔐<br><br>A thread 🧵 on why ZKPs are the key to true digital privacy 👇<br><br><br><br>#Privacy #ZeroKnowledge #Web3</p>
+        <p>🚨 PRIVACY IS A MYTH! 🕵️‍♂️
+
+Digital privacy is fundamentally unfeasible, unless we rely on verifiable computation constructs like Zero-Knowledge Proofs (#ZKP) 🔐
+
+A thread 🧵 on why ZKPs are the key to true digital privacy 👇
+
+
+
+#Privacy #ZeroKnowledge #Web3</p>
         <div class="thought-image">
             
         </div>
@@ -512,7 +536,9 @@
         <span class="date-time">2024-05-23 12:25</span>
     </div>
     <div class="thought-content">
-        <p>GPT-4 outperforms both, carbon-based financial analysts (humans) and purpose-specific ANNs<br><br>While the former is understandable, the latter is surprising. The broader context of an LLM appears to be more important than the specialized multi-dimensionality of an ANN</p>
+        <p>GPT-4 outperforms both, carbon-based financial analysts (humans) and purpose-specific ANNs
+
+While the former is understandable, the latter is surprising. The broader context of an LLM appears to be more important than the specialized multi-dimensionality of an ANN</p>
         <div class="thought-image">
             <a href="data/images/114ba5d4-bb18-5694-864b-b56d12d1f09e.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/114ba5d4-bb18-5694-864b-b56d12d1f09e.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -527,7 +553,11 @@
         <span class="date-time">2024-05-20 17:03</span>
     </div>
     <div class="thought-content">
-        <p>🔴 GDP is a useless metric 🔴<br><br>A country may resort to debt, inject that debt into the economy, and see nominal GDP figures raise, without producing value. This is a recipe for an economic bubble<br><br>Debt-to-GDP ratio presents a much clearer picture (smaller is better)👇</p>
+        <p>🔴 GDP is a useless metric 🔴
+
+A country may resort to debt, inject that debt into the economy, and see nominal GDP figures raise, without producing value. This is a recipe for an economic bubble
+
+Debt-to-GDP ratio presents a much clearer picture (smaller is better)👇</p>
         <div class="thought-image">
             <a href="data/images/2159f92f-a7d8-52d4-b239-444503d0af1c.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2159f92f-a7d8-52d4-b239-444503d0af1c.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
@@ -542,7 +572,11 @@
         <span class="date-time">2024-05-20 16:37</span>
     </div>
     <div class="thought-content">
-        <p>I invite you to check your country's net exports as a % of GDP and be surprised 😳<br><br>GDP comprises of numerous measures, some of which don’t have any relation to the produced value<br><br>Net exports provide a more objective measure of self-sustainability and relative value</p>
+        <p>I invite you to check your country's net exports as a % of GDP and be surprised 😳
+
+GDP comprises of numerous measures, some of which don’t have any relation to the produced value
+
+Net exports provide a more objective measure of self-sustainability and relative value</p>
         <div class="thought-image">
             
         </div>
@@ -572,7 +606,9 @@
         <span class="date-time">2024-04-30 00:44</span>
     </div>
     <div class="thought-content">
-        <p>Additional insights from a practical perspective can be found here 👇<br><br>🔗</p>
+        <p>Additional insights from a practical perspective can be found here 👇
+
+🔗</p>
         <div class="thought-image">
             
         </div>
@@ -587,7 +623,9 @@
         <span class="date-time">2024-04-28 21:28</span>
     </div>
     <div class="thought-content">
-        <p>🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙<br><br>In this article, we explore how the #BRICS currency can be implemented on a public #blockchain and challenge the claims made in "Digital Money Options for the BRICS" for #Web3  🧵👇</p>
+        <p>🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙
+
+In this article, we explore how the #BRICS currency can be implemented on a public #blockchain and challenge the claims made in "Digital Money Options for the BRICS" for #Web3  🧵👇</p>
         <div class="thought-image">
             
         </div>
@@ -632,7 +670,15 @@
         <span class="date-time">2024-04-14 15:28</span>
     </div>
     <div class="thought-content">
-        <p>🔍 Ever wondered how zkSNARKs & zkSTARKs ACTUALLY work under the hood? 🤔<br><br>🔐 These #ZeroKnowledge protocols offer a novel way to PROVE computations without revealing the computation itself! 🤯<br><br>⛓️ Native match with #blockchain<br><br>🧵 Let’s dive in 👇<br><br>http</p>
+        <p>🔍 Ever wondered how zkSNARKs & zkSTARKs ACTUALLY work under the hood? 🤔
+
+🔐 These #ZeroKnowledge protocols offer a novel way to PROVE computations without revealing the computation itself! 🤯
+
+⛓️ Native match with #blockchain
+
+🧵 Let’s dive in 👇
+
+http</p>
         <div class="thought-image">
             
         </div>
@@ -647,7 +693,15 @@
         <span class="date-time">2024-04-13 20:28</span>
     </div>
     <div class="thought-content">
-        <p>zkSNARKs & zkSTARKs: Disrupting Verifiable Computation <br><br> Explore how these #ZeroKnowledge protocols SURPASS the #EVM's model, opening a world of possibilities for #Web3 applications<br><br> Deep dive ARTICLE <br><br><br><br> Let's unravel the key insights</p>
+        <p>zkSNARKs & zkSTARKs: Disrupting Verifiable Computation 
+
+ Explore how these #ZeroKnowledge protocols SURPASS the #EVM's model, opening a world of possibilities for #Web3 applications
+
+ Deep dive ARTICLE 
+
+
+
+ Let's unravel the key insights</p>
         <div class="thought-image">
             
         </div>
@@ -707,7 +761,9 @@
         <span class="date-time">2024-01-28 19:35</span>
     </div>
     <div class="thought-content">
-        <p>Individuality isn’t about opposing the majority. It’s about thinking for yourself<br><br>In product, it’s not about doing something or avoiding something. It’s about doing what increases value, and not doing what diminishes value</p>
+        <p>Individuality isn’t about opposing the majority. It’s about thinking for yourself
+
+In product, it’s not about doing something or avoiding something. It’s about doing what increases value, and not doing what diminishes value</p>
         <div class="thought-image">
             
         </div>
@@ -722,7 +778,11 @@
         <span class="date-time">2024-01-23 19:42</span>
     </div>
     <div class="thought-content">
-        <p>Very interesting to see the #BitcoinEFT used as a liquidity exit<br><br>And only a few days ago the supply APY on most FIAT stable coins was over 20% on #AAVE You could mistake this for a bullish sign, in an apparent short of FIAT for #crypto<br><br>Always analyze the big picture</p>
+        <p>Very interesting to see the #BitcoinEFT used as a liquidity exit
+
+And only a few days ago the supply APY on most FIAT stable coins was over 20% on #AAVE You could mistake this for a bullish sign, in an apparent short of FIAT for #crypto
+
+Always analyze the big picture</p>
         <div class="thought-image">
             
         </div>
@@ -752,7 +812,9 @@
         <span class="date-time">2024-01-08 23:28</span>
     </div>
     <div class="thought-content">
-        <p>The point of software is to be able to iterate fast. 100% of software can be replaced with hardware, but nobody wants to hardcode circuits (except for the #ZK crowd 😄). Iteration is its value proposition<br><br>This is why software products that take years to deliver don’t make sense</p>
+        <p>The point of software is to be able to iterate fast. 100% of software can be replaced with hardware, but nobody wants to hardcode circuits (except for the #ZK crowd 😄). Iteration is its value proposition
+
+This is why software products that take years to deliver don’t make sense</p>
         <div class="thought-image">
             
         </div>
