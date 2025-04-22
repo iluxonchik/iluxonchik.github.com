@@ -258,7 +258,6 @@
         .thought-content p {
             margin-top: 0;
             margin-bottom: 15px;
-            line-height: 1.5; 
             white-space: pre-wrap;
             word-wrap: break-word;
             color: var(--text-color); /* Ensure paragraph text uses variable */
@@ -479,36 +478,7 @@
              background-color: transparent;
         }
 
-        /* Theme Feedback Styling */
-        .theme-feedback {
-            position: fixed;
-            top: 20px; /* Position from the top */
-            left: 50%;
-            transform: translateX(-50%); /* Center horizontally */
-            background-color: var(--container-bg); /* Use theme background */
-            color: var(--text-color); /* Use theme text color */
-            padding: 10px 20px;
-            border-radius: 20px; /* Rounded corners */
-            border: 1px solid var(--border-color);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            font-size: 0.9em;
-            z-index: 1001; /* Above lightbox overlay */
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.4s ease, visibility 0.4s ease, top 0.4s ease;
-            white-space: nowrap;
-        }
-        .theme-feedback.visible {
-            opacity: 1;
-            visibility: visible;
-            top: 30px; /* Slightly move down when visible */
-        }
-
     </style>
-
-    <!-- Theme Feedback Element -->
-    <div id="theme-feedback" class="theme-feedback" aria-live="polite"></div>
-
 </head>
 <body>
     <div class="container">
@@ -1020,89 +990,64 @@ According to experts on social media, the recent advancements in quantum computi
         document.addEventListener('DOMContentLoaded', () => {
             const body = document.body;
             const profileImg = document.querySelector('.profile-img');
-            const feedbackElement = document.getElementById('theme-feedback');
-            const themeLocalStorageKey = 'themePreference'; // Stores 'auto', 'light', or 'dark'
-            let feedbackTimeout;
+            const themeLocalStorageKey = 'themePreference';
 
             function applyTheme(theme) {
-                // Remove specific mode classes first
                 body.classList.remove('light-mode', 'dark-mode');
-                let actualTheme = theme;
-
-                if (theme === 'auto') {
-                    // Check system preference if auto
-                    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                    actualTheme = prefersDark ? 'dark' : 'light';
-                } 
-
-                // Apply the determined theme class
-                if (actualTheme === 'dark') {
+                if (theme === 'dark') {
                     body.classList.add('dark-mode');
                 } else {
-                    body.classList.add('light-mode'); 
+                    body.classList.add('light-mode'); // Default to light if theme is not 'dark'
                 }
-            }
-
-            function showFeedback(message) {
-                if (!feedbackElement) return;
-                
-                // Clear any existing timeout to prevent overlap
-                if (feedbackTimeout) {
-                    clearTimeout(feedbackTimeout);
-                }
-
-                feedbackElement.innerHTML = message;
-                feedbackElement.classList.add('visible');
-
-                // Hide feedback after a delay
-                feedbackTimeout = setTimeout(() => {
-                    feedbackElement.classList.remove('visible');
-                }, 1700); // 1.7 seconds
             }
 
             function setThemePreference(theme) {
                 localStorage.setItem(themeLocalStorageKey, theme);
                 applyTheme(theme);
-                // Show feedback based on the *newly set* preference
-                let feedbackMessage = '';
-                if (theme === 'light') {
-                    feedbackMessage = '💡 Light Mode Activated';
-                } else if (theme === 'dark') {
-                    feedbackMessage = '🌙 Dark Mode Activated';
-                } else {
-                    feedbackMessage = '⚙️ Auto Mode Activated';
-                }
-                 showFeedback(feedbackMessage);
             }
 
-            function cycleTheme() {
-                const currentPreference = localStorage.getItem(themeLocalStorageKey) || 'auto'; // Default to auto
-                let nextPreference;
-
-                if (currentPreference === 'auto') {
-                    nextPreference = 'light';
-                } else if (currentPreference === 'light') {
-                    nextPreference = 'dark';
-                } else { // currentPreference === 'dark'
-                    nextPreference = 'auto';
-                }
-                setThemePreference(nextPreference);
+            function toggleTheme() {
+                const currentTheme = localStorage.getItem(themeLocalStorageKey);
+                const newTheme = (currentTheme === 'dark' || (!currentTheme && body.classList.contains('dark-mode'))) ? 'light' : 'dark';
+                setThemePreference(newTheme);
             }
 
             // Set initial theme
-            const savedTheme = localStorage.getItem(themeLocalStorageKey) || 'auto'; // Default to auto
-            applyTheme(savedTheme);
+            const savedTheme = localStorage.getItem(themeLocalStorageKey);
+            if (savedTheme) {
+                applyTheme(savedTheme);
+            } else {
+                // No saved theme, check system preference
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                applyTheme(prefersDark ? 'dark' : 'light');
+                // Update classlist based on prefers-color-scheme initial application
+                if(prefersDark && !body.classList.contains('dark-mode')) {
+                    body.classList.add('dark-mode');
+                }
+                 if(!prefersDark && !body.classList.contains('light-mode')) {
+                     body.classList.add('light-mode');
+                 }
+            }
 
             // Add click listener to profile image
             if (profileImg) {
-                profileImg.addEventListener('click', cycleTheme);
+                profileImg.addEventListener('click', toggleTheme);
             }
 
-             // Listen for system theme changes
+             // Listen for system theme changes (optional, but good UX)
              window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-                 // Only apply change if the current preference is 'auto'
-                 if (localStorage.getItem(themeLocalStorageKey) === 'auto' || !localStorage.getItem(themeLocalStorageKey)) {
-                     applyTheme('auto'); // Re-apply auto theme to respect the change
+                 // Only change if no user preference is saved
+                 if (!localStorage.getItem(themeLocalStorageKey)) {
+                     applyTheme(event.matches ? 'dark' : 'light');
+                     // Update classlist based on the change
+                     if(event.matches && !body.classList.contains('dark-mode')){
+                         body.classList.remove('light-mode');
+                         body.classList.add('dark-mode');
+                     }
+                     if(!event.matches && !body.classList.contains('light-mode')){
+                         body.classList.remove('dark-mode');
+                         body.classList.add('light-mode');
+                     }
                  }
              });
         });
