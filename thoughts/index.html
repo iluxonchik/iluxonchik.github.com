@@ -208,8 +208,11 @@
             justify-content: center;
             align-items: center;
             /* Ensure the container itself fills the padded space */
-            width: 100%;
-            height: 100%;
+            /* width: 100%; */
+            /* height: 100%; */
+            /* ADD: Allow container to shrink/grow with image, constrained by overlay padding */
+            max-width: 100%; /* Max size determined by overlay padding */
+            max-height: 100%;
         }
         .lightbox-content img {
             /* Image itself scales down to fit container */
@@ -306,8 +309,9 @@
              .lightbox-overlay { padding: 10px; }
              .lightbox-content {
                   /* Adjust max size slightly for smaller padding */
-                  max-width: calc(100vw - 20px);
-                  max-height: calc(100vh - 20px);
+                  /* REMOVE THESE - they were overriding the general rules */
+                  /* max-width: calc(100vw - 20px); */
+                  /* max-height: calc(100vh - 20px); */
               }
              .lightbox-close {
                  top: 5px; right: 5px; width: 28px; height: 28px;
@@ -388,18 +392,18 @@
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-14 14:14</span>
+        <span class="date-time">2025-04-21 15:15</span>
     </div>
     <div class="thought-content">
-        <p>So how can you buy Russian securities in the EU?
+        <p>🇷🇺 Russian Central Bank key interest rate is at 21%
 
-Since 2022 it's unfeasible. IBKR & KIT Finance suspended trading
+3Y Russian Federation bonds are at ≈16.5% yield
 
-Deep researching with LLMs now, but it hasn’t been very fruitful so far 
+The market is pricing in upcoming rate cuts
 
-Once the sanctions are lifted you’ll see the prices explode</p>
+@AskPerplexity and @grok will tell you that Ruble & Russian economy are in a bad state. The reality is different</p>
         <div class="thought-image">
-            <a href="data/images/05c08ac2-7a37-52b3-9ab3-8731f3810d44.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/05c08ac2-7a37-52b3-9ab3-8731f3810d44.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/e29907be-37d6-5d0d-ae19-34e9adc760c7.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/e29907be-37d6-5d0d-ae19-34e9adc760c7.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
     </div>
 </div>
@@ -409,196 +413,16 @@ Once the sanctions are lifted you’ll see the prices explode</p>
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-14 12:58</span>
+        <span class="date-time">2025-04-21 08:06</span>
     </div>
     <div class="thought-content">
-        <p>2Y US Bond is a good factor/signal of FED funds rate, but there’s an even better one!
+        <p>🚨UPDATE: Gold has now reached $3400
 
-CME's 30-day FED Funds futures is a derivative for this exact purpose. The market prices them according to the expectations of upcoming FED Funds Rates</p>
-        <div class="thought-image">
-            <a href="data/images/36a86ead-0f95-5edf-9f18-312088f3fccc.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/36a86ead-0f95-5edf-9f18-312088f3fccc.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
+All time highs, followed by more all time highs
 
+Remember: gold is not increasing in value, but rather the underlying currencies are falling in value
 
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-14 12:27</span>
-    </div>
-    <div class="thought-content">
-        <p>This is definitely good news short-term for the USD!
-
-Today, short-term funding got 1.25% cheaper for the US government, and once the FED lowers the interest rates, the yields will fall more. Now ofc this will lead to inflation & devaluation of USD, but that’s a a different story</p>
-        <div class="thought-image">
-            <a href="data/images/89c121e3-19be-569d-ae46-e908de4d85bc.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/89c121e3-19be-569d-ae46-e908de4d85bc.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-14 12:24</span>
-    </div>
-    <div class="thought-content">
-        <p>Look at that liquidity moving from short-term Chinese bonds(CN01Y), to short-term US bonds(US02Y) 
-
-The market liked the removal of tariffs, however, you can’t undo the massive volatility over the past 2 weeks
-
-Moreover, US Dollar index is still below 100</p>
-        <div class="thought-image">
-            <a href="data/images/5dfbbd9e-21a3-5add-8e65-ad989ab8cb06.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/5dfbbd9e-21a3-5add-8e65-ad989ab8cb06.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-12 09:54</span>
-    </div>
-    <div class="thought-content">
-        <p>Regarding the bond market collapse 
-
-US Treasury Securities are the main collateral used in repurchase agreements. Given that these are short-term, the yield spike is unlikely to lead to defaults
-
-However, the fall in bond prices will reduce credit, adding to liquidity crunch</p>
-        <div class="thought-image">
-            <a href="data/images/d30f2c6d-06c6-546d-8eb3-e05dafdd0b9e.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/d30f2c6d-06c6-546d-8eb3-e05dafdd0b9e.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-12 09:47</span>
-    </div>
-    <div class="thought-content">
-        <p>Another important fact to mention regarding Russia, is that on top of sell-off of US securities & loading up on gold in record numbers, throughout 2025 Central Bank of Russia has kept interest rates at 21% 
-
-Result = massive savings
-
-However, if EU or US did the same - their</p>
-        <div class="thought-image">
-            <a href="data/images/df4dddf5-9060-507a-b228-5c40f7b70618.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/df4dddf5-9060-507a-b228-5c40f7b70618.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-12 09:29</span>
-    </div>
-    <div class="thought-content">
-        <p>Lower USD Index =  USD Devaluation = Higher premium for USD loans = Lower bond prices = Higher bond yields
-
-It’s all connected</p>
-        <div class="thought-image">
-            <a href="data/images/fbd0eba1-291d-55fe-9782-9e0638533104.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/fbd0eba1-291d-55fe-9782-9e0638533104.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-12 03:28</span>
-    </div>
-    <div class="thought-content">
-        <p>Looks like “lowest renminbi/Yuan since 2008” didn’t last long</p>
-        <div class="thought-image">
-            <a href="data/images/2e1ae53b-173f-561b-a271-e67fc6d87f8f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2e1ae53b-173f-561b-a271-e67fc6d87f8f.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-11 21:55</span>
-    </div>
-    <div class="thought-content">
-        <p>US Treasury bond yields are acting as a risky asset
-
-Over 2% daily moves is something you see in crypto 
-
-And I don’t believe the FED will be raising rates - so it’s a market-driven US debt premium increase
-
-Lower rates incoming, but sovereign premium will still increase</p>
-        <div class="thought-image">
-            <a href="data/images/b3baaa11-c2af-5d21-ab7f-4e872acee456.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/b3baaa11-c2af-5d21-ab7f-4e872acee456.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-11 19:25</span>
-    </div>
-    <div class="thought-content">
-        <p>I think now you understand 
-
-Gold hitting ATH after ATH 
-
-Very concerning for USD</p>
-        <div class="thought-image">
-            <a href="data/images/25069b90-5379-5f38-b924-0928c8765b09.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/25069b90-5379-5f38-b924-0928c8765b09.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-11 19:00</span>
-    </div>
-    <div class="thought-content">
-        <p>Here’s a visual of how it looks like
-
-A timeline of thoughts/short-form content/microblog</p>
-        <div class="thought-image">
-            <a href="data/images/2f6ddfe7-376f-5e1f-a429-24fd96598dc9.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2f6ddfe7-376f-5e1f-a429-24fd96598dc9.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-11 18:54</span>
-    </div>
-    <div class="thought-content">
-        <p>Just launched <a href="https://illya.sh/thoughts" target="_blank">https://illya.sh/thoughts</a>
-
-I’ll use for short-form posts. Think Twitter/X, but self-hosted under my domain
-
-It’s an MVP and for now contains a subset of X posts. Later I’ll make it real-timish and cross-post some of my content from here
-
-Coded using Gemini 2.5 Pro</p>
+Expect this trend to continue</p>
         <div class="thought-image">
             
         </div>
@@ -610,90 +434,14 @@ Coded using Gemini 2.5 Pro</p>
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-11 13:34</span>
+        <span class="date-time">2025-04-21 05:52</span>
     </div>
     <div class="thought-content">
-        <p>US Dollar Index $DXY fell below 100</p>
-        <div class="thought-image">
-            <a href="data/images/027c631a-dca2-5990-8d2c-d828ee7cc2bf.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/027c631a-dca2-5990-8d2c-d828ee7cc2bf.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
+        <p>🇺🇸UPDATE: USD Index in fact did NOT enjoy this
 
+#DXY down over 1% today, currently at 98.3
 
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-11 02:58</span>
-    </div>
-    <div class="thought-content">
-        <p>To clarify - here you’re stating with US Dollar and then buying either Ruble or Gold. It’s in this scenario that both investments have a similar yield
-
-If you start with EUR, Ruble actually yields more than Gold - 9.3 vs 11% (in the past 3 months)</p>
-        <div class="thought-image">
-            <a href="data/images/99d78a7a-3669-5afd-8563-18e118c048c6.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/99d78a7a-3669-5afd-8563-18e118c048c6.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-10 23:47</span>
-    </div>
-    <div class="thought-content">
-        <p>Regulated equities market, which is supposed to be low-risk became as volatile as crypto
-
-Just look at NASDAQ, S&P500 & Co
-
-Every time I open TradingView it’s a +-5%
-
-Maybe more regulations will solve this? 😁</p>
-        <div class="thought-image">
-            <a href="data/images/534922fb-d1c6-5764-9cb1-e0b1677729de.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/534922fb-d1c6-5764-9cb1-e0b1677729de.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-08 14:02</span>
-    </div>
-    <div class="thought-content">
-        <p>🇷🇺 Russia is immune to US tariffs 
-
-Russia's foreign reserves are as follows:
-- 0.007% US Treasury bonds
-- 35% Gold
-
-Russia exports <1% to the US. Russia is a net exporter
-
-This makes them protected from US sovereign risk (USD devaluation) & trade risk https:/</p>
-        <div class="thought-image">
-            <a href="data/images/844af59f-ba57-5422-bbdb-58a534b13d05.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/844af59f-ba57-5422-bbdb-58a534b13d05.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-08 01:15</span>
-    </div>
-    <div class="thought-content">
-        <p>🇪🇺🇺🇸US tariffs present a unique opportunity for EU's capital markets
-
-Billions of $ are flowing out of US markets. Let that liquidity be parked in the EU. All that’s needed is inviting conditions
-
-It can start with a small, less-regulated market subsection to allow seamless foreign funds flow</p>
+It's almost like aggressively weaponizing the currency erodes the trust in it. Who knew!</p>
         <div class="thought-image">
             
         </div>
@@ -705,12 +453,25 @@ It can start with a small, less-regulated market subsection to allow seamless fo
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-08 01:03</span>
+        <span class="date-time">2025-04-21 04:03</span>
     </div>
     <div class="thought-content">
-        <p>Of course, this also gives China leverage - if The People Bank's of China (China's Central Bank) dumps their US Securities in the market, it will skyrocket bond yields, by reducing their prices
+        <p>3 days later… and $DXY is at ≈98.3 😁</p>
+        <div class="thought-image">
+            <a href="data/images/d5b4a6e9-5c2c-5eca-be73-3a352b269fec.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/d5b4a6e9-5c2c-5eca-be73-3a352b269fec.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
 
-Who will lend to the US then, and at what premium? And at 125% debt to GDP 😬</p>
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-21 00:32</span>
+    </div>
+    <div class="thought-content">
+        <p>The US Dollar index will not enjoy this 😬</p>
         <div class="thought-image">
             
         </div>
@@ -722,16 +483,16 @@ Who will lend to the US then, and at what premium? And at 125% debt to GDP 😬<
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-08 00:38</span>
+        <span class="date-time">2025-04-20 11:16</span>
     </div>
     <div class="thought-content">
-        <p>China is the 2nd largest holder of US Treasury bonds - a staggering 23% of their foreign exchange reserves
+        <p>🇷🇴 National Bank of Romania's gold reserves are ≈13% of their international reserves as of March 2025
 
-This makes China extremely exposed to US systemic risk. Which is why tariffs will hit them double hard - at exports and at renminbi/Yuan due to falling #DXY
+I like how they added the paragraph in red 😁
 
-Not saying they can’t sustain it though</p>
+Gold reserves unchanged - value raising. Get used to this trend</p>
         <div class="thought-image">
-            <a href="data/images/a36caf75-2329-5cfa-a3ef-9ff05afee55a.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/a36caf75-2329-5cfa-a3ef-9ff05afee55a.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/8374e516-87a0-566c-bd62-7d144d980f8e.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/8374e516-87a0-566c-bd62-7d144d980f8e.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
     </div>
 </div>
@@ -741,10 +502,31 @@ Not saying they can’t sustain it though</p>
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-07 23:05</span>
+        <span class="date-time">2025-04-20 11:08</span>
     </div>
     <div class="thought-content">
-        <p>For net BTC/ETH futures positions by hedge funds, you can check:</p>
+        <p>🇷🇴 I like how Romania's Central Bank has this image breaking down their international reserves on their homepage
+
+However, I didn’t understand why it links to November 2024 data, when March 2025 data is already available 😁
+
+Gold reserves are ≈12% here</p>
+        <div class="thought-image">
+            <a href="data/images/7e097faa-ae8f-52a6-a17c-5a53d247319d.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/7e097faa-ae8f-52a6-a17c-5a53d247319d.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-19 22:39</span>
+    </div>
+    <div class="thought-content">
+        <p>Christ is risen!
+
+Happy Easter!</p>
         <div class="thought-image">
             
         </div>
@@ -756,25 +538,231 @@ Not saying they can’t sustain it though</p>
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-07 23:04</span>
+        <span class="date-time">2025-04-19 22:35</span>
     </div>
     <div class="thought-content">
-        <p>Sure, if you:
+        <p>Ford F-150 sold 2285 units in China 🇨🇳 
 
- Put tariffs
- Lower interest rates
- Remove tariffs
+Great Wall Cannon (长城炮) - 80K
 
-the maket will skyrocket 
+Unlike the US or most of the world - China has effective factories & supply chains - offering them a myriad of domestic alternatives
 
-But that also means increased:
- Asset bubble
- Inflation
- Public debt/deficit
+China doesn’t need Ford. Ford needs China due to imported parts</p>
+        <div class="thought-image">
+            <a href="data/images/b1562c7e-4a3b-5e67-8d9b-799090e0bcc8.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/b1562c7e-4a3b-5e67-8d9b-799090e0bcc8.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
 
-Tariff income won’t offset it
 
-Monitor the hedge fund's shorts on risky assets, and when the</p>
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-19 13:26</span>
+    </div>
+    <div class="thought-content">
+        <p>🇷🇺 Russian residents are net creditors to the world
+
+In Balance of Payments, financial account tracks transactions involving financial assets and liabilities
+
+Positive value = more capital leaving country than entering
+
+Sanctions make it almost impossible to invest in Russia</p>
+        <div class="thought-image">
+            <a href="data/images/5703fb62-e38c-5b9d-8fb6-099bdc6a7306.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/5703fb62-e38c-5b9d-8fb6-099bdc6a7306.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-19 12:47</span>
+    </div>
+    <div class="thought-content">
+        <p>🇺🇸 USD index bearish/in a downtrend
+
+5Y timeframe weekly chart shows lower highs & lows
+
+Ever since Trump took office, every $DXY weekly candle has been red
+
+Greatest USD economy in history 🫠</p>
+        <div class="thought-image">
+            <a href="data/images/ef874022-c543-5e7f-8a61-8a40878446b9.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/ef874022-c543-5e7f-8a61-8a40878446b9.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-19 02:33</span>
+    </div>
+    <div class="thought-content">
+        <p>🇷🇺 Russian government gets a lot of revenue from natural resource exports, such as oil and gas
+
+This means the government has a lot of Rubles to deposit at the Central Bank
+
+👉A big help towards the CBR maintaining negative net claims on the government
+
+Result = strong Ruble 📈</p>
+        <div class="thought-image">
+            <a href="data/images/15535db4-edda-52ea-94a0-8a8379b10279.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/15535db4-edda-52ea-94a0-8a8379b10279.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-19 02:12</span>
+    </div>
+    <div class="thought-content">
+        <p>🇷🇺 Another reason for a strong Ruble is the consistent negative net claims on general government on the balance sheet of Russian Central Bank
+
+Russian government deposited more in the central bank than borrowed from it - meaning NO monetary financing of budget deficit</p>
+        <div class="thought-image">
+            <a href="data/images/800fce4a-b06d-5630-a5e5-aedb7834e593.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/800fce4a-b06d-5630-a5e5-aedb7834e593.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-19 01:21</span>
+    </div>
+    <div class="thought-content">
+        <p>🇷🇺 Ruble correlates with gold, becoming a hedge against USD
+
+USD falls against both, Ruble & gold
+
+Russian Central Bank has been continuously increasing their gold holdings, which are currently more than 1/2 the size of their foreign currency reserves & 35% of int'l reserves</p>
+        <div class="thought-image">
+            <a href="data/images/8bd15cf5-78cd-5d53-b4c2-4098298de084.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/8bd15cf5-78cd-5d53-b4c2-4098298de084.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-19 01:08</span>
+    </div>
+    <div class="thought-content">
+        <p>I’ve referred to gold being 35% of Russian Central Bank's foreign currency reserves, when I in fact meant international reserves
+
+The core idea is unchanged - this is a technicality. Central Bank of Russia reports:
+
+International Reserves = Foreign Exchange Reserves + Gold</p>
+        <div class="thought-image">
+            <a href="data/images/fd6d1dfc-c81b-59ac-8c85-996803a21368.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/fd6d1dfc-c81b-59ac-8c85-996803a21368.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-18 09:09</span>
+    </div>
+    <div class="thought-content">
+        <p>🇺🇸🇷🇺 USD is TANKING against Ruble
+
+… on a daily basis 😳
+
+It’s only partially tariffs. This has been a trend even prior to them
+
+Russia loaded up on Gold & sold off their US securities. Trade with US is negligible 
+
+Russia self-administered an immunity shot</p>
+        <div class="thought-image">
+            <a href="data/images/f976ae54-b0cf-5c1a-8f86-d6ad1b66eb33.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/f976ae54-b0cf-5c1a-8f86-d6ad1b66eb33.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-18 08:52</span>
+    </div>
+    <div class="thought-content">
+        <p>🇵🇹 Portugal's Central Bank is LOADED with gold
+
+👉 Gold reserves are >80% of total assets
+
+Props to @bancodeportugal for a healthy balance sheet ratio
+
+From now on - only gold-sprinkled pastéis de nata!</p>
+        <div class="thought-image">
+            <a href="data/images/c2e9c09d-1d6c-5397-99ca-0a704f7c6f9f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/c2e9c09d-1d6c-5397-99ca-0a704f7c6f9f.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-17 21:09</span>
+    </div>
+    <div class="thought-content">
+        <p>🇺🇸🇷🇺 USD/RUB dipped under 82 😳
+
+Combine that with $DXY downtrend & a concerning picture for USD emerges</p>
+        <div class="thought-image">
+            <a href="data/images/f436ef4d-5147-509d-8fcd-3c9f318ba442.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/f436ef4d-5147-509d-8fcd-3c9f318ba442.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-17 15:22</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨US Dollar Index going to ≈98.3
+
+Current price is a strong monthly level
+
+The next destination is low 98's</p>
+        <div class="thought-image">
+            <a href="data/images/cb7141a7-e918-55b7-8071-ea7b2840e2b1.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/cb7141a7-e918-55b7-8071-ea7b2840e2b1.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-17 13:47</span>
+    </div>
+    <div class="thought-content">
+        <p>Grok summarized US tariffs effect very well
+
+As well as what will happen to the US economy, and by extension, US Dollar - the most important currency in the world</p>
         <div class="thought-image">
             
         </div>
@@ -786,14 +774,69 @@ Monitor the hedge fund's shorts on risky assets, and when the</p>
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-07 22:57</span>
+        <span class="date-time">2025-04-17 11:01</span>
     </div>
     <div class="thought-content">
-        <p>One of the core ideas behind the tariffs is to solve US's the trade deficit by incentivizing other countries to import from the US - I’m deriving this from the “tariff” formula
+        <p>🚨68-82 is the next range for USD/RUB
 
-So by importing more from US - you get lower/no tariffs
+A lot of liquidity in that area & expect selling pressure. But there is also selling pressure on the USD
 
-That won’t work. Over the medium term the</p>
+RUB is already up 30% YTD, so expect some pullbacks in the white box region</p>
+        <div class="thought-image">
+            <a href="data/images/00439005-33b8-57a0-b7a0-821c8e040a45.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/00439005-33b8-57a0-b7a0-821c8e040a45.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-17 10:56</span>
+    </div>
+    <div class="thought-content">
+        <p>🚨 Ruble falls below 82 against USD
+
+I’ve been writing for a long time about Ruble & the Russian economy, but it’s still crazy to watch it play out live
+
+REMEMBER: Russia is still under heavy sanctions, and it’s virtually impossible to purchase RUB. Once they’re dropped: 📈</p>
+        <div class="thought-image">
+            <a href="data/images/3c87100c-f591-5b38-a52c-0e582f8dea98.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/3c87100c-f591-5b38-a52c-0e582f8dea98.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-16 20:48</span>
+    </div>
+    <div class="thought-content">
+        <p>🥱 Gold hitting another ATH
+
+At this point it’s boring lol</p>
+        <div class="thought-image">
+            <a href="data/images/2737c5a6-ba99-5292-b2d5-655029bb6aac.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2737c5a6-ba99-5292-b2d5-655029bb6aac.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <span class="date-time">2025-04-16 19:19</span>
+    </div>
+    <div class="thought-content">
+        <p>Nice catch!
+
+Indeed, the adjusted March deficit is higher. It also means the adjusted February's deficit is lower 
+
+By “adjusted” I mean had the payments not been shifted due to March 1st falling on a Saturday</p>
         <div class="thought-image">
             
         </div>
@@ -805,54 +848,22 @@ That won’t work. Over the medium term the</p>
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-07 20:31</span>
+        <span class="date-time">2025-04-16 18:11</span>
     </div>
     <div class="thought-content">
-        <p>Ruble is up 2.3% on the USD
+        <p>Pushed updates to <a href="https://illya.sh/thoughts/" target="_blank">https://illya.sh/thoughts/</a> 
 
-No tariffs + little US exposure + gold works well</p>
-        <div class="thought-image">
-            <a href="data/images/bb82f7b6-cd92-5214-8c7a-70f0925e4ff1.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/bb82f7b6-cd92-5214-8c7a-70f0925e4ff1.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
+The images now lazy load & fixed several issues on desktop
 
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-07 19:51</span>
-    </div>
-    <div class="thought-content">
-        <p>edgartools on GitHub</p>
+Also updated/synced the content</p>
         <div class="thought-image">
             
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <span class="date-time">2025-04-07 19:48</span>
-    </div>
-    <div class="thought-content">
-        <p>Do not browse insider trading SEC filings on EDGAR directly
-
-There’s a Python library called edgartools - much better, cleaner & you can directly extract the data
-
-Now go find alpha factors that you can use next time worldwide tariffs are set</p>
-        <div class="thought-image">
-            <a href="data/images/1490e261-688f-5f3f-93f3-e0a9240be226.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/1490e261-688f-5f3f-93f3-e0a9240be226.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
     </div>
 </div>
 
         
-        <nav class="pagination"><span class="newer disabled">← Newer</span><span class="page-info">Page 1 of 8</span><a href="7.html" class="older">Older →</a></nav>
+        <nav class="pagination"><span class="newer disabled">← Newer</span><span class="page-info">Page 1 of 9</span><a href="8.html" class="older">Older →</a></nav>
     </div>
 
     <!-- Lightbox Structure (Initially Hidden) -->
