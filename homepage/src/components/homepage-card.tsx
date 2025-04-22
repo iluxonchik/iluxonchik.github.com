@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { Github, Mail, Send, ExternalLink, QrCode, Twitter } from 'lucide-react'
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Button } from "@/components/ui/button"
 
 export function HomepageCard() {
   const [activeTab, setActiveTab] = useState('👋')
@@ -18,7 +19,7 @@ export function HomepageCard() {
         className="bg-white rounded-lg shadow-xl overflow-hidden max-w-4xl w-full"
       >
         <div className="md:flex">
-          <div className="md:w-1/3 bg-gray-100 p-8 flex flex-col items-center justify-center">
+          <div className="md:w-1/3 bg-gray-100 pt-8 px-8 pb-4 flex flex-col items-center justify-center">
             <img
               src="/profile-2.png?height=200&width=200"
               alt="Illya Gerasymchuk"
@@ -61,6 +62,11 @@ export function HomepageCard() {
                 </DialogContent>
               </Dialog>
             </div>
+            <Button asChild className="mt-4 px-6 py-1 w-full max-w-xs bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md hover:from-purple-600 hover:to-indigo-700 transition-all duration-300 ease-in-out">
+              <a href="https://illya.sh/thoughts" target="_blank" rel="noopener noreferrer">
+                My Thoughts
+              </a>
+            </Button>
           </div>
           <div className="md:w-2/3 p-4 md:p-8">
             <Tabs defaultValue="👋" onValueChange={setActiveTab} className="w-full">
