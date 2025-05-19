@@ -4,33 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>🇯🇵🎧 Added an audio version of the article
-
-It’s an AI-generated podcas... - Illya&amp;#x27;s Thoughts</title> 
+    <title>🇯🇵🎧 Added an audio version of the article  It’s an... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="🇯🇵🎧 Added an audio version of the article
-
-It’s an AI-generated podcas... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1730050806.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/144472f7-ef89-5089-bd5e-6b1e83936881.jpg" />
-    <meta property="og:description" content="🇯🇵🎧 Added an audio version of the article
-
-It’s an AI-generated podcast of the article using NotebookLM audio overview with custom sources &amp;amp; instructions
-
-🔗   http" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="🇯🇵🎧 Added an audio version of the article
-
-It’s an AI-generated podcas... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="🇯🇵🎧 Added an audio version of the article
-
-It’s an AI-generated podcast of the article using NotebookLM audio overview with custom sources &amp;amp; instructions
-
-🔗   http" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/144472f7-ef89-5089-bd5e-6b1e83936881.jpg" />
+    <meta property="og:title" content="🇯🇵🎧 Added an audio version of the article  It’s an AI-generated podcast of the... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1730050806.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/144472f7-ef89-5089-bd5e-6b1e83936881.jpg' />
+    <meta property="og:description" content='🇯🇵🎧 Added an audio version of the article\n\nIt’s an AI-generated podcast of the article using NotebookLM audio overview with custom sources & instructions\n\n🔗   http' />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="🇯🇵🎧 Added an audio version of the article  It’s an AI-generated podcast of the... - Illya's Thoughts" />
+    <meta name="twitter:description" content='🇯🇵🎧 Added an audio version of the article\n\nIt’s an AI-generated podcast of the article using NotebookLM audio overview with custom sources & instructions\n\n🔗   http' />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/144472f7-ef89-5089-bd5e-6b1e83936881.jpg' />
     
     <style>
         :root {
@@ -569,11 +555,19 @@ It’s an AI-generated podcast of the article using NotebookLM audio overview wi
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

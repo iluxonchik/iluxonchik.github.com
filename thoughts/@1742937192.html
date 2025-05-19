@@ -4,29 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>Do you face the same philosophical issues with your cat?
-
-I don’t thin... - Illya&amp;#x27;s Thoughts</title> 
+    <title>Do you face the same philosophical issues with your cat?  I... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="Do you face the same philosophical issues with your cat?
-
-I don’t thin... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1742937192.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/71d3496d-bf8b-5f68-b3ec-253dacce6632.jpg" />
-    <meta property="og:description" content="Do you face the same philosophical issues with your cat?
-
-I don’t think she sees the irony 😡" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Do you face the same philosophical issues with your cat?
-
-I don’t thin... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="Do you face the same philosophical issues with your cat?
-
-I don’t think she sees the irony 😡" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/71d3496d-bf8b-5f68-b3ec-253dacce6632.jpg" />
+    <meta property="og:title" content="Do you face the same philosophical issues with your cat?  I don’t think she sees... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1742937192.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/71d3496d-bf8b-5f68-b3ec-253dacce6632.jpg' />
+    <meta property="og:description" content='Do you face the same philosophical issues with your cat?\n\nI don’t think she sees the irony 😡' />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="Do you face the same philosophical issues with your cat?  I don’t think she sees... - Illya's Thoughts" />
+    <meta name="twitter:description" content='Do you face the same philosophical issues with your cat?\n\nI don’t think she sees the irony 😡' />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/71d3496d-bf8b-5f68-b3ec-253dacce6632.jpg' />
     
     <style>
         :root {
@@ -563,11 +553,19 @@ I don’t think she sees the irony 😡</p>
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

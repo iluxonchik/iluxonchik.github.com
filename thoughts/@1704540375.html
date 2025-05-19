@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>Just to re-iterate on this further: the iPhone&amp;#x27;s 0-click exploit ... - Illya&amp;#x27;s Thoughts</title> 
+    <title>Just to re-iterate on this further: the iPhone's 0-click... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="Just to re-iterate on this further: the iPhone&amp;#x27;s 0-click exploit ... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1704540375.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/20b3c67b-34f4-53b3-b758-8228d39e2b4e.jpg" />
-    <meta property="og:description" content="Just to re-iterate on this further: the iPhone&amp;#x27;s 0-click exploit broke the ARM processor&amp;#x27;s authentication mechanism for pointers, thus allowing the malware to perform arbitrary signatures of arbitrary pointers, thus breaking their authentication &amp;amp; integrity guarantees  http" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Just to re-iterate on this further: the iPhone&amp;#x27;s 0-click exploit ... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="Just to re-iterate on this further: the iPhone&amp;#x27;s 0-click exploit broke the ARM processor&amp;#x27;s authentication mechanism for pointers, thus allowing the malware to perform arbitrary signatures of arbitrary pointers, thus breaking their authentication &amp;amp; integrity guarantees  http" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/20b3c67b-34f4-53b3-b758-8228d39e2b4e.jpg" />
+    <meta property="og:title" content="Just to re-iterate on this further: the iPhone's 0-click exploit broke the ARM... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1704540375.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/20b3c67b-34f4-53b3-b758-8228d39e2b4e.jpg' />
+    <meta property="og:description" content="Just to re-iterate on this further: the iPhone's 0-click exploit broke the ARM processor's authentication mechanism for pointers, thus allowing the malware to perform arbitrary signatures of..." />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="Just to re-iterate on this further: the iPhone's 0-click exploit broke the ARM... - Illya's Thoughts" />
+    <meta name="twitter:description" content="Just to re-iterate on this further: the iPhone's 0-click exploit broke the ARM processor's authentication mechanism for pointers, thus allowing the malware to perform arbitrary signatures of..." />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/20b3c67b-34f4-53b3-b758-8228d39e2b4e.jpg' />
     
     <style>
         :root {
@@ -551,11 +551,19 @@
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

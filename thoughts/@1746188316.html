@@ -4,37 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>Google + Zero Knowledge Proofs = ❤️🔐
-
-ZKPs will allow you to prove you... - Illya&amp;#x27;s Thoughts</title> 
+    <title>Google + Zero Knowledge Proofs = ❤️🔐  ZKPs will allow you to... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="Google + Zero Knowledge Proofs = ❤️🔐
-
-ZKPs will allow you to prove you... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1746188316.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/ee3445d9-1330-5c49-97bb-70351aa7da4c.jpg" />
-    <meta property="og:description" content="Google + Zero Knowledge Proofs = ❤️🔐
-
-ZKPs will allow you to prove your age to other apps via Google Wallet - e.g. a proof that you are &amp;gt;18
-
-AFAIK you’ll upload your ID, Google BE verifies &amp;amp; signs it
-
-Integrate with @MinaProtocol schemes &amp;amp; Android goes on the 22KB blockchain 😳" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Google + Zero Knowledge Proofs = ❤️🔐
-
-ZKPs will allow you to prove you... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="Google + Zero Knowledge Proofs = ❤️🔐
-
-ZKPs will allow you to prove your age to other apps via Google Wallet - e.g. a proof that you are &amp;gt;18
-
-AFAIK you’ll upload your ID, Google BE verifies &amp;amp; signs it
-
-Integrate with @MinaProtocol schemes &amp;amp; Android goes on the 22KB blockchain 😳" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/ee3445d9-1330-5c49-97bb-70351aa7da4c.jpg" />
+    <meta property="og:title" content="Google + Zero Knowledge Proofs = ❤️🔐  ZKPs will allow you to prove your age to... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1746188316.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/ee3445d9-1330-5c49-97bb-70351aa7da4c.jpg' />
+    <meta property="og:description" content='Google + Zero Knowledge Proofs = ❤️🔐\n\nZKPs will allow you to prove your age to other apps via Google Wallet - e.g. a proof that you are >18\n\nAFAIK you’ll upload your ID, Google BE verifies &...' />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="Google + Zero Knowledge Proofs = ❤️🔐  ZKPs will allow you to prove your age to... - Illya's Thoughts" />
+    <meta name="twitter:description" content='Google + Zero Knowledge Proofs = ❤️🔐\n\nZKPs will allow you to prove your age to other apps via Google Wallet - e.g. a proof that you are >18\n\nAFAIK you’ll upload your ID, Google BE verifies &...' />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/ee3445d9-1330-5c49-97bb-70351aa7da4c.jpg' />
     
     <style>
         :root {
@@ -575,11 +557,19 @@ Integrate with @MinaProtocol schemes & Android goes on the 22KB blockchain 😳<
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

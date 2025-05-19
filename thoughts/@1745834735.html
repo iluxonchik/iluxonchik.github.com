@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>Catastrophe bonds (cat bonds) work by having an investor pool deposit ... - Illya&amp;#x27;s Thoughts</title> 
+    <title>Catastrophe bonds (cat bonds) work by having an investor pool... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="Catastrophe bonds (cat bonds) work by having an investor pool deposit ... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1745834735.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/cdeeaa8d-e22e-593a-9bc7-4cbcf6b049a5.jpg" />
-    <meta property="og:description" content="Catastrophe bonds (cat bonds) work by having an investor pool deposit 100% of collateral and earn ≈risk free rate + premium paid by the insured
-
-If the covered event occurs, investors lose a proportionate part of their principal, as the insured gets repaid from the collateral" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Catastrophe bonds (cat bonds) work by having an investor pool deposit ... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="Catastrophe bonds (cat bonds) work by having an investor pool deposit 100% of collateral and earn ≈risk free rate + premium paid by the insured
-
-If the covered event occurs, investors lose a proportionate part of their principal, as the insured gets repaid from the collateral" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/cdeeaa8d-e22e-593a-9bc7-4cbcf6b049a5.jpg" />
+    <meta property="og:title" content="Catastrophe bonds (cat bonds) work by having an investor pool deposit 100% of... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1745834735.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/cdeeaa8d-e22e-593a-9bc7-4cbcf6b049a5.jpg' />
+    <meta property="og:description" content='Catastrophe bonds (cat bonds) work by having an investor pool deposit 100% of collateral and earn ≈risk free rate + premium paid by the insured\n\nIf the covered event occurs, investors lose a...' />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="Catastrophe bonds (cat bonds) work by having an investor pool deposit 100% of... - Illya's Thoughts" />
+    <meta name="twitter:description" content='Catastrophe bonds (cat bonds) work by having an investor pool deposit 100% of collateral and earn ≈risk free rate + premium paid by the insured\n\nIf the covered event occurs, investors lose a...' />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/cdeeaa8d-e22e-593a-9bc7-4cbcf6b049a5.jpg' />
     
     <style>
         :root {
@@ -557,11 +553,19 @@ If the covered event occurs, investors lose a proportionate part of their princi
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

@@ -4,37 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>⚡️You can now create GOLD from lead⚡️
-
-1g gold = two quintillion dolla... - Illya&amp;#x27;s Thoughts</title> 
+    <title>⚡️You can now create GOLD from lead⚡️  1g gold = two... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="⚡️You can now create GOLD from lead⚡️
-
-1g gold = two quintillion dolla... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1746885602.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/b69bac4c-fbc3-545f-b76a-94f67df57caa.jpg" />
-    <meta property="og:description" content="⚡️You can now create GOLD from lead⚡️
-
-1g gold = two quintillion dollars ($2 × 10¹⁸)
-
-1 gold ring contains x170 billion more gold that LHC produced over 4 years
-
-Oh, and that newly minted Au fragments into other particles almost immediately 😁" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="⚡️You can now create GOLD from lead⚡️
-
-1g gold = two quintillion dolla... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="⚡️You can now create GOLD from lead⚡️
-
-1g gold = two quintillion dollars ($2 × 10¹⁸)
-
-1 gold ring contains x170 billion more gold that LHC produced over 4 years
-
-Oh, and that newly minted Au fragments into other particles almost immediately 😁" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/b69bac4c-fbc3-545f-b76a-94f67df57caa.jpg" />
+    <meta property="og:title" content="⚡️You can now create GOLD from lead⚡️  1g gold = two quintillion dollars ($2 ×... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1746885602.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/b69bac4c-fbc3-545f-b76a-94f67df57caa.jpg' />
+    <meta property="og:description" content='⚡️You can now create GOLD from lead⚡️\n\n1g gold = two quintillion dollars ($2 × 10¹⁸)\n\n1 gold ring contains x170 billion more gold that LHC produced over 4 years\n\nOh, and that newly minted Au...' />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="⚡️You can now create GOLD from lead⚡️  1g gold = two quintillion dollars ($2 ×... - Illya's Thoughts" />
+    <meta name="twitter:description" content='⚡️You can now create GOLD from lead⚡️\n\n1g gold = two quintillion dollars ($2 × 10¹⁸)\n\n1 gold ring contains x170 billion more gold that LHC produced over 4 years\n\nOh, and that newly minted Au...' />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/b69bac4c-fbc3-545f-b76a-94f67df57caa.jpg' />
     
     <style>
         :root {
@@ -575,11 +557,19 @@ Oh, and that newly minted Au fragments into other particles almost immediately �
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

@@ -4,37 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>Silver back to August 2020 price
-
-After a tariffs-induced pullback of ... - Illya&amp;#x27;s Thoughts</title> 
+    <title>Silver back to August 2020 price  After a tariffs-induced... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="Silver back to August 2020 price
-
-After a tariffs-induced pullback of ... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1743796491.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/15bce4d4-da26-5a96-9c1b-080c65de1d2f.jpg" />
-    <meta property="og:description" content="Silver back to August 2020 price
-
-After a tariffs-induced pullback of 15% today, silver is now at start of COVID prices
-
- So much inflation that still isn’t priced in 
-
-It will recover. And a lot!" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Silver back to August 2020 price
-
-After a tariffs-induced pullback of ... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="Silver back to August 2020 price
-
-After a tariffs-induced pullback of 15% today, silver is now at start of COVID prices
-
- So much inflation that still isn’t priced in 
-
-It will recover. And a lot!" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/15bce4d4-da26-5a96-9c1b-080c65de1d2f.jpg" />
+    <meta property="og:title" content="Silver back to August 2020 price  After a tariffs-induced pullback of 15% today,... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1743796491.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/15bce4d4-da26-5a96-9c1b-080c65de1d2f.jpg' />
+    <meta property="og:description" content='Silver back to August 2020 price\n\nAfter a tariffs-induced pullback of 15% today, silver is now at start of COVID prices\n\n So much inflation that still isn’t priced in \n\nIt will recover. And a...' />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="Silver back to August 2020 price  After a tariffs-induced pullback of 15% today,... - Illya's Thoughts" />
+    <meta name="twitter:description" content='Silver back to August 2020 price\n\nAfter a tariffs-induced pullback of 15% today, silver is now at start of COVID prices\n\n So much inflation that still isn’t priced in \n\nIt will recover. And a...' />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/15bce4d4-da26-5a96-9c1b-080c65de1d2f.jpg' />
     
     <style>
         :root {
@@ -575,11 +557,19 @@ It will recover. And a lot!</p>
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

@@ -4,27 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>🚨 Despite the Goldman Sachs&amp;#x27;s statement regarding rate hikes and ... - Illya&amp;#x27;s Thoughts</title> 
+    <title>🚨 Despite the Goldman Sachs's statement regarding rate hikes... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="🚨 Despite the Goldman Sachs&amp;#x27;s statement regarding rate hikes and ... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1678680726.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/114e72b0-a989-59c9-b635-ba97e935b2c7.jpg" />
-    <meta property="og:description" content="🚨 Despite the Goldman Sachs&amp;#x27;s statement regarding rate hikes and bank bailouts, currently the market is fully expecting a rate hike by 25bps
-
-Although things may change, specially with the Biden&amp;#x27;s speech
-
-In either case, QE is not yet back, so no bull market for #Bitcoin" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="🚨 Despite the Goldman Sachs&amp;#x27;s statement regarding rate hikes and ... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="🚨 Despite the Goldman Sachs&amp;#x27;s statement regarding rate hikes and bank bailouts, currently the market is fully expecting a rate hike by 25bps
-
-Although things may change, specially with the Biden&amp;#x27;s speech
-
-In either case, QE is not yet back, so no bull market for #Bitcoin" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/114e72b0-a989-59c9-b635-ba97e935b2c7.jpg" />
+    <meta property="og:title" content="🚨 Despite the Goldman Sachs's statement regarding rate hikes and bank bailouts,... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1678680726.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/114e72b0-a989-59c9-b635-ba97e935b2c7.jpg' />
+    <meta property="og:description" content="🚨 Despite the Goldman Sachs's statement regarding rate hikes and bank bailouts, currently the market is fully expecting a rate hike by 25bps\n\nAlthough things may change, specially with the..." />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="🚨 Despite the Goldman Sachs's statement regarding rate hikes and bank bailouts,... - Illya's Thoughts" />
+    <meta name="twitter:description" content="🚨 Despite the Goldman Sachs's statement regarding rate hikes and bank bailouts, currently the market is fully expecting a rate hike by 25bps\n\nAlthough things may change, specially with the..." />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/114e72b0-a989-59c9-b635-ba97e935b2c7.jpg' />
     
     <style>
         :root {
@@ -563,11 +555,19 @@ In either case, QE is not yet back, so no bull market for #Bitcoin</p>
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

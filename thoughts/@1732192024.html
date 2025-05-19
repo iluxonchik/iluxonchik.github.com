@@ -4,46 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>Very interesting alternative USD market
-
-Usual flow:
-🇺🇸 buys oil from ... - Illya&amp;#x27;s Thoughts</title> 
+    <title>Very interesting alternative USD market  Usual flow: 🇺🇸 buys... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="Very interesting alternative USD market
-
-Usual flow:
-🇺🇸 buys oil from ... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1732192024.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp" />
-    <meta property="og:description" content="Very interesting alternative USD market
-
-Usual flow:
-🇺🇸 buys oil from 🇸🇦, 🇸🇦 reinvest excess back into UST
-
-New flow:
-🇸🇦 reinvests excess into 🇨🇳-issued USD bonds
-
-Result:
-USD flows to 🇨🇳, instead of 🇺🇸, as the USD-denominated debt (bonds) are issued directly by 🇨🇳" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Very interesting alternative USD market
-
-Usual flow:
-🇺🇸 buys oil from ... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="Very interesting alternative USD market
-
-Usual flow:
-🇺🇸 buys oil from 🇸🇦, 🇸🇦 reinvest excess back into UST
-
-New flow:
-🇸🇦 reinvests excess into 🇨🇳-issued USD bonds
-
-Result:
-USD flows to 🇨🇳, instead of 🇺🇸, as the USD-denominated debt (bonds) are issued directly by 🇨🇳" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp" />
+    <meta property="og:title" content="Very interesting alternative USD market  Usual flow: 🇺🇸 buys oil from 🇸🇦, 🇸🇦... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1732192024.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp' />
+    <meta property="og:description" content='Very interesting alternative USD market\n\nUsual flow:\n🇺🇸 buys oil from 🇸🇦, 🇸🇦 reinvest excess back into UST\n\nNew flow:\n🇸🇦 reinvests excess into 🇨🇳-issued USD bonds\n\nResult:\nUSD flows to 🇨🇳,...' />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="Very interesting alternative USD market  Usual flow: 🇺🇸 buys oil from 🇸🇦, 🇸🇦... - Illya's Thoughts" />
+    <meta name="twitter:description" content='Very interesting alternative USD market\n\nUsual flow:\n🇺🇸 buys oil from 🇸🇦, 🇸🇦 reinvest excess back into UST\n\nNew flow:\n🇸🇦 reinvests excess into 🇨🇳-issued USD bonds\n\nResult:\nUSD flows to 🇨🇳,...' />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp' />
     
     <style>
         :root {
@@ -587,11 +560,19 @@ USD flows to 🇨🇳, instead of 🇺🇸, as the USD-denominated debt (bonds) 
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

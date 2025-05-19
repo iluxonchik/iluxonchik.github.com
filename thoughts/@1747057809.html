@@ -4,49 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>I am $8K MRR
-
-My sister is half my MRR 
-
-I am now $24K MRR
-
-How much M... - Illya&amp;#x27;s Thoughts</title> 
+    <title>I am $8K MRR  My sister is half my MRR   I am now $24K MRR... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="I am $8K MRR
-
-My sister is half my MRR 
-
-I am now $24K MRR
-
-How much M... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1747057809.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp" />
-    <meta property="og:description" content="I am $8K MRR
-
-My sister is half my MRR 
-
-I am now $24K MRR
-
-How much MRR is she?" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="I am $8K MRR
-
-My sister is half my MRR 
-
-I am now $24K MRR
-
-How much M... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="I am $8K MRR
-
-My sister is half my MRR 
-
-I am now $24K MRR
-
-How much MRR is she?" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp" />
+    <meta property="og:title" content="I am $8K MRR  My sister is half my MRR   I am now $24K MRR  How much MRR is she? - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1747057809.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp' />
+    <meta property="og:description" content='I am $8K MRR\n\nMy sister is half my MRR \n\nI am now $24K MRR\n\nHow much MRR is she?' />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="I am $8K MRR  My sister is half my MRR   I am now $24K MRR  How much MRR is she? - Illya's Thoughts" />
+    <meta name="twitter:description" content='I am $8K MRR\n\nMy sister is half my MRR \n\nI am now $24K MRR\n\nHow much MRR is she?' />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp' />
     
     <style>
         :root {
@@ -587,11 +557,19 @@ How much MRR is she?</p>
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

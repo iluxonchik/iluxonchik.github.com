@@ -4,33 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>The new GPT 4o image generator is impressive!
-
-You can ask ChatGPT to ... - Illya&amp;#x27;s Thoughts</title> 
+    <title>The new GPT 4o image generator is impressive!  You can ask... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="The new GPT 4o image generator is impressive!
-
-You can ask ChatGPT to ... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1742934237.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/6ba59c65-7440-5897-98e4-c0dac94087f8.jpg" />
-    <meta property="og:description" content="The new GPT 4o image generator is impressive!
-
-You can ask ChatGPT to generate a UI design, and then pass it to Cursor/Claude/V0 for implementation
-
-Character accuracy makes a big difference" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="The new GPT 4o image generator is impressive!
-
-You can ask ChatGPT to ... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="The new GPT 4o image generator is impressive!
-
-You can ask ChatGPT to generate a UI design, and then pass it to Cursor/Claude/V0 for implementation
-
-Character accuracy makes a big difference" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/6ba59c65-7440-5897-98e4-c0dac94087f8.jpg" />
+    <meta property="og:title" content="The new GPT 4o image generator is impressive!  You can ask ChatGPT to generate a... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1742934237.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/6ba59c65-7440-5897-98e4-c0dac94087f8.jpg' />
+    <meta property="og:description" content='The new GPT 4o image generator is impressive!\n\nYou can ask ChatGPT to generate a UI design, and then pass it to Cursor/Claude/V0 for implementation\n\nCharacter accuracy makes a big difference' />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="The new GPT 4o image generator is impressive!  You can ask ChatGPT to generate a... - Illya's Thoughts" />
+    <meta name="twitter:description" content='The new GPT 4o image generator is impressive!\n\nYou can ask ChatGPT to generate a UI design, and then pass it to Cursor/Claude/V0 for implementation\n\nCharacter accuracy makes a big difference' />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/6ba59c65-7440-5897-98e4-c0dac94087f8.jpg' />
     
     <style>
         :root {
@@ -569,11 +555,19 @@ Character accuracy makes a big difference</p>
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

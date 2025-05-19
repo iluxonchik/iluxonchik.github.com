@@ -4,33 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>🇷🇺 #MOEX down 22% since Feb
-
-Expect it to bounce back very soon - as c... - Illya&amp;#x27;s Thoughts</title> 
+    <title>🇷🇺 #MOEX down 22% since Feb  Expect it to bounce back very... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="🇷🇺 #MOEX down 22% since Feb
-
-Expect it to bounce back very soon - as c... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1743957241.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/1e89aac7-a95f-505e-9d92-e265d199d521.jpg" />
-    <meta property="og:description" content="🇷🇺 #MOEX down 22% since Feb
-
-Expect it to bounce back very soon - as capital is moved away from USA &amp;amp; USD into alt currencies, which includes Ruble
-
-Once the sanctions against Russia are dropped - that’s where Moscow Exchange Index will skyrocket 📈 http" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="🇷🇺 #MOEX down 22% since Feb
-
-Expect it to bounce back very soon - as c... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="🇷🇺 #MOEX down 22% since Feb
-
-Expect it to bounce back very soon - as capital is moved away from USA &amp;amp; USD into alt currencies, which includes Ruble
-
-Once the sanctions against Russia are dropped - that’s where Moscow Exchange Index will skyrocket 📈 http" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/1e89aac7-a95f-505e-9d92-e265d199d521.jpg" />
+    <meta property="og:title" content="🇷🇺 #MOEX down 22% since Feb  Expect it to bounce back very soon - as capital is... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1743957241.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/1e89aac7-a95f-505e-9d92-e265d199d521.jpg' />
+    <meta property="og:description" content='🇷🇺 #MOEX down 22% since Feb\n\nExpect it to bounce back very soon - as capital is moved away from USA & USD into alt currencies, which includes Ruble\n\nOnce the sanctions against Russia are...' />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="🇷🇺 #MOEX down 22% since Feb  Expect it to bounce back very soon - as capital is... - Illya's Thoughts" />
+    <meta name="twitter:description" content='🇷🇺 #MOEX down 22% since Feb\n\nExpect it to bounce back very soon - as capital is moved away from USA & USD into alt currencies, which includes Ruble\n\nOnce the sanctions against Russia are...' />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/1e89aac7-a95f-505e-9d92-e265d199d521.jpg' />
     
     <style>
         :root {
@@ -569,11 +555,19 @@ Once the sanctions against Russia are dropped - that’s where Moscow Exchange I
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

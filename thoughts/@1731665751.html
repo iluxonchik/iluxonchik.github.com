@@ -4,27 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>Part of Bitcoin&amp;#x27;s value derives from the total electricity cost o... - Illya&amp;#x27;s Thoughts</title> 
+    <title>Part of Bitcoin's value derives from the total electricity... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="Part of Bitcoin&amp;#x27;s value derives from the total electricity cost o... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1731665751.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp" />
-    <meta property="og:description" content="Part of Bitcoin&amp;#x27;s value derives from the total electricity cost of maintaining a decentralized, trustless, immutable ledger of transactions for &amp;gt;15 years
-
-20% of GDP is spent on financial services. Blockchains remove intermediaries &amp;amp; improve efficiency
-
-It’s apples to oranges 🤷‍♀️ https:/" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Part of Bitcoin&amp;#x27;s value derives from the total electricity cost o... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="Part of Bitcoin&amp;#x27;s value derives from the total electricity cost of maintaining a decentralized, trustless, immutable ledger of transactions for &amp;gt;15 years
-
-20% of GDP is spent on financial services. Blockchains remove intermediaries &amp;amp; improve efficiency
-
-It’s apples to oranges 🤷‍♀️ https:/" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp" />
+    <meta property="og:title" content="Part of Bitcoin's value derives from the total electricity cost of maintaining a... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1731665751.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp' />
+    <meta property="og:description" content="Part of Bitcoin's value derives from the total electricity cost of maintaining a decentralized, trustless, immutable ledger of transactions for >15 years\n\n20% of GDP is spent on financial..." />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="Part of Bitcoin's value derives from the total electricity cost of maintaining a... - Illya's Thoughts" />
+    <meta name="twitter:description" content="Part of Bitcoin's value derives from the total electricity cost of maintaining a decentralized, trustless, immutable ledger of transactions for >15 years\n\n20% of GDP is spent on financial..." />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp' />
     
     <style>
         :root {
@@ -563,11 +555,19 @@ It’s apples to oranges 🤷‍♀️ https:/</p>
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

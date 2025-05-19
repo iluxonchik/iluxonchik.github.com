@@ -4,33 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>🚀 #Bitcoin #BullMarket CONFIRMED 
-
-🚨 You MUST unfollow every single pe... - Illya&amp;#x27;s Thoughts</title> 
+    <title>🚀 #Bitcoin #BullMarket CONFIRMED   🚨 You MUST unfollow every... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="🚀 #Bitcoin #BullMarket CONFIRMED 
-
-🚨 You MUST unfollow every single pe... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1678729662.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/2af759bd-c009-5e8d-8cd7-bd10b0c2c0a6.jpg" />
-    <meta property="og:description" content="🚀 #Bitcoin #BullMarket CONFIRMED 
-
-🚨 You MUST unfollow every single person saying that Bitcoin and #crypto entered a bull market, because they have no idea what they are talking about
-
-➡️I challenge anyone to show me a single sign of reversal. There is none #TA" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="🚀 #Bitcoin #BullMarket CONFIRMED 
-
-🚨 You MUST unfollow every single pe... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="🚀 #Bitcoin #BullMarket CONFIRMED 
-
-🚨 You MUST unfollow every single person saying that Bitcoin and #crypto entered a bull market, because they have no idea what they are talking about
-
-➡️I challenge anyone to show me a single sign of reversal. There is none #TA" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/2af759bd-c009-5e8d-8cd7-bd10b0c2c0a6.jpg" />
+    <meta property="og:title" content="🚀 #Bitcoin #BullMarket CONFIRMED   🚨 You MUST unfollow every single person saying... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1678729662.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/2af759bd-c009-5e8d-8cd7-bd10b0c2c0a6.jpg' />
+    <meta property="og:description" content='🚀 #Bitcoin #BullMarket CONFIRMED \n\n🚨 You MUST unfollow every single person saying that Bitcoin and #crypto entered a bull market, because they have no idea what they are talking about\n\n➡️I...' />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="🚀 #Bitcoin #BullMarket CONFIRMED   🚨 You MUST unfollow every single person saying... - Illya's Thoughts" />
+    <meta name="twitter:description" content='🚀 #Bitcoin #BullMarket CONFIRMED \n\n🚨 You MUST unfollow every single person saying that Bitcoin and #crypto entered a bull market, because they have no idea what they are talking about\n\n➡️I...' />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/2af759bd-c009-5e8d-8cd7-bd10b0c2c0a6.jpg' />
     
     <style>
         :root {
@@ -569,11 +555,19 @@
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

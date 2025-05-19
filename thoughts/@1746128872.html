@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>I&amp;#x27;ve said this before, but I&amp;#x27;m still amazed daily by how muc... - Illya&amp;#x27;s Thoughts</title> 
+    <title>I've said this before, but I'm still amazed daily by how much... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="I&amp;#x27;ve said this before, but I&amp;#x27;m still amazed daily by how muc... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1746128872.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/5bc01f3d-9d15-5b6d-8f0d-5feec67643f5.jpg" />
-    <meta property="og:description" content="I&amp;#x27;ve said this before, but I&amp;#x27;m still amazed daily by how much LLMs have augmented the learning process
-
-A much more efficient way of information retrieval.
-Don&amp;#x27;t overthink the prompts - type or dictate your question, however unclear it is - neural networks will figure it out 🧠" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="I&amp;#x27;ve said this before, but I&amp;#x27;m still amazed daily by how muc... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="I&amp;#x27;ve said this before, but I&amp;#x27;m still amazed daily by how much LLMs have augmented the learning process
-
-A much more efficient way of information retrieval.
-Don&amp;#x27;t overthink the prompts - type or dictate your question, however unclear it is - neural networks will figure it out 🧠" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/5bc01f3d-9d15-5b6d-8f0d-5feec67643f5.jpg" />
+    <meta property="og:title" content="I've said this before, but I'm still amazed daily by how much LLMs have augmented... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1746128872.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/5bc01f3d-9d15-5b6d-8f0d-5feec67643f5.jpg' />
+    <meta property="og:description" content="I've said this before, but I'm still amazed daily by how much LLMs have augmented the learning process\n\nA much more efficient way of information retrieval.\nDon't overthink the prompts - type..." />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="I've said this before, but I'm still amazed daily by how much LLMs have augmented... - Illya's Thoughts" />
+    <meta name="twitter:description" content="I've said this before, but I'm still amazed daily by how much LLMs have augmented the learning process\n\nA much more efficient way of information retrieval.\nDon't overthink the prompts - type..." />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/5bc01f3d-9d15-5b6d-8f0d-5feec67643f5.jpg' />
     
     <style>
         :root {
@@ -560,11 +554,19 @@ Don't overthink the prompts - type or dictate your question, however unclear it 
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

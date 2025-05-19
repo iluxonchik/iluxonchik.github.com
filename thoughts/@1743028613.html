@@ -4,39 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>🎉 Congratulations to the American consumer who now has 2 options:
-
-1. ... - Illya&amp;#x27;s Thoughts</title> 
+    <title>🎉 Congratulations to the American consumer who now has 2... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="🎉 Congratulations to the American consumer who now has 2 options:
-
-1. ... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1743028613.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/0ad2093e-fd96-506c-89d3-ff39d3c341a0.jpg" />
-    <meta property="og:description" content="🎉 Congratulations to the American consumer who now has 2 options:
-
-1. Pay 25% more for the car they want
-2. Pay &amp;lt;25% more for a lower-quality domestically produced car
-
-+ The income tax is here to stay ✌️
-
-And you thought the Biden administration was doing questionable moves 😂  htt" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="🎉 Congratulations to the American consumer who now has 2 options:
-
-1. ... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="🎉 Congratulations to the American consumer who now has 2 options:
-
-1. Pay 25% more for the car they want
-2. Pay &amp;lt;25% more for a lower-quality domestically produced car
-
-+ The income tax is here to stay ✌️
-
-And you thought the Biden administration was doing questionable moves 😂  htt" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/0ad2093e-fd96-506c-89d3-ff39d3c341a0.jpg" />
+    <meta property="og:title" content="🎉 Congratulations to the American consumer who now has 2 options:  1. Pay 25%... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1743028613.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/0ad2093e-fd96-506c-89d3-ff39d3c341a0.jpg' />
+    <meta property="og:description" content='🎉 Congratulations to the American consumer who now has 2 options:\n\n1. Pay 25% more for the car they want\n2. Pay <25% more for a lower-quality domestically produced car\n\n+ The income tax is...' />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="🎉 Congratulations to the American consumer who now has 2 options:  1. Pay 25%... - Illya's Thoughts" />
+    <meta name="twitter:description" content='🎉 Congratulations to the American consumer who now has 2 options:\n\n1. Pay 25% more for the car they want\n2. Pay <25% more for a lower-quality domestically produced car\n\n+ The income tax is...' />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/0ad2093e-fd96-506c-89d3-ff39d3c341a0.jpg' />
     
     <style>
         :root {
@@ -578,11 +558,19 @@ And you thought the Biden administration was doing questionable moves 😂  htt<
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         

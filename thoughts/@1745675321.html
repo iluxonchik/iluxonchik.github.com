@@ -4,37 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>🚨GDP is a useless metric…
-
-…unless you combine it with additional cont... - Illya&amp;#x27;s Thoughts</title> 
+    <title>🚨GDP is a useless metric…  …unless you combine it with... - Illya's Thoughts</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="🚨GDP is a useless metric…
-
-…unless you combine it with additional cont... - Illya&amp;#x27;s Thoughts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illya.sh/thoughts/@1745675321.html" />
-    <meta property="og:image" content="https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp" />
-    <meta property="og:description" content="🚨GDP is a useless metric…
-
-…unless you combine it with additional context
-
-If $1 billion is credited into an economy, a significant portion of that will make it into GDP, thus increasing it. That debt may be low quality/default
-
-You need Debt to GDP, exports to GDP, etc" />
-    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="🚨GDP is a useless metric…
-
-…unless you combine it with additional cont... - Illya&amp;#x27;s Thoughts" />
-    <meta name="twitter:description" content="🚨GDP is a useless metric…
-
-…unless you combine it with additional context
-
-If $1 billion is credited into an economy, a significant portion of that will make it into GDP, thus increasing it. That debt may be low quality/default
-
-You need Debt to GDP, exports to GDP, etc" />
-    <meta name="twitter:image" content="https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp" />
+    <meta property="og:title" content="🚨GDP is a useless metric…  …unless you combine it with additional context  If $1... - Illya's Thoughts" />
+    <meta property="og:type" content='article' />
+    <meta property="og:url" content='https://illya.sh/thoughts/@1745675321.html' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp' />
+    <meta property="og:description" content='🚨GDP is a useless metric…\n\n…unless you combine it with additional context\n\nIf $1 billion is credited into an economy, a significant portion of that will make it into GDP, thus increasing it....' />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="🚨GDP is a useless metric…  …unless you combine it with additional context  If $1... - Illya's Thoughts" />
+    <meta name="twitter:description" content='🚨GDP is a useless metric…\n\n…unless you combine it with additional context\n\nIf $1 billion is credited into an economy, a significant portion of that will make it into GDP, thus increasing it....' />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp' />
     
     <style>
         :root {
@@ -575,11 +557,19 @@ You need Debt to GDP, exports to GDP, etc</p>
     </div>
 </div>
 
-
+ 
 <nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
-    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a id="back-button" href="javascript:history.back()" class="nav-button" style="display: none; margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
     <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
 </nav>
+<script>
+    (function() {
+        if (window.history && window.history.length > 1 && document.referrer && document.referrer !== window.location.href) {
+            var backButton = document.getElementById('back-button');
+            if (backButton) { backButton.style.display = 'inline-block'; }
+        }
+    })();
+</script>
 
         
         
