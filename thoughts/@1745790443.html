@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basic SEO / Title -->
+    <title>⏰ Reminder to do a deep dive into funding rates, if you still haven&amp;#x... - Illya&amp;#x27;s Thoughts</title> 
+    
+    <!-- Open Graph / Social Media Tags -->
+    <meta property="og:title" content="⏰ Reminder to do a deep dive into funding rates, if you still haven&amp;#x... - Illya&amp;#x27;s Thoughts" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://illya.sh/thoughts/@1745790443.html" />
+    <meta property="og:image" content="https://illya.sh/thoughts/data/2d934e7f-ea95-59ff-9092-c109b81e1ac7.jpg" />
+    <meta property="og:description" content="⏰ Reminder to do a deep dive into funding rates, if you still haven&amp;#x27;t
+
+You can earn a yield on futures though delta neutral positions" />
+    <meta property="og:site_name" content="Illya&#x27;s Thoughts" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="⏰ Reminder to do a deep dive into funding rates, if you still haven&amp;#x... - Illya&amp;#x27;s Thoughts" />
+    <meta name="twitter:description" content="⏰ Reminder to do a deep dive into funding rates, if you still haven&amp;#x27;t
+
+You can earn a yield on futures though delta neutral positions" />
+    <meta name="twitter:image" content="https://illya.sh/thoughts/data/2d934e7f-ea95-59ff-9092-c109b81e1ac7.jpg" />
+    
+    <style>
+        :root {
+            /* Light Theme Variables */
+            --bg-color: #f4f4f4;
+            --container-bg: #ffffff;
+            --box-bg: #fff;
+            --text-color: #333;
+            --secondary-text-color: #555;
+            --light-text-color: #666;
+            --link-color: #007bff;
+            --link-hover-color: #0056b3;
+            --border-color: #ddd;
+            --soft-border-color: #eee;
+            --dashed-border-color: #aaa;
+            --box-shadow-color: rgba(0,0,0,0.08);
+            --lightbox-bg: rgba(0, 0, 0, 0.9);
+            --lightbox-close-bg: rgba(255, 255, 255, 0.8);
+            --lightbox-close-hover-bg: rgba(255, 255, 255, 1);
+            --lightbox-close-color: #000;
+            --disabled-text-color: #aaa;
+            --disabled-bg-color: #f9f9f9;
+            --hover-bg-color: #eee;
+        }
+
+        /* Dark Theme Variables (applied via media query or body class) */
+        .dark-mode {
+            --bg-color: #1a1a1a; /* Dark grey background */
+            --container-bg: #2b2b2b; /* Slightly lighter container */
+            --box-bg: #2b2b2b; /* Same as container for profile/thought boxes */
+            --text-color: #e0e0e0; /* Light grey text */
+            --secondary-text-color: #b0b0b0; /* Medium grey */
+            --light-text-color: #999; /* Lighter grey for dates etc. */
+            --link-color: #58a6ff; /* Lighter blue for links */
+            --link-hover-color: #80bfff; /* Even lighter blue on hover */
+            --border-color: #444; /* Darker border */
+            --soft-border-color: #333; /* Even darker soft border */
+            --dashed-border-color: #666; /* Darker dashed border */
+            --box-shadow-color: rgba(255,255,255,0.08); /* Light shadow */
+            --lightbox-bg: rgba(0, 0, 0, 0.95); /* Slightly more opaque */
+            --lightbox-close-bg: rgba(50, 50, 50, 0.8);
+            --lightbox-close-hover-bg: rgba(70, 70, 70, 1);
+            --lightbox-close-color: #eee;
+            --disabled-text-color: #777;
+            --disabled-bg-color: #3a3a3a;
+            --hover-bg-color: #383838;
+        }
+
+        /* Apply dark mode based on system preference */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                /* Default to dark variables if system preference is dark */
+                /* This will be overridden if .light-mode is explicitly set */
+                --bg-color: #1a1a1a;
+                --container-bg: #2b2b2b;
+                --box-bg: #2b2b2b;
+                --text-color: #e0e0e0;
+                --secondary-text-color: #b0b0b0;
+                --light-text-color: #999;
+                --link-color: #58a6ff;
+                --link-hover-color: #80bfff;
+                --border-color: #444;
+                --soft-border-color: #333;
+                --dashed-border-color: #666;
+                --box-shadow-color: rgba(255,255,255,0.08);
+                --lightbox-bg: rgba(0, 0, 0, 0.95);
+                --lightbox-close-bg: rgba(50, 50, 50, 0.8);
+                --lightbox-close-hover-bg: rgba(70, 70, 70, 1);
+                --lightbox-close-color: #eee;
+                --disabled-text-color: #777;
+                --disabled-bg-color: #3a3a3a;
+                --hover-bg-color: #383838;
+            }
+            /* Ensure explicit light mode overrides system pref */
+            .light-mode {
+                --bg-color: #f4f4f4;
+                --container-bg: #ffffff;
+                --box-bg: #fff;
+                --text-color: #333;
+                --secondary-text-color: #555;
+                --light-text-color: #666;
+                --link-color: #007bff;
+                --link-hover-color: #0056b3;
+                --border-color: #ddd;
+                --soft-border-color: #eee;
+                --dashed-border-color: #aaa;
+                --box-shadow-color: rgba(0,0,0,0.08);
+                --lightbox-bg: rgba(0, 0, 0, 0.9);
+                --lightbox-close-bg: rgba(255, 255, 255, 0.8);
+                --lightbox-close-hover-bg: rgba(255, 255, 255, 1);
+                --lightbox-close-color: #000;
+                --disabled-text-color: #aaa;
+                --disabled-bg-color: #f9f9f9;
+                --hover-bg-color: #eee;
+            }
+        }
+
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: var(--bg-color); /* USE VAR */
+            color: var(--text-color); /* USE VAR - Set default text color */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none; /* Consistent link styling */
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: var(--link-hover-color);
+            text-decoration: underline; /* Underline on hover for clarity */
+        }
+        a:visited {
+            color: var(--link-color); /* Ensure visited links use theme color */
+        }
+        .container {
+            background-color: var(--container-bg); /* USE VAR */
+            padding: 25px; 
+            border: 1px solid var(--border-color); /* USE VAR */
+            max-width: 750px; 
+            width: 100%;
+            box-shadow: 0 1px 4px var(--box-shadow-color); /* USE VAR */
+            transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+        }
+
+        /* Profile Box Styling */
+        .profile-box {
+            border: 2px dashed var(--dashed-border-color); /* USE VAR */
+            padding: 15px; 
+            margin-bottom: 30px; 
+            background-color: var(--box-bg); /* USE VAR */
+            display: flex;
+            flex-direction: column;
+            transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+        }
+        .profile-content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px; 
+            width: 100%;
+        }
+        .profile-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 1px solid var(--soft-border-color); /* USE VAR */
+            flex-shrink: 0;
+            cursor: pointer; /* Add cursor pointer for toggle */
+            transition: border-color 0.3s ease; /* Smooth transition */
+        }
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .profile-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 2px;
+            color: var(--text-color); /* Ensure uses variable */
+        }
+        .profile-title {
+            color: var(--secondary-text-color); /* USE VAR */
+            font-size: 0.95em;
+        }
+        .profile-links {
+            font-size: 0.9em;
+            color: var(--secondary-text-color); /* USE VAR */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            gap: 5px 15px; 
+            padding-left: 0; 
+            margin-top: 5px; 
+        }
+        .profile-links a {
+            text-decoration: none;
+            color: var(--link-color); /* USE VAR */
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+        .profile-links a:hover {
+            color: var(--link-hover-color); /* USE VAR */
+        }
+
+
+        /* Thoughts Header - Section Title Style */
+        .thoughts-header {
+            border: none;
+            background-color: transparent;
+            padding: 0; 
+            display: block; 
+            font-size: 1.4em; 
+            font-weight: bold;
+            color: var(--text-color); /* USE VAR */
+            margin-top: 0; 
+            margin-bottom: 25px; 
+            padding-bottom: 8px; 
+            border-bottom: 2px solid var(--soft-border-color); /* USE VAR */
+            text-align: center; 
+            transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+        }
+
+        /* Thought Box Styling */
+        .thought-box {
+            border: 2px dashed var(--dashed-border-color); /* USE VAR */
+            padding: 15px;
+            margin-bottom: 25px; 
+            background-color: var(--box-bg); /* USE VAR */
+            transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+        }
+        .thought-header {
+            display: flex; 
+            align-items: center; 
+            flex-wrap: wrap; 
+            gap: 0.5em; 
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            font-size: 0.95em;
+            color: var(--secondary-text-color); /* USE VAR */
+        }
+        .thought-user-img { 
+             width: 25px;
+             height: 25px;
+             border-radius: 50%;
+             object-fit: cover;
+             border: 1px solid var(--soft-border-color); /* USE VAR */
+             vertical-align: middle; 
+             transition: border-color 0.3s ease; /* Smooth transition */
+        }
+        .thought-header .user-name {
+            font-weight: bold;
+            color: var(--text-color); /* USE VAR */
+            margin: 0; 
+        }
+         .thought-header .separator {
+             margin: 0 0.2em; 
+             color: var(--light-text-color); /* Separator should probably use this */
+         }
+         .thought-header .date-time {
+             color: var(--light-text-color); /* USE VAR */
+             flex-shrink: 0; 
+         }
+
+        .thought-content p {
+            margin-top: 0;
+            margin-bottom: 15px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: var(--text-color); /* Ensure paragraph text uses variable */
+        }
+        .thought-image {
+            margin-top: 15px; 
+        }
+        .thought-image .lightbox-trigger {
+            display: block;
+            max-width: 550px;  
+            width: 100%; 
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid var(--border-color); /* USE VAR */
+            position: relative;
+            transition: border-color 0.3s ease; /* Smooth transition */
+        }
+        .thought-image img.thought-img {
+            display: block; 
+            width: 100%; 
+            height: auto; 
+            transition: opacity 0.2s ease-in-out; 
+        }
+         .thought-image .lightbox-trigger:hover img.thought-img {
+              opacity: 0.9; 
+         }
+
+        /* Lightbox Overlay */
+        .lightbox-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--lightbox-bg); /* USE VAR */
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            padding: 40px;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+        .lightbox-overlay.visible {
+            display: flex; 
+        }
+        .lightbox-content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%; 
+            max-height: 100%;
+        }
+        .lightbox-content img {
+            display: block;
+            max-width: 100%; 
+            max-height: 100%; 
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border: none;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.5); /* Keep shadow potentially dark */
+        }
+        .lightbox-close {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: var(--lightbox-close-bg); /* USE VAR */
+            color: var(--lightbox-close-color); /* USE VAR */
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 24px;
+            font-weight: normal;
+            line-height: 28px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: background-color 0.2s ease, color 0.2s ease; /* Smooth transition */
+        }
+        .lightbox-close:hover {
+            background-color: var(--lightbox-close-hover-bg); /* USE VAR */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                max-width: 100%;
+            }
+             /* Adjusted Profile Box for Mobile */
+             .profile-box {
+                 padding: 12px; /* Further reduced padding */
+                 margin-bottom: 25px; /* Further reduced margin */
+             }
+            /* Adjusted Profile Content for Mobile */
+            .profile-content {
+                 align-items: center;
+                 margin-bottom: 8px; /* Further reduced bottom margin */
+            }
+            .profile-img {
+                width: 50px;
+                height: 50px;
+                margin-right: 12px;
+            }
+             .profile-name {
+                 font-size: 1.1em;
+             }
+             .profile-title {
+                 font-size: 0.9em;
+             }
+             /* Adjusted Profile Links for Mobile */
+            .profile-links {
+                font-size: 0.85em;
+                margin-top: 5px;
+                gap: 4px 10px; /* Slightly tighter gap */
+                justify-content: center; /* Ensure centering on mobile too */
+            }
+            .profile-links a {
+                /* No mobile-specific 'a' tag changes needed currently */
+            }
+
+            .thoughts-header {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+            }
+            .thought-box {
+                padding: 12px;
+                margin-bottom: 20px;
+            }
+             .thought-header {
+                font-size: 0.9em; /* Slightly smaller font for header */
+                gap: 0.4em; /* Reduce gap */
+                padding-bottom: 8px; /* Reduce padding */
+             }
+             .thought-user-img {
+                 width: 20px; /* Even smaller image on mobile */
+                 height: 20px;
+             }
+             /* Optionally hide separator on very small screens if needed */
+             /* .thought-header .separator { display: none; } */
+
+             .thought-image .lightbox-trigger {
+                  /* Remove max-width on mobile to allow full width */
+                  max-width: 100%; 
+                  border-radius: 6px; 
+             }
+
+             .lightbox-overlay { padding: 10px; }
+             .lightbox-content {
+                  /* Adjust max size slightly for smaller padding */
+                  /* REMOVE THESE - they were overriding the general rules */
+                  /* max-width: calc(100vw - 20px); */
+                  /* max-height: calc(100vh - 20px); */
+              }
+             .lightbox-close {
+                 top: 5px; right: 5px; width: 28px; height: 28px;
+                 font-size: 20px; line-height: 26px;
+             }
+
+            .pagination {
+                margin-top: 20px;
+                padding-top: 15px;
+                font-size: 0.85em; /* Smaller text on mobile */
+            }
+             .pagination a, .pagination span {
+                 padding: 6px 10px; /* Smaller padding */
+                 margin: 0 2px; /* Less margin */
+             }
+             .pagination span.page-info {
+                 display: none; /* Optionally hide page number on very small screens */
+             }
+        }
+
+        /* Pagination Styling */
+        .pagination {
+            margin-top: 30px; /* Space above pagination */
+            padding-top: 20px; /* Space below last thought */
+            border-top: 1px solid var(--soft-border-color); /* USE VAR */
+            text-align: center;
+            display: flex; /* Use flexbox for alignment */
+            justify-content: space-between; /* Space out Prev, Info, Next */
+            align-items: center;
+            transition: border-color 0.3s ease; /* Smooth transition */
+        }
+        .pagination a, .pagination span {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 0 4px;
+            border: 1px solid var(--border-color); /* USE VAR */
+            border-radius: 4px;
+            color: var(--link-color); /* USE VAR */
+            text-decoration: none;
+            transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+            font-size: 0.9em;
+        }
+        .pagination a:hover {
+            background-color: var(--hover-bg-color); /* USE VAR */
+            color: var(--link-hover-color); /* USE VAR */
+        }
+        .pagination span.disabled {
+            color: var(--disabled-text-color); /* USE VAR */
+            background-color: var(--disabled-bg-color); /* USE VAR */
+            cursor: default;
+            border-color: var(--border-color); /* USE VAR - Use regular border color for consistency */
+        }
+        .pagination span.page-info {
+             border: none; 
+             color: var(--secondary-text-color); /* USE VAR */
+             background-color: transparent;
+        }
+
+        /* Theme Feedback Styling */
+        .theme-feedback {
+            position: fixed;
+            top: 20px; /* Position from the top */
+            left: 50%;
+            transform: translateX(-50%); /* Center horizontally */
+            background-color: var(--container-bg); /* Use theme background */
+            color: var(--text-color); /* Use theme text color */
+            padding: 10px 20px;
+            border-radius: 20px; /* Rounded corners */
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            font-size: 0.9em;
+            z-index: 1001; /* Above lightbox overlay */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease, top 0.4s ease;
+            white-space: nowrap;
+        }
+        .theme-feedback.visible {
+            opacity: 1;
+            visibility: visible;
+            top: 30px; /* Slightly move down when visible */
+        }
+
+    </style>
+
+    <!-- Theme Feedback Element -->
+    <div id="theme-feedback" class="theme-feedback" aria-live="polite"></div>
+
+</head>
+<body>
+    <div class="container">
+        <div class="profile-box">
+    <div class="profile-content">
+        <img src="data/profile.png" alt="Profile Picture" class="profile-img">
+        <div class="profile-details">
+            <div class="profile-name">Illya Gerasymchuk</div>
+            <div class="profile-title">Entrepreneur / Engineer</div>
+        </div>
+    </div>
+    <div class="profile-links">
+        <a href="https://illya.sh" target="_blank">🏠 Homepage</a> &nbsp;&nbsp; <a href="mailto:illya_gerasymchuk@gmail.com" target="_blank">✉️ Email</a> &nbsp;&nbsp; <a href="https://t.me/illya_gerasymchuk" target="_blank">💬 Telegram</a> &nbsp;&nbsp; <a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a> &nbsp;&nbsp; <a href="https://github.com/iluxonchik" target="_blank">💻 GitHub</a> &nbsp;&nbsp; 
+    </div>
+</div>
+
+        <div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1745790443.html" class="thought-permalink">2025-04-27 22:47</a></p>
+    </div>
+    <div class="thought-content">
+        <p>⏰ Reminder to do a deep dive into funding rates, if you still haven't
+
+You can earn a yield on futures though delta neutral positions</p>
+        <div class="thought-image">
+            <a href="data/images/2d934e7f-ea95-59ff-9092-c109b81e1ac7.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2d934e7f-ea95-59ff-9092-c109b81e1ac7.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+    </div>
+</div>
+
+
+<nav class="individual-thought-navigation" style="margin-top: 20px; text-align: center; padding-bottom: 20px;">
+    <a href="javascript:history.back()" class="nav-button" style="margin-right: 15px; padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">&larr; Back</a>
+    <a href="https://illya.sh/thoughts/index.html" class="nav-button" style="padding: 8px 15px; text-decoration: none; border: 1px solid; border-radius: 5px;">Home / Latest Thoughts</a>
+</nav>
+
+        
+        
+    </div>
+
+    <!-- Lightbox Structure (Initially Hidden) -->
+    <div id="lightbox" class="lightbox-overlay">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close">&times;</button>
+            <img src="" alt="Lightbox image">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = lightbox.querySelector('img');
+            const lightboxClose = lightbox.querySelector('.lightbox-close');
+            const triggers = document.querySelectorAll('.lightbox-trigger');
+
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent default link behavior
+                    const imgSrc = trigger.getAttribute('href');
+                    lightboxImg.setAttribute('src', imgSrc);
+                    lightbox.classList.add('visible');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling background
+                });
+            });
+
+            function closeLightbox() {
+                lightbox.classList.remove('visible');
+                lightboxImg.setAttribute('src', ''); // Clear image src
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+
+            // Close on button click
+            lightboxClose.addEventListener('click', closeLightbox);
+
+            // Close on clicking overlay background
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) { // Only close if overlay itself is clicked
+                    closeLightbox();
+                }
+            });
+
+            // Close on Escape key press
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && lightbox.classList.contains('visible')) {
+                    closeLightbox();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        // Dark Mode Toggle Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            const profileImg = document.querySelector('.profile-img');
+            const feedbackElement = document.getElementById('theme-feedback');
+            const themeLocalStorageKey = 'themePreference'; // Stores 'auto', 'light', or 'dark'
+            let feedbackTimeout;
+
+            function applyTheme(theme) {
+                // Remove specific mode classes first
+                body.classList.remove('light-mode', 'dark-mode');
+                let actualTheme = theme;
+
+                if (theme === 'auto') {
+                    // Check system preference if auto
+                    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    actualTheme = prefersDark ? 'dark' : 'light';
+                } 
+
+                // Apply the determined theme class
+                if (actualTheme === 'dark') {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.add('light-mode'); 
+                }
+            }
+
+            function showFeedback(message) {
+                if (!feedbackElement) return;
+                
+                // Clear any existing timeout to prevent overlap
+                if (feedbackTimeout) {
+                    clearTimeout(feedbackTimeout);
+                }
+
+                feedbackElement.innerHTML = message;
+                feedbackElement.classList.add('visible');
+
+                // Hide feedback after a delay
+                feedbackTimeout = setTimeout(() => {
+                    feedbackElement.classList.remove('visible');
+                }, 1700); // 1.7 seconds
+            }
+
+            function setThemePreference(theme) {
+                localStorage.setItem(themeLocalStorageKey, theme);
+                applyTheme(theme);
+                // Show feedback based on the *newly set* preference
+                let feedbackMessage = '';
+                if (theme === 'light') {
+                    feedbackMessage = '💡 Light Mode Activated';
+                } else if (theme === 'dark') {
+                    feedbackMessage = '🌙 Dark Mode Activated';
+                } else {
+                    feedbackMessage = '⚙️ Auto Mode Activated';
+                }
+                 showFeedback(feedbackMessage);
+            }
+
+            function cycleTheme() {
+                const currentPreference = localStorage.getItem(themeLocalStorageKey) || 'auto'; // Default to auto
+                let nextPreference;
+
+                if (currentPreference === 'auto') {
+                    nextPreference = 'light';
+                } else if (currentPreference === 'light') {
+                    nextPreference = 'dark';
+                } else { // currentPreference === 'dark'
+                    nextPreference = 'auto';
+                }
+                setThemePreference(nextPreference);
+            }
+
+            // Set initial theme
+            const savedTheme = localStorage.getItem(themeLocalStorageKey) || 'auto'; // Default to auto
+            applyTheme(savedTheme);
+
+            // Add click listener to profile image
+            if (profileImg) {
+                profileImg.addEventListener('click', cycleTheme);
+            }
+
+             // Listen for system theme changes
+             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+                 // Only apply change if the current preference is 'auto'
+                 if (localStorage.getItem(themeLocalStorageKey) === 'auto' || !localStorage.getItem(themeLocalStorageKey)) {
+                     applyTheme('auto'); // Re-apply auto theme to respect the change
+                 }
+             });
+        });
+    </script>
+
+</body>
+</html>
