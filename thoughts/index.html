@@ -235,6 +235,12 @@
             background-color: var(--box-bg); /* USE VAR */
             transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
         }
+
+        /* Hover effect for clickable thought boxes (applied via JavaScript based on page type) */
+        .thought-box.clickable:hover {
+            background-color: var(--hover-bg-color);
+            border-color: var(--text-color);
+        }
         .thought-header {
             display: flex; 
             align-items: center; 
@@ -450,6 +456,27 @@
              .pagination span.page-info {
                  display: none; /* Optionally hide page number on very small screens */
              }
+
+            /* Individual thought navigation responsive */
+            .individual-thought-navigation {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 10px !important;
+                margin-top: 20px !important;
+            }
+            .individual-thought-navigation .nav-button {
+                width: 100% !important;
+                margin-right: 0 !important;
+                margin-left: 0 !important;
+                text-align: center !important;
+                box-sizing: border-box !important;
+            }
+
+            /* Quoted thought images on mobile */
+            .quoted-thought-image img {
+                max-width: 70%; /* Even smaller on mobile for better proportion */
+                max-height: 200px; /* Smaller height limit on mobile */
+            }
         }
 
         /* Pagination Styling */
@@ -490,6 +517,113 @@
              background-color: transparent;
         }
 
+        /* Quoted Thought Styling */
+        .quoted-thought-container {
+            margin-top: 15px;
+            border-left: 3px solid var(--border-color);
+            padding-left: 15px;
+            transition: border-color 0.3s ease;
+        }
+
+        .quoted-thought-box {
+            border: 1px solid var(--soft-border-color);
+            border-radius: 8px;
+            padding: 12px;
+            background-color: var(--box-bg);
+            font-size: 0.9em; /* Slightly smaller text */
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .quoted-thought-box:hover {
+            background-color: var(--hover-bg-color);
+            cursor: pointer;
+        }
+
+        .quoted-thought-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 0.85em;
+        }
+
+        .quoted-thought-user-img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 8px;
+            border: 1px solid var(--soft-border-color);
+            transition: border-color 0.3s ease;
+        }
+
+        .quoted-user-name {
+            font-weight: bold;
+            color: var(--text-color);
+            margin-right: 5px;
+        }
+
+        .quoted-thought-date-time {
+            color: var(--light-text-color);
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        .quoted-thought-permalink {
+            color: var(--light-text-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .quoted-thought-permalink:hover {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
+
+        .quoted-thought-content p {
+            margin: 0 0 8px 0;
+            color: var(--text-color);
+            line-height: 1.4;
+        }
+
+        .quoted-thought-image {
+            margin-top: 8px;
+        }
+
+        .quoted-thought-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .quoted-thought-image img:hover {
+            opacity: 0.9;
+        }
+
+        /* Mobile responsive adjustments for quoted thoughts */
+        @media (max-width: 600px) {
+            .quoted-thought-container {
+                padding-left: 10px;
+                margin-top: 12px;
+            }
+            
+            .quoted-thought-box {
+                padding: 10px;
+                font-size: 0.85em;
+            }
+            
+            .quoted-thought-user-img {
+                width: 20px;
+                height: 20px;
+                margin-right: 6px;
+            }
+            
+            .quoted-thought-header {
+                font-size: 0.8em;
+            }
+        }
+
         /* Theme Feedback Styling */
         .theme-feedback {
             position: fixed;
@@ -513,6 +647,127 @@
             opacity: 1;
             visibility: visible;
             top: 30px; /* Slightly move down when visible */
+        }
+
+        /* Quoted thought styles */
+        .quoted-thought-container {
+            margin-top: 16px;
+            position: relative;
+            padding: 0;
+        }
+        
+        .quoted-thought-box {
+            border-left: 3px solid var(--secondary-text-color);
+            background: linear-gradient(135deg, 
+                rgba(128, 128, 128, 0.03) 0%, 
+                rgba(128, 128, 128, 0.01) 100%);
+            border-radius: 0 12px 12px 0;
+            padding: 14px 16px;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        .quoted-thought-box:hover {
+            background: linear-gradient(135deg, 
+                rgba(128, 128, 128, 0.08) 0%, 
+                rgba(128, 128, 128, 0.03) 100%);
+            border-left-color: var(--text-color);
+        }
+        
+        .quoted-thought-box::before {
+            content: "";
+            position: absolute;
+            left: -3px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, 
+                var(--secondary-text-color) 0%, 
+                transparent 100%);
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .quoted-thought-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            gap: 8px;
+        }
+        
+        .quoted-thought-user-img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            opacity: 0.9;
+        }
+        
+        .quoted-thought-user-info {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            min-width: 0;
+        }
+        
+        .quoted-user-name {
+            font-weight: 500;
+            font-size: 0.8em;
+            color: var(--text-color);
+            line-height: 1.2;
+            opacity: 0.85;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .quoted-thought-date-time {
+            font-size: 0.72em;
+            color: var(--secondary-text-color);
+            line-height: 1.2;
+            opacity: 0.8;
+            white-space: nowrap;
+        }
+        
+        .quoted-thought-permalink {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border-radius: 3px;
+            padding: 1px 3px;
+            margin: -1px -3px;
+        }
+        
+        .quoted-thought-permalink:hover {
+            color: var(--text-color);
+            background-color: rgba(128, 128, 128, 0.1);
+            text-decoration: none;
+        }
+        
+        .quoted-thought-content p {
+            font-size: 0.82em;
+            margin: 0;
+            line-height: 1.5;
+            color: var(--text-color);
+            opacity: 0.9;
+        }
+        
+        .quoted-thought-image {
+            margin-top: 10px;
+        }
+        
+        .quoted-thought-image img {
+            max-width: 80%; /* Smaller than main thought images */
+            max-height: 300px; /* Limit height to maintain proportions */
+            width: auto;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid rgba(128, 128, 128, 0.15);
+            transition: border-color 0.2s ease;
+            object-fit: cover;
+        }
+        
+        .quoted-thought-image img:hover {
+            border-color: var(--border-color);
         }
 
     </style>
@@ -542,17 +797,16 @@
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1748625103.html" class="thought-permalink">2025-05-30 18:11</a></p>
+        <p class="thought-date-time"><a href="@1750350009.html" class="thought-permalink">2025-06-19 17:20</a></p>
     </div>
     <div class="thought-content">
-        <p>If USD/EUR falls below the pink trend line, it's a fall to ≈0.8785
+        <p>🛢️crude oil back above $75
 
-From here the downtrend towards ≈0.8689 (monthly level) is setup to be resumed & likely under a tighter channel (up: pink, bottom: green) - so a faster downfall of USD against EUR
-
-Stay tuned 📻</p>
+ just like I’ve been warning these past few days</p>
         <div class="thought-image">
-            <a href="data/images/43cfec29-bb0c-58bb-8938-eb3af4d80332.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/43cfec29-bb0c-58bb-8938-eb3af4d80332.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/d5d6d9b4-5159-50d5-ae87-8fcae38abbb7.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/d5d6d9b4-5159-50d5-ae87-8fcae38abbb7.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -561,39 +815,259 @@ Stay tuned 📻</p>
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1748482713.html" class="thought-permalink">2025-05-29 02:38</a></p>
+        <p class="thought-date-time"><a href="@1750251065.html" class="thought-permalink">2025-06-18 13:51</a></p>
     </div>
     <div class="thought-content">
-        <p>🇺🇸 Cancelled tariffs means refunds, which means a larger budget deficit
+        <p>watch. the. move. 🚀</p>
+        <div class="thought-image">
+            <a href="data/images/ca04f5dc-73cd-530d-9f5d-3c578e64231d.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/ca04f5dc-73cd-530d-9f5d-3c578e64231d.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
 
-Rising bond yields means that deficit is (even) more expensive to refinance
 
-The FED will soon need inject liquidity via QE + lower interest rates</p>
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1750250984.html" class="thought-permalink">2025-06-18 13:49</a></p>
+    </div>
+    <div class="thought-content">
+        <p>FYI the new BRICS banknote that has been circulating on social media today is NOT real
+
+it’s merely symbolic - NOT legal tender
+
+before a joint currency, there will still be more bilateral trade in local currencies
+
+unless those notes were to tokenize gold</p>
+        <div class="thought-image">
+            <a href="data/images/6ac49aed-9a7c-5f5f-b060-dafe498d26de.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/6ac49aed-9a7c-5f5f-b060-dafe498d26de.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1750250916.html" class="thought-permalink">2025-06-18 13:48</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🎯 Ethereum fell below $2500
+
+first part of my thesis has already played out - a retracement instead of a breakout
+
+weekly candles show constant rejection
+
+now await for what comes next ⏰</p>
+        <div class="thought-image">
+            <a href="data/images/55f16fec-d40d-550f-8e0e-b810ee21d8ae.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/55f16fec-d40d-550f-8e0e-b810ee21d8ae.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1750206084.html" class="thought-permalink">2025-06-18 01:21</a></p>
+    </div>
+    <div class="thought-content">
+        <p>everybody has been so focused on oil price, that they largely ignored the decrease in US bond yields across the curve
+
+this trend has been consistent throughout the month
+
+interpretation 🧠: 
+
+short-term sign of run to safety, specially when combined with gold price</p>
+        <div class="thought-image">
+            <a href="data/images/12a71ad2-f4e2-59f5-b81d-36cd074b913f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/12a71ad2-f4e2-59f5-b81d-36cd074b913f.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1750177244.html" class="thought-permalink">2025-06-17 17:20</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🛢️ Crude oil back above $72 per barrel
+
+Just as I wrote yesterday</p>
+        <div class="thought-image">
+            <a href="data/images/cb1773a5-0605-5e16-91dc-75a389acf57b.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/cb1773a5-0605-5e16-91dc-75a389acf57b.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="@1750114377.html" class="quoted-thought-permalink">2025-06-16 23:52</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>Oil & Gold back on the rise
+
+Just as I wrote earlier today</p>
+            <div class="quoted-thought-image"><a href="data/images/ca481e00-4f3b-55cf-8f68-16b0151aedf1.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/ca481e00-4f3b-55cf-8f68-16b0151aedf1.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1750114377.html" class="thought-permalink">2025-06-16 23:52</a></p>
+    </div>
+    <div class="thought-content">
+        <p>Oil & Gold back on the rise
+
+Just as I wrote earlier today</p>
+        <div class="thought-image">
+            <a href="data/images/ca481e00-4f3b-55cf-8f68-16b0151aedf1.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/ca481e00-4f3b-55cf-8f68-16b0151aedf1.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="@1750077674.html" class="quoted-thought-permalink">2025-06-16 13:41</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>“The market is never wrong”
+
+A lot of big accounts posting about how the market knows everything & prices accordingly - even before the official news
+
+Okay.
+
+Now wait & watch crude oil & gold raise up even more in price very soon
+
+This isn’t a joke</p>
+            <div class="quoted-thought-image"><a href="data/images/2ec3e60e-4d59-55e3-b19e-fbcde51ac5b1.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2ec3e60e-4d59-55e3-b19e-fbcde51ac5b1.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1750098423.html" class="thought-permalink">2025-06-16 19:27</a></p>
+    </div>
+    <div class="thought-content">
+        <p>Contract-as-product approach
+
+That's an interesting way to name it!</p>
+        <div class="thought-image">
+            <a href="data/images/68aa61bc-814b-5aca-8b3c-8222ae11010e.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/68aa61bc-814b-5aca-8b3c-8222ae11010e.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1750091982.html" class="thought-permalink">2025-06-16 17:39</a></p>
+    </div>
+    <div class="thought-content">
+        <p>aaand crude oil futures are back above $70</p>
+        <div class="thought-image">
+            <a href="data/images/b896b300-c11e-55b0-9bff-7826469f266a.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/b896b300-c11e-55b0-9bff-7826469f266a.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="@1750077674.html" class="quoted-thought-permalink">2025-06-16 13:41</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>“The market is never wrong”
+
+A lot of big accounts posting about how the market knows everything & prices accordingly - even before the official news
+
+Okay.
+
+Now wait & watch crude oil & gold raise up even more in price very soon
+
+This isn’t a joke</p>
+            <div class="quoted-thought-image"><a href="data/images/2ec3e60e-4d59-55e3-b19e-fbcde51ac5b1.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2ec3e60e-4d59-55e3-b19e-fbcde51ac5b1.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1750088004.html" class="thought-permalink">2025-06-16 16:33</a></p>
+    </div>
+    <div class="thought-content">
+        <p>BTW I soon realized this wasn’t an actual ATH for gold yet - but it is coming
+
+The historical chart is showing closing prices, not maximum
+
+So I inadvertently compared current price with closing historical price
+
+Good news - more time for you to accumulate gold before new ATH 😄</p>
         <div class="thought-image">
             
         </div>
-    </div>
-</div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="@1749821908.html" class="quoted-thought-permalink">2025-06-13 14:38</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>🚀📈 NEW Gold ATH is in - $3440 per oz
 
+I’ve been warning about this for a while
 
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1748355739.html" class="thought-permalink">2025-05-27 15:22</a></p>
-    </div>
-    <div class="thought-content">
-        <p>90% of all newly issued debt is for refinancing of existing debt, not new debt/financing
-
-Thus, new debt is extremely inflationary & asset bubble-nurturing
-
-The financial system is extremely leveraged at a high risk
-
-We need to fix this. DeFi is the tool</p>
-        <div class="thought-image">
-            <a href="data/images/5e46af67-e593-50d7-9e6f-9d7007e1e518.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/5e46af67-e593-50d7-9e6f-9d7007e1e518.jpg" alt="Thought Image" class="thought-img"></a>
+You had a little over a month since my original post to load up</p>
+            <div class="quoted-thought-image"><a href="data/images/70483f87-14b5-5054-9234-49e032eb9dbe.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/70483f87-14b5-5054-9234-49e032eb9dbe.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
         </div>
     </div>
+</div> 
+    </div>
 </div>
 
 
@@ -601,17 +1075,40 @@ We need to fix this. DeFi is the tool</p>
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1748354106.html" class="thought-permalink">2025-05-27 14:55</a></p>
+        <p class="thought-date-time"><a href="@1750078196.html" class="thought-permalink">2025-06-16 13:49</a></p>
     </div>
     <div class="thought-content">
-        <p>Michael Saylor doesn't need to expose MSRT's wallets for a proof of reserves
+        <p>💾⏰ Just like with my post about the price of gold a few months ago - feel free to save & set a reminder for this one
 
-All you need is Zero Knowledge Proof attesting that MicroStrategy has access to private key(s) holding a total of X BTC  
-
-With ZKPs - no Bitcoin addresses are exposed ✨</p>
+The prediction will be correct once again</p>
         <div class="thought-image">
             
         </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="@1750077674.html" class="quoted-thought-permalink">2025-06-16 13:41</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>“The market is never wrong”
+
+A lot of big accounts posting about how the market knows everything & prices accordingly - even before the official news
+
+Okay.
+
+Now wait & watch crude oil & gold raise up even more in price very soon
+
+This isn’t a joke</p>
+            <div class="quoted-thought-image"><a href="data/images/2ec3e60e-4d59-55e3-b19e-fbcde51ac5b1.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2ec3e60e-4d59-55e3-b19e-fbcde51ac5b1.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
     </div>
 </div>
 
@@ -620,13 +1117,18 @@ With ZKPs - no Bitcoin addresses are exposed ✨</p>
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1748271417.html" class="thought-permalink">2025-05-26 15:56</a></p>
+        <p class="thought-date-time"><a href="@1750078039.html" class="thought-permalink">2025-06-16 13:47</a></p>
     </div>
     <div class="thought-content">
-        <p>All time high for gold incoming…</p>
+        <p>Shekel is headed down - to sub 4₪/€
+
+Inflation will be a huge problem soon as well
+
+There’s always gold 🤷‍♀️</p>
         <div class="thought-image">
-            <a href="data/images/4b448099-4436-5d5d-9ad5-f1f5d6fd9e6d.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/4b448099-4436-5d5d-9ad5-f1f5d6fd9e6d.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/541e4495-9df1-56c9-9591-689a69e6a21d.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/541e4495-9df1-56c9-9591-689a69e6a21d.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -635,21 +1137,22 @@ With ZKPs - no Bitcoin addresses are exposed ✨</p>
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1748205243.html" class="thought-permalink">2025-05-25 21:34</a></p>
+        <p class="thought-date-time"><a href="@1750077674.html" class="thought-permalink">2025-06-16 13:41</a></p>
     </div>
     <div class="thought-content">
-        <p>Sustained high bond yields combined with QE will lead to an inflation of equity and risk asset prices
+        <p>“The market is never wrong”
 
-Here's how 👇
+A lot of big accounts posting about how the market knows everything & prices accordingly - even before the official news
 
-1️⃣ High yields = high required base return
-2️⃣ Inflow of QE funds into equities & crypto
-3️⃣ Equities & cryptocurrency prices increase
+Okay.
 
-Further fuel for the bubble</p>
+Now wait & watch crude oil & gold raise up even more in price very soon
+
+This isn’t a joke</p>
         <div class="thought-image">
-            <a href="data/images/2301e84b-273e-5904-ad9e-4e4828158018.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2301e84b-273e-5904-ad9e-4e4828158018.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/2ec3e60e-4d59-55e3-b19e-fbcde51ac5b1.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2ec3e60e-4d59-55e3-b19e-fbcde51ac5b1.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -658,19 +1161,16 @@ Further fuel for the bubble</p>
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1748202706.html" class="thought-permalink">2025-05-25 20:51</a></p>
+        <p class="thought-date-time"><a href="@1749830117.html" class="thought-permalink">2025-06-13 16:55</a></p>
     </div>
     <div class="thought-content">
-        <p>⚡️ US Bond yields directly affect USD liquidity
+        <p>While Ethereum has built a strong-ish support in the current area, it currently looks more likely to fall towards the ≈$2180 monthly support
 
-Here's how 👇
-
-1️⃣ Repo + reverse repo market provides $5 trillion of liquidity
-2️⃣ US bonds represent ≈70% of collateral
-3️⃣ Lower bond prices means smaller loans, leading to a liquidity squeeze</p>
+Do not underestimate what the new all time highs in gold are telling you</p>
         <div class="thought-image">
-            <a href="data/images/60298208-127c-57ea-8100-bf4778e0e3e1.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/60298208-127c-57ea-8100-bf4778e0e3e1.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/be01b03b-64fc-5472-8557-a31a40949864.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/be01b03b-64fc-5472-8557-a31a40949864.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -679,21 +1179,38 @@ Here's how 👇
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1748192677.html" class="thought-permalink">2025-05-25 18:04</a></p>
+        <p class="thought-date-time"><a href="@1749829485.html" class="thought-permalink">2025-06-13 16:44</a></p>
     </div>
     <div class="thought-content">
-        <p>🏦 Quantitative Easing (QE) by a Central Bank (CB) increase both - its assets & liabilities
+        <p>Falling US Dollar index played out exactly as expected
 
-👇
-QE = CB buys securities from commercial banks
-👆
-
-This involves:
-1️⃣ Transfer of securities to CB (asset UP)
-2️⃣ Credit  the bank's reserve account (liability UP)</p>
+2 months later and it’s down another full point</p>
         <div class="thought-image">
-            <a href="data/images/9660873a-3a6f-5ee7-9a3c-31b38ffcee30.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/9660873a-3a6f-5ee7-9a3c-31b38ffcee30.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/c8ed64e6-0164-5db0-99b8-ef01919db358.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/c8ed64e6-0164-5db0-99b8-ef01919db358.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="@1745063229.html" class="quoted-thought-permalink">2025-04-19 12:47</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>🇺🇸 USD index bearish/in a downtrend
+
+5Y timeframe weekly chart shows lower highs & lows
+
+Ever since Trump took office, every $DXY weekly candle has been red
+
+Greatest USD economy in history 🫠</p>
+            <div class="quoted-thought-image"><a href="data/images/ef874022-c543-5e7f-8a61-8a40878446b9.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/ef874022-c543-5e7f-8a61-8a40878446b9.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
     </div>
 </div>
 
@@ -702,20 +1219,16 @@ This involves:
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1748187610.html" class="thought-permalink">2025-05-25 16:40</a></p>
+        <p class="thought-date-time"><a href="@1749829153.html" class="thought-permalink">2025-06-13 16:39</a></p>
     </div>
     <div class="thought-content">
-        <p>👉 M2 Supply ≠ Liquidity 👈
+        <p>Interestingly, the yields on US bonds are up across the yield curve - for both, short & long-term maturities
 
-M2 is only a part of the total liquidity
-
-🔎 Here's an example:
-Repurchase agreements market adds ≈$17T in the form of security-backed short-term credit, thus increasing available currency
-
-M2 does not account for the repo market</p>
+The market - understandably - associated gold, rather than government debt with safety</p>
         <div class="thought-image">
-            <a href="data/images/d991a959-8ab1-5c6e-878a-8ce4fd714905.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/d991a959-8ab1-5c6e-878a-8ce4fd714905.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/8a370d5a-0b56-5cc9-a60f-7e0e25aae2fb.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/8a370d5a-0b56-5cc9-a60f-7e0e25aae2fb.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -724,17 +1237,16 @@ M2 does not account for the repo market</p>
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1748030582.html" class="thought-permalink">2025-05-23 21:03</a></p>
+        <p class="thought-date-time"><a href="@1749828575.html" class="thought-permalink">2025-06-13 16:29</a></p>
     </div>
     <div class="thought-content">
-        <p>⚡️ Crypto market cap down 2.6% today
+        <p>🤯 Gold may just go straight to $3500 in the next few hours
 
-Explains the overall pullback across prices. Some went into gold & bonds (yields are down today)
-
-Could head a little lower - but definitely temporary. Expect inflows/increase soon</p>
+Look at this 15-minute timeframe momentum ⬇️</p>
         <div class="thought-image">
-            <a href="data/images/c570670d-de70-5b68-8e35-8cbecf789f45.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/c570670d-de70-5b68-8e35-8cbecf789f45.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/26a3b562-7ba3-5685-b375-488a0467d0c7.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/26a3b562-7ba3-5685-b375-488a0467d0c7.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -743,23 +1255,42 @@ Could head a little lower - but definitely temporary. Expect inflows/increase so
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747937641.html" class="thought-permalink">2025-05-22 19:14</a></p>
+        <p class="thought-date-time"><a href="@1749821908.html" class="thought-permalink">2025-06-13 14:38</a></p>
     </div>
     <div class="thought-content">
-        <p>🚀📚 Learn ANYTHING with AI fast:
+        <p>🚀📈 NEW Gold ATH is in - $3440 per oz
 
-1️⃣ Screenshot what you don’t understand (e.g. book page)
+I’ve been warning about this for a while
 
-2️⃣ Open ChatGPT*, attach screenshot & dictate your question - no matter how vague/unclear it is
-
-3️⃣ Recurse & iterate until you understand
-
-Always validate your understanding
-
-* any LLM</p>
+You had a little over a month since my original post to load up</p>
         <div class="thought-image">
-            <a href="data/images/8cc50cf7-89df-5246-b4d4-f72c8013478a.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/8cc50cf7-89df-5246-b4d4-f72c8013478a.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/70483f87-14b5-5054-9234-49e032eb9dbe.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/70483f87-14b5-5054-9234-49e032eb9dbe.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="@1745575233.html" class="quoted-thought-permalink">2025-04-25 11:00</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>Now that gold is down & below $3.3K, it’s a good time to say this:
+
+🎉  New ATH coming very soon 🎉
+
+In the time of political, civil & economic ambiguity - there is only one recourse - Au
+
+Lower interest rates & QE are coming soon - FIAT down, gold up
+
+💾 Save this & check back</p>
+            <div class="quoted-thought-image"><a href="data/images/3e8003ba-467e-50e6-9ecb-a811ef423458.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/3e8003ba-467e-50e6-9ecb-a811ef423458.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
     </div>
 </div>
 
@@ -768,15 +1299,38 @@ Always validate your understanding
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747915598.html" class="thought-permalink">2025-05-22 13:06</a></p>
+        <p class="thought-date-time"><a href="@1749776803.html" class="thought-permalink">2025-06-13 02:06</a></p>
     </div>
     <div class="thought-content">
-        <p>Gold is having its “calm before the storm” moment 😄
+        <p>I hope you used the earlier advice to prepare for a new gold ATH
 
-New all time high is coming very soon to all markets close to you</p>
+The turn around the corner has begun</p>
         <div class="thought-image">
-            <a href="data/images/88869d9a-26a0-5471-a03f-1d59e7fdc224.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/88869d9a-26a0-5471-a03f-1d59e7fdc224.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/fed01689-4cb1-5feb-9723-0b7690ed98d4.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/fed01689-4cb1-5feb-9723-0b7690ed98d4.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="@1749684261.html" class="quoted-thought-permalink">2025-06-12 00:24</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>🚀 Are you ready? 
+
+New all time high for gold is just around the corner
+
+And there will already be a strong resistance in the ≈$3300 area, due to the recent accumulation
+
+Low(er) interest rates + high(er) CPI will then push it up even further</p>
+            <div class="quoted-thought-image"><a href="data/images/faae2800-5910-513f-ae3e-f4ae5909c8c0.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/faae2800-5910-513f-ae3e-f4ae5909c8c0.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
     </div>
 </div>
 
@@ -785,23 +1339,16 @@ New all time high is coming very soon to all markets close to you</p>
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747914745.html" class="thought-permalink">2025-05-22 12:52</a></p>
+        <p class="thought-date-time"><a href="@1749776235.html" class="thought-permalink">2025-06-13 01:57</a></p>
     </div>
     <div class="thought-content">
-        <p>Of course - context is always needed
+        <p>As expected - 3 months was all that crude oil needed to spike back up
 
-In 2002 Fed Funds Rate was x3 smaller
-
-At that time, rates were higher overall
-
-To find rates as small as in 2002, you’d need to go back to the 1960's 😳
-
-For 15 years now, US had effectively been under QE financing - cheap debt 
-
-🏦🫧</p>
+Other commodities like gold, silver & others are up since as well</p>
         <div class="thought-image">
-            <a href="data/images/644b3346-2d7e-5b85-9056-58f66c968c1f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/644b3346-2d7e-5b85-9056-58f66c968c1f.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/6059d01f-3a3b-5d03-921a-7081d7b3846a.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/6059d01f-3a3b-5d03-921a-7081d7b3846a.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -810,19 +1357,18 @@ For 15 years now, US had effectively been under QE financing - cheap debt
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747914267.html" class="thought-permalink">2025-05-22 12:44</a></p>
+        <p class="thought-date-time"><a href="@1749775971.html" class="thought-permalink">2025-06-13 01:52</a></p>
     </div>
     <div class="thought-content">
-        <p>🤯 The year is 2002…
+        <p>While Gold & Oil are up, Ethereum and Bitcoin are down
 
-US bond yields are at the same high levels as they were in 2002… That’s 23 years ago
+As expected. A practical reminder that BTC, ETH & altcoins are NOT reserve assets
 
-In 2002 US national debt was x6 SMALLER than now
-
-5.1% now is not the same as 5.1% before - it’s worse. Much more debt to refinance & pay interest</p>
+I am big believer in crypto & DeFi - but it’s important to remain rational, even if you are entertained</p>
         <div class="thought-image">
-            <a href="data/images/924cbf8e-34c8-5bbe-8067-25cd2c2e5213.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/924cbf8e-34c8-5bbe-8067-25cd2c2e5213.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/77196138-6409-5ef6-9463-7a665deeac67.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/77196138-6409-5ef6-9463-7a665deeac67.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -831,15 +1377,20 @@ In 2002 US national debt was x6 SMALLER than now
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747862046.html" class="thought-permalink">2025-05-21 22:14</a></p>
+        <p class="thought-date-time"><a href="@1749684261.html" class="thought-permalink">2025-06-12 00:24</a></p>
     </div>
     <div class="thought-content">
-        <p>Who’s ready for a new gold ATH? 🙋
+        <p>🚀 Are you ready? 
 
-You don’t have to guess - just look at the systemic raising bond yields across all maturities & multiple sovereigns</p>
+New all time high for gold is just around the corner
+
+And there will already be a strong resistance in the ≈$3300 area, due to the recent accumulation
+
+Low(er) interest rates + high(er) CPI will then push it up even further</p>
         <div class="thought-image">
-            <a href="data/images/ca3df885-bb97-5615-a0c6-fa8e305d0dbc.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/ca3df885-bb97-5615-a0c6-fa8e305d0dbc.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/faae2800-5910-513f-ae3e-f4ae5909c8c0.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/faae2800-5910-513f-ae3e-f4ae5909c8c0.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -848,15 +1399,18 @@ You don’t have to guess - just look at the systemic raising bond yields across
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747855218.html" class="thought-permalink">2025-05-21 20:20</a></p>
+        <p class="thought-date-time"><a href="@1749683191.html" class="thought-permalink">2025-06-12 00:06</a></p>
     </div>
     <div class="thought-content">
-        <p>🇨🇭Not all European bonds are crashing
+        <p>Risk-free rate returns with quant trading strategies may be fairly easy to achieve even with parameter-optimized Bollinger Bands
 
-The yields on the 10 year Swiss bond is actually down ≈40% over the past 3 months, although up ≈12% over 6 months</p>
+Not surprising, but unless the return can beat the mid/long-term bond yields - it’s also not very useful 😄
+
+Unless… leverage, of course</p>
         <div class="thought-image">
-            <a href="data/images/51754a35-dc72-58c2-aa47-1003e4875d0a.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/51754a35-dc72-58c2-aa47-1003e4875d0a.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/45167618-003b-53da-b193-eba5cb58c06c.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/45167618-003b-53da-b193-eba5cb58c06c.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -865,17 +1419,38 @@ The yields on the 10 year Swiss bond is actually down ≈40% over the past 3 mon
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747854747.html" class="thought-permalink">2025-05-21 20:12</a></p>
+        <p class="thought-date-time"><a href="@1749580699.html" class="thought-permalink">2025-06-10 19:38</a></p>
     </div>
     <div class="thought-content">
-        <p>🚨🇺🇸 30Y bond yield is up 132 bp in 1h
+        <p>The Ruble thesis remains valid
 
-30 year US bond is not only trading above 5%, but had its price fall by ≈1.34% in the short span of 60 minutes
-
-And you thought crypto & meme coins were volatile 😂</p>
+Up ≈13% on the USD in the past quarter</p>
         <div class="thought-image">
-            <a href="data/images/5cd95d29-0cf6-5ea4-b688-bca24235cd54.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/5cd95d29-0cf6-5ea4-b688-bca24235cd54.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/4f6db8e9-0244-51c6-b9c8-86a77a973635.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/4f6db8e9-0244-51c6-b9c8-86a77a973635.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="@1744622466.html" class="quoted-thought-permalink">2025-04-14 10:21</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>🚨 Ruble is up 30% on USD 2025 YTD
+
+82-68 is a strong support - including pre-Ukraine war liquidity
+
+A small pullback is very likely to happen, but in the medium-long term it’s heading towards the 68
+
+Once sanctions are dropped by US & EU - RUB will skyrocket</p>
+            <div class="quoted-thought-image"><a href="data/images/8333527f-9a0a-5605-954a-f32f5c1e1a5e.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/8333527f-9a0a-5605-954a-f32f5c1e1a5e.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
     </div>
 </div>
 
@@ -884,160 +1459,23 @@ And you thought crypto & meme coins were volatile 😂</p>
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747828126.html" class="thought-permalink">2025-05-21 12:48</a></p>
+        <p class="thought-date-time"><a href="@1749571837.html" class="thought-permalink">2025-06-10 17:10</a></p>
     </div>
     <div class="thought-content">
-        <p>A month ago me and Gemini 2.5 Pro Deep Research had a disagreement
+        <p>🤯👉 Quant trading secrets they don’t want you to know
 
-🇯🇵 Gemini said Japan will continue with QT, while I think they will be back to QE soon
+On the bright side - the Sharpe Ratio may soon underflow, thus turning it very positive
 
-With Japanese bond yields at ATHs - which one of the scenarios do you find more likely? 😁</p>
+Still counts, right? 😂</p>
         <div class="thought-image">
-            <a href="data/images/d68da047-a14e-5c73-92e5-d518a634b4e4.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/d68da047-a14e-5c73-92e5-d518a634b4e4.jpg" alt="Thought Image" class="thought-img"></a>
+            <a href="data/images/c037d9c7-5677-5090-bfad-5d8a1d47007f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/c037d9c7-5677-5090-bfad-5d8a1d47007f.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747825113.html" class="thought-permalink">2025-05-21 11:58</a></p>
-    </div>
-    <div class="thought-content">
-        <p>🇺🇸 US bond yields are at their ≈2006 levels
-
-🏦 Current FED Funds rate is about the same as it was in '06
-
-💰 The US Dollar Index is significantly higher today than in '06
-
-High volatility in the bond market became a norm. Volatility & risk go hand-in-hand
-
-Concerning!</p>
-        <div class="thought-image">
-            <a href="data/images/2c05492e-0a6e-5317-b63d-ff48c244ca5d.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2c05492e-0a6e-5317-b63d-ff48c244ca5d.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747765274.html" class="thought-permalink">2025-05-20 19:21</a></p>
-    </div>
-    <div class="thought-content">
-        <p>🚀 Updated My Thoughts Section
-
-Now, each thought has:
-👉 A unique shareable page/link
-👉 OpenGraph images with the exact text of the thought
-
-So you don’t even need to open the page when reading the thought - it’s in the link's preview
-
-Example:</p>
-        <div class="thought-image">
-            
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747747905.html" class="thought-permalink">2025-05-20 14:31</a></p>
-    </div>
-    <div class="thought-content">
-        <p>🇺🇸 Good morning,
-
-It’s another green day for US bond yields</p>
-        <div class="thought-image">
-            <a href="data/images/ae9a9d75-f6cb-5638-bef7-16ba1f75456f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/ae9a9d75-f6cb-5638-bef7-16ba1f75456f.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747742787.html" class="thought-permalink">2025-05-20 13:06</a></p>
-    </div>
-    <div class="thought-content">
-        <p>🇷🇺 Russian Bond Yield Curve Is Inverted
-
-An inverted yield curve is usually a bad sign (e.g. recession)
-
-However, 🇷🇺's fundamentals are healthy
-
-Why inverted? 🇷🇺 Central Bank's 21% key interest rate, or rather the expectation of it going down, is what’s pushing this shape</p>
-        <div class="thought-image">
-            <a href="data/images/1118a78c-ba1f-59b4-adb2-5ecb21fcb498.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/1118a78c-ba1f-59b4-adb2-5ecb21fcb498.jpg" alt="Thought Image" class="thought-img"></a>
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747657239.html" class="thought-permalink">2025-05-19 13:20</a></p>
-    </div>
-    <div class="thought-content">
-        <p>Here's why bond yields skyrocketing worldwide ⬇️
-
-Countries own a lot of US debt (bonds)
-Moody's downgraded the US credit rating
-
-Now, countries are at a higher risk of default, because the US debt they own is now less valuable = higher chance of country's default
-
-(simplified)</p>
-        <div class="thought-image">
-            
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747655888.html" class="thought-permalink">2025-05-19 12:58</a></p>
-    </div>
-    <div class="thought-content">
-        <p>Btw I've since learned that gold is only ≈10% of total reserves of the Portuguese Central bank - that's low
-
-It's 80% of their international reserves - those are basically regulation-defined ratios that banks must maintain (look into BASEL rules if curious)</p>
-        <div class="thought-image">
-            
-        </div>
-    </div>
-</div>
-
-
-<div class="thought-box">
-    <div class="thought-header">
-        <img src="data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="@1747655541.html" class="thought-permalink">2025-05-19 12:52</a></p>
-    </div>
-    <div class="thought-content">
-        <p>It's very okay to leverage, as long as you are sufficiently hedging the risk. In practice this means that you are explicitly quantifying & accepting a certain percentage of risk in exchange for a certain return/alpha</p>
-        <div class="thought-image">
-            
-        </div>
+        
     </div>
 </div>
 
         
-        <nav class="pagination"><span class="newer disabled">← Newer</span><span class="page-info">Page 1 of 12</span><a href="11.html" class="older">Older →</a></nav>
+        <nav class="pagination"><span class="newer disabled">← Newer</span><span class="page-info">Page 1 of 13</span><a href="12.html" class="older">Older →</a></nav>
     </div>
 
     <!-- Lightbox Structure (Initially Hidden) -->
@@ -1064,6 +1502,59 @@ It's 80% of their international reserves - those are basically regulation-define
                     document.body.style.overflow = 'hidden'; // Prevent scrolling background
                 });
             });
+
+            // Check if we're on an individual thought page
+            const isIndividualThoughtPage = window.location.pathname.includes('@');
+            
+            // Handle quoted thought box clicks for navigation (always clickable)
+            const quotedThoughts = document.querySelectorAll('.quoted-thought-box');
+            quotedThoughts.forEach(quotedBox => {
+                quotedBox.addEventListener('click', (e) => {
+                    // Don't navigate if clicking on an image or link within the quoted thought
+                    if (e.target.tagName === 'IMG' || e.target.tagName === 'A') {
+                        return;
+                    }
+                    e.preventDefault();
+                    // Find the permalink within this quoted thought
+                    const permalink = quotedBox.querySelector('.quoted-thought-permalink');
+                    if (permalink) {
+                        window.location.href = permalink.getAttribute('href');
+                    }
+                });
+                
+                // Add cursor pointer to indicate clickability
+                quotedBox.style.cursor = 'pointer';
+            });
+
+            // Handle main thought box clicks (only in timeline/list views, not on individual pages)
+            if (!isIndividualThoughtPage) {
+                const mainThoughts = document.querySelectorAll('.thought-box');
+                mainThoughts.forEach(thoughtBox => {
+                    // Skip if this is a quoted thought box (already handled above)
+                    if (thoughtBox.closest('.quoted-thought-container')) {
+                        return;
+                    }
+                    
+                    thoughtBox.addEventListener('click', (e) => {
+                        // Don't navigate if clicking on an image, link, or quoted thought within the main thought
+                        if (e.target.tagName === 'IMG' || 
+                            e.target.tagName === 'A' || 
+                            e.target.closest('.quoted-thought-container')) {
+                            return;
+                        }
+                        e.preventDefault();
+                        // Find the permalink within this main thought
+                        const permalink = thoughtBox.querySelector('.thought-permalink');
+                        if (permalink) {
+                            window.location.href = permalink.getAttribute('href');
+                        }
+                    });
+                    
+                    // Add cursor pointer and clickable class to indicate clickability
+                    thoughtBox.style.cursor = 'pointer';
+                    thoughtBox.classList.add('clickable');
+                });
+            }
 
             function closeLightbox() {
                 lightbox.classList.remove('visible');

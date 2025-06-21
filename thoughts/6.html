@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>Illya&#x27;s Thoughts - Page 7</title> 
+    <title>Illya&#x27;s Thoughts - Page 8</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="Illya's Thoughts - Page 7" />
+    <meta property="og:title" content="Illya's Thoughts - Page 8" />
     <meta property="og:type" content='website' />
     <meta property="og:url" content='https://illya.sh/thoughts/6.html' />
     <meta property="og:image" content='https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp' />
     <meta property="og:description" content="Crypto, Finance, Blockchain, AI, DeFi, Web3 and Zero-Knowledge. Pursuing master's in Law & Financial Markets." />
     <meta property="og:site_name" content="Illya's Thoughts" />
     <meta name="twitter:card" content='summary_large_image' />
-    <meta name="twitter:title" content="Illya's Thoughts - Page 7" />
+    <meta name="twitter:title" content="Illya's Thoughts - Page 8" />
     <meta name="twitter:description" content="Crypto, Finance, Blockchain, AI, DeFi, Web3 and Zero-Knowledge. Pursuing master's in Law & Financial Markets." />
     <meta name="twitter:image" content='https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp' />
     
@@ -235,6 +235,12 @@
             background-color: var(--box-bg); /* USE VAR */
             transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
         }
+
+        /* Hover effect for clickable thought boxes (applied via JavaScript based on page type) */
+        .thought-box.clickable:hover {
+            background-color: var(--hover-bg-color);
+            border-color: var(--text-color);
+        }
         .thought-header {
             display: flex; 
             align-items: center; 
@@ -450,6 +456,27 @@
              .pagination span.page-info {
                  display: none; /* Optionally hide page number on very small screens */
              }
+
+            /* Individual thought navigation responsive */
+            .individual-thought-navigation {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 10px !important;
+                margin-top: 20px !important;
+            }
+            .individual-thought-navigation .nav-button {
+                width: 100% !important;
+                margin-right: 0 !important;
+                margin-left: 0 !important;
+                text-align: center !important;
+                box-sizing: border-box !important;
+            }
+
+            /* Quoted thought images on mobile */
+            .quoted-thought-image img {
+                max-width: 70%; /* Even smaller on mobile for better proportion */
+                max-height: 200px; /* Smaller height limit on mobile */
+            }
         }
 
         /* Pagination Styling */
@@ -490,6 +517,113 @@
              background-color: transparent;
         }
 
+        /* Quoted Thought Styling */
+        .quoted-thought-container {
+            margin-top: 15px;
+            border-left: 3px solid var(--border-color);
+            padding-left: 15px;
+            transition: border-color 0.3s ease;
+        }
+
+        .quoted-thought-box {
+            border: 1px solid var(--soft-border-color);
+            border-radius: 8px;
+            padding: 12px;
+            background-color: var(--box-bg);
+            font-size: 0.9em; /* Slightly smaller text */
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .quoted-thought-box:hover {
+            background-color: var(--hover-bg-color);
+            cursor: pointer;
+        }
+
+        .quoted-thought-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 0.85em;
+        }
+
+        .quoted-thought-user-img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 8px;
+            border: 1px solid var(--soft-border-color);
+            transition: border-color 0.3s ease;
+        }
+
+        .quoted-user-name {
+            font-weight: bold;
+            color: var(--text-color);
+            margin-right: 5px;
+        }
+
+        .quoted-thought-date-time {
+            color: var(--light-text-color);
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        .quoted-thought-permalink {
+            color: var(--light-text-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .quoted-thought-permalink:hover {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
+
+        .quoted-thought-content p {
+            margin: 0 0 8px 0;
+            color: var(--text-color);
+            line-height: 1.4;
+        }
+
+        .quoted-thought-image {
+            margin-top: 8px;
+        }
+
+        .quoted-thought-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .quoted-thought-image img:hover {
+            opacity: 0.9;
+        }
+
+        /* Mobile responsive adjustments for quoted thoughts */
+        @media (max-width: 600px) {
+            .quoted-thought-container {
+                padding-left: 10px;
+                margin-top: 12px;
+            }
+            
+            .quoted-thought-box {
+                padding: 10px;
+                font-size: 0.85em;
+            }
+            
+            .quoted-thought-user-img {
+                width: 20px;
+                height: 20px;
+                margin-right: 6px;
+            }
+            
+            .quoted-thought-header {
+                font-size: 0.8em;
+            }
+        }
+
         /* Theme Feedback Styling */
         .theme-feedback {
             position: fixed;
@@ -513,6 +647,127 @@
             opacity: 1;
             visibility: visible;
             top: 30px; /* Slightly move down when visible */
+        }
+
+        /* Quoted thought styles */
+        .quoted-thought-container {
+            margin-top: 16px;
+            position: relative;
+            padding: 0;
+        }
+        
+        .quoted-thought-box {
+            border-left: 3px solid var(--secondary-text-color);
+            background: linear-gradient(135deg, 
+                rgba(128, 128, 128, 0.03) 0%, 
+                rgba(128, 128, 128, 0.01) 100%);
+            border-radius: 0 12px 12px 0;
+            padding: 14px 16px;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        .quoted-thought-box:hover {
+            background: linear-gradient(135deg, 
+                rgba(128, 128, 128, 0.08) 0%, 
+                rgba(128, 128, 128, 0.03) 100%);
+            border-left-color: var(--text-color);
+        }
+        
+        .quoted-thought-box::before {
+            content: "";
+            position: absolute;
+            left: -3px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, 
+                var(--secondary-text-color) 0%, 
+                transparent 100%);
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .quoted-thought-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            gap: 8px;
+        }
+        
+        .quoted-thought-user-img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            opacity: 0.9;
+        }
+        
+        .quoted-thought-user-info {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            min-width: 0;
+        }
+        
+        .quoted-user-name {
+            font-weight: 500;
+            font-size: 0.8em;
+            color: var(--text-color);
+            line-height: 1.2;
+            opacity: 0.85;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .quoted-thought-date-time {
+            font-size: 0.72em;
+            color: var(--secondary-text-color);
+            line-height: 1.2;
+            opacity: 0.8;
+            white-space: nowrap;
+        }
+        
+        .quoted-thought-permalink {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border-radius: 3px;
+            padding: 1px 3px;
+            margin: -1px -3px;
+        }
+        
+        .quoted-thought-permalink:hover {
+            color: var(--text-color);
+            background-color: rgba(128, 128, 128, 0.1);
+            text-decoration: none;
+        }
+        
+        .quoted-thought-content p {
+            font-size: 0.82em;
+            margin: 0;
+            line-height: 1.5;
+            color: var(--text-color);
+            opacity: 0.9;
+        }
+        
+        .quoted-thought-image {
+            margin-top: 10px;
+        }
+        
+        .quoted-thought-image img {
+            max-width: 80%; /* Smaller than main thought images */
+            max-height: 300px; /* Limit height to maintain proportions */
+            width: auto;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid rgba(128, 128, 128, 0.15);
+            transition: border-color 0.2s ease;
+            object-fit: cover;
+        }
+        
+        .quoted-thought-image img:hover {
+            border-color: var(--border-color);
         }
 
     </style>
@@ -557,6 +812,7 @@ This makes them protected from US sovereign risk (USD devaluation) & trade risk<
         <div class="thought-image">
             <a href="data/images/844af59f-ba57-5422-bbdb-58a534b13d05.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/844af59f-ba57-5422-bbdb-58a534b13d05.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -576,6 +832,7 @@ It can start with a small, less-regulated market subsection to allow seamless fo
         <div class="thought-image">
             
         </div>
+        
     </div>
 </div>
 
@@ -593,6 +850,7 @@ Who will lend to the US then, and at what premium? And at 125% debt to GDP 😬<
         <div class="thought-image">
             
         </div>
+        
     </div>
 </div>
 
@@ -612,6 +870,7 @@ Not saying they can’t sustain it though</p>
         <div class="thought-image">
             <a href="data/images/a36caf75-2329-5cfa-a3ef-9ff05afee55a.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/a36caf75-2329-5cfa-a3ef-9ff05afee55a.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -627,6 +886,7 @@ Not saying they can’t sustain it though</p>
         <div class="thought-image">
             
         </div>
+        
     </div>
 </div>
 
@@ -657,6 +917,7 @@ Monitor the hedge fund's shorts on risky assets, and when the</p>
         <div class="thought-image">
             
         </div>
+        
     </div>
 </div>
 
@@ -676,6 +937,7 @@ That won’t work. Over the medium term the</p>
         <div class="thought-image">
             
         </div>
+        
     </div>
 </div>
 
@@ -693,6 +955,7 @@ No tariffs + little US exposure + gold works well</p>
         <div class="thought-image">
             <a href="data/images/bb82f7b6-cd92-5214-8c7a-70f0925e4ff1.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/bb82f7b6-cd92-5214-8c7a-70f0925e4ff1.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -708,6 +971,7 @@ No tariffs + little US exposure + gold works well</p>
         <div class="thought-image">
             
         </div>
+        
     </div>
 </div>
 
@@ -727,6 +991,7 @@ Now go find alpha factors that you can use next time worldwide tariffs are set</
         <div class="thought-image">
             <a href="data/images/1490e261-688f-5f3f-93f3-e0a9240be226.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/1490e261-688f-5f3f-93f3-e0a9240be226.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -744,6 +1009,7 @@ Code F on Form 4</p>
         <div class="thought-image">
             <a href="data/images/a9880dd0-da01-5a57-993a-7db51de05673.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/a9880dd0-da01-5a57-993a-7db51de05673.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -763,6 +1029,7 @@ Here’s the latest one from $AAPL</p>
         <div class="thought-image">
             <a href="data/images/55daee73-ba3a-5d8e-9bff-ac34aa867d8f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/55daee73-ba3a-5d8e-9bff-ac34aa867d8f.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -778,6 +1045,7 @@ Here’s the latest one from $AAPL</p>
         <div class="thought-image">
             <a href="data/images/b9cbe029-0b0d-58b6-a4b1-4e16f74530b8.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/b9cbe029-0b0d-58b6-a4b1-4e16f74530b8.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -795,6 +1063,7 @@ Still better than equities, crypto & silver</p>
         <div class="thought-image">
             <a href="data/images/9afb6291-ca02-569e-92e3-0dd5c97de835.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/9afb6291-ca02-569e-92e3-0dd5c97de835.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -814,6 +1083,7 @@ Still better than equities, crypto & silver</p>
         <div class="thought-image">
             <a href="data/images/f1b7473f-b19d-58cb-a22c-7cf74874d23f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/f1b7473f-b19d-58cb-a22c-7cf74874d23f.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -829,6 +1099,7 @@ Still better than equities, crypto & silver</p>
         <div class="thought-image">
             <a href="data/images/6b2acdf1-390c-5ff7-9be0-2691ce215083.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/6b2acdf1-390c-5ff7-9be0-2691ce215083.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -848,6 +1119,7 @@ Once the sanctions against Russia are dropped - that’s where Moscow Exchange I
         <div class="thought-image">
             <a href="data/images/1e89aac7-a95f-505e-9d92-e265d199d521.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/1e89aac7-a95f-505e-9d92-e265d199d521.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -867,6 +1139,7 @@ Expect a steeper inversion soon</p>
         <div class="thought-image">
             <a href="data/images/a1cf110c-57dd-5419-b8e1-83c2bfa481bf.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/a1cf110c-57dd-5419-b8e1-83c2bfa481bf.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -888,6 +1161,7 @@ What’s even the point of all the regulations in TradFi?</p>
         <div class="thought-image">
             
         </div>
+        
     </div>
 </div>
 
@@ -905,6 +1179,7 @@ Net importer + currency inflation is a recipe for depreciation and external depe
         <div class="thought-image">
             <a href="data/images/e64f63af-3fec-5a7d-832e-aee8af7bf615.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/e64f63af-3fec-5a7d-832e-aee8af7bf615.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -928,6 +1203,7 @@ Tariff-free zone + local currency trade acts as insurance http</p>
         <div class="thought-image">
             <a href="data/images/8dd15e45-b3fb-5050-8322-19da2fa542b4.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/8dd15e45-b3fb-5050-8322-19da2fa542b4.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -947,6 +1223,7 @@ This deficit isn’t sustainable of course <a href="https://t.co" target="_blank
         <div class="thought-image">
             <a href="data/images/9f80819d-d854-5440-b577-71a5dfa5a608.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/9f80819d-d854-5440-b577-71a5dfa5a608.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -966,6 +1243,7 @@ So higher option price = protection against more volatility</p>
         <div class="thought-image">
             
         </div>
+        
     </div>
 </div>
 
@@ -981,6 +1259,7 @@ So higher option price = protection against more volatility</p>
         <div class="thought-image">
             <a href="data/images/6951668d-014e-568f-9ff0-4bd88ac44f3c.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/6951668d-014e-568f-9ff0-4bd88ac44f3c.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -998,11 +1277,12 @@ How do you think Q2 2025 will look like?</p>
         <div class="thought-image">
             <a href="data/images/371fcb01-0239-5d97-a0b6-cfbd79c7800d.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/371fcb01-0239-5d97-a0b6-cfbd79c7800d.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
         
-        <nav class="pagination"><a href="7.html" class="newer">← Newer</a><span class="page-info">Page 7 of 12</span><a href="5.html" class="older">Older →</a></nav>
+        <nav class="pagination"><a href="7.html" class="newer">← Newer</a><span class="page-info">Page 8 of 13</span><a href="5.html" class="older">Older →</a></nav>
     </div>
 
     <!-- Lightbox Structure (Initially Hidden) -->
@@ -1029,6 +1309,59 @@ How do you think Q2 2025 will look like?</p>
                     document.body.style.overflow = 'hidden'; // Prevent scrolling background
                 });
             });
+
+            // Check if we're on an individual thought page
+            const isIndividualThoughtPage = window.location.pathname.includes('@');
+            
+            // Handle quoted thought box clicks for navigation (always clickable)
+            const quotedThoughts = document.querySelectorAll('.quoted-thought-box');
+            quotedThoughts.forEach(quotedBox => {
+                quotedBox.addEventListener('click', (e) => {
+                    // Don't navigate if clicking on an image or link within the quoted thought
+                    if (e.target.tagName === 'IMG' || e.target.tagName === 'A') {
+                        return;
+                    }
+                    e.preventDefault();
+                    // Find the permalink within this quoted thought
+                    const permalink = quotedBox.querySelector('.quoted-thought-permalink');
+                    if (permalink) {
+                        window.location.href = permalink.getAttribute('href');
+                    }
+                });
+                
+                // Add cursor pointer to indicate clickability
+                quotedBox.style.cursor = 'pointer';
+            });
+
+            // Handle main thought box clicks (only in timeline/list views, not on individual pages)
+            if (!isIndividualThoughtPage) {
+                const mainThoughts = document.querySelectorAll('.thought-box');
+                mainThoughts.forEach(thoughtBox => {
+                    // Skip if this is a quoted thought box (already handled above)
+                    if (thoughtBox.closest('.quoted-thought-container')) {
+                        return;
+                    }
+                    
+                    thoughtBox.addEventListener('click', (e) => {
+                        // Don't navigate if clicking on an image, link, or quoted thought within the main thought
+                        if (e.target.tagName === 'IMG' || 
+                            e.target.tagName === 'A' || 
+                            e.target.closest('.quoted-thought-container')) {
+                            return;
+                        }
+                        e.preventDefault();
+                        // Find the permalink within this main thought
+                        const permalink = thoughtBox.querySelector('.thought-permalink');
+                        if (permalink) {
+                            window.location.href = permalink.getAttribute('href');
+                        }
+                    });
+                    
+                    // Add cursor pointer and clickable class to indicate clickability
+                    thoughtBox.style.cursor = 'pointer';
+                    thoughtBox.classList.add('clickable');
+                });
+            }
 
             function closeLightbox() {
                 lightbox.classList.remove('visible');

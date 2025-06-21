@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Basic SEO / Title -->
-    <title>Illya&#x27;s Thoughts - Page 2</title> 
+    <title>Illya&#x27;s Thoughts - Page 3</title> 
     
     <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="Illya's Thoughts - Page 2" />
+    <meta property="og:title" content="Illya's Thoughts - Page 3" />
     <meta property="og:type" content='website' />
     <meta property="og:url" content='https://illya.sh/thoughts/11.html' />
     <meta property="og:image" content='https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp' />
     <meta property="og:description" content="Crypto, Finance, Blockchain, AI, DeFi, Web3 and Zero-Knowledge. Pursuing master's in Law & Financial Markets." />
     <meta property="og:site_name" content="Illya's Thoughts" />
     <meta name="twitter:card" content='summary_large_image' />
-    <meta name="twitter:title" content="Illya's Thoughts - Page 2" />
+    <meta name="twitter:title" content="Illya's Thoughts - Page 3" />
     <meta name="twitter:description" content="Crypto, Finance, Blockchain, AI, DeFi, Web3 and Zero-Knowledge. Pursuing master's in Law & Financial Markets." />
     <meta name="twitter:image" content='https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp' />
     
@@ -235,6 +235,12 @@
             background-color: var(--box-bg); /* USE VAR */
             transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
         }
+
+        /* Hover effect for clickable thought boxes (applied via JavaScript based on page type) */
+        .thought-box.clickable:hover {
+            background-color: var(--hover-bg-color);
+            border-color: var(--text-color);
+        }
         .thought-header {
             display: flex; 
             align-items: center; 
@@ -450,6 +456,27 @@
              .pagination span.page-info {
                  display: none; /* Optionally hide page number on very small screens */
              }
+
+            /* Individual thought navigation responsive */
+            .individual-thought-navigation {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 10px !important;
+                margin-top: 20px !important;
+            }
+            .individual-thought-navigation .nav-button {
+                width: 100% !important;
+                margin-right: 0 !important;
+                margin-left: 0 !important;
+                text-align: center !important;
+                box-sizing: border-box !important;
+            }
+
+            /* Quoted thought images on mobile */
+            .quoted-thought-image img {
+                max-width: 70%; /* Even smaller on mobile for better proportion */
+                max-height: 200px; /* Smaller height limit on mobile */
+            }
         }
 
         /* Pagination Styling */
@@ -490,6 +517,113 @@
              background-color: transparent;
         }
 
+        /* Quoted Thought Styling */
+        .quoted-thought-container {
+            margin-top: 15px;
+            border-left: 3px solid var(--border-color);
+            padding-left: 15px;
+            transition: border-color 0.3s ease;
+        }
+
+        .quoted-thought-box {
+            border: 1px solid var(--soft-border-color);
+            border-radius: 8px;
+            padding: 12px;
+            background-color: var(--box-bg);
+            font-size: 0.9em; /* Slightly smaller text */
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .quoted-thought-box:hover {
+            background-color: var(--hover-bg-color);
+            cursor: pointer;
+        }
+
+        .quoted-thought-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 0.85em;
+        }
+
+        .quoted-thought-user-img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 8px;
+            border: 1px solid var(--soft-border-color);
+            transition: border-color 0.3s ease;
+        }
+
+        .quoted-user-name {
+            font-weight: bold;
+            color: var(--text-color);
+            margin-right: 5px;
+        }
+
+        .quoted-thought-date-time {
+            color: var(--light-text-color);
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        .quoted-thought-permalink {
+            color: var(--light-text-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .quoted-thought-permalink:hover {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
+
+        .quoted-thought-content p {
+            margin: 0 0 8px 0;
+            color: var(--text-color);
+            line-height: 1.4;
+        }
+
+        .quoted-thought-image {
+            margin-top: 8px;
+        }
+
+        .quoted-thought-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .quoted-thought-image img:hover {
+            opacity: 0.9;
+        }
+
+        /* Mobile responsive adjustments for quoted thoughts */
+        @media (max-width: 600px) {
+            .quoted-thought-container {
+                padding-left: 10px;
+                margin-top: 12px;
+            }
+            
+            .quoted-thought-box {
+                padding: 10px;
+                font-size: 0.85em;
+            }
+            
+            .quoted-thought-user-img {
+                width: 20px;
+                height: 20px;
+                margin-right: 6px;
+            }
+            
+            .quoted-thought-header {
+                font-size: 0.8em;
+            }
+        }
+
         /* Theme Feedback Styling */
         .theme-feedback {
             position: fixed;
@@ -513,6 +647,127 @@
             opacity: 1;
             visibility: visible;
             top: 30px; /* Slightly move down when visible */
+        }
+
+        /* Quoted thought styles */
+        .quoted-thought-container {
+            margin-top: 16px;
+            position: relative;
+            padding: 0;
+        }
+        
+        .quoted-thought-box {
+            border-left: 3px solid var(--secondary-text-color);
+            background: linear-gradient(135deg, 
+                rgba(128, 128, 128, 0.03) 0%, 
+                rgba(128, 128, 128, 0.01) 100%);
+            border-radius: 0 12px 12px 0;
+            padding: 14px 16px;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        .quoted-thought-box:hover {
+            background: linear-gradient(135deg, 
+                rgba(128, 128, 128, 0.08) 0%, 
+                rgba(128, 128, 128, 0.03) 100%);
+            border-left-color: var(--text-color);
+        }
+        
+        .quoted-thought-box::before {
+            content: "";
+            position: absolute;
+            left: -3px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, 
+                var(--secondary-text-color) 0%, 
+                transparent 100%);
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .quoted-thought-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            gap: 8px;
+        }
+        
+        .quoted-thought-user-img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            opacity: 0.9;
+        }
+        
+        .quoted-thought-user-info {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            min-width: 0;
+        }
+        
+        .quoted-user-name {
+            font-weight: 500;
+            font-size: 0.8em;
+            color: var(--text-color);
+            line-height: 1.2;
+            opacity: 0.85;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .quoted-thought-date-time {
+            font-size: 0.72em;
+            color: var(--secondary-text-color);
+            line-height: 1.2;
+            opacity: 0.8;
+            white-space: nowrap;
+        }
+        
+        .quoted-thought-permalink {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border-radius: 3px;
+            padding: 1px 3px;
+            margin: -1px -3px;
+        }
+        
+        .quoted-thought-permalink:hover {
+            color: var(--text-color);
+            background-color: rgba(128, 128, 128, 0.1);
+            text-decoration: none;
+        }
+        
+        .quoted-thought-content p {
+            font-size: 0.82em;
+            margin: 0;
+            line-height: 1.5;
+            color: var(--text-color);
+            opacity: 0.9;
+        }
+        
+        .quoted-thought-image {
+            margin-top: 10px;
+        }
+        
+        .quoted-thought-image img {
+            max-width: 80%; /* Smaller than main thought images */
+            max-height: 300px; /* Limit height to maintain proportions */
+            width: auto;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid rgba(128, 128, 128, 0.15);
+            transition: border-color 0.2s ease;
+            object-fit: cover;
+        }
+        
+        .quoted-thought-image img:hover {
+            border-color: var(--border-color);
         }
 
     </style>
@@ -542,6 +797,319 @@
     <div class="thought-header">
         <img src="data/profile.png" alt="User" class="thought-user-img">
         <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747937641.html" class="thought-permalink">2025-05-22 19:14</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🚀📚 Learn ANYTHING with AI fast:
+
+1️⃣ Screenshot what you don’t understand (e.g. book page)
+
+2️⃣ Open ChatGPT*, attach screenshot & dictate your question - no matter how vague/unclear it is
+
+3️⃣ Recurse & iterate until you understand
+
+Always validate your understanding
+
+* any LLM</p>
+        <div class="thought-image">
+            <a href="data/images/8cc50cf7-89df-5246-b4d4-f72c8013478a.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/8cc50cf7-89df-5246-b4d4-f72c8013478a.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747915598.html" class="thought-permalink">2025-05-22 13:06</a></p>
+    </div>
+    <div class="thought-content">
+        <p>Gold is having its “calm before the storm” moment 😄
+
+New all time high is coming very soon to all markets close to you</p>
+        <div class="thought-image">
+            <a href="data/images/88869d9a-26a0-5471-a03f-1d59e7fdc224.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/88869d9a-26a0-5471-a03f-1d59e7fdc224.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747914745.html" class="thought-permalink">2025-05-22 12:52</a></p>
+    </div>
+    <div class="thought-content">
+        <p>Of course - context is always needed
+
+In 2002 Fed Funds Rate was x3 smaller
+
+At that time, rates were higher overall
+
+To find rates as small as in 2002, you’d need to go back to the 1960's 😳
+
+For 15 years now, US had effectively been under QE financing - cheap debt 
+
+🏦🫧</p>
+        <div class="thought-image">
+            <a href="data/images/644b3346-2d7e-5b85-9056-58f66c968c1f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/644b3346-2d7e-5b85-9056-58f66c968c1f.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747914267.html" class="thought-permalink">2025-05-22 12:44</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🤯 The year is 2002…
+
+US bond yields are at the same high levels as they were in 2002… That’s 23 years ago
+
+In 2002 US national debt was x6 SMALLER than now
+
+5.1% now is not the same as 5.1% before - it’s worse. Much more debt to refinance & pay interest</p>
+        <div class="thought-image">
+            <a href="data/images/924cbf8e-34c8-5bbe-8067-25cd2c2e5213.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/924cbf8e-34c8-5bbe-8067-25cd2c2e5213.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747862046.html" class="thought-permalink">2025-05-21 22:14</a></p>
+    </div>
+    <div class="thought-content">
+        <p>Who’s ready for a new gold ATH? 🙋
+
+You don’t have to guess - just look at the systemic raising bond yields across all maturities & multiple sovereigns</p>
+        <div class="thought-image">
+            <a href="data/images/ca3df885-bb97-5615-a0c6-fa8e305d0dbc.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/ca3df885-bb97-5615-a0c6-fa8e305d0dbc.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747855218.html" class="thought-permalink">2025-05-21 20:20</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🇨🇭Not all European bonds are crashing
+
+The yields on the 10 year Swiss bond is actually down ≈40% over the past 3 months, although up ≈12% over 6 months</p>
+        <div class="thought-image">
+            <a href="data/images/51754a35-dc72-58c2-aa47-1003e4875d0a.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/51754a35-dc72-58c2-aa47-1003e4875d0a.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747854747.html" class="thought-permalink">2025-05-21 20:12</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🚨🇺🇸 30Y bond yield is up 132 bp in 1h
+
+30 year US bond is not only trading above 5%, but had its price fall by ≈1.34% in the short span of 60 minutes
+
+And you thought crypto & meme coins were volatile 😂</p>
+        <div class="thought-image">
+            <a href="data/images/5cd95d29-0cf6-5ea4-b688-bca24235cd54.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/5cd95d29-0cf6-5ea4-b688-bca24235cd54.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747828126.html" class="thought-permalink">2025-05-21 12:48</a></p>
+    </div>
+    <div class="thought-content">
+        <p>A month ago me and Gemini 2.5 Pro Deep Research had a disagreement
+
+🇯🇵 Gemini said Japan will continue with QT, while I think they will be back to QE soon
+
+With Japanese bond yields at ATHs - which one of the scenarios do you find more likely? 😁</p>
+        <div class="thought-image">
+            <a href="data/images/d68da047-a14e-5c73-92e5-d518a634b4e4.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/d68da047-a14e-5c73-92e5-d518a634b4e4.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747825113.html" class="thought-permalink">2025-05-21 11:58</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🇺🇸 US bond yields are at their ≈2006 levels
+
+🏦 Current FED Funds rate is about the same as it was in '06
+
+💰 The US Dollar Index is significantly higher today than in '06
+
+High volatility in the bond market became a norm. Volatility & risk go hand-in-hand
+
+Concerning!</p>
+        <div class="thought-image">
+            <a href="data/images/2c05492e-0a6e-5317-b63d-ff48c244ca5d.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2c05492e-0a6e-5317-b63d-ff48c244ca5d.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747765274.html" class="thought-permalink">2025-05-20 19:21</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🚀 Updated My Thoughts Section
+
+Now, each thought has:
+👉 A unique shareable page/link
+👉 OpenGraph images with the exact text of the thought
+
+So you don’t even need to open the page when reading the thought - it’s in the link's preview
+
+Example:</p>
+        <div class="thought-image">
+            
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747747905.html" class="thought-permalink">2025-05-20 14:31</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🇺🇸 Good morning,
+
+It’s another green day for US bond yields</p>
+        <div class="thought-image">
+            <a href="data/images/ae9a9d75-f6cb-5638-bef7-16ba1f75456f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/ae9a9d75-f6cb-5638-bef7-16ba1f75456f.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747742787.html" class="thought-permalink">2025-05-20 13:06</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🇷🇺 Russian Bond Yield Curve Is Inverted
+
+An inverted yield curve is usually a bad sign (e.g. recession)
+
+However, 🇷🇺's fundamentals are healthy
+
+Why inverted? 🇷🇺 Central Bank's 21% key interest rate, or rather the expectation of it going down, is what’s pushing this shape</p>
+        <div class="thought-image">
+            <a href="data/images/1118a78c-ba1f-59b4-adb2-5ecb21fcb498.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/1118a78c-ba1f-59b4-adb2-5ecb21fcb498.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747657239.html" class="thought-permalink">2025-05-19 13:20</a></p>
+    </div>
+    <div class="thought-content">
+        <p>Here's why bond yields skyrocketing worldwide ⬇️
+
+Countries own a lot of US debt (bonds)
+Moody's downgraded the US credit rating
+
+Now, countries are at a higher risk of default, because the US debt they own is now less valuable = higher chance of country's default
+
+(simplified)</p>
+        <div class="thought-image">
+            
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747655888.html" class="thought-permalink">2025-05-19 12:58</a></p>
+    </div>
+    <div class="thought-content">
+        <p>Btw I've since learned that gold is only ≈10% of total reserves of the Portuguese Central bank - that's low
+
+It's 80% of their international reserves - those are basically regulation-defined ratios that banks must maintain (look into BASEL rules if curious)</p>
+        <div class="thought-image">
+            
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1747655541.html" class="thought-permalink">2025-05-19 12:52</a></p>
+    </div>
+    <div class="thought-content">
+        <p>It's very okay to leverage, as long as you are sufficiently hedging the risk. In practice this means that you are explicitly quantifying & accepting a certain percentage of risk in exchange for a certain return/alpha</p>
+        <div class="thought-image">
+            
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
         <p class="thought-date-time"><a href="@1747654875.html" class="thought-permalink">2025-05-19 12:41</a></p>
     </div>
     <div class="thought-content">
@@ -557,6 +1125,7 @@ Hello inflation 👋</p>
         <div class="thought-image">
             <a href="data/images/2bdc0768-3043-5af3-a9ee-914740a2926f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2bdc0768-3043-5af3-a9ee-914740a2926f.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -577,6 +1146,7 @@ I’ve been posting numerous explanations for of this - all very expected</p>
         <div class="thought-image">
             
         </div>
+        
     </div>
 </div>
 
@@ -592,6 +1162,7 @@ I’ve been posting numerous explanations for of this - all very expected</p>
         <div class="thought-image">
             <a href="data/images/276d2635-e045-5a37-906c-8bb1aa3f35e2.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/276d2635-e045-5a37-906c-8bb1aa3f35e2.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -613,6 +1184,7 @@ Last time yields were consistently this high was 2007. But a lot of QE policies 
         <div class="thought-image">
             <a href="data/images/e016c008-45d2-5c23-8cb4-21e9559a6b77.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/e016c008-45d2-5c23-8cb4-21e9559a6b77.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -634,6 +1206,7 @@ Last time yields were consistently this high was 2007. But a lot of QE policies 
         <div class="thought-image">
             <a href="data/images/8fe03a2b-452d-527f-901d-76a207ad02b5.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/8fe03a2b-452d-527f-901d-76a207ad02b5.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -655,6 +1228,7 @@ Last time yields were consistently this high was 2007. But a lot of QE policies 
         <div class="thought-image">
             <a href="data/images/1d705745-25a3-5085-a3bd-25a24d94a2cd.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/1d705745-25a3-5085-a3bd-25a24d94a2cd.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -676,6 +1250,7 @@ Volatility is a measure of risk. Gold volatility is an expression of the baselin
         <div class="thought-image">
             <a href="data/images/3d058350-3474-5fe0-a07f-463ae77a9a78.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/3d058350-3474-5fe0-a07f-463ae77a9a78.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -693,6 +1268,7 @@ Higher yield = higher risk, BUT the US has been doing nothing, but irradiating c
         <div class="thought-image">
             <a href="data/images/f40d9940-1524-5547-b305-abf8ab067ccc.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/f40d9940-1524-5547-b305-abf8ab067ccc.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -714,6 +1290,7 @@ Today, I found the targets for 2025 & 2026</p>
         <div class="thought-image">
             <a href="data/images/d3204796-8301-57a7-aba9-45a27843587d.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/d3204796-8301-57a7-aba9-45a27843587d.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
@@ -733,11 +1310,12 @@ Fundamentals speak louder than words</p>
         <div class="thought-image">
             <a href="data/images/32c843f8-9b5f-5663-849a-2f40354dc47f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/32c843f8-9b5f-5663-849a-2f40354dc47f.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
+        
     </div>
 </div>
 
         
-        <nav class="pagination"><a href="index.html" class="newer">← Newer</a><span class="page-info">Page 2 of 12</span><a href="10.html" class="older">Older →</a></nav>
+        <nav class="pagination"><a href="12.html" class="newer">← Newer</a><span class="page-info">Page 3 of 13</span><a href="10.html" class="older">Older →</a></nav>
     </div>
 
     <!-- Lightbox Structure (Initially Hidden) -->
@@ -764,6 +1342,59 @@ Fundamentals speak louder than words</p>
                     document.body.style.overflow = 'hidden'; // Prevent scrolling background
                 });
             });
+
+            // Check if we're on an individual thought page
+            const isIndividualThoughtPage = window.location.pathname.includes('@');
+            
+            // Handle quoted thought box clicks for navigation (always clickable)
+            const quotedThoughts = document.querySelectorAll('.quoted-thought-box');
+            quotedThoughts.forEach(quotedBox => {
+                quotedBox.addEventListener('click', (e) => {
+                    // Don't navigate if clicking on an image or link within the quoted thought
+                    if (e.target.tagName === 'IMG' || e.target.tagName === 'A') {
+                        return;
+                    }
+                    e.preventDefault();
+                    // Find the permalink within this quoted thought
+                    const permalink = quotedBox.querySelector('.quoted-thought-permalink');
+                    if (permalink) {
+                        window.location.href = permalink.getAttribute('href');
+                    }
+                });
+                
+                // Add cursor pointer to indicate clickability
+                quotedBox.style.cursor = 'pointer';
+            });
+
+            // Handle main thought box clicks (only in timeline/list views, not on individual pages)
+            if (!isIndividualThoughtPage) {
+                const mainThoughts = document.querySelectorAll('.thought-box');
+                mainThoughts.forEach(thoughtBox => {
+                    // Skip if this is a quoted thought box (already handled above)
+                    if (thoughtBox.closest('.quoted-thought-container')) {
+                        return;
+                    }
+                    
+                    thoughtBox.addEventListener('click', (e) => {
+                        // Don't navigate if clicking on an image, link, or quoted thought within the main thought
+                        if (e.target.tagName === 'IMG' || 
+                            e.target.tagName === 'A' || 
+                            e.target.closest('.quoted-thought-container')) {
+                            return;
+                        }
+                        e.preventDefault();
+                        // Find the permalink within this main thought
+                        const permalink = thoughtBox.querySelector('.thought-permalink');
+                        if (permalink) {
+                            window.location.href = permalink.getAttribute('href');
+                        }
+                    });
+                    
+                    // Add cursor pointer and clickable class to indicate clickability
+                    thoughtBox.style.cursor = 'pointer';
+                    thoughtBox.classList.add('clickable');
+                });
+            }
 
             function closeLightbox() {
                 lightbox.classList.remove('visible');
