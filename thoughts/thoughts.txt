@@ -6,6 +6,251 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-06-21 18:52
+
+both, gold & crude oil are finishing their consolidation before a further upside
+
+bookmark this one for later 💾
+
+📖 Quoting from 2025-06-16 13:41:
+┌─ “The market is never wrong”
+│ 
+│ A lot of big accounts posting about how the market knows everything & prices accordingly - even before the official news
+│ 
+│ Okay.
+│ 
+│ Now wait & watch crude oil & gold raise up even more in price very soon
+│ 
+│ This isn’t a joke
+└─
+
+~ ✨ ~
+
+⏰ 2025-06-21 18:48
+
+hello hello looks like there wasn’t much momentum behind ethereum's pullback
+
+the selling pressure is strong
+
+price downside towards $2180 incoming
+
+📖 Quoting from 2025-06-20 19:23:
+┌─ 🎯 Ethereum heading down towards $2180
+│ 
+│ exactly as I’ve been writing for several days
+│ 
+│ so many accounts with huge following were promising you an immediate bull run
+│ 
+│ now you know which ones you can mute 😄
+└─
+
+~ ✨ ~
+
+⏰ 2025-06-21 18:42
+
+soooo… new gold ATH next week?
+
+look at gold's price chart with weekly candles - it’s unbelievable 🤯
+
+gold is going up like a risky asset - but it in fact is a reflection of risk
+
+now it looks like a breakout from another consolidation phase 📈
+
+📖 Quoting from 2025-06-13 16:29:
+┌─ 🤯 Gold may just go straight to $3500 in the next few hours
+│ 
+│ Look at this 15-minute timeframe momentum ⬇️
+└─
+
+~ ✨ ~
+
+⏰ 2025-06-21 17:51
+
+although gold already did a lot since this post - this is just the beginning ✨
+
+persistent high inflation is here to stay
+
+FIAT currencies will continue to devalue, specially with the massive government debit refinancing & further interest rate cuts
+
+📖 Quoting from 2025-05-26 15:56:
+┌─ All time high for gold incoming…
+└─
+
+~ ✨ ~
+
+⏰ 2025-06-21 17:28
+
+ChatGPT reaffirms its preference for .txt over .html ✅
+
+if your webpage/landing page is loaded with pretty effects and CSS - remember that that is just a layer of obscurity for the LLM
+
+host a plain text version as well - it's simple & effective
+
+≈something akin to llms.txt
+
+📖 Quoting from 2025-06-21 17:13:
+┌─ grok confirms what I said regarding .txt format ✅
+│ 
+│ LLM AI models would LOVE if you website provided the key content in plain text
+│ 
+│ the good news is that you can vibe-code that feature
+│ 
+│ text is the universal medium of information, for both, humans and large language models
+└─
+
+~ ✨ ~
+
+⏰ 2025-06-21 17:13
+
+grok confirms what I said regarding .txt format ✅
+
+LLM AI models would LOVE if you website provided the key content in plain text
+
+the good news is that you can vibe-code that feature
+
+text is the universal medium of information, for both, humans and large language models
+
+📖 Quoting from 2025-06-21 16:56:
+┌─ although google clearly isn't a fan of plain text 😭
+│ 
+│ maybe it is:
+│ - 0️⃣ performance
+│ - 0️⃣ accessibility
+│ - 0️⃣ best practices
+│ - 0️⃣ SEO
+│ 
+│ but it still is:
+│ - 💯 accessibility
+│ 
+│ i mean... you can access a text file from literally anywhere
+│ 
+│ + your favorite LLM will thank you 🥰
+└─
+
+~ ✨ ~
+
+⏰ 2025-06-21 16:56
+
+although google clearly isn't a fan of plain text 😭
+
+maybe it is:
+- 0️⃣ performance
+- 0️⃣ accessibility
+- 0️⃣ best practices
+- 0️⃣ SEO
+
+but it still is:
+- 💯 accessibility
+
+i mean... you can access a text file from literally anywhere
+
++ your favorite LLM will thank you 🥰
+
+📖 Quoting from 2025-06-21 16:28:
+┌─ 💡FYI there is plain text version of my X posts:
+│ https://illya.sh/thoughts/thoughts.txt
+│ 
+│ a .txt file which you can access on any device - including smart watch & IoT
+│ 
+│ no need for JavaScript, CSS or HTML rendering - saves electricity 😄🔋⚡️
+│ 
+│ text is an LLM-native format - so AI models can easily access, index & reason
+└─
+
+~ ✨ ~
+
+⏰ 2025-06-21 16:46
+
+that's something that I intend to open-source, but the repo needs a bit of a cleanup
+
+i've been using it on production, while actively adding new feature for a few months now
+
+it's build so you can customize & evolve for your needs fully with AI
+
+LLM-driven creativity era ✨
+
+📖 Quoting from 2025-06-21 16:41:
+┌─ this was fully vibe-coded
+│ 
+│ i wanted to have a place to backup my X posts - own them under my own domain & be SEO/LLM discovery friendly by having all of content generated statically
+│ 
+│ it's written in Python & comes with Cursor rules so you can add features without writing code
+└─
+
+~ ✨ ~
+
+⏰ 2025-06-21 16:41
+
+this was fully vibe-coded
+
+i wanted to have a place to backup my X posts - own them under my own domain & be SEO/LLM discovery friendly by having all of content generated statically
+
+it's written in Python & comes with Cursor rules so you can add features without writing code
+
+📖 Quoting from 2025-06-21 16:28:
+┌─ 💡FYI there is plain text version of my X posts:
+│ https://illya.sh/thoughts/thoughts.txt
+│ 
+│ a .txt file which you can access on any device - including smart watch & IoT
+│ 
+│ no need for JavaScript, CSS or HTML rendering - saves electricity 😄🔋⚡️
+│ 
+│ text is an LLM-native format - so AI models can easily access, index & reason
+└─
+
+~ ✨ ~
+
+⏰ 2025-06-21 16:28
+
+💡FYI there is plain text version of my X posts:
+https://illya.sh/thoughts/thoughts.txt
+
+a .txt file which you can access on any device - including smart watch & IoT
+
+no need for JavaScript, CSS or HTML rendering - saves electricity 😄🔋⚡️
+
+text is an LLM-native format - so AI models can easily access, index & reason
+
+~ ✨ ~
+
+⏰ 2025-06-20 19:29
+
+always important to remember that gold isn’t crypto and volatility is a lot more conservative there 😄
+
+you’re talking central banks balance sheet assets - not so much speculative, hedging or portfolio management
+
+yet, $3500 gold is just around the corner
+
+📖 Quoting from 2025-06-13 16:29:
+┌─ 🤯 Gold may just go straight to $3500 in the next few hours
+│ 
+│ Look at this 15-minute timeframe momentum ⬇️
+└─
+
+~ ✨ ~
+
+⏰ 2025-06-20 19:23
+
+🎯 Ethereum heading down towards $2180
+
+exactly as I’ve been writing for several days
+
+so many accounts with huge following were promising you an immediate bull run
+
+now you know which ones you can mute 😄
+
+📖 Quoting from 2025-06-18 13:48:
+┌─ 🎯 Ethereum fell below $2500
+│ 
+│ first part of my thesis has already played out - a retracement instead of a breakout
+│ 
+│ weekly candles show constant rejection
+│ 
+│ now await for what comes next ⏰
+└─
+
+~ ✨ ~
+
 ⏰ 2025-06-19 17:20
 
 🛢️crude oil back above $75
