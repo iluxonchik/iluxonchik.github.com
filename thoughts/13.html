@@ -230,8 +230,10 @@
         /* Thought Box Styling */
         .thought-box {
             border: 2px dashed var(--dashed-border-color); /* USE VAR */
-            padding: 15px;
-            margin-bottom: 25px; 
+            padding: 10pt;
+            padding-top: 1pt;
+            padding-bottom: 1pt;
+            margin-bottom: 14pt; 
             background-color: var(--box-bg); /* USE VAR */
             transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
         }
@@ -411,8 +413,10 @@
                 margin-bottom: 20px;
             }
             .thought-box {
-                padding: 12px;
-                margin-bottom: 20px;
+                padding: 10pt;
+                padding-bottom: 1pt;
+                padding-top: 1pt;
+                margin-bottom: 14pt;
             }
              .thought-header {
                 font-size: 0.9em; /* Slightly smaller font for header */
@@ -585,22 +589,6 @@
             line-height: 1.4;
         }
 
-        .quoted-thought-image {
-            margin-top: 8px;
-        }
-
-        .quoted-thought-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: opacity 0.2s ease;
-        }
-
-        .quoted-thought-image img:hover {
-            opacity: 0.9;
-        }
-
         /* Mobile responsive adjustments for quoted thoughts */
         @media (max-width: 600px) {
             .quoted-thought-container {
@@ -752,7 +740,6 @@
         }
         
         .quoted-thought-image {
-            margin-top: 10px;
         }
         
         .quoted-thought-image img {
@@ -768,6 +755,104 @@
         
         .quoted-thought-image img:hover {
             border-color: var(--border-color);
+        }
+
+        /* Action Bar Styling */
+        .thought-actions {
+            padding-top: 8pt;
+        }
+
+        .action-separator {
+            height: 1px;
+            background: repeating-linear-gradient(
+                to right,
+                var(--light-text-color) 0px,
+                var(--light-text-color) 2px,
+                transparent 2px,
+                transparent 6px
+            );
+            margin-bottom: 2pt;
+            opacity: 0.6;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .share-button {
+            background: transparent;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            padding: 0;
+            border-radius: 4px;
+            color: var(--secondary-text-color);
+            transition: color 0.2s ease, transform 0.2s ease;
+            font-family: inherit;
+            outline: none;
+            margin-right: 2pt; /* Align to box border */
+            -webkit-tap-highlight-color: transparent; /* Remove grey highlight on mobile */
+            /* Even outline around emoji for visibility */
+            text-shadow: 0 0 1px rgba(0,0,0,0.5), 0 0 4px rgba(0,0,0,0.35);
+        }
+
+        .share-button:hover {
+            /* Remove background change; only change color */
+            color: var(--text-color);
+            transform: scale(1.1);
+        }
+
+        .share-button:active {
+            transform: scale(0.95);
+            color: var(--text-color);
+        }
+
+        /* Share Feedback Toast */
+        .share-feedback {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            z-index: 1001;
+            animation: slideUp 0.3s ease-out;
+            max-width: 90%;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        /* Mobile optimizations for action bar */
+        @media (max-width: 600px) {
+            .share-button {
+                margin-right: 2pt;
+                padding: 0;
+                font-size: 1.3em;
+            }
+            
+            .action-separator {
+                margin-bottom: 2pt;
+            }
+            
+            .thought-actions {
+                padding-top: 8pt;
+            }
         }
 
     </style>
@@ -792,6 +877,217 @@
 </div>
 
         <h2 class="thoughts-header">⬇️ My Thoughts ⬇️</h2>
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1750524670.html" class="thought-permalink">2025-06-21 17:51</a></p>
+    </div>
+    <div class="thought-content">
+        <p>although gold already did a lot since this post - this is just the beginning ✨
+
+persistent high inflation is here to stay
+
+FIAT currencies will continue to devalue, specially with the massive government debit refinancing & further interest rate cuts</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="@1748271417.html" class="quoted-thought-permalink">2025-05-26 15:56</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>All time high for gold incoming…</p>
+            <div class="quoted-thought-image"><a href="data/images/4b448099-4436-5d5d-9ad5-f1f5d6fd9e6d.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/4b448099-4436-5d5d-9ad5-f1f5d6fd9e6d.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750524670.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1750523288.html" class="thought-permalink">2025-06-21 17:28</a></p>
+    </div>
+    <div class="thought-content">
+        <p>ChatGPT reaffirms its preference for .txt over .html ✅
+
+if your webpage/landing page is loaded with pretty effects and CSS - remember that that is just a layer of obscurity for the LLM
+
+host a plain text version as well - it's simple & effective
+
+≈something akin to llms.txt</p>
+        <div class="thought-image">
+            <a href="data/images/7c8fdac5-38dc-5a17-bdae-dd54d7bdde1e.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/7c8fdac5-38dc-5a17-bdae-dd54d7bdde1e.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="@1750522415.html" class="quoted-thought-permalink">2025-06-21 17:13</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>grok confirms what I said regarding .txt format ✅
+
+LLM AI models would LOVE if you website provided the key content in plain text
+
+the good news is that you can vibe-code that feature
+
+text is the universal medium of information, for both, humans and large language models</p>
+            <div class="quoted-thought-image"><a href="data/images/1ff3bbeb-3408-5380-bc86-a4c24acd3c11.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/1ff3bbeb-3408-5380-bc86-a4c24acd3c11.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750523288.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1750522415.html" class="thought-permalink">2025-06-21 17:13</a></p>
+    </div>
+    <div class="thought-content">
+        <p>grok confirms what I said regarding .txt format ✅
+
+LLM AI models would LOVE if you website provided the key content in plain text
+
+the good news is that you can vibe-code that feature
+
+text is the universal medium of information, for both, humans and large language models</p>
+        <div class="thought-image">
+            <a href="data/images/1ff3bbeb-3408-5380-bc86-a4c24acd3c11.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/1ff3bbeb-3408-5380-bc86-a4c24acd3c11.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="@1750521407.html" class="quoted-thought-permalink">2025-06-21 16:56</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>although google clearly isn't a fan of plain text 😭
+
+maybe it is:
+- 0️⃣ performance
+- 0️⃣ accessibility
+- 0️⃣ best practices
+- 0️⃣ SEO
+
+but it still is:
+- 💯 accessibility
+
+i mean... you can access a text file from literally anywhere
+
++ your favorite LLM will thank you 🥰</p>
+            <div class="quoted-thought-image"><a href="data/images/613f7eb7-f52b-5833-816a-84d040edc283.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/613f7eb7-f52b-5833-816a-84d040edc283.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750522415.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="@1750521407.html" class="thought-permalink">2025-06-21 16:56</a></p>
+    </div>
+    <div class="thought-content">
+        <p>although google clearly isn't a fan of plain text 😭
+
+maybe it is:
+- 0️⃣ performance
+- 0️⃣ accessibility
+- 0️⃣ best practices
+- 0️⃣ SEO
+
+but it still is:
+- 💯 accessibility
+
+i mean... you can access a text file from literally anywhere
+
++ your favorite LLM will thank you 🥰</p>
+        <div class="thought-image">
+            <a href="data/images/613f7eb7-f52b-5833-816a-84d040edc283.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/613f7eb7-f52b-5833-816a-84d040edc283.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="@1750519721.html" class="quoted-thought-permalink">2025-06-21 16:28</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>💡FYI there is plain text version of my X posts:
+<a href="https://illya.sh/thoughts/thoughts.txt" target="_blank">https://illya.sh/thoughts/thoughts.txt</a>
+
+a .txt file which you can access on any device - including smart watch & IoT
+
+no need for JavaScript, CSS or HTML rendering - saves electricity 😄🔋⚡️
+
+text is an LLM-native format - so AI models can easily access, index & reason</p>
+            <div class="quoted-thought-image"><a href="data/images/2c12f09f-a4e5-578b-9a96-c4c06a0e1a14.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2c12f09f-a4e5-578b-9a96-c4c06a0e1a14.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750521407.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
+</div>
+
 
 <div class="thought-box">
     <div class="thought-header">
@@ -831,6 +1127,13 @@ it's written in Python & comes with Cursor rules so you can add features without
         </div>
     </div>
 </div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750520806.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -875,6 +1178,13 @@ text is an LLM-native format - so AI models can easily access, index & reason</p
     </div>
 </div> 
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750520484.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -897,6 +1207,13 @@ text is an LLM-native format - so AI models can easily access, index & reason</p
             <a href="data/images/2c12f09f-a4e5-578b-9a96-c4c06a0e1a14.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2c12f09f-a4e5-578b-9a96-c4c06a0e1a14.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750519721.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -935,6 +1252,13 @@ Look at this 15-minute timeframe momentum ⬇️</p>
         </div>
     </div>
 </div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750444184.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -980,6 +1304,13 @@ now await for what comes next ⏰</p>
     </div>
 </div> 
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750443801.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -998,6 +1329,13 @@ now await for what comes next ⏰</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750350009.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1013,6 +1351,13 @@ now await for what comes next ⏰</p>
             <a href="data/images/ca04f5dc-73cd-530d-9f5d-3c578e64231d.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/ca04f5dc-73cd-530d-9f5d-3c578e64231d.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750251065.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1036,6 +1381,13 @@ unless those notes were to tokenize gold</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750250984.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1058,6 +1410,13 @@ now await for what comes next ⏰</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750250916.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1079,6 +1438,13 @@ short-term sign of run to safety, specially when combined with gold price</p>
             <a href="data/images/12a71ad2-f4e2-59f5-b81d-36cd074b913f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/12a71ad2-f4e2-59f5-b81d-36cd074b913f.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750206084.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1115,6 +1481,13 @@ Just as I wrote earlier today</p>
         </div>
     </div>
 </div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750177244.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1158,6 +1531,13 @@ This isn’t a joke</p>
     </div>
 </div> 
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750114377.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1175,6 +1555,13 @@ That's an interesting way to name it!</p>
             <a href="data/images/68aa61bc-814b-5aca-8b3c-8222ae11010e.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/68aa61bc-814b-5aca-8b3c-8222ae11010e.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750098423.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1215,6 +1602,13 @@ This isn’t a joke</p>
         </div>
     </div>
 </div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750091982.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1258,6 +1652,13 @@ You had a little over a month since my original post to load up</p>
     </div>
 </div> 
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750088004.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1300,6 +1701,13 @@ This isn’t a joke</p>
     </div>
 </div> 
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750078196.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1319,6 +1727,13 @@ There’s always gold 🤷‍♀️</p>
             <a href="data/images/541e4495-9df1-56c9-9591-689a69e6a21d.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/541e4495-9df1-56c9-9591-689a69e6a21d.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750078039.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1344,6 +1759,13 @@ This isn’t a joke</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750077674.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1361,6 +1783,13 @@ Do not underestimate what the new all time highs in gold are telling you</p>
             <a href="data/images/be01b03b-64fc-5472-8557-a31a40949864.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/be01b03b-64fc-5472-8557-a31a40949864.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1749830117.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1426,10 +1855,11 @@ Do not underestimate what the new all time highs in gold are telling you</p>
                     }
                     
                     thoughtBox.addEventListener('click', (e) => {
-                        // Don't navigate if clicking on an image, link, or quoted thought within the main thought
+                        // Don't navigate if clicking on an image, link, quoted thought, or action buttons within the main thought
                         if (e.target.tagName === 'IMG' || 
                             e.target.tagName === 'A' || 
-                            e.target.closest('.quoted-thought-container')) {
+                            e.target.closest('.quoted-thought-container') ||
+                            e.target.closest('.thought-actions')) {
                             return;
                         }
                         e.preventDefault();
@@ -1444,6 +1874,77 @@ Do not underestimate what the new all time highs in gold are telling you</p>
                     thoughtBox.style.cursor = 'pointer';
                     thoughtBox.classList.add('clickable');
                 });
+            }
+
+            // --- Share button logic with single vs double-click ---
+            const shareButtons = document.querySelectorAll('.share-button');
+            const DOUBLE_THRESHOLD = 500; // ms
+
+            shareButtons.forEach(btn => {
+                let clickTimer = null;
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const shareData = {
+                        title: btn.dataset.shareTitle,
+                        text: btn.dataset.shareText,
+                        url: btn.dataset.shareUrl
+                    };
+
+                    // If this is the second click within threshold → double-click
+                    if (clickTimer) {
+                        clearTimeout(clickTimer);
+                        clickTimer = null;
+                        performCopy(shareData.url); // Double-click action
+                        return;
+                    }
+
+                    // First click – set up timer for single-click action
+                    clickTimer = setTimeout(() => {
+                        clickTimer = null;
+                        showNativeShare(shareData);
+                    }, DOUBLE_THRESHOLD);
+                });
+            });
+
+            async function showNativeShare(shareData) {
+                if (navigator.share) {
+                    try {
+                        await navigator.share(shareData);
+                        return;
+                    } catch (err) {
+                        // Ignore user cancellation; fallback otherwise
+                        if (!err || (err.name !== 'AbortError' && err.name !== 'NotAllowedError')) {
+                            performCopy(shareData.url);
+                        }
+                        return;
+                    }
+                }
+                performCopy(shareData.url); // Fallback when Web Share not available
+            }
+
+            function performCopy(url) {
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(url).then(() => {
+                        toast('Link copied to clipboard! 📋');
+                    }).catch(() => {
+                        toast('Copy this link: ' + url);
+                    });
+                } else {
+                    toast('Copy this link: ' + url);
+                }
+            }
+
+            // Simple toast helper
+            function toast(msg) {
+                const old = document.querySelector('.share-feedback');
+                if (old) old.remove();
+                const el = document.createElement('div');
+                el.className = 'share-feedback';
+                el.textContent = msg;
+                document.body.appendChild(el);
+                setTimeout(() => el.remove(), 3000);
             }
 
             function closeLightbox() {

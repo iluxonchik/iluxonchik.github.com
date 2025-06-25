@@ -230,8 +230,10 @@
         /* Thought Box Styling */
         .thought-box {
             border: 2px dashed var(--dashed-border-color); /* USE VAR */
-            padding: 15px;
-            margin-bottom: 25px; 
+            padding: 10pt;
+            padding-top: 1pt;
+            padding-bottom: 1pt;
+            margin-bottom: 14pt; 
             background-color: var(--box-bg); /* USE VAR */
             transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
         }
@@ -411,8 +413,10 @@
                 margin-bottom: 20px;
             }
             .thought-box {
-                padding: 12px;
-                margin-bottom: 20px;
+                padding: 10pt;
+                padding-bottom: 1pt;
+                padding-top: 1pt;
+                margin-bottom: 14pt;
             }
              .thought-header {
                 font-size: 0.9em; /* Slightly smaller font for header */
@@ -585,22 +589,6 @@
             line-height: 1.4;
         }
 
-        .quoted-thought-image {
-            margin-top: 8px;
-        }
-
-        .quoted-thought-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: opacity 0.2s ease;
-        }
-
-        .quoted-thought-image img:hover {
-            opacity: 0.9;
-        }
-
         /* Mobile responsive adjustments for quoted thoughts */
         @media (max-width: 600px) {
             .quoted-thought-container {
@@ -752,7 +740,6 @@
         }
         
         .quoted-thought-image {
-            margin-top: 10px;
         }
         
         .quoted-thought-image img {
@@ -768,6 +755,104 @@
         
         .quoted-thought-image img:hover {
             border-color: var(--border-color);
+        }
+
+        /* Action Bar Styling */
+        .thought-actions {
+            padding-top: 8pt;
+        }
+
+        .action-separator {
+            height: 1px;
+            background: repeating-linear-gradient(
+                to right,
+                var(--light-text-color) 0px,
+                var(--light-text-color) 2px,
+                transparent 2px,
+                transparent 6px
+            );
+            margin-bottom: 2pt;
+            opacity: 0.6;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .share-button {
+            background: transparent;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            padding: 0;
+            border-radius: 4px;
+            color: var(--secondary-text-color);
+            transition: color 0.2s ease, transform 0.2s ease;
+            font-family: inherit;
+            outline: none;
+            margin-right: 2pt; /* Align to box border */
+            -webkit-tap-highlight-color: transparent; /* Remove grey highlight on mobile */
+            /* Even outline around emoji for visibility */
+            text-shadow: 0 0 1px rgba(0,0,0,0.5), 0 0 4px rgba(0,0,0,0.35);
+        }
+
+        .share-button:hover {
+            /* Remove background change; only change color */
+            color: var(--text-color);
+            transform: scale(1.1);
+        }
+
+        .share-button:active {
+            transform: scale(0.95);
+            color: var(--text-color);
+        }
+
+        /* Share Feedback Toast */
+        .share-feedback {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            z-index: 1001;
+            animation: slideUp 0.3s ease-out;
+            max-width: 90%;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        /* Mobile optimizations for action bar */
+        @media (max-width: 600px) {
+            .share-button {
+                margin-right: 2pt;
+                padding: 0;
+                font-size: 1.3em;
+            }
+            
+            .action-separator {
+                margin-bottom: 2pt;
+            }
+            
+            .thought-actions {
+                padding-top: 8pt;
+            }
         }
 
     </style>
@@ -808,6 +893,13 @@ Today, short-term funding got 1.25% cheaper for the US government, and once the 
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744622847.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -827,6 +919,13 @@ Moreover, US Dollar index is still below 100</p>
             <a href="data/images/5dfbbd9e-21a3-5add-8e65-ad989ab8cb06.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/5dfbbd9e-21a3-5add-8e65-ad989ab8cb06.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744622683.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -850,6 +949,13 @@ Once sanctions are dropped by US & EU - RUB will skyrocket</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744622466.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -872,6 +978,13 @@ Keynesian economics in its training 🤷‍♀️</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744621532.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -891,6 +1004,13 @@ The USD is facing an increased perceived risk, which in addition to the public d
             <a href="data/images/99be92e7-72be-5336-8a41-0eb7440adeaa.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/99be92e7-72be-5336-8a41-0eb7440adeaa.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744583635.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -916,6 +1036,13 @@ All expected 🤷‍♀️</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744545606.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -940,6 +1067,13 @@ Tariffs mainly hurt the US (unsurprisingly)</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744545190.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -955,6 +1089,13 @@ Tariffs mainly hurt the US (unsurprisingly)</p>
             
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744531518.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -976,6 +1117,13 @@ The US Bond market would crash at record numbers. Same for US Dollar index</p>
             
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744493589.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -999,6 +1147,13 @@ You have to be very specific when talking about EU economy 🇪🇺</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744468300.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1018,6 +1173,13 @@ However, the fall in bond prices will reduce credit, adding to liquidity crunch<
             <a href="data/images/d30f2c6d-06c6-546d-8eb3-e05dafdd0b9e.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/d30f2c6d-06c6-546d-8eb3-e05dafdd0b9e.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744440848.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1039,6 +1201,13 @@ However, if EU or US did the same - their economies would collapse overnight</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744440433.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1057,6 +1226,13 @@ It’s all connected</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744439358.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1072,6 +1248,13 @@ It’s all connected</p>
             <a href="data/images/2e1ae53b-173f-561b-a271-e67fc6d87f8f.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2e1ae53b-173f-561b-a271-e67fc6d87f8f.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744417701.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1095,6 +1278,13 @@ Lower rates incoming, but sovereign premium will still increase</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744397716.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1115,6 +1305,13 @@ Very concerning for USD</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744388754.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1132,6 +1329,13 @@ A timeline of thoughts/short-form content/microblog ⬇️</p>
             <a href="data/images/2f6ddfe7-376f-5e1f-a429-24fd96598dc9.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2f6ddfe7-376f-5e1f-a429-24fd96598dc9.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744387211.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1155,6 +1359,13 @@ Coded using Gemini 2.5 Pro</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744386896.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1170,6 +1381,13 @@ Coded using Gemini 2.5 Pro</p>
             <a href="data/images/027c631a-dca2-5990-8d2c-d828ee7cc2bf.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/027c631a-dca2-5990-8d2c-d828ee7cc2bf.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744367653.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1188,6 +1406,13 @@ If you start with EUR, Ruble actually yields more than Gold - 9.3 vs 11% (in the
             <a href="data/images/99d78a7a-3669-5afd-8563-18e118c048c6.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/99d78a7a-3669-5afd-8563-18e118c048c6.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744329515.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1208,6 +1433,13 @@ Loading up foreign reserves with gold & selling US Treasury securities worked �
             <a href="data/images/1c89231a-2daf-5d8a-81ec-6b8dc1edfc02.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/1c89231a-2daf-5d8a-81ec-6b8dc1edfc02.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744326231.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1230,6 +1462,13 @@ And buying ruble isn’t easy due to sanctions. Imagine when it opens up</p>
             <a href="data/images/820b8c7c-5cc6-564f-af37-75a1e431ee1b.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/820b8c7c-5cc6-564f-af37-75a1e431ee1b.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744325815.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1257,6 +1496,13 @@ Expect this playbook to be repeated by others</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744324679.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1279,6 +1525,13 @@ The stock market will rebounce/inflate, but that will increase the premium for d
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744324253.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1300,6 +1553,13 @@ Maybe more regulations will solve this? 😁</p>
             <a href="data/images/534922fb-d1c6-5764-9cb1-e0b1677729de.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/534922fb-d1c6-5764-9cb1-e0b1677729de.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1744318023.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1365,10 +1625,11 @@ Maybe more regulations will solve this? 😁</p>
                     }
                     
                     thoughtBox.addEventListener('click', (e) => {
-                        // Don't navigate if clicking on an image, link, or quoted thought within the main thought
+                        // Don't navigate if clicking on an image, link, quoted thought, or action buttons within the main thought
                         if (e.target.tagName === 'IMG' || 
                             e.target.tagName === 'A' || 
-                            e.target.closest('.quoted-thought-container')) {
+                            e.target.closest('.quoted-thought-container') ||
+                            e.target.closest('.thought-actions')) {
                             return;
                         }
                         e.preventDefault();
@@ -1383,6 +1644,77 @@ Maybe more regulations will solve this? 😁</p>
                     thoughtBox.style.cursor = 'pointer';
                     thoughtBox.classList.add('clickable');
                 });
+            }
+
+            // --- Share button logic with single vs double-click ---
+            const shareButtons = document.querySelectorAll('.share-button');
+            const DOUBLE_THRESHOLD = 500; // ms
+
+            shareButtons.forEach(btn => {
+                let clickTimer = null;
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const shareData = {
+                        title: btn.dataset.shareTitle,
+                        text: btn.dataset.shareText,
+                        url: btn.dataset.shareUrl
+                    };
+
+                    // If this is the second click within threshold → double-click
+                    if (clickTimer) {
+                        clearTimeout(clickTimer);
+                        clickTimer = null;
+                        performCopy(shareData.url); // Double-click action
+                        return;
+                    }
+
+                    // First click – set up timer for single-click action
+                    clickTimer = setTimeout(() => {
+                        clickTimer = null;
+                        showNativeShare(shareData);
+                    }, DOUBLE_THRESHOLD);
+                });
+            });
+
+            async function showNativeShare(shareData) {
+                if (navigator.share) {
+                    try {
+                        await navigator.share(shareData);
+                        return;
+                    } catch (err) {
+                        // Ignore user cancellation; fallback otherwise
+                        if (!err || (err.name !== 'AbortError' && err.name !== 'NotAllowedError')) {
+                            performCopy(shareData.url);
+                        }
+                        return;
+                    }
+                }
+                performCopy(shareData.url); // Fallback when Web Share not available
+            }
+
+            function performCopy(url) {
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(url).then(() => {
+                        toast('Link copied to clipboard! 📋');
+                    }).catch(() => {
+                        toast('Copy this link: ' + url);
+                    });
+                } else {
+                    toast('Copy this link: ' + url);
+                }
+            }
+
+            // Simple toast helper
+            function toast(msg) {
+                const old = document.querySelector('.share-feedback');
+                if (old) old.remove();
+                const el = document.createElement('div');
+                el.className = 'share-feedback';
+                el.textContent = msg;
+                document.body.appendChild(el);
+                setTimeout(() => el.remove(), 3000);
             }
 
             function closeLightbox() {

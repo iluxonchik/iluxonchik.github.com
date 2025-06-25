@@ -230,8 +230,10 @@
         /* Thought Box Styling */
         .thought-box {
             border: 2px dashed var(--dashed-border-color); /* USE VAR */
-            padding: 15px;
-            margin-bottom: 25px; 
+            padding: 10pt;
+            padding-top: 1pt;
+            padding-bottom: 1pt;
+            margin-bottom: 14pt; 
             background-color: var(--box-bg); /* USE VAR */
             transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
         }
@@ -411,8 +413,10 @@
                 margin-bottom: 20px;
             }
             .thought-box {
-                padding: 12px;
-                margin-bottom: 20px;
+                padding: 10pt;
+                padding-bottom: 1pt;
+                padding-top: 1pt;
+                margin-bottom: 14pt;
             }
              .thought-header {
                 font-size: 0.9em; /* Slightly smaller font for header */
@@ -585,22 +589,6 @@
             line-height: 1.4;
         }
 
-        .quoted-thought-image {
-            margin-top: 8px;
-        }
-
-        .quoted-thought-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: opacity 0.2s ease;
-        }
-
-        .quoted-thought-image img:hover {
-            opacity: 0.9;
-        }
-
         /* Mobile responsive adjustments for quoted thoughts */
         @media (max-width: 600px) {
             .quoted-thought-container {
@@ -752,7 +740,6 @@
         }
         
         .quoted-thought-image {
-            margin-top: 10px;
         }
         
         .quoted-thought-image img {
@@ -768,6 +755,104 @@
         
         .quoted-thought-image img:hover {
             border-color: var(--border-color);
+        }
+
+        /* Action Bar Styling */
+        .thought-actions {
+            padding-top: 8pt;
+        }
+
+        .action-separator {
+            height: 1px;
+            background: repeating-linear-gradient(
+                to right,
+                var(--light-text-color) 0px,
+                var(--light-text-color) 2px,
+                transparent 2px,
+                transparent 6px
+            );
+            margin-bottom: 2pt;
+            opacity: 0.6;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .share-button {
+            background: transparent;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            padding: 0;
+            border-radius: 4px;
+            color: var(--secondary-text-color);
+            transition: color 0.2s ease, transform 0.2s ease;
+            font-family: inherit;
+            outline: none;
+            margin-right: 2pt; /* Align to box border */
+            -webkit-tap-highlight-color: transparent; /* Remove grey highlight on mobile */
+            /* Even outline around emoji for visibility */
+            text-shadow: 0 0 1px rgba(0,0,0,0.5), 0 0 4px rgba(0,0,0,0.35);
+        }
+
+        .share-button:hover {
+            /* Remove background change; only change color */
+            color: var(--text-color);
+            transform: scale(1.1);
+        }
+
+        .share-button:active {
+            transform: scale(0.95);
+            color: var(--text-color);
+        }
+
+        /* Share Feedback Toast */
+        .share-feedback {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            z-index: 1001;
+            animation: slideUp 0.3s ease-out;
+            max-width: 90%;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        /* Mobile optimizations for action bar */
+        @media (max-width: 600px) {
+            .share-button {
+                margin-right: 2pt;
+                padding: 0;
+                font-size: 1.3em;
+            }
+            
+            .action-separator {
+                margin-bottom: 2pt;
+            }
+            
+            .thought-actions {
+                padding-top: 8pt;
+            }
         }
 
     </style>
@@ -809,6 +894,13 @@ You need Debt to GDP, exports to GDP, etc</p>
             
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1745675321.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -888,10 +980,11 @@ You need Debt to GDP, exports to GDP, etc</p>
                     }
                     
                     thoughtBox.addEventListener('click', (e) => {
-                        // Don't navigate if clicking on an image, link, or quoted thought within the main thought
+                        // Don't navigate if clicking on an image, link, quoted thought, or action buttons within the main thought
                         if (e.target.tagName === 'IMG' || 
                             e.target.tagName === 'A' || 
-                            e.target.closest('.quoted-thought-container')) {
+                            e.target.closest('.quoted-thought-container') ||
+                            e.target.closest('.thought-actions')) {
                             return;
                         }
                         e.preventDefault();
@@ -906,6 +999,77 @@ You need Debt to GDP, exports to GDP, etc</p>
                     thoughtBox.style.cursor = 'pointer';
                     thoughtBox.classList.add('clickable');
                 });
+            }
+
+            // --- Share button logic with single vs double-click ---
+            const shareButtons = document.querySelectorAll('.share-button');
+            const DOUBLE_THRESHOLD = 500; // ms
+
+            shareButtons.forEach(btn => {
+                let clickTimer = null;
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const shareData = {
+                        title: btn.dataset.shareTitle,
+                        text: btn.dataset.shareText,
+                        url: btn.dataset.shareUrl
+                    };
+
+                    // If this is the second click within threshold → double-click
+                    if (clickTimer) {
+                        clearTimeout(clickTimer);
+                        clickTimer = null;
+                        performCopy(shareData.url); // Double-click action
+                        return;
+                    }
+
+                    // First click – set up timer for single-click action
+                    clickTimer = setTimeout(() => {
+                        clickTimer = null;
+                        showNativeShare(shareData);
+                    }, DOUBLE_THRESHOLD);
+                });
+            });
+
+            async function showNativeShare(shareData) {
+                if (navigator.share) {
+                    try {
+                        await navigator.share(shareData);
+                        return;
+                    } catch (err) {
+                        // Ignore user cancellation; fallback otherwise
+                        if (!err || (err.name !== 'AbortError' && err.name !== 'NotAllowedError')) {
+                            performCopy(shareData.url);
+                        }
+                        return;
+                    }
+                }
+                performCopy(shareData.url); // Fallback when Web Share not available
+            }
+
+            function performCopy(url) {
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(url).then(() => {
+                        toast('Link copied to clipboard! 📋');
+                    }).catch(() => {
+                        toast('Copy this link: ' + url);
+                    });
+                } else {
+                    toast('Copy this link: ' + url);
+                }
+            }
+
+            // Simple toast helper
+            function toast(msg) {
+                const old = document.querySelector('.share-feedback');
+                if (old) old.remove();
+                const el = document.createElement('div');
+                el.className = 'share-feedback';
+                el.textContent = msg;
+                document.body.appendChild(el);
+                setTimeout(() => el.remove(), 3000);
             }
 
             function closeLightbox() {

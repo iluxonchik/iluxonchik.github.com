@@ -230,8 +230,10 @@
         /* Thought Box Styling */
         .thought-box {
             border: 2px dashed var(--dashed-border-color); /* USE VAR */
-            padding: 15px;
-            margin-bottom: 25px; 
+            padding: 10pt;
+            padding-top: 1pt;
+            padding-bottom: 1pt;
+            margin-bottom: 14pt; 
             background-color: var(--box-bg); /* USE VAR */
             transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
         }
@@ -411,8 +413,10 @@
                 margin-bottom: 20px;
             }
             .thought-box {
-                padding: 12px;
-                margin-bottom: 20px;
+                padding: 10pt;
+                padding-bottom: 1pt;
+                padding-top: 1pt;
+                margin-bottom: 14pt;
             }
              .thought-header {
                 font-size: 0.9em; /* Slightly smaller font for header */
@@ -585,22 +589,6 @@
             line-height: 1.4;
         }
 
-        .quoted-thought-image {
-            margin-top: 8px;
-        }
-
-        .quoted-thought-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: opacity 0.2s ease;
-        }
-
-        .quoted-thought-image img:hover {
-            opacity: 0.9;
-        }
-
         /* Mobile responsive adjustments for quoted thoughts */
         @media (max-width: 600px) {
             .quoted-thought-container {
@@ -752,7 +740,6 @@
         }
         
         .quoted-thought-image {
-            margin-top: 10px;
         }
         
         .quoted-thought-image img {
@@ -768,6 +755,104 @@
         
         .quoted-thought-image img:hover {
             border-color: var(--border-color);
+        }
+
+        /* Action Bar Styling */
+        .thought-actions {
+            padding-top: 8pt;
+        }
+
+        .action-separator {
+            height: 1px;
+            background: repeating-linear-gradient(
+                to right,
+                var(--light-text-color) 0px,
+                var(--light-text-color) 2px,
+                transparent 2px,
+                transparent 6px
+            );
+            margin-bottom: 2pt;
+            opacity: 0.6;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .share-button {
+            background: transparent;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            padding: 0;
+            border-radius: 4px;
+            color: var(--secondary-text-color);
+            transition: color 0.2s ease, transform 0.2s ease;
+            font-family: inherit;
+            outline: none;
+            margin-right: 2pt; /* Align to box border */
+            -webkit-tap-highlight-color: transparent; /* Remove grey highlight on mobile */
+            /* Even outline around emoji for visibility */
+            text-shadow: 0 0 1px rgba(0,0,0,0.5), 0 0 4px rgba(0,0,0,0.35);
+        }
+
+        .share-button:hover {
+            /* Remove background change; only change color */
+            color: var(--text-color);
+            transform: scale(1.1);
+        }
+
+        .share-button:active {
+            transform: scale(0.95);
+            color: var(--text-color);
+        }
+
+        /* Share Feedback Toast */
+        .share-feedback {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            z-index: 1001;
+            animation: slideUp 0.3s ease-out;
+            max-width: 90%;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        /* Mobile optimizations for action bar */
+        @media (max-width: 600px) {
+            .share-button {
+                margin-right: 2pt;
+                padding: 0;
+                font-size: 1.3em;
+            }
+            
+            .action-separator {
+                margin-bottom: 2pt;
+            }
+            
+            .thought-actions {
+                padding-top: 8pt;
+            }
         }
 
     </style>
@@ -814,6 +899,13 @@ Why would 🇨🇳 listen?</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1747059601.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -833,6 +925,13 @@ At least USD index is back above 100 for now</p>
             <a href="data/images/7cf84b2e-06eb-5a06-87ab-705f881a7eca.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/7cf84b2e-06eb-5a06-87ab-705f881a7eca.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1747057237.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -856,6 +955,13 @@ Oh, and that newly minted Au fragments into other particles almost immediately �
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1746885602.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -875,6 +981,13 @@ Oh, and that newly minted Au fragments into other particles almost immediately �
             <a href="data/images/775b0012-c19c-55f2-8083-6992557cdf9b.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/775b0012-c19c-55f2-8083-6992557cdf9b.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1746825217.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -898,6 +1011,13 @@ This income is directly tied to the budget & NWF - which is then debited or cred
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1746801480.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -920,6 +1040,13 @@ NWF funds are used to finance government deficit, instead of relying on debt iss
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1746798018.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -937,6 +1064,13 @@ It’s celebrated today throughout slavic & ex-Soviet countries</p>
             
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1746748858.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -962,6 +1096,13 @@ Nazi Germany has been defeated
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1746748739.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -982,6 +1123,13 @@ EU Regulation 2017/2402 aims to address that by detailing how risk should be man
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1746199928.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -999,6 +1147,13 @@ US 10 Year bond yields are up 2.24% today</p>
             <a href="data/images/60fca5a7-679d-5830-bd94-2f87ee3fdd03.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/60fca5a7-679d-5830-bd94-2f87ee3fdd03.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1746199256.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1022,6 +1177,13 @@ Integrate with @MinaProtocol schemes & Android goes on the 22KB blockchain 😳<
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1746188316.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1039,6 +1201,13 @@ There are several reasons why futures may be short & the sentiment is still bull
             
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1746129375.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1058,6 +1227,13 @@ Don't overthink the prompts - type or dictate your question, however unclear it 
             <a href="data/images/5bc01f3d-9d15-5b6d-8f0d-5feec67643f5.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/5bc01f3d-9d15-5b6d-8f0d-5feec67643f5.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1746128872.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1079,6 +1255,13 @@ Investor has double recourse on issuer's default event:
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1746127745.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1096,6 +1279,13 @@ As expected - USD index is back down - falling sharply below 98</p>
             <a href="data/images/f7deb2d5-4970-5b1a-8d42-4a65ad59fe17.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/f7deb2d5-4970-5b1a-8d42-4a65ad59fe17.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1745871458.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1115,6 +1305,13 @@ Today's uptrend continues</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1745854473.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1132,6 +1329,13 @@ If the covered event occurs, investors lose a proportionate part of their princi
             <a href="data/images/cdeeaa8d-e22e-593a-9bc7-4cbcf6b049a5.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/cdeeaa8d-e22e-593a-9bc7-4cbcf6b049a5.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1745834735.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1153,6 +1357,13 @@ Profits are realized once at expiry for basis, and periodically for funding rate
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1745797889.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1170,6 +1381,13 @@ You can earn a yield on futures though delta neutral positions</p>
             <a href="data/images/2d934e7f-ea95-59ff-9092-c109b81e1ac7.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/2d934e7f-ea95-59ff-9092-c109b81e1ac7.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1745790443.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1193,6 +1411,13 @@ Promissory notes are very simple legal documents. It looks like this ⬇️</p>
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1745784186.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1210,6 +1435,13 @@ In practice, it’s a short-term promissory note - so something a company would 
             
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1745783770.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1231,6 +1463,13 @@ Institutional net position on cryptocurrencies is still short, but only a half f
         </div>
         
     </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1745765562.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
+    </div>
 </div>
 
 
@@ -1250,6 +1489,13 @@ However, the risk is far beyond than just stagflation ⬇️</p>
             <a href="data/images/27fe5400-0c85-5902-8241-ef51239d83da.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/27fe5400-0c85-5902-8241-ef51239d83da.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1745757362.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1272,6 +1518,13 @@ Maybe making a website to visualize, interpret & combine that data would be usef
             <a href="data/images/ef69be31-ab48-5637-a120-48d8736026b4.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/ef69be31-ab48-5637-a120-48d8736026b4.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1745756749.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1305,6 +1558,13 @@ Exports as % of GDP:
             <a href="data/images/e11431dd-235b-5aaa-abb4-1bf3d0cb25f7.jpg" class="lightbox-trigger"><img loading="lazy" src="data/images/e11431dd-235b-5aaa-abb4-1bf3d0cb25f7.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
         
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-buttons">
+            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1745676173.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        </div>
     </div>
 </div>
 
@@ -1370,10 +1630,11 @@ Exports as % of GDP:
                     }
                     
                     thoughtBox.addEventListener('click', (e) => {
-                        // Don't navigate if clicking on an image, link, or quoted thought within the main thought
+                        // Don't navigate if clicking on an image, link, quoted thought, or action buttons within the main thought
                         if (e.target.tagName === 'IMG' || 
                             e.target.tagName === 'A' || 
-                            e.target.closest('.quoted-thought-container')) {
+                            e.target.closest('.quoted-thought-container') ||
+                            e.target.closest('.thought-actions')) {
                             return;
                         }
                         e.preventDefault();
@@ -1388,6 +1649,77 @@ Exports as % of GDP:
                     thoughtBox.style.cursor = 'pointer';
                     thoughtBox.classList.add('clickable');
                 });
+            }
+
+            // --- Share button logic with single vs double-click ---
+            const shareButtons = document.querySelectorAll('.share-button');
+            const DOUBLE_THRESHOLD = 500; // ms
+
+            shareButtons.forEach(btn => {
+                let clickTimer = null;
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const shareData = {
+                        title: btn.dataset.shareTitle,
+                        text: btn.dataset.shareText,
+                        url: btn.dataset.shareUrl
+                    };
+
+                    // If this is the second click within threshold → double-click
+                    if (clickTimer) {
+                        clearTimeout(clickTimer);
+                        clickTimer = null;
+                        performCopy(shareData.url); // Double-click action
+                        return;
+                    }
+
+                    // First click – set up timer for single-click action
+                    clickTimer = setTimeout(() => {
+                        clickTimer = null;
+                        showNativeShare(shareData);
+                    }, DOUBLE_THRESHOLD);
+                });
+            });
+
+            async function showNativeShare(shareData) {
+                if (navigator.share) {
+                    try {
+                        await navigator.share(shareData);
+                        return;
+                    } catch (err) {
+                        // Ignore user cancellation; fallback otherwise
+                        if (!err || (err.name !== 'AbortError' && err.name !== 'NotAllowedError')) {
+                            performCopy(shareData.url);
+                        }
+                        return;
+                    }
+                }
+                performCopy(shareData.url); // Fallback when Web Share not available
+            }
+
+            function performCopy(url) {
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(url).then(() => {
+                        toast('Link copied to clipboard! 📋');
+                    }).catch(() => {
+                        toast('Copy this link: ' + url);
+                    });
+                } else {
+                    toast('Copy this link: ' + url);
+                }
+            }
+
+            // Simple toast helper
+            function toast(msg) {
+                const old = document.querySelector('.share-feedback');
+                if (old) old.remove();
+                const el = document.createElement('div');
+                el.className = 'share-feedback';
+                el.textContent = msg;
+                document.body.appendChild(el);
+                setTimeout(() => el.remove(), 3000);
             }
 
             function closeLightbox() {
