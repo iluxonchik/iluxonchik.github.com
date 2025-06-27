@@ -792,14 +792,12 @@
             transition: color 0.2s ease, transform 0.2s ease;
             font-family: inherit;
             outline: none;
-            margin-right: 2pt; /* Align to box border */
-            -webkit-tap-highlight-color: transparent; /* Remove grey highlight on mobile */
-            /* Even outline around emoji for visibility */
+            margin-right: 2pt;
+            -webkit-tap-highlight-color: transparent;
             text-shadow: 0 0 1px rgba(0,0,0,0.5), 0 0 4px rgba(0,0,0,0.35);
         }
 
         .share-button:hover {
-            /* Remove background change; only change color */
             color: var(--text-color);
             transform: scale(1.1);
         }
@@ -845,14 +843,39 @@
                 padding: 0;
                 font-size: 1.3em;
             }
-            
             .action-separator {
                 margin-bottom: 2pt;
             }
-            
             .thought-actions {
                 padding-top: 8pt;
             }
+        }
+
+        .comment-button {
+            background: transparent;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            padding: 0;
+            border-radius: 4px;
+            color: var(--secondary-text-color);
+            transition: color 0.2s ease, transform 0.2s ease;
+            font-family: inherit;
+            outline: none;
+            margin-right: 6pt; /* Extra gap before share icon */
+            -webkit-tap-highlight-color: transparent;
+            text-decoration: none;
+            text-shadow: 0 0 0.5px rgba(0,0,0,0.5), 0 0 4px rgba(0,0,0,0.35);
+        }
+
+        .comment-button:hover {
+            color: var(--text-color);
+            transform: scale(1.1);
+        }
+
+        .comment-button:active {
+            transform: scale(0.95);
+            color: var(--text-color);
         }
 
     </style>
@@ -893,6 +916,7 @@
     <div class="thought-actions">
         <div class="action-separator"></div>
         <div class="action-buttons">
+            <a href="comment.html?id=1678054819" class="comment-button" aria-label="Comment on this thought">💬</a>
             <button class="share-button" data-share-url="https://illya.sh/thoughts/@1678054819.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
         </div>
     </div>

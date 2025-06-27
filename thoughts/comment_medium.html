@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illya's Thoughts – Send Comment</title>
+    <style>
+        :root {
+            --bg-color: #f4f4f4;
+            --container-bg: #ffffff;
+            --text-color: #333;
+            --secondary-text-color: #555;
+            --light-text-color: #666;
+            --link-color: #007bff;
+            --border-color: #ddd;
+            --dashed-border-color: #aaa;
+            --box-shadow-color: rgba(0,0,0,0.08);
+            --hover-bg-color: #eee;
+        }
+        .dark-mode {
+            --bg-color: #1a1a1a;
+            --container-bg: #2b2b2b;
+            --text-color: #e0e0e0;
+            --secondary-text-color: #b0b0b0;
+            --light-text-color: #999;
+            --link-color: #58a6ff;
+            --border-color: #444;
+            --dashed-border-color: #666;
+            --box-shadow-color: rgba(255,255,255,0.08);
+            --hover-bg-color: #383838;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --container-bg: #2b2b2b;
+                --text-color: #e0e0e0;
+                --secondary-text-color: #b0b0b0;
+                --light-text-color: #999;
+                --link-color: #58a6ff;
+                --border-color: #444;
+                --dashed-border-color: #666;
+                --box-shadow-color: rgba(255,255,255,0.08);
+                --hover-bg-color: #383838;
+            }
+            .light-mode { --bg-color:#f4f4f4; --container-bg:#ffffff; --text-color:#333; }
+        }
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            background-color: var(--container-bg);
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            max-width: 750px;
+            width: 100%;
+            box-shadow: 0 1px 4px var(--box-shadow-color);
+        }
+        .quote-wrapper { margin-bottom: 20px; }
+        .message-box {
+            white-space: pre-wrap;
+            border: 1px dashed var(--border-color);
+            padding: 12px;
+            margin-bottom: 20px;
+            background-color: var(--hover-bg-color);
+            font-size: 0.95em;
+            color: var(--text-color);
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .medium-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .btn-standard {
+            display:block;
+            width:100%;
+            box-sizing:border-box;
+            text-align: center;
+            padding: 12px 18px;
+            border: 1px solid var(--link-color);
+            border-radius: 6px;
+            text-decoration: none;
+            font-family: inherit;
+            font-size: 1em;
+            color: var(--link-color);
+            background-color: transparent;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        .btn-standard:hover {
+            background-color: var(--link-color);
+            color: #fff;
+        }
+        @media (max-width: 600px){
+            body{padding:10px;}
+            .container{padding:15px;}
+        }
+        /* Preview thought styles */
+        .quote-wrapper .thought-box { border:2px dashed var(--dashed-border-color); padding:10pt 10pt 1pt; margin-bottom:14pt; background-color:var(--container-bg); }
+        .quote-wrapper .thought-user-img { width:25px; height:25px; border-radius:50%; object-fit:cover; border:1px solid var(--border-color); }
+        .quote-wrapper .share-button { display:none !important; }
+        .quote-wrapper .comment-button { display:none !important; }
+        .quote-wrapper .thought-actions { pointer-events:none; opacity:0.9; }
+        .quote-wrapper .thought-header { flex-wrap: wrap; }
+        .quote-wrapper .thought-content p { white-space: pre-wrap; }
+        .quote-wrapper a {color: var(--link-color); text-decoration:none; }
+        .quote-wrapper a:visited {color: var(--link-color); }
+        .quote-wrapper .thought-image .lightbox-trigger { max-width:70%; width:100%; margin:12px auto 0; display:block; }
+        .quote-wrapper .thought-date-time { display:inline; margin-left:4px; }
+        .quote-wrapper .thought-image img { max-width:100%; height:auto; border:1px solid var(--border-color); border-radius:6px; }
+        .quote-wrapper .thought-image { max-width:550px; margin:12px auto 0; }
+        /* On small screens move date below name & hide dash */
+        @media(max-width:600px){
+            .quote-wrapper .thought-date-time{display:block;margin-left:0;}
+            .quote-wrapper .separator{display:none;}
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="quote-container" class="quote-wrapper"></div>
+    <div>
+        <p style="margin-top:0;margin-bottom:6px; font-weight:bold;">Your comment/response:</p>
+        <div id="message-display" class="message-box"></div>
+    </div>
+    <div class="medium-buttons" id="medium-buttons" style="margin-top:20px;">
+        <a id="email-link" class="btn-standard" target="_blank" rel="noopener noreferrer">📧 Comment via E-mail</a>
+        <a id="tg-link" class="btn-standard" target="_blank" rel="noopener noreferrer">📨 Comment via Telegram</a>
+        <a id="x-link" class="btn-standard" target="_blank" rel="noopener noreferrer">🐦 Comment via X / Twitter</a>
+    </div>
+    <div id="after-action" style="display:none; margin-top:20px;">
+        <a id="back-btn" href="#" class="btn-standard">⬅️ Back</a>
+    </div>
+</div>
+<script>
+(function(){
+  const params=new URLSearchParams(location.search);
+  const id=params.get('id');
+  const msgRaw=params.get('msg')||'';
+  const msg=decodeURIComponent(msgRaw);
+  if(!id){document.body.innerHTML='Invalid request';return;}
+  document.getElementById('message-display').textContent=msg;
+
+  const thoughtUrl='https://illya.sh/thoughts'.replace(/\/$/,'')+'/@'+id+'.html';
+
+  const encodedMessage=`Hello Illya,%0A%0AI have some thoughts on ${encodeURIComponent(thoughtUrl)}:%0A%0A${encodeURIComponent(msg)}`;
+
+  const emailLink=document.getElementById('email-link');
+  const tgLink=document.getElementById('tg-link');
+  const xLink=document.getElementById('x-link');
+
+  emailLink.href=`mailto:illya_gerasymchuk@gmail.com?subject=Thought%20comment&body=${encodedMessage}`;
+  tgLink.href=`https://t.me/illya_gerasymchuk?text=${encodedMessage}`;
+  const tweetTextBase = `👋 @illyaGera\n\n${msg}\n\n`;
+  const tweetTextEnc = encodeURIComponent(tweetTextBase);
+  xLink.href=`https://twitter.com/intent/tweet?text=${tweetTextEnc}&url=${encodeURIComponent(thoughtUrl)}`;
+
+  const backBtn=document.getElementById('back-btn');
+  function navigateBack(){
+      const origin = location.origin;
+      const ref = document.referrer || '';
+      if(ref.startsWith(origin) && history.length>1){
+          if(ref.includes('/comment.html') && history.length>2){
+              history.go(-2);
+          }else{
+              history.back();
+          }
+      }else{
+          window.location.href='https://illya.sh/thoughts';
+      }
+  }
+  backBtn.addEventListener('click',navigateBack);
+  function updateExpiry(hours){
+      try{
+          const key='comment_'+id;
+          const stored=localStorage.getItem(key);
+          if(stored){
+              const obj=JSON.parse(stored);
+              obj.expires=Date.now()+hours*3600000;
+              localStorage.setItem(key,JSON.stringify(obj));
+          }
+      }catch(e){}
+  }
+  function revealBack(){
+      document.getElementById('after-action').style.display='block';
+      updateExpiry(1); // set to 1 hour
+  }
+  emailLink.addEventListener('click',revealBack);
+  tgLink.addEventListener('click',revealBack);
+  xLink.addEventListener('click',revealBack);
+
+  // Quote fetch
+  fetch('@'+id+'.html').then(r=>r.text()).then(html=>{
+    const parser=new DOMParser();
+    const doc=parser.parseFromString(html,'text/html');
+    let tb=doc.querySelector('.thought-box');
+    if(!tb)return;
+    tb.querySelectorAll('.quoted-thought-container').forEach(el=>el.remove());
+    const imported=document.importNode(tb,true);
+    imported.style.pointerEvents='none';
+    imported.style.opacity='0.9';
+    document.getElementById('quote-container').appendChild(imported);
+  }).catch(()=>{});
+
+  /* --- Apply stored theme --- */
+  (function(){
+    const body=document.body;
+    function applyTheme(pref){
+      body.classList.remove('light-mode','dark-mode');
+      let actual=pref;
+      if(pref==='auto'){
+        const prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;
+        actual=prefersDark?'dark':'light';
+      }
+      body.classList.add(actual+'-mode');
+    }
+    applyTheme(localStorage.getItem('themePreference')||'auto');
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{ if((localStorage.getItem('themePreference')||'auto')==='auto') applyTheme('auto'); });
+  })();
+
+  // Ensure medium buttons are in view even for long comments
+  requestAnimationFrame(()=>{
+      const mediumSection=document.getElementById('medium-buttons');
+      if(mediumSection){ mediumSection.scrollIntoView({block:'start'}); }
+  });
+})();
+</script>
+</body>
+</html> 

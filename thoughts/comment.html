@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illya's Thoughts – Comment</title>
+    <style>
+        :root {
+            /* Light Theme Variables (subset) */
+            --bg-color: #f4f4f4;
+            --container-bg: #ffffff;
+            --text-color: #333;
+            --secondary-text-color: #555;
+            --light-text-color: #666;
+            --link-color: #007bff;
+            --border-color: #ddd;
+            --dashed-border-color: #aaa;
+            --box-shadow-color: rgba(0,0,0,0.08);
+            --hover-bg-color: #eee;
+        }
+
+        /* Dark mode overrides */
+        .dark-mode {
+            --bg-color: #1a1a1a;
+            --container-bg: #2b2b2b;
+            --text-color: #e0e0e0;
+            --secondary-text-color: #b0b0b0;
+            --light-text-color: #999;
+            --link-color: #58a6ff;
+            --border-color: #444;
+            --dashed-border-color: #666;
+            --box-shadow-color: rgba(255,255,255,0.08);
+            --hover-bg-color: #383838;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --container-bg: #2b2b2b;
+                --text-color: #e0e0e0;
+                --secondary-text-color: #b0b0b0;
+                --light-text-color: #999;
+                --link-color: #58a6ff;
+                --border-color: #444;
+                --dashed-border-color: #666;
+                --box-shadow-color: rgba(255,255,255,0.08);
+                --hover-bg-color: #383838;
+            }
+            .light-mode {
+                --bg-color: #f4f4f4;
+                --container-bg: #ffffff;
+                --text-color: #333;
+            }
+        }
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            background-color: var(--container-bg);
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            max-width: 750px;
+            width: 100%;
+            box-shadow: 0 1px 4px var(--box-shadow-color);
+        }
+        /* Quoted thought wrapper */
+        .quote-wrapper {
+            margin-bottom: 20px;
+        }
+        /* Textarea */
+        .compose-area textarea {
+            width: 100%;
+            min-height: 120px;
+            font-family: inherit;
+            font-size: 1em;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            resize: vertical;
+            box-sizing: border-box;
+            background-color: var(--container-bg);
+            color: var(--text-color);
+        }
+        .compose-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 6px;
+        }
+        .char-counter {
+            font-size: 0.9em;
+            color: var(--secondary-text-color);
+            margin-top: 4px;
+        }
+        .post-button {
+            background-color: transparent;
+            border: 1px solid var(--link-color);
+            padding: 8px 22px;
+            border-radius: 6px;
+            font-family: inherit;
+            cursor: pointer;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            color: var(--link-color);
+        }
+        .post-button:disabled {
+            opacity: 0.5;
+            cursor: default;
+        }
+        .post-button:hover:enabled {
+            background-color: var(--link-color);
+            color:#fff;
+        }
+        /* Small adjustments for mobile */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 15px; }
+            .compose-area textarea { min-height: 100px; }
+        }
+        /* Ensure thought preview matches main site styling */
+        .quote-wrapper .thought-box {
+            border: 2px dashed var(--dashed-border-color);
+            padding: 10pt 10pt 1pt;
+            margin-bottom: 14pt;
+            background-color: var(--container-bg);
+        }
+        .quote-wrapper .thought-header { flex-wrap: wrap; }
+        .quote-wrapper .thought-content p { white-space: pre-wrap; }
+        .quote-wrapper a { color: var(--link-color); text-decoration:none; }
+        .quote-wrapper a:visited { color: var(--link-color); }
+        .quote-wrapper .thought-image .lightbox-trigger { max-width: 70%; width: 100%; margin: 12px auto 0; display:block; }
+        .quote-wrapper .thought-user-img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid var(--border-color);
+        }
+        .quote-wrapper .thought-actions { pointer-events:none; opacity:0.8; }
+        .quote-wrapper .thought-date-time { display:inline; margin-left:4px; }
+        .quote-wrapper .thought-image img { max-width: 100%; height:auto; border:1px solid var(--border-color); border-radius:6px; }
+        .quote-wrapper .thought-image { max-width: 550px; margin:12px auto 0; }
+        /* Hide action icons in preview */
+        .quote-wrapper .share-button, .quote-wrapper .comment-button { display:none !important; }
+        @media(max-width:600px){
+            .quote-wrapper .thought-date-time{display:block;margin-left:0;}
+            .quote-wrapper .separator{display:none;}
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="quote-container" class="quote-wrapper"><!-- quote fetched by JS --></div>
+    <div class="compose-area">
+        <textarea id="reply-input" maxlength="512" placeholder="Write your comment… (max 512 chars)"></textarea>
+        <div class="compose-controls">
+            <span id="char-count" class="char-counter">0 / 512</span>
+            <button id="post-btn" class="post-button" disabled>📤 Post</button>
+        </div>
+    </div>
+</div>
+<script>
+(function(){
+  const params=new URLSearchParams(window.location.search);
+  const id=params.get('id');
+  if(!id){document.body.innerHTML='Invalid request';return;}
+  const STORAGE_KEY='comment_'+id;
+  const input=document.getElementById('reply-input');
+  const postBtn=document.getElementById('post-btn');
+  const charCount=document.getElementById('char-count');
+
+  // Helper to load stored object if not expired
+  function loadSaved(){
+      try{
+          const raw=localStorage.getItem(STORAGE_KEY);
+          if(!raw) return null;
+          const obj=JSON.parse(raw);
+          if(obj.expires && Date.now()>obj.expires){ localStorage.removeItem(STORAGE_KEY); return null; }
+          return obj;
+      }catch(e){ return null; }
+  }
+  const savedObj=loadSaved();
+  if(savedObj){ input.value=savedObj.text||''; updateCounter(); }
+
+  // Autofocus and place cursor at end to trigger keyboard
+  input.focus();
+  input.setSelectionRange(input.value.length,input.value.length);
+
+  input.addEventListener('input',()=>{
+    updateCounter();
+    try{
+        const obj={text:input.value, expires:Date.now()+7*24*3600000};
+        localStorage.setItem(STORAGE_KEY,JSON.stringify(obj));
+    }catch(e){}
+  });
+  function updateCounter(){
+    charCount.textContent=input.value.length+' / 512';
+    postBtn.disabled=!input.value.trim().length;
+  }
+
+  postBtn.addEventListener('click',()=>{
+    const encoded=encodeURIComponent(input.value.trim());
+    window.location.href='comment_medium.html?id='+encodeURIComponent(id)+'&msg='+encoded;
+  });
+
+  // Fetch the thought HTML and embed
+  fetch('@'+id+'.html').then(r=>r.text()).then(html=>{
+    const parser=new DOMParser();
+    const doc=parser.parseFromString(html,'text/html');
+    let tb=doc.querySelector('.thought-box');
+    if(!tb)return;
+    tb.querySelectorAll('.quoted-thought-container').forEach(el=>el.remove());
+    const imported=document.importNode(tb,true);
+    imported.style.pointerEvents='none';
+    imported.style.opacity='0.9';
+    document.getElementById('quote-container').appendChild(imported);
+  }).catch(()=>{});
+
+  /* --- Apply saved theme (auto/light/dark) --- */
+  (function(){
+    const body=document.body;
+    function applyTheme(pref){
+      body.classList.remove('light-mode','dark-mode');
+      let actual=pref;
+      if(pref==='auto'){
+        const prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;
+        actual=prefersDark?'dark':'light';
+      }
+      body.classList.add(actual+'-mode');
+    }
+    const saved=localStorage.getItem('themePreference')||'auto';
+    applyTheme(saved);
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{
+      if((localStorage.getItem('themePreference')||'auto')==='auto') applyTheme('auto');
+    });
+  })();
+})();
+</script>
+</body>
+</html> 
