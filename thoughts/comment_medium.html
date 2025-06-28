@@ -67,12 +67,14 @@
             border: 1px dashed var(--border-color);
             padding: 12px;
             margin-bottom: 20px;
-            background-color: var(--hover-bg-color);
+            background-color: var(--container-bg);
             font-size: 0.95em;
             color: var(--text-color);
             max-height: 200px;
             overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
         }
+        .dark-mode .message-box { background-color: var(--hover-bg-color); }
         .medium-buttons {
             display: flex;
             gap: 15px;
