@@ -6,6 +6,419 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-07-03 17:53
+
+gold did exactly this during the 2008 GFC
+
+its share in collateral usage in global repo markets increased
+
+and in 2025 we’re seeing the same trend, with gold share in repo market collateral increasing
+
+📖 Quoting from 2025-07-03 17:52:
+┌─ as more markets develop over gold - so will its usage as collateral in short-term/repo credit markets
+│ 
+│ it will likely become a more frequent choice for collateral/hedge during the multipolar transition. specially if bond yields continue to exhibit increased volatility
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-03 17:52
+
+as more markets develop over gold - so will its usage as collateral in short-term/repo credit markets
+
+it will likely become a more frequent choice for collateral/hedge during the multipolar transition. specially if bond yields continue to exhibit increased volatility
+
+📖 Quoting from 2025-07-03 17:51:
+┌─ (re)monetization of gold is already in progress
+│ 
+│ central banks have been consistently buying gold for many years
+│ 
+│ this is especially true for Russia & China
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-03 17:51
+
+(re)monetization of gold is already in progress
+
+central banks have been consistently buying gold for many years
+
+this is especially true for Russia & China
+
+📖 Quoting from 2025-03-21 12:45:
+┌─ Over 10 years the Russian Central Bank has increased gold holdings by x4.5
+│ 
+│ 🇷🇺 Gold is now 35% of all international reserves held by Russia 🤯
+│ 
+│ 🇺🇸 Comparatively, for USA the number is 5%
+│ 
+│ This is why Russia and Ruble have been so resilient to sanctions
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-03 17:51
+
+transition into multipolarity brings risks & volatility into financial markets
+
+some FX currencies & bonds go up - others down
+
+the demand for safe assets is not going away anywhere
+
+the debt still needs to be refinanced 🤷‍♀️
+
+📖 Quoting from 2025-07-03 17:50:
+┌─ now you might think that gold would be a perfect collateral for repos, but currently:
+│ 
+│ it’s too volatile - price may drop > 10% on systemic risks
+│ 
+│ there is no lender of last resort (you can’t print gold or have swap lines for it 😀)
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-03 17:50
+
+now you might think that gold would be a perfect collateral for repos, but currently:
+
+it’s too volatile - price may drop > 10% on systemic risks
+
+there is no lender of last resort (you can’t print gold or have swap lines for it 😀)
+
+📖 Quoting from 2025-07-03 17:49:
+┌─ most of debt is issued for re-financing of existing debt, not for new debt
+│ 
+│ repo markets are the backbone of that. and since they’re collateralized loans - there is a huge demand for collateral/safe assets
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-03 17:49
+
+most of debt is issued for re-financing of existing debt, not for new debt
+
+repo markets are the backbone of that. and since they’re collateralized loans - there is a huge demand for collateral/safe assets
+
+📖 Quoting from 2025-05-27 15:22:
+┌─ 90% of all newly issued debt is for refinancing of existing debt, not new debt/financing
+│ 
+│ Thus, new debt is extremely inflationary & asset bubble-nurturing
+│ 
+│ The financial system is extremely leveraged at a high risk
+│ 
+│ We need to fix this. DeFi is the tool
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-03 17:49
+
+remember those HUGE repo markets that I talked about?
+
+US bonds/treasuries are the favorite collateral for those transactions
+
+and that’s why they’re not going away anytime soon
+
+but of course, the financial system is slowly diversifying
+
+📖 Quoting from 2025-07-03 17:46:
+┌─ repo markets are HUGE - about the size of USD M2!
+│ 
+│ they underpin the global financial system
+│ 
+│ however, there’s not many DeFi protocols addressing this part of the market
+│ 
+│ i may pick it up in the near future
+│ 
+│ if you’re working on something similar - hit me up!
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-03 17:48
+
+overall blockchain DeFi lacks development for short-term lending markets
+
+short-term market volumes are larger than M2 & Co.
+
+yes, you can lend on AAVE, but rates vary greatly
+
+📖 Quoting from 2025-07-03 17:46:
+┌─ repo markets are HUGE - about the size of USD M2!
+│ 
+│ they underpin the global financial system
+│ 
+│ however, there’s not many DeFi protocols addressing this part of the market
+│ 
+│ i may pick it up in the near future
+│ 
+│ if you’re working on something similar - hit me up!
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-03 17:46
+
+repo markets are HUGE - about the size of USD M2!
+
+they underpin the global financial system
+
+however, there’s not many DeFi protocols addressing this part of the market
+
+i may pick it up in the near future
+
+if you’re working on something similar - hit me up!
+
+📖 Quoting from 2025-07-03 17:44:
+┌─ in the end, you get your UST bond back
+│ 
+│ and it makes sense for you to repurchase the bond (collateral) even if the price falls
+│ 
+│ as long as the price fall is < ≈haircut (2% in our case)
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-03 17:44
+
+in the end, you get your UST bond back
+
+and it makes sense for you to repurchase the bond (collateral) even if the price falls
+
+as long as the price fall is < ≈haircut (2% in our case)
+
+📖 Quoting from 2025-07-03 17:44:
+┌─ so if you have a UST bond worth $100:
+│ 
+│ lender applies a haircut (e.g. 2%) - 100*(1-0.02)=$98
+│ lender sets a repurchase price (e.g. $98.013)
+│ 
+│ so you use your $100 bond to get a $98 loan, for which you must repay with a fee (interest) $98.013
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-03 17:44
+
+so if you have a UST bond worth $100:
+
+lender applies a haircut (e.g. 2%) - 100*(1-0.02)=$98
+lender sets a repurchase price (e.g. $98.013)
+
+so you use your $100 bond to get a $98 loan, for which you must repay with a fee (interest) $98.013
+
+📖 Quoting from 2025-07-03 17:44:
+┌─ repurchase agreements are almost always over-collateralized
+│ 
+│ the borrower undervalues the collateral by a percentage (haircut) - this is a buffer against price volatility
+│ 
+│ the purchase and repurchase price are computed over the post-haircut value
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-03 17:44
+
+repurchase agreements are almost always over-collateralized
+
+the borrower undervalues the collateral by a percentage (haircut) - this is a buffer against price volatility
+
+the purchase and repurchase price are computed over the post-haircut value
+
+~ ✨ ~
+
+⏰ 2025-07-02 21:13
+
+Basel framework treats "capital" as a funding source that can absorb losses, rather than an owned asset
+
+assets are funded by liabilities and equity, so assets are not a funding source
+
+Tier 1 capital is the first-line of losses absorption for a bank
+
+so gold can't be in "Tier"
+
+📖 Quoting from 2025-07-02 20:43:
+┌─ 🚨🏦 claims that gold is a Tier 1 asset under Basel III are FALSE:
+│ 
+│ 1. gold is NOT a Tier capital under Basel - it’s on the liability, not asset side
+│ 
+│ 2. gold had 0% risk weight since Basel I (no haircut)
+│ 
+│ 3. gold is still NOT considered a high quality liquid asset (HQLA)
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-02 20:53
+
+🏦 under Basel III  gold is subject additional funding requirements
+
+there’s a 85% required stable funding (RSF) factor on gold under net stable funding ratio (NSFR)
+
+so for every $1B of gold that a bank holds - $850M must be funded with longer term retail or wholesale funding
+
+📖 Quoting from 2025-07-02 20:43:
+┌─ 🚨🏦 claims that gold is a Tier 1 asset under Basel III are FALSE:
+│ 
+│ 1. gold is NOT a Tier capital under Basel - it’s on the liability, not asset side
+│ 
+│ 2. gold had 0% risk weight since Basel I (no haircut)
+│ 
+│ 3. gold is still NOT considered a high quality liquid asset (HQLA)
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-02 20:43
+
+🚨🏦 claims that gold is a Tier 1 asset under Basel III are FALSE:
+
+1. gold is NOT a Tier capital under Basel - it’s on the liability, not asset side
+
+2. gold had 0% risk weight since Basel I (no haircut)
+
+3. gold is still NOT considered a high quality liquid asset (HQLA)
+
+~ ✨ ~
+
+⏰ 2025-07-02 18:14
+
+volatility is at best - a part of a the risk
+
+an increase in volatility doesn’t necessarily mean an increase in risk
+
+e.g.:
+shortages in global liquidity put mismatched liabilities at a loss. safe assets raise in price
+
+the high risk already existed while there was low volatility
+
+~ ✨ ~
+
+⏰ 2025-07-01 14:36
+
+pre-market tesla is already down to a weekly support back from July 2023
+
+the narrative that equities price is mainly linked with EBIDTA or other revenue/profit metrics is false
+
+it’s all about where the credit flows
+
+~ ✨ ~
+
+⏰ 2025-06-29 14:05
+
+check the correlation between FED swap line volumes and Bitcoin price
+
+large spikes in swap volume trigger an uptrend in Bitcoin
+
+understanding these global liquidity flows helps to visualize them as a part of the larger system and understand where it’s likely to move next
+
+📖 Quoting from 2025-06-29 13:57:
+┌─ new currency in circulation is just one of the side-effects
+│ 
+│ and that transition is neither direct, nor instant
+│ 
+│ before these funds effectively become new currency, they flow into financial markets - that’s why you see the stock market going up first
+│ 
+│ the same for risky assets
+└─
+
+~ ✨ ~
+
+⏰ 2025-06-29 13:57
+
+new currency in circulation is just one of the side-effects
+
+and that transition is neither direct, nor instant
+
+before these funds effectively become new currency, they flow into financial markets - that’s why you see the stock market going up first
+
+the same for risky assets
+
+📖 Quoting from 2025-06-29 13:54:
+┌─ FED swap line operations reach ≈$600 bn
+│ 
+│ while the swaps are closed/repaid in less than a year, ≈80% of the repayment comes from newly issued wholesale debt
+│ 
+│ thus, ≈80% of the swap volume eventually becomes new currency in circulation
+│ 
+│ and then you wonder about inflation 😄
+└─
+
+~ ✨ ~
+
+⏰ 2025-06-29 13:54
+
+FED swap line operations reach ≈$600 bn
+
+while the swaps are closed/repaid in less than a year, ≈80% of the repayment comes from newly issued wholesale debt
+
+thus, ≈80% of the swap volume eventually becomes new currency in circulation
+
+and then you wonder about inflation 😄
+
+📖 Quoting from 2025-06-29 13:43:
+┌─ 💧FED swap lines = infinite liquidity pool
+│ 
+│ 👉 here’s how:
+│ 
+│ 1️⃣ central banks exchange their foreign currency for USD, 7-80 days later, they reverse the exchange at the same rate + fee
+│ 
+│ 2️⃣ central banks then lend these new USD to commercial banks
+│ 
+│ thus, USD demand is met
+└─
+
+~ ✨ ~
+
+⏰ 2025-06-29 13:43
+
+💧FED swap lines = infinite liquidity pool
+
+👉 here’s how:
+
+1️⃣ central banks exchange their foreign currency for USD, 7-80 days later, they reverse the exchange at the same rate + fee
+
+2️⃣ central banks then lend these new USD to commercial banks
+
+thus, USD demand is met
+
+~ ✨ ~
+
+⏰ 2025-06-29 11:01
+
+💬 each comment is automatically saved
+
+with a 7-day expiration - all locally in user storage
+
+so essentially an automatic draft
+
+try it yourself: go to one of my posts/thoughts, press/click comment emoji, write the comment, close the tab. the comment will be there on re-open
+
+📖 Quoting from 2025-06-28 09:51:
+┌─ 🚀 added stateless comments on posts
+│ 
+│ i wanted to add comments to my statically-generated thoughts site, but didn’t want to depend on storage or server-side logic
+│ 
+│ solution: send comments via e-mail, X/twitter or telegram
+│ 
+│ demo in reply ⬇️
+└─
+
+~ ✨ ~
+
+⏰ 2025-06-28 09:51
+
+🚀 added stateless comments on posts
+
+i wanted to add comments to my statically-generated thoughts site, but didn’t want to depend on storage or server-side logic
+
+solution: send comments via e-mail, X/twitter or telegram
+
+demo in reply ⬇️
+
+~ ✨ ~
+
 ⏰ 2025-06-26 19:55
 
 central bank balance sheets are an underrated resource for understanding the global liquidity moves
