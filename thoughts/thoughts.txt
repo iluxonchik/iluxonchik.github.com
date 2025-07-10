@@ -6,6 +6,188 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-07-10 10:35
+
+🇨🇳 China's reverse repo liquidity injections predict Bitcoin bullruns
+
+it works like this:
+
+📈 high PBoC injections = increasing bitcoin price
+
+📉 low PBoC injections = sideways or decreasing
+
+so every time China injects Yuan/reminbi, BTC price goes up 😁
+
+📖 Quoting from 2025-07-10 09:53:
+┌─ 🇨🇳 china injects liquidity mainly via reverse repurchase agreements
+│ 
+│ 🏦 chinese central bank buys government bonds from commercial banks, selling them back later. this new cash is re-invested yielding a spread
+│ 
+│ 💹 essentially, they allow banks to earn a yield on their bonds
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-10 10:29
+
+🇨🇳 PBoC provides commercial & policy banks with liquidity via reverse repo open market operations
+
+this MASSIVE liquidity eventually flows out of china into the global economy
+
+so it has a very direct effect on asset prices wherever your are 😄
+
+📖 Quoting from 2025-07-10 09:53:
+┌─ 🇨🇳 china injects liquidity mainly via reverse repurchase agreements
+│ 
+│ 🏦 chinese central bank buys government bonds from commercial banks, selling them back later. this new cash is re-invested yielding a spread
+│ 
+│ 💹 essentially, they allow banks to earn a yield on their bonds
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-10 09:53
+
+🇨🇳 china injects liquidity mainly via reverse repurchase agreements
+
+🏦 chinese central bank buys government bonds from commercial banks, selling them back later. this new cash is re-invested yielding a spread
+
+💹 essentially, they allow banks to earn a yield on their bonds
+
+📖 Quoting from 2025-07-10 09:41:
+┌─ 🇺🇸🇨🇳 USA & China are the global liquidity drivers in financial markets
+│ 
+│ since 2000, each injected ≈$6 trillion of public money into markets. that’s ≈40% of global liquidity 🤯
+│ 
+│ in 2025 - China is leading with injections
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-10 09:41
+
+🇺🇸🇨🇳 USA & China are the global liquidity drivers in financial markets
+
+since 2000, each injected ≈$6 trillion of public money into markets. that’s ≈40% of global liquidity 🤯
+
+in 2025 - China is leading with injections
+
+📖 Quoting from 2025-07-10 09:34:
+┌─ weaker USD + FED rate cuts & QE allow China to print Yuan/renminbi without a capital runoff
+│ 
+│ easing monetary conditions in the US means more capital in circulation globally - not just in PRC
+│ 
+│ thus, relative inflation is kept under more control
+│ 
+│ 🇨🇳🇺🇸 china’s CPI is below US's ⬇️
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-10 09:34
+
+weaker USD + FED rate cuts & QE allow China to print Yuan/renminbi without a capital runoff
+
+easing monetary conditions in the US means more capital in circulation globally - not just in PRC
+
+thus, relative inflation is kept under more control
+
+🇨🇳🇺🇸 china’s CPI is below US's ⬇️
+
+📖 Quoting from 2025-07-10 08:54:
+┌─ 🇨🇳 china’s central bank uses USD value as a key driver in economic policies
+│ 
+│ the monetary easing policy is adjusted by PBoC based on the dollar’s trend - up or down
+│ 
+│ weaker USD + expected liquidity USD injections = Yuan/renminbi injections
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-10 08:54
+
+🇨🇳 china’s central bank uses USD value as a key driver in economic policies
+
+the monetary easing policy is adjusted by PBoC based on the dollar’s trend - up or down
+
+weaker USD + expected liquidity USD injections = Yuan/renminbi injections
+
+~ ✨ ~
+
+⏰ 2025-07-09 10:31
+
+for LLM Engine Optimization add JSON-LD
+
+it made my thoughts microblog easy to parse and navigate by all major LLMs - including ChatGPT, Grok & Gemini
+
+this is an easy LEO strategy with immediate results. and it’s very easy to add - you can vibe-code it
+
+here’s an example ⬇️
+
+📖 Quoting from 2025-07-08 17:50:
+┌─ ask ChatGPT what are Illya Gerasymchuk's latest thoughts
+│ 
+│ and it will tell you 😄
+│ 
+│ now you can use LLMs to read my microblog thoughts - who needs HTTP, RSS or plan text?
+│ 
+│ made possible by adding structural metadata to HTML
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-09 05:55
+
+JSON-LD is a must for LEO/SEO
+
+it’s metadata for LLM in HTML - so essentially for the web
+
+once I added it to my microblog/thoughts feed - ChatGPT was able to read & navigate it flawlessly
+
+before it would only retrieve partial information & fail to navigate from page to page
+
+📖 Quoting from 2025-07-08 18:24:
+┌─ here’s how it works from a new ChatGPT chat
+│ 
+│ i didn’t provide any URLs - and it correctly found my website (indexing), and was able to retrieve the verbatim data from there and correctly link it
+│ 
+│ JSON-LD adds structure metadata that LLMs can read - instead of your “messy” HTML, JS & CSS
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-08 18:24
+
+here’s how it works from a new ChatGPT chat
+
+i didn’t provide any URLs - and it correctly found my website (indexing), and was able to retrieve the verbatim data from there and correctly link it
+
+JSON-LD adds structure metadata that LLMs can read - instead of your “messy” HTML, JS & CSS
+
+📖 Quoting from 2025-07-08 17:50:
+┌─ ask ChatGPT what are Illya Gerasymchuk's latest thoughts
+│ 
+│ and it will tell you 😄
+│ 
+│ now you can use LLMs to read my microblog thoughts - who needs HTTP, RSS or plan text?
+│ 
+│ made possible by adding structural metadata to HTML
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-08 17:50
+
+ask ChatGPT what are Illya Gerasymchuk's latest thoughts
+
+and it will tell you 😄
+
+now you can use LLMs to read my microblog thoughts - who needs HTTP, RSS or plan text?
+
+made possible by adding structural metadata to HTML
+
+~ ✨ ~
+
 ⏰ 2025-07-07 19:10
 
 this is why funding repo rates are a very useful indicator
