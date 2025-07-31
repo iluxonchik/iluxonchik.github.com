@@ -6,6 +6,1029 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-07-31 11:06
+
+and this is how the Federal Reserve steers the federal funds rate/interest rates in the market within the target range 🏦✨
+
+follow the quoted posts to read the full thread/article
+
+📖 Quoting from 2025-07-31 10:43:
+┌─ together, ON RRP, IORB, Discount Rate and SRF create a corridor for rates, which stay within the target 4.25%-4.50%
+│ 
+│ 👉 by "firms" i mean select non-bank financial institutions - think dealers, market makers & other wholesale debt institutions
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:43
+
+together, ON RRP, IORB, Discount Rate and SRF create a corridor for rates, which stay within the target 4.25%-4.50%
+
+👉 by "firms" i mean select non-bank financial institutions - think dealers, market makers & other wholesale debt institutions
+
+📖 Quoting from 2025-07-31 10:40:
+┌─ current rates set by FED:
+│ 
+│ 1️⃣ ON RRP - 4.25% (floor) - firms won't lend below 
+│ 2️⃣ IORB  - 4.40% (supplementary floor) - banks won't lend below 
+│ 3️⃣ Discount Rate - 4.50% (ceiling) - banks won't borrow above 
+│ 4️⃣ SRF - 4.50% (supplementary ceiling) - banks & firms won't borrow above
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:40
+
+current rates set by FED:
+
+1️⃣ ON RRP - 4.25% (floor) - firms won't lend below 
+2️⃣ IORB  - 4.40% (supplementary floor) - banks won't lend below 
+3️⃣ Discount Rate - 4.50% (ceiling) - banks won't borrow above 
+4️⃣ SRF - 4.50% (supplementary ceiling) - banks & firms won't borrow above
+
+📖 Quoting from 2025-07-31 10:38:
+┌─ so how does the FED currently targets an interest rate range between 4.25%-4.50%?
+│ 
+│ let's consolidate everything with an example using current, real-world data
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:38
+
+so how does the FED currently targets an interest rate range between 4.25%-4.50%?
+
+let's consolidate everything with an example using current, real-world data
+
+📖 Quoting from 2025-07-31 10:36:
+┌─ SRF has been introduced in 2021, due to occasional spikes of short-term funding rates outside of the corridor
+│ 
+│ this is because banks avoid using the discount rate - as that is often seen as a sign of financial distress by the broader market
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:36
+
+SRF has been introduced in 2021, due to occasional spikes of short-term funding rates outside of the corridor
+
+this is because banks avoid using the discount rate - as that is often seen as a sign of financial distress by the broader market
+
+📖 Quoting from 2025-07-31 10:34:
+┌─ thus, Standing Repo Facility (SRF) further reinforces the upper part of the target interest rate corridor
+│ 
+│ in other words, it strengthens the cap on short-term interest rates
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:34
+
+thus, Standing Repo Facility (SRF) further reinforces the upper part of the target interest rate corridor
+
+in other words, it strengthens the cap on short-term interest rates
+
+📖 Quoting from 2025-07-31 10:32:
+┌─ Standing Repo Facility (SRF) allows banks & other financial institutions to do collateral-backed loans from the FED overnight
+│ 
+│ the institution provides high quality collateral (e.g. treasury bond) and gets a loan against it - at the set rate
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:32
+
+Standing Repo Facility (SRF) allows banks & other financial institutions to do collateral-backed loans from the FED overnight
+
+the institution provides high quality collateral (e.g. treasury bond) and gets a loan against it - at the set rate
+
+📖 Quoting from 2025-07-31 10:30:
+┌─ it't called discount window for historical reasons
+│ 
+│ discounting means buying treasuries at a slightly lower price - i.e. at a discount
+│ 
+│ window comes from the fact that these were sold at counter/teller windows at the bank
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:30
+
+it't called discount window for historical reasons
+
+discounting means buying treasuries at a slightly lower price - i.e. at a discount
+
+window comes from the fact that these were sold at counter/teller windows at the bank
+
+📖 Quoting from 2025-07-31 10:30:
+┌─ the discount rate is set higher or at the typical market rates to disincentivize its use 
+│ 
+│ it's really meant to serve as an emergency lending source - only when other financing routes are exhausted: regular interbank markets, wholesale markets and SRF among others
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:30
+
+the discount rate is set higher or at the typical market rates to disincentivize its use 
+
+it's really meant to serve as an emergency lending source - only when other financing routes are exhausted: regular interbank markets, wholesale markets and SRF among others
+
+📖 Quoting from 2025-07-31 10:28:
+┌─ Discount Rate is the rate at which the FED lends directly to banks through its discount window
+│ 
+│ think of it as an emergency lending facility which the banks can use whenever they need funds
+│ 
+│ since banks can always get a loan at that rate - it caps the short-term interest rates
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:28
+
+Discount Rate is the rate at which the FED lends directly to banks through its discount window
+
+think of it as an emergency lending facility which the banks can use whenever they need funds
+
+since banks can always get a loan at that rate - it caps the short-term interest rates
+
+📖 Quoting from 2025-07-31 10:27:
+┌─ the majority of liquidity is actually created in wholesale short-term debt markets
+│ 
+│ ON RRP addresses exactly that sector, thus setting the lower bound of the target interest rate corridor for the broader financial sector
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:27
+
+the majority of liquidity is actually created in wholesale short-term debt markets
+
+ON RRP addresses exactly that sector, thus setting the lower bound of the target interest rate corridor for the broader financial sector
+
+📖 Quoting from 2025-07-31 10:26:
+┌─ ON RRP further reinforces the the floor for the market-wide interest rates
+│ 
+│ since it's accessible to a broader set of financial institutions - not only banks. those now also have little incentive to lend below the ON RRP rate
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:26
+
+ON RRP further reinforces the the floor for the market-wide interest rates
+
+since it's accessible to a broader set of financial institutions - not only banks. those now also have little incentive to lend below the ON RRP rate
+
+📖 Quoting from 2025-07-31 10:11:
+┌─ Overnight Reverse Repo Rate (ON RRP) defines the rate at financial institutions can lend money overnight to the FED
+│ 
+│ in return the FED provides treasury bonds as a collateral
+│ 
+│ ON RRP is accessible to both banks & non-banks (e.g. money market funds)
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:11
+
+Overnight Reverse Repo Rate (ON RRP) defines the rate at financial institutions can lend money overnight to the FED
+
+in return the FED provides treasury bonds as a collateral
+
+ON RRP is accessible to both banks & non-banks (e.g. money market funds)
+
+📖 Quoting from 2025-07-31 10:10:
+┌─ since banks can always deposit cash into their reserve account account at the FED and earn the IORB rate they have little incentive to lend at rates below IORB
+│ 
+│ effectively, this sets the floor (lower bound of the corridor) for interest rates for banks
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:10
+
+since banks can always deposit cash into their reserve account account at the FED and earn the IORB rate they have little incentive to lend at rates below IORB
+
+effectively, this sets the floor (lower bound of the corridor) for interest rates for banks
+
+📖 Quoting from 2025-07-31 10:09:
+┌─ Interest on Reserve Balances (IORB) is the rate FED pays banks on their excess reserves
+│ 
+│ commercial banks have reserve accounts at the FED. regulations define the minimum amounts - any excess earns the IORB interest rate set by the FED
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:09
+
+Interest on Reserve Balances (IORB) is the rate FED pays banks on their excess reserves
+
+commercial banks have reserve accounts at the FED. regulations define the minimum amounts - any excess earns the IORB interest rate set by the FED
+
+📖 Quoting from 2025-07-31 10:08:
+┌─ the 4 key interest rates set by the FED are:
+│ 
+│ 1️⃣ Overnight Reverse Repo Rate (ON RRP) 
+│ 2️⃣ Interest on Reserve Balances (IORB)
+│ 3️⃣ Discount Rate - also known as Lending Rate
+│ 4️⃣ Standing Repo Facility (SRF)
+│ 
+│ we'l cover them in this order in follow-up posts
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:08
+
+the 4 key interest rates set by the FED are:
+
+1️⃣ Overnight Reverse Repo Rate (ON RRP) 
+2️⃣ Interest on Reserve Balances (IORB)
+3️⃣ Discount Rate - also known as Lending Rate
+4️⃣ Standing Repo Facility (SRF)
+
+we'l cover them in this order in follow-up posts
+
+📖 Quoting from 2025-07-31 10:05:
+┌─ now let's understand each one of the 4 key rates set by the federal reserve to keep the market rates within the target range
+│ 
+│ namely, what each one of those rates represents and how together they act as ceiling or floor for the interest rate corridor
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 10:05
+
+now let's understand each one of the 4 key rates set by the federal reserve to keep the market rates within the target range
+
+namely, what each one of those rates represents and how together they act as ceiling or floor for the interest rate corridor
+
+📖 Quoting from 2025-07-31 09:59:
+┌─ so when banks and other financial institutions need to lend capital - they can do it at a rate within the target range
+│ 
+│ of course, their balance sheet capacity must allow for that - but that's another topic which I already covered in some detail in my other posts😁
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 09:59
+
+so when banks and other financial institutions need to lend capital - they can do it at a rate within the target range
+
+of course, their balance sheet capacity must allow for that - but that's another topic which I already covered in some detail in my other posts😁
+
+📖 Quoting from 2025-07-31 09:58:
+┌─ now you should have a clear mental model of how the Federal Reserve sets the interest rates in the market
+│ 
+│ a target range is defined, and then several different interest rates are set explicitly to steer the real interest rate into that target range
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 09:58
+
+now you should have a clear mental model of how the Federal Reserve sets the interest rates in the market
+
+a target range is defined, and then several different interest rates are set explicitly to steer the real interest rate into that target range
+
+📖 Quoting from 2025-07-31 09:56:
+┌─ think of these 4 rates as defining a corridor with an upper and a lower bound - currently 4.25% and 4.50%
+│ 
+│ the average market interest rate will sit somewhere in between
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 09:56
+
+think of these 4 rates as defining a corridor with an upper and a lower bound - currently 4.25% and 4.50%
+
+the average market interest rate will sit somewhere in between
+
+📖 Quoting from 2025-07-31 09:55:
+┌─ in the Federal Open Market Committee Meetings (FOMC), the Federal Reserve sets a target range - currently 4.25%–4.50%, and then it uses the ON RRP, IORB, discount rate and SRF to steer the average rate in the market
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 09:55
+
+in the Federal Open Market Committee Meetings (FOMC), the Federal Reserve sets a target range - currently 4.25%–4.50%, and then it uses the ON RRP, IORB, discount rate and SRF to steer the average rate in the market
+
+📖 Quoting from 2025-07-31 09:53:
+┌─ the rates define the interest rate corridor in the following manner:
+│ 
+│ 1️⃣ Overnight Reverse Repo Rate - floor
+│ 2️⃣ Interest on Reserve Balances - supplementary floor
+│ 3️⃣ Discount Rate - ceiling
+│ 4️⃣ Standing Repo Facility - supplementary ceiling
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 09:53
+
+the rates define the interest rate corridor in the following manner:
+
+1️⃣ Overnight Reverse Repo Rate - floor
+2️⃣ Interest on Reserve Balances - supplementary floor
+3️⃣ Discount Rate - ceiling
+4️⃣ Standing Repo Facility - supplementary ceiling
+
+📖 Quoting from 2025-07-31 09:51:
+┌─ together, ON RRP, IORB, discount rate and SRF define an interest rate corridor, composed by:
+│ 
+│ 1️⃣ lower bound (floor) - the lowest possible interest rate
+│ 2️⃣ upper bound (ceiling) - the highest possible interest rate
+│ 
+│ the other market rates fluctuate between this floor and ceiling
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 09:51
+
+together, ON RRP, IORB, discount rate and SRF define an interest rate corridor, composed by:
+
+1️⃣ lower bound (floor) - the lowest possible interest rate
+2️⃣ upper bound (ceiling) - the highest possible interest rate
+
+the other market rates fluctuate between this floor and ceiling
+
+📖 Quoting from 2025-07-31 09:50:
+┌─ the FED sets a target interest rate range and 4 main explicit interest rates:
+│ 
+│ 1️⃣ Overnight Reverse Repo Rate (ON RRP)
+│ 2️⃣ Interest on Reserve Balances (IORB)
+│ 3️⃣ Discount Rate - also known as Lending Rate
+│ 4️⃣ Standing Repo Facility (SRF)
+│ 
+│ more on them later (keep reading 😁)
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 09:50
+
+the FED sets a target interest rate range and 4 main explicit interest rates:
+
+1️⃣ Overnight Reverse Repo Rate (ON RRP)
+2️⃣ Interest on Reserve Balances (IORB)
+3️⃣ Discount Rate - also known as Lending Rate
+4️⃣ Standing Repo Facility (SRF)
+
+more on them later (keep reading 😁)
+
+📖 Quoting from 2025-07-31 09:48:
+┌─ the federal reserve does not set a single interest rate
+│ 
+│ instead, the FED sets a target interest rate range (the federal funds target range) alongside 4 main explicit interest rates
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 09:48
+
+the federal reserve does not set a single interest rate
+
+instead, the FED sets a target interest rate range (the federal funds target range) alongside 4 main explicit interest rates
+
+📖 Quoting from 2025-07-31 09:40:
+┌─ how can the FED even set market-wide rates? 🤔
+│ 
+│ after all - there is no single rate that the whole market unanimously uses
+│ 
+│ different types of lending have different rates in the market, as it's a (somewhat) open market
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 09:40
+
+how can the FED even set market-wide rates? 🤔
+
+after all - there is no single rate that the whole market unanimously uses
+
+different types of lending have different rates in the market, as it's a (somewhat) open market
+
+📖 Quoting from 2025-07-31 09:39:
+┌─ how does the Federal Reserve set interest rates?
+│ 
+│ some think that they define a single rate - namely the overnight lending rate - i.e. the rate at which the banks lend to each other overnight
+│ 
+│ but that’s not the case ❌
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 09:39
+
+how does the Federal Reserve set interest rates?
+
+some think that they define a single rate - namely the overnight lending rate - i.e. the rate at which the banks lend to each other overnight
+
+but that’s not the case ❌
+
+~ ✨ ~
+
+⏰ 2025-07-31 09:38
+
+i'll be explaining the details of how the Federal Reserve achieves their fed funds target rate in the next posts
+
+i'll be quoting them in sequence - so you can follow the trail of quoted posts and read them like a thread/article
+
+starting with the next post. let's dive in! 🚀
+
+📖 Quoting from 2025-07-31 09:35:
+┌─ the FED left the interest rates unchanged - at the 4.25%-4.50% target
+│ 
+│ while they communicated that previously - so it's no surprise - understanding how they achieve that level of short-term rates means understanding the important central bank in the world 🏦
+│ 
+│ so i'll explain it!
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-31 09:35
+
+the FED left the interest rates unchanged - at the 4.25%-4.50% target
+
+while they communicated that previously - so it's no surprise - understanding how they achieve that level of short-term rates means understanding the important central bank in the world 🏦
+
+so i'll explain it!
+
+~ ✨ ~
+
+⏰ 2025-07-30 18:48
+
+if you can actually take a loan of €10m - just get a bunch of properties in Portugal (I see the flag 🇵🇹😄) and rent them out
+
+you'll be able to comfortably get ≈50 properties - yielding you around €50K MRR
+
+plus all of the equity and appreciation that you're earning
+
+~ ✨ ~
+
+⏰ 2025-07-30 18:40
+
+🇺🇸🇮🇳 US imports for India account for mere 2.7% of its total imports - only $87 billion
+
+you can see how selective and small the tariff applications are - and even those will eventually be dropped
+
+nothing about China 🇨🇳 👀
+
+fully consistent with what I wrote 2 weeks ago
+
+📖 Quoting from 2025-07-14 18:43:
+┌─ i understand that these are secondary tariffs, but there is a grand total of 0% chance of that going in action for any substancial amount of time
+│ 
+│ 🇨🇳 China is Russia's main trading partner. do you really think the US economy can sustain 100% tariffs on their main import source?
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-30 18:28
+
+🚨🛢️aaand crude oil is trading above $70
+
+told you over a month ago that more upside is to come 😉
+
+NOTE: it's up ≈8% over the past 5 days while the US dollar index is up over 2% - so it's more in real terms
+
+scroll back to my June posts to know what's coming next
+
+📖 Quoting from 2025-06-16 13:41:
+┌─ “The market is never wrong”
+│ 
+│ A lot of big accounts posting about how the market knows everything & prices accordingly - even before the official news
+│ 
+│ Okay.
+│ 
+│ Now wait & watch crude oil & gold raise up even more in price very soon
+│ 
+│ This isn’t a joke
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-30 10:09
+
+don't learn to code - there is AI
+don't learn to drive - there is AI
+don't learn to read - there is AI
+don't learn to write - there is AI
+don't learn to speak - there is AI
+…
+don't learn - there is AI
+
+follow me for more terrible advice 😂
+
+~ ✨ ~
+
+⏰ 2025-07-29 21:34
+
+🇷🇺 oil up is GOOD news for Russia & Ruble
+
+every surplus above $60/barrel of Urals oil increases FX reserves in NWF (Yuan or gold) - an interplay between MoF and CBR
+
+exporters pay taxes in Ruble - so higher buying pressure
+
+mark my words:
+👉 you'll see USD/RUB exchange rate fall
+
+📖 Quoting from 2025-07-29 20:39:
+┌─ 🚨🛢️ crude oil up to almost $70
+│ 
+│ and this while the US dollar index is also up
+│ 
+│ over a month and a half ago I told you that it's going to resume the uptrend - and this thesis has been confirmed again and again
+│ 
+│ wait & watch what comes next - I wrote about that as well 😁
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-29 20:39
+
+🚨🛢️ crude oil up to almost $70
+
+and this while the US dollar index is also up
+
+over a month and a half ago I told you that it's going to resume the uptrend - and this thesis has been confirmed again and again
+
+wait & watch what comes next - I wrote about that as well 😁
+
+📖 Quoting from 2025-07-13 17:51:
+┌─ 🛢️ crude oil price is heading back up - just like I wrote earlier
+│ 
+│ significant geopolitical events introduce volatility - but my thesis on increasing oil, gold & other precious metals + commodities has little to do with that
+│ 
+│ 👉 it’s about global liquidity flows & bond markets
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-29 12:21
+
+you can imagine how much I'm excited to read this chapter 🤩
+
+Michael Howell (@crossbordercap) really cooked with this one 🔥
+
+highly technical, quantitative and focused on data interpretation, not politics
+
+(not sure about copyright so blurred the image)
+
+~ ✨ ~
+
+⏰ 2025-07-29 11:35
+
+Trump administration is China's best friend
+
+🇺🇸❤️🇨🇳
+
+not only China gets to accumulate gold, attract global market share, but also massively benefit from the crypto bubble
+
+China has HUGE exposure (and control) to Bitcoin. US does the work, while China benefits. sounds familiar🤷‍♀️
+
+~ ✨ ~
+
+⏰ 2025-07-29 11:28
+
+🇷🇺 3 months of Ruble gains against USD erased in 5 days 😄
+
+but also contextualize it with the overall increase in the US Dollar Index over the past 2 days
+
+👋 hello, volatility
+
+📖 Quoting from 2025-07-28 21:46:
+┌─ 3 days ago the Russian Central Bank cut down the key interest rate by 200bp down to 18%
+│ 
+│ the only way from here is further down - and if you look at the Russian bond yields that's exactly what they're telling
+│ 
+│ but honestly you don't need advanced quant to reach this conclusion 😂
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-29 11:13
+
+🚨 this doesn't mean that you shouldn't invest into US stocks or that you can't make money there
+
+yes, it's a bubble - but that's the state of the global financial system. some areas are less of a bubble than others
+
+also, US economy won't crash overnight like many predict here
+
+📖 Quoting from 2025-07-29 10:42:
+┌─ 🇨🇳 i guess the "China just steals western technologies" theory goes down the drain 🥱
+│ 
+│ 👉 notice how there are no billion-dollar valuations on mere promises
+│ 
+│ that's something important that people need to understand about US equity markets - most valuations are fictitious
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-29 10:42
+
+🇨🇳 i guess the "China just steals western technologies" theory goes down the drain 🥱
+
+👉 notice how there are no billion-dollar valuations on mere promises
+
+that's something important that people need to understand about US equity markets - most valuations are fictitious
+
+~ ✨ ~
+
+⏰ 2025-07-29 08:48
+
+🇪🇺 in the EU, Bitcoin still hasn't reached a new all time high
+
+but a little bit more depreciation of EUR against USD can finally bring the FIAT party to the Europeans as well 😂
+
+although in these cases being late to the party is better
+
+~ ✨ ~
+
+⏰ 2025-07-28 21:54
+
+🇷🇺 Bank of Russia explicitly states 12-13% as the average target key interest rate for 2026
+
+and that's exactly what the bond market is pricing in
+
+that's what i mean by this not requiring advanced quantitative or technical analysis  😄
+
+multiple factors in play
+
+📖 Quoting from 2025-07-28 21:46:
+┌─ 3 days ago the Russian Central Bank cut down the key interest rate by 200bp down to 18%
+│ 
+│ the only way from here is further down - and if you look at the Russian bond yields that's exactly what they're telling
+│ 
+│ but honestly you don't need advanced quant to reach this conclusion 😂
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-28 21:46
+
+3 days ago the Russian Central Bank cut down the key interest rate by 200bp down to 18%
+
+the only way from here is further down - and if you look at the Russian bond yields that's exactly what they're telling
+
+but honestly you don't need advanced quant to reach this conclusion 😂
+
+📖 Quoting from 2025-07-15 09:52:
+┌─ 🇷🇺 and indeed Bank of Russia cuts interest rates down to 20%
+│ 
+│ 3 months ago I wrote about how the Russian bond market was pricing in those cuts
+│ 
+│ a month ago the prediction materialized ✅
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-28 21:42
+
+🇷🇺 Russian 3Y bond yield is down ≈20% over the last 3 months 😳
+
+of course - this isn't a surprise to you if you've been following my posts. i wrote extensively about this
+
+the biggest reason behind the sharp drop today is the recent 200bp key interest rate cut down to 18%
+
+📖 Quoting from 2025-07-14 13:12:
+┌─ not all bonds are the same 🇺🇸🇯🇵🇪🇺🇷🇺
+│ 
+│ while US, EU & Japan yields are soaring 📈
+│ 
+│ Russian bond yields are falling 📉
+│ 
+│ 🇷🇺 10Y bond yield down 8% since March
+│ 
+│ just like i wrote more than 3 months ago
+│ 
+│ check my posts for a detailed expiation & what’s coming next
+│ 
+│ 👇
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-28 19:17
+
+btw the gold depreciation today is due to the appreciation of USD
+
+📖 Quoting from 2025-07-28 15:41:
+┌─ consider this gold pullback as a free gift to further extend your long position 🥳
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-28 18:17
+
+when your favorite altcoin goes up in price soon remember one thing:
+
+👉 it likely has to do more with liquidity flows than an increase in the inherent value of your preferred project
+
+rule of thumb: if everything is systemically up - it's liquidity flows 😄
+
+~ ✨ ~
+
+⏰ 2025-07-28 15:41
+
+consider this gold pullback as a free gift to further extend your long position 🥳
+
+📖 Quoting from 2025-07-17 12:54:
+┌─ gold is currently the only asset whose leveraged long position can be hedged by adding more to the long on pullbacks 😄
+│ 
+│ * one of the only - and ofc technically that’s not a hedge - but you can read my previous posts to understand what I mean
+│ 
+│ substance over matter 😉
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-28 10:40
+
+👉 Digital Money ≠ E-Money 👈
+
+🏦 Digital Money - claim on central bank money recorded on a public ledger. A form of public money. No credit risk. Think CBDC
+
+💳 E-Money - claim on commercial bank money. A form of private money. Has credit risk. Think PayPal balance
+
+~ ✨ ~
+
+⏰ 2025-07-27 19:05
+
+balance sheet capacity is defined by regulations
+
+in a world dominated by debt refinancing rather than new credit issuance - the ability to take on more assets and liabilities is more important than interest rates
+
+👉 debt rollover capacity is more important than cost of capital
+
+📖 Quoting from 2025-07-27 17:19:
+┌─ NOTE: Basel III is legally non-binding
+│ 
+│ so for a step 2 you'd want to look into the transposed legislations
+│ 
+│ 🇪🇺 EU:  Capital Requirements Regulation & Capital Requirements Directive
+│ 
+│ 🇺🇸 USA: split throughout Code of Federal Regulations
+│ 
+│ (just ask ChatGPT/LLM & read from there 😄)
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-27 18:29
+
+🇺🇸🤝🇨🇳 US/China tariffs paused for another 90 days
+
+if you read my post from two weeks ago - this isn't a surprise to you
+
+once again - the US is dependent on China financially, economically & infrastructurally 
+
+threats of 100% tariffs against Russia will NOT materialize 🇷🇺
+
+📖 Quoting from 2025-07-14 18:43:
+┌─ i understand that these are secondary tariffs, but there is a grand total of 0% chance of that going in action for any substancial amount of time
+│ 
+│ 🇨🇳 China is Russia's main trading partner. do you really think the US economy can sustain 100% tariffs on their main import source?
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-27 17:19
+
+NOTE: Basel III is legally non-binding
+
+so for a step 2 you'd want to look into the transposed legislations
+
+🇪🇺 EU:  Capital Requirements Regulation & Capital Requirements Directive
+
+🇺🇸 USA: split throughout Code of Federal Regulations
+
+(just ask ChatGPT/LLM & read from there 😄)
+
+📖 Quoting from 2025-07-27 17:12:
+┌─ start by asking ChatGPT or another LLM with the Basel III PDF(s) attached
+│ 
+│ read from there, iterate with questions and validate your understanding
+│ 
+│ you'll probably need to come back to it a few times
+│ 
+│ don't overthink it, a basic prompt like this one is sufficient
+│ 
+│ 👇
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-27 17:12
+
+start by asking ChatGPT or another LLM with the Basel III PDF(s) attached
+
+read from there, iterate with questions and validate your understanding
+
+you'll probably need to come back to it a few times
+
+don't overthink it, a basic prompt like this one is sufficient
+
+👇
+
+📖 Quoting from 2025-07-27 16:56:
+┌─ regulations may sound boring - but they're crucial to understand money, liquidity and financial system as a whole
+│ 
+│ they become fun once contextualized - and govern the rules of credit
+│ 
+│ i'd suggest starting with Basel III - namely liquidity coverage ratio & capital ratio
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-27 16:56
+
+regulations may sound boring - but they're crucial to understand money, liquidity and financial system as a whole
+
+they become fun once contextualized - and govern the rules of credit
+
+i'd suggest starting with Basel III - namely liquidity coverage ratio & capital ratio
+
+~ ✨ ~
+
+⏰ 2025-07-20 09:40
+
+🚀 and indeed the crypto cap increased even more
+
+now, await for a solid $4 Trillion
+
+it's almost like it's correlated with global liquidity flows - or perhaps I'm just really good at guessing 😳
+
+i wrote a lot about this in the past - so read up for details if inerested!
+
+📖 Quoting from 2025-07-13 16:42:
+┌─ 🚀 crypto inflows materialized as expected
+│ 
+│ but wait - it's not over yet
+│ 
+│ more upside to come 👀📈
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-20 09:33
+
+yes - US, China, EU & others will print a lot more as well 😄
+
+that BTC was seized as a part of criminal proceedings. German Code of Criminal Procedure (111p), allows such sales if there's a risk of significant value loss
+
+crypto is extremely volatile & 0.1% insignificant 🤷‍♀️
+
+~ ✨ ~
+
+⏰ 2025-07-20 09:11
+
+the idea is that the more effort it takes to understand something - the more deeply you address your real knowledge gaps, thus the more value you get
+
+as for the back-and-forth interactions i mostly just dictate my question - as ambiguous or as imprecise it may be
+
+📖 Quoting from 2025-07-20 08:58:
+┌─ 📚chatgpt ratio is great a book quality metric in post-LLM era
+│ 
+│ this is how I value the quality of the books that I read. the more time i spend querying LLMs - the more valuable the book is
+│ 
+│ sometimes i spend over an hour to absorb a paragraph - that's how i know it's a goldmine
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-20 08:58
+
+📚chatgpt ratio is great a book quality metric in post-LLM era
+
+this is how I value the quality of the books that I read. the more time i spend querying LLMs - the more valuable the book is
+
+sometimes i spend over an hour to absorb a paragraph - that's how i know it's a goldmine
+
+~ ✨ ~
+
+⏰ 2025-07-20 08:52
+
+💧a liquid asset is one with low credit and duration risk
+
+but the duration of the assets should be compared to the duration of the liabilities - assets are funded by liabilities + equity
+
+duration of assets & liabilities should be as close as possible to minimize duration risk
+
+~ ✨ ~
+
+⏰ 2025-07-18 11:04
+
+not all money (credit) is the same
+
+there's a quality dimension to it as well
+
+credit issued by a central bank is higher quality than the one issued by commercial banks - no credit risk
+
+central bank money is an unambiguous means of settlement for debt - think of legal tender
+
+~ ✨ ~
+
+⏰ 2025-07-17 12:54
+
+gold is currently the only asset whose leveraged long position can be hedged by adding more to the long on pullbacks 😄
+
+* one of the only - and ofc technically that’s not a hedge - but you can read my previous posts to understand what I mean
+
+substance over matter 😉
+
+📖 Quoting from 2025-07-12 15:37:
+┌─ 🚀 you can already feel a new ATH for gold
+│ 
+│ the loading screen is at 96%
+│ 
+│ [🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛] 96%
+│ 
+│ and it won’t stop there
+│ 
+│ price action is showing immaculate breakout vibes 🤩⬇️
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-15 16:09
+
+🇺🇸😳 30Y US bond yield above 5%
+
+📖 Quoting from 2025-05-02 16:20:
+┌─ WOW
+│ 
+│ US 10 Year bond yields are up 2.24% today
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-15 09:52
+
+🇷🇺 and indeed Bank of Russia cuts interest rates down to 20%
+
+3 months ago I wrote about how the Russian bond market was pricing in those cuts
+
+a month ago the prediction materialized ✅
+
+📖 Quoting from 2025-04-21 15:15:
+┌─ 🇷🇺 Russian Central Bank key interest rate is at 21%
+│ 
+│ 3Y Russian Federation bonds are at ≈16.5% yield
+│ 
+│ The market is pricing in upcoming rate cuts
+│ 
+│ @AskPerplexity and @grok will tell you that Ruble & Russian economy are in a bad state. The reality is different
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-14 18:43
+
+i understand that these are secondary tariffs, but there is a grand total of 0% chance of that going in action for any substancial amount of time
+
+🇨🇳 China is Russia's main trading partner. do you really think the US economy can sustain 100% tariffs on their main import source?
+
+📖 Quoting from 2025-07-14 18:29:
+┌─ a reminder that Russia doesn’t trade with USA anymore 🇺🇸🤝🇷🇺 
+│ 
+│ so it's not clear what 100% or 9999% tariffs on Russia will achieve
+│ 
+│ Russia's been offloading US securities for gold since 2018
+│ 
+│ Russia's exports to the US are less than 1% of the total
+└─
+
+~ ✨ ~
+
+⏰ 2025-07-14 18:29
+
+a reminder that Russia doesn’t trade with USA anymore 🇺🇸🤝🇷🇺 
+
+so it's not clear what 100% or 9999% tariffs on Russia will achieve
+
+Russia's been offloading US securities for gold since 2018
+
+Russia's exports to the US are less than 1% of the total
+
+📖 Quoting from 2025-04-08 12:02:
+┌─ 🇷🇺 Russia is immune to US tariffs 
+│ 
+│ Russia's foreign reserves are as follows:
+│ - 0.007% US Treasury bonds
+│ - 35% Gold
+│ 
+│ Russia exports <1% to the US. Russia is a net exporter
+│ 
+│ This makes them protected from US sovereign risk (USD devaluation) & trade risk
+└─
+
+~ ✨ ~
+
 ⏰ 2025-07-14 13:12
 
 not all bonds are the same 🇺🇸🇯🇵🇪🇺🇷🇺
