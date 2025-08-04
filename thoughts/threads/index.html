@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illya&#x27;s Thought Threads</title>
+    
+    <meta property="og:title" content="Illya's Thought Threads" />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content='https://illya.sh/thoughts/threads/' />
+    <meta property="og:image" content='https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp' />
+    <meta property="og:description" content='Threaded conversations and longer-form thoughts' />
+    <meta property="og:site_name" content="Illya's Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content="Illya's Thought Threads" />
+    <meta name="twitter:description" content='Threaded conversations and longer-form thoughts' />
+    <meta name="twitter:image" content='https://illya.sh/thoughts/data/illya_gerasymchuk_thoughts.webp' />
+    <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Thoughts RSS" href="https://illya.sh/thoughts/feed.xml"/>
+    
+    <script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/thoughts/"}, {"@type": "CollectionPage", "name": "Threads - Illya's Thoughts", "url": "https://illya.sh/thoughts/threads/", "description": "Threaded conversations and longer-form thoughts", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}}]}
+</script>
+    
+    <style>
+        :root {
+            --bg-color: #f4f4f4;
+            --container-bg: #ffffff;
+            --box-bg: #fff;
+            --text-color: #333;
+            --secondary-text-color: #555;
+            --light-text-color: #666;
+            --link-color: #007bff;
+            --link-hover-color: #0056b3;
+            --border-color: #ddd;
+            --soft-border-color: #eee;
+            --dashed-border-color: #aaa;
+            --box-shadow-color: rgba(0,0,0,0.08);
+            --disabled-text-color: #aaa;
+            --disabled-bg-color: #f9f9f9;
+            --hover-bg-color: #eee;
+        }
+
+        .dark-mode {
+            --bg-color: #1a1a1a;
+            --container-bg: #2b2b2b;
+            --box-bg: #2b2b2b;
+            --text-color: #e0e0e0;
+            --secondary-text-color: #b0b0b0;
+            --light-text-color: #999;
+            --link-color: #58a6ff;
+            --link-hover-color: #80bfff;
+            --border-color: #444;
+            --soft-border-color: #333;
+            --dashed-border-color: #666;
+            --box-shadow-color: rgba(255,255,255,0.08);
+            --disabled-text-color: #777;
+            --disabled-bg-color: #3a3a3a;
+            --hover-bg-color: #383838;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --container-bg: #2b2b2b;
+                --box-bg: #2b2b2b;
+                --text-color: #e0e0e0;
+                --secondary-text-color: #b0b0b0;
+                --light-text-color: #999;
+                --link-color: #58a6ff;
+                --link-hover-color: #80bfff;
+                --border-color: #444;
+                --soft-border-color: #333;
+                --dashed-border-color: #666;
+                --box-shadow-color: rgba(255,255,255,0.08);
+                --disabled-text-color: #777;
+                --disabled-bg-color: #3a3a3a;
+                --hover-bg-color: #383838;
+            }
+            .light-mode {
+                --bg-color: #f4f4f4;
+                --container-bg: #ffffff;
+                --box-bg: #fff;
+                --text-color: #333;
+                --secondary-text-color: #555;
+                --light-text-color: #666;
+                --link-color: #007bff;
+                --link-hover-color: #0056b3;
+                --border-color: #ddd;
+                --soft-border-color: #eee;
+                --dashed-border-color: #aaa;
+                --box-shadow-color: rgba(0,0,0,0.08);
+                --disabled-text-color: #aaa;
+                --disabled-bg-color: #f9f9f9;
+                --hover-bg-color: #eee;
+            }
+        }
+
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
+        a:visited {
+            color: var(--link-color);
+        }
+
+        .container {
+            background-color: var(--container-bg);
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            max-width: 750px;
+            width: 100%;
+            box-shadow: 0 1px 4px var(--box-shadow-color);
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        /* Profile Box Styling */
+        .profile-box {
+            border: 2px dashed var(--dashed-border-color); /* USE VAR */
+            padding: 15px; 
+            margin-bottom: 30px; 
+            background-color: var(--box-bg); /* USE VAR */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+        }
+        .profile-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0; /* Remove vertical spacing */
+            width: 100%;
+        }
+        .profile-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 1px solid var(--soft-border-color); /* USE VAR */
+            flex-shrink: 0;
+            cursor: pointer; /* Add cursor pointer for toggle */
+            transition: border-color 0.3s ease; /* Smooth transition */
+        }
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .profile-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 2px;
+            color: var(--text-color); /* Ensure uses variable */
+        }
+        .profile-title {
+            color: var(--secondary-text-color); /* USE VAR */
+            font-size: 0.95em;
+        }
+        .profile-links {
+            font-size: 0.9em;
+            color: var(--secondary-text-color); /* USE VAR */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            align-items: center;
+            gap: 8px 16px; 
+            padding: 0; 
+            margin-top: 12px; 
+            line-height: 1.4;
+        }
+        .profile-links a {
+            text-decoration: none;
+            color: var(--link-color); /* USE VAR */
+            transition: color 0.2s ease;
+            white-space: nowrap;
+            padding: 2px 4px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .profile-links a:hover {
+            color: var(--link-hover-color); /* USE VAR */
+            background-color: var(--hover-bg-color);
+        }
+
+        /* Threads header */
+        .threads-header {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: var(--text-color);
+            margin: 0 0 25px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--soft-border-color);
+            text-align: center;
+        }
+
+        /* Thread entry styling */
+        .thread-entry {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--box-bg);
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .thread-entry:hover {
+            background-color: var(--hover-bg-color);
+            border-color: var(--text-color);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .thread-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 1px solid var(--soft-border-color);
+            flex-shrink: 0;
+        }
+
+        .thread-info {
+            flex-grow: 1;
+            min-width: 0;
+        }
+
+        .thread-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: var(--text-color);
+            margin: 0 0 3px 0;
+            line-height: 1.25;
+            word-wrap: break-word;
+        }
+
+        .thread-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 0.8em;
+            color: var(--secondary-text-color);
+            margin-top: 2px;
+            line-height: 1.2;
+        }
+
+        .thread-stats {
+            font-size: 0.75em;
+            color: var(--light-text-color);
+            margin-top: 1px;
+            line-height: 1.2;
+        }
+
+        /* Pagination styling */
+        .pagination {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--soft-border-color);
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: border-color 0.3s ease;
+        }
+        .pagination a, .pagination span {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 0 4px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: var(--link-color);
+            text-decoration: none;
+            transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+            font-size: 0.9em;
+        }
+        .pagination a:hover {
+            background-color: var(--hover-bg-color);
+            color: var(--link-hover-color);
+        }
+        .pagination span.disabled {
+            color: var(--disabled-text-color);
+            background-color: var(--disabled-bg-color);
+            cursor: default;
+            border-color: var(--border-color);
+        }
+        .pagination span.page-info {
+            border: none;
+            color: var(--secondary-text-color);
+            background-color: transparent;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                max-width: 100%;
+            }
+             /* Adjusted Profile Box for Mobile */
+             .profile-box {
+                 padding: 12px; /* Further reduced padding */
+                 margin-bottom: 25px; /* Further reduced margin */
+             }
+            /* Adjusted Profile Content for Mobile */
+            .profile-content {
+                 align-items: center;
+                 justify-content: center;
+                 margin-bottom: 0; /* No spacing between profile content and links */
+            }
+            .profile-img {
+                width: 50px;
+                height: 50px;
+                margin-right: 12px;
+            }
+             .profile-name {
+                 font-size: 1.1em;
+             }
+             .profile-title {
+                 font-size: 0.9em;
+             }
+             /* Adjusted Profile Links for Mobile */
+            .profile-links {
+                font-size: 0.82em;
+                margin-top: 10px;
+                gap: 6px 12px; /* Optimized gap for mobile */
+                justify-content: center; /* Ensure centering on mobile too */
+                line-height: 1.3;
+            }
+            .profile-links a {
+                padding: 3px 6px; /* Slightly more padding for easier mobile tapping */
+                border-radius: 4px;
+            }
+            .threads-header {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+            }
+            .thread-entry {
+                padding: 12px;
+                margin-bottom: 12px;
+            }
+            .thread-image {
+                width: 50px;
+                height: 50px;
+                margin-right: 12px;
+            }
+            .thread-title {
+                font-size: 1em;
+            }
+            .thread-meta {
+                flex-direction: column;
+                gap: 2px;
+                font-size: 0.75em;
+            }
+            .thread-stats {
+                font-size: 0.7em;
+                margin-top: 1px;
+            }
+            .pagination {
+                margin-top: 20px;
+                padding-top: 15px;
+                font-size: 0.85em;
+            }
+            .pagination a, .pagination span {
+                padding: 6px 10px;
+                margin: 0 2px;
+            }
+            .pagination span.page-info {
+                display: none;
+            }
+        }
+
+        /* Extra small screens (iPhone SE, etc.) */
+        @media (max-width: 375px) {
+            .profile-links {
+                font-size: 0.78em;
+                gap: 4px 8px; /* Tighter gap for very small screens */
+                margin-top: 8px;
+            }
+            .profile-links a {
+                padding: 2px 4px; /* Compact padding for very small screens */
+                border-radius: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-box">
+    <div class="profile-content">
+        <img src="../data/profile.png" alt="Profile Picture" class="profile-img">
+        <div class="profile-details">
+            <div class="profile-name">Illya Gerasymchuk</div>
+            <div class="profile-title">Entrepreneur / Engineer</div>
+        </div>
+    </div>
+    <div class="profile-links">
+        <a href="https://illya.sh" target="_blank">🏠 Homepage</a><a href="https://illya.sh/thoughts/">💭 Thoughts</a><a href="mailto:hello@illya.sh" target="_blank">✉️ Email</a><a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a><a href="https://github.com/iluxonchik" target="_blank">💻 GitHub</a><a href="https://illya.sh/thoughts/feed.xml" target="_blank">📡 RSS</a>
+    </div>
+</div>
+
+        <h2 class="threads-header">🧵 Threads/Articles 🧵</h2>
+        <div class="threads-section">
+            <a href="@1749828575-6.html" class="thread-entry">
+    <img src="../data/images/26a3b562-7ba3-5685-b375-488a0467d0c7.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🤯 Gold may just go straight to $3500 in the next few hours #6</div>
+        <div class="thread-meta">
+            <span>Started: 2025-06-13</span>
+            <span>Updated: 2025-08-04</span>
+        </div>
+        <div class="thread-stats">9 thoughts</div>
+    </div>
+</a>
+<a href="@1750077674-7.html" class="thread-entry">
+    <img src="../data/images/2ec3e60e-4d59-55e3-b19e-fbcde51ac5b1.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">&#x27;The market is never wrong&#x27; #7</div>
+        <div class="thread-meta">
+            <span>Started: 2025-06-16</span>
+            <span>Updated: 2025-08-04</span>
+        </div>
+        <div class="thread-stats">7 thoughts</div>
+    </div>
+</a>
+<a href="@1750949562-2.html" class="thread-entry">
+    <img src="../data/images/d6e0084d-9eea-5aa9-bba3-83676ec2b0c2.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">central banks will continue to buy gold #2</div>
+        <div class="thread-meta">
+            <span>Started: 2025-06-26</span>
+            <span>Updated: 2025-08-03</span>
+        </div>
+        <div class="thread-stats">2 thoughts</div>
+    </div>
+</a>
+<a href="@1745406138-1.html" class="thread-entry">
+    <img src="../data/images/a8fb9f23-2e7e-557b-8b53-0fd6f1903cdf.png" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🇨🇳China has been increasing their gold reserves YTD</div>
+        <div class="thread-meta">
+            <span>Started: 2025-04-23</span>
+            <span>Updated: 2025-08-03</span>
+        </div>
+        <div class="thread-stats">2 thoughts</div>
+    </div>
+</a>
+<a href="@1754234694-1.html" class="thread-entry">
+    <img src="../data/images/3f78b5cc-e543-5bfd-a064-ce57fb710770.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🇺🇸 USD dominance is alluring, accounting for ≈70% of currency usage worldwide</div>
+        <div class="thread-meta">
+            <span>Started: 2025-08-03</span>
+            <span>Updated: 2025-08-03</span>
+        </div>
+        <div class="thread-stats">2 thoughts</div>
+    </div>
+</a>
+<a href="@1754148538-1.html" class="thread-entry">
+    <img src="../data/images/52fa0c1d-9c44-53d6-9143-0a0dfa383f68.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008</div>
+        <div class="thread-meta">
+            <span>Started: 2025-08-02</span>
+            <span>Updated: 2025-08-02</span>
+        </div>
+        <div class="thread-stats">7 thoughts</div>
+    </div>
+</a>
+<a href="@1749828575-5.html" class="thread-entry">
+    <img src="../data/images/26a3b562-7ba3-5685-b375-488a0467d0c7.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🤯 Gold may just go straight to $3500 in the next few hours #5</div>
+        <div class="thread-meta">
+            <span>Started: 2025-06-13</span>
+            <span>Updated: 2025-08-02</span>
+        </div>
+        <div class="thread-stats">9 thoughts</div>
+    </div>
+</a>
+<a href="@1753951176-1.html" class="thread-entry">
+    <img src="../data/images/a198dbb5-c131-58b4-a125-63556713d5d4.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">how does the Federal Reserve set interest rates?</div>
+        <div class="thread-meta">
+            <span>Started: 2025-07-31</span>
+            <span>Updated: 2025-07-31</span>
+        </div>
+        <div class="thread-stats">27 thoughts</div>
+    </div>
+</a>
+<a href="@1753950929-1.html" class="thread-entry">
+    <img src="../data/images/8852659d-decb-5e24-a0c6-efa97f92a870.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">the FED left the interest rates unchanged - at the 4.25%-4.50% target</div>
+        <div class="thread-meta">
+            <span>Started: 2025-07-31</span>
+            <span>Updated: 2025-07-31</span>
+        </div>
+        <div class="thread-stats">2 thoughts</div>
+    </div>
+</a>
+<a href="@1744110142-2.html" class="thread-entry">
+    <img src="../data/images/844af59f-ba57-5422-bbdb-58a534b13d05.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🇷🇺 Russia is immune to US tariffs #2</div>
+        <div class="thread-meta">
+            <span>Started: 2025-04-08</span>
+            <span>Updated: 2025-07-30</span>
+        </div>
+        <div class="thread-stats">4 thoughts</div>
+    </div>
+</a>
+<a href="@1750077674-8.html" class="thread-entry">
+    <img src="../data/images/2ec3e60e-4d59-55e3-b19e-fbcde51ac5b1.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">&#x27;The market is never wrong&#x27; #8</div>
+        <div class="thread-meta">
+            <span>Started: 2025-06-16</span>
+            <span>Updated: 2025-07-30</span>
+        </div>
+        <div class="thread-stats">2 thoughts</div>
+    </div>
+</a>
+<a href="@1745244922-2.html" class="thread-entry">
+    <img src="../data/images/e29907be-37d6-5d0d-ae19-34e9adc760c7.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🇷🇺 Russian Central Bank key interest rate is at 21% #2</div>
+        <div class="thread-meta">
+            <span>Started: 2025-04-21</span>
+            <span>Updated: 2025-07-29</span>
+        </div>
+        <div class="thread-stats">4 thoughts</div>
+    </div>
+</a>
+<a href="@1753782122-1.html" class="thread-entry">
+    <img src="../data/images/546fe946-3886-5b11-9083-aac8e49d74d5.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🇨🇳 i guess the &quot;China just steals western technologies&quot; theory goes down the drain 🥱</div>
+        <div class="thread-meta">
+            <span>Started: 2025-07-29</span>
+            <span>Updated: 2025-07-29</span>
+        </div>
+        <div class="thread-stats">2 thoughts</div>
+    </div>
+</a>
+<a href="@1745244922-1.html" class="thread-entry">
+    <img src="../data/images/e29907be-37d6-5d0d-ae19-34e9adc760c7.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🇷🇺 Russian Central Bank key interest rate is at 21% #1</div>
+        <div class="thread-meta">
+            <span>Started: 2025-04-21</span>
+            <span>Updated: 2025-07-28</span>
+        </div>
+        <div class="thread-stats">4 thoughts</div>
+    </div>
+</a>
+<a href="@1744324679-1.html" class="thread-entry">
+    <img src="../data/images/966c213a-04a4-598a-bb93-dee8b3e8e1c1.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">Ruble is a gold success story ✨</div>
+        <div class="thread-meta">
+            <span>Started: 2025-04-10</span>
+            <span>Updated: 2025-07-28</span>
+        </div>
+        <div class="thread-stats">3 thoughts</div>
+    </div>
+</a>
+<a href="@1749828575-4.html" class="thread-entry">
+    <img src="../data/images/26a3b562-7ba3-5685-b375-488a0467d0c7.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🤯 Gold may just go straight to $3500 in the next few hours #4</div>
+        <div class="thread-meta">
+            <span>Started: 2025-06-13</span>
+            <span>Updated: 2025-07-28</span>
+        </div>
+        <div class="thread-stats">8 thoughts</div>
+    </div>
+</a>
+<a href="@1753631798-1.html" class="thread-entry">
+    <img src="../data/images/ef041c0d-5ec4-5834-acaa-afc1bece820d.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">regulations may sound boring - but they&#x27;re crucial to understand money, liquidity and financial system as a whole</div>
+        <div class="thread-meta">
+            <span>Started: 2025-07-27</span>
+            <span>Updated: 2025-07-27</span>
+        </div>
+        <div class="thread-stats">4 thoughts</div>
+    </div>
+</a>
+<a href="@1744110142-1.html" class="thread-entry">
+    <img src="../data/images/844af59f-ba57-5422-bbdb-58a534b13d05.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🇷🇺 Russia is immune to US tariffs #1</div>
+        <div class="thread-meta">
+            <span>Started: 2025-04-08</span>
+            <span>Updated: 2025-07-27</span>
+        </div>
+        <div class="thread-stats">4 thoughts</div>
+    </div>
+</a>
+<a href="@1748030582-1.html" class="thread-entry">
+    <img src="../data/images/c570670d-de70-5b68-8e35-8cbecf789f45.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">⚡️ Crypto market cap down 2.6% today</div>
+        <div class="thread-meta">
+            <span>Started: 2025-05-23</span>
+            <span>Updated: 2025-07-20</span>
+        </div>
+        <div class="thread-stats">3 thoughts</div>
+    </div>
+</a>
+<a href="@1752998324-1.html" class="thread-entry">
+    <img src="../data/images/9c82a665-eee2-5bc3-aa94-ce9f4be88a5f.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">📚chatgpt ratio is great a book quality metric in post-LLM era</div>
+        <div class="thread-meta">
+            <span>Started: 2025-07-20</span>
+            <span>Updated: 2025-07-20</span>
+        </div>
+        <div class="thread-stats">2 thoughts</div>
+    </div>
+</a>
+<a href="@1746199256-1.html" class="thread-entry">
+    <img src="../data/images/60fca5a7-679d-5830-bd94-2f87ee3fdd03.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">WOW</div>
+        <div class="thread-meta">
+            <span>Started: 2025-05-02</span>
+            <span>Updated: 2025-07-15</span>
+        </div>
+        <div class="thread-stats">2 thoughts</div>
+    </div>
+</a>
+<a href="@1750077674-6.html" class="thread-entry">
+    <img src="../data/images/2ec3e60e-4d59-55e3-b19e-fbcde51ac5b1.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">&#x27;The market is never wrong&#x27; #6</div>
+        <div class="thread-meta">
+            <span>Started: 2025-06-16</span>
+            <span>Updated: 2025-07-14</span>
+        </div>
+        <div class="thread-stats">3 thoughts</div>
+    </div>
+</a>
+<a href="@1743796491-2.html" class="thread-entry">
+    <img src="../data/images/15bce4d4-da26-5a96-9c1b-080c65de1d2f.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">Silver back to August 2020 price #2</div>
+        <div class="thread-meta">
+            <span>Started: 2025-04-04</span>
+            <span>Updated: 2025-07-14</span>
+        </div>
+        <div class="thread-stats">2 thoughts</div>
+    </div>
+</a>
+<a href="@1749828575-3.html" class="thread-entry">
+    <img src="../data/images/26a3b562-7ba3-5685-b375-488a0467d0c7.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🤯 Gold may just go straight to $3500 in the next few hours #3</div>
+        <div class="thread-meta">
+            <span>Started: 2025-06-13</span>
+            <span>Updated: 2025-07-14</span>
+        </div>
+        <div class="thread-stats">6 thoughts</div>
+    </div>
+</a>
+<a href="@1752134042-2.html" class="thread-entry">
+    <img src="../data/images/8e2d752d-7e7e-5b8b-96c2-09e121234063.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🇨🇳 china&#x27;s central bank uses USD value as a key driver in economic policies #2</div>
+        <div class="thread-meta">
+            <span>Started: 2025-07-10</span>
+            <span>Updated: 2025-07-10</span>
+        </div>
+        <div class="thread-stats">5 thoughts</div>
+    </div>
+</a>
+        </div>
+        <nav class="pagination"><span class="newer disabled">← Newer</span><span class="page-info">Page 1 of 3</span><a href="2.html" class="older">Older →</a></nav>
+    </div>
+</body>
+</html>

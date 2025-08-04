@@ -6,6 +6,306 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-08-04 18:28
+
+Bitcoin is still in a weekly uptrend it must either go up or down to ≈$109500 - a strong weekly support
+
+two factors in play here:
+
+1️⃣ USD index - inverse correlation
+2️⃣ Global liquidity- correlation
+
+keep watching central bank's open market operations & balance sheets
+
+~ ✨ ~
+
+⏰ 2025-08-04 15:01
+
+🚀 gold approaching $3400. $3300 was a good price for longs - like I wrote a week ago
+
+currently gold is one of the only assets where leverage entails a much lesser risk
+
+upside price pressure is coming from several points
+
+📖 Quoting from 2025-08-01 21:45:
+┌─ gold price is back up to its price 2 weeks ago
+│ 
+│ so it indeed was a good idea to long it at the pullback
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-04 14:54
+
+5 days ago I wrote that USD/RUB rate will fall. 5 days later it's down ≈2%
+
+despite oil being down - gold is up
+
+Ruble has hedge from multiple sides
+
+📖 Quoting from 2025-08-01 18:14:
+┌─ if you've read my previous posts you know that gold is ≈36% of Russia's international reserves
+│ 
+│ this is taken straight from the Bank of Russia's balance sheet statement
+│ 
+│ 100% of it is stored in Russia, thus no counterparty risk
+│ 
+│ critical component of Ruble's strength
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-03 18:42
+
+🇨🇳 China's gold holdings are at their highest level in 43 years
+
+gold is now 6% of PBoC international reserves. but that's still below the world average of ≈14%. expect that gap to continue to shorten further
+
+see my drawings on this nice chart spanning over 47 years i found
+
+~ ✨ ~
+
+⏰ 2025-08-03 17:16
+
+both Russia & China increased their gold holdings since I wrote this 😄
+
+indeed - central banks are continuing to buy the gold dips
+
+📖 Quoting from 2025-06-26 15:52:
+┌─ central banks will continue to buy gold
+│ 
+│ you'll be able to confirm that in their upcoming balance sheets reports. pay special attention to China & Russia
+│ 
+│ enjoy the dip, because smart money is!
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-03 17:06
+
+China sold US treasuries and bought gold - just like I wrote over 3 months ago
+
+gold now accounts for ≈6% of PBoC international reserves, while US treasury holdings are ≈40% from their peak in 2013
+
+off-ramp from USD debt to alternative assets continues its progress
+
+📖 Quoting from 2025-04-23 12:02:
+┌─ 🇨🇳China has been increasing their gold reserves YTD
+│ 
+│ Gold price keeps going up - major central banks continue to load up
+│ 
+│ Gold is a hedge against USD. Tariffs are a medium of USD weaponization
+│ 
+│ 👉 Expect US securities sell-off for gold by People's Bank of China
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-03 16:28
+
+the 70% USD dominance here is as calculated by the Fed across the chosen 5 chosen buckets - with the end result being a weighted composite measure
+
+so don't read this as a literal 70% of all cross-border transactions
+
+📖 Quoting from 2025-08-03 16:24:
+┌─ 🇺🇸 USD dominance is alluring, accounting for ≈70% of currency usage worldwide
+│ 
+│ even countries that do relatively little trade with US have most of their transactions done in US dollars
+│ 
+│ ex: 🇮🇳 India invoices 86% of its exports in USD, while only 15% of its exports being to US
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-03 16:24
+
+🇺🇸 USD dominance is alluring, accounting for ≈70% of currency usage worldwide
+
+even countries that do relatively little trade with US have most of their transactions done in US dollars
+
+ex: 🇮🇳 India invoices 86% of its exports in USD, while only 15% of its exports being to US
+
+~ ✨ ~
+
+⏰ 2025-08-02 17:39
+
+legally mortgage backed securities are bonds since they are tradable debt securities
+
+but they're not a plain bond, due to the option of borrower's early repayment
+
+Macaulay or modified duration used for Treasuries doesn't work - you need effective/option-adjusted duration
+
+📖 Quoting from 2025-08-02 17:33:
+┌─ the duration formula for MBS assumes for some pre-payments
+│ 
+│ if those happen at a smaller rate - the duration increases
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-02 17:33
+
+the duration formula for MBS assumes for some pre-payments
+
+if those happen at a smaller rate - the duration increases
+
+📖 Quoting from 2025-08-02 17:28:
+┌─ raising yields means lower incentives to re-finance mortgages which reduces the amount of pre-payments
+│ 
+│ thus, the duration increases when yields are raising - so even a higher price decrease
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-02 17:28
+
+raising yields means lower incentives to re-finance mortgages which reduces the amount of pre-payments
+
+thus, the duration increases when yields are raising - so even a higher price decrease
+
+📖 Quoting from 2025-08-02 17:19:
+┌─ optionality/convexity premium in mortgage backed securities is interesting
+│ 
+│ when market yields fall the price should rise, but since borrowers take advantage of lower mortgage rates to make early payments - the price does not raise as much, due to lowered duration
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-02 17:19
+
+optionality/convexity premium in mortgage backed securities is interesting
+
+when market yields fall the price should rise, but since borrowers take advantage of lower mortgage rates to make early payments - the price does not raise as much, due to lowered duration
+
+📖 Quoting from 2025-08-02 17:00:
+┌─ Fed's balance sheet expansion with agency MBS reduced risks in liquidity, market depth and optionality/convexity
+│ 
+│ this is a crucial point to understand - it wasn't just the Fed buying agency MBS, but the explicit government guarantee that accompanied it
+│ 
+│ thus, the yields fell
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-02 17:00
+
+Fed's balance sheet expansion with agency MBS reduced risks in liquidity, market depth and optionality/convexity
+
+this is a crucial point to understand - it wasn't just the Fed buying agency MBS, but the explicit government guarantee that accompanied it
+
+thus, the yields fell
+
+📖 Quoting from 2025-08-02 16:52:
+┌─ Ginnie & Fannie Mae conservatorship in Sept 2008 made agency MBS default risk free
+│ 
+│ essentially, the US Treasury covers all losses from GNMA and FNMA up to $200 billion each
+│ 
+│ from the total $400B budget ≈$170B are still available
+│ 
+│ once exhausted it will surely be increased
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-02 16:52
+
+Ginnie & Fannie Mae conservatorship in Sept 2008 made agency MBS default risk free
+
+essentially, the US Treasury covers all losses from GNMA and FNMA up to $200 billion each
+
+from the total $400B budget ≈$170B are still available
+
+once exhausted it will surely be increased
+
+📖 Quoting from 2025-08-02 16:28:
+┌─ to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008
+│ 
+│ buying mortgage backed securities raises their price and provides liquidity for dealers. this directly pushes down the yields
+│ 
+│ expect some MBS QE to come in the near future
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-02 16:28
+
+to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008
+
+buying mortgage backed securities raises their price and provides liquidity for dealers. this directly pushes down the yields
+
+expect some MBS QE to come in the near future
+
+~ ✨ ~
+
+⏰ 2025-08-02 00:59
+
+gold hasn't broken the weekly uptrend - note the higher highs
+
+buying pressure today pushed the price up ≈2.5%
+
+TA is an excellent tool to gauge the price action
+
+📖 Quoting from 2025-08-01 21:45:
+┌─ gold price is back up to its price 2 weeks ago
+│ 
+│ so it indeed was a good idea to long it at the pullback
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-01 21:45
+
+gold price is back up to its price 2 weeks ago
+
+so it indeed was a good idea to long it at the pullback
+
+📖 Quoting from 2025-07-28 15:41:
+┌─ consider this gold pullback as a free gift to further extend your long position 🥳
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-01 18:14
+
+if you've read my previous posts you know that gold is ≈36% of Russia's international reserves
+
+this is taken straight from the Bank of Russia's balance sheet statement
+
+100% of it is stored in Russia, thus no counterparty risk
+
+critical component of Ruble's strength
+
+📖 Quoting from 2025-08-01 17:58:
+┌─ 🇺🇸🇷🇺 USD/RUB rate already fell to July 24th close, below 80
+│ 
+│ although it's also important to note that there are several factors at play - USD index is also down today
+│ 
+│ despite oil down - gold is up. this is about the monetary policy of Russia and their balance sheet structure
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-01 17:58
+
+🇺🇸🇷🇺 USD/RUB rate already fell to July 24th close, below 80
+
+although it's also important to note that there are several factors at play - USD index is also down today
+
+despite oil down - gold is up. this is about the monetary policy of Russia and their balance sheet structure
+
+📖 Quoting from 2025-07-29 21:34:
+┌─ 🇷🇺 oil up is GOOD news for Russia & Ruble
+│ 
+│ every surplus above $60/barrel of Urals oil increases FX reserves in NWF (Yuan or gold) - an interplay between MoF and CBR
+│ 
+│ exporters pay taxes in Ruble - so higher buying pressure
+│ 
+│ mark my words:
+│ 👉 you'll see USD/RUB exchange rate fall
+└─
+
+~ ✨ ~
+
 ⏰ 2025-07-31 11:06
 
 and this is how the Federal Reserve steers the federal funds rate/interest rates in the market within the target range 🏦✨
@@ -417,7 +717,7 @@ different types of lending have different rates in the market, as it's a (somewh
 │ 
 │ some think that they define a single rate - namely the overnight lending rate - i.e. the rate at which the banks lend to each other overnight
 │ 
-│ but that’s not the case ❌
+│ but that's not the case ❌
 └─
 
 ~ ✨ ~
@@ -428,7 +728,7 @@ how does the Federal Reserve set interest rates?
 
 some think that they define a single rate - namely the overnight lending rate - i.e. the rate at which the banks lend to each other overnight
 
-but that’s not the case ❌
+but that's not the case ❌
 
 ~ ✨ ~
 
@@ -499,7 +799,7 @@ NOTE: it's up ≈8% over the past 5 days while the US dollar index is up over 2%
 scroll back to my June posts to know what's coming next
 
 📖 Quoting from 2025-06-16 13:41:
-┌─ “The market is never wrong”
+┌─ 'The market is never wrong'
 │ 
 │ A lot of big accounts posting about how the market knows everything & prices accordingly - even before the official news
 │ 
@@ -507,7 +807,7 @@ scroll back to my June posts to know what's coming next
 │ 
 │ Now wait & watch crude oil & gold raise up even more in price very soon
 │ 
-│ This isn’t a joke
+│ This isn't a joke
 └─
 
 ~ ✨ ~
@@ -564,7 +864,7 @@ wait & watch what comes next - I wrote about that as well 😁
 │ 
 │ significant geopolitical events introduce volatility - but my thesis on increasing oil, gold & other precious metals + commodities has little to do with that
 │ 
-│ 👉 it’s about global liquidity flows & bond markets
+│ 👉 it's about global liquidity flows & bond markets
 └─
 
 ~ ✨ ~
@@ -706,7 +1006,7 @@ the biggest reason behind the sharp drop today is the recent 200bp key interest 
 │ 
 │ just like i wrote more than 3 months ago
 │ 
-│ check my posts for a detailed expiation & what’s coming next
+│ check my posts for a detailed expiation & what's coming next
 │ 
 │ 👇
 └─
@@ -740,7 +1040,7 @@ consider this gold pullback as a free gift to further extend your long position 
 📖 Quoting from 2025-07-17 12:54:
 ┌─ gold is currently the only asset whose leveraged long position can be hedged by adding more to the long on pullbacks 😄
 │ 
-│ * one of the only - and ofc technically that’s not a hedge - but you can read my previous posts to understand what I mean
+│ * one of the only - and ofc technically that's not a hedge - but you can read my previous posts to understand what I mean
 │ 
 │ substance over matter 😉
 └─
@@ -937,7 +1237,7 @@ central bank money is an unambiguous means of settlement for debt - think of leg
 
 gold is currently the only asset whose leveraged long position can be hedged by adding more to the long on pullbacks 😄
 
-* one of the only - and ofc technically that’s not a hedge - but you can read my previous posts to understand what I mean
+* one of the only - and ofc technically that's not a hedge - but you can read my previous posts to understand what I mean
 
 substance over matter 😉
 
@@ -948,7 +1248,7 @@ substance over matter 😉
 │ 
 │ [🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛] 96%
 │ 
-│ and it won’t stop there
+│ and it won't stop there
 │ 
 │ price action is showing immaculate breakout vibes 🤩⬇️
 └─
@@ -994,7 +1294,7 @@ i understand that these are secondary tariffs, but there is a grand total of 0% 
 🇨🇳 China is Russia's main trading partner. do you really think the US economy can sustain 100% tariffs on their main import source?
 
 📖 Quoting from 2025-07-14 18:29:
-┌─ a reminder that Russia doesn’t trade with USA anymore 🇺🇸🤝🇷🇺 
+┌─ a reminder that Russia doesn't trade with USA anymore 🇺🇸🤝🇷🇺 
 │ 
 │ so it's not clear what 100% or 9999% tariffs on Russia will achieve
 │ 
@@ -1007,7 +1307,7 @@ i understand that these are secondary tariffs, but there is a grand total of 0% 
 
 ⏰ 2025-07-14 18:29
 
-a reminder that Russia doesn’t trade with USA anymore 🇺🇸🤝🇷🇺 
+a reminder that Russia doesn't trade with USA anymore 🇺🇸🤝🇷🇺 
 
 so it's not clear what 100% or 9999% tariffs on Russia will achieve
 
@@ -1041,14 +1341,14 @@ Russian bond yields are falling 📉
 
 just like i wrote more than 3 months ago
 
-check my posts for a detailed expiation & what’s coming next
+check my posts for a detailed expiation & what's coming next
 
 👇
 
 📖 Quoting from 2025-04-10 23:37:
 ┌─ Ruble is a gold success story ✨
 │ 
-│ Sanctions, tariffs, raising M2 - it doesn’t care
+│ Sanctions, tariffs, raising M2 - it doesn't care
 │ 
 │ Central Bank Of Russia sold off their US bonds & loaded up on gold
 │ 
@@ -1078,7 +1378,7 @@ more upside to come 👀
 │ 
 │ significant geopolitical events introduce volatility - but my thesis on increasing oil, gold & other precious metals + commodities has little to do with that
 │ 
-│ 👉 it’s about global liquidity flows & bond markets
+│ 👉 it's about global liquidity flows & bond markets
 └─
 
 ~ ✨ ~
@@ -1089,7 +1389,7 @@ more upside to come 👀
 
 🍷 adding this to list of my predictions that aged like fine wine
 
-the upside price action won’t stop here. i explained the reasons for it and what comes next in my previous posts
+the upside price action won't stop here. i explained the reasons for it and what comes next in my previous posts
 
 stay tuned 📻
 
@@ -1098,7 +1398,7 @@ stay tuned 📻
 │ 
 │ After a tariffs-induced pullback of 15% today, silver is now at start of COVID prices
 │ 
-│  So much inflation that still isn’t priced in 
+│  So much inflation that still isn't priced in 
 │ 
 │ It will recover. And a lot!
 └─
@@ -1116,7 +1416,7 @@ stay tuned 📻
 │ 
 │ [🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛] 96%
 │ 
-│ and it won’t stop there
+│ and it won't stop there
 │ 
 │ price action is showing immaculate breakout vibes 🤩⬇️
 └─
@@ -1129,10 +1429,10 @@ stay tuned 📻
 
 significant geopolitical events introduce volatility - but my thesis on increasing oil, gold & other precious metals + commodities has little to do with that
 
-👉 it’s about global liquidity flows & bond markets
+👉 it's about global liquidity flows & bond markets
 
 📖 Quoting from 2025-06-16 13:41:
-┌─ “The market is never wrong”
+┌─ 'The market is never wrong'
 │ 
 │ A lot of big accounts posting about how the market knows everything & prices accordingly - even before the official news
 │ 
@@ -1140,7 +1440,7 @@ significant geopolitical events introduce volatility - but my thesis on increasi
 │ 
 │ Now wait & watch crude oil & gold raise up even more in price very soon
 │ 
-│ This isn’t a joke
+│ This isn't a joke
 └─
 
 ~ ✨ ~
@@ -1171,12 +1471,12 @@ the loading screen is at 96%
 
 [🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛] 96%
 
-and it won’t stop there
+and it won't stop there
 
 price action is showing immaculate breakout vibes 🤩⬇️
 
 📖 Quoting from 2025-06-22 12:08:
-┌─ gold's behavior during the current “bullrun” has been consistently to flip previous week's resistance to new support
+┌─ gold's behavior during the current 'bullrun' has been consistently to flip previous week's resistance to new support
 │ 
 │ in the chart - the green vertical lines are weekly levels
 │ 
@@ -1191,7 +1491,7 @@ price action is showing immaculate breakout vibes 🤩⬇️
 
 Bitcoin all time high in the EU is delayed ⏱️
 
-but that’s actually a good sign for 🇪🇺😄
+but that's actually a good sign for 🇪🇺😄
 
 ~ ✨ ~
 
@@ -1199,13 +1499,13 @@ but that’s actually a good sign for 🇪🇺😄
 
 🇩🇪😱 Germany lost $2.75 billion on Bitcoin
 
-ok, let’s look at the numbers:
+ok, let's look at the numbers:
 
 1️⃣ German's yearly public budget spending is ≈$2 trillion
 2️⃣ $2.75 billion is 0.138% of $2 trillion
 3️⃣ okay then 🤷‍♀️
 
-*this is also assuming they didn’t invest that money into something productive
+*this is also assuming they didn't invest that money into something productive
 
 ~ ✨ ~
 
@@ -1260,7 +1560,7 @@ so it has a very direct effect on asset prices wherever your are 😄
 📖 Quoting from 2025-07-10 09:41:
 ┌─ 🇺🇸🇨🇳 USA & China are the global liquidity drivers in financial markets
 │ 
-│ since 2000, each injected ≈$6 trillion of public money into markets. that’s ≈40% of global liquidity 🤯
+│ since 2000, each injected ≈$6 trillion of public money into markets. that's ≈40% of global liquidity 🤯
 │ 
 │ in 2025 - China is leading with injections
 └─
@@ -1271,7 +1571,7 @@ so it has a very direct effect on asset prices wherever your are 😄
 
 🇺🇸🇨🇳 USA & China are the global liquidity drivers in financial markets
 
-since 2000, each injected ≈$6 trillion of public money into markets. that’s ≈40% of global liquidity 🤯
+since 2000, each injected ≈$6 trillion of public money into markets. that's ≈40% of global liquidity 🤯
 
 in 2025 - China is leading with injections
 
@@ -1282,7 +1582,7 @@ in 2025 - China is leading with injections
 │ 
 │ thus, relative inflation is kept under more control
 │ 
-│ 🇨🇳🇺🇸 china’s CPI is below US's ⬇️
+│ 🇨🇳🇺🇸 china's CPI is below US's ⬇️
 └─
 
 ~ ✨ ~
@@ -1295,12 +1595,12 @@ easing monetary conditions in the US means more capital in circulation globally 
 
 thus, relative inflation is kept under more control
 
-🇨🇳🇺🇸 china’s CPI is below US's ⬇️
+🇨🇳🇺🇸 china's CPI is below US's ⬇️
 
 📖 Quoting from 2025-07-10 08:54:
-┌─ 🇨🇳 china’s central bank uses USD value as a key driver in economic policies
+┌─ 🇨🇳 china's central bank uses USD value as a key driver in economic policies
 │ 
-│ the monetary easing policy is adjusted by PBoC based on the dollar’s trend - up or down
+│ the monetary easing policy is adjusted by PBoC based on the dollar's trend - up or down
 │ 
 │ weaker USD + expected liquidity USD injections = Yuan/renminbi injections
 └─
@@ -1309,9 +1609,9 @@ thus, relative inflation is kept under more control
 
 ⏰ 2025-07-10 08:54
 
-🇨🇳 china’s central bank uses USD value as a key driver in economic policies
+🇨🇳 china's central bank uses USD value as a key driver in economic policies
 
-the monetary easing policy is adjusted by PBoC based on the dollar’s trend - up or down
+the monetary easing policy is adjusted by PBoC based on the dollar's trend - up or down
 
 weaker USD + expected liquidity USD injections = Yuan/renminbi injections
 
@@ -1323,9 +1623,9 @@ for LLM Engine Optimization add JSON-LD
 
 it made my thoughts microblog easy to parse and navigate by all major LLMs - including ChatGPT, Grok & Gemini
 
-this is an easy LEO strategy with immediate results. and it’s very easy to add - you can vibe-code it
+this is an easy LEO strategy with immediate results. and it's very easy to add - you can vibe-code it
 
-here’s an example ⬇️
+here's an example ⬇️
 
 📖 Quoting from 2025-07-08 17:50:
 ┌─ ask ChatGPT what are Illya Gerasymchuk's latest thoughts
@@ -1343,29 +1643,29 @@ here’s an example ⬇️
 
 JSON-LD is a must for LEO/SEO
 
-it’s metadata for LLM in HTML - so essentially for the web
+it's metadata for LLM in HTML - so essentially for the web
 
 once I added it to my microblog/thoughts feed - ChatGPT was able to read & navigate it flawlessly
 
 before it would only retrieve partial information & fail to navigate from page to page
 
 📖 Quoting from 2025-07-08 18:24:
-┌─ here’s how it works from a new ChatGPT chat
+┌─ here's how it works from a new ChatGPT chat
 │ 
-│ i didn’t provide any URLs - and it correctly found my website (indexing), and was able to retrieve the verbatim data from there and correctly link it
+│ i didn't provide any URLs - and it correctly found my website (indexing), and was able to retrieve the verbatim data from there and correctly link it
 │ 
-│ JSON-LD adds structure metadata that LLMs can read - instead of your “messy” HTML, JS & CSS
+│ JSON-LD adds structure metadata that LLMs can read - instead of your 'messy' HTML, JS & CSS
 └─
 
 ~ ✨ ~
 
 ⏰ 2025-07-08 18:24
 
-here’s how it works from a new ChatGPT chat
+here's how it works from a new ChatGPT chat
 
-i didn’t provide any URLs - and it correctly found my website (indexing), and was able to retrieve the verbatim data from there and correctly link it
+i didn't provide any URLs - and it correctly found my website (indexing), and was able to retrieve the verbatim data from there and correctly link it
 
-JSON-LD adds structure metadata that LLMs can read - instead of your “messy” HTML, JS & CSS
+JSON-LD adds structure metadata that LLMs can read - instead of your 'messy' HTML, JS & CSS
 
 📖 Quoting from 2025-07-08 17:50:
 ┌─ ask ChatGPT what are Illya Gerasymchuk's latest thoughts
@@ -1395,7 +1695,7 @@ made possible by adding structural metadata to HTML
 
 this is why funding repo rates are a very useful indicator
 
-if you’re just arriving here - read the previous posts 😄
+if you're just arriving here - read the previous posts 😄
 
 you can also follow along the quoted posts from below. just click on it ⬇️
 
@@ -1478,9 +1778,9 @@ the whole world is dependent on the US financial system, both public & private
 📖 Quoting from 2025-07-07 18:34:
 ┌─ this will also further fuel the asset bubble & devaluate USD
 │ 
-│ so it doesn’t mean that stock & crypto will go up perpetually - it’s a cycle
+│ so it doesn't mean that stock & crypto will go up perpetually - it's a cycle
 │ 
-│ of course, at some point the debt bubble will pop - but it’s unlikely to happen tomorrow 😄
+│ of course, at some point the debt bubble will pop - but it's unlikely to happen tomorrow 😄
 └─
 
 ~ ✨ ~
@@ -1489,9 +1789,9 @@ the whole world is dependent on the US financial system, both public & private
 
 this will also further fuel the asset bubble & devaluate USD
 
-so it doesn’t mean that stock & crypto will go up perpetually - it’s a cycle
+so it doesn't mean that stock & crypto will go up perpetually - it's a cycle
 
-of course, at some point the debt bubble will pop - but it’s unlikely to happen tomorrow 😄
+of course, at some point the debt bubble will pop - but it's unlikely to happen tomorrow 😄
 
 📖 Quoting from 2025-07-07 18:33:
 ┌─ central bank liquidity injection includes direct & indirect QE, interest rates & policies
@@ -1516,7 +1816,7 @@ this means inflation & gold up
 at least short-term: equities up, crypto up
 
 📖 Quoting from 2025-07-07 18:33:
-┌─ using FED’s SRF for liquidity means cash/liqudity is scarce
+┌─ using FED's SRF for liquidity means cash/liqudity is scarce
 │ 
 │ there is a lot of short-term debt to be refinanced or default
 │ 
@@ -1527,7 +1827,7 @@ at least short-term: equities up, crypto up
 
 ⏰ 2025-07-07 18:33
 
-using FED’s SRF for liquidity means cash/liqudity is scarce
+using FED's SRF for liquidity means cash/liqudity is scarce
 
 there is a lot of short-term debt to be refinanced or default
 
@@ -1554,7 +1854,7 @@ this is also because repo markets are short-term debt instruments - so the signa
 📖 Quoting from 2025-07-07 18:31:
 ┌─ regarding liquidity flows - repo markets are just one of the sources
 │ 
-│ so it’s more useful when you combine it with others, such as the central bank policies, how much short-term debt is maturing, and the overall leverage level
+│ so it's more useful when you combine it with others, such as the central bank policies, how much short-term debt is maturing, and the overall leverage level
 └─
 
 ~ ✨ ~
@@ -1563,7 +1863,7 @@ this is also because repo markets are short-term debt instruments - so the signa
 
 regarding liquidity flows - repo markets are just one of the sources
 
-so it’s more useful when you combine it with others, such as the central bank policies, how much short-term debt is maturing, and the overall leverage level
+so it's more useful when you combine it with others, such as the central bank policies, how much short-term debt is maturing, and the overall leverage level
 
 📖 Quoting from 2025-07-07 18:30:
 ┌─ if regulatory ratios are breached, they must be restored
@@ -1590,7 +1890,7 @@ then, deduce its implication on the liquidity flow & into which sector the funds
 📖 Quoting from 2025-07-07 18:28:
 ┌─ so the market operations of dealers/market-markers is quite predictable
 │ 
-│ you just have to look at their business & regulatory model - from there it’s almost plain math under regulatory constraints
+│ you just have to look at their business & regulatory model - from there it's almost plain math under regulatory constraints
 └─
 
 ~ ✨ ~
@@ -1599,7 +1899,7 @@ then, deduce its implication on the liquidity flow & into which sector the funds
 
 so the market operations of dealers/market-markers is quite predictable
 
-you just have to look at their business & regulatory model - from there it’s almost plain math under regulatory constraints
+you just have to look at their business & regulatory model - from there it's almost plain math under regulatory constraints
 
 📖 Quoting from 2025-07-07 18:28:
 ┌─ dealers/market makers are legally limited in their balance sheet
@@ -1644,7 +1944,7 @@ so you see more immediate effects from federal reserve's SRF operations / repo f
 📖 Quoting from 2025-07-07 18:23:
 ┌─ shorter-term US bonds yields react IMMEDIATELY to repo funding rate
 │ 
-│ notice the huge green candle on June 30th - the same day of FED’s SRF $11B volume
+│ notice the huge green candle on June 30th - the same day of FED's SRF $11B volume
 │ 
 │ June 30th is when the FED SRF volume recorded ≈$11B
 │ 
@@ -1657,7 +1957,7 @@ so you see more immediate effects from federal reserve's SRF operations / repo f
 
 shorter-term US bonds yields react IMMEDIATELY to repo funding rate
 
-notice the huge green candle on June 30th - the same day of FED’s SRF $11B volume
+notice the huge green candle on June 30th - the same day of FED's SRF $11B volume
 
 June 30th is when the FED SRF volume recorded ≈$11B
 
@@ -1682,7 +1982,7 @@ eventually, the bonds would be sold for cash
 again - think of the timescale: funding rates refer to much shorter periods
 
 📖 Quoting from 2025-07-07 18:19:
-┌─ repo funding rates don’t affect US treasury yields immediately due to time scale
+┌─ repo funding rates don't affect US treasury yields immediately due to time scale
 │ 
 │ treasury bond yield expectation is over 10 years, and repo rates are a short-term debt funding mechanism
 │ 
@@ -1693,7 +1993,7 @@ again - think of the timescale: funding rates refer to much shorter periods
 
 ⏰ 2025-07-07 18:19
 
-repo funding rates don’t affect US treasury yields immediately due to time scale
+repo funding rates don't affect US treasury yields immediately due to time scale
 
 treasury bond yield expectation is over 10 years, and repo rates are a short-term debt funding mechanism
 
@@ -1722,22 +2022,22 @@ different timescales:
 so even if a funding rate raises for a few days, the longer-term bond yields may not be affected
 
 📖 Quoting from 2025-07-07 18:16:
-┌─ note that FED’s SFR doesn’t lower the treasury yields per se
+┌─ note that FED's SFR doesn't lower the treasury yields per se
 │ 
-│ it’s more correct to say that it puts downward pressure on them, in the form of a $500B buffer
+│ it's more correct to say that it puts downward pressure on them, in the form of a $500B buffer
 │ 
-│ & note that treasuries probably wouldn’t be the first in line for liquidation
+│ & note that treasuries probably wouldn't be the first in line for liquidation
 └─
 
 ~ ✨ ~
 
 ⏰ 2025-07-07 18:16
 
-note that FED’s SFR doesn’t lower the treasury yields per se
+note that FED's SFR doesn't lower the treasury yields per se
 
-it’s more correct to say that it puts downward pressure on them, in the form of a $500B buffer
+it's more correct to say that it puts downward pressure on them, in the form of a $500B buffer
 
-& note that treasuries probably wouldn’t be the first in line for liquidation
+& note that treasuries probably wouldn't be the first in line for liquidation
 
 📖 Quoting from 2025-07-07 18:15:
 ┌─ how does SRF lower UST bond yields?
@@ -1783,12 +2083,12 @@ dealers/market makers can use:
 2️⃣ agency debt
 3️⃣ agency mortgage-backed securities
 
-agency debt instruments aren’t issued by US Treasury, but by government sponsored enterprises (GSE) & federal agencies
+agency debt instruments aren't issued by US Treasury, but by government sponsored enterprises (GSE) & federal agencies
 
 📖 Quoting from 2025-07-07 18:06:
 ┌─ current SRF minimum bid rate is 4.5%
 │ 
-│ that’s the annualized rate that the federal reserve sets requires dor overnight repo loans via Standing Repo Facility
+│ that's the annualized rate that the federal reserve sets requires dor overnight repo loans via Standing Repo Facility
 │ 
 │ dealers/market makers can borrow cash against US treasuries for 1 day at ≈4.5% annualized directly from the FED
 └─
@@ -1799,12 +2099,12 @@ agency debt instruments aren’t issued by US Treasury, but by government sponso
 
 current SRF minimum bid rate is 4.5%
 
-that’s the annualized rate that the federal reserve sets requires dor overnight repo loans via Standing Repo Facility
+that's the annualized rate that the federal reserve sets requires dor overnight repo loans via Standing Repo Facility
 
 dealers/market makers can borrow cash against US treasuries for 1 day at ≈4.5% annualized directly from the FED
 
 📖 Quoting from 2025-07-07 18:01:
-┌─ in practice, FED’s SRF is used when there is a scarcity of liquidity/cash
+┌─ in practice, FED's SRF is used when there is a scarcity of liquidity/cash
 │ 
 │ the market has US bonds & needs cash, so lenders increase rates
 │ 
@@ -1815,7 +2115,7 @@ dealers/market makers can borrow cash against US treasuries for 1 day at ≈4.5%
 
 ⏰ 2025-07-07 18:01
 
-in practice, FED’s SRF is used when there is a scarcity of liquidity/cash
+in practice, FED's SRF is used when there is a scarcity of liquidity/cash
 
 the market has US bonds & needs cash, so lenders increase rates
 
@@ -1866,11 +2166,11 @@ SRF = Standing Repo Facility
 │ 
 │ 👉 TL;DR: interest rate cuts & QE incoming
 │ 
-│ $11B is insignificant - but it’s an early sign: there is a lack of liquidity/cash
+│ $11B is insignificant - but it's an early sign: there is a lack of liquidity/cash
 │ 
 │ if undressed, will lead to systemic defaults. existing debt needs to be refinanced
 │ 
-│ the fix/what’s next? see TL;DR
+│ the fix/what's next? see TL;DR
 └─
 
 ~ ✨ ~
@@ -1881,24 +2181,24 @@ SRF = Standing Repo Facility
 
 👉 TL;DR: interest rate cuts & QE incoming
 
-$11B is insignificant - but it’s an early sign: there is a lack of liquidity/cash
+$11B is insignificant - but it's an early sign: there is a lack of liquidity/cash
 
 if undressed, will lead to systemic defaults. existing debt needs to be refinanced
 
-the fix/what’s next? see TL;DR
+the fix/what's next? see TL;DR
 
 ~ ✨ ~
 
 ⏰ 2025-07-05 19:49
 
-btw I’m not saying Ethereum won’t reach 1 million USD per ETH, but rather pointing out that comparing Ethereum to the bond market and oil is a stretch
+btw I'm not saying Ethereum won't reach 1 million USD per ETH, but rather pointing out that comparing Ethereum to the bond market and oil is a stretch
 
-it’s also more accurate to account for the whole crypto cap in this context
+it's also more accurate to account for the whole crypto cap in this context
 
 📖 Quoting from 2025-07-05 19:43:
 ┌─ $29,000 per lb of orange juice.
 │ 
-│ You’re early.
+│ You're early.
 │ 
 │ 🍊😄
 └─
@@ -1909,7 +2209,7 @@ it’s also more accurate to account for the whole crypto cap in this context
 
 $29,000 per lb of orange juice.
 
-You’re early.
+You're early.
 
 🍊😄
 
@@ -1919,18 +2219,18 @@ You’re early.
 
 all of this very bullish for gold & other commodities
 
-it’s not just gold & silver - you may have seen the recent appreciation of platinum
+it's not just gold & silver - you may have seen the recent appreciation of platinum
 
 those commodities have still have price to catch up on & that has been signaled by their volatility
 
-gold up 40% on the year isn’t normal
+gold up 40% on the year isn't normal
 
 📖 Quoting from 2025-07-05 18:35:
 ┌─ so today it may not be wise to assume that the FED will hike interest rates into double digits to lower the CPI/inflation
 │ 
 │ rather - the interest rates are headed down, bc of challenge in refinancing debt
 │ 
-│ that’s what I meant by focusing on historical patterns from this century
+│ that's what I meant by focusing on historical patterns from this century
 └─
 
 ~ ✨ ~
@@ -1941,12 +2241,12 @@ so today it may not be wise to assume that the FED will hike interest rates into
 
 rather - the interest rates are headed down, bc of challenge in refinancing debt
 
-that’s what I meant by focusing on historical patterns from this century
+that's what I meant by focusing on historical patterns from this century
 
 📖 Quoting from 2025-07-05 18:32:
 ┌─ ex: in the 1980's US fought high inflation by raising interest rates towards ≈20%
 │ 
-│ if the FED did that today - the global financial markets, alongside the US would be destroyed. there wouldn’t be enough liquidity to refinance the debt
+│ if the FED did that today - the global financial markets, alongside the US would be destroyed. there wouldn't be enough liquidity to refinance the debt
 └─
 
 ~ ✨ ~
@@ -1955,7 +2255,7 @@ that’s what I meant by focusing on historical patterns from this century
 
 ex: in the 1980's US fought high inflation by raising interest rates towards ≈20%
 
-if the FED did that today - the global financial markets, alongside the US would be destroyed. there wouldn’t be enough liquidity to refinance the debt
+if the FED did that today - the global financial markets, alongside the US would be destroyed. there wouldn't be enough liquidity to refinance the debt
 
 📖 Quoting from 2025-07-05 18:27:
 ┌─ using historical behavior can be a great alpha - but you should probably focus on the patterns from this century
@@ -2008,7 +2308,7 @@ equity, cryptocurrencies all go up in prices. bubble further fueled. you know wh
 Gold & Co. is a great hedge
 
 📖 Quoting from 2025-07-05 18:12:
-┌─ once FED lowers interest rates, it’s likely to put downward pressure on yields - assuming term premia doesn’t increase by more
+┌─ once FED lowers interest rates, it's likely to put downward pressure on yields - assuming term premia doesn't increase by more
 │ 
 │ in the end, the yields will be higher than in the last 20 years, for the same FED funds rate
 │ 
@@ -2019,7 +2319,7 @@ Gold & Co. is a great hedge
 
 ⏰ 2025-07-05 18:12
 
-once FED lowers interest rates, it’s likely to put downward pressure on yields - assuming term premia doesn’t increase by more
+once FED lowers interest rates, it's likely to put downward pressure on yields - assuming term premia doesn't increase by more
 
 in the end, the yields will be higher than in the last 20 years, for the same FED funds rate
 
@@ -2046,7 +2346,7 @@ US bond yields are high under tighter monetary conditions - liquidity is pro cyc
 📖 Quoting from 2025-07-05 15:51:
 ┌─ the higher use of lower quality collateral has pro-cyclical effects
 │ 
-│ if the price of collateral falls during economic downturn - you’ll get a lot of margin calls & insolvencies. this will further put pressure on short-term funding mechanisms, which already lack HQ collateral
+│ if the price of collateral falls during economic downturn - you'll get a lot of margin calls & insolvencies. this will further put pressure on short-term funding mechanisms, which already lack HQ collateral
 └─
 
 ~ ✨ ~
@@ -2055,11 +2355,11 @@ US bond yields are high under tighter monetary conditions - liquidity is pro cyc
 
 the 14 year old dormant bitcoin wallet transactions are likely OTC operations
 
-if you want to buy/sell >$1B worth of bitcoin, you’re not going to do it through coinbase 😄
+if you want to buy/sell >$1B worth of bitcoin, you're not going to do it through coinbase 😄
 
 i've encountered numerous alternative explanations - some very creative
 
-🪒 remember: occam’s razor
+🪒 remember: occam's razor
 
 ~ ✨ ~
 
@@ -2067,7 +2367,7 @@ i've encountered numerous alternative explanations - some very creative
 
 the higher use of lower quality collateral has pro-cyclical effects
 
-if the price of collateral falls during economic downturn - you’ll get a lot of margin calls & insolvencies. this will further put pressure on short-term funding mechanisms, which already lack HQ collateral
+if the price of collateral falls during economic downturn - you'll get a lot of margin calls & insolvencies. this will further put pressure on short-term funding mechanisms, which already lack HQ collateral
 
 📖 Quoting from 2025-07-05 15:40:
 ┌─ US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)
@@ -2112,7 +2412,7 @@ RSS is indeed a useful standard 😄
 │ 
 │ the image is included in 2 different ways - so should be compatible with your favorite RSS reader
 │ 
-│ here’s how it looks like ⬇️
+│ here's how it looks like ⬇️
 └─
 
 ~ ✨ ~
@@ -2125,7 +2425,7 @@ so if a thought/post has an attached image - it will also be displayed in the RS
 
 the image is included in 2 different ways - so should be compatible with your favorite RSS reader
 
-here’s how it looks like ⬇️
+here's how it looks like ⬇️
 
 📖 Quoting from 2025-07-05 01:56:
 ┌─ 📡 so if you open the though's feed in an RSS reader you can see all the posts
@@ -2134,7 +2434,7 @@ here’s how it looks like ⬇️
 │ 
 │ everything is static so very SEO/LLM friendly
 │ 
-│ + as a bonus you’ll probably have integrated search as well 😄
+│ + as a bonus you'll probably have integrated search as well 😄
 └─
 
 ~ ✨ ~
@@ -2147,7 +2447,7 @@ without a need for centralized services. the RSS can be served via various mediu
 
 everything is static so very SEO/LLM friendly
 
-+ as a bonus you’ll probably have integrated search as well 😄
++ as a bonus you'll probably have integrated search as well 😄
 
 📖 Quoting from 2025-07-04 22:40:
 ┌─ 🚀📡 added an RSS feed to my thoughts
@@ -2175,7 +2475,7 @@ gold did exactly this during the 2008 GFC
 
 its share in collateral usage in global repo markets increased
 
-and in 2025 we’re seeing the same trend, with gold share in repo market collateral increasing
+and in 2025 we're seeing the same trend, with gold share in repo market collateral increasing
 
 📖 Quoting from 2025-07-03 17:52:
 ┌─ as more markets develop over gold - so will its usage as collateral in short-term/repo credit markets
@@ -2234,9 +2534,9 @@ the debt still needs to be refinanced 🤷‍♀️
 📖 Quoting from 2025-07-03 17:50:
 ┌─ now you might think that gold would be a perfect collateral for repos, but currently:
 │ 
-│ it’s too volatile - price may drop > 10% on systemic risks
+│ it's too volatile - price may drop > 10% on systemic risks
 │ 
-│ there is no lender of last resort (you can’t print gold or have swap lines for it 😀)
+│ there is no lender of last resort (you can't print gold or have swap lines for it 😀)
 └─
 
 ~ ✨ ~
@@ -2245,14 +2545,14 @@ the debt still needs to be refinanced 🤷‍♀️
 
 now you might think that gold would be a perfect collateral for repos, but currently:
 
-it’s too volatile - price may drop > 10% on systemic risks
+it's too volatile - price may drop > 10% on systemic risks
 
-there is no lender of last resort (you can’t print gold or have swap lines for it 😀)
+there is no lender of last resort (you can't print gold or have swap lines for it 😀)
 
 📖 Quoting from 2025-07-03 17:49:
 ┌─ most of debt is issued for re-financing of existing debt, not for new debt
 │ 
-│ repo markets are the backbone of that. and since they’re collateralized loans - there is a huge demand for collateral/safe assets
+│ repo markets are the backbone of that. and since they're collateralized loans - there is a huge demand for collateral/safe assets
 └─
 
 ~ ✨ ~
@@ -2261,7 +2561,7 @@ there is no lender of last resort (you can’t print gold or have swap lines for
 
 most of debt is issued for re-financing of existing debt, not for new debt
 
-repo markets are the backbone of that. and since they’re collateralized loans - there is a huge demand for collateral/safe assets
+repo markets are the backbone of that. and since they're collateralized loans - there is a huge demand for collateral/safe assets
 
 📖 Quoting from 2025-05-27 15:22:
 ┌─ 90% of all newly issued debt is for refinancing of existing debt, not new debt/financing
@@ -2281,7 +2581,7 @@ remember those HUGE repo markets that I talked about?
 
 US bonds/treasuries are the favorite collateral for those transactions
 
-and that’s why they’re not going away anytime soon
+and that's why they're not going away anytime soon
 
 but of course, the financial system is slowly diversifying
 
@@ -2290,11 +2590,11 @@ but of course, the financial system is slowly diversifying
 │ 
 │ they underpin the global financial system
 │ 
-│ however, there’s not many DeFi protocols addressing this part of the market
+│ however, there's not many DeFi protocols addressing this part of the market
 │ 
 │ i may pick it up in the near future
 │ 
-│ if you’re working on something similar - hit me up!
+│ if you're working on something similar - hit me up!
 └─
 
 ~ ✨ ~
@@ -2312,11 +2612,11 @@ yes, you can lend on AAVE, but rates vary greatly
 │ 
 │ they underpin the global financial system
 │ 
-│ however, there’s not many DeFi protocols addressing this part of the market
+│ however, there's not many DeFi protocols addressing this part of the market
 │ 
 │ i may pick it up in the near future
 │ 
-│ if you’re working on something similar - hit me up!
+│ if you're working on something similar - hit me up!
 └─
 
 ~ ✨ ~
@@ -2327,11 +2627,11 @@ repo markets are HUGE - about the size of USD M2!
 
 they underpin the global financial system
 
-however, there’s not many DeFi protocols addressing this part of the market
+however, there's not many DeFi protocols addressing this part of the market
 
 i may pick it up in the near future
 
-if you’re working on something similar - hit me up!
+if you're working on something similar - hit me up!
 
 📖 Quoting from 2025-07-03 17:44:
 ┌─ in the end, you get your UST bond back
@@ -2404,7 +2704,7 @@ so gold can't be in "Tier"
 📖 Quoting from 2025-07-02 20:43:
 ┌─ 🚨🏦 claims that gold is a Tier 1 asset under Basel III are FALSE:
 │ 
-│ 1. gold is NOT a Tier capital under Basel - it’s on the liability, not asset side
+│ 1. gold is NOT a Tier capital under Basel - it's on the liability, not asset side
 │ 
 │ 2. gold had 0% risk weight since Basel I (no haircut)
 │ 
@@ -2417,14 +2717,14 @@ so gold can't be in "Tier"
 
 🏦 under Basel III  gold is subject additional funding requirements
 
-there’s a 85% required stable funding (RSF) factor on gold under net stable funding ratio (NSFR)
+there's a 85% required stable funding (RSF) factor on gold under net stable funding ratio (NSFR)
 
 so for every $1B of gold that a bank holds - $850M must be funded with longer term retail or wholesale funding
 
 📖 Quoting from 2025-07-02 20:43:
 ┌─ 🚨🏦 claims that gold is a Tier 1 asset under Basel III are FALSE:
 │ 
-│ 1. gold is NOT a Tier capital under Basel - it’s on the liability, not asset side
+│ 1. gold is NOT a Tier capital under Basel - it's on the liability, not asset side
 │ 
 │ 2. gold had 0% risk weight since Basel I (no haircut)
 │ 
@@ -2437,7 +2737,7 @@ so for every $1B of gold that a bank holds - $850M must be funded with longer te
 
 🚨🏦 claims that gold is a Tier 1 asset under Basel III are FALSE:
 
-1. gold is NOT a Tier capital under Basel - it’s on the liability, not asset side
+1. gold is NOT a Tier capital under Basel - it's on the liability, not asset side
 
 2. gold had 0% risk weight since Basel I (no haircut)
 
@@ -2449,7 +2749,7 @@ so for every $1B of gold that a bank holds - $850M must be funded with longer te
 
 volatility is at best - a part of a the risk
 
-an increase in volatility doesn’t necessarily mean an increase in risk
+an increase in volatility doesn't necessarily mean an increase in risk
 
 e.g.:
 shortages in global liquidity put mismatched liabilities at a loss. safe assets raise in price
@@ -2464,7 +2764,7 @@ pre-market tesla is already down to a weekly support back from July 2023
 
 the narrative that equities price is mainly linked with EBIDTA or other revenue/profit metrics is false
 
-it’s all about where the credit flows
+it's all about where the credit flows
 
 ~ ✨ ~
 
@@ -2474,14 +2774,14 @@ check the correlation between FED swap line volumes and Bitcoin price
 
 large spikes in swap volume trigger an uptrend in Bitcoin
 
-understanding these global liquidity flows helps to visualize them as a part of the larger system and understand where it’s likely to move next
+understanding these global liquidity flows helps to visualize them as a part of the larger system and understand where it's likely to move next
 
 📖 Quoting from 2025-06-29 13:57:
 ┌─ new currency in circulation is just one of the side-effects
 │ 
 │ and that transition is neither direct, nor instant
 │ 
-│ before these funds effectively become new currency, they flow into financial markets - that’s why you see the stock market going up first
+│ before these funds effectively become new currency, they flow into financial markets - that's why you see the stock market going up first
 │ 
 │ the same for risky assets
 └─
@@ -2494,7 +2794,7 @@ new currency in circulation is just one of the side-effects
 
 and that transition is neither direct, nor instant
 
-before these funds effectively become new currency, they flow into financial markets - that’s why you see the stock market going up first
+before these funds effectively become new currency, they flow into financial markets - that's why you see the stock market going up first
 
 the same for risky assets
 
@@ -2523,7 +2823,7 @@ and then you wonder about inflation 😄
 📖 Quoting from 2025-06-29 13:43:
 ┌─ 💧FED swap lines = infinite liquidity pool
 │ 
-│ 👉 here’s how:
+│ 👉 here's how:
 │ 
 │ 1️⃣ central banks exchange their foreign currency for USD, 7-80 days later, they reverse the exchange at the same rate + fee
 │ 
@@ -2538,7 +2838,7 @@ and then you wonder about inflation 😄
 
 💧FED swap lines = infinite liquidity pool
 
-👉 here’s how:
+👉 here's how:
 
 1️⃣ central banks exchange their foreign currency for USD, 7-80 days later, they reverse the exchange at the same rate + fee
 
@@ -2561,7 +2861,7 @@ try it yourself: go to one of my posts/thoughts, press/click comment emoji, writ
 📖 Quoting from 2025-06-28 09:51:
 ┌─ 🚀 added stateless comments on posts
 │ 
-│ i wanted to add comments to my statically-generated thoughts site, but didn’t want to depend on storage or server-side logic
+│ i wanted to add comments to my statically-generated thoughts site, but didn't want to depend on storage or server-side logic
 │ 
 │ solution: send comments via e-mail, X/twitter or telegram
 │ 
@@ -2574,7 +2874,7 @@ try it yourself: go to one of my posts/thoughts, press/click comment emoji, writ
 
 🚀 added stateless comments on posts
 
-i wanted to add comments to my statically-generated thoughts site, but didn’t want to depend on storage or server-side logic
+i wanted to add comments to my statically-generated thoughts site, but didn't want to depend on storage or server-side logic
 
 solution: send comments via e-mail, X/twitter or telegram
 
@@ -2586,20 +2886,20 @@ demo in reply ⬇️
 
 central bank balance sheets are an underrated resource for understanding the global liquidity moves
 
-if you’re following my posts - you already know that
+if you're following my posts - you already know that
 
 rising US bond yields, ruble & gold
 
 falling USD
 
-i’ve been warning about it for months
+i've been warning about it for months
 
 90's style data = massive alpha 😂⬇️
 
 📖 Quoting from 2025-06-26 15:52:
 ┌─ central banks will continue to buy gold
 │ 
-│ you’ll be able to confirm that in their upcoming balance sheets reports. pay special attention to China & Russia
+│ you'll be able to confirm that in their upcoming balance sheets reports. pay special attention to China & Russia
 │ 
 │ enjoy the dip, because smart money is!
 └─
@@ -2610,7 +2910,7 @@ i’ve been warning about it for months
 
 beware that a lot of accounts with massive leverage trades are paid advertisements
 
-wether it’s by the exchange or larger parts of the industry. don’t forget that smart money needs a counterparty 😉
+wether it's by the exchange or larger parts of the industry. don't forget that smart money needs a counterparty 😉
 
 a lot of them, specially the larger are definitely hedging behind the scenes
 
@@ -2621,19 +2921,19 @@ a lot of them, specially the larger are definitely hedging behind the scenes
 expected? yes ✅
 normal? no ❌
 
-gold shouldn’t be up 50% in a year
-and you shouldn’t ignore what that means
+gold shouldn't be up 50% in a year
+and you shouldn't ignore what that means
 
 i wrote this back in 2013. as the current highs are consolidated - it will move up further
 
-maybe when you’re reading this the above has already played out 😄
+maybe when you're reading this the above has already played out 😄
 
 📖 Quoting from 2023-12-11 23:23:
 ┌─ If you only understood how cheap $GOLD is now. To put it in perspective, its current FIAT price only reflects inflation prior to 2011 🤯
 │ 
 │ Any direct or indirect inflation following that time period has not yet been accounted for
 │ 
-│ You don’t have to trust me. Trust the price action
+│ You don't have to trust me. Trust the price action
 └─
 
 ~ ✨ ~
@@ -2642,7 +2942,7 @@ maybe when you’re reading this the above has already played out 😄
 
 central banks will continue to buy gold
 
-you’ll be able to confirm that in their upcoming balance sheets reports. pay special attention to China & Russia
+you'll be able to confirm that in their upcoming balance sheets reports. pay special attention to China & Russia
 
 enjoy the dip, because smart money is!
 
@@ -2696,12 +2996,12 @@ at maturity the repurchaser repurchases the collateral
 
 initial raise, now followed by a pullback
 
-large geopolitical events do such moves, however don’t you for a minute think that the thesis is now invalidated 😄
+large geopolitical events do such moves, however don't you for a minute think that the thesis is now invalidated 😄
 
 both of these commodities will continue their uptrend
 
 📖 Quoting from 2025-06-16 13:41:
-┌─ “The market is never wrong”
+┌─ 'The market is never wrong'
 │ 
 │ A lot of big accounts posting about how the market knows everything & prices accordingly - even before the official news
 │ 
@@ -2709,7 +3009,7 @@ both of these commodities will continue their uptrend
 │ 
 │ Now wait & watch crude oil & gold raise up even more in price very soon
 │ 
-│ This isn’t a joke
+│ This isn't a joke
 └─
 
 ~ ✨ ~
@@ -2737,7 +3037,7 @@ are you ready?
 📖 Quoting from 2025-06-21 18:42:
 ┌─ soooo… new gold ATH next week?
 │ 
-│ look at gold's price chart with weekly candles - it’s unbelievable 🤯
+│ look at gold's price chart with weekly candles - it's unbelievable 🤯
 │ 
 │ gold is going up like a risky asset - but it in fact is a reflection of risk
 │ 
@@ -2748,7 +3048,7 @@ are you ready?
 
 ⏰ 2025-06-22 14:34
 
-now it’s official 😄
+now it's official 😄
 
 ethereum price fell to $2180 📉
 
@@ -2766,9 +3066,9 @@ please note, I wrote the original post more than a week ago - back then the mark
 
 ⏰ 2025-06-22 14:20
 
-UN’s Model Double Taxation Convention has a clear key benefit over OCED’s
+UN's Model Double Taxation Convention has a clear key benefit over OCED's
 
-since UN’s model gives more taxing rights for the source state - it’s the one that makes sense for developing economies
+since UN's model gives more taxing rights for the source state - it's the one that makes sense for developing economies
 
 imagine a developed nation benefiting from cheaper labor in the source state - who created the workforce in the first place, and having their tax base eroded in favor of resident state
 
@@ -2777,7 +3077,7 @@ so the resident state would get double benefit:
 1️⃣ cheaper labor
 2️⃣ higher tax income for the government 
 
-on the other hand you could argue for OCED’s model favoring a higher volume of investment, thus effectively distributing more wages throughout the economy. this channels the funds more directly to the consumers, which would end up increasing their purchasing power more than if it had to go through the government first
+on the other hand you could argue for OCED's model favoring a higher volume of investment, thus effectively distributing more wages throughout the economy. this channels the funds more directly to the consumers, which would end up increasing their purchasing power more than if it had to go through the government first
 
 but then again, you must remember the global market is NOT a free market economy. existing legislation overall favors more developed countries, so protective measures for developing countries in the international tax law may make a lot of sense
 
@@ -2785,18 +3085,18 @@ but then again, you must remember the global market is NOT a free market economy
 
 ⏰ 2025-06-22 12:10
 
-btw here I’m looking at PAXG (Paxos Gold) token
+btw here I'm looking at PAXG (Paxos Gold) token
 
 essentially, a 1:1 gold-backed ERC-20 token
 
 there is also XAUT from Tether
 
-whenever TradFi markets are closed - it’s your go-to for alpha insights
+whenever TradFi markets are closed - it's your go-to for alpha insights
 
-can’t believe that in 2025 there is still such a thing as market closure 🤯
+can't believe that in 2025 there is still such a thing as market closure 🤯
 
 📖 Quoting from 2025-06-22 12:08:
-┌─ gold's behavior during the current “bullrun” has been consistently to flip previous week's resistance to new support
+┌─ gold's behavior during the current 'bullrun' has been consistently to flip previous week's resistance to new support
 │ 
 │ in the chart - the green vertical lines are weekly levels
 │ 
@@ -2809,7 +3109,7 @@ can’t believe that in 2025 there is still such a thing as market closure 🤯
 
 ⏰ 2025-06-22 12:08
 
-gold's behavior during the current “bullrun” has been consistently to flip previous week's resistance to new support
+gold's behavior during the current 'bullrun' has been consistently to flip previous week's resistance to new support
 
 in the chart - the green vertical lines are weekly levels
 
@@ -2824,7 +3124,7 @@ Road to $3500 🚀
 │ 
 │ markets are closed now, but blockchain never sleeps
 │ 
-│ on-chain gold-backed token futures may give you a heads-up - they’re up ≈1.3% from yesterday
+│ on-chain gold-backed token futures may give you a heads-up - they're up ≈1.3% from yesterday
 │ 
 │ interesting to see gold moves after open
 │ 
@@ -2885,7 +3185,7 @@ COMEX gold futures trading open in 13h
 
 markets are closed now, but blockchain never sleeps
 
-on-chain gold-backed token futures may give you a heads-up - they’re up ≈1.3% from yesterday
+on-chain gold-backed token futures may give you a heads-up - they're up ≈1.3% from yesterday
 
 interesting to see gold moves after open
 
@@ -2894,7 +3194,7 @@ spoiler: higher price
 📖 Quoting from 2025-06-21 18:42:
 ┌─ soooo… new gold ATH next week?
 │ 
-│ look at gold's price chart with weekly candles - it’s unbelievable 🤯
+│ look at gold's price chart with weekly candles - it's unbelievable 🤯
 │ 
 │ gold is going up like a risky asset - but it in fact is a reflection of risk
 │ 
@@ -3010,7 +3310,7 @@ the same is true for bitcoin's support
 📖 Quoting from 2025-06-21 22:44:
 ┌─ and a week later Ethereum indeed falls sharply towards the monthly support 😄
 │ 
-│ read up my other posts for more detail - if you’re interested in the rationale behind this move
+│ read up my other posts for more detail - if you're interested in the rationale behind this move
 └─
 
 ~ ✨ ~
@@ -3019,7 +3319,7 @@ the same is true for bitcoin's support
 
 and a week later Ethereum indeed falls sharply towards the monthly support 😄
 
-read up my other posts for more detail - if you’re interested in the rationale behind this move
+read up my other posts for more detail - if you're interested in the rationale behind this move
 
 📖 Quoting from 2025-06-13 16:55:
 ┌─ While Ethereum has built a strong-ish support in the current area, it currently looks more likely to fall towards the ≈$2180 monthly support
@@ -3046,7 +3346,7 @@ listen to it 🦻
 │ 
 │ After a tariffs-induced pullback of 15% today, silver is now at start of COVID prices
 │ 
-│  So much inflation that still isn’t priced in 
+│  So much inflation that still isn't priced in 
 │ 
 │ It will recover. And a lot!
 └─
@@ -3060,7 +3360,7 @@ both, gold & crude oil are finishing their consolidation before a further upside
 bookmark this one for later 💾
 
 📖 Quoting from 2025-06-16 13:41:
-┌─ “The market is never wrong”
+┌─ 'The market is never wrong'
 │ 
 │ A lot of big accounts posting about how the market knows everything & prices accordingly - even before the official news
 │ 
@@ -3068,14 +3368,14 @@ bookmark this one for later 💾
 │ 
 │ Now wait & watch crude oil & gold raise up even more in price very soon
 │ 
-│ This isn’t a joke
+│ This isn't a joke
 └─
 
 ~ ✨ ~
 
 ⏰ 2025-06-21 18:48
 
-hello hello looks like there wasn’t much momentum behind ethereum's pullback
+hello hello looks like there wasn't much momentum behind ethereum's pullback
 
 the selling pressure is strong
 
@@ -3084,7 +3384,7 @@ price downside towards $2180 incoming
 📖 Quoting from 2025-06-20 19:23:
 ┌─ 🎯 Ethereum heading down towards $2180
 │ 
-│ exactly as I’ve been writing for several days
+│ exactly as I've been writing for several days
 │ 
 │ so many accounts with huge following were promising you an immediate bull run
 │ 
@@ -3097,7 +3397,7 @@ price downside towards $2180 incoming
 
 soooo… new gold ATH next week?
 
-look at gold's price chart with weekly candles - it’s unbelievable 🤯
+look at gold's price chart with weekly candles - it's unbelievable 🤯
 
 gold is going up like a risky asset - but it in fact is a reflection of risk
 
@@ -3262,9 +3562,9 @@ text is an LLM-native format - so AI models can easily access, index & reason
 
 ⏰ 2025-06-20 19:29
 
-always important to remember that gold isn’t crypto and volatility is a lot more conservative there 😄
+always important to remember that gold isn't crypto and volatility is a lot more conservative there 😄
 
-you’re talking central banks balance sheet assets - not so much speculative, hedging or portfolio management
+you're talking central banks balance sheet assets - not so much speculative, hedging or portfolio management
 
 yet, $3500 gold is just around the corner
 
@@ -3280,7 +3580,7 @@ yet, $3500 gold is just around the corner
 
 🎯 Ethereum heading down towards $2180
 
-exactly as I’ve been writing for several days
+exactly as I've been writing for several days
 
 so many accounts with huge following were promising you an immediate bull run
 
@@ -3302,7 +3602,7 @@ now you know which ones you can mute 😄
 
 🛢️crude oil back above $75
 
- just like I’ve been warning these past few days
+ just like I've been warning these past few days
 
 ~ ✨ ~
 
@@ -3316,7 +3616,7 @@ watch. the. move. 🚀
 
 FYI the new BRICS banknote that has been circulating on social media today is NOT real
 
-it’s merely symbolic - NOT legal tender
+it's merely symbolic - NOT legal tender
 
 before a joint currency, there will still be more bilateral trade in local currencies
 
@@ -3369,7 +3669,7 @@ Oil & Gold back on the rise
 Just as I wrote earlier today
 
 📖 Quoting from 2025-06-16 13:41:
-┌─ “The market is never wrong”
+┌─ 'The market is never wrong'
 │ 
 │ A lot of big accounts posting about how the market knows everything & prices accordingly - even before the official news
 │ 
@@ -3377,7 +3677,7 @@ Just as I wrote earlier today
 │ 
 │ Now wait & watch crude oil & gold raise up even more in price very soon
 │ 
-│ This isn’t a joke
+│ This isn't a joke
 └─
 
 ~ ✨ ~
@@ -3395,7 +3695,7 @@ That's an interesting way to name it!
 aaand crude oil futures are back above $70
 
 📖 Quoting from 2025-06-16 13:41:
-┌─ “The market is never wrong”
+┌─ 'The market is never wrong'
 │ 
 │ A lot of big accounts posting about how the market knows everything & prices accordingly - even before the official news
 │ 
@@ -3403,14 +3703,14 @@ aaand crude oil futures are back above $70
 │ 
 │ Now wait & watch crude oil & gold raise up even more in price very soon
 │ 
-│ This isn’t a joke
+│ This isn't a joke
 └─
 
 ~ ✨ ~
 
 ⏰ 2025-06-16 16:33
 
-BTW I soon realized this wasn’t an actual ATH for gold yet - but it is coming
+BTW I soon realized this wasn't an actual ATH for gold yet - but it is coming
 
 The historical chart is showing closing prices, not maximum
 
@@ -3421,7 +3721,7 @@ Good news - more time for you to accumulate gold before new ATH 😄
 📖 Quoting from 2025-06-13 14:38:
 ┌─ 🚀📈 NEW Gold ATH is in - $3440 per oz
 │ 
-│ I’ve been warning about this for a while
+│ I've been warning about this for a while
 │ 
 │ You had a little over a month since my original post to load up
 └─
@@ -3435,7 +3735,7 @@ Good news - more time for you to accumulate gold before new ATH 😄
 The prediction will be correct once again
 
 📖 Quoting from 2025-06-16 13:41:
-┌─ “The market is never wrong”
+┌─ 'The market is never wrong'
 │ 
 │ A lot of big accounts posting about how the market knows everything & prices accordingly - even before the official news
 │ 
@@ -3443,7 +3743,7 @@ The prediction will be correct once again
 │ 
 │ Now wait & watch crude oil & gold raise up even more in price very soon
 │ 
-│ This isn’t a joke
+│ This isn't a joke
 └─
 
 ~ ✨ ~
@@ -3454,13 +3754,13 @@ Shekel is headed down - to sub 4₪/€
 
 Inflation will be a huge problem soon as well
 
-There’s always gold 🤷‍♀️
+There's always gold 🤷‍♀️
 
 ~ ✨ ~
 
 ⏰ 2025-06-16 13:41
 
-“The market is never wrong”
+'The market is never wrong'
 
 A lot of big accounts posting about how the market knows everything & prices accordingly - even before the official news
 
@@ -3468,7 +3768,7 @@ Okay.
 
 Now wait & watch crude oil & gold raise up even more in price very soon
 
-This isn’t a joke
+This isn't a joke
 
 ~ ✨ ~
 
@@ -3484,7 +3784,7 @@ Do not underestimate what the new all time highs in gold are telling you
 
 Falling US Dollar index played out exactly as expected
 
-2 months later and it’s down another full point
+2 months later and it's down another full point
 
 📖 Quoting from 2025-04-19 12:47:
 ┌─ 🇺🇸 USD index bearish/in a downtrend
@@ -3518,12 +3818,12 @@ Look at this 15-minute timeframe momentum ⬇️
 
 🚀📈 NEW Gold ATH is in - $3440 per oz
 
-I’ve been warning about this for a while
+I've been warning about this for a while
 
 You had a little over a month since my original post to load up
 
 📖 Quoting from 2025-04-25 11:00:
-┌─ Now that gold is down & below $3.3K, it’s a good time to say this:
+┌─ Now that gold is down & below $3.3K, it's a good time to say this:
 │ 
 │ 🎉  New ATH coming very soon 🎉
 │ 
@@ -3568,7 +3868,7 @@ While Gold & Oil are up, Ethereum and Bitcoin are down
 
 As expected. A practical reminder that BTC, ETH & altcoins are NOT reserve assets
 
-I am big believer in crypto & DeFi - but it’s important to remain rational, even if you are entertained
+I am big believer in crypto & DeFi - but it's important to remain rational, even if you are entertained
 
 ~ ✨ ~
 
@@ -3588,7 +3888,7 @@ Low(er) interest rates + high(er) CPI will then push it up even further
 
 Risk-free rate returns with quant trading strategies may be fairly easy to achieve even with parameter-optimized Bollinger Bands
 
-Not surprising, but unless the return can beat the mid/long-term bond yields - it’s also not very useful 😄
+Not surprising, but unless the return can beat the mid/long-term bond yields - it's also not very useful 😄
 
 Unless… leverage, of course
 
@@ -3605,7 +3905,7 @@ Up ≈13% on the USD in the past quarter
 │ 
 │ 82-68 is a strong support - including pre-Ukraine war liquidity
 │ 
-│ A small pullback is very likely to happen, but in the medium-long term it’s heading towards the 68
+│ A small pullback is very likely to happen, but in the medium-long term it's heading towards the 68
 │ 
 │ Once sanctions are dropped by US & EU - RUB will skyrocket
 └─
@@ -3614,7 +3914,7 @@ Up ≈13% on the USD in the past quarter
 
 ⏰ 2025-06-10 17:10
 
-🤯👉 Quant trading secrets they don’t want you to know
+🤯👉 Quant trading secrets they don't want you to know
 
 On the bright side - the Sharpe Ratio may soon underflow, thus turning it very positive
 
@@ -3784,7 +4084,7 @@ Could head a little lower - but definitely temporary. Expect inflows/increase so
 
 🚀📚 Learn ANYTHING with AI fast:
 
-1️⃣ Screenshot what you don’t understand (e.g. book page)
+1️⃣ Screenshot what you don't understand (e.g. book page)
 
 2️⃣ Open ChatGPT*, attach screenshot & dictate your question - no matter how vague/unclear it is
 
@@ -3798,7 +4098,7 @@ Always validate your understanding
 
 ⏰ 2025-05-22 13:06
 
-Gold is having its “calm before the storm” moment 😄
+Gold is having its 'calm before the storm' moment 😄
 
 New all time high is coming very soon to all markets close to you
 
@@ -3812,7 +4112,7 @@ In 2002 Fed Funds Rate was x3 smaller
 
 At that time, rates were higher overall
 
-To find rates as small as in 2002, you’d need to go back to the 1960's 😳
+To find rates as small as in 2002, you'd need to go back to the 1960's 😳
 
 For 15 years now, US had effectively been under QE financing - cheap debt 
 
@@ -3824,19 +4124,19 @@ For 15 years now, US had effectively been under QE financing - cheap debt
 
 🤯 The year is 2002…
 
-US bond yields are at the same high levels as they were in 2002… That’s 23 years ago
+US bond yields are at the same high levels as they were in 2002… That's 23 years ago
 
 In 2002 US national debt was x6 SMALLER than now
 
-5.1% now is not the same as 5.1% before - it’s worse. Much more debt to refinance & pay interest
+5.1% now is not the same as 5.1% before - it's worse. Much more debt to refinance & pay interest
 
 ~ ✨ ~
 
 ⏰ 2025-05-21 22:14
 
-Who’s ready for a new gold ATH? 🙋
+Who's ready for a new gold ATH? 🙋
 
-You don’t have to guess - just look at the systemic raising bond yields across all maturities & multiple sovereigns
+You don't have to guess - just look at the systemic raising bond yields across all maturities & multiple sovereigns
 
 ~ ✨ ~
 
@@ -3890,7 +4190,7 @@ Now, each thought has:
 👉 A unique shareable page/link
 👉 OpenGraph images with the exact text of the thought
 
-So you don’t even need to open the page when reading the thought - it’s in the link's preview
+So you don't even need to open the page when reading the thought - it's in the link's preview
 
 Example:
 
@@ -3900,7 +4200,7 @@ Example:
 
 🇺🇸 Good morning,
 
-It’s another green day for US bond yields
+It's another green day for US bond yields
 
 ~ ✨ ~
 
@@ -3912,7 +4212,7 @@ An inverted yield curve is usually a bad sign (e.g. recession)
 
 However, 🇷🇺's fundamentals are healthy
 
-Why inverted? 🇷🇺 Central Bank's 21% key interest rate, or rather the expectation of it going down, is what’s pushing this shape
+Why inverted? 🇷🇺 Central Bank's 21% key interest rate, or rather the expectation of it going down, is what's pushing this shape
 
 ~ ✨ ~
 
@@ -3959,12 +4259,12 @@ Hello inflation 👋
 
 ⏰ 2025-05-19 12:07
 
-Regarding global skyrocketing bond yields - it depends where you’re looking 😄
+Regarding global skyrocketing bond yields - it depends where you're looking 😄
 
 Sovereign bond yields up: 🇺🇸🇯🇵🇬🇧🇪🇺
 Sovereign bond yields down: 🇷🇺🇨🇳
 
-I’ve been posting numerous explanations for of this - all very expected
+I've been posting numerous explanations for of this - all very expected
 
 ~ ✨ ~
 
@@ -4024,7 +4324,7 @@ Volatility is a measure of risk. Gold volatility is an expression of the baselin
 
 ⏰ 2025-05-12 15:46
 
-It’s a mystery why US bond yields are skyrocketing
+It's a mystery why US bond yields are skyrocketing
 
 Higher yield = higher risk, BUT the US has been doing nothing, but irradiating confidence, respect & cooperation 🤯
 
@@ -4036,7 +4336,7 @@ Higher yield = higher risk, BUT the US has been doing nothing, but irradiating c
 
 Yet the yield on a 10Y bond is 15.6%
 
-I’ve previously written that the market is both, pricing in upcoming low(er) rates & paying a premium to stay in Ruble
+I've previously written that the market is both, pricing in upcoming low(er) rates & paying a premium to stay in Ruble
 
 Today, I found the targets for 2025 & 2026
 
@@ -4058,7 +4358,7 @@ Fundamentals speak louder than words
 
 1️⃣ USA gets themselves into a net importer, 130% debt to GDP & higher refinancing costs
 
-2️⃣ 🇺🇸 became so dependent on China, that 🇺🇸 economy can’t survive with the tariffs
+2️⃣ 🇺🇸 became so dependent on China, that 🇺🇸 economy can't survive with the tariffs
 
 3️⃣ Now, the (not so good) student is lecturing the teacher?
 
@@ -4104,7 +4404,7 @@ How does the Russian government get the oil & gas revenue?
 
 👉 Heavy taxation 👈
 
-So no matter if you’re public or private - you pay for per extracted unit of natural resource
+So no matter if you're public or private - you pay for per extracted unit of natural resource
 
 This income is directly tied to the budget & NWF - which is then debited or credited, base on target
 
@@ -4126,7 +4426,7 @@ NWF funds are used to finance government deficit, instead of relying on debt iss
 
 Note: the actual raising of the flag happened on April 30th, but May 9th is the day of celebration of Red Army's WW II victory
 
-It’s celebrated today throughout slavic & ex-Soviet countries
+It's celebrated today throughout slavic & ex-Soviet countries
 
 ~ ✨ ~
 
@@ -4136,7 +4436,7 @@ It’s celebrated today throughout slavic & ex-Soviet countries
 
 Nazi Germany has been defeated
 
-≈73 million Soviets were killed or injured for the world’s freedom. Today, we celebrate their lives
+≈73 million Soviets were killed or injured for the world's freedom. Today, we celebrate their lives
 
 С Днём Победы! 🥳
 
@@ -4168,7 +4468,7 @@ Google + Zero Knowledge Proofs = ❤️🔐
 
 ZKPs will allow you to prove your age to other apps via Google Wallet - e.g. a proof that you are >18
 
-AFAIK you’ll upload your ID, Google BE verifies & signs it
+AFAIK you'll upload your ID, Google BE verifies & signs it
 
 Integrate with @MinaProtocol schemes & Android goes on the 22KB blockchain 😳
 
@@ -4203,7 +4503,7 @@ Investor has double recourse on issuer's default event:
 
 ⏰ 2025-04-28 21:17
 
-🚨🇺🇸 USD Index UPDATE - it’s down:
+🚨🇺🇸 USD Index UPDATE - it's down:
 
 As expected - USD index is back down - falling sharply below 98
 
@@ -4259,7 +4559,7 @@ Promissory notes are very simple legal documents. It looks like this ⬇️
 
 Commercial paper is unsecured short-term debt issued by large, creditworthy companies
 
-In practice, it’s a short-term promissory note - so something a company would use for short-term financing, perhaps for meeting working capital needs
+In practice, it's a short-term promissory note - so something a company would use for short-term financing, perhaps for meeting working capital needs
 
 ~ ✨ ~
 
@@ -4287,7 +4587,7 @@ However, the risk is far beyond than just stagflation ⬇️
 
 CME publishes daily data on physical settlement on gold futures
 
-The problem is that it’s PDFs with numbers
+The problem is that it's PDFs with numbers
 
 Some interesting alpha factors can be extracted from this 💡
 
@@ -4297,7 +4597,7 @@ Maybe making a website to visualize, interpret & combine that data would be usef
 
 ⏰ 2025-04-26 15:02
 
-Many boast about US’s higher GDP than EU without looking at the bigger picture
+Many boast about US's higher GDP than EU without looking at the bigger picture
 
 US/EU balance:
 🇺🇸 is a net importer from the 🇪🇺
@@ -4336,7 +4636,7 @@ Rest of April was relatively uneventful 😴
 
 ≈50% of all gold physical delivery notices were filed on March 28th
 
-I’ve learned that these are typical proportions for 1st notice day
+I've learned that these are typical proportions for 1st notice day
 
 Last intent/notice day is on April 29th
 
@@ -4358,23 +4658,23 @@ The core idea remains the same - this is just a technicality of TradFi
 
 ⏰ 2025-04-25 14:39
 
-Let’s see how China's US bond holdings evolve from hereon 🇨🇳🇺🇸
+Let's see how China's US bond holdings evolve from hereon 🇨🇳🇺🇸
 
 ~ ✨ ~
 
 ⏰ 2025-04-25 11:30
 
-Regarding the 1492 “gold top” & 533 years breakeven - the information is misleading
+Regarding the 1492 'gold top' & 533 years breakeven - the information is misleading
 
 These price extrapolations made a lot of assumptions & simplifications
 
-Perhaps most importantly, pre-1700’s gold prices were fixed by the government - not a trade/free market derived price
+Perhaps most importantly, pre-1700's gold prices were fixed by the government - not a trade/free market derived price
 
 ~ ✨ ~
 
 ⏰ 2025-04-25 11:00
 
-Now that gold is down & below $3.3K, it’s a good time to say this:
+Now that gold is down & below $3.3K, it's a good time to say this:
 
 🎉  New ATH coming very soon 🎉
 
@@ -4394,7 +4694,7 @@ Gold up ➡️ Ruble up
 Gold down ➡️ Ruble down
 Gold sideways ➡️ Ruble sideways
 
-Russia could make RUB gold-backed, make RUB convertible to gold on demand & position RUB as a “trustless”/money-backed currency
+Russia could make RUB gold-backed, make RUB convertible to gold on demand & position RUB as a 'trustless'/money-backed currency
 
 Already halfway through there
 
@@ -4420,7 +4720,7 @@ Fundamentals are still on the side of gold
 
 A lot of liquidity moved from RUB back into USD. This is also telling by the rebounded USD index
 
-But gold will appreciate further. Russian Central Bank’s massive gold reserves will pay off
+But gold will appreciate further. Russian Central Bank's massive gold reserves will pay off
 
 ~ ✨ ~
 
@@ -4432,7 +4732,7 @@ $DXY fell to ≈98.3 as I previously predicted
 
 That whole area is a monthly support level, thus a source & trigger for massive amounts of liquidity
 
-It’s not only FOREX, but also the world reserve currency
+It's not only FOREX, but also the world reserve currency
 
 ~ ✨ ~
 
@@ -4547,7 +4847,7 @@ There's also a plain text version, but it's not as neatly formatted
 
 Premium/yield is a measure a risk
 
-Imagine you’re purchasing a stock of a company. The CEO of that company makes hostile comments towards its financial division
+Imagine you're purchasing a stock of a company. The CEO of that company makes hostile comments towards its financial division
 
 Does the required return to cover the risk of that company increase or decrease?
 
@@ -4571,7 +4871,7 @@ My latest X posts are now also live
 
 Added a link to https://illya.sh/thoughts/ to which I have been exporting a lot of my tweets
 
-Making “My Thoughts” button exactly like I wanted took a few iterations and custom contexting with Gemini 2.5 Pro
+Making 'My Thoughts' button exactly like I wanted took a few iterations and custom contexting with Gemini 2.5 Pro
 
 ~ ✨ ~
 
@@ -4635,7 +4935,7 @@ Gold reserves unchanged - value raising. Get used to this trend
 
 🇷🇴 I like how Romania's Central Bank has this image breaking down their international reserves on their homepage
 
-However, I didn’t understand why it links to November 2024 data, when March 2025 data is already available 😁
+However, I didn't understand why it links to November 2024 data, when March 2025 data is already available 😁
 
 Gold reserves are ≈12% here
 
@@ -4657,7 +4957,7 @@ Great Wall Cannon (长城炮) - 80K
 
 Unlike the US or most of the world - China has effective factories & supply chains - offering them a myriad of domestic alternatives
 
-China doesn’t need Ford. Ford needs China due to imported parts
+China doesn't need Ford. Ford needs China due to imported parts
 
 ~ ✨ ~
 
@@ -4717,7 +5017,7 @@ Russian Central Bank has been continuously increasing their gold holdings, which
 
 ⏰ 2025-04-19 01:08
 
-I’ve referred to gold being 35% of Russian Central Bank's foreign currency reserves, when I in fact meant international reserves
+I've referred to gold being 35% of Russian Central Bank's foreign currency reserves, when I in fact meant international reserves
 
 The core idea is unchanged - this is a technicality. Central Bank of Russia reports:
 
@@ -4731,7 +5031,7 @@ International Reserves = Foreign Exchange Reserves + Gold
 
 … on a daily basis 😳
 
-It’s only partially tariffs. This has been a trend even prior to them
+It's only partially tariffs. This has been a trend even prior to them
 
 Russia loaded up on Gold & sold off their US securities. Trade with US is negligible 
 
@@ -4791,9 +5091,9 @@ RUB is already up 30% YTD, so expect some pullbacks in the white box region
 
 🚨 Ruble falls below 82 against USD
 
-I’ve been writing for a long time about Ruble & the Russian economy, but it’s still crazy to watch it play out live
+I've been writing for a long time about Ruble & the Russian economy, but it's still crazy to watch it play out live
 
-REMEMBER: Russia is still under heavy sanctions, and it’s virtually impossible to purchase RUB. Once they’re dropped: 📈
+REMEMBER: Russia is still under heavy sanctions, and it's virtually impossible to purchase RUB. Once they're dropped: 📈
 
 ~ ✨ ~
 
@@ -4801,7 +5101,7 @@ REMEMBER: Russia is still under heavy sanctions, and it’s virtually impossible
 
 🥱 Gold hitting another ATH
 
-At this point it’s boring lol
+At this point it's boring lol
 
 ~ ✨ ~
 
@@ -4811,7 +5111,7 @@ Nice catch!
 
 Indeed, the adjusted March deficit is higher. It also means the adjusted February's deficit is lower 
 
-By “adjusted” I mean had the payments not been shifted due to March 1st falling on a Saturday
+By 'adjusted' I mean had the payments not been shifted due to March 1st falling on a Saturday
 
 ~ ✨ ~
 
@@ -4843,15 +5143,15 @@ Heading for $3.4K now
 
 Since 2022 it's unfeasible. IBKR & KIT Finance suspended trading
 
-Deep researching with LLMs now, but it hasn’t been very fruitful so far 🤔
+Deep researching with LLMs now, but it hasn't been very fruitful so far 🤔
 
-Once the sanctions are lifted you’ll see the prices explode
+Once the sanctions are lifted you'll see the prices explode
 
 ~ ✨ ~
 
 ⏰ 2025-04-14 10:58
 
-2Y US Bond is a good factor/signal of FED funds rate, but there’s an even better one!
+2Y US Bond is a good factor/signal of FED funds rate, but there's an even better one!
 
 CME's 30-day FED Funds futures is a derivative for this exact purpose. The market prices them according to the expectations of upcoming FED Funds Rates
 
@@ -4863,7 +5163,7 @@ CME's 30-day FED Funds futures is a derivative for this exact purpose. The marke
 
 This is definitely good news short-term for the USD!
 
-Today, short-term funding got 1.25% cheaper for the US government, and once the FED lowers the interest rates, the yields will fall more. Now ofc this will lead to inflation & devaluation of USD, but that’s a a different story
+Today, short-term funding got 1.25% cheaper for the US government, and once the FED lowers the interest rates, the yields will fall more. Now ofc this will lead to inflation & devaluation of USD, but that's a a different story
 
 ~ ✨ ~
 
@@ -4871,7 +5171,7 @@ Today, short-term funding got 1.25% cheaper for the US government, and once the 
 
 Look at that liquidity moving from short-term Chinese bonds(CN01Y), to short-term US bonds(US02Y) 👀
 
-The market liked the removal of tariffs, however, you can’t undo the massive volatility over the past 2 weeks
+The market liked the removal of tariffs, however, you can't undo the massive volatility over the past 2 weeks
 
 Moreover, US Dollar index is still below 100
 
@@ -4883,7 +5183,7 @@ Moreover, US Dollar index is still below 100
 
 82-68 is a strong support - including pre-Ukraine war liquidity
 
-A small pullback is very likely to happen, but in the medium-long term it’s heading towards the 68
+A small pullback is very likely to happen, but in the medium-long term it's heading towards the 68
 
 Once sanctions are dropped by US & EU - RUB will skyrocket
 
@@ -4913,7 +5213,7 @@ The USD is facing an increased perceived risk, which in addition to the public d
 
 ⏰ 2025-04-13 13:00
 
-Yuan downside party really didn’t last 😳
+Yuan downside party really didn't last 😳
 
 It went up just as fast as it went down
 
@@ -4992,13 +5292,13 @@ However, if EU or US did the same - their economies would collapse overnight
 
 Lower USD Index =  USD Devaluation = Higher premium for USD loans = Lower bond prices = Higher bond yields
 
-It’s all connected
+It's all connected
 
 ~ ✨ ~
 
 ⏰ 2025-04-12 01:28
 
-Looks like “lowest renminbi/Yuan since 2008” didn’t last long 🤷‍♀️
+Looks like 'lowest renminbi/Yuan since 2008' didn't last long 🤷‍♀️
 
 ~ ✨ ~
 
@@ -5008,7 +5308,7 @@ Looks like “lowest renminbi/Yuan since 2008” didn’t last long 🤷‍♀�
 
 Over 2% daily moves is something you see in crypto 👀
 
-And I don’t believe the FED will be raising rates - so it’s a market-driven US debt premium increase
+And I don't believe the FED will be raising rates - so it's a market-driven US debt premium increase
 
 Lower rates incoming, but sovereign premium will still increase
 
@@ -5026,7 +5326,7 @@ Very concerning for USD
 
 ⏰ 2025-04-11 17:00
 
-Here’s a visual of how it looks like
+Here's a visual of how it looks like
 
 A timeline of thoughts/short-form content/microblog ⬇️
 
@@ -5036,9 +5336,9 @@ A timeline of thoughts/short-form content/microblog ⬇️
 
 Just launched 
 
-I’ll use for short-form posts. Think Twitter/X, but self-hosted under my domain
+I'll use for short-form posts. Think Twitter/X, but self-hosted under my domain
 
-It’s an MVP and for now contains a subset of X posts. Later I’ll make it real-timish and cross-post some of my content from here
+It's an MVP and for now contains a subset of X posts. Later I'll make it real-timish and cross-post some of my content from here
 
 Coded using Gemini 2.5 Pro
 
@@ -5052,7 +5352,7 @@ US Dollar Index $DXY fell below 100 😳
 
 ⏰ 2025-04-11 00:58
 
-To clarify - here you’re stating with US Dollar and then buying either Ruble or Gold. It’s in this scenario that both investments have a similar yield
+To clarify - here you're stating with US Dollar and then buying either Ruble or Gold. It's in this scenario that both investments have a similar yield
 
 If you start with EUR, Ruble actually yields more than Gold - 9.3 vs 11% (in the past 3 months)
 
@@ -5062,7 +5362,7 @@ If you start with EUR, Ruble actually yields more than Gold - 9.3 vs 11% (in the
 
 And Ruble is up on Gold since January 🤯
 
-All while Gold is at ATH & it’s extremely difficult to buy ruble or any Russia-issued financial instruments due to sanctions
+All while Gold is at ATH & it's extremely difficult to buy ruble or any Russia-issued financial instruments due to sanctions
 
 Loading up foreign reserves with gold & selling US Treasury securities worked ✅
 
@@ -5074,9 +5374,9 @@ It gets crazier 🤯
 
 In the past 3 months, amids the tariff madness - at the time of rush into safe assets - Ruble & Gold head-to-head
 
-You could’ve either bought gold or Ruble & gained 18% in both cases
+You could've either bought gold or Ruble & gained 18% in both cases
 
-And buying ruble isn’t easy due to sanctions. Imagine when it opens up
+And buying ruble isn't easy due to sanctions. Imagine when it opens up
 
 ~ ✨ ~
 
@@ -5084,7 +5384,7 @@ And buying ruble isn’t easy due to sanctions. Imagine when it opens up
 
 Ruble is a gold success story ✨
 
-Sanctions, tariffs, raising M2 - it doesn’t care
+Sanctions, tariffs, raising M2 - it doesn't care
 
 Central Bank Of Russia sold off their US bonds & loaded up on gold
 
@@ -5114,7 +5414,7 @@ Regulated equities market, which is supposed to be low-risk became as volatile a
 
 Just look at NASDAQ, S&P500 & Co
 
-Every time I open TradingView it’s a +-5%
+Every time I open TradingView it's a +-5%
 
 Maybe more regulations will solve this? 😁
 
@@ -5138,7 +5438,7 @@ This makes them protected from US sovereign risk (USD devaluation) & trade risk
 
 🇪🇺🇺🇸US tariffs present a unique opportunity for EU's capital markets
 
-Billions of $ are flowing out of US markets. Let that liquidity be parked in the EU. All that’s needed is inviting conditions
+Billions of $ are flowing out of US markets. Let that liquidity be parked in the EU. All that's needed is inviting conditions
 
 It can start with a small, less-regulated market subsection to allow seamless foreign funds flow
 
@@ -5158,7 +5458,7 @@ China is the 2nd largest holder of US Treasury bonds - a staggering 23% of their
 
 This makes China extremely exposed to US systemic risk. Which is why tariffs will hit them double hard - at exports and at renminbi/Yuan due to falling #DXY
 
-Not saying they can’t sustain it though
+Not saying they can't sustain it though
 
 ~ ✨ ~
 
@@ -5183,7 +5483,7 @@ But that also means increased:
  Inflation
  Public debt/deficit
 
-Tariff income won’t offset it
+Tariff income won't offset it
 
 Monitor the hedge fund's shorts on risky assets, and when the
 
@@ -5191,11 +5491,11 @@ Monitor the hedge fund's shorts on risky assets, and when the
 
 ⏰ 2025-04-07 20:57
 
-One of the core ideas behind the tariffs is to solve US's the trade deficit by incentivizing other countries to import from the US - I’m deriving this from the “tariff” formula
+One of the core ideas behind the tariffs is to solve US's the trade deficit by incentivizing other countries to import from the US - I'm deriving this from the 'tariff' formula
 
 So by importing more from US - you get lower/no tariffs
 
-That won’t work. Over the medium term the
+That won't work. Over the medium term the
 
 ~ ✨ ~
 
@@ -5217,7 +5517,7 @@ edgartools on GitHub
 
 Do not browse insider trading SEC filings on EDGAR directly
 
-There’s a Python library called edgartools - much better, cleaner & you can directly extract the data
+There's a Python library called edgartools - much better, cleaner & you can directly extract the data
 
 Now go find alpha factors that you can use next time worldwide tariffs are set
 
@@ -5235,9 +5535,9 @@ Code F on Form 4
 
 Insider Trading Before Tariffs
 
-If you’re curious about how insiders were buying/selling their equity positions, head over to @SECGov's EDGAR & check for Form 4 & 3 filings
+If you're curious about how insiders were buying/selling their equity positions, head over to @SECGov's EDGAR & check for Form 4 & 3 filings
 
-Here’s the latest one from $AAPL
+Here's the latest one from $AAPL
 
 ~ ✨ ~
 
@@ -5277,7 +5577,7 @@ Tariffs are just a distraction from the fact that orange juice futures are down 
 
 Expect it to bounce back very soon - as capital is moved away from USA & USD into alt currencies, which includes Ruble
 
-Once the sanctions against Russia are dropped - that’s where Moscow Exchange Index will skyrocket 📈 http
+Once the sanctions against Russia are dropped - that's where Moscow Exchange Index will skyrocket 📈 http
 
 ~ ✨ ~
 
@@ -5299,7 +5599,7 @@ Clearing houses are banking from fees & comissions
 
 Finally, risky-assets/DeFi/crypto volatility coming to your favorite regulated exchange
 
-What’s even the point of all the regulations in TradFi?
+What's even the point of all the regulations in TradFi?
 
 ~ ✨ ~
 
@@ -5331,7 +5631,7 @@ Tariff-free zone + local currency trade acts as insurance http
 
 India imports from China, Russia & then exports to USA & UAE. The imports are also similar to exports & a lot of it is re-exports
 
-This deficit isn’t sustainable of course https://t.co
+This deficit isn't sustainable of course https://t.co
 
 ~ ✨ ~
 
@@ -5339,7 +5639,7 @@ This deficit isn’t sustainable of course https://t.co
 
 $VIX is a measure of expected volatility
 
-It’s computed from option prices. The price of the option is the insurance/premium that the option seller/short charges
+It's computed from option prices. The price of the option is the insurance/premium that the option seller/short charges
 
 So higher option price = protection against more volatility
 
@@ -5347,7 +5647,7 @@ So higher option price = protection against more volatility
 
 ⏰ 2025-04-05 18:50
 
-Tbh $VIX isn’t that high (yet )
+Tbh $VIX isn't that high (yet )
 
 ~ ✨ ~
 
@@ -5385,11 +5685,11 @@ Sustained volatility will drive the rest up
 
 PHYSICAL GOLD RUSH
 
- It’s not just Central Banks anymore
+ It's not just Central Banks anymore
 
  In the first 4 days of April 2025, over 52K COMEX 100 Gold Futures contracts have been requested for physical delivery
 
-Only 4 days in & it’s already x2 of January interest
+Only 4 days in & it's already x2 of January interest
 
  Physical gold in high demand
 
@@ -5441,7 +5741,7 @@ Silver back to August 2020 price
 
 After a tariffs-induced pullback of 15% today, silver is now at start of COVID prices
 
- So much inflation that still isn’t priced in 
+ So much inflation that still isn't priced in 
 
 It will recover. And a lot!
 
@@ -5459,11 +5759,11 @@ But #DXY is also down 😂
 
 ⏰ 2025-04-04 20:07
 
-Who’s selling silver? 😭
+Who's selling silver? 😭
 
 📉 CDFs are down 15% on the day 🤯
 
-I guess it’s a tariffs freebie 🤷‍♀️
+I guess it's a tariffs freebie 🤷‍♀️
 
 ~ ✨ ~
 
@@ -5507,7 +5807,7 @@ When inflation is blamed on tariffs, keep this in mind
 
 🚨🇺🇸 USD M2 Money Supply is almost back at pre-interest rate increase levels
 
-That QT didn’t last after all 🤷‍♀️
+That QT didn't last after all 🤷‍♀️
 
 ~ ✨ ~
 
@@ -5531,7 +5831,7 @@ Trump/US tariffs so far:
 
 📈 A perfect setup for the increase of OFR's Financial Stress Index
 
-Let’s see - it’s updated with a 2 day delay
+Let's see - it's updated with a 2 day delay
 
 ~ ✨ ~
 
@@ -5591,7 +5891,7 @@ Interesting, but expected having #RUB & #Yuan gain from this https://
 
 Interesting to observe the negative correlation between Bitcoin & US Dollar Index
 
-Gold wasn’t clearly correlated with either. This makes sense - the tariffs lead to uncertainty regarding the reserve currency & central bank… https://t.co
+Gold wasn't clearly correlated with either. This makes sense - the tariffs lead to uncertainty regarding the reserve currency & central bank… https://t.co
 
 ~ ✨ ~
 
@@ -5605,7 +5905,7 @@ This is just a pre-tariffs announcements pump that will sell off once Trump spea
 
 ⏰ 2025-03-31 15:34
 
-🚨Trump’s Tariffs Update - 🇨🇳, 🇯🇵, 🇰🇷
+🚨Trump's Tariffs Update - 🇨🇳, 🇯🇵, 🇰🇷
 
 Not only tariffs are tanking the US economy, but their strongest partners are looking elsewhere
 
@@ -5641,7 +5941,7 @@ USA cars get credit incentives, by making interest payments tax deductible
 
 So this means more expensive cars + more credit availability for them
 
-You can’t make this up 😳
+You can't make this up 😳
 
 ~ ✨ ~
 
@@ -5660,7 +5960,7 @@ And you thought the Biden administration was doing questionable moves 😂  htt
 
 ⏰ 2025-03-26 21:30
 
-Architecting your balance sheet around highly speculative & volatile instruments is a good idea, until it isn’t 💖
+Architecting your balance sheet around highly speculative & volatile instruments is a good idea, until it isn't 💖
 
 Although with 0% coupon the burden here is mostly on the investor 🤷‍♀️
 
@@ -5670,7 +5970,7 @@ The stock market is starting to resemble a casino more every day….  http
 
 ⏰ 2025-03-26 21:01
 
-✅ It’s confirmed
+✅ It's confirmed
 
 You can now fully automate niche meme pages
 
@@ -5698,7 +5998,7 @@ You can probably already find something close to it on huggingface
 
 🤯 GPT-4o new image gen is surprisingly good at generating comics & memes
 
-Here’s an xkcd style webcomic about vibe coding ⬇️ http
+Here's an xkcd style webcomic about vibe coding ⬇️ http
 
 ~ ✨ ~
 
@@ -5706,7 +6006,7 @@ Here’s an xkcd style webcomic about vibe coding ⬇️ http
 
 Do you face the same philosophical issues with your cat?
 
-I don’t think she sees the irony 😡
+I don't think she sees the irony 😡
 
 ~ ✨ ~
 
@@ -5726,7 +6026,7 @@ I don’t think she sees the irony 😡
 
 The new GPT 4o is also quite good as an image editor
 
-It’s able to fairly accurately replicate & alter subjects
+It's able to fairly accurately replicate & alter subjects
 
 But maybe they should increase their training set on the anatomy of cats 😂
 
@@ -5830,7 +6130,7 @@ Almost 50% down since December 🤨 http
 
 ⏰ 2025-02-12 13:29
 
-I’m working on an Agent and was debugging why the responses from the LLM come as null/empty
+I'm working on an Agent and was debugging why the responses from the LLM come as null/empty
 
 Turns out function calling is currently broken on DeepSeek ☹️
 
@@ -5840,7 +6140,7 @@ Turns out function calling is currently broken on DeepSeek ☹️
 
 🤯 Think about all of those US market outflows due to DeepSeek, Qwen & Co.
 
-$NVDA's & other AI-related stock crash wasn’t just about cheaper AI-compute. The outflow also represents funds that may be potentially invested in the Chinese market
+$NVDA's & other AI-related stock crash wasn't just about cheaper AI-compute. The outflow also represents funds that may be potentially invested in the Chinese market
 
 This point is often omitted 🤫 https://
 
@@ -5848,15 +6148,15 @@ This point is often omitted 🤫 https://
 
 ⏰ 2025-01-22 16:46
 
-Running LLM models locally really makes you appreciate the “unlimited” bandwidth, which is a standard offering in most EU countries
+Running LLM models locally really makes you appreciate the 'unlimited' bandwidth, which is a standard offering in most EU countries
 
 ~ ✨ ~
 
 ⏰ 2024-12-31 15:12
 
-Are you building DeFi in the EU? Here’s what you need to know ⬇️
+Are you building DeFi in the EU? Here's what you need to know ⬇️
 
-At the time of conceptualizing this “liquid futures protocol” I didn’t even know where to start with regard to its legal compliance
+At the time of conceptualizing this 'liquid futures protocol' I didn't even know where to start with regard to its legal compliance
 
 A few days ago I finalized a paper exploring how one can legally launch on-chain…
 
@@ -5888,7 +6188,7 @@ Bad news for #USD 👎
 
 The value of a currency is a direct reflection of the organic demand for it. Sanctions will decrease the demand for US Dollar, via disincentives 
 
-Plus, it’s the US consumer that will be paying for the tariffs, not the BRICS countries 🤷‍♀️
+Plus, it's the US consumer that will be paying for the tariffs, not the BRICS countries 🤷‍♀️
 
 ~ ✨ ~
 
@@ -5899,7 +6199,7 @@ Plus, it’s the US consumer that will be paying for the tariffs, not the BRICS 
 👉 Unsecured debt
 👉 Option to convert to equity at $672/share
 
-For the loan of the principal you’re getting an option to buy $MSRT stock at $672 in 2029 - 60% higher than the current share price of ≈ $420
+For the loan of the principal you're getting an option to buy $MSRT stock at $672 in 2029 - 60% higher than the current share price of ≈ $420
 
 Why not just buy $BTC directly? 🤷‍♀️
 
@@ -5926,7 +6226,7 @@ Part of Bitcoin's value derives from the total electricity cost of maintaining a
 
 20% of GDP is spent on financial services. Blockchains remove intermediaries & improve efficiency
 
-It’s apples to oranges 🤷‍♀️ https:/
+It's apples to oranges 🤷‍♀️ https:/
 
 ~ ✨ ~
 
@@ -5946,7 +6246,7 @@ It’s apples to oranges 🤷‍♀️ https:/
 
 🇯🇵🎧 Added an audio version of the article
 
-It’s an AI-generated podcast of the article using NotebookLM audio overview with custom sources & instructions
+It's an AI-generated podcast of the article using NotebookLM audio overview with custom sources & instructions
 
 🔗   http
 
@@ -6021,7 +6321,7 @@ you may see it manifest as #inflation 😉
 
 Forward rates compute the borrowing cost of money for a future period. They're derived from the existing interest rates in the market. Useful to compare investments, arbitrage on lend/borrow positions and even predict future inflation value
 
-Here’s the concept visualized 👇
+Here's the concept visualized 👇
 
 ~ ✨ ~
 
@@ -6037,7 +6337,7 @@ A few days ago I tweeted about how a rate cut is imminent, as suggested by the T
 
 ⏰ 2024-06-04 12:48
 
-Reaaaaady. Let’s go hardfork
+Reaaaaady. Let's go hardfork
 
 ~ ✨ ~
 
@@ -6047,7 +6347,7 @@ Besides inflation there is also discounting, which measures the time value of mo
 
 Discounting states that money today is worth more than tomorrow, since it can be invested to earn an interest
 
-You can compute today’s value of future money using the formula below 👇
+You can compute today's value of future money using the formula below 👇
 
 ~ ✨ ~
 
@@ -6130,7 +6430,7 @@ Debt-to-GDP ratio presents a much clearer picture (smaller is better)👇
 
 I invite you to check your country's net exports as a % of GDP and be surprised 😳
 
-GDP comprises of numerous measures, some of which don’t have any relation to the produced value
+GDP comprises of numerous measures, some of which don't have any relation to the produced value
 
 Net exports provide a more objective measure of self-sustainability and relative value
 
@@ -6172,7 +6472,7 @@ Get ready for June 👀
 
 ⛓️ Native match with #blockchain
 
-🧵 Let’s dive in 👇
+🧵 Let's dive in 👇
 
 http
 
@@ -6206,15 +6506,15 @@ Great idea! A use-case leveraging one of the unique value-propositions of the ve
 
 ⏰ 2024-01-29 08:27
 
-It’s easy to blame it on the devs or the ecosystem. A fair assessment compares solutions within the ecosystem. Good, innovate and disruptive solutions? Likely a dev issue. If not - the ecosystem. Remember to take the critical mass into consideration
+It's easy to blame it on the devs or the ecosystem. A fair assessment compares solutions within the ecosystem. Good, innovate and disruptive solutions? Likely a dev issue. If not - the ecosystem. Remember to take the critical mass into consideration
 
 ~ ✨ ~
 
 ⏰ 2024-01-28 17:35
 
-Individuality isn’t about opposing the majority. It’s about thinking for yourself
+Individuality isn't about opposing the majority. It's about thinking for yourself
 
-In product, it’s not about doing something or avoiding something. It’s about doing what increases value, and not doing what diminishes value
+In product, it's not about doing something or avoiding something. It's about doing what increases value, and not doing what diminishes value
 
 ~ ✨ ~
 
@@ -6238,7 +6538,7 @@ A good software engineer follows the best practices. A great software engineer f
 
 The point of software is to be able to iterate fast. 100% of software can be replaced with hardware, but nobody wants to hardcode circuits (except for the #ZK crowd 😄). Iteration is its value proposition
 
-This is why software products that take years to deliver don’t make sense
+This is why software products that take years to deliver don't make sense
 
 ~ ✨ ~
 
@@ -6303,7 +6603,7 @@ No Abstracted Tests = No Tests
 
 ⏰ 2023-12-29 21:54
 
-The negative connotation associated with “weirdness” is a product of insecurity and fragile ego.
+The negative connotation associated with 'weirdness' is a product of insecurity and fragile ego.
 
 Always remember: your ego can be trained and developed through deliberate mental and physical effort.
 
@@ -6311,7 +6611,7 @@ Always remember: your ego can be trained and developed through deliberate mental
 
 ⏰ 2023-12-29 18:27
 
-I’m not fanboying. Once you think deeply about it will all make sense
+I'm not fanboying. Once you think deeply about it will all make sense
 
 #ZKP #Web3
 
@@ -6323,7 +6623,7 @@ If you only understood how cheap $GOLD is now. To put it in perspective, its cur
 
 Any direct or indirect inflation following that time period has not yet been accounted for
 
-You don’t have to trust me. Trust the price action
+You don't have to trust me. Trust the price action
 
 ~ ✨ ~
 
@@ -6347,7 +6647,7 @@ Unlock the secret to predicting any asset's price! The 30-day federal funds rate
 
 Exactly as I pointed out yesterday
 
-💡Markets are very easy to predict, you just have to listen at what they’re saying
+💡Markets are very easy to predict, you just have to listen at what they're saying
 
 Always remember: #DeFi on-chain data is your friend
 
@@ -6479,7 +6779,7 @@ Depegging of $USDC can lead to the collapse of other #stablecoins and #crypto pr
 
 🚨📈 $USDT reserves are depleting across all #DEX pools that have $USDC. 
 
-It’s not just the #3pool on #Curve, #SUSD pool is in the same situation.
+It's not just the #3pool on #Curve, #SUSD pool is in the same situation.
 
 This is a result of massive liquidation of $USDC, due to SVB's collapse.
 
@@ -6503,7 +6803,7 @@ A lot of news saying that $USDC is safe despite #SVB collapse, but the market se
 
 This is the reason why $BUSD is trading below $USDT at #Binance 
 
-It’s caused by mass swap of $USDC to $USDT across the DEXes. Same happening on #Uniswap
+It's caused by mass swap of $USDC to $USDT across the DEXes. Same happening on #Uniswap
 
 ~ ✨ ~
 
@@ -6511,7 +6811,7 @@ It’s caused by mass swap of $USDC to $USDT across the DEXes. Same happening on
 
 🚨📈 Mass $USDC to $USDT swapping has caused $BUSD to fall below $USDT by more than 1%
 
-As $USDT reserves across #DEX are depleting, it’s also affecting #CEX like #Binance 
+As $USDT reserves across #DEX are depleting, it's also affecting #CEX like #Binance 
 
 This is a result of the collapse of the Silicon Valley Bank, where $USDC has reserves
 
@@ -6547,6 +6847,6 @@ Not a single DEX collapsed for the same reasons. DeFi is building the best finan
 
 ⏰ 2023-03-05 22:20
 
-Navigating the world of DeFi without a deep understanding of the economic and monetary theory is akin to navigating an unknown city without a map. Just because the buildings are made of the same material as in your hometown, doesn’t mean you’ll find your way through #DeFi #crypto 
+Navigating the world of DeFi without a deep understanding of the economic and monetary theory is akin to navigating an unknown city without a map. Just because the buildings are made of the same material as in your hometown, doesn't mean you'll find your way through #DeFi #crypto 
 
 ~ ✨ ~
