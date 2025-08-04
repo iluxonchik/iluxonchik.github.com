@@ -6,6 +6,72 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-08-04 20:44
+
+Illya's Thought Threads is available under https://illya.sh/thoughts/threads/
+
+there you can access them in a nice reader view
+
+order is most recently updated first - so a fresh addition to a thread bumps it up in the timeline of threads
+
+📖 Quoting from 2025-08-04 20:43:
+┌─ this isn’t how you usually write threads on X - where it’s more common to do it via nested replies
+│ 
+│ I don’t want to fix my use-case to X’s rules, but also want to provide an intuitive reading experience
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-04 20:43
+
+this isn’t how you usually write threads on X - where it’s more common to do it via nested replies
+
+I don’t want to fix my use-case to X’s rules, but also want to provide an intuitive reading experience
+
+📖 Quoting from 2025-08-04 20:43:
+┌─ the way I do it is by quoting the logically connected post, thus forming a chain of related posts
+│ 
+│ if you build a DAG with temporal order & display posts from oldest to newest you get a thread of posts, forming a small article
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-04 20:43
+
+the way I do it is by quoting the logically connected post, thus forming a chain of related posts
+
+if you build a DAG with temporal order & display posts from oldest to newest you get a thread of posts, forming a small article
+
+📖 Quoting from 2025-08-04 20:42:
+┌─ so everything that I post on other social media, like X/Twitter also gets posted to my microblog at https://illya.sh/thoughts/
+│ 
+│ frequently an idea evolves into a series of posts - a thread/small article
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-04 20:42
+
+so everything that I post on other social media, like X/Twitter also gets posted to my microblog at https://illya.sh/thoughts/
+
+frequently an idea evolves into a series of posts - a thread/small article
+
+📖 Quoting from 2025-08-04 20:40:
+┌─ 🚀 added threads to my posts/thoughts & now you can read them as articles
+│ 
+│ the static microblog now generates a series of quoted posts as threads, where posts are displayed from oldest to newest
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-04 20:40
+
+🚀 added threads to my posts/thoughts & now you can read them as articles
+
+the static microblog now generates a series of quoted posts as threads, where posts are displayed from oldest to newest
+
+~ ✨ ~
+
 ⏰ 2025-08-04 18:28
 
 Bitcoin is still in a weekly uptrend it must either go up or down to ≈$109500 - a strong weekly support
