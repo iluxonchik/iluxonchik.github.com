@@ -6,9 +6,266 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-08-05 22:01
+
+Basel III defines capital, leverage, liquidity and net stable funding ratios
+
+they're in the form of formulas, and regulations require minimum thresholds to be met
+
+I previously wrote about Basel III and its importance in financial markets here ⬇️
+https://illya.sh/threads/@1753631798-1.html
+
+📖 Quoting from 2025-08-05 21:48:
+┌─ banks are also subject to regulations when issuing loans
+│ 
+│ and no - it's not the fractional reserve system
+│ 
+│ in many sovereigns, like the USA the reserve requirements sit at 0%
+│ 
+│ there are other regulatory requirements limiting loan issuance
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-05 21:48
+
+banks are also subject to regulations when issuing loans
+
+and no - it's not the fractional reserve system
+
+in many sovereigns, like the USA the reserve requirements sit at 0%
+
+there are other regulatory requirements limiting loan issuance
+
+📖 Quoting from 2025-08-05 21:47:
+┌─ the bank has the legal right to increase the money supply AKA 'print money'
+│ 
+│ so to give you a $100 loan the bank can just create those $100 and give give them to you
+│ 
+│ pretty neat arrangement, huh? 😁
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-05 21:47
+
+the bank has the legal right to increase the money supply AKA 'print money'
+
+so to give you a $100 loan the bank can just create those $100 and give give them to you
+
+pretty neat arrangement, huh? 😁
+
+📖 Quoting from 2025-08-05 21:47:
+┌─ banks are credit institutions which means they can create broad money
+│ 
+│ while a non-credit institution or a regular business can issue loans - they must fund it (e.g. raise money, use excess profits)
+│ 
+│ they can't just create those $100, thus expanding the monetary supply
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-05 21:47
+
+banks are credit institutions which means they can create broad money
+
+while a non-credit institution or a regular business can issue loans - they must fund it (e.g. raise money, use excess profits)
+
+they can't just create those $100, thus expanding the monetary supply
+
+📖 Quoting from 2025-08-05 21:46:
+┌─ so the bank funds the loan by creating $100 and crediting them to your account
+│ 
+│ those $100 that they credited you did not exist before - the bank created that money on demand
+│ 
+│ those $100 are not physical cash - they're an entry in a digital ledger (i.e. in a computer system)
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-05 21:46
+
+so the bank funds the loan by creating $100 and crediting them to your account
+
+those $100 that they credited you did not exist before - the bank created that money on demand
+
+those $100 are not physical cash - they're an entry in a digital ledger (i.e. in a computer system)
+
+📖 Quoting from 2025-08-05 21:45:
+┌─ a loan for the bank ends up earning more than the lent amount
+│ 
+│ this is because the borrower repays the principal (loan amount) + interest
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-05 21:45
+
+a loan for the bank ends up earning more than the lent amount
+
+this is because the borrower repays the principal (loan amount) + interest
+
+📖 Quoting from 2025-08-05 21:44:
+┌─ why is a loan an asset to the bank?
+│ 
+│ because the loan earns an interest over its lifetime. this the the fixed or variable interest rate associated with the loan
+│ 
+│ with time, that loan brings periodic cashflows repaying the principal and the interest
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-05 21:44
+
+why is a loan an asset to the bank?
+
+because the loan earns an interest over its lifetime. this the the fixed or variable interest rate associated with the loan
+
+with time, that loan brings periodic cashflows repaying the principal and the interest
+
+📖 Quoting from 2025-08-05 21:43:
+┌─ deposits are liabilities to the bank - as they are owed to depositors/customers
+│ 
+│ so the $100 cash loan that the bank issues to you becomes a deposit in that same bank, and thus a liability for the bank
+│ 
+│ you can move those $100 outside of the bank at any time/on short notice
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-05 21:43
+
+deposits are liabilities to the bank - as they are owed to depositors/customers
+
+so the $100 cash loan that the bank issues to you becomes a deposit in that same bank, and thus a liability for the bank
+
+you can move those $100 outside of the bank at any time/on short notice
+
+📖 Quoting from 2025-08-05 21:41:
+┌─ in the bank’s balance sheet:
+│ 
+│ ⬆️ +$100 assets - the loan they just issued
+│ 
+│ ⬆️ +$100 liabilities - the $100 your account was credited with
+│ 
+│ your loan is an asset to the bank - and your loan itself funds the $100 deposit that you get in your account
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-05 21:41
+
+in the bank’s balance sheet:
+
+⬆️ +$100 assets - the loan they just issued
+
+⬆️ +$100 liabilities - the $100 your account was credited with
+
+your loan is an asset to the bank - and your loan itself funds the $100 deposit that you get in your account
+
+📖 Quoting from 2025-08-05 21:39:
+┌─ the bank needs a liability to fund an asset
+│ 
+│ when a bank gives you a loan it gains both an asset and a liability in the same amount
+│ 
+│ let's say you get a loan for $100
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-05 21:39
+
+the bank needs a liability to fund an asset
+
+when a bank gives you a loan it gains both an asset and a liability in the same amount
+
+let's say you get a loan for $100
+
+📖 Quoting from 2025-08-05 21:38:
+┌─ how banks work? bank's business model is very simple:
+│ 
+│ 1️⃣ Take liability
+│ 2️⃣ Use liability to buy asset
+│ 3️⃣ Pocket the spread/carry
+│ 
+│ all of the bank's assets are financed by its liabilities
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-05 21:38
+
+how banks work? bank's business model is very simple:
+
+1️⃣ Take liability
+2️⃣ Use liability to buy asset
+3️⃣ Pocket the spread/carry
+
+all of the bank's assets are financed by its liabilities
+
+~ ✨ ~
+
+⏰ 2025-08-05 20:05
+
+updated Illya's Threads url to https://illya.sh/threads/
+
+now it gets it own subdirectory - so the URLs are shorter and it's more modular to manage the sitemaps this way
+
+later I'll also add an RSS feed for threads, just like the one for thoughts at https://illya.sh/thoughts/feed.xml
+
+📖 Quoting from 2025-08-05 01:05:
+┌─ ask ChatGPT what are the latest Illya's Threads and it will tell you 😄
+│ 
+│ should also work with Grok, Claude, Gemini and any other agentic AI with web access
+│ 
+│ this is again JSON-LD magic - LLMs seem to love it
+│ 
+│ i only added threads a few hours ago - it's already indexed & working
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-05 01:05
+
+ask ChatGPT what are the latest Illya's Threads and it will tell you 😄
+
+should also work with Grok, Claude, Gemini and any other agentic AI with web access
+
+this is again JSON-LD magic - LLMs seem to love it
+
+i only added threads a few hours ago - it's already indexed & working
+
+📖 Quoting from 2025-08-04 23:08:
+┌─ here's how the thread reading experience looks like
+│ 
+│ the aim is clean article view - with timestamps as visual separators between posts/thoughts
+│ 
+│ if you click on the timestamp it takes you to the individual post/thoughts
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-04 23:08
+
+here's how the thread reading experience looks like
+
+the aim is clean article view - with timestamps as visual separators between posts/thoughts
+
+if you click on the timestamp it takes you to the individual post/thoughts
+
+📖 Quoting from 2025-08-04 20:44:
+┌─ Illya's Thought Threads is available under https://illya.sh/threads/
+│ 
+│ there you can access them in a nice reader view
+│ 
+│ order is most recently updated first - so a fresh addition to a thread bumps it up in the timeline of threads
+└─
+
+~ ✨ ~
+
 ⏰ 2025-08-04 20:44
 
-Illya's Thought Threads is available under https://illya.sh/thoughts/threads/
+Illya's Thought Threads is available under https://illya.sh/threads/
 
 there you can access them in a nice reader view
 
@@ -1384,7 +1641,7 @@ Russia's exports to the US are less than 1% of the total
 📖 Quoting from 2025-04-08 12:02:
 ┌─ 🇷🇺 Russia is immune to US tariffs 
 │ 
-│ Russia's foreign reserves are as follows:
+│ Russia's international reserves are as follows:
 │ - 0.007% US Treasury bonds
 │ - 35% Gold
 │ 
@@ -5490,7 +5747,7 @@ Maybe more regulations will solve this? 😁
 
 🇷🇺 Russia is immune to US tariffs 
 
-Russia's foreign reserves are as follows:
+Russia's international reserves are as follows:
 - 0.007% US Treasury bonds
 - 35% Gold
 
