@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { m, motion } from 'framer-motion'
 import { Github, Mail, Send, ExternalLink, QrCode, Twitter } from 'lucide-react'
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -10,8 +10,218 @@ import { Button } from "@/components/ui/button"
 export function HomepageCard() {
   const [activeTab, setActiveTab] = useState('👋')
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Illya Gerasymchuk",
+    "givenName": "Illya",
+    "familyName": "Gerasymchuk",
+    "jobTitle": ["Entrepreneur", "Software Engineer", "Blockchain Developer", "Web3 Developer", "AI Agent Developer", "LLM Developer", "Software Architect", "Computer Security Engineer"],
+    "description": "Entrepreneur and Engineer focused on solving problems in finance, governance & digital privacy. Specializing in Zero Knowledge Proofs, DeFi, Legal Smart Contracts, and Generative AI.",
+    "url": "https://illya.sh",
+    "image": "https://illya.sh/profile-2.png",
+    "email": "hello@illya.sh",
+    "sameAs": [
+      "https://github.com/iluxonchik",
+      "https://x.com/illyaGera",
+      "https://illya.sh/blog",
+      "https://illya.sh/thoughts", 
+      "https://illya.sh/threads",
+      "https://illya.sh/cv-resume/"
+    ],
+    "knowsAbout": [
+      "Zero Knowledge Proofs",
+      "Blockchain Technology",
+      "DeFi (Decentralized Finance)",
+      "Legal Smart Contracts",
+      "Digital Privacy",
+      "Cryptography",
+      "Software Engineering",
+      "Distributed Systems",
+      "Financial Technology",
+      "Financial Markets",
+      "Finance",
+      "Law & Finance",
+      "Governance Technology",
+      "Generative AI",
+      "AI Agents",
+      "Large Language Models",
+      "MCP",
+      "Model Context Protocol"
+    ], 
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@illya.sh",
+      "contactType": "professional"
+    },
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Instituto Superior Técnico (IST)",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lisbon",
+          "addressCountry": "Portugal"
+        }
+      }
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Master's in Software Engineering and Distributed Systems",
+        "educationalLevel": "Master's Degree",
+        "recognizedBy": {
+          "@type": "EducationalOrganization", 
+          "name": "Instituto Superior Técnico (IST)"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Bachelor's in Software and Computer Engineering", 
+        "educationalLevel": "Bachelor's Degree",
+        "recognizedBy": {
+          "@type": "EducationalOrganization",
+          "name": "Instituto Superior Técnico (IST)"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Master's in Law & Financial Markets",
+        "educationalLevel": "Master's Degree",
+        "credentialStatus": "In Progress"
+      }
+    ],
+    "creator": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "zkLocus",
+        "description": "Authenticated, private & programmable geolocation on-chain using ZKP",
+        "url": "https://zklocus.dev",
+        "applicationCategory": "Blockchain Application"
+      },
+      {
+        "@type": "SoftwareApplication", 
+        "name": "zkSafeZones",
+        "description": "Civilian protection in conflict areas using Mina Protocol blockchain & ZKP",
+        "url": "https://zklocus.dev/zkSafeZones",
+        "applicationCategory": "Humanitarian Technology"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Mina Foundation GovBot", 
+        "description": "On-chain governance for Mina Protocol community voting",
+        "url": "https://github.com/MinaFoundation/PGT_govbot",
+        "applicationCategory": "Governance Tool"
+      }
+    ],
+    "author": [
+      {
+        "@type": "Article",
+        "name": "zkSNARKs & zkSTARKs: A Novel Verifiable Computation Model",
+        "url": "https://illya.sh/blog/posts/zksnark-zkstark-verifiable-computation-model-blockchain/",
+        "about": "Zero Knowledge Proofs"
+      },
+      {
+        "@type": "Article", 
+        "name": "Recursive zkSNARKs & Private Input Visibility",
+        "url": "https://illya.sh/blog/posts/zk-snarks-recursive-proof-private-intput-visibility/",
+        "about": "Zero Knowledge Proofs"
+      },
+      {
+        "@type": "Article",
+        "name": "Privacy Is A Myth. Unless You're Using Zero-Knowledge Proofs", 
+        "url": "https://illya.sh/blog/posts/privacy-is-a-myth-without-zero-knowledge-proofs/",
+        "about": "Digital Privacy"
+      },
+      {
+        "@type": "Article",
+        "name": "zkLocus: Authenticated Private Geolocation Off & On-Chain",
+        "url": "https://illya.sh/blog/posts/zklocus-authenticated-geolocation-blockchain-zk/",
+        "about": "Blockchain Technology"
+      },
+      {
+        "@type": "Article",
+        "name": "BRICS Digital Currency: Cryptocurrency On A Public Blockchain",
+        "url": "https://illya.sh/blog/posts/brics-cryptocurrency-blockchain/",
+        "about": "Cryptocurrency"
+      },
+      {
+        "@type": "Article",
+        "name": "Deposit Guarantee Scheme of Japan: DIA & DICJ",
+        "url": "https://illya.sh/blog/posts/deposit-guarantee-scheme-japan-dia-dicj/",
+        "about": "Financial Regulation"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "name": "TLS For Internet of Things",
+        "description": "Master Thesis on Transport Layer Security for IoT devices",
+        "url": "https://fenix.tecnico.ulisboa.pt/downloadFile/1126295043836553/Thesis.pdf",
+        "about": "Internet of Things Security"
+      }
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Entrepreneur & Software Engineer",
+      "occupationLocation": {
+        "@type": "Place",
+        "name": "Remote"
+      },
+      "skills": [
+        "Zero Knowledge Proofs",
+        "Blockchain Development", 
+        "Smart Contracts",
+        "Cryptography",
+        "Software Architecture",
+        "Distributed Systems",
+        "Financial Technology",
+        "Legal Technology",
+        "Software Engineering",
+        "Computer Security",
+      ]
+    },
+    "memberOf": [
+      {
+        "@type": "Organization",
+        "name": "Python Software Foundation",
+        "url": "https://www.python.org",
+        "description": "Contributing Member"
+      }
+    ],
+    "seeks": [
+      {
+        "@type": "Demand",
+        "itemOffered": {
+          "@type": "JobPosting",
+          "title": "Senior Software Engineer / Software Architect (Blockchain, Zero-Knowledge, AI, Web3, Web2)",
+          "employmentType": [
+            "https://schema.org/FullTime",
+            "https://schema.org/Contractor",
+            "https://schema.org/Freelance"
+          ],
+          "jobLocationType": "https://schema.org/Telecommute",
+          "datePosted": "2025-08-06",
+          "description": "Open to remote-only positions: senior software engineering, software architecture, consulting or contract roles across blockchain, distributed systems, AI agents, zero-knowledge proofs and traditional Web2 backend infrastructure."
+        }
+      },
+      {
+        "@type": "Demand",
+        "itemOffered": {
+          "@type": "CreativeWork",
+          "name": "Innovation in Finance, Governance & Digital Privacy",
+          "description": "Working towards a more efficient, transparent & decentralized financial system, automated legal systems, and privacy-first technologies."
+        }
+      }
+    ]
+    
+  }
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 to-indigo-800 flex items-center justify-center p-4">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd, null, 2) }}
+      />
+      <div className="min-h-screen bg-gradient-to-br from-purple-600 to-indigo-800 flex items-center justify-center p-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -19,7 +229,7 @@ export function HomepageCard() {
         className="bg-white rounded-lg shadow-xl overflow-hidden max-w-4xl w-full"
       >
         <div className="md:flex">
-          <div className="md:w-1/3 bg-gray-100 pt-8 px-8 pb-4 flex flex-col items-center justify-center">
+          <div className="md:w-1/3 bg-gray-100 pt-3 px-8 pb-4 flex flex-col items-center justify-center">
             <img
               src="/profile-2.png?height=200&width=200"
               alt="Illya Gerasymchuk"
@@ -34,9 +244,9 @@ export function HomepageCard() {
               <a href="mailto:hello@illya.sh" className="text-gray-600 hover:text-purple-500 transition-colors">
                 <Mail className="w-6 h-6" />
               </a>
-              <a href="https://t.me/illya_gerasymchuk" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-purple-500 transition-colors">
+              {/* <a href="https://t.me/illya_gerasymchuk" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-purple-500 transition-colors">
                 <Send className="w-6 h-6" />
-              </a>
+              </a> */}
               <a href="https://x.com/illyaGera" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-purple-500 transition-colors">
                 <Twitter className="w-6 h-6" />
               </a>
@@ -62,11 +272,18 @@ export function HomepageCard() {
                 </DialogContent>
               </Dialog>
             </div>
-            <Button asChild className="mt-4 px-6 py-1 w-full max-w-xs bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md hover:from-purple-600 hover:to-indigo-700 transition-all duration-300 ease-in-out">
-              <a href="https://illya.sh/thoughts" target="_blank" rel="noopener noreferrer">
-                My Thoughts
-              </a>
-            </Button>
+            <div className="mt-4 flex flex-row gap-1.5 w-full max-w-xs md:flex-col md:gap-1.5">
+              <Button asChild className="px-2 py-1.5 flex-1 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md hover:from-purple-600 hover:to-indigo-700 transition-all duration-300 ease-in-out text-xs sm:text-sm sm:px-3 sm:py-2 md:text-sm">
+                <a href="https://illya.sh/thoughts" target="_blank" rel="noopener">
+                  💭 My Thoughts
+                </a>
+              </Button>
+              <Button asChild className="px-2 py-1.5 flex-1 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md hover:from-purple-600 hover:to-indigo-700 transition-all duration-300 ease-in-out text-xs sm:text-sm sm:px-3 sm:py-2 md:text-sm">
+                <a href="https://illya.sh/threads" target="_blank" rel="noopener">
+                  🧵 My Threads
+                </a>
+              </Button>
+            </div>
           </div>
           <div className="md:w-2/3 p-4 md:p-8">
             <Tabs defaultValue="👋" onValueChange={setActiveTab} className="w-full">
@@ -124,6 +341,7 @@ export function HomepageCard() {
                   </div>
                   <p className="text-gray-700 mt-4">
                     You can reach out to me at <a href="mailto:hello@illya.sh" className="text-purple-600 hover:underline">hello@illya.sh</a>
+                    <p>You can find my CV/Resume at <a href="https://illya.sh/cv-resume/" className="text-purple-600 hover:underline">illya.sh/cv-resume</a></p>
                   </p>
                 </motion.div>
               </TabsContent>
@@ -195,10 +413,26 @@ export function HomepageCard() {
                     <a 
                       href="https://illya.sh/blog/" 
                       target="_blank" 
-                      rel="noopener noreferrer" 
+                      rel="noopener" 
                       className="text-purple-600 hover:text-purple-800 underline"
                     >
                       illya.sh/blog
+                    </a>, {' '}
+                    <a 
+                      href="https://illya.sh/threads" 
+                      target="_blank" 
+                      rel="noopener" 
+                      className="text-purple-600 hover:text-purple-800 underline"
+                    >
+                      illya.sh/threads
+                    </a> and {' '}
+                    <a 
+                      href="https://illya.sh/thoughts" 
+                      target="_blank" 
+                      rel="noopener" 
+                      className="text-purple-600 hover:text-purple-800 underline"
+                    >
+                      illya.sh/thoughts
                     </a>
                   </p>
                   <div className="space-y-6">
@@ -353,5 +587,6 @@ export function HomepageCard() {
         </div>
       </motion.div>
     </div>
+    </>
   )
 }
