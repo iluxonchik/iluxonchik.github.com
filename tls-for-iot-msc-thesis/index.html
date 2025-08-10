@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TLS for Internet of Things — MSc Thesis (Illya Gerasymchuk)</title>
+  <meta name="description" content="MSc thesis by Illya Gerasymchuk on Transport Layer Security (TLS) for Internet of Things (IoT): abstract, and links to HTML, Web PDF, and downloadable PDF versions." />
+  <meta name="author" content="Illya Karram Gerasymchuk" />
+  <link rel="canonical" href="https://illya.sh/tls_for_iot_thesis/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="TLS for Internet of Things — MSc Thesis (Illya Gerasymchuk)" />
+  <meta property="og:description" content="Abstract and access links to the thesis in HTML, Web PDF, and PDF formats." />
+  <meta property="og:url" content="https://illya.sh/tls_for_iot_thesis/" />
+  <meta property="og:image" content="https://illya.sh/staticthoughts/data/profile.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="TLS for Internet of Things — MSc Thesis (Illya Gerasymchuk)" />
+  <meta name="twitter:description" content="Abstract and access links to the thesis in HTML, Web PDF, and PDF formats." />
+  <meta name="twitter:image" content="https://illya.sh/staticthoughts/data/profile.png" />
+
+  <!-- JSON-LD (Schema.org) -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Illya Karram Gerasymchuk",
+      "url": "https://illya.sh/",
+      "description": "Portfolio, CV, publications, and contact information for entrepreneur & software engineer Illya Karram Gerasymchuk.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "Illya Karram Gerasymchuk",
+        "url": "https://illya.sh"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://illya.sh/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "TLS for Internet of Things — Illya's MSc Thesis",
+      "url": "https://illya.sh/tls_for_iot_thesis/",
+      "isPartOf": { "@id": "https://illya.sh/" },
+      "inLanguage": "en"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Illya Karram Gerasymchuk",
+      "url": "https://illya.sh",
+      "sameAs": [
+        "https://github.com/iluxonchik",
+        "https://illya.sh/cv-resume/",
+        "https://illya.sh/threads/",
+        "https://illya.sh/thoughts/",
+        "https://illya.sh/blog/",
+        "https://illya.sh/tls_for_iot_thesis/"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "TLS for Internet of Things — MSc Thesis (Abstract)",
+      "url": "https://illya.sh/tls_for_iot_thesis/",
+      "mainEntityOfPage": "https://illya.sh/tls_for_iot_thesis/",
+      "author": {
+        "@type": "Person",
+        "name": "Illya Karram Gerasymchuk",
+        "url": "https://illya.sh"
+      },
+      "datePublished": "2019-06-01T00:00:00+00:00",
+      "dateModified": "2019-06-01T00:00:00+00:00",
+      "image": ["https://illya.sh/tls_for_iot_thesis/social.png"],
+      "inLanguage": "en",
+      "about": ["Transport Layer Security", "Internet of Things", "Computer Security"],
+      "articleBody": "Transport Layer Security (TLS) is one of the most used communication security protocols in the world. Its main goal is to provide a secure communication channel with the security services of confidentiality, integrity, authentication, and Perfect Forward Secrecy (PFS). Each security service can be implemented by one of the multiple available algorithms. TLS was not designed for the constrained environment and is too computationally demanding for many Internet Of Things (IoT) devices. However, it is a malleable protocol and individual security services can be enabled and disabled on a per-connection basis. Foregoing a security service or using a cheaper algorithm to implement it reduces the utilized computational resources. The security properties of a connection are defined by a TLS configuration. Some of those configurations can be used with the resource-constrained IoT devices. Existing work focuses on Datagram TLS (DTLS) and is either tied to a specific protocol or requires the usage of a third-party entity. For this reason, it cannot be easily integrated with existing deployments. In this work, we performed a thorough evaluation of the TLS protocol and its security services. We present a framework that can be used by software developers and security professionals to select the cheapest TLS configuration for their environment’s needs and limitations. We evaluate the TLS implementation of the mbedTLS library using two cost metrics: the estimated number of CPU cycles, obtained with valgrind, and execution time, obtained with PAPI. In the end, we will show that the estimated values are close to the real ones."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Thesis",
+      "name": "TLS for Internet of Things",
+      "author": {
+        "@type": "Person",
+        "name": "Illya Karram Gerasymchuk",
+        "url": "https://illya.sh"
+      },
+      "datePublished": "2019-06-01",
+      "inLanguage": "en",
+      "educationalLevel": "Master's",
+      "url": "https://illya.sh/tls_for_iot_thesis/",
+      "description": "MSc thesis on Transport Layer Security (TLS) in resource-constrained IoT environments; abstract and links to HTML, Web PDF, and PDF versions.",
+      "about": ["Transport Layer Security", "Internet of Things", "Computer Security"],
+      "encoding": [
+        {
+          "@type": "MediaObject",
+          "name": "HTML (web page)",
+          "contentUrl": "https://illya.sh/tls_for_iot_thesis/html/tls_for_iot_illya_gerasymchuk.html",
+          "encodingFormat": "text/html"
+        },
+        {
+          "@type": "MediaObject",
+          "name": "Web PDF (viewer)",
+          "contentUrl": "https://illya.sh/tls_for_iot_thesis/webpdf/tls_for_iot_illya_gerasymchuk.html",
+          "encodingFormat": "text/html"
+        },
+        {
+          "@type": "MediaObject",
+          "name": "PDF (download)",
+          "contentUrl": "https://illya.sh/tls_for_iot_thesis/pdf/tls_for_iot_illya_gerasymchuk.pdf",
+          "encodingFormat": "application/pdf"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "name": "Illya Karram Gerasymchuk",
+      "url": "https://illya.sh/cv-resume/",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://illya.sh/" },
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Illya Karram Gerasymchuk",
+        "alternateName": "Illya Gerasymchuk",
+        "image": "https://illya.sh/cv-resume/social.png",
+        "jobTitle": "Entrepreneur & Software Engineer",
+        "description": "Entrepreneur & software engineer specializing in blockchain, distributed systems, AI agent development, zero-knowledge proofs, and traditional Web2 systems.",
+        "url": "https://illya.sh",
+        "sameAs": [
+          "https://github.com/iluxonchik",
+          "https://illya.sh/threads/",
+          "https://illya.sh/thoughts/",
+          "https://illya.sh/blog/",
+          "https://illya.sh/cv-resume/",
+          "https://illya.sh/tls_for_iot_thesis/"
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Illya's Threads",
+      "url": "https://illya.sh/threads/",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://illya.sh/" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Illya's Thoughts",
+      "url": "https://illya.sh/thoughts/",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://illya.sh/" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Illya's Blog",
+      "url": "https://illya.sh/blog/",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://illya.sh/" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://illya.sh/"},
+        {"@type": "ListItem", "position": 2, "name": "TLS for IoT Thesis", "item": "https://illya.sh/tls_for_iot_thesis/"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://illya.sh/"},
+        {"@type": "ListItem", "position": 2, "name": "Threads", "item": "https://illya.sh/threads/"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://illya.sh/"},
+        {"@type": "ListItem", "position": 2, "name": "Thoughts", "item": "https://illya.sh/thoughts/"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://illya.sh/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://illya.sh/blog/"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://illya.sh/"},
+        {"@type": "ListItem", "position": 2, "name": "CV Resume", "item": "https://illya.sh/cv-resume/"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://illya.sh/"},
+        {"@type": "ListItem", "position": 2, "name": "TLS for IoT Thesis", "item": "https://illya.sh/tls_for_iot_thesis/"},
+        {"@type": "ListItem", "position": 3, "name": "HTML", "item": "https://illya.sh/tls-for-iot-msc-thesis/html/tls_for_iot_illya_gerasymchuk.html"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://illya.sh/"},
+        {"@type": "ListItem", "position": 2, "name": "TLS for IoT Thesis", "item": "https://illya.sh/tls_for_iot_thesis/"},
+        {"@type": "ListItem", "position": 3, "name": "Web PDF", "item": "https://illya.sh/tls-for-iot-msc-thesis/webpdf/tls_for_iot_illya_gerasymchuk.html"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://illya.sh/"},
+        {"@type": "ListItem", "position": 2, "name": "TLS for IoT Thesis", "item": "https://illya.sh/tls_for_iot_thesis/"},
+        {"@type": "ListItem", "position": 3, "name": "PDF", "item": "https://illya.sh/tls-for-iot-msc-thesis/pdf/tls_for_iot_illya_gerasymchuk.pdf"}
+      ]
+    }
+  ]
+  </script>
+
+  <style>
+    /* Match the style system used in cv-resume/index.html */
+    :root {
+      --color-bg: #ffffff;
+      --color-text: #1a1a1a;
+      --color-text-light: #555555;
+      --color-text-muted: #777777;
+      --color-accent: #0066cc;
+      --color-border: #e0e0e0;
+      --color-border-soft: #f0f0f0;
+
+      --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-size-base: 15px;
+      --font-size-sm: 13px;
+      --font-size-lg: 17px;
+      --font-size-xl: 20px;
+      --font-size-2xl: 26px;
+      --line-height-base: 1.5;
+      --line-height-tight: 1.25;
+
+      --space-xs: 0.25rem;
+      --space-sm: 0.5rem;
+      --space-md: 0.75rem;
+      --space-lg: 1rem;
+      --space-xl: 1.25rem;
+      --space-2xl: 1.5rem;
+
+      --max-width: 760px;
+      --radius: 10px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: var(--font-size-base); line-height: var(--line-height-base); }
+    body { background: var(--color-bg); color: var(--color-text); font-family: var(--font-family); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+    .container { margin: 0 auto; max-width: var(--max-width); padding: var(--space-md) var(--space-lg); }
+
+    header.header { border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-sm); margin-bottom: var(--space-md); }
+    header.header h1 { font-size: var(--font-size-2xl); line-height: var(--line-height-tight); letter-spacing: -0.02em; margin-bottom: var(--space-xs); }
+    .subtitle { color: var(--color-text-light); font-size: var(--font-size-base); display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
+    .subtitle .dot { opacity: .5; }
+
+    .notice { background: #f6fbff; border: 1px solid var(--color-border); border-radius: var(--radius); color: var(--color-text-light); padding: var(--space-sm) var(--space-md); margin: var(--space-md) 0; display: flex; gap: .6rem; align-items: flex-start; }
+    .notice .emoji { font-size: 1.15rem; }
+
+    .cards { display: grid; gap: var(--space-md); grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin: var(--space-md) 0 var(--space-lg); }
+    .card { border: 1px solid var(--color-border); border-radius: var(--radius); padding: var(--space-md); background: #fff; display: flex; flex-direction: column; gap: .5rem; box-shadow: 0 1px 0 var(--color-border-soft); }
+    .card h3 { font-size: var(--font-size-lg); line-height: var(--line-height-tight); margin-bottom: var(--space-xs); display: flex; align-items: center; gap: .5rem; }
+    .card p { color: var(--color-text-light); font-size: var(--font-size-sm); }
+    .actions { margin-top: auto; display: flex; gap: .5rem; align-items: center; }
+    .card a.button { display: inline-block; background: var(--color-accent); color: #fff; text-decoration: none; padding: 0.55rem 0.9rem; border-radius: 8px; font-size: var(--font-size-sm); box-shadow: 0 1px 0 rgba(0,0,0,.04); }
+    .card a.button:hover { filter: brightness(0.95); }
+    .card a.button.secondary { background: #0ea5e9; }
+    .card small { color: var(--color-text-muted); display: block; }
+
+    section { margin-top: var(--space-xl); }
+    section h2 { font-size: var(--font-size-lg); border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-xs); margin-bottom: var(--space-md); display: flex; align-items: center; gap: .5rem; }
+    section p { margin-bottom: var(--space-sm); color: var(--color-text); }
+
+    footer.footer { border-top: 1px solid var(--color-border); color: var(--color-text-muted); font-size: var(--font-size-sm); margin-top: var(--space-xl); padding-top: var(--space-md); text-align: center; }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header" role="banner">
+      <h1>🔐 TLS for Internet of Things — MSc Thesis</h1>
+      <div class="subtitle">
+        <span>👤 By Illya Gerasymchuk</span>
+        <span class="dot">•</span>
+        <span>🏛️ Instituto Superior Técnico</span>
+        <span class="dot">•</span>
+        <span>📅 June 2019</span>
+      </div>
+    </header>
+
+    <div class="notice" role="note">
+      <div class="emoji">ℹ️</div>
+      <div>This page provides three ways to read the thesis. The downloadable PDF is the most reliable. The HTML view is experimental and may have formatting issues.</div>
+    </div>
+
+    <div class="cards" aria-label="Thesis formats">
+      <article class="card">
+        <h3>🧩 HTML Webpage</h3>
+        <p>Fast to open; viewable in any browser. Note: generated HTML has minor formatting issues on some pages.</p>
+        <div class="actions">
+          <a class="button" href="https://illya.sh/tls_for_iot_thesis/html/tls_for_iot_illya_gerasymchuk.html" target="_blank" rel="noopener">Open HTML</a>
+          <small>Format: text/html</small>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>🖨️ Web PDF Viewer</h3>
+        <p>In-browser PDF rendering without downloading the file. Good fidelity and quick navigation.</p>
+        <div class="actions">
+          <a class="button secondary" href="https://illya.sh/tls_for_iot_thesis/webpdf/tls_for_iot_illya_gerasymchuk.html" target="_blank" rel="noopener">Open Web PDF</a>
+          <small>Format: PDF rendered in HTML</small>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>📄 PDF (Download)</h3>
+        <p>The authoritative and most reliable version of the thesis. Recommended for citation and offline reading.</p>
+        <div class="actions">
+          <a class="button" href="https://illya.sh/tls_for_iot_thesis/pdf/tls_for_iot_illya_gerasymchuk.pdf" target="_blank" rel="noopener">Download PDF</a>
+          <small>Format: application/pdf</small>
+        </div>
+      </article>
+    </div>
+
+    <section aria-labelledby="abstract-heading">
+      <h2 id="abstract-heading">📝 Abstract</h2>
+      <p>Transport Layer Security (TLS) is one of the most used communication security protocols in the world. Its main goal is to provide a secure communication channel with the security services of confidentiality, integrity, authentication, and Perfect Forward Secrecy (PFS). Each security service can be implemented by one of the multiple available algorithms. TLS was not designed for the constrained environment and is too computationally demanding for many Internet Of Things (IoT) devices. However, it is a malleable protocol and individual security services can be enabled and disabled on a per-connection basis. Foregoing a security service or using a cheaper algorithm to implement it reduces the utilized computational resources. The security properties of a connection are defined by a TLS configuration. Some of those configurations can be used with the resource-constrained IoT devices. Existing work focuses on Datagram TLS (DTLS) and is either tied to a specific protocol or requires the usage of a third-party entity. For this reason, it cannot be easily integrated with existing deployments. In this work, we performed a thorough evaluation of the TLS protocol and its security services. We present a framework that can be used by software developers and security professionals to select the cheapest TLS configuration for their environment’s needs and limitations. We evaluate the TLS implementation of the mbedTLS library using two cost metrics: the estimated number of CPU cycles, obtained with valgrind, and execution time, obtained with PAPI. In the end, we will show that the estimated values are close to the real ones.</p>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <p>Questions or feedback? Email <a href="mailto:hello@illya.sh">hello@illya.sh</a></p>
+    </footer>
+  </div>
+</body>
+</html>
+
+
