@@ -6,6 +6,172 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-08-10 13:30
+
+so did Russia really buy more gold?
+
+yes! despite CBR's gold reserves remaining unchanged - Russia's NWF has increased its gold reserves
+
+Russia's National Wealth Fund interoperates with the Russian Central Bank, government deficits and the broader economy
+
+📖 Quoting from 2025-08-10 13:21:
+┌─ IMF's 2024 annual report on SDDS compliance pointed out that Russia hasn't been meeting its requirements to the full extent, since they didn't disclose all of the required macro-financial data
+│ 
+│ SDDS = Special Data Dissemination Standard
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-10 13:21
+
+IMF's 2024 annual report on SDDS compliance pointed out that Russia hasn't been meeting its requirements to the full extent, since they didn't disclose all of the required macro-financial data
+
+SDDS = Special Data Dissemination Standard
+
+📖 Quoting from 2025-08-10 13:14:
+┌─ if you noticed - the IMF template reported by Russian Central Bank is missing entries
+│ 
+│ so they're actually supposed to report those values (or N/A - if it doesn't apply), but since the 2022 sanctions they have concealed some of the values
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-10 13:14
+
+if you noticed - the IMF template reported by Russian Central Bank is missing entries
+
+so they're actually supposed to report those values (or N/A - if it doesn't apply), but since the 2022 sanctions they have concealed some of the values
+
+📖 Quoting from 2025-08-10 13:09:
+┌─ IMF's guidelines mandate for the data to be either reported in Excel spreadsheet or SDMX
+│ 
+│ IMF pls update the specs to require publishing in HTML - i will happily provide you with XML to HTML scripts 😄
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-10 13:09
+
+IMF's guidelines mandate for the data to be either reported in Excel spreadsheet or SDMX
+
+IMF pls update the specs to require publishing in HTML - i will happily provide you with XML to HTML scripts 😄
+
+📖 Quoting from 2025-08-10 13:03:
+┌─ and yes, to get this data i had to download an excel file from Russian Central Bank's website. that's a norm in banks's international balance sheet reporting
+│ 
+│ HTML hasn't been discovered there yet 😄
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-10 13:03
+
+and yes, to get this data i had to download an excel file from Russian Central Bank's website. that's a norm in banks's international balance sheet reporting
+
+HTML hasn't been discovered there yet 😄
+
+📖 Quoting from 2025-08-10 12:57:
+┌─ a clarification: the table is CBR's gold holdings in USD - so the value goes up if price of gold goes up and gold stock remains at least unchanged
+│ 
+│ troy ounce holdings are released in an IMF-templated PDF report, but with a lag
+│ 
+│ CBR's latest data is 79.4 M troy ounces of gold
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-10 12:57
+
+a clarification: the table is CBR's gold holdings in USD - so the value goes up if price of gold goes up and gold stock remains at least unchanged
+
+troy ounce holdings are released in an IMF-templated PDF report, but with a lag
+
+CBR's latest data is 79.4 M troy ounces of gold
+
+📖 Quoting from 2025-08-03 17:16:
+┌─ both Russia & China increased their gold holdings since I wrote this 😄
+│ 
+│ indeed - central banks are continuing to buy the gold dips
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-10 12:00
+
+China will win the AI race, but not because they're releasing better & more efficient models and are ahead of other sovereigns in terms of practical AI infrastructure and systems. These are side-effects
+
+AI/ML is about maths - and Asia dominates in that regard
+
+~ ✨ ~
+
+⏰ 2025-08-09 18:40
+
+regarding the IPO/privatization of Fannie Mae & Freddie Mac i wrote a thread explaining the role, function and use during QE of those GSE
+
+also their history and how they were used to lower mortgage rates after the 2008 GFC
+
+you can read it it here ⬇️
+https://illya.sh/threads/@1754148538-1.html
+
+~ ✨ ~
+
+⏰ 2025-08-09 15:44
+
+stablecoin issuers would get this new credit, purchase treasury bonds and increase the supply of their stablecoin
+
+a new direct line from newly issued credit into treasuries 😄
+
+📖 Quoting from 2025-08-09 15:37:
+┌─ stablecoin issuers could intermediate the issuance process, so you don't need to get all credit institutions on-chain from the start
+│ 
+│ non-algorithmic stablecoin issuance already happens off-chain and presumes trust in a third party
+│ 
+│ this would just be faster. more liquidity
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-09 15:37
+
+stablecoin issuers could intermediate the issuance process, so you don't need to get all credit institutions on-chain from the start
+
+non-algorithmic stablecoin issuance already happens off-chain and presumes trust in a third party
+
+this would just be faster. more liquidity
+
+📖 Quoting from 2025-08-09 15:30:
+┌─ now imagine when credit institutions can tokenize new credit and allow automated stablecoin issuance backed by that credit
+│ 
+│ in practice it's code in smart contract that wraps one token with another
+│ 
+│ i created a similar project on an Ethereum hackathon ⬇️
+│ https://github.com/iluxonchik/eth-lisbon-hackathon-23
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-09 15:30
+
+now imagine when credit institutions can tokenize new credit and allow automated stablecoin issuance backed by that credit
+
+in practice it's code in smart contract that wraps one token with another
+
+i created a similar project on an Ethereum hackathon ⬇️
+https://github.com/iluxonchik/eth-lisbon-hackathon-23
+
+~ ✨ ~
+
+⏰ 2025-08-09 00:41
+
+i wrote a thread about the rumored tariffs on gold and what that means for the gold price
+
+also what's coming next
+
+you can read the thread here ⬇️
+https://illya.sh/threads/@1754662712-1.html
+
+~ ✨ ~
+
 ⏰ 2025-08-08 19:59
 
 new all time high for gold is near 😄
