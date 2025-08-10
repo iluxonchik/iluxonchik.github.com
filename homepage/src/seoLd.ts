@@ -31,11 +31,12 @@ export const seoLd = [
     "breadcrumb": {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://illya.sh/"},
-        {"@type": "ListItem", "position": 2, "name": "CV Resume", "item": "https://illya.sh/cv-resume/"},
-        {"@type": "ListItem", "position": 3, "name": "Threads", "item": "https://illya.sh/threads/"},
-        {"@type": "ListItem", "position": 4, "name": "Thoughts", "item": "https://illya.sh/thoughts/"},
-        {"@type": "ListItem", "position": 5, "name": "Blog", "item": "https://illya.sh/blog/"}
+        {"@type": "ListItem", "position": 1, "name": "Illya's Homepage", "item": "https://illya.sh/"},
+        {"@type": "ListItem", "position": 2, "name": "Illya's CV Resume", "item": "https://illya.sh/cv-resume/"},
+        {"@type": "ListItem", "position": 3, "name": "Illya's Threads", "item": "https://illya.sh/threads/"},
+        {"@type": "ListItem", "position": 4, "name": "Illya's Thoughts", "item": "https://illya.sh/thoughts/"},
+        {"@type": "ListItem", "position": 5, "name": "Illya's Blog", "item": "https://illya.sh/blog/"},
+        {"@type": "ListItem", "position": 6, "name": "Illya's Master Thesis", "item": "https://illya.sh/tls-for-iot-msc-thesis/"}
       ]
     }
   },

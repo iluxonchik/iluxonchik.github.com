@@ -307,7 +307,7 @@ export function HomepageCard() {
                         <h3 className="font-medium">Master's in Software Engineering and Distributed Systems</h3>
                         <p className="text-sm text-gray-600">Instituto Superior Técnico (IST), Lisbon, Portugal</p>
                         <a 
-                          href="https://fenix.tecnico.ulisboa.pt/downloadFile/1126295043836553/Thesis.pdf" 
+                          href="https://illya.sh/tls-for-iot-msc-thesis/" 
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-purple-500 hover:text-purple-700 transition-colors text-sm flex items-center mt-1"
