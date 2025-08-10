@@ -6,6 +6,42 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-08-10 17:21
+
+converting PDF to HTML is tricky due to formatting, but I managed to produce an acceptable HTML version
+
+for highest fidelity use the PDF or Web PDF
+
+an LLM/AI Agent visiting the page should also be able to access and read the full thesis content, including HTML version
+
+📖 Quoting from 2025-08-10 17:15:
+┌─ added Transport Layer Security for Internet of Things/TLS for IoT master thesis page
+│ 
+│ i wrote this master thesis as a part of my engineering degree  (MSc Software Engineering and Distributed Systems)
+│ 
+│ you can read it in HTML and PDF
+│ 
+│ here's the link
+│ 👇
+│ https://illya.sh/tls-for-iot-msc-thesis/
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-10 17:15
+
+added Transport Layer Security for Internet of Things/TLS for IoT master thesis page
+
+i wrote this master thesis as a part of my engineering degree  (MSc Software Engineering and Distributed Systems)
+
+you can read it in HTML and PDF
+
+here's the link
+👇
+https://illya.sh/tls-for-iot-msc-thesis/
+
+~ ✨ ~
+
 ⏰ 2025-08-10 13:30
 
 so did Russia really buy more gold?
