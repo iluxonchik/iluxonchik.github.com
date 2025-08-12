@@ -26,7 +26,7 @@ https://illya.sh/threads/@1751726431-1
 
 bitcoin went up 6% from the weekly support line
 
-until the end of this month, bitcoin will either see a new all time high or retest the ≈$0.0195M support
+until the end of this month, bitcoin will either see a new all time high or retest the ≈$0.1095M support
 
 this is the daily timescale of the same chart - the blue and red lines are weekly, green is daily
 
@@ -7289,13 +7289,203 @@ It's an AI-generated podcast of the article using NotebookLM audio overview with
 
 ~ ✨ ~
 
+⏰ 2024-10-27 15:51
+
+🇯🇵🧠 For a deeper dive into Japan's deposit insurance system, read or listen my article at https://illya.sh/blog/posts/deposit-guarantee-scheme-japan-dia-dicj/
+
+It covers Japan's deposit insurance's:
+• Legal framework
+• Historical cases
+• Risk analysis
+• EU comparison
+
+Got questions? Ask me! 👇
+
+📖 Quoting from 2024-10-27 15:51:
+┌─ 🎌 While Japan has been successful in resolving hundreds of financial institution failures, the debt-heavy approach can only be only effective if the value created by credit is larger than the principal
+│ 
+│ Otherwise, there's another bubble building up 🫧
+└─
+
+~ ✨ ~
+
+⏰ 2024-10-27 15:51
+
+🎌 While Japan has been successful in resolving hundreds of financial institution failures, the debt-heavy approach can only be only effective if the value created by credit is larger than the principal
+
+Otherwise, there's another bubble building up 🫧
+
+📖 Quoting from 2024-10-27 15:51:
+┌─ 🇯🇵⚠️ Current risks:
+│ 
+│ • Heavy reliance on debt 
+│ • Large US Dollar & Securities exposure
+│ • Currency devaluation, leading to inflation
+│ 
+│ These could trigger a 90s-style crisis 2.0 📉
+└─
+
+~ ✨ ~
+
+⏰ 2024-10-27 15:51
+
+🇯🇵⚠️ Current risks:
+
+• Heavy reliance on debt 
+• Large US Dollar & Securities exposure
+• Currency devaluation, leading to inflation
+
+These could trigger a 90s-style crisis 2.0 📉
+
+📖 Quoting from 2024-10-27 15:51:
+┌─ 🚨 The system faced its biggest test during the 90s banking crisis:
+│ 
+│ • 110 financial institutions resolved
+│ • Full deposit protection implemented
+│ • Massive debt-based interventions
+│ 
+│ DICJ has met its insurance obligations, but at what cost? 🤔
+└─
+
+~ ✨ ~
+
+⏰ 2024-10-27 15:51
+
+🚨 The system faced its biggest test during the 90s banking crisis:
+
+• 110 financial institutions resolved
+• Full deposit protection implemented
+• Massive debt-based interventions
+
+DICJ has met its insurance obligations, but at what cost? 🤔
+
+📖 Quoting from 2024-10-27 15:51:
+┌─ 🇯🇵🆚🇪🇺 
+│ Japan's & EU's deposit guarantee schemes differ⬇️
+│ 
+│ 🇯🇵 DICJ: Active crisis manager (Act 34 of 1971)
+│ 🇪🇺 DGS: Mainly deposit protection (Directive 2014/49/EU)
+│ 
+│ Japan's approach = more intervention power & broader mandate
+│ EU's approach = more focused mandate
+└─
+
+~ ✨ ~
+
+⏰ 2024-10-27 15:51
+
+🇯🇵🆚🇪🇺 
+Japan's & EU's deposit guarantee schemes differ⬇️
+
+🇯🇵 DICJ: Active crisis manager (Act 34 of 1971)
+🇪🇺 DGS: Mainly deposit protection (Directive 2014/49/EU)
+
+Japan's approach = more intervention power & broader mandate
+EU's approach = more focused mandate
+
+📖 Quoting from 2024-10-27 15:51:
+┌─ 💰 DICJ's funding comes from:
+│ 
+│ • Self-issued bonds 
+│ • Insurance premiums paid by banks
+│ • Borrowed funds from financial institutions & public
+│ 
+│ In practice, operation financing is heavily relied on debt, making it risky long-term 📈
+└─
+
+~ ✨ ~
+
+⏰ 2024-10-27 15:51
+
+💰 DICJ's funding comes from:
+
+• Self-issued bonds 
+• Insurance premiums paid by banks
+• Borrowed funds from financial institutions & public
+
+In practice, operation financing is heavily relied on debt, making it risky long-term 📈
+
+📖 Quoting from 2024-10-27 15:51:
+┌─ 🚀 How fast do you get your deposits back?
+│ 
+│ The Incubator Bank case (2010) shows DICJ timeline in practice:
+│ • Bank failed on Friday
+│ • Deposits returned by Monday
+│ 
+│ 3 days/by next working day to have insured deposits available 🤝
+└─
+
+~ ✨ ~
+
+⏰ 2024-10-27 15:51
+
+🚀 How fast do you get your deposits back?
+
+The Incubator Bank case (2010) shows DICJ timeline in practice:
+• Bank failed on Friday
+• Deposits returned by Monday
+
+3 days/by next working day to have insured deposits available 🤝
+
+📖 Quoting from 2024-10-27 15:51:
+┌─ 💴 Coverage limits:
+│ • Regular deposits: Up to ¥10M (~$65k/€60k)
+│ • Payment & settlement accounts: 100% covered
+│ 
+│ 💡Fun fact: During the 90s crisis, ALL deposits were fully protected. Japan gradually reduced this to ¥10M by 2005
+└─
+
+~ ✨ ~
+
+⏰ 2024-10-27 15:51
+
+💴 Coverage limits:
+• Regular deposits: Up to ¥10M (~$65k/€60k)
+• Payment & settlement accounts: 100% covered
+
+💡Fun fact: During the 90s crisis, ALL deposits were fully protected. Japan gradually reduced this to ¥10M by 2005
+
+📖 Quoting from 2024-10-27 15:50:
+┌─ 🏦 The Deposit Insurance Corporation of Japan (DICJ), provisioned in the Deposit Insurance Act  (DIA) defines as its goals:
+│ 
+│ • Deposit insurance
+│ • Financial system stability
+│ • Troubled financial institution resolution
+│ 
+│ Deposits guarantee is just one of responsibilities
+└─
+
+~ ✨ ~
+
 ⏰ 2024-10-27 15:50
 
-1/10 🇯🇵 Ever wondered how Japan protects deposits when banks fail?
+🏦 The Deposit Insurance Corporation of Japan (DICJ), provisioned in the Deposit Insurance Act  (DIA) defines as its goals:
+
+• Deposit insurance
+• Financial system stability
+• Troubled financial institution resolution
+
+Deposits guarantee is just one of responsibilities
+
+📖 Quoting from 2024-10-27 15:50:
+┌─ 🇯🇵 How does Japan protect bank deposits when banks fail?
+│ 
+│ 🤯 Their deposit insurance system handled 180+ financial institution failures, including the massive 90's banking crisis
+│ 
+│ 👉 Here's how Japan's ¥10M deposit guarantee scheme works: https://illya.sh/blog/posts/deposit-guarantee-scheme-japan-dia-dicj/
+│ 
+│ 🧵
+└─
+
+~ ✨ ~
+
+⏰ 2024-10-27 15:50
+
+🇯🇵 How does Japan protect bank deposits when banks fail?
 
 🤯 Their deposit insurance system handled 180+ financial institution failures, including the massive 90's banking crisis
 
-👉 Here's how Japan's ¥10M deposit guarantee scheme works: 
+👉 Here's how Japan's ¥10M deposit guarantee scheme works: https://illya.sh/blog/posts/deposit-guarantee-scheme-japan-dia-dicj/
 
 🧵
 
@@ -7328,6 +7518,326 @@ proof of everything.
 ⏰ 2024-07-03 15:42
 
 Public petition to call them MinaFTs 😄
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+In summary, blockchain-based Tokenized Liquid Futures:
+
+- Eliminate intermediaries
+- Increase transparency
+- Enhance liquidity
+- Automate risk management
+- Provide flexible capital deployment
+
+Thus enabling a disruptive #DeFi use-case over its #TradFi equivalent
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ The smart contract automates risk management on-chain by:
+│ 
+│ 1️⃣ Enforcing margin requirements
+│ 2️⃣ Handling liquidations
+│ 3️⃣ Ensuring contract settlement
+│ 
+│ Removing the need for trusted third parties and ensuring transparency 🛡️
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+The smart contract automates risk management on-chain by:
+
+1️⃣ Enforcing margin requirements
+2️⃣ Handling liquidations
+3️⃣ Ensuring contract settlement
+
+Removing the need for trusted third parties and ensuring transparency 🛡️
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ The tokenization of the long and the short positions of the futures contact allows for trading of the positions in a fully decentralized manner, without the need for need for a clearing house
+│ 
+│ This means no trusted entity or oracles are required, ensuring full decentralization
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+The tokenization of the long and the short positions of the futures contact allows for trading of the positions in a fully decentralized manner, without the need for need for a clearing house
+
+This means no trusted entity or oracles are required, ensuring full decentralization
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ 🕑 The later this default occurs, the higher this loss is to the offending party
+│ 
+│ This aligns with the principle of the time value of money
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+🕑 The later this default occurs, the higher this loss is to the offending party
+
+This aligns with the principle of the time value of money
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ 🛟 The liquidation logic makes the initial required margin a collateral for all of the parties
+│ 
+│ Failure to meet the obligations means a loss of the deposited margin/collateral, either in full or in part
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+🛟 The liquidation logic makes the initial required margin a collateral for all of the parties
+
+Failure to meet the obligations means a loss of the deposited margin/collateral, either in full or in part
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ If a party fails to meet margin requirements, the smart contract:
+│ 
+│ 1️⃣ Terminates the agreement
+│ 2️⃣ Transfers deposited assets to the compliant party
+│ 3️⃣ Applies penalties to the defaulting party
+│ 
+│ This liquidation process is executed automatically on-chain 🤖
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+If a party fails to meet margin requirements, the smart contract:
+
+1️⃣ Terminates the agreement
+2️⃣ Transfers deposited assets to the compliant party
+3️⃣ Applies penalties to the defaulting party
+
+This liquidation process is executed automatically on-chain 🤖
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ Smart contract on the blockchain tracks:
+│ 
+│ 1️⃣ Deposited amounts for each party
+│ 2️⃣ Required deposits at each checkpoint
+│ 3️⃣ Maturity date
+│ 
+│ It uses this data to automatically enforce the increasing margin schedule 🔐
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+Smart contract on the blockchain tracks:
+
+1️⃣ Deposited amounts for each party
+2️⃣ Required deposits at each checkpoint
+3️⃣ Maturity date
+
+It uses this data to automatically enforce the increasing margin schedule 🔐
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ The margin in DeFi futures acts as:
+│ 
+│ 1️⃣ Traditional margin, as in TradFi
+│ 2️⃣ Collateral hedging the counterparty risk
+│ 3️⃣ Under-collateralized assurance for a futures contract delivery
+│ 
+│ Daily/periodic settlement can be incorporated into the dynamic margin requirements
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+The margin in DeFi futures acts as:
+
+1️⃣ Traditional margin, as in TradFi
+2️⃣ Collateral hedging the counterparty risk
+3️⃣ Under-collateralized assurance for a futures contract delivery
+
+Daily/periodic settlement can be incorporated into the dynamic margin requirements
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ Example of gradually increasing margin:
+│ 
+│ - Day 1: 10% deposit required
+│ - Month 1: 25% required
+│ - Month 2: 50% required
+│ - Month 3 (Maturity): 100% required
+│ 
+│ This flexibility allows parties to structure payments based on future cash flows 💰
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+Example of gradually increasing margin:
+
+- Day 1: 10% deposit required
+- Month 1: 25% required
+- Month 2: 50% required
+- Month 3 (Maturity): 100% required
+
+This flexibility allows parties to structure payments based on future cash flows 💰
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ 📈 The margin requirements increase algorithmically over the contract's lifespan
+│ 
+│ This ensurer both parties deposit their obligation in full by maturity, while allowing for partial collaterization
+│ 
+│ Thus leveraging the time value of money, without the need for a trusted party
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+📈 The margin requirements increase algorithmically over the contract's lifespan
+
+This ensurer both parties deposit their obligation in full by maturity, while allowing for partial collaterization
+
+Thus leveraging the time value of money, without the need for a trusted party
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ The DeFi margin for futures contracts differs from TradFi margins, by:
+│ 
+│ 1️⃣ Gradually increasing over time
+│ 2️⃣ Ensuring full collateralization by maturity
+│ 3️⃣ Delaying full payment
+│ 
+│ TradFi margin's main goal is to cover daily settlement gains/losses of the futures position
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+The DeFi margin for futures contracts differs from TradFi margins, by:
+
+1️⃣ Gradually increasing over time
+2️⃣ Ensuring full collateralization by maturity
+3️⃣ Delaying full payment
+
+TradFi margin's main goal is to cover daily settlement gains/losses of the futures position
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ Each position (long and short) is subdivided into several fungible tokens, which can be traded independently
+│ 
+│ The native token support of Mina Protocol blockchain means that a smart contract encodes both: the futures agreement, and its tokenization 🪙
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+Each position (long and short) is subdivided into several fungible tokens, which can be traded independently
+
+The native token support of Mina Protocol blockchain means that a smart contract encodes both: the futures agreement, and its tokenization 🪙
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ 🔐 Smart contracts on the blockchain enable full tokenization of futures contracts
+│ 
+│ 📈 Both long and short positions become tokens, representing a "promise of future asset or money"
+│ 
+│ This allows partial selling of positions, increasing liquidity, flexibility and reducing risk 💧
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+🔐 Smart contracts on the blockchain enable full tokenization of futures contracts
+
+📈 Both long and short positions become tokens, representing a "promise of future asset or money"
+
+This allows partial selling of positions, increasing liquidity, flexibility and reducing risk 💧
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ Futures pricing is deterministic, and its main goal is to prevent arbitrage:
+│ 
+│ 💰 Futures Price = Spot Price * e^(rT)
+│ - r: risk-free rate (e.g., $MINA staking yield)
+│ - T: time to maturity
+│ 
+│ This formula approximates pricing at maturity in both TradFi and DeFi  🧮
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+Futures pricing is deterministic, and its main goal is to prevent arbitrage:
+
+💰 Futures Price = Spot Price * e^(rT)
+- r: risk-free rate (e.g., $MINA staking yield)
+- T: time to maturity
+
+This formula approximates pricing at maturity in both TradFi and DeFi  🧮
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ 🏦 Traditional futures require centralized clearing houses
+│ 
+│ On the blockchain, smart contracts eliminate intermediaries, enabling decentralized peer-to-peer agreements
+│ 
+│ Example: A contract to trade 1000 $MINA for 2000 $USDC in 1 year, regardless of future $MINA price 📊
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+🏦 Traditional futures require centralized clearing houses
+
+On the blockchain, smart contracts eliminate intermediaries, enabling decentralized peer-to-peer agreements
+
+Example: A contract to trade 1000 $MINA for 2000 $USDC in 1 year, regardless of future $MINA price 📊
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ Futures contracts serve crucial roles in finance:
+│ 
+│ 1️⃣ Hedging against price volatility
+│ 2️⃣ Speculation on future asset prices
+│ 3️⃣ Price discovery for underlying assets
+│ 
+│ Smart contracts on the blockchain will disrupt this  $1T+ market. Here's how ⬇️
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+Futures contracts serve crucial roles in finance:
+
+1️⃣ Hedging against price volatility
+2️⃣ Speculation on future asset prices
+3️⃣ Price discovery for underlying assets
+
+Smart contracts on the blockchain will disrupt this  $1T+ market. Here's how ⬇️
+
+📖 Quoting from 2024-07-01 22:00:
+┌─ 🚀 Exploring Tokenized Liquid Futures Contracts 
+│ 
+│ A deep dive into how they can be implemented on Mina Protocol blockchain without oracles or trusted intermediaries
+│ 
+│ Covering technical aspects, use cases, and innovations of this DeFi derivative over TradFi solutions
+└─
+
+~ ✨ ~
+
+⏰ 2024-07-01 22:00
+
+🚀 Exploring Tokenized Liquid Futures Contracts 
+
+A deep dive into how they can be implemented on Mina Protocol blockchain without oracles or trusted intermediaries
+
+Covering technical aspects, use cases, and innovations of this DeFi derivative over TradFi solutions
 
 ~ ✨ ~
 
@@ -7405,6 +7915,450 @@ Treasury rates (Treasury Bills & Bonds) are risk-free, but they do not represent
 
 ~ ✨ ~
 
+⏰ 2024-06-01 11:27
+
+👉 Learn more about Zero-Knowledge Proofs, their applications, and how they redefine privacy:
+
+📍 zkLocus: https://zklocus.dev/
+
+📖 Full article: https://illya.sh/blog/posts/privacy-is-a-myth-without-zero-knowledge-proofs/
+
+💜 Let's build a Web3 future where privacy is the default, not an afterthought
+
+📖 Quoting from 2024-06-01 11:27:
+┌─ 🛡️ The result is an e-commerce platform that respects end-user privacy without sacrificing functionality 🎉
+│ 
+│ ❌ There is no need to trade personal data for convenience
+│ 
+│ 🙌 ZKP, Mina Protocol blockchain and zkLocus  enable us to have both!
+└─
+
+~ ✨ ~
+
+⏰ 2024-06-01 11:27
+
+🛡️ The result is an e-commerce platform that respects end-user privacy without sacrificing functionality 🎉
+
+❌ There is no need to trade personal data for convenience
+
+🙌 ZKP, Mina Protocol blockchain and zkLocus  enable us to have both!
+
+📖 Quoting from 2024-06-01 11:27:
+┌─ 🔗 The process leverages several ZKP building blocks:
+│ 
+│ ⚙️ zkSNARKs for succinct, verifiable proofs
+│ 🌿 Merkle Trees for efficient data storage
+│ 🔐 Cyrptographic Commitments for data integrity
+└─
+
+~ ✨ ~
+
+⏰ 2024-06-01 11:27
+
+🔗 The process leverages several ZKP building blocks:
+
+⚙️ zkSNARKs for succinct, verifiable proofs
+🌿 Merkle Trees for efficient data storage
+🔐 Cyrptographic Commitments for data integrity
+
+📖 Quoting from 2024-06-01 11:27:
+┌─ 🟣 This entire solution can be implemented on Mina Protocol blockchain! 💪
+│ 
+│ 💻 $MINA's zkApps enable efficient, scalable and verifiable computation powered by zkSNARKs 
+│ 
+│ 📍 Combined with zkLocus for geolocation proofs, we have all of the necessary components
+└─
+
+~ ✨ ~
+
+⏰ 2024-06-01 11:27
+
+🟣 This entire solution can be implemented on Mina Protocol blockchain! 💪
+
+💻 $MINA's zkApps enable efficient, scalable and verifiable computation powered by zkSNARKs 
+
+📍 Combined with zkLocus for geolocation proofs, we have all of the necessary components
+
+📖 Quoting from 2024-06-01 11:27:
+┌─ 🔐 Throughout this process, your name and address remain hidden from the e-commerce platform. 😌
+│ 
+│ 🌍 The platform only knows a broad area, not your specific location
+│ 
+│ 🪪 The processing center only gets your exact info when you choose to reveal it
+└─
+
+~ ✨ ~
+
+⏰ 2024-06-01 11:27
+
+🔐 Throughout this process, your name and address remain hidden from the e-commerce platform. 😌
+
+🌍 The platform only knows a broad area, not your specific location
+
+🪪 The processing center only gets your exact info when you choose to reveal it
+
+📖 Quoting from 2024-06-01 11:27:
+┌─ 5️⃣ You provide the decryption key to the center to reveal address
+│ 
+│ 📦 The package then gets shipped & delivered to the user
+└─
+
+~ ✨ ~
+
+⏰ 2024-06-01 11:27
+
+5️⃣ You provide the decryption key to the center to reveal address
+
+📦 The package then gets shipped & delivered to the user
+
+📖 Quoting from 2024-06-01 11:27:
+┌─ 🎁 Here's how zkLocus enables private shipping:
+│ 
+│ 1️⃣ You creates a zkLocus proof of their location
+│ 2️⃣ Proof is associated with encrypted name & address
+│ 3️⃣ E-commerce platform gets general area, but not exact info
+│ 4️⃣ Package is sent to a processing center in the general area
+│ 5️⃣👇
+└─
+
+~ ✨ ~
+
+⏰ 2024-06-01 11:27
+
+🎁 Here's how zkLocus enables private shipping:
+
+1️⃣ You creates a zkLocus proof of their location
+2️⃣ Proof is associated with encrypted name & address
+3️⃣ E-commerce platform gets general area, but not exact info
+4️⃣ Package is sent to a processing center in the general area
+5️⃣👇
+
+📖 Quoting from 2024-06-01 11:27:
+┌─ 🔐 How can we conceal personal info like name and address?
+│ 
+│ 📍This is where zkLocus comes in! 
+│ 
+│ 🌍 zkLocus allows users to prove they're in a certain area without revealing exact coordinates 
+│ 
+│ 🏠 It's like saying "I'm somewhere in New York" without revealing your exact address
+└─
+
+~ ✨ ~
+
+⏰ 2024-06-01 11:27
+
+🔐 How can we conceal personal info like name and address?
+
+📍This is where zkLocus comes in! 
+
+🌍 zkLocus allows users to prove they're in a certain area without revealing exact coordinates 
+
+🏠 It's like saying "I'm somewhere in New York" without revealing your exact address
+
+📖 Quoting from 2024-06-01 11:27:
+┌─ 👀 Private search quries are great, but can we go a step further?
+│ 
+│ 🪪 Is it possible to shop online without revealing any of your identity and shipping data to the e-commerce platform?
+│ 
+│ 🤯 The answer is YES!
+└─
+
+~ ✨ ~
+
+⏰ 2024-06-01 11:27
+
+👀 Private search quries are great, but can we go a step further?
+
+🪪 Is it possible to shop online without revealing any of your identity and shipping data to the e-commerce platform?
+
+🤯 The answer is YES!
+
+📖 Quoting from 2024-06-01 11:27:
+┌─ 🕵️‍♀️ Such an approach allows us to search for data with a centralized provider without revealing our exact search queries
+│ 
+│ 🔎 In the end, the provider has enough information to provide us with relevant results, without being able to track us
+└─
+
+~ ✨ ~
+
+⏰ 2024-06-01 11:27
+
+🕵️‍♀️ Such an approach allows us to search for data with a centralized provider without revealing our exact search queries
+
+🔎 In the end, the provider has enough information to provide us with relevant results, without being able to track us
+
+📖 Quoting from 2024-06-01 11:27:
+┌─ 🧩 Here's how private search queries work:
+│ 
+│ 1️⃣ User runs a zkML computation to abstract their query
+│ 2️⃣ The abstracted query is sent to the e-commerce platform
+│ 3️⃣ Platform returns relevant results, which are filtered locally by the user
+└─
+
+~ ✨ ~
+
+⏰ 2024-06-01 11:27
+
+🧩 Here's how private search queries work:
+
+1️⃣ User runs a zkML computation to abstract their query
+2️⃣ The abstracted query is sent to the e-commerce platform
+3️⃣ Platform returns relevant results, which are filtered locally by the user
+
+📖 Quoting from 2024-06-01 11:27:
+┌─ ❗️Yes, and Zero-Knowledge Proofs are the answer❗️
+│ 
+│ 📜 Instead of sharing raw data, ZKP allow us to share proofs about our data
+│ 
+│ 🤯 Now, you can search for products to buy without revealing your exact queries!
+└─
+
+~ ✨ ~
+
+⏰ 2024-06-01 11:27
+
+❗️Yes, and Zero-Knowledge Proofs are the answer❗️
+
+📜 Instead of sharing raw data, ZKP allow us to share proofs about our data
+
+🤯 Now, you can search for products to buy without revealing your exact queries!
+
+📖 Quoting from 2024-06-01 11:27:
+┌─ 💰 Wether you are online shopping on Amazon, eBay, AliExpress or any other e-commerce platform, you are sharing your personal data with them.
+│ 
+│ 🤔 But does it have to be this way?
+│ 
+│ ✨ Is a fully private online shopping experience possible?
+└─
+
+~ ✨ ~
+
+⏰ 2024-06-01 11:27
+
+💰 Wether you are online shopping on Amazon, eBay, AliExpress or any other e-commerce platform, you are sharing your personal data with them.
+
+🤔 But does it have to be this way?
+
+✨ Is a fully private online shopping experience possible?
+
+📖 Quoting from 2024-06-01 11:27:
+┌─ 🔍 The challenge with e-commerce privacy lies in two main areas:
+│ 
+│ 1️⃣ Keeping search queries private 🔒
+│ 2️⃣ Protecting personal info like name and address 🙅‍♂️
+│ 
+│ Traditional platforms require us to trust them with this data
+└─
+
+~ ✨ ~
+
+⏰ 2024-06-01 11:27
+
+🔍 The challenge with e-commerce privacy lies in two main areas:
+
+1️⃣ Keeping search queries private 🔒
+2️⃣ Protecting personal info like name and address 🙅‍♂️
+
+Traditional platforms require us to trust them with this data
+
+📖 Quoting from 2024-06-01 11:26:
+┌─ 🛒 E-commerce & Privacy - Myth or Reality? 🔐
+│ 
+│ 💻 Online shopping without revealing your personal data?
+│ 
+│ 🚀 Zero-Knowledge Proofs (ZKP), zkLocus and Mina Protocol blockchain enable just that
+│ 
+│ https://illya.sh/blog/posts/privacy-is-a-myth-without-zero-knowledge-proofs/
+│ 
+│ Here's how 🧵👇
+└─
+
+~ ✨ ~
+
+⏰ 2024-06-01 11:26
+
+🛒 E-commerce & Privacy - Myth or Reality? 🔐
+
+💻 Online shopping without revealing your personal data?
+
+🚀 Zero-Knowledge Proofs (ZKP), zkLocus and Mina Protocol blockchain enable just that
+
+https://illya.sh/blog/posts/privacy-is-a-myth-without-zero-knowledge-proofs/
+
+Here's how 🧵👇
+
+~ ✨ ~
+
+⏰ 2024-05-30 18:57
+
+😳 ZKP will redefine what you know about computation and privacy
+
+📍 This is what we are doing at zkLocus, by turning geolocation into a RWA 
+
+🔗 To learn more, visit https://zklocus.dev/
+
+📖 Quoting from 2024-05-30 18:57:
+┌─ 🪄 This is just one example of what is possible with ZeroKnowledge Proofs
+│ 
+│ 📚 It was taken from my article "Privacy Is A Myth. Unless You're Using Zero-Knowledge Proofs" 👇
+│ 
+│ https://illya.sh/blog/posts/privacy-is-a-myth-without-zero-knowledge-proofs/
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-30 18:57
+
+🪄 This is just one example of what is possible with ZeroKnowledge Proofs
+
+📚 It was taken from my article "Privacy Is A Myth. Unless You're Using Zero-Knowledge Proofs" 👇
+
+https://illya.sh/blog/posts/privacy-is-a-myth-without-zero-knowledge-proofs/
+
+📖 Quoting from 2024-05-30 18:57:
+┌─ 🚨 By using Mina Protocol as a public layer for computation proofs, we create an auditable & transparent system 🕵️‍♀️
+│ 
+│ Anyone can verify that the cameras are operating as promised, without misusing the video data 🔍
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-30 18:57
+
+🚨 By using Mina Protocol as a public layer for computation proofs, we create an auditable & transparent system 🕵️‍♀️
+
+Anyone can verify that the cameras are operating as promised, without misusing the video data 🔍
+
+📖 Quoting from 2024-05-30 18:57:
+┌─ 📋 Here's how Mina Protocol blockchain fits into the picture:
+│ 
+│ 1️⃣ zkSNARK circuits verifying camera code execution are stored on Mina
+│ 2️⃣ Commitments & ZKP circuits to the zkML model are also stored on the blockchain
+│ 3️⃣ All proofs from cameras are submitted & verified against them
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-30 18:57
+
+📋 Here's how Mina Protocol blockchain fits into the picture:
+
+1️⃣ zkSNARK circuits verifying camera code execution are stored on Mina
+2️⃣ Commitments & ZKP circuits to the zkML model are also stored on the blockchain
+3️⃣ All proofs from cameras are submitted & verified against them
+
+📖 Quoting from 2024-05-30 18:57:
+┌─ 🟣 Mina Protocol can implement the foundational layer 🚀
+│ 
+│ Verification keys that attest to the correct execution of the camera's code can be stored on $MINA 🔑
+│ 
+│ In practice, this involves commitments and ZKP circuits to the zkML model, thus ensuring the right one is used 🧠
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-30 18:57
+
+🟣 Mina Protocol can implement the foundational layer 🚀
+
+Verification keys that attest to the correct execution of the camera's code can be stored on $MINA 🔑
+
+In practice, this involves commitments and ZKP circuits to the zkML model, thus ensuring the right one is used 🧠
+
+📖 Quoting from 2024-05-30 18:57:
+┌─ 🔐 zkSNARKs/zkSTARKs can be used to create ZK proofs that attest to the correct execution of the camera's code 📸
+│ 
+│ 👮‍♀️ These proofs, representing an observation of a computation, ensure that non-suspicious video is  discarded, thus preserving privacy
+│ 
+│ 👉 Do not trust, verify 👈
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-30 18:57
+
+🔐 zkSNARKs/zkSTARKs can be used to create ZK proofs that attest to the correct execution of the camera's code 📸
+
+👮‍♀️ These proofs, representing an observation of a computation, ensure that non-suspicious video is  discarded, thus preserving privacy
+
+👉 Do not trust, verify 👈
+
+📖 Quoting from 2024-05-30 18:57:
+┌─ 🧩 Here's how a ZKP-powered surveillance system works:
+│ 
+│ 1️⃣ Cameras feed live video into a zkML model
+│ 2️⃣ The model labels data as "suspicious" or "non-suspicious"
+│ 3️⃣ Only "suspicious" footage is stored & reported
+│ 4️⃣ The zkML model is public, ensuring transparency
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-30 18:57
+
+🧩 Here's how a ZKP-powered surveillance system works:
+
+1️⃣ Cameras feed live video into a zkML model
+2️⃣ The model labels data as "suspicious" or "non-suspicious"
+3️⃣ Only "suspicious" footage is stored & reported
+4️⃣ The zkML model is public, ensuring transparency
+
+📖 Quoting from 2024-05-30 18:57:
+┌─ 🔍 The key lies in the verifiable computation model of Zero-Knowledge Proofs 🔑
+│ 
+│ Instead of trusting third-parties not to misuse data, we rely on cryptographic proofs to ensure privacy 💪
+│ 
+│ It's not about faith, but rather mathematical certainty 🧮
+│ 
+│ 🔗 https://illya.sh/blog/posts/zksnark-zkstark-verifiable-computation-model-blockchain/
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-30 18:57
+
+🔍 The key lies in the verifiable computation model of Zero-Knowledge Proofs 🔑
+
+Instead of trusting third-parties not to misuse data, we rely on cryptographic proofs to ensure privacy 💪
+
+It's not about faith, but rather mathematical certainty 🧮
+
+🔗 https://illya.sh/blog/posts/zksnark-zkstark-verifiable-computation-model-blockchain/
+
+📖 Quoting from 2024-05-30 18:57:
+┌─ 📹 Imagine a global network of video cameras, monitoring every corner, every alley, even inside your home 🏠
+│ 
+│ Sounds like a privacy nightmare, right? 😨
+│ 
+│ Not necessarily! 😮
+│ 
+│ With ZKP, we can mathematically guarantee that private data is never stored or shared! 🔐
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-30 18:57
+
+📹 Imagine a global network of video cameras, monitoring every corner, every alley, even inside your home 🏠
+
+Sounds like a privacy nightmare, right? 😨
+
+Not necessarily! 😮
+
+With ZKP, we can mathematically guarantee that private data is never stored or shared! 🔐
+
+📖 Quoting from 2024-05-30 18:57:
+┌─ 🌍 Imagine 24/7 global video surveillance that doesn't compromise privacy
+│ 
+│ 🤯 Sounds impossible?
+│ 
+│ 😎 Zero-Knowledge Proofs disagree
+│ 
+│ Here's why 🧵👇
+└─
+
+~ ✨ ~
+
 ⏰ 2024-05-30 18:57
 
 🌍 Imagine 24/7 global video surveillance that doesn't compromise privacy
@@ -7425,17 +8379,233 @@ Like, I can take an abstract concept that I have in my mind, transform it into v
 
 ~ ✨ ~
 
+⏰ 2024-05-26 13:02
+
+👉 Learn more about ZKPs & privacy:
+
+- zkLocus: https://zklocus.dev/
+- zkSafeZones: https://zklocus.dev/zkSafeZones/
+- Full article: https://illya.sh/blog/posts/privacy-is-a-myth-without-zero-knowledge-proofs/
+
+Let's make privacy the default, not an afterthought 🌟
+
+📖 Quoting from 2024-05-26 13:01:
+┌─ 🗣️ Privacy is a fundamental human right, and digital privacy is not an exception 📜
+│ 
+│ With Mina Protocol blockchain and ZKP solutions like zkLocus, we can build a future where privacy is the default 🙌
+│ 
+│ As the Web3 community, this is our mission & responsibility 💪
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-26 13:01
+
+🗣️ Privacy is a fundamental human right, and digital privacy is not an exception 📜
+
+With Mina Protocol blockchain and ZKP solutions like zkLocus, we can build a future where privacy is the default 🙌
+
+As the Web3 community, this is our mission & responsibility 💪
+
+📖 Quoting from 2024-05-26 13:01:
+┌─ 📹 Even 24/7 global video surveillance can be privacy-preserving with ZKP! 🌍
+│ 
+│ By combining zkML and verifiable computation, cameras can detect suspicious activity without storing private data 🕵️‍♀️
+│ 
+│ No, it's not magic. It's mathematics 🔐
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-26 13:01
+
+📹 Even 24/7 global video surveillance can be privacy-preserving with ZKP! 🌍
+
+By combining zkML and verifiable computation, cameras can detect suspicious activity without storing private data 🕵️‍♀️
+
+No, it's not magic. It's mathematics 🔐
+
+📖 Quoting from 2024-05-26 13:01:
+┌─ 🔍 Imagine a search engine that never sees your raw queries, or a social network that keeps your connections hidden 😲
+│ 
+│ With ZKP, it's not just possible, but practical! 🎉
+│ 
+│ zkLocus, powered by Mina Protocol blockchain, is turning private geolocation into reality 📍
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-26 13:01
+
+🔍 Imagine a search engine that never sees your raw queries, or a social network that keeps your connections hidden 😲
+
+With ZKP, it's not just possible, but practical! 🎉
+
+zkLocus, powered by Mina Protocol blockchain, is turning private geolocation into reality 📍
+
+📖 Quoting from 2024-05-26 13:01:
+┌─ 🌍 With ZKPs, we can build privacy-preserving: 🏗️
+│ 
+│ - Search engines 🔍
+│ - Social networks 👥
+│ - E-commerce platforms 🛒
+│ - Even 24/7 global video surveillance! 📹
+│ 
+│ All without compromising functionality, business or individual privacy 💪
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-26 13:01
+
+🌍 With ZKPs, we can build privacy-preserving: 🏗️
+
+- Search engines 🔍
+- Social networks 👥
+- E-commerce platforms 🛒
+- Even 24/7 global video surveillance! 📹
+
+All without compromising functionality, business or individual privacy 💪
+
+📖 Quoting from 2024-05-26 13:01:
+┌─ 🔐 ZKPs remove the need to trust third parties for privacy. 🙅‍♂️
+│ 
+│ Instead, we rely on mathematical guarantees 🧮
+│ 
+│ This allows us to retain full custody & control over our data while enjoying digital services 😌
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-26 13:01
+
+🔐 ZKPs remove the need to trust third parties for privacy. 🙅‍♂️
+
+Instead, we rely on mathematical guarantees 🧮
+
+This allows us to retain full custody & control over our data while enjoying digital services 😌
+
+📖 Quoting from 2024-05-26 13:01:
+┌─ 🌿 Merkle Trees, MPC, and homomorphic encryption complement ZKPs. 🍃
+│ 
+│ - Merkle Trees: Efficient & private data storage 📚
+│ - MPC: Secure multi-party computation 🤝
+│ - Homomorphic Encryption: Computation on encrypted data 🔒
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-26 13:01
+
+🌿 Merkle Trees, MPC, and homomorphic encryption complement ZKPs. 🍃
+
+- Merkle Trees: Efficient & private data storage 📚
+- MPC: Secure multi-party computation 🤝
+- Homomorphic Encryption: Computation on encrypted data 🔒
+
+📖 Quoting from 2024-05-26 13:01:
+┌─ 🔐 How does Mina Protocol blockchain fit into this? 🤔
+│ 
+│ $MINA serves as the foundation for ZKP apps, thanks to its programmable zkApps 🚀
+│ 
+│ It uses recursive zkSNARKs to create proofs of arbitrary computations, thus serving as the foundation of privacy solutions 💪
+│ 
+│  It's proof of everything
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-26 13:01
+
+🔐 How does Mina Protocol blockchain fit into this? 🤔
+
+$MINA serves as the foundation for ZKP apps, thanks to its programmable zkApps 🚀
+
+It uses recursive zkSNARKs to create proofs of arbitrary computations, thus serving as the foundation of privacy solutions 💪
+
+ It's proof of everything
+
+📖 Quoting from 2024-05-26 13:01:
+┌─ 🔍 Solutions like zkLocus, zkSafeZones, zkML, and zkVM leverage ZKPs for privacy🛡️
+│ 
+│ - zkLocus: Private geolocation sharing on Mina Protocol blockchain 📍
+│ - zkSafeZones: Civilian protection in warzones 🏥
+│ - zkML: Private machine learning 🤖
+│ - zkVM: Verifiable computation 💻
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-26 13:01
+
+🔍 Solutions like zkLocus, zkSafeZones, zkML, and zkVM leverage ZKPs for privacy🛡️
+
+- zkLocus: Private geolocation sharing on Mina Protocol blockchain 📍
+- zkSafeZones: Civilian protection in warzones 🏥
+- zkML: Private machine learning 🤖
+- zkVM: Verifiable computation 💻
+
+📖 Quoting from 2024-05-26 13:01:
+┌─ 💡 Zero-Knowledge Proofs fix digital privacy 🌅
+│ 
+│ Instead of protecting sensitive data after sharing, ZKPs enable sharing data in an inherently private manner 🔐
+│ 
+│ By turning data into computation, ZKPs abstract it to preserve privacy 🧩
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-26 13:01
+
+💡 Zero-Knowledge Proofs fix digital privacy 🌅
+
+Instead of protecting sensitive data after sharing, ZKPs enable sharing data in an inherently private manner 🔐
+
+By turning data into computation, ZKPs abstract it to preserve privacy 🧩
+
+📖 Quoting from 2024-05-26 13:01:
+┌─ 💡 The problem with digital privacy lies not in how data is stored & shared, but what data is shared 🤔
+│ 
+│ Even with encryption, once sensitive data leaves your device, it's compromised 😱
+│ 
+│ But what if we could share data in an inherently private manner? 🤯
+└─
+
+~ ✨ ~
+
+⏰ 2024-05-26 13:01
+
+💡 The problem with digital privacy lies not in how data is stored & shared, but what data is shared 🤔
+
+Even with encryption, once sensitive data leaves your device, it's compromised 😱
+
+But what if we could share data in an inherently private manner? 🤯
+
+📖 Quoting from 2024-05-26 13:01:
+┌─ 🚨 PRIVACY IS A MYTH! 🕵️‍♂️
+│ 
+│ Digital privacy is fundamentally unfeasible, unless we rely on verifiable computation constructs like Zero-Knowledge Proofs (ZKP) 🔐
+│ 
+│ A thread 🧵 on why ZKPs are the key to true digital privacy 👇
+│ 
+│ https://illya.sh/blog/posts/privacy-is-a-myth-without-zero-knowledge-proofs/
+│ 
+│ Privacy ZeroKnowledge Web3
+└─
+
+~ ✨ ~
+
 ⏰ 2024-05-26 13:01
 
 🚨 PRIVACY IS A MYTH! 🕵️‍♂️
 
-Digital privacy is fundamentally unfeasible, unless we rely on verifiable computation constructs like Zero-Knowledge Proofs (#ZKP) 🔐
+Digital privacy is fundamentally unfeasible, unless we rely on verifiable computation constructs like Zero-Knowledge Proofs (ZKP) 🔐
 
 A thread 🧵 on why ZKPs are the key to true digital privacy 👇
 
+https://illya.sh/blog/posts/privacy-is-a-myth-without-zero-knowledge-proofs/
 
-
-#Privacy #ZeroKnowledge #Web3
+Privacy ZeroKnowledge Web3
 
 ~ ✨ ~
 
@@ -7489,9 +8659,137 @@ Additional insights from a practical perspective can be found here 👇
 
 ⏰ 2024-04-28 19:28
 
+Read the full article to dive deeper into how the BRICS digital currency can be realized as a cryptocurrency on a public blockchain. 📖
+
+🔗 https://illya.sh/blog/posts/brics-cryptocurrency-blockchain/
+
+Let's discuss! Share your thoughts below🗣️
+
+📖 Quoting from 2024-04-28 19:28:
+┌─ 🌟 By embracing public blockchains and ZeroKnowledge technologies, the BRICS digital currency can pioneer a new era of finance🔮
+│ 
+│ A more efficient, interoperable, decentralized, and inclusive financial system aligned with Web3 principles 🌍
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-28 19:28
+
+🌟 By embracing public blockchains and ZeroKnowledge technologies, the BRICS digital currency can pioneer a new era of finance🔮
+
+A more efficient, interoperable, decentralized, and inclusive financial system aligned with Web3 principles 🌍
+
+📖 Quoting from 2024-04-28 19:28:
+┌─ 🧩 Implementing the BRICS currency on a public blockchain reduces cost & complexity
+│ 
+│ The dynamic supply is controlled by smart contracts, while ZKPs bridge data from arbitrary sources 🌉
+│ 
+│ Demand is driven by incentives for participating in the BRICS economic network 💰
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-28 19:28
+
+🧩 Implementing the BRICS currency on a public blockchain reduces cost & complexity
+
+The dynamic supply is controlled by smart contracts, while ZKPs bridge data from arbitrary sources 🌉
+
+Demand is driven by incentives for participating in the BRICS economic network 💰
+
+📖 Quoting from 2024-04-28 19:28:
+┌─ 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒
+│ 
+│ zkLocus turns geolocation into a programmable real-world asset (RWA), enabling location-based fees and taxation📍
+│ 
+│ ✨ Native on MinaProtocol
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-28 19:28
+
+🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒
+
+zkLocus turns geolocation into a programmable real-world asset (RWA), enabling location-based fees and taxation📍
+
+✨ Native on MinaProtocol
+
+~ ✨ ~
+
+⏰ 2024-04-28 19:28
+
+💸 The dynamic supply of the BRICS currency is defined by a formula:
+
+M = ForT + FDI + PI + ForEx + G&EX + InterSec + Der + ForDeposit + EuroCurrency + MTransfer + Etc.
+
+This can be automated using smart contracts on the blockchain 🤖
+
+Like Algorithmic stablecoins and Uniswap
+
+📖 Quoting from 2024-04-28 19:28:
+┌─ 🔍 Let's explore how the BRICS currency can leverage these technologies:
+│ 
+│ ✅ Dynamic supply mechanism via smart contracts
+│ ✅ Legal compliance on-chain using ZKPs
+│ ✅ Integration with DeFi and zkLocus for authenticated private geolocation
+│ 
+│ 👉 A cryptocurrency for Web3
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-28 19:28
+
+🔍 Let's explore how the BRICS currency can leverage these technologies:
+
+✅ Dynamic supply mechanism via smart contracts
+✅ Legal compliance on-chain using ZKPs
+✅ Integration with DeFi and zkLocus for authenticated private geolocation
+
+👉 A cryptocurrency for Web3
+
+📖 Quoting from 2024-04-28 19:28:
+┌─ 💡 While the original paper suggests the impossibility of realizing the BRICS currency as a cryptocurrency, we'll challenge it 🤔
+│ 
+│ A public blockchain with SmartContracts, combined with Zero-Knowledge Proofs (ZKP), provides a natural fit for the implementation 🧩
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-28 19:28
+
+💡 While the original paper suggests the impossibility of realizing the BRICS currency as a cryptocurrency, we'll challenge it 🤔
+
+A public blockchain with SmartContracts, combined with Zero-Knowledge Proofs (ZKP), provides a natural fit for the implementation 🧩
+
+📖 Quoting from 2024-04-28 19:28:
+┌─ 🌍 The BRICS digital currency aims to integrate with existing monetary systems, creating a unified economic area for member nations 🤝
+│ 
+│ Its value is algorithmically derived from various economic factors of the participating countries 📈
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-28 19:28
+
+🌍 The BRICS digital currency aims to integrate with existing monetary systems, creating a unified economic area for member nations 🤝
+
+Its value is algorithmically derived from various economic factors of the participating countries 📈
+
+📖 Quoting from 2024-04-28 19:28:
+┌─ 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙
+│ 
+│ In this article, we explore how the BRICS currency can be implemented on a public blockchain and challenge the claims made in "Digital Money Options for the BRICS" for Web3
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-28 19:28
+
 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙
 
-In this article, we explore how the #BRICS currency can be implemented on a public #blockchain and challenge the claims made in "Digital Money Options for the BRICS" for #Web3  🧵👇
+In this article, we explore how the BRICS currency can be implemented on a public blockchain and challenge the claims made in "Digital Money Options for the BRICS" for Web3
 
 ~ ✨ ~
 
@@ -7501,17 +8799,708 @@ Get ready for June 👀
 
 ~ ✨ ~
 
+⏰ 2024-04-15 20:24
+
+That's it for technical deep dive into RandoMina and its 01JS implementation on Mina Protocol blockchain ! 🤿
+
+For more details, check out the source code and tests on GitHub. ⭐️
+
+Feel free to ask any questions or share your thoughts! 💬
+
+🔗 https://github.com/iluxonchik/randomina
+
+📖 Quoting from 2024-04-15 20:24:
+┌─ 1️⃣2️⃣ In summary, RandoMina leverages ZK proofs, $Mina's VRF `stakingEpochData.seed.value`, and a combination of network state, sender info, and local nonces to provide secure, verifiable, and infinite randomness for dAppss 🌟
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 20:24
+
+1️⃣2️⃣ In summary, RandoMina leverages ZK proofs, $Mina's VRF `stakingEpochData.seed.value`, and a combination of network state, sender info, and local nonces to provide secure, verifiable, and infinite randomness for dAppss 🌟
+
+📖 Quoting from 2024-04-15 20:24:
+┌─ 1️⃣1️⃣ Generating a random number involves:
+│ 
+│ 1. Preparing public (Network State, Sender) and private (Nonce) inputs
+│ 2. Generating a proof using `RandomNumberObservationCircuit`
+│ 3. Verifying the proof and network state with `RandoMinaContract`
+│ 
+│ Code & Tests: https://github.com/iluxonchik/randomina
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 20:24
+
+1️⃣1️⃣ Generating a random number involves:
+
+1. Preparing public (Network State, Sender) and private (Nonce) inputs
+2. Generating a proof using `RandomNumberObservationCircuit`
+3. Verifying the proof and network state with `RandoMinaContract`
+
+Code & Tests: https://github.com/iluxonchik/randomina
+
+📖 Quoting from 2024-04-15 20:24:
+┌─ 🔟 Across different epochs, the same identity generates distinct random numbers:
+│ 
+│ 🌐 Network State changes with each new epoch
+│ 🆕 Updated Network State is combined with Sender-Specific Nonce and Local Seed/Nonce
+│ ➡️ Guarantees diff numbers for the same identity across epochs! ⏰
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 20:24
+
+🔟 Across different epochs, the same identity generates distinct random numbers:
+
+🌐 Network State changes with each new epoch
+🆕 Updated Network State is combined with Sender-Specific Nonce and Local Seed/Nonce
+➡️ Guarantees diff numbers for the same identity across epochs! ⏰
+
+📖 Quoting from 2024-04-15 20:24:
+┌─ 9️⃣ For the same identity, using different Local Seed/Nonce values:
+│ 
+│ 🔄 Varying the Local Seed/Nonce
+│ 🔗 While keeping the Sender-Specific Nonce and Network State constant
+│ ➡️ Produces unique random numbers for the same identity within an epoch! 🪄
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 20:24
+
+9️⃣ For the same identity, using different Local Seed/Nonce values:
+
+🔄 Varying the Local Seed/Nonce
+🔗 While keeping the Sender-Specific Nonce and Network State constant
+➡️ Produces unique random numbers for the same identity within an epoch! 🪄
+
+📖 Quoting from 2024-04-15 20:24:
+┌─ 8️⃣ When two identities generate random numbers using RandoMina:
+│ 
+│ ✅ Sender-Specific Nonce is unique due to different public keys
+│ ✅ Combining unique Sender-Specific Nonce with Network State and Local Seed/Nonce
+│ ➡️ Always results in different random numbers for each identity! 🎉
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 20:24
+
+8️⃣ When two identities generate random numbers using RandoMina:
+
+✅ Sender-Specific Nonce is unique due to different public keys
+✅ Combining unique Sender-Specific Nonce with Network State and Local Seed/Nonce
+➡️ Always results in different random numbers for each identity! 🎉
+
+📖 Quoting from 2024-04-15 20:24:
+┌─ 7️⃣ Here's how RandoMina ensures unique random numbers! 🕵️
+│ 
+│ - Two identities (public keys) will always generate different random numbers 🔑
+│ - Same identity with different local seeds produces unique numbers 🌱
+│ - Same identity across different epochs generates distinct numbers 📅
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 20:24
+
+7️⃣ Here's how RandoMina ensures unique random numbers! 🕵️
+
+- Two identities (public keys) will always generate different random numbers 🔑
+- Same identity with different local seeds produces unique numbers 🌱
+- Same identity across different epochs generates distinct numbers 📅
+
+📖 Quoting from 2024-04-15 20:24:
+┌─ 6️⃣ RandoMina's smart contract, `RandoMinaContract`, verifies the computation and ensures the claimed network state matches the current epoch. ✅
+│ 
+│ It's designed to be used or integrated by other contracts needing secure randomness. 🧩
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 20:24
+
+6️⃣ RandoMina's smart contract, `RandoMinaContract`, verifies the computation and ensures the claimed network state matches the current epoch. ✅
+
+It's designed to be used or integrated by other contracts needing secure randomness. 🧩
+
+📖 Quoting from 2024-04-15 20:24:
+┌─ 5️⃣ The Local Seed/Nonce allows generating multiple random numbers per epoch for each sender. 🎲
+│ 
+│ By varying this private nonce, an infinite number of pseudo-random numbers can be generated within a single epoch. ♾️
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 20:24
+
+5️⃣ The Local Seed/Nonce allows generating multiple random numbers per epoch for each sender. 🎲
+
+By varying this private nonce, an infinite number of pseudo-random numbers can be generated within a single epoch. ♾️
+
+📖 Quoting from 2024-04-15 20:24:
+┌─ 4️⃣ The Sender-Specific Nonce is derived from the sender's public key, ensuring unique (pseudo)random numbers across the network. 🌍
+│ 
+│ It's computed by Poseidon-hashing the public key, adding a global uniqueness component. 🔑
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 20:24
+
+4️⃣ The Sender-Specific Nonce is derived from the sender's public key, ensuring unique (pseudo)random numbers across the network. 🌍
+
+It's computed by Poseidon-hashing the public key, adding a global uniqueness component. 🔑
+
+📖 Quoting from 2024-04-15 20:24:
+┌─ 3️⃣ Using `stakingEpochData.seed.value` as part of the PRNG seed ensures that random numbers are tied to the current epoch, preventing manipulation and guaranteeing freshness. 🌿
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 20:24
+
+3️⃣ Using `stakingEpochData.seed.value` as part of the PRNG seed ensures that random numbers are tied to the current epoch, preventing manipulation and guaranteeing freshness. 🌿
+
+📖 Quoting from 2024-04-15 20:24:
+┌─ 2️⃣ To ensure freshness, RandoMina leverages $Mina's VRF (Verifiable Random Function) values, specifically `stakingEpochData.seed.value`. 🔐
+│ 
+│ This value is updated with each new staking epoch, providing a unique seed for each epoch. 📅
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 20:24
+
+2️⃣ To ensure freshness, RandoMina leverages $Mina's VRF (Verifiable Random Function) values, specifically `stakingEpochData.seed.value`. 🔐
+
+This value is updated with each new staking epoch, providing a unique seed for each epoch. 📅
+
+📖 Quoting from 2024-04-15 20:24:
+┌─ 1️⃣ RandoMina uses Zero-Knowledge proofs to ensure random numbers are provable, fresh, and trustless. It combines:
+│ 
+│ - Network State 🌐
+│ - Sender-Specific Nonce 🔒
+│ - Local Seed/Nonce 🌱
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 20:24
+
+1️⃣ RandoMina uses Zero-Knowledge proofs to ensure random numbers are provable, fresh, and trustless. It combines:
+
+- Network State 🌐
+- Sender-Specific Nonce 🔒
+- Local Seed/Nonce 🌱
+
+📖 Quoting from 2024-04-15 20:24:
+┌─ 🧵 Let's dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐
+│ 
+│ 💡 Powering zkLocus
+│ 
+│ 🔗 GitHub: https://github.com/iluxonchik/randomina/
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 20:24
+
+🧵 Let's dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐
+
+💡 Powering zkLocus
+
+🔗 GitHub: https://github.com/iluxonchik/randomina/
+
+~ ✨ ~
+
+⏰ 2024-04-15 18:58
+
+🙌 RandoMina is an open-source effort to empower the $MINA community with secure, provable randomness! 💪
+
+🤝 I welcome your feedback, contributions & ideas to iterate on this MVP! 🌟
+
+🐦 Give zkLocus a shoutout - let's build together! 🚀
+
+ZK ZKP Web3 Blockchain Mina
+
+📖 Quoting from 2024-04-15 18:58:
+┌─ 👨‍💻 For developers eager to dive in, the https://github.com/iluxonchik/randomina on the GitHub repo has all the juicy details! 📚
+│ 
+│ 💻 Example usage
+│ 🛠️ Building instructions
+│ 🧪 Testing guide
+│ 📊 Coverage reports
+│ 
+│ 🔗 Dive in here: https://github.com/iluxonchik/randomina
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 18:58
+
+👨‍💻 For developers eager to dive in, the https://github.com/iluxonchik/randomina on the GitHub repo has all the juicy details! 📚
+
+💻 Example usage
+🛠️ Building instructions
+🧪 Testing guide
+📊 Coverage reports
+
+🔗 Dive in here: https://github.com/iluxonchik/randomina
+
+📖 Quoting from 2024-04-15 18:58:
+┌─ 🎲 RandoMina is designed as a SmartContract in O1JS, making it easy to integrate with your zkApps & dApps! 🛠️
+│ 
+│ 🚀 Deploy it as a standalone contract or incorporate it into your custom solution 💫
+│ 
+│ 🔗 https://github.com/iluxonchik/randomina
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 18:58
+
+🎲 RandoMina is designed as a SmartContract in O1JS, making it easy to integrate with your zkApps & dApps! 🛠️
+
+🚀 Deploy it as a standalone contract or incorporate it into your custom solution 💫
+
+🔗 https://github.com/iluxonchik/randomina
+
+📖 Quoting from 2024-04-15 18:58:
+┌─ 🧩 How does it work?
+│ 
+│ 🌐 RandoMina cryptographically combines:
+│ 
+│ 1️⃣ Network State
+│ 2️⃣ Sender-Specific Nonce
+│ 3️⃣ Local Seed/Nonce
+│ 
+│ 🔢 This ensures fresh, unique & unpredictable random numbers for each user! 🎉
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 18:58
+
+🧩 How does it work?
+
+🌐 RandoMina cryptographically combines:
+
+1️⃣ Network State
+2️⃣ Sender-Specific Nonce
+3️⃣ Local Seed/Nonce
+
+🔢 This ensures fresh, unique & unpredictable random numbers for each user! 🎉
+
+📖 Quoting from 2024-04-15 18:58:
+┌─ 💡 RandoMina is designed for dApps requiring secure randomness! 🎲
+│ 
+│ 🎰 Lotteries
+│ 🎲 Gaming
+│ 💰 DeFi
+│ 🔐 And more!
+│ 
+│ Native on Mina Protocol blockchain and bridgeable to other blockchains like Ethereum
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 18:58
+
+💡 RandoMina is designed for dApps requiring secure randomness! 🎲
+
+🎰 Lotteries
+🎲 Gaming
+💰 DeFi
+🔐 And more!
+
+Native on Mina Protocol blockchain and bridgeable to other blockchains like Ethereum
+
+📖 Quoting from 2024-04-15 18:58:
+┌─ ⚡ Key Features:
+│ 
+│ 🔀 Provable pseudo-randomness: VRF
+│ 🔒 Fresh & Tamper-proof: ZK and Mina Protocol blockchain
+│ ⚡ Efficient & scalable: zkSNARKs
+│ 🌐 Decentralized & trustless: $MINA
+│ 🔭 Transparent & auditable: OpenSource
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 18:58
+
+⚡ Key Features:
+
+🔀 Provable pseudo-randomness: VRF
+🔒 Fresh & Tamper-proof: ZK and Mina Protocol blockchain
+⚡ Efficient & scalable: zkSNARKs
+🌐 Decentralized & trustless: $MINA
+🔭 Transparent & auditable: OpenSource
+
+📖 Quoting from 2024-04-15 18:58:
+┌─ 🔒 RandoMina leverages the power of Zero-Knowledge (ZK) proofs to ensure random numbers are:
+│ 
+│ ✅ Provable
+│ ✅ Secure
+│ ✅ Trustless
+│ 
+│ 🌐 Built on Mina Protocol blockchain, RandoMina is tamper-proof and transparent! 🙌
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 18:58
+
+🔒 RandoMina leverages the power of Zero-Knowledge (ZK) proofs to ensure random numbers are:
+
+✅ Provable
+✅ Secure
+✅ Trustless
+
+🌐 Built on Mina Protocol blockchain, RandoMina is tamper-proof and transparent! 🙌
+
+📖 Quoting from 2024-04-15 18:58:
+┌─ 🎲 Introducing RandoMina - a protocol for provable random number generation on the Mina Protocol blockchain  blockchain! 🔢🔐
+│ 
+│ 🌟 Developed as part of zkLocus, RandoMina is now open-source and ready for you to explore! 🚀
+│ 
+│ 🔗 GitHub: https://github.com/iluxonchik/randomina
+│ 
+│ 🧵 Let's dive in! 👇
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-15 18:58
+
+🎲 Introducing RandoMina - a protocol for provable random number generation on the Mina Protocol blockchain  blockchain! 🔢🔐
+
+🌟 Developed as part of zkLocus, RandoMina is now open-source and ready for you to explore! 🚀
+
+🔗 GitHub: https://github.com/iluxonchik/randomina
+
+🧵 Let's dive in! 👇
+
+~ ✨ ~
+
 ⏰ 2024-04-14 13:28
 
-🔍 Ever wondered how zkSNARKs & zkSTARKs ACTUALLY work under the hood? 🤔
+🔗 Deep dive into ZKP protocols of zkSNARK/zkSTARK and how combined with the blockchain they enable a new Verifiable Computation model by providing a cryptographic observation of a computation👇
 
-🔐 These #ZeroKnowledge protocols offer a novel way to PROVE computations without revealing the computation itself! 🤯
+https://illya.sh/blog/posts/zksnark-zkstark-verifiable-computation-model-blockchain/
 
-⛓️ Native match with #blockchain
+📖 Quoting from 2024-04-14 13:28:
+┌─ 💡 When combined with the blockchain, zkSNARKs & zkSTARKs are disruptive:
+│ 
+│ 🌍 zkLocus: geolocation RWA
+│ 🏥 zkSafeZones: Safeguarding civilians in warzones. Proposing to UN and ICRC
+│ ⚖️ Automated legal compliance on-chain
+│ 🕵️ Privacy-preserving AI systems
+│ 
+│ 🛠️
+└─
 
-🧵 Let's dive in 👇
+~ ✨ ~
 
-http
+⏰ 2024-04-14 13:28
+
+💡 When combined with the blockchain, zkSNARKs & zkSTARKs are disruptive:
+
+🌍 zkLocus: geolocation RWA
+🏥 zkSafeZones: Safeguarding civilians in warzones. Proposing to UN and ICRC
+⚖️ Automated legal compliance on-chain
+🕵️ Privacy-preserving AI systems
+
+🛠️
+
+📖 Quoting from 2024-04-14 13:28:
+┌─ 🕰️ Compared to the Ethereum EVM's Linear Verifiable Computational Model (LVCM), zkSNARKs & zkSTARKs offer a Constant one (CVCM)
+│ 
+│ ⚡ Verification time: O(1) vs. O(n)
+│ 🌪️ Scalability: ♾️ vs. 📈
+│ ⛓️ Interoperability: 🌉 vs. 🚧
+│ 
+│ 🌟 The implications of ZK are PROFOUND!
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-14 13:28
+
+🕰️ Compared to the Ethereum EVM's Linear Verifiable Computational Model (LVCM), zkSNARKs & zkSTARKs offer a Constant one (CVCM)
+
+⚡ Verification time: O(1) vs. O(n)
+🌪️ Scalability: ♾️ vs. 📈
+⛓️ Interoperability: 🌉 vs. 🚧
+
+🌟 The implications of ZK are PROFOUND!
+
+📖 Quoting from 2024-04-14 13:28:
+┌─ 🌿 Thanks to their RECURSIVE properties, zkSNARKs & zkSTARKs enable INFINITE SCALABILITY ♾️
+│ 
+│ 🧩 You can COMPRESS 1000s of proofs into a SINGLE one
+│ ⏳ Verification time remains ~CONSTANT
+│ 💰 Gas costs are SLASHED
+│ 
+│ 🔥 This is the power of ZKP! 🔥
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-14 13:28
+
+🌿 Thanks to their RECURSIVE properties, zkSNARKs & zkSTARKs enable INFINITE SCALABILITY ♾️
+
+🧩 You can COMPRESS 1000s of proofs into a SINGLE one
+⏳ Verification time remains ~CONSTANT
+💰 Gas costs are SLASHED
+
+🔥 This is the power of ZKP! 🔥
+
+📖 Quoting from 2024-04-14 13:28:
+┌─ ✅ Generating the proof = Executing the computation
+│ 🔍 Verifying the proof = Checking the computation's correctness
+│ ⏰ Verification is ~CONSTANT time, regardless of computation complexity
+│ 
+│ 🚀 How do you think this affects SCALABILITY? 💫
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-14 13:28
+
+✅ Generating the proof = Executing the computation
+🔍 Verifying the proof = Checking the computation's correctness
+⏰ Verification is ~CONSTANT time, regardless of computation complexity
+
+🚀 How do you think this affects SCALABILITY? 💫
+
+📖 Quoting from 2024-04-14 13:28:
+┌─ 🎯 At their core, zkSNARKs & zkSTARKs provide a cryptographic OBSERVATION of a computation 🔍
+│ 
+│ 🕵️ The PROVER generates the PROOF
+│ ⚖️ The VERIFIER checks the PROOF
+│ 🔒 The PROOF itself encapsulates the computation, inputs & outputs
+│ 
+│ 🤯 It's like a mathematical witness!
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-14 13:28
+
+🎯 At their core, zkSNARKs & zkSTARKs provide a cryptographic OBSERVATION of a computation 🔍
+
+🕵️ The PROVER generates the PROOF
+⚖️ The VERIFIER checks the PROOF
+🔒 The PROOF itself encapsulates the computation, inputs & outputs
+
+🤯 It's like a mathematical witness!
+
+📖 Quoting from 2024-04-14 13:28:
+┌─ Ever wondered how zkSNARKs & zkSTARKs ACTUALLY work under the hood? 🤔
+│ 
+│ 🔐 These ZeroKnowledge protocols offer a novel way to PROVE computations without revealing the computation itself! 🤯
+│ 
+│ ⛓️ Native match with blockchain
+│ 
+│  (a thread 🧵)
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-14 13:28
+
+Ever wondered how zkSNARKs & zkSTARKs ACTUALLY work under the hood? 🤔
+
+🔐 These ZeroKnowledge protocols offer a novel way to PROVE computations without revealing the computation itself! 🤯
+
+⛓️ Native match with blockchain
+
+ (a thread 🧵)
+
+~ ✨ ~
+
+⏰ 2024-04-13 18:28
+
+🧠 Adapting to the ZK mindset takes time, but the rewards are IMMENSE
+
+💡 As I discovered building zkLocus, every challenge sparks innovation
+🌟 Soon, you'll be engineering groundbreaking solutions effortlessly
+
+🚀 The future of Web3 is BRIGHT with ZeroKnowledge! 🔐🌐💻
+
+📖 Quoting from 2024-04-13 18:28:
+┌─ 🔐 The era of PRIVATE, VERIFIABLE, PROGRAMMABLE and TRUSTLESS computation is upon us! 👇
+│ 
+│ https://illya.sh/blog/posts/zksnark-zkstark-verifiable-computation-model-blockchain/
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-13 18:28
+
+🔐 The era of PRIVATE, VERIFIABLE, PROGRAMMABLE and TRUSTLESS computation is upon us! 👇
+
+https://illya.sh/blog/posts/zksnark-zkstark-verifiable-computation-model-blockchain/
+
+📖 Quoting from 2024-04-13 18:28:
+┌─ 🌍 But the potential of zkSNARKs & zkSTARKs goes BEYOND blockchain!
+│ 
+│ 🏥 zkSafeZones: Safeguarding civilians in warzones:
+│ 
+│ ⚖️ Automated on-chain legal compliance
+│ 👁️ Privacy-preserving AI surveillance
+│ 🧪 Built on zkLocus + Mina Protocol blockchain 
+│ ⛑️ Proposing to UN and ICRC
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-13 18:28
+
+🌍 But the potential of zkSNARKs & zkSTARKs goes BEYOND blockchain!
+
+🏥 zkSafeZones: Safeguarding civilians in warzones:
+
+⚖️ Automated on-chain legal compliance
+👁️ Privacy-preserving AI surveillance
+🧪 Built on zkLocus + Mina Protocol blockchain 
+⛑️ Proposing to UN and ICRC
+
+📖 Quoting from 2024-04-13 18:28:
+┌─ ⏳ Time complexity comparison: EVM vs. zkSNARKs/zkSTARKs
+│ 
+│ 🧮 Execution: EVM is faster due to simple VM emulation
+│ 🔍 Verification: ZK proofs shine with constant O(1) vs. EVM's linear O(n)
+│ 
+│ 💡 This is why ZK L2 solutions are BOOMING on Ethereum!
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-13 18:28
+
+⏳ Time complexity comparison: EVM vs. zkSNARKs/zkSTARKs
+
+🧮 Execution: EVM is faster due to simple VM emulation
+🔍 Verification: ZK proofs shine with constant O(1) vs. EVM's linear O(n)
+
+💡 This is why ZK L2 solutions are BOOMING on Ethereum!
+
+📖 Quoting from 2024-04-13 18:28:
+┌─ 🔍 Let's examine how zkLocus leverages Mina's zkSNARK-based architecture
+│ 
+│ 🌍 Geolocation data becomes a trustless, programmable Real World Asset (RWA)
+│ 🌉 zkLocus proofs can be used cross-chain or even off-chain
+│ 🎯 It's an "app-specific rollup" on Mina, focusing on its own logic
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-13 18:28
+
+🔍 Let's examine how zkLocus leverages Mina's zkSNARK-based architecture
+
+🌍 Geolocation data becomes a trustless, programmable Real World Asset (RWA)
+🌉 zkLocus proofs can be used cross-chain or even off-chain
+🎯 It's an "app-specific rollup" on Mina, focusing on its own logic
+
+📖 Quoting from 2024-04-13 18:28:
+┌─ ♾️ The recursive nature of zkSNARKs & zkSTARKs enables INFINITE SCALABILITY
+│ 
+│ 🌿 Imagine compressing 1000s of computations into a SINGLE proof
+│ ⏰ Verification time remains ~CONSTANT
+│ 💰 Gas costs are DRASTICALLY reduced
+│ 
+│ 🔥 This is the power of ZKP! 🔥
+│ 
+│ Mina Protocol blockchain aces it 💪
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-13 18:28
+
+♾️ The recursive nature of zkSNARKs & zkSTARKs enables INFINITE SCALABILITY
+
+🌿 Imagine compressing 1000s of computations into a SINGLE proof
+⏰ Verification time remains ~CONSTANT
+💰 Gas costs are DRASTICALLY reduced
+
+🔥 This is the power of ZKP! 🔥
+
+Mina Protocol blockchain aces it 💪
+
+📖 Quoting from 2024-04-13 18:28:
+┌─ 🤯 The implications are MASSIVE!
+│ 
+│ 🧪 Mina Protocol blockchain and it's native token $MINA operate on this architecture
+│ 
+│ 📍zkLocus leverages this technology to turn geolocation into a RWA, by enabling private, verifiable and programmable geolocation sharing
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-13 18:28
+
+🤯 The implications are MASSIVE!
+
+🧪 Mina Protocol blockchain and it's native token $MINA operate on this architecture
+
+📍zkLocus leverages this technology to turn geolocation into a RWA, by enabling private, verifiable and programmable geolocation sharing
+
+📖 Quoting from 2024-04-13 18:28:
+┌─ 🚀 zkSNARKs & zkSTARKs offer a Constant Verifiable Computational Model (CVCM)
+│ 
+│ ⚡ Verification time is CONSTANT - O(1), regardless of computation complexity
+│ 
+│ 💡 Contrast this with the EVM's Linear VCM (LVCM), where verification grows LINEARLY with instructions - O(n)
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-13 18:28
+
+🚀 zkSNARKs & zkSTARKs offer a Constant Verifiable Computational Model (CVCM)
+
+⚡ Verification time is CONSTANT - O(1), regardless of computation complexity
+
+💡 Contrast this with the EVM's Linear VCM (LVCM), where verification grows LINEARLY with instructions - O(n)
+
+📖 Quoting from 2024-04-13 18:28:
+┌─ 🤔 What makes a computation VERIFIABLE?
+│ 
+│ ✅ In zkSNARKs & zkSTARKs, provers generate proofs of computations, while verifiers check their correctness
+│ 🔒 This model supports PRIVATE inputs, unlike the EVM
+│ 🌍 It's not limited to blockchain - zkLocus showcases off-chain use cases
+└─
+
+~ ✨ ~
+
+⏰ 2024-04-13 18:28
+
+🤔 What makes a computation VERIFIABLE?
+
+✅ In zkSNARKs & zkSTARKs, provers generate proofs of computations, while verifiers check their correctness
+🔒 This model supports PRIVATE inputs, unlike the EVM
+🌍 It's not limited to blockchain - zkLocus showcases off-chain use cases
+
+📖 Quoting from 2024-04-13 18:28:
+┌─ zkSNARKs & zkSTARKs: Disrupting Verifiable Computation 
+│ 
+│  Explore how these #ZeroKnowledge protocols SURPASS the #EVM's model, opening a world of possibilities for #Web3 applications
+│ 
+│  Deep dive ARTICLE 
+│ 
+│ 
+│ 
+│  Let's unravel the key insights
+└─
 
 ~ ✨ ~
 
@@ -7675,6 +9664,308 @@ You don't have to trust me. Trust the price action
 ⏰ 2023-08-16 00:18
 
 Unlock the secret to predicting any asset's price! The 30-day federal funds rate futures contract on the Chicago Mercantile Exchange is the key. Learn how to use this unique indicator for profitable trading in this video. #Trading #Investing #Cryptocurrency #Futures
+
+~ ✨ ~
+
+⏰ 2023-05-17 23:43
+
+🌐 In conclusion, it's essential to understand the technical and operational differences between BRC-20 and ERC-20. While the ecosystem around BRC-20 will continue to evolve, it is unlikely that it will supersede smart-contract based DeFi
+
+📖 Quoting from 2023-05-17 23:43:
+┌─ 📚 A detailed explanation of what BRC-20 are and how they work can be found on this thread: 
+│ 
+│ https://x.com/iluxonchik/status/1658905098624409622
+│ 
+│ BRC20 Ordinals Inscriptions Bitcoin
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 23:43
+
+📚 A detailed explanation of what BRC-20 are and how they work can be found on this thread: 
+
+https://x.com/iluxonchik/status/1658905098624409622
+
+BRC20 Ordinals Inscriptions Bitcoin
+
+📖 Quoting from 2023-05-17 23:43:
+┌─ 🚀 BRC-20 is also less efficient than ERC-20. Any mildly complex system built around BRC-20 heavily relies on caching. In contrast, ERC-20 is extremely efficient, cryptographically protected, and operates seamlessly on the blockchain
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 23:43
+
+🚀 BRC-20 is also less efficient than ERC-20. Any mildly complex system built around BRC-20 heavily relies on caching. In contrast, ERC-20 is extremely efficient, cryptographically protected, and operates seamlessly on the blockchain
+
+📖 Quoting from 2023-05-17 23:43:
+┌─ 🛠️ Any DeFi ecosystem built around BRC-20 will need off-chain tools. This requirement brings in a level of centralization and potential vulnerability. On the other hand, with ERC-20, everything is fully stored and operated on the blockchain
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 23:43
+
+🛠️ Any DeFi ecosystem built around BRC-20 will need off-chain tools. This requirement brings in a level of centralization and potential vulnerability. On the other hand, with ERC-20, everything is fully stored and operated on the blockchain
+
+📖 Quoting from 2023-05-17 23:43:
+┌─ 🚧 Contrary to popular belief, BRC-20 isn't fully on the Bitcoin blockchain. Yes, the text is stored as part of Taproot Bitcoin transactions, but Bitcoin isn't aware of BRC-20s. You need an external, off-chain tool to parse and calculate balances
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 23:43
+
+🚧 Contrary to popular belief, BRC-20 isn't fully on the Bitcoin blockchain. Yes, the text is stored as part of Taproot Bitcoin transactions, but Bitcoin isn't aware of BRC-20s. You need an external, off-chain tool to parse and calculate balances
+
+📖 Quoting from 2023-05-17 23:43:
+┌─ 🪙 BRC-20 doesn't limit the minting of tokens. There is no way of knowing wether a token has been fully minted without parsing every “mint” text record. Conversely, ERC-20 ensures that only a predetermined amount of a token can exist, providing a more controlled ecosystem.
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 23:43
+
+🪙 BRC-20 doesn't limit the minting of tokens. There is no way of knowing wether a token has been fully minted without parsing every “mint” text record. Conversely, ERC-20 ensures that only a predetermined amount of a token can exist, providing a more controlled ecosystem.
+
+📖 Quoting from 2023-05-17 23:43:
+┌─ 📝 With BRC-20, there are no numeric balances. Instead, you need to parse everything from the text. In contrast, ERC-20 gives each address an integer balance, simplifying and enforcing the proper handling of assets
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 23:43
+
+📝 With BRC-20, there are no numeric balances. Instead, you need to parse everything from the text. In contrast, ERC-20 gives each address an integer balance, simplifying and enforcing the proper handling of assets
+
+📖 Quoting from 2023-05-17 23:43:
+┌─ 🤔 It's crucial to understand what these tokens are. BRC-20 is essentially a piece of text, whereas ERC-20 is a computer program. BRC-20's capabilities are limited to inscription on the blockchain. ERC-20, on the other hand, allows encoding of any execution logic
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 23:43
+
+🤔 It's crucial to understand what these tokens are. BRC-20 is essentially a piece of text, whereas ERC-20 is a computer program. BRC-20's capabilities are limited to inscription on the blockchain. ERC-20, on the other hand, allows encoding of any execution logic
+
+📖 Quoting from 2023-05-17 23:43:
+┌─ 🚀 Debunking a common misconception in the Crypto world: BRC-20 superiority over ERC-20. If you've heard BRC-20 is better, let's dive into some facts that might make you rethink that claim
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 23:43
+
+🚀 Debunking a common misconception in the Crypto world: BRC-20 superiority over ERC-20. If you've heard BRC-20 is better, let's dive into some facts that might make you rethink that claim
+
+~ ✨ ~
+
+⏰ 2023-05-17 19:39
+
+📚 Remember, inscriptions are still an experimental feature, so exercise caution when working with them
+
+~ ✨ ~
+
+⏰ 2023-05-17 19:39
+
+🎯 Keep in mind that transaction fees and the size of the inscription can affect costs. As the inscription size increases, so does the transaction size, potentially impacting fees required for inclusion in a block
+
+📖 Quoting from 2023-05-17 19:39:
+┌─ 🖼️ Inscriptions demonstrate the versatility of the Bitcoin blockchain, enabling storage of arbitrary data. From artwork to text, the possibilities are endless. Ordinal Theory opens new avenues for creativity and innovation on the blockchain.
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 19:39
+
+🖼️ Inscriptions demonstrate the versatility of the Bitcoin blockchain, enabling storage of arbitrary data. From artwork to text, the possibilities are endless. Ordinal Theory opens new avenues for creativity and innovation on the blockchain.
+
+📖 Quoting from 2023-05-17 19:39:
+┌─ 🛠️ Meet the ord tool! It serves as an index, block explorer, and wallet for exploring the world of inscriptions. With ord, you can generate, manage, and interact with your own inscriptions on the Bitcoin blockchain
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 19:39
+
+🛠️ Meet the ord tool! It serves as an index, block explorer, and wallet for exploring the world of inscriptions. With ord, you can generate, manage, and interact with your own inscriptions on the Bitcoin blockchain
+
+📖 Quoting from 2023-05-17 19:39:
+┌─ 🔒 When an address becomes the owner of an inscription on the Bitcoin blockchain, it gains the ability to transfer that inscription. This ownership is secured and verified by the Bitcoin network itself
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 19:39
+
+🔒 When an address becomes the owner of an inscription on the Bitcoin blockchain, it gains the ability to transfer that inscription. This ownership is secured and verified by the Bitcoin network itself
+
+📖 Quoting from 2023-05-17 19:39:
+┌─ 🗂️ So, how does arbitrary data get stored on the Bitcoin blockchain using ordinals? Inscription content is serialized and included in the input of a reveal transaction, giving life to new forms of digital artifacts
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 19:39
+
+🗂️ So, how does arbitrary data get stored on the Bitcoin blockchain using ordinals? Inscription content is serialized and included in the input of a reveal transaction, giving life to new forms of digital artifacts
+
+📖 Quoting from 2023-05-17 19:39:
+┌─ 🌱 Taproot addresses play a crucial role in enabling inscriptions. They leverage the power of the Taproot upgrade on the Bitcoin blockchain, providing the necessary flexibility to store arbitrary content within a transaction
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 19:39
+
+🌱 Taproot addresses play a crucial role in enabling inscriptions. They leverage the power of the Taproot upgrade on the Bitcoin blockchain, providing the necessary flexibility to store arbitrary content within a transaction
+
+📖 Quoting from 2023-05-17 19:39:
+┌─ 🔍 We can track a single satoshi using these inscriptions. This allows us to trace its journey across transactions, from one taproot address to another. The first satoshi of the first output becomes the vessel for the inscription
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 19:39
+
+🔍 We can track a single satoshi using these inscriptions. This allows us to trace its journey across transactions, from one taproot address to another. The first satoshi of the first output becomes the vessel for the inscription
+
+📖 Quoting from 2023-05-17 19:39:
+┌─ 📝 An inscription is an arbitrary piece of data attached to an individual satoshi, transforming it into a Bitcoin-native digital artifact. It's like a digital signature, representing something unique and valuable
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 19:39
+
+📝 An inscription is an arbitrary piece of data attached to an individual satoshi, transforming it into a Bitcoin-native digital artifact. It's like a digital signature, representing something unique and valuable
+
+📖 Quoting from 2023-05-17 19:39:
+┌─ 🧠 Ordinal Theory assigns serial numbers to satoshis, the smallest unit of Bitcoin. These ordinal numbers are assigned in the order satoshis are mined, giving each a unique identity and opening the door to a world of possibilities
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 19:39
+
+🧠 Ordinal Theory assigns serial numbers to satoshis, the smallest unit of Bitcoin. These ordinal numbers are assigned in the order satoshis are mined, giving each a unique identity and opening the door to a world of possibilities
+
+📖 Quoting from 2023-05-17 19:39:
+┌─ What if I told you that Bitcoin is not just about money, but it can also store arbitrary data? In this thread I will explain in detail the fascinating world of Ordinals  and Inscriptions, where individual satoshis become more than just digital currency
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-17 19:39
+
+What if I told you that Bitcoin is not just about money, but it can also store arbitrary data? In this thread I will explain in detail the fascinating world of Ordinals  and Inscriptions, where individual satoshis become more than just digital currency
+
+~ ✨ ~
+
+⏰ 2023-05-10 16:31
+
+🌍 In conclusion, the Ordinal Protocol on Bitcoin opens up new possibilities for tracking, trading, and collecting satoshis, as well as creating digital artifacts. It's a valuable addition to the blockchain ecosystem! 🌟🌊
+
+📖 Quoting from 2023-05-10 16:31:
+┌─ 👩‍🎨 Why inscriptions matter for artists: They're on Bitcoin (high status), have cheaper on-chain storage, unlock new liquidity, and are designed specifically for digital artifacts. This offers unique advantages compared to other NFT platforms. 🎭🚀
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-10 16:31
+
+👩‍🎨 Why inscriptions matter for artists: They're on Bitcoin (high status), have cheaper on-chain storage, unlock new liquidity, and are designed specifically for digital artifacts. This offers unique advantages compared to other NFT platforms. 🎭🚀
+
+📖 Quoting from 2023-05-10 16:31:
+┌─ 🧪 Comparisons to other platforms: Ordinal Protocol has been designed specifically for digital artifacts, offering a simpler and more polished user experience compared to second-layer asset protocols like RGB and Taro. 🖼️🌟
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-10 16:31
+
+🧪 Comparisons to other platforms: Ordinal Protocol has been designed specifically for digital artifacts, offering a simpler and more polished user experience compared to second-layer asset protocols like RGB and Taro. 🖼️🌟
+
+📖 Quoting from 2023-05-10 16:31:
+┌─ ⚠️ The key differences between Ordinal Theory's inscriptions and Ethereum NFTs:
+│ 
+│ - Inscriptions are always immutable🔏
+│ - Content is always on-chain💾
+│ - Inscriptions are simpler and more secure🛡️
+│ - They're scarcer, unlocking new markets💰
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-10 16:31
+
+⚠️ The key differences between Ordinal Theory's inscriptions and Ethereum NFTs:
+
+- Inscriptions are always immutable🔏
+- Content is always on-chain💾
+- Inscriptions are simpler and more secure🛡️
+- They're scarcer, unlocking new markets💰
+
+📖 Quoting from 2023-05-10 16:31:
+┌─ 🧩 How does it work? Ordinal numbers are assigned to satoshis as they're mined. A simple algorithm is used to determine how satoshis move from inputs to outputs in transactions, maintaining their unique identities. 💹🔀
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-10 16:31
+
+🧩 How does it work? Ordinal numbers are assigned to satoshis as they're mined. A simple algorithm is used to determine how satoshis move from inputs to outputs in transactions, maintaining their unique identities. 💹🔀
+
+📖 Quoting from 2023-05-10 16:31:
+┌─ 🔑 The power of Ordinal Theory: Collecting, trading, and scheming!🤝 By assigning identities to satoshis, they become individually trackable and tradable for numismatic value. Plus, it enables inscriptions: a protocol to attach content to satoshis! 🎨🔐
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-10 16:31
+
+🔑 The power of Ordinal Theory: Collecting, trading, and scheming!🤝 By assigning identities to satoshis, they become individually trackable and tradable for numismatic value. Plus, it enables inscriptions: a protocol to attach content to satoshis! 🎨🔐
+
+📖 Quoting from 2023-05-10 16:31:
+┌─ 🛠 Does Ordinal Theory require a side chain, separate token, or changes to Bitcoin? NO! It works right now with only bitcoin as the token, making it a seamless addition to the ecosystem.🌱🔄
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-10 16:31
+
+🛠 Does Ordinal Theory require a side chain, separate token, or changes to Bitcoin? NO! It works right now with only bitcoin as the token, making it a seamless addition to the ecosystem.🌱🔄
+
+📖 Quoting from 2023-05-10 16:31:
+┌─ 🤔 What is Ordinal Theory? It's a protocol for assigning serial numbers to satoshis, the smallest unit of a bitcoin, and tracking their transactions. Imagine giving each satoshi a unique identity, like a collectible item! 💎🔗
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-10 16:31
+
+🤔 What is Ordinal Theory? It's a protocol for assigning serial numbers to satoshis, the smallest unit of a bitcoin, and tracking their transactions. Imagine giving each satoshi a unique identity, like a collectible item! 💎🔗
+
+📖 Quoting from 2023-05-10 16:31:
+┌─ 🚀 The Bitcoin Ordinal Protocol Explained: an innovation which allows for tracking, trading, and collecting digital assets on the Bitcoin network! 
+│ 
+│ ⚡️Powers BRC20 & SBC20
+│ 
+│ 💥 Let's dive into this fascinating protocol and explore its significance Blockchain Crypto 
+│  (a thread 🧵)
+└─
+
+~ ✨ ~
+
+⏰ 2023-05-10 16:31
+
+🚀 The Bitcoin Ordinal Protocol Explained: an innovation which allows for tracking, trading, and collecting digital assets on the Bitcoin network! 
+
+⚡️Powers BRC20 & SBC20
+
+💥 Let's dive into this fascinating protocol and explore its significance Blockchain Crypto 
+ (a thread 🧵)
 
 ~ ✨ ~
 
