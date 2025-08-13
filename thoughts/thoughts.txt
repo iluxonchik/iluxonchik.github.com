@@ -6,6 +6,326 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-08-13 02:02
+
+this is why duration matching is key for financial institutions
+
+this is also the reason why it's generally not a good idea for governments to refinance long-term debt with short-term debt
+
+this shortens the duration of both - government liabilities and market's assets
+
+📖 Quoting from 2025-08-13 00:30:
+┌─ duration matching protects:
+│ 
+│ ➖ liquidity via cashflow modulation, by helping liability cashflows match asset cashflows
+│ 
+│ ➖ solvency via asset and liability value modulation, by reducing asset value loss when yields fall and reducing liability value loss when yields raise
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 01:49
+
+and the crypto market cap has now been sitting at $4 trillion for the 3rd day 🤝
+
+📖 Quoting from 2025-07-20 09:40:
+┌─ 🚀 and indeed the crypto cap increased even more
+│ 
+│ now, await for a solid $4 Trillion
+│ 
+│ it's almost like it's correlated with global liquidity flows - or perhaps I'm just really good at guessing 😳
+│ 
+│ i wrote a lot about this in the past - so read up for details if inerested!
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:30
+
+duration matching protects:
+
+➖ liquidity via cashflow modulation, by helping liability cashflows match asset cashflows
+
+➖ solvency via asset and liability value modulation, by reducing asset value loss when yields fall and reducing liability value loss when yields raise
+
+📖 Quoting from 2025-08-13 00:29:
+┌─ duration matching protects liquidity and solvency by modulating yield shift effects on the value of assets and liabilities
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:29
+
+duration matching protects liquidity and solvency by modulating yield shift effects on the value of assets and liabilities
+
+📖 Quoting from 2025-08-13 00:28:
+┌─ since a 30 year bond discounts 30 years of cashflows and those cashflows directly incorporate this compounding yield - its price moves more with yields than a comparable, shorter time to maturity bond
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:28
+
+since a 30 year bond discounts 30 years of cashflows and those cashflows directly incorporate this compounding yield - its price moves more with yields than a comparable, shorter time to maturity bond
+
+📖 Quoting from 2025-08-13 00:27:
+┌─ regarding 1 year vs 30 year bond - imagine yields rise by 2%:
+│ 
+│ ➖ the price of the bond maturing in 1 year declines by discounting those 2% from 1 year of cashflows
+│ 
+│ ➖ a 30 year bond discounts for 30 years of cashflows
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:27
+
+regarding 1 year vs 30 year bond - imagine yields rise by 2%:
+
+➖ the price of the bond maturing in 1 year declines by discounting those 2% from 1 year of cashflows
+
+➖ a 30 year bond discounts for 30 years of cashflows
+
+📖 Quoting from 2025-08-13 00:25:
+┌─ the longer the bond's time to maturity - the more compounding of unfavorable yields the bond's price must incorporate
+│ 
+│ the more technical term is discounting, but compounding of unfavorable yields may help in bulging the mental model for what happens
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:25
+
+the longer the bond's time to maturity - the more compounding of unfavorable yields the bond's price must incorporate
+
+the more technical term is discounting, but compounding of unfavorable yields may help in bulging the mental model for what happens
+
+📖 Quoting from 2025-08-13 00:24:
+┌─ larger modified duration value means that the bond's price is more sensitive to changes in bond yields
+│ 
+│ this makes sense. the longer the time to maturity - the longer the risk and term premia comes into play
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:24
+
+larger modified duration value means that the bond's price is more sensitive to changes in bond yields
+
+this makes sense. the longer the time to maturity - the longer the risk and term premia comes into play
+
+📖 Quoting from 2025-08-13 00:23:
+┌─ modified duration quantifies how much a bond’s price will change for a 1% change in bond yields
+│ 
+│ while the bond pays fix sums - its market value/price varies, so its yield is not fixed
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:23
+
+modified duration quantifies how much a bond’s price will change for a 1% change in bond yields
+
+while the bond pays fix sums - its market value/price varies, so its yield is not fixed
+
+📖 Quoting from 2025-08-13 00:23:
+┌─ that's a problem because the market price of the bond may have fallen significantly and the rest of the bond payment - 1.5% coupon + principal needs to be re-financed at potentially unfavorable rates
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:23
+
+that's a problem because the market price of the bond may have fallen significantly and the rest of the bond payment - 1.5% coupon + principal needs to be re-financed at potentially unfavorable rates
+
+📖 Quoting from 2025-08-13 00:22:
+┌─ the bank's only option now is to sell the UST bond they hold at the market price, and use the proceeds to settle the 1.5% semiannual coupon liability
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:22
+
+the bank's only option now is to sell the UST bond they hold at the market price, and use the proceeds to settle the 1.5% semiannual coupon liability
+
+📖 Quoting from 2025-08-13 00:22:
+┌─ now the bank has an issue - the 1.5% liability payment is in 6 months, while 4% yield from the asset financed by that liability only gets paid in 1 year
+│ 
+│ while the bank will have the money to pay in the future - it doesn't have it now
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:22
+
+now the bank has an issue - the 1.5% liability payment is in 6 months, while 4% yield from the asset financed by that liability only gets paid in 1 year
+
+while the bank will have the money to pay in the future - it doesn't have it now
+
+📖 Quoting from 2025-08-13 00:20:
+┌─ what would happen if the bank issued bonds with a semi-annual coupon instead?
+│ 
+│ semi-anual coupon means that bondholders get 2 ≈1.5% interest payments in the year: at 6 months, and maturity
+│ 
+│ remember: the UST bond only has one payment - at maturity in 1 year (think zero-coupon)
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:20
+
+what would happen if the bank issued bonds with a semi-annual coupon instead?
+
+semi-anual coupon means that bondholders get 2 ≈1.5% interest payments in the year: at 6 months, and maturity
+
+remember: the UST bond only has one payment - at maturity in 1 year (think zero-coupon)
+
+📖 Quoting from 2025-08-13 00:18:
+┌─ assume that both start simultaneously and mature in 1 year without any periodic payments
+│ 
+│ this means that today the bank borrows $100M at 3% APY and invests it at 4%
+│  
+│ in exactly 1 year the bank receives $104M from the UST bond, repays $103M to bondholders and keeps $1M profit
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:18
+
+assume that both start simultaneously and mature in 1 year without any periodic payments
+
+this means that today the bank borrows $100M at 3% APY and invests it at 4%
+ 
+in exactly 1 year the bank receives $104M from the UST bond, repays $103M to bondholders and keeps $1M profit
+
+📖 Quoting from 2025-08-13 00:18:
+┌─ let's say the bank issued bonds (liability) at 3% and acquired UST bonds (asset) with a 4% yield
+│ 
+│ both assets and liabilities have a transaction amount of $100 million
+│ 
+│ the bank uses the loan (issued bond) to purchase higher yield UST bonds, thus profiting a ≈1% spread
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:18
+
+let's say the bank issued bonds (liability) at 3% and acquired UST bonds (asset) with a 4% yield
+
+both assets and liabilities have a transaction amount of $100 million
+
+the bank uses the loan (issued bond) to purchase higher yield UST bonds, thus profiting a ≈1% spread
+
+📖 Quoting from 2025-08-13 00:10:
+┌─ let's develop on this simple bank example
+│ 
+│ assume a brand-new bank with an empty balance sheet, no revenue, no deposits, no cashflow and no regulations
+│ 
+│ the bank is about to finance its first asset - a UST bond with a liability - bonds issued by the bank
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:10
+
+let's develop on this simple bank example
+
+assume a brand-new bank with an empty balance sheet, no revenue, no deposits, no cashflow and no regulations
+
+the bank is about to finance its first asset - a UST bond with a liability - bonds issued by the bank
+
+📖 Quoting from 2025-08-13 00:02:
+┌─ this newly acquired UST bond was financed with some liability of the bank
+│ 
+│ let's say the bank itself issued bonds with a smaller coupon than UST’s
+│ 
+│ thus, the bank used a liability to finance and asset and earns a spread
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:02
+
+this newly acquired UST bond was financed with some liability of the bank
+
+let's say the bank itself issued bonds with a smaller coupon than UST’s
+
+thus, the bank used a liability to finance and asset and earns a spread
+
+📖 Quoting from 2025-08-13 00:00:
+┌─ a bank may buy a US Treasury bond (UST) and hold it as an asset. at some point, that bond matures, thus terminating its existence
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-13 00:00
+
+a bank may buy a US Treasury bond (UST) and hold it as an asset. at some point, that bond matures, thus terminating its existence
+
+📖 Quoting from 2025-08-12 23:58:
+┌─ most of financial institution's assets have an expiration date
+│ 
+│ these assets are mostly composed of loans, debt securities and money market instruments
+│ 
+│ still, all come with an expiration date
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-12 23:58
+
+most of financial institution's assets have an expiration date
+
+these assets are mostly composed of loans, debt securities and money market instruments
+
+still, all come with an expiration date
+
+📖 Quoting from 2025-08-12 23:57:
+┌─ when liabilities become due you must ensure that assets can cover them
+│ 
+│ this means ensuring that cashflow and asset monetization provides enough liquidity to settle the debt, plus a desired spread
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-12 23:57
+
+when liabilities become due you must ensure that assets can cover them
+
+this means ensuring that cashflow and asset monetization provides enough liquidity to settle the debt, plus a desired spread
+
+📖 Quoting from 2025-08-12 23:56:
+┌─ duration matching protects solvency and liquidity when yields shift
+│ 
+│ assets are financed by liabilities and equity. financial institutions like banks usually have small equity - so liabilities finance assets
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-12 23:56
+
+duration matching protects solvency and liquidity when yields shift
+
+assets are financed by liabilities and equity. financial institutions like banks usually have small equity - so liabilities finance assets
+
+~ ✨ ~
+
+⏰ 2025-08-12 22:52
+
+re-iterating on the 1.5 month old thread 😄
+
+inflation is still here to stay and gold is still yet to do something - but it sure will
+
+📖 Quoting from 2025-06-21 17:51:
+┌─ although gold already did a lot since this post - this is just the beginning ✨
+│ 
+│ persistent high inflation is here to stay
+│ 
+│ FIAT currencies will continue to devalue, specially with the massive government debit refinancing & further interest rate cuts
+└─
+
+~ ✨ ~
+
 ⏰ 2025-08-11 23:00
 
 i also wrote a thread explaining the importance of USD-denominated government debt for short-term funding/credit markets
