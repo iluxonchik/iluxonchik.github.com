@@ -111,6 +111,22 @@
             }
         }
 
+        /* --- Webfont: Literata (variable, WOFF2) for reading surfaces --- */
+        @font-face {
+            font-family: 'Literata';
+            src: url('/staticthoughts/data/fonts/literata/Literata-VF-latin.woff2') format('woff2-variations');
+            font-style: normal;
+            font-weight: 200 900;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Literata';
+            src: url('/staticthoughts/data/fonts/literata/Literata-Italic-VF-latin.woff2') format('woff2-variations');
+            font-style: italic;
+            font-weight: 200 900;
+            font-display: swap;
+        }
+
         body {
             font-family: "Courier New", Courier, monospace;
             background-color: var(--bg-color);
@@ -226,6 +242,11 @@
             border-bottom: 1px solid var(--soft-border-color);
             padding-bottom: 8px;
         }
+        .thread-title {
+            font-family: 'Literata', Georgia, serif;
+            font-weight: 600;
+            font-optical-sizing: auto;
+        }
 
         .thread-separator {
             display: flex;
@@ -265,10 +286,13 @@
         }
 
         .thread-thought .thought-content p {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             white-space: pre-wrap;
-            line-height: 1.5;
             color: var(--text-color);
+            font-family: 'Literata', Georgia, serif;
+            font-weight: 270;
+            font-optical-sizing: auto;
+            line-height: 1.2;
         }
 
         .thread-thought .thought-image {

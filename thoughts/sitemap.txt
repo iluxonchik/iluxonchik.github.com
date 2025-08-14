@@ -22,6 +22,7 @@ https://illya.sh/thoughts/27
 https://illya.sh/thoughts/28
 https://illya.sh/thoughts/29
 https://illya.sh/thoughts/3
+https://illya.sh/thoughts/30
 https://illya.sh/thoughts/4
 https://illya.sh/thoughts/5
 https://illya.sh/thoughts/6
@@ -737,5 +738,11 @@ https://illya.sh/thoughts/@1755041364
 https://illya.sh/thoughts/@1755041424
 https://illya.sh/thoughts/@1755046185
 https://illya.sh/thoughts/@1755046944
+https://illya.sh/thoughts/@1755102882
+https://illya.sh/thoughts/@1755114630
+https://illya.sh/thoughts/@1755116294
+https://illya.sh/thoughts/@1755125467
+https://illya.sh/thoughts/@1755125692
+https://illya.sh/thoughts/@1755167007
 https://illya.sh/thoughts/comment
 https://illya.sh/thoughts/comment_medium
