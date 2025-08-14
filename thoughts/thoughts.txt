@@ -6,6 +6,96 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-08-14 21:00
+
+equity is the residual claim on assets after all liabilities are paid
+
+equity = assets - liabilities
+
+so the ECB just covers the loss with their equity. this equity reduction is carried forward to be offset by future profits
+
+📖 Quoting from 2025-08-14 20:58:
+┌─ ECB says that the loss will remain on the balance sheet and will be offset by future profits
+│ 
+│ the loss happened because ECB spent more than earned. they did so by using cash, selling assets or increasing liabilities
+│ 
+│ the net effect is the same: reduction in equity
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-14 20:58
+
+ECB says that the loss will remain on the balance sheet and will be offset by future profits
+
+the loss happened because ECB spent more than earned. they did so by using cash, selling assets or increasing liabilities
+
+the net effect is the same: reduction in equity
+
+📖 Quoting from 2025-08-14 20:55:
+┌─ 🇪🇺 ECB's "business model" is as follows:
+│ 
+│ ➕ income: ECB creates money and invests it into financial assets (e.g.: FX, bonds, funds)
+│ 
+│ ➖expenses, such as operational expanses (e.g. staff), facility and open market operation expenses (e.g. TARGET)
+│ 
+│ profit/loss = income - expenses
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-14 20:55
+
+🇪🇺 ECB's "business model" is as follows:
+
+➕ income: ECB creates money and invests it into financial assets (e.g.: FX, bonds, funds)
+
+➖expenses, such as operational expanses (e.g. staff), facility and open market operation expenses (e.g. TARGET)
+
+profit/loss = income - expenses
+
+📖 Quoting from 2025-08-14 20:53:
+┌─ ECB recorded an €8 billion loss in 2024 - what happens in that case?
+│ 
+│ that's a balance sheet question. to understand what happens we need to look into the operational or "business" model of the European Central Bank
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-14 20:53
+
+ECB recorded an €8 billion loss in 2024 - what happens in that case?
+
+that's a balance sheet question. to understand what happens we need to look into the operational or "business" model of the European Central Bank
+
+~ ✨ ~
+
+⏰ 2025-08-14 20:28
+
+this is nothing unusual though - many governments do this, and it's mostly towards stabilizing the exchange rate with USD
+
+to a large extent this is a result US dollar's reserve currency status and its dominance in use for all sorts of financial transactions
+
+📖 Quoting from 2025-08-14 20:21:
+┌─ 🇯🇵 Yen's exchange rate stabilization is a responsibility of the Minister of Finance (MoF)
+│ 
+│ MoF is also the holder of Japan's international reserves - not the Bank of Japan
+│ 
+│ so in Japan the government has significant responsibility for USD/JPY
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-14 20:21
+
+🇯🇵 Yen's exchange rate stabilization is a responsibility of the Minister of Finance (MoF)
+
+MoF is also the holder of Japan's international reserves - not the Bank of Japan
+
+so in Japan the government has significant responsibility for USD/JPY
+
+~ ✨ ~
+
 ⏰ 2025-08-14 11:23
 
 and there it is - a new BTC all time high in Euro 🇪🇺🥳
