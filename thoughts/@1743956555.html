@@ -467,8 +467,8 @@
                 margin-bottom: 14pt;
             }
              .thought-header {
-                font-size: 0.9em; /* Slightly smaller font for header */
-                gap: 0.4em; /* Reduce gap */
+                font-size: 0.85em; /* Even smaller font for mobile header */
+                gap: 0.3em; /* Further reduce gap */
                 padding-bottom: 0px; /* Reduce padding */
              }
              .thought-user-img {
@@ -477,6 +477,18 @@
              }
              /* Optionally hide separator on very small screens if needed */
              /* .thought-header .separator { display: none; } */
+        }
+
+        /* Extra small screens (iPhone SE, etc.) */
+        @media (max-width: 380px) {
+             .thought-header {
+                font-size: 0.8em; /* Even smaller font for very small screens */
+                gap: 0.25em; /* Minimal gap */
+             }
+             .thought-header .date-time {
+                flex-shrink: 1; /* Allow date to shrink if needed */
+                min-width: 0; /* Allow text truncation */
+             }
 
              .thought-image .lightbox-trigger {
                   /* Remove max-width on mobile to allow full width */
