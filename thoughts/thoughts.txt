@@ -6,6 +6,146 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-08-17 17:26
+
+these regulatory constraints are synchronized to a significant degree across all jurisdictions
+
+this means that the financial regulations in EU & USA will have an analogous functional effect (although not the same!). so you can expect similar frameworks across several countries
+
+📖 Quoting from 2025-08-17 16:56:
+┌─ since all dealers are subject to functionally similar regulatory constraints, they're also subject to functionally similar set of balance sheet constraints
+│ 
+│ this is important to remember in the context of global liquidity, especially in terms of pro-cyclical effects
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-17 16:56
+
+since all dealers are subject to functionally similar regulatory constraints, they're also subject to functionally similar set of balance sheet constraints
+
+this is important to remember in the context of global liquidity, especially in terms of pro-cyclical effects
+
+📖 Quoting from 2025-08-17 16:52:
+┌─ bank dealers are subject to Basel III, non-bank dealers to other similar regulations
+│ 
+│ non-bank dealers don't have HQLA or leverage ratio (Basel), but they have net capital haircuts and other leverage/margin requirements
+│ 
+│ so all dealers are subject to a similar set of regulations
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-17 16:52
+
+bank dealers are subject to Basel III, non-bank dealers to other similar regulations
+
+non-bank dealers don't have HQLA or leverage ratio (Basel), but they have net capital haircuts and other leverage/margin requirements
+
+so all dealers are subject to a similar set of regulations
+
+📖 Quoting from 2025-08-17 16:42:
+┌─ market makers and other dealers are also subject to regulatory balance sheet constraints
+│ 
+│ many of them are banks, so frameworks like Basel III apply. non-bank dealers have similar regulations
+│ 
+│ this means dealers are also subject to HQLA, haircuts, leverage limits and alike
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-17 16:42
+
+market makers and other dealers are also subject to regulatory balance sheet constraints
+
+many of them are banks, so frameworks like Basel III apply. non-bank dealers have similar regulations
+
+this means dealers are also subject to HQLA, haircuts, leverage limits and alike
+
+~ ✨ ~
+
+⏰ 2025-08-17 16:14
+
+essentially many T-bill sales flood the market at once, so their price falls, thus causing a yield increase
+
+selling T-bills is more urgent than buying - the stablecoin issuer cannot split it across auctions & dealers as easily, so the market yield change is larger on outflows
+
+📖 Quoting from 2025-08-17 16:05:
+┌─ stablecoin outflows proxy T-bill sales or reduced rolling
+│ 
+│ redemption/burn requires the stablecoin issuer to sell NOW, so large volumes means dealers/market makers will require a yield concession to warehouse those T-bills, as they are subject to balance sheet constraints
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-17 16:05
+
+stablecoin outflows proxy T-bill sales or reduced rolling
+
+redemption/burn requires the stablecoin issuer to sell NOW, so large volumes means dealers/market makers will require a yield concession to warehouse those T-bills, as they are subject to balance sheet constraints
+
+📖 Quoting from 2025-08-17 15:34:
+┌─ this is because a stablecoin mint/creation on-chain is the proxy for a T-bill purchase by the company issuing that stablecoin (e.g. Circle, Tether)
+│ 
+│ so stablecoin inflows proxy T-bill purchases, which raises their price and lowers the yield
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-17 15:34
+
+this is because a stablecoin mint/creation on-chain is the proxy for a T-bill purchase by the company issuing that stablecoin (e.g. Circle, Tether)
+
+so stablecoin inflows proxy T-bill purchases, which raises their price and lowers the yield
+
+📖 Quoting from 2025-08-16 22:14:
+┌─ stablecoin inflows lower 3M Treasury bill yields, while outflows raise yields by a larger amount
+│ 
+│ LP-IV estimates:
+│ ⏩ $3.5B inflows lower yields by ≈3 bp
+│ ⏪ $3.5B outflows raise the yields by ≈8 bp
+│ 
+│ inflow = mint
+│ outflow = redemption/burn
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-16 22:14
+
+stablecoin inflows lower 3M Treasury bill yields, while outflows raise yields by a larger amount
+
+LP-IV estimates:
+⏩ $3.5B inflows lower yields by ≈3 bp
+⏪ $3.5B outflows raise the yields by ≈8 bp
+
+inflow = mint
+outflow = redemption/burn
+
+~ ✨ ~
+
+⏰ 2025-08-16 15:28
+
+Bank of International Settlements (BIS) has  a lot of interesting papers, articles and data  on global liquidity and financial system
+
+it's bank-focused, but connected to the broader scope, like the non-bank financial institution (NBFI) credit flows i posted about earlier
+
+~ ✨ ~
+
+⏰ 2025-08-16 13:01
+
+i wrote a thread explaining why weaker USD means more credit/loans issued in USD, thus driving up global liquidity
+
+you can read it here: https://illya.sh/threads/@1755216337-1.html
+
+📖 Quoting from 2025-08-16 12:42:
+┌─ USD cross-border bank credit grew by $800 billion in Q1 2025
+│ 
+│ expect further increases for Q2 2025, due to the weak US dollar
+└─
+
+~ ✨ ~
+
 ⏰ 2025-08-16 12:44
 
 it's not just the governments and financial institutions who are dependent on debt refinancing - the private non-financial sector as well
