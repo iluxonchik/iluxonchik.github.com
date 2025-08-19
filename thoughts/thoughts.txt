@@ -10,7 +10,7 @@
 
 cryptocurrency prices perform well when yield spreads are low/decreasing and bad when yield spreads are high/increasing
 
-this is specifically true when you analyze it at a higher timeframe - think monthly time space instead of daily one. and the larger the spike/change
+this is specifically true when you analyze it at a higher timeframe - think monthly timescale instead of daily one. and the larger the spike/change
 
 📖 Quoting from 2025-08-19 11:17:
 ┌─ eventually this carry trade unwinds, and yield spreads soar. balance sheet constrains, existing positions get too expensive too roll-over/re-finance that’s where you get the big(er) financial crisis
