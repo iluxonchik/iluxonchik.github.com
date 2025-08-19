@@ -11016,7 +11016,8 @@ BRC20 Ordinals Inscriptions Bitcoin
 
 📖 Quoting from 2023-05-17 19:39:
 ┌─ What if I told you that Bitcoin is not just about money, but it can also store arbitrary data?
-│  In this thread I will explain in detail the fascinating world of Ordinals  and Inscriptions, where individual satoshis become more than just digital currency
+│ 
+│ In this thread I will explain in detail the fascinating world of Ordinals  and Inscriptions, where individual satoshis become more than just digital currency
 └─
 
 ~ ✨ ~
@@ -11024,7 +11025,8 @@ BRC20 Ordinals Inscriptions Bitcoin
 ⏰ 2023-05-17 19:39
 
 What if I told you that Bitcoin is not just about money, but it can also store arbitrary data?
- In this thread I will explain in detail the fascinating world of Ordinals  and Inscriptions, where individual satoshis become more than just digital currency
+
+In this thread I will explain in detail the fascinating world of Ordinals  and Inscriptions, where individual satoshis become more than just digital currency
 
 ~ ✨ ~
 
