@@ -10837,7 +10837,7 @@ Unlock the secret to predicting any asset's price! The 30-day federal funds rate
 📖 Quoting from 2023-05-17 23:43:
 ┌─ 📚 A detailed explanation of what BRC-20 are and how they work can be found on this thread: 
 │ 
-│ https://x.com/iluxonchik/status/1658905098624409622
+│ https://illya.sh/threads/@1684348771-1.html
 │ 
 │ BRC20 Ordinals Inscriptions Bitcoin
 └─
@@ -10848,7 +10848,7 @@ Unlock the secret to predicting any asset's price! The 30-day federal funds rate
 
 📚 A detailed explanation of what BRC-20 are and how they work can be found on this thread: 
 
-https://x.com/iluxonchik/status/1658905098624409622
+https://illya.sh/threads/@1684348771-1.html
 
 BRC20 Ordinals Inscriptions Bitcoin
 
@@ -11015,14 +11015,16 @@ BRC20 Ordinals Inscriptions Bitcoin
 🧠 Ordinal Theory assigns serial numbers to satoshis, the smallest unit of Bitcoin. These ordinal numbers are assigned in the order satoshis are mined, giving each a unique identity and opening the door to a world of possibilities
 
 📖 Quoting from 2023-05-17 19:39:
-┌─ What if I told you that Bitcoin is not just about money, but it can also store arbitrary data? In this thread I will explain in detail the fascinating world of Ordinals  and Inscriptions, where individual satoshis become more than just digital currency
+┌─ What if I told you that Bitcoin is not just about money, but it can also store arbitrary data?
+│  In this thread I will explain in detail the fascinating world of Ordinals  and Inscriptions, where individual satoshis become more than just digital currency
 └─
 
 ~ ✨ ~
 
 ⏰ 2023-05-17 19:39
 
-What if I told you that Bitcoin is not just about money, but it can also store arbitrary data? In this thread I will explain in detail the fascinating world of Ordinals  and Inscriptions, where individual satoshis become more than just digital currency
+What if I told you that Bitcoin is not just about money, but it can also store arbitrary data?
+ In this thread I will explain in detail the fascinating world of Ordinals  and Inscriptions, where individual satoshis become more than just digital currency
 
 ~ ✨ ~
 
