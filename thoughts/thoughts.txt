@@ -10913,14 +10913,18 @@ BRC20 Ordinals Inscriptions Bitcoin
 🤔 It's crucial to understand what these tokens are. BRC-20 is essentially a piece of text, whereas ERC-20 is a computer program. BRC-20's capabilities are limited to inscription on the blockchain. ERC-20, on the other hand, allows encoding of any execution logic
 
 📖 Quoting from 2023-05-17 23:43:
-┌─ 🚀 Debunking a common misconception in the Crypto world: BRC-20 superiority over ERC-20. If you've heard BRC-20 is better, let's dive into some facts that might make you rethink that claim
+┌─ 🚀 Debunking a common misconception in the Crypto world: BRC-20 superiority over ERC-20
+│ 
+│ If you've heard BRC-20 is better, let's dive into some facts that might make you rethink that claim
 └─
 
 ~ ✨ ~
 
 ⏰ 2023-05-17 23:43
 
-🚀 Debunking a common misconception in the Crypto world: BRC-20 superiority over ERC-20. If you've heard BRC-20 is better, let's dive into some facts that might make you rethink that claim
+🚀 Debunking a common misconception in the Crypto world: BRC-20 superiority over ERC-20
+
+If you've heard BRC-20 is better, let's dive into some facts that might make you rethink that claim
 
 ~ ✨ ~
 
