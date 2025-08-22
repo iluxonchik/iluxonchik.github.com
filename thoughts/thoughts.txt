@@ -6,6 +6,404 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-08-22 14:04
+
+Standing Repo Facility (SRF) is a policy rate set by the Fed, according to the target rate. so unless the target rate is decreased, SRF rate is unlikely to be reduced
+
+this situation is putting pressure on the Fed to decrease interest rates and start QE soon
+
+📖 Quoting from 2025-08-22 14:02:
+┌─ the funding could also come from Fed’s facilities, like the SRF or OMO
+│ 
+│ however, current SRF rate is 4.5%, which is above the yield on T-bills, and Fed is still officially in QT, so no large-scale, longer-term liquidity injections via open market operations
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 14:02
+
+the funding could also come from Fed’s facilities, like the SRF or OMO
+
+however, current SRF rate is 4.5%, which is above the yield on T-bills, and Fed is still officially in QT, so no large-scale, longer-term liquidity injections via open market operations
+
+📖 Quoting from 2025-08-22 13:58:
+┌─ moreover, currently the US Treasury is issuing debt and cash at ON RRP is running low. MMF, dealers and banks purchase those T-bills. if they do not have cash in ON RRP, it will be financed by outflows from bank reserve accounts into TGA
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 13:58
+
+moreover, currently the US Treasury is issuing debt and cash at ON RRP is running low. MMF, dealers and banks purchase those T-bills. if they do not have cash in ON RRP, it will be financed by outflows from bank reserve accounts into TGA
+
+📖 Quoting from 2025-08-22 13:58:
+┌─ this is one of the reasons why September is historically a bad month for Bitcoin
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 13:58
+
+this is one of the reasons why September is historically a bad month for Bitcoin
+
+📖 Quoting from 2025-08-22 13:51:
+┌─ repo rates increase and borrowing decreases in quarter-ends
+│ 
+│ this includes the upcoming month of September. in addition, September 15th the corporate tax limit in the US
+│ 
+│ this reduces global liquidity, so asset prices tend to fall
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 13:51
+
+repo rates increase and borrowing decreases in quarter-ends
+
+this includes the upcoming month of September. in addition, September 15th the corporate tax limit in the US
+
+this reduces global liquidity, so asset prices tend to fall
+
+~ ✨ ~
+
+⏰ 2025-08-22 13:27
+
+this is also why commercial banks purchasing government debt securities, such as Treasury bills may be effectively monetizing that debt
+
+📖 Quoting from 2025-08-22 13:25:
+┌─ generally speaking:
+│ 
+│ ➖ transaction between central bank accounts = base money reallocated, decreased or increased
+│ 
+│ ➖ transaction between non-central bank accounts = broad money reallocated, decreased or increased
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 13:25
+
+generally speaking:
+
+➖ transaction between central bank accounts = base money reallocated, decreased or increased
+
+➖ transaction between non-central bank accounts = broad money reallocated, decreased or increased
+
+📖 Quoting from 2025-08-22 13:19:
+┌─ effectively this means that if both parties involved in the transaction have an account at the central bank, they will will use it to settle payments
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 13:19
+
+effectively this means that if both parties involved in the transaction have an account at the central bank, they will will use it to settle payments
+
+📖 Quoting from 2025-08-22 13:18:
+┌─ reserve accounts at the central bank are important to understand the mechanics of how asset purchase happens. generally speaking, if an institution has an account at the central bank - reserve or other deposit account, they will use it whenever possible to settle payment
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 13:18
+
+reserve accounts at the central bank are important to understand the mechanics of how asset purchase happens. generally speaking, if an institution has an account at the central bank - reserve or other deposit account, they will use it whenever possible to settle payment
+
+📖 Quoting from 2025-08-22 13:08:
+┌─ also note that it's not just commercial banks that have accounts at the central bank. it varies by jurisdiction, but other entities also have accounts at the central bank
+│ 
+│ for example, in the US the Treasury has an account at the Fed - the Treasury General Account (TGA)
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 13:08
+
+also note that it's not just commercial banks that have accounts at the central bank. it varies by jurisdiction, but other entities also have accounts at the central bank
+
+for example, in the US the Treasury has an account at the Fed - the Treasury General Account (TGA)
+
+📖 Quoting from 2025-08-22 13:08:
+┌─ if it's the central bank buying assets from other banks, such as in QE - then the central bank also creates the deposit "out of thin air", thus effectively paying for the assets to the commercial bank with a newly created deposit into their reserve account. base money increases
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 13:08
+
+if it's the central bank buying assets from other banks, such as in QE - then the central bank also creates the deposit "out of thin air", thus effectively paying for the assets to the commercial bank with a newly created deposit into their reserve account. base money increases
+
+📖 Quoting from 2025-08-22 13:06:
+┌─ when banks buy assets from other banks - new deposits do not get created, as the payment happens by moving funds between the commercial bank's reserve accounts at the central bank
+│ 
+│ thus, it's base money movements/reallocation, not creation
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 13:06
+
+when banks buy assets from other banks - new deposits do not get created, as the payment happens by moving funds between the commercial bank's reserve accounts at the central bank
+
+thus, it's base money movements/reallocation, not creation
+
+📖 Quoting from 2025-08-22 13:06:
+┌─ let's say the bank bought a T-bill from you for $1000. for this, they "created $1000" and deposited them into your account. bank’s balance sheet:
+│ 
+│ ➖ Assets: +$1000 (the T-bill)
+│ ➖ Liabilities: +$1000 (the deposit/payment to you)
+│ 
+│ the key here is that you are a NON-bank
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 13:06
+
+let's say the bank bought a T-bill from you for $1000. for this, they "created $1000" and deposited them into your account. bank’s balance sheet:
+
+➖ Assets: +$1000 (the T-bill)
+➖ Liabilities: +$1000 (the deposit/payment to you)
+
+the key here is that you are a NON-bank
+
+📖 Quoting from 2025-08-22 13:04:
+┌─ here, the bank's assets increase by the value of the T-bill and liabilities increase by the amount that they paid you for it. in the balance sheet the T-bill will have the same value as what the bank paid you/deposited into your account
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 13:04
+
+here, the bank's assets increase by the value of the T-bill and liabilities increase by the amount that they paid you for it. in the balance sheet the T-bill will have the same value as what the bank paid you/deposited into your account
+
+📖 Quoting from 2025-08-22 13:03:
+┌─ the bank doesn't need to have the money to pay you for the T-bill,  as that money will be created and deposited into your account
+│ 
+│ on the bank's sheet side it works: its assets and liabilities increase in the same amount
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 13:03
+
+the bank doesn't need to have the money to pay you for the T-bill,  as that money will be created and deposited into your account
+
+on the bank's sheet side it works: its assets and liabilities increase in the same amount
+
+📖 Quoting from 2025-08-22 12:43:
+┌─ when a bank buys an asset from a non-bank it creates broad money
+│ 
+│ if a commercial bank buys a US Treasury bill from you, it will pay you by create a new deposit into your account
+│ 
+│ so effectively the bank pays you by creating new digital currency and crediting it into your account
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 12:43
+
+when a bank buys an asset from a non-bank it creates broad money
+
+if a commercial bank buys a US Treasury bill from you, it will pay you by create a new deposit into your account
+
+so effectively the bank pays you by creating new digital currency and crediting it into your account
+
+~ ✨ ~
+
+⏰ 2025-08-21 12:57
+
+most of auctioned Treasury bills in 2025 are bought domestically
+
+foreign investors are net sellers, so the new T-bill supply is being absorbed by US-based institutions
+
+so most of short-term US debt is being absorbed by the US economy and not by foreign investors
+
+~ ✨ ~
+
+⏰ 2025-08-20 20:54
+
+🇨🇳 China is considering Yuan-backed stablecoins, which will lower short-term CGB yields
+
+that's assuming the stablecoin issuers will proxy short-term government bonds, like in the US
+
+i wrote a thread explaining that. you can read it here: https://illya.sh/threads/@1755378840-1.html
+
+~ ✨ ~
+
+⏰ 2025-08-20 20:43
+
+the specific QE policies will vary, but it will probably include an MBS-style QE like in QE1 2008. this will lower mortgage rates short-term
+
+I explained why in this thread: https://illya.sh/threads/@1754148538-1.html
+
+📖 Quoting from 2025-08-20 20:43:
+┌─ the next burst in global liquidity/larger financial crisis will only happen after several more rounds of QE
+│ 
+│ the next round of QE is close, but hasn’t even started yet and rates were not cut. however, the next big debt refinancing is underway
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-20 20:43
+
+the next burst in global liquidity/larger financial crisis will only happen after several more rounds of QE
+
+the next round of QE is close, but hasn’t even started yet and rates were not cut. however, the next big debt refinancing is underway
+
+📖 Quoting from 2025-08-20 20:42:
+┌─ still, at some point QE's won't be able to prevent a prolonged negative impact on the market - the top of the cycle or close to it
+│ 
+│ we're not there yet
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-20 20:42
+
+still, at some point QE's won't be able to prevent a prolonged negative impact on the market - the top of the cycle or close to it
+
+we're not there yet
+
+📖 Quoting from 2025-08-20 20:36:
+┌─ eventually, the carry will unwind and debt needs to be refinanced
+│ 
+│ more QE-like measures will be taken, but eventually it won't be enough to prevent deleveraging/burst. this means defaults, margin calls, etc. the latter will likely be addressed by another form of QE
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-20 20:36
+
+eventually, the carry will unwind and debt needs to be refinanced
+
+more QE-like measures will be taken, but eventually it won't be enough to prevent deleveraging/burst. this means defaults, margin calls, etc. the latter will likely be addressed by another form of QE
+
+📖 Quoting from 2025-08-20 20:36:
+┌─ in conjunction, this creates an upward pressure in the global liquidity for the near future
+│ 
+│ of course, this also builds up on leverage in the form of market-wide carry trades, and duration mismatching in the form of rolling over of debt by the Treasury
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-20 20:36
+
+in conjunction, this creates an upward pressure in the global liquidity for the near future
+
+of course, this also builds up on leverage in the form of market-wide carry trades, and duration mismatching in the form of rolling over of debt by the Treasury
+
+📖 Quoting from 2025-08-20 20:35:
+┌─ i explained how weaker US dollar increases cross-border USD liquidity in this thread: https://illya.sh/threads/@1755216337-1.html
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-20 20:35
+
+i explained how weaker US dollar increases cross-border USD liquidity in this thread: https://illya.sh/threads/@1755216337-1.html
+
+📖 Quoting from 2025-08-20 20:35:
+┌─ weaker USD, means appreciation of FX currencies and since many cross-border bank loans are collateralized with a local currency - solvency ratios improve, thus increasing balance sheet capacity for more USD credit
+│ 
+│ this means an increase in broad money
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-20 20:35
+
+weaker USD, means appreciation of FX currencies and since many cross-border bank loans are collateralized with a local currency - solvency ratios improve, thus increasing balance sheet capacity for more USD credit
+
+this means an increase in broad money
+
+📖 Quoting from 2025-08-20 20:35:
+┌─ i covered more this aspect of QE in my thread about how to use yield spreads to reason about future Bitcoin price and cycles
+│ 
+│ you can read it here: https://illya.sh/threads/@1755595543-1.html
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-20 20:35
+
+i covered more this aspect of QE in my thread about how to use yield spreads to reason about future Bitcoin price and cycles
+
+you can read it here: https://illya.sh/threads/@1755595543-1.html
+
+📖 Quoting from 2025-08-20 20:35:
+┌─ once Fed does QE, reserve account balances increase, thus directly increasing base money
+│ 
+│ broad money either increases indirectly or directly if the Fed credits a non-bank institution
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-20 20:35
+
+once Fed does QE, reserve account balances increase, thus directly increasing base money
+
+broad money either increases indirectly or directly if the Fed credits a non-bank institution
+
+📖 Quoting from 2025-08-20 20:34:
+┌─ once Fed cuts interest rates, more borrowing will occur, thus expanding broad money
+│ 
+│ it will also lower T-bill yields short-term, as the prices are bid up due to a lower risk-free rate
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-20 20:34
+
+once Fed cuts interest rates, more borrowing will occur, thus expanding broad money
+
+it will also lower T-bill yields short-term, as the prices are bid up due to a lower risk-free rate
+
+📖 Quoting from 2025-08-20 20:33:
+┌─ a lot of these US treasury purchases will be financed with short-term rolling debt (e.g. repo)
+│ 
+│ the treasury themselves will be used as collateral to borrow cash, many times over via rehypothecation
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-20 20:33
+
+a lot of these US treasury purchases will be financed with short-term rolling debt (e.g. repo)
+
+the treasury themselves will be used as collateral to borrow cash, many times over via rehypothecation
+
+📖 Quoting from 2025-08-20 20:29:
+┌─ it's NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why
+│ 
+│ 1️⃣ US Treasury is issuing more debt
+│ 
+│ 2️⃣ in the next months I expect the Fed to cut rates and/or introduce some form of QE
+│ 
+│ 3️⃣ weaker USD means more cross-border USD credit
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-20 20:29
+
+it's NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why
+
+1️⃣ US Treasury is issuing more debt
+
+2️⃣ in the next months I expect the Fed to cut rates and/or introduce some form of QE
+
+3️⃣ weaker USD means more cross-border USD credit
+
+~ ✨ ~
+
+⏰ 2025-08-19 20:56
+
+it's NOT the top yet - i'll post a thread with an explanation soon
+
+stay tuned 👀
+
+~ ✨ ~
+
 ⏰ 2025-08-19 11:18
 
 cryptocurrency prices perform well when yield spreads are low/decreasing and bad when yield spreads are high/increasing
