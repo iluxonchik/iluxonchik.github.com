@@ -6,6 +6,153 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-08-27 22:17
+
+thus, wholesale CBDC is a tokenized/digital version of central bank reserves used by the financial market infrastructure (FMI) and banks
+
+it also lives on the liability side of the central bank
+
+📖 Quoting from 2025-08-27 22:12:
+┌─ wholesale CBDC will be used by financial institutions only, such as commercial and central banks for interbank and market settlement
+│ 
+│ wholesale CBDC will only be transacted between select financial institutions - it's not something you'd use as a regular business or consumer
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-27 22:12
+
+wholesale CBDC will be used by financial institutions only, such as commercial and central banks for interbank and market settlement
+
+wholesale CBDC will only be transacted between select financial institutions - it's not something you'd use as a regular business or consumer
+
+📖 Quoting from 2025-08-27 22:11:
+┌─ retail CBDC is the digital version of currency - a liability of the central bank in the balance sheet
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-27 22:11
+
+retail CBDC is the digital version of currency - a liability of the central bank in the balance sheet
+
+📖 Quoting from 2025-08-27 22:08:
+┌─ retail CBDC will be used for day-to-day payments, similar to the ones you do with with a credit card. this is the type of CBDC you can use for business and consumer transactions, such as paying for a supermarket purchase
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-27 22:08
+
+retail CBDC will be used for day-to-day payments, similar to the ones you do with with a credit card. this is the type of CBDC you can use for business and consumer transactions, such as paying for a supermarket purchase
+
+📖 Quoting from 2025-08-27 22:07:
+┌─ wholesale CBDC vs retail CBDC - what's the difference?
+│ 
+│ there's two types of central bank digital currencies (CBDC): retail CBDC and wholesale CBDC
+│ 
+│ ➖ retail CBDC = used for ordinary transactions. digital version of the cash
+│ 
+│ ➖ wholesale CBDC = used for interbank/financial institution settlement. tokenized central bank reserves
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-27 22:07
+
+wholesale CBDC vs retail CBDC - what's the difference?
+
+there's two types of central bank digital currencies (CBDC): retail CBDC and wholesale CBDC
+
+➖ retail CBDC = used for ordinary transactions. digital version of the cash
+
+➖ wholesale CBDC = used for interbank/financial institution settlement. tokenized central bank reserves
+
+~ ✨ ~
+
+⏰ 2025-08-26 01:56
+
+retail CBDC is central bank money, so converting bank deposits into digital Euro changes the composition of the monetary base - fewer commercial bank reserves at the central bank, more central bank CBDC liabilities
+
+retail CBDC conversions settle in reserves
+
+📖 Quoting from 2025-08-25 23:51:
+┌─ ECB plans to limit the amount of digital Euro CBDC a wallet can hold
+│ 
+│ this means you will be limited the amount of digital EUR you can own
+│ 
+│ this applies only to retail European Central Bank CBDC, not wholesale. the idea is to prevent excessive outflows of deposits from banks
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-25 23:51
+
+ECB plans to limit the amount of digital Euro CBDC a wallet can hold
+
+this means you will be limited the amount of digital EUR you can own
+
+this applies only to retail European Central Bank CBDC, not wholesale. the idea is to prevent excessive outflows of deposits from banks
+
+~ ✨ ~
+
+⏰ 2025-08-24 13:59
+
+same for wall street, main street, hawkish, dovish, bull, bear, cat bounce - whattt ?????
+
+this is neither about civil engineering nor wildlife reserve 🤨
+
+📖 Quoting from 2025-08-24 13:53:
+┌─ finance has A LOT to learn from engineering - especially in terms or standardization 😭
+│ 
+│ e.g. you're reading a british author, you may find "high street banks". it makes you think that there are also low street banks, or at least middle street banks, but noooo
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-24 13:53
+
+finance has A LOT to learn from engineering - especially in terms or standardization 😭
+
+e.g. you're reading a british author, you may find "high street banks". it makes you think that there are also low street banks, or at least middle street banks, but noooo
+
+~ ✨ ~
+
+⏰ 2025-08-23 13:47
+
+TGA fluctuations must be offset by another asset or liability from Fed's balance sheet
+
+⬆️ TGA increase = liability down or asset up
+⬇️ TGA decrease = liability up or asset down
+
+found this balance sheet model in Fed's notes, and it's a good visual aid to this thread
+
+📖 Quoting from 2025-08-22 14:04:
+┌─ Standing Repo Facility (SRF) is a policy rate set by the Fed, according to the target rate. so unless the target rate is decreased, SRF rate is unlikely to be reduced
+│ 
+│ this situation is putting pressure on the Fed to decrease interest rates and start QE soon
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-22 18:21
+
+quick update on gold:
+
+everything according to the plan - the thesis remains valid. now just wait and let the price action unfold 😄
+
+use these trend lines as a guide
+
+📖 Quoting from 2025-08-08 19:53:
+┌─ gold tariffs put further upside pressure for gold towards a new all time high on spot
+│ 
+│ this is in addition to the global monetary, geopolitical and fiscal positive price pressures
+│ 
+│ a significant part of the markets will be closed for the weekend. there could be a gap on reopen
+└─
+
+~ ✨ ~
+
 ⏰ 2025-08-22 14:04
 
 Standing Repo Facility (SRF) is a policy rate set by the Fed, according to the target rate. so unless the target rate is decreased, SRF rate is unlikely to be reduced
