@@ -6,6 +6,68 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-08-28 09:13
+
+>80% of central banks plan to operate the DLT/blockchain for wholesale CBDCs themselves, hinting an in-house blockchain solution, and not a public and permissionless ledger
+
+📖 Quoting from 2025-08-28 09:12:
+┌─ however, even if CBDCs are implemented using blockchain - it's unlikely to be a public, permissionless blockchain like Ethereum
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-28 09:12
+
+however, even if CBDCs are implemented using blockchain - it's unlikely to be a public, permissionless blockchain like Ethereum
+
+📖 Quoting from 2025-08-28 09:07:
+┌─ >50% of central banks in both, advanced and emerging economies are considering using DLT for wholesale CBDCs
+│ 
+│ this means that wholesale CBDC is likely to be implemented using some form of blockchain technology - much more likely than the retail CBDC
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-28 09:07
+
+>50% of central banks in both, advanced and emerging economies are considering using DLT for wholesale CBDCs
+
+this means that wholesale CBDC is likely to be implemented using some form of blockchain technology - much more likely than the retail CBDC
+
+📖 Quoting from 2025-08-28 09:05:
+┌─ only 6% of advanced economies (AE) central banks and 40% of emerging economies (EM) central banks are considering distributed ledger technology (DLT) as an implementation layer for retail CBDCs
+│ 
+│ here, consider DLT = blockchain
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-28 09:05
+
+only 6% of advanced economies (AE) central banks and 40% of emerging economies (EM) central banks are considering distributed ledger technology (DLT) as an implementation layer for retail CBDCs
+
+here, consider DLT = blockchain
+
+📖 Quoting from 2025-08-28 00:11:
+┌─ 91% of central banks are working on CBDCs, but not on a public blockchain
+│ 
+│ 85 out of 93 central banks (≈94% of global economic output) are engaged in some form of CBDC work
+│ 
+│ however, don't expect CBDCs to be implemented on permissionless blockchains like Ethereum
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-28 00:11
+
+91% of central banks are working on CBDCs, but not on a public blockchain
+
+85 out of 93 central banks (≈94% of global economic output) are engaged in some form of CBDC work
+
+however, don't expect CBDCs to be implemented on permissionless blockchains like Ethereum
+
+~ ✨ ~
+
 ⏰ 2025-08-27 22:17
 
 thus, wholesale CBDC is a tokenized/digital version of central bank reserves used by the financial market infrastructure (FMI) and banks
