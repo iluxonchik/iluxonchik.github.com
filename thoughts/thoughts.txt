@@ -6,6 +6,730 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-09-16 12:57
+
+after ECB's realized gains are booked to PnL, the ECB splits up the net profit as:
+
+➖ up to 20% to the general reserve fund, which can be used to offset future PnL losses
+
+➖ the rest distributed to the NCB's, proportional to the National Central Bank's paid-up shares
+
+📖 Quoting from 2025-09-16 12:55:
+┌─ thus, unrealized gold gains accumulate on the ECB's liability side, under the revaluation account, and the only way they can be debited (e.g. to cover expenses, or credit an NCB's reserve account) is:
+│ 
+│ 1️⃣ when the ECB sells the gold, thus turning an unrealized gain into a realized one
+│ 
+│ 2️⃣ offset future losses in the gold bucket
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-16 12:55
+
+thus, unrealized gold gains accumulate on the ECB's liability side, under the revaluation account, and the only way they can be debited (e.g. to cover expenses, or credit an NCB's reserve account) is:
+
+1️⃣ when the ECB sells the gold, thus turning an unrealized gain into a realized one
+
+2️⃣ offset future losses in the gold bucket
+
+📖 Quoting from 2025-09-16 12:52:
+┌─ this means the ECB can only use unrealized gold gains to cover/offset future unrealized losses on gold
+│ 
+│ these unrealized gains can neither offset an operational, nor a loss in another security bucket, such as FX
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-16 12:55
+
+once a gain is realized, the corresponding proportion is debited to the revaluation account and credited to an income account/ booked to P&L
+
+at the end of the year PnL is closed into equity by increasing equity reserves and/or NCB liabilities
+
+~ ✨ ~
+
+⏰ 2025-09-16 12:52
+
+this means the ECB can only use unrealized gold gains to cover/offset future unrealized losses on gold
+
+these unrealized gains can neither offset an operational, nor a loss in another security bucket, such as FX
+
+📖 Quoting from 2025-09-16 12:51:
+┌─ moreover, as per Eurosystem's accounting framework unrealized gains are non-distributable and may only offset future unrealized losses on the same item
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-16 12:51
+
+moreover, as per Eurosystem's accounting framework unrealized gains are non-distributable and may only offset future unrealized losses on the same item
+
+📖 Quoting from 2025-09-16 12:49:
+┌─ ECB's legal framework forbids the use of gold revaluation proceeds to pay expenses or operating losses
+│ 
+│ unrealized gains are not recognized as income and are instead credited to the revaluation account
+│ 
+│ revaluation account is under liability/equity on the ECB's balance sheet
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-16 12:49
+
+ECB's legal framework forbids the use of gold revaluation proceeds to pay expenses or operating losses
+
+unrealized gains are not recognized as income and are instead credited to the revaluation account
+
+revaluation account is under liability/equity on the ECB's balance sheet
+
+~ ✨ ~
+
+⏰ 2025-09-15 21:09
+
+to clarify: European Central Bank didn't increase its gold holdings, but the gold that ECB already owns (≈506 tonnes) increased in value, since gold's market price increased
+
+ECB reevaluates gold at the end of every year and credits or debits the revelation account accordingly
+
+📖 Quoting from 2025-09-15 20:52:
+┌─ 🇪🇺 ECB gained €10.5B on gold from 2023 to 2024
+│ 
+│ 2025 YTD running gains add another net positive ≈€10B & likely to be higher by the year end's gold revaluation
+│ 
+│ that's an implied ≈8% yield on gold appreciation - much more than the ECB earned from other asset buckets
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-15 20:52
+
+🇪🇺 ECB gained €10.5B on gold from 2023 to 2024
+
+2025 YTD running gains add another net positive ≈€10B & likely to be higher by the year end's gold revaluation
+
+that's an implied ≈8% yield on gold appreciation - much more than the ECB earned from other asset buckets
+
+~ ✨ ~
+
+⏰ 2025-09-15 00:33
+
+leverage and the carry trades eventually unwind
+
+at some point there isn't enough on-demand liquidity and mass defaults, losses and insolvency occur
+
+this is when the cycle tops/bubble pops
+
+📖 Quoting from 2025-09-15 00:32:
+┌─ the financial system is heavily dependent on refinancing
+│ 
+│ this is true for both, governments and the public sector - especially the financial institutions
+│ 
+│ ≈70% of all new credit is used for refinancing/repaying of existing maturing debt rather than novel financing
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-15 00:32
+
+the financial system is heavily dependent on refinancing
+
+this is true for both, governments and the public sector - especially the financial institutions
+
+≈70% of all new credit is used for refinancing/repaying of existing maturing debt rather than novel financing
+
+📖 Quoting from 2025-09-14 22:52:
+┌─ in addition to being a store of value, gold is also acting as an investment
+│ 
+│ it's up ≈40% YTD
+│ 
+│ this is gold catching up to inflation and accumulated leverage
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-14 22:52
+
+in addition to being a store of value, gold is also acting as an investment
+
+it's up ≈40% YTD
+
+this is gold catching up to inflation and accumulated leverage
+
+📖 Quoting from 2025-09-14 22:51:
+┌─ the financial system infrastructure, including monetary policies of the central banks are correlated
+│ 
+│ they're heavily exposed to the same set of assets - a lot of which are USD-denominated
+│ 
+│ this is of course extremely pro-cyclical
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-14 22:51
+
+the financial system infrastructure, including monetary policies of the central banks are correlated
+
+they're heavily exposed to the same set of assets - a lot of which are USD-denominated
+
+this is of course extremely pro-cyclical
+
+📖 Quoting from 2025-09-14 22:51:
+┌─ gold is a great asset to hold for the next 5 years
+│ 
+│ it's a hedge against the credit & refinancing bubble of the US equity markets + government debt
+│ 
+│ but not only against USD - all FIAT & risk assets including crypto
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-14 22:51
+
+gold is a great asset to hold for the next 5 years
+
+it's a hedge against the credit & refinancing bubble of the US equity markets + government debt
+
+but not only against USD - all FIAT & risk assets including crypto
+
+~ ✨ ~
+
+⏰ 2025-09-14 14:28
+
+since i've written this, gold is up ≈16%
+
+≈25% if you count from the tariffs announcements on April 7th
+
+i will re-iterate that in order to protect the EUR the ECB should increase their onshore gold holdings
+
+📖 Quoting from 2025-04-03 17:28:
+┌─ 🇪🇺 The best countermeasure that EU can take is swapping US securities for Gold
+│ 
+│ Gold is inversely correlated with USD. Such a decision can be done today and it will:
+│ 
+│ 1️⃣be a response to the US
+│ 2️⃣increase value of EUR
+│ 3️⃣minimize consumer impact
+│ 
+│ Anything else will hurt the economy
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-13 15:01
+
+this makes immovable property a good hedge against inflation and economic downturn
+
+price adjusts to value & while the composition of demand may change (e.g. shift towards smaller/cheaper units) - the demand for property will inherently remain high
+
+📖 Quoting from 2025-09-13 14:55:
+┌─ given that housing is a core necessity for most combined with the willingness of banks to finance against immovable property creates a high persistent demand for real estate
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-13 14:55
+
+given that housing is a core necessity for most combined with the willingness of banks to finance against immovable property creates a high persistent demand for real estate
+
+📖 Quoting from 2025-09-13 14:40:
+┌─ as the immovable property appreciates, so do your assets and financing capacity. with a more valuable collateral asset - the bank will give a larger loan
+│ 
+│ increasing real estate purchase prices push rent prices up as well. so may increased interest rates, since it's harder to buy
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-13 14:40
+
+as the immovable property appreciates, so do your assets and financing capacity. with a more valuable collateral asset - the bank will give a larger loan
+
+increasing real estate purchase prices push rent prices up as well. so may increased interest rates, since it's harder to buy
+
+📖 Quoting from 2025-09-13 14:38:
+┌─ so by using real estate as collateral you're just tapping into the existing low interest liquidity/credit line
+│ 
+│ at the same time the property earns a yield (e.g. via rents) and generally appreciates
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-13 14:38
+
+so by using real estate as collateral you're just tapping into the existing low interest liquidity/credit line
+
+at the same time the property earns a yield (e.g. via rents) and generally appreciates
+
+📖 Quoting from 2025-09-13 14:37:
+┌─ this is why a 7 day Treasury bill-backed repo agreement may have 2% haircut and a 0.1% spread, while a 20 year immovable property collateralized loan a 25% haircut and a 2% spread
+│ 
+│ the T-bill is more liquid, less volatile and the loan term is much shorter
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-13 14:37
+
+this is why a 7 day Treasury bill-backed repo agreement may have 2% haircut and a 0.1% spread, while a 20 year immovable property collateralized loan a 25% haircut and a 2% spread
+
+the T-bill is more liquid, less volatile and the loan term is much shorter
+
+📖 Quoting from 2025-09-13 14:12:
+┌─ collateralized lending comes with smaller interest rates/financing cost because it's low risk for the lender
+│ 
+│ if you default - the lender keeps your collateral 
+│ 
+│ haircuts and spread are set sufficiently high to cover liquidity, term and market risks
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-13 14:12
+
+collateralized lending comes with smaller interest rates/financing cost because it's low risk for the lender
+
+if you default - the lender keeps your collateral 
+
+haircuts and spread are set sufficiently high to cover liquidity, term and market risks
+
+📖 Quoting from 2025-09-13 13:45:
+┌─ ≈80% of lending in financial markets is collateral-based
+│ 
+│ financial institutions use government bonds as collateral for short-term loans
+│ 
+│ you're using immovable property as collateral for a generally longer term-loan
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-13 13:45
+
+≈80% of lending in financial markets is collateral-based
+
+financial institutions use government bonds as collateral for short-term loans
+
+you're using immovable property as collateral for a generally longer term-loan
+
+📖 Quoting from 2025-09-12 00:19:
+┌─ real estate is a great asset because banks lend ≈75% of its value
+│ 
+│ so if your property is worth $100K, you can borrow $75K against it at a low rate
+│ 
+│ the immovable property is used as collateral
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-12 00:19
+
+real estate is a great asset because banks lend ≈75% of its value
+
+so if your property is worth $100K, you can borrow $75K against it at a low rate
+
+the immovable property is used as collateral
+
+~ ✨ ~
+
+⏰ 2025-09-08 14:54
+
+just as charted: with the yellow line resistance broken gold has risen over 6%
+
+this thread covers the whole consolidation move, where i explained how it's a bullish precursor
+
+the original goal of this thread was to follow gold until it breaks $3.5K, and now we're 0.15K above 😄
+
+📖 Quoting from 2025-09-04 14:07:
+┌─ now everyone is talking about gold 😄
+│ 
+│ i've been writing about an imminent new all time high and uptrend continuation for 3 months now - you can check back up on this thread
+│ 
+│ every long call in this thread has been accurate
+│ 
+│ gold is a very special asset this cycle
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-07 19:49
+
+remember that real estate runs on credit - and in the most basic approach - the bank happily finances 75% of the value of the property. this is true even if you're just starting
+
+as you accumulate collateral/properties it becomes easier and easier, as you can cross-collateralize
+
+📖 Quoting from 2025-09-07 19:46:
+┌─ this increase will be more accentuated in lower per-capita GDP countries - as cross-border capital flows in to fill the price gap
+│ 
+│ lower GDP + highly desired location is the recipe for higher yields 😄
+│ 
+│ you can observe this in countries like Portugal in the table below
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-07 19:46
+
+this increase will be more accentuated in lower per-capita GDP countries - as cross-border capital flows in to fill the price gap
+
+lower GDP + highly desired location is the recipe for higher yields 😄
+
+you can observe this in countries like Portugal in the table below
+
+📖 Quoting from 2025-09-07 19:39:
+┌─ EU real estate prices will continue to increase
+│ 
+│ with investment capital moving away from US to the EU, a significant portion of it will will flow into housing, thus pushing sale and rent prices up
+│ 
+│ specially true for high-demand areas, like coastal & large cities
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-07 19:39
+
+EU real estate prices will continue to increase
+
+with investment capital moving away from US to the EU, a significant portion of it will will flow into housing, thus pushing sale and rent prices up
+
+specially true for high-demand areas, like coastal & large cities
+
+~ ✨ ~
+
+⏰ 2025-09-06 00:24
+
+i wrote a thread explaining the business model of banks here: https://illya.sh/threads/@1755863018-1.html
+
+the information in it is important to understand the balance sheet dynamics of gold reevaluation
+
+📖 Quoting from 2025-09-06 00:11:
+┌─ in order to understand the mechanics of gold revaluation - it's important to understand the unique legal position of banks to issue broad money, and that their mode of operation differs greatly from non-credit issuance businesses
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-06 00:11
+
+in order to understand the mechanics of gold revaluation - it's important to understand the unique legal position of banks to issue broad money, and that their mode of operation differs greatly from non-credit issuance businesses
+
+📖 Quoting from 2025-09-06 00:10:
+┌─ soon i'll write a thread on how central banks/governments reevaluate gold and how the monetary gains can be used to cover central bank and/or government debt
+│ 
+│ i'll add a link to it in this thread once it’s ready
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-06 00:10
+
+soon i'll write a thread on how central banks/governments reevaluate gold and how the monetary gains can be used to cover central bank and/or government debt
+
+i'll add a link to it in this thread once it’s ready
+
+📖 Quoting from 2025-09-06 00:08:
+┌─ in practice, some level of sanitization (direct or indirect) will occur, and that Treasury debt/safe collateral would likely be reintroduced back via Treasury issuance and/or Fed facilities within a year
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-06 00:08
+
+in practice, some level of sanitization (direct or indirect) will occur, and that Treasury debt/safe collateral would likely be reintroduced back via Treasury issuance and/or Fed facilities within a year
+
+📖 Quoting from 2025-09-06 00:06:
+┌─ so assuming no sanitization - an initial reduction of liquidity may occur
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-06 00:06
+
+so assuming no sanitization - an initial reduction of liquidity may occur
+
+📖 Quoting from 2025-09-06 00:05:
+┌─ while the haircut may also fall (upward pressure on liquidity), the volume reduction (downward pressure on liquidity) is likely to have more weight, due to global refinancing/liquidity needs
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-06 00:05
+
+while the haircut may also fall (upward pressure on liquidity), the volume reduction (downward pressure on liquidity) is likely to have more weight, due to global refinancing/liquidity needs
+
+📖 Quoting from 2025-09-06 00:03:
+┌─ so if the US Treasury revaluated gold and used all those proceeds to repurchase/retire debt it will likely have an initial negative effect on the liquidity, due to contraction in safe collateral
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-06 00:03
+
+so if the US Treasury revaluated gold and used all those proceeds to repurchase/retire debt it will likely have an initial negative effect on the liquidity, due to contraction in safe collateral
+
+📖 Quoting from 2025-09-06 00:02:
+┌─ NCCBR participants are generally subject to regulations and balance sheet constraints - so don't think that null/negative haircuts means the collateral can be rehypothecated infinitely
+│ 
+│ these bilateral arrangements is where financial institutions manage their liquidity needs
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-06 00:02
+
+NCCBR participants are generally subject to regulations and balance sheet constraints - so don't think that null/negative haircuts means the collateral can be rehypothecated infinitely
+
+these bilateral arrangements is where financial institutions manage their liquidity needs
+
+📖 Quoting from 2025-09-06 00:00:
+┌─ NCCBR users are mostly institutions part of the financial market infrastructure - such as dealers and hedge funds
+│ 
+│ they use NCCBR to manage their balance sheets and regulatory obligations. so a high need for Treasury collateral may drive the the haircuts negative
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-06 00:00
+
+NCCBR users are mostly institutions part of the financial market infrastructure - such as dealers and hedge funds
+
+they use NCCBR to manage their balance sheets and regulatory obligations. so a high need for Treasury collateral may drive the the haircuts negative
+
+📖 Quoting from 2025-09-06 00:00:
+┌─ NCCBR are essentially bilateral OTC agreements - no central counterparty or tri-party custodian
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-06 00:00
+
+NCCBR are essentially bilateral OTC agreements - no central counterparty or tri-party custodian
+
+📖 Quoting from 2025-09-05 23:59:
+┌─ in non-centrally cleared bilateral repos (NCCBR) the Treasury haircut is mostly 0%, and a significant portion has negative haircuts - meaning that more money is lent in the repo that the market value of the Treasury collateral
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-05 23:59
+
+in non-centrally cleared bilateral repos (NCCBR) the Treasury haircut is mostly 0%, and a significant portion has negative haircuts - meaning that more money is lent in the repo that the market value of the Treasury collateral
+
+📖 Quoting from 2025-09-05 13:40:
+┌─ current tri-party repo haircut average for Treasury collateral is 2%, supervisory is 4% (Capital Adequacy Requirements) 
+│  
+│ with a 2% haircut the collateral funding multiplier is 50x, with a 4% haircut - 25x
+│ 
+│ the smaller the haircut - the larger the maximum rehypothecated credit
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-05 13:40
+
+current tri-party repo haircut average for Treasury collateral is 2%, supervisory is 4% (Capital Adequacy Requirements) 
+ 
+with a 2% haircut the collateral funding multiplier is 50x, with a 4% haircut - 25x
+
+the smaller the haircut - the larger the maximum rehypothecated credit
+
+📖 Quoting from 2025-09-05 00:50:
+┌─ thus, a 30 year Treasury bond trading at par (i.e. market value = face value = $1000) can create up to $50K of new liquidity/credit!
+│ 
+│ you cannot leverage as much with reserve money. so a $1000 bond can create more liquidity than $1000 cash/reserves
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-05 00:50
+
+thus, a 30 year Treasury bond trading at par (i.e. market value = face value = $1000) can create up to $50K of new liquidity/credit!
+
+you cannot leverage as much with reserve money. so a $1000 bond can create more liquidity than $1000 cash/reserves
+
+📖 Quoting from 2025-09-05 00:47:
+┌─ maximum liquidity added by bond = market value/haircut 
+│ 
+│ so a Treasury security worth $1000 with a haircut of 2%, can create up to $50000 in new credit/liquidity
+│ 
+│ computed using the formula above: 1000/0.02=50000
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-05 00:47
+
+maximum liquidity added by bond = market value/haircut 
+
+so a Treasury security worth $1000 with a haircut of 2%, can create up to $50000 in new credit/liquidity
+
+computed using the formula above: 1000/0.02=50000
+
+📖 Quoting from 2025-09-05 00:43:
+┌─ to estimate the maximum liquidity that can be added by a bond divide the market value by its haircut (e.g. effective repo haircut on that bond)
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-05 00:43
+
+to estimate the maximum liquidity that can be added by a bond divide the market value by its haircut (e.g. effective repo haircut on that bond)
+
+📖 Quoting from 2025-09-05 00:40:
+┌─ collateral gets reused/rehypothecated, reserves don't
+│ 
+│ dealers re-pledge/re-use Treasuries, e.g. through repo and reverse repo. thus, the financing capacity of Treasury bills, notes and bonds exceeds their market value
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-05 00:40
+
+collateral gets reused/rehypothecated, reserves don't
+
+dealers re-pledge/re-use Treasuries, e.g. through repo and reverse repo. thus, the financing capacity of Treasury bills, notes and bonds exceeds their market value
+
+📖 Quoting from 2025-09-05 00:38:
+┌─ retiring debt with gold revaluation would change the composition of liquidity:
+│ 
+│ ➖ less US government bonds (safe collateral)
+│ ➕ more base money (reserves) and/or broad money (deposits)
+│ 
+│ so the end result is more base and/or broad money, but less prime/repo-eligible collateral
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-05 00:38
+
+retiring debt with gold revaluation would change the composition of liquidity:
+
+➖ less US government bonds (safe collateral)
+➕ more base money (reserves) and/or broad money (deposits)
+
+so the end result is more base and/or broad money, but less prime/repo-eligible collateral
+
+📖 Quoting from 2025-09-05 00:34:
+┌─ persistent deficits & refinancing needs will add $1 trillion of new debt in less than a year
+│ 
+│ so gold revaluation is insignificant for US federal government's debt problem
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-05 00:34
+
+persistent deficits & refinancing needs will add $1 trillion of new debt in less than a year
+
+so gold revaluation is insignificant for US federal government's debt problem
+
+📖 Quoting from 2025-09-05 00:30:
+┌─ assuming all of the gold revaluation gains get credited to the Treasury's general account to retire government debt (e.g. by re-purchasing US Treasury bonds from the market) - that would cover a mere ≈3% of outstanding US government debt
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-05 00:30
+
+assuming all of the gold revaluation gains get credited to the Treasury's general account to retire government debt (e.g. by re-purchasing US Treasury bonds from the market) - that would cover a mere ≈3% of outstanding US government debt
+
+📖 Quoting from 2025-09-04 23:29:
+┌─ gold revaluation proceeds are not necessarily used to cover sovereign debt
+│ 
+│ central banks of Italy, Germany, Lebanon, South Africa & Curaçao and Sint Maarten reevaluated gold in the past, with some using the proceeds to finance the government, while others the central bank
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-04 23:29
+
+gold revaluation proceeds are not necessarily used to cover sovereign debt
+
+central banks of Italy, Germany, Lebanon, South Africa & Curaçao and Sint Maarten reevaluated gold in the past, with some using the proceeds to finance the government, while others the central bank
+
+📖 Quoting from 2025-09-04 23:16:
+┌─ gold revaluation will NOT solve the US debt problem
+│ 
+│ the gain would cover less than 3% (≈1 trillion USD) of the outstanding national debt
+│ 
+│ most recently it took ≈9 months for the US government to accumulate $1T in new debt
+│ 
+│ previously, $1T in new debt was added in ≈100 days
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-04 23:16
+
+gold revaluation will NOT solve the US debt problem
+
+the gain would cover less than 3% (≈1 trillion USD) of the outstanding national debt
+
+most recently it took ≈9 months for the US government to accumulate $1T in new debt
+
+previously, $1T in new debt was added in ≈100 days
+
+~ ✨ ~
+
+⏰ 2025-09-04 14:07
+
+now everyone is talking about gold 😄
+
+i've been writing about an imminent new all time high and uptrend continuation for 3 months now - you can check back up on this thread
+
+every long call in this thread has been accurate
+
+gold is a very special asset this cycle
+
+📖 Quoting from 2025-09-02 15:51:
+┌─ gold reached $3500 new all time high 🥳
+│ 
+│ indeed once the yellow resistance trend line was broken - we saw a new all time high
+│ 
+│ the extended consolidation built up a strong future support
+└─
+
+~ ✨ ~
+
+⏰ 2025-09-02 15:51
+
+gold reached $3500 new all time high 🥳
+
+indeed once the yellow resistance trend line was broken - we saw a new all time high
+
+the extended consolidation built up a strong future support
+
+📖 Quoting from 2025-08-28 23:47:
+┌─ gold continues its uptrend towards the new $3500 all time high
+│ 
+│ i've previously written how gold's price action suggests a consolidation before the next ATH
+│ 
+│ the last main resistance is the upper yellow trend line. once it's claimed as support expect gold to shoot to new highs
+└─
+
+~ ✨ ~
+
+⏰ 2025-08-29 20:01
+
+real world and financial asset tokenization is ongoing worldwide, with transactions mostly settled in CBDCs
+
+government and corporate bonds are the most common RWA to be tokenized
+
+~ ✨ ~
+
+⏰ 2025-08-28 23:47
+
+gold continues its uptrend towards the new $3500 all time high
+
+i've previously written how gold's price action suggests a consolidation before the next ATH
+
+the last main resistance is the upper yellow trend line. once it's claimed as support expect gold to shoot to new highs
+
+📖 Quoting from 2025-08-22 18:21:
+┌─ quick update on gold:
+│ 
+│ everything according to the plan - the thesis remains valid. now just wait and let the price action unfold 😄
+│ 
+│ use these trend lines as a guide
+└─
+
+~ ✨ ~
+
 ⏰ 2025-08-28 09:13
 
 >80% of central banks plan to operate the DLT/blockchain for wholesale CBDCs themselves, hinting an in-house blockchain solution, and not a public and permissionless ledger
