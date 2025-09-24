@@ -84,3 +84,5 @@ Sitemap: https://illya.sh/sitemap.xml
 Sitemap: https://illya.sh/thoughts/sitemap.xml
 Sitemap: https://illya.sh/threads/sitemap.xml
 Sitemap: https://illya.sh/tls-for-iot-msc-thesis/sitemap.xml
+Sitemap: https://illya.sh/threads/feed.xml
+Sitemap: https://illya.sh/thoughts/feed.xml
