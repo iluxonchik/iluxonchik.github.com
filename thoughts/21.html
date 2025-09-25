@@ -828,6 +828,50 @@
         .thought-actions {
             padding-top: 8pt;
         }
+        .action-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px; /* small gap without changing height */
+        }
+        .thread-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 3px;
+            min-height: 1.2em; /* one line high */
+            min-width: 0; /* allow flex shrink for ellipsis */
+            flex: 1 1 auto;
+            color: var(--secondary-text-color);
+            font-size: 0.9em;
+            font-family: 'Literata', Georgia, serif; /* match reading surface */
+            font-weight: 270;
+            font-optical-sizing: auto;
+            line-height: 1.2;
+        }
+        .thread-links-prefix { opacity: 0.9; margin-right: 2px; }
+        .thread-chip {
+            display: inline-block;
+            padding: 0 5px; /* compact */
+            border: 1px solid var(--soft-border-color);
+            border-radius: 5px; /* rectangular with subtle rounding */
+            color: var(--secondary-text-color);
+            font-size: 0.85em;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        .thread-chip.primary {
+            font-weight: 300;
+            flex: 0 1 auto; /* allow shrink, but don't grow unnecessarily */
+            width: max-content; /* size to text when space allows */
+            max-width: 100%;   /* but never exceed available space */
+            min-width: 0;      /* enable shrink inside flex */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .thread-chip.more { pointer-events: none; }
+        .thread-chip:hover { background: var(--hover-bg-color); border-color: var(--border-color); color: var(--text-color); text-decoration: none; }
 
         .action-separator {
             height: 1px;
@@ -846,6 +890,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            flex: 0 0 auto; /* prevent growth; leave width to thread-links */
         }
 
         .share-button {
@@ -905,6 +950,8 @@
 
         /* Mobile optimizations for action bar */
         @media (max-width: 600px) {
+            .action-row { gap: 4px; }
+            .thread-links { max-width: none; font-size: 0.9em; }
             .share-button {
                 margin-right: 2pt;
                 padding: 0;
@@ -1006,9 +1053,12 @@ so you want to look at the behavior in that environment</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751736731" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751736731.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751726431-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)">🧵 US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751736731" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751736731.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1052,9 +1102,12 @@ there are other events than can steer the pressure towards a different outcome, 
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751736470" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751736470.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751726431-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)">🧵 US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751736470" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751736470.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1098,9 +1151,12 @@ Gold & Co. is a great hedge</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751736173" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751736173.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751726431-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)">🧵 US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751736173" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751736173.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1146,9 +1202,12 @@ QE/liquidity injections will further devalue USD</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751735978" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751735978.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751726431-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)">🧵 US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751735978" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751735978.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1194,9 +1253,12 @@ US bond yields are high under tighter monetary conditions - liquidity is pro cyc
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751735558" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751735558.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751726431-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)">🧵 US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751735558" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751735558.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1240,9 +1302,12 @@ if the price of collateral falls during economic downturn - you'll get a lot of 
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751735162" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751735162.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751726431-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)">🧵 US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751735162" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751735162.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1270,9 +1335,12 @@ i've encountered numerous alternative explanations - some very creative
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751729649" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751729649.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751729649" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751729649.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1318,9 +1386,12 @@ not enough UST for its demand ⬇️</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751727099" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751727099.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751726431-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)">🧵 US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751727099" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751727099.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1348,9 +1419,12 @@ not enough UST for its demand ⬇️</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751726431" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751726431.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751726431-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)">🧵 US Treasuries are by far the most popular collateral type in secured short-term funding markets (e.g. the repo market)</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751726431" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751726431.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1402,9 +1476,12 @@ here's how it looks like ⬇️</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751723054" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751723054.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751665225-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀📡 added an RSS feed to my thoughts">🧵 🚀📡 added an RSS feed to my thoughts</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751723054" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751723054.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1454,9 +1531,12 @@ everything is static so very SEO/LLM friendly
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751722145" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751722145.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751665225-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀📡 added an RSS feed to my thoughts">🧵 🚀📡 added an RSS feed to my thoughts</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751722145" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751722145.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1504,9 +1584,12 @@ implemented statically generated RSS feed of all the content posted under the mi
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751677016" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751677016.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751665225-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀📡 added an RSS feed to my thoughts">🧵 🚀📡 added an RSS feed to my thoughts</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751677016" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751677016.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1532,9 +1615,12 @@ implemented statically generated RSS feed of all the content posted under the mi
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751665225" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751665225.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751665225-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀📡 added an RSS feed to my thoughts">🧵 🚀📡 added an RSS feed to my thoughts</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751665225" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751665225.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1578,9 +1664,12 @@ it will likely become a more frequent choice for collateral/hedge during the mul
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751561601" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561601.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1742561137-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: Over 10 years the Russian Central Bank has increased gold holdings by x4.5">🧵 Over 10 years the Russian Central Bank has increased gold holdings by x4.5</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751561601" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561601.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1624,9 +1713,12 @@ this is especially true for Russia & China</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751561538" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561538.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1742561137-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: Over 10 years the Russian Central Bank has increased gold holdings by x4.5">🧵 Over 10 years the Russian Central Bank has increased gold holdings by x4.5</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751561538" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561538.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1674,9 +1766,12 @@ This is why Russia and Ruble have been so resilient to sanctions</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751561513" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561513.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1742561137-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: Over 10 years the Russian Central Bank has increased gold holdings by x4.5">🧵 Over 10 years the Russian Central Bank has increased gold holdings by x4.5</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751561513" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561513.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1724,9 +1819,12 @@ there is no lender of last resort (you can't print gold or have swap lines for i
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751561462" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561462.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1748355739-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 90% of all newly issued debt is for refinancing of existing debt, not new debt/financing">🧵 90% of all newly issued debt is for refinancing of existing debt, not new debt/financing</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751561462" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561462.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1770,9 +1868,12 @@ repo markets are the backbone of that. and since they're collateralized loans - 
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751561436" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561436.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1748355739-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 90% of all newly issued debt is for refinancing of existing debt, not new debt/financing">🧵 90% of all newly issued debt is for refinancing of existing debt, not new debt/financing</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751561436" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561436.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1818,9 +1919,12 @@ We need to fix this. DeFi is the tool</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751561398" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561398.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1748355739-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 90% of all newly issued debt is for refinancing of existing debt, not new debt/financing">🧵 90% of all newly issued debt is for refinancing of existing debt, not new debt/financing</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751561398" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561398.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1872,9 +1976,12 @@ if you're working on something similar - hit me up!</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751561356" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561356.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751561045-2.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: repurchase agreements are almost always over-collateralized #2">🧵 repurchase agreements are almost always over-collateralized #2</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751561356" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561356.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1924,9 +2031,12 @@ if you're working on something similar - hit me up!</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751561308" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561308.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751561045-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: repurchase agreements are almost always over-collateralized #1">🧵 repurchase agreements are almost always over-collateralized #1</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751561308" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561308.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1976,9 +2086,12 @@ as long as the price fall is < ≈haircut (2% in our case)</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751561208" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561208.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><span class="thread-links-prefix">🧵</span> <a class="thread-chip" href="https://illya.sh/threads/@1751561045-1.html" target="_blank" rel="noopener" title="repurchase agreements are almost always over-collateralized #1" aria-label="Open Illya's thread #1: repurchase agreements are almost always over-collateralized #1">#1</a> <a class="thread-chip" href="https://illya.sh/threads/@1751561045-2.html" target="_blank" rel="noopener" title="repurchase agreements are almost always over-collateralized #2" aria-label="Open Illya's thread #2: repurchase agreements are almost always over-collateralized #2">#2</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751561208" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561208.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -2025,9 +2138,12 @@ so you use your $100 bond to get a $98 loan, for which you must repay with a fee
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751561093" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561093.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><span class="thread-links-prefix">🧵</span> <a class="thread-chip" href="https://illya.sh/threads/@1751561045-1.html" target="_blank" rel="noopener" title="repurchase agreements are almost always over-collateralized #1" aria-label="Open Illya's thread #1: repurchase agreements are almost always over-collateralized #1">#1</a> <a class="thread-chip" href="https://illya.sh/threads/@1751561045-2.html" target="_blank" rel="noopener" title="repurchase agreements are almost always over-collateralized #2" aria-label="Open Illya's thread #2: repurchase agreements are almost always over-collateralized #2">#2</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751561093" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561093.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -2074,9 +2190,12 @@ the purchase and repurchase price are computed over the post-haircut value</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751561069" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561069.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><span class="thread-links-prefix">🧵</span> <a class="thread-chip" href="https://illya.sh/threads/@1751561045-1.html" target="_blank" rel="noopener" title="repurchase agreements are almost always over-collateralized #1" aria-label="Open Illya's thread #1: repurchase agreements are almost always over-collateralized #1">#1</a> <a class="thread-chip" href="https://illya.sh/threads/@1751561045-2.html" target="_blank" rel="noopener" title="repurchase agreements are almost always over-collateralized #2" aria-label="Open Illya's thread #2: repurchase agreements are almost always over-collateralized #2">#2</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751561069" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561069.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -2102,9 +2221,12 @@ the purchase and repurchase price are computed over the post-haircut value</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751561045" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561045.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><span class="thread-links-prefix">🧵</span> <a class="thread-chip" href="https://illya.sh/threads/@1751561045-1.html" target="_blank" rel="noopener" title="repurchase agreements are almost always over-collateralized #1" aria-label="Open Illya's thread #1: repurchase agreements are almost always over-collateralized #1">#1</a> <a class="thread-chip" href="https://illya.sh/threads/@1751561045-2.html" target="_blank" rel="noopener" title="repurchase agreements are almost always over-collateralized #2" aria-label="Open Illya's thread #2: repurchase agreements are almost always over-collateralized #2">#2</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751561045" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751561045.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>

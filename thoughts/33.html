@@ -828,6 +828,50 @@
         .thought-actions {
             padding-top: 8pt;
         }
+        .action-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px; /* small gap without changing height */
+        }
+        .thread-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 3px;
+            min-height: 1.2em; /* one line high */
+            min-width: 0; /* allow flex shrink for ellipsis */
+            flex: 1 1 auto;
+            color: var(--secondary-text-color);
+            font-size: 0.9em;
+            font-family: 'Literata', Georgia, serif; /* match reading surface */
+            font-weight: 270;
+            font-optical-sizing: auto;
+            line-height: 1.2;
+        }
+        .thread-links-prefix { opacity: 0.9; margin-right: 2px; }
+        .thread-chip {
+            display: inline-block;
+            padding: 0 5px; /* compact */
+            border: 1px solid var(--soft-border-color);
+            border-radius: 5px; /* rectangular with subtle rounding */
+            color: var(--secondary-text-color);
+            font-size: 0.85em;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        .thread-chip.primary {
+            font-weight: 300;
+            flex: 0 1 auto; /* allow shrink, but don't grow unnecessarily */
+            width: max-content; /* size to text when space allows */
+            max-width: 100%;   /* but never exceed available space */
+            min-width: 0;      /* enable shrink inside flex */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .thread-chip.more { pointer-events: none; }
+        .thread-chip:hover { background: var(--hover-bg-color); border-color: var(--border-color); color: var(--text-color); text-decoration: none; }
 
         .action-separator {
             height: 1px;
@@ -846,6 +890,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            flex: 0 0 auto; /* prevent growth; leave width to thread-links */
         }
 
         .share-button {
@@ -905,6 +950,8 @@
 
         /* Mobile optimizations for action bar */
         @media (max-width: 600px) {
+            .action-row { gap: 4px; }
+            .thread-links { max-width: none; font-size: 0.9em; }
             .share-button {
                 margin-right: 2pt;
                 padding: 0;
@@ -1002,9 +1049,12 @@ on the bank's sheet side it works: its assets and liabilities increase in the sa
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755864244" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755864244.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755863018-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: when a bank buys an asset from a non-bank it creates broad money">🧵 when a bank buys an asset from a non-bank it creates broad money</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755864244" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755864244.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1048,9 +1098,12 @@ so effectively the bank pays you by creating new digital currency and crediting 
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755864225" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755864225.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755863018-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: when a bank buys an asset from a non-bank it creates broad money">🧵 when a bank buys an asset from a non-bank it creates broad money</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755864225" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755864225.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1076,9 +1129,12 @@ so effectively the bank pays you by creating new digital currency and crediting 
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755863018" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755863018.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755863018-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: when a bank buys an asset from a non-bank it creates broad money">🧵 when a bank buys an asset from a non-bank it creates broad money</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755863018" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755863018.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1104,9 +1160,12 @@ so most of short-term US debt is being absorbed by the US economy and not by for
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755777459" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755777459.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755777459" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755777459.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1132,9 +1191,12 @@ i wrote a thread explaining that. you can read it here: <a href="https://illya.s
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755719661" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755719661.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755719661" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755719661.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1176,9 +1238,12 @@ the next round of QE is close, but hasn’t even started yet and rates were not 
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755719037" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755719037.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755718181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why">🧵 it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755719037" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755719037.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1220,9 +1285,12 @@ we're not there yet</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755719023" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755719023.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755718181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why">🧵 it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755719023" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755719023.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1264,9 +1332,12 @@ more QE-like measures will be taken, but eventually it won't be enough to preven
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755718978" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718978.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755718181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why">🧵 it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755718978" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718978.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1308,9 +1379,12 @@ of course, this also builds up on leverage in the form of market-wide carry trad
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755718610" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718610.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755718181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why">🧵 it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755718610" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718610.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1350,9 +1424,12 @@ of course, this also builds up on leverage in the form of market-wide carry trad
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755718571" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718571.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755718181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why">🧵 it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755718571" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718571.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1392,9 +1469,12 @@ this means an increase in broad money</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755718557" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718557.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755718181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why">🧵 it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755718557" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718557.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1436,9 +1516,12 @@ you can read it here: <a href="https://illya.sh/threads/@1755595543-1.html" targ
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755718547" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718547.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755718181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why">🧵 it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755718547" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718547.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1480,9 +1563,12 @@ broad money either increases indirectly or directly if the Fed credits a non-ban
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755718528" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718528.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755718181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why">🧵 it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755718528" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718528.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1524,9 +1610,12 @@ it will also lower T-bill yields short-term, as the prices are bid up due to a l
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755718501" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718501.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755718181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why">🧵 it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755718501" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718501.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1568,9 +1657,12 @@ the newly issued Treasuries themselves will be used as collateral to borrow cash
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755718478" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718478.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755718181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why">🧵 it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755718478" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718478.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1616,9 +1708,12 @@ the newly issued Treasuries themselves will be used as collateral to borrow cash
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755718400" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718400.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755718181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why">🧵 it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755718400" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718400.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1646,9 +1741,12 @@ the newly issued Treasuries themselves will be used as collateral to borrow cash
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755718181" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718181.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755718181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why">🧵 it&#x27;s NOT yet the top of the cycle for equities, cryptocurrencies and other risk assets. here’s why</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755718181" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755718181.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1672,9 +1770,12 @@ stay tuned 👀</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755633412" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755633412.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755633412" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755633412.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1716,9 +1817,12 @@ and then you get more QE/lower rates to address that</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755598709" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755598709.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755595543-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: here&#x27;s what yield spreads are saying about Bitcoin">🧵 here&#x27;s what yield spreads are saying about Bitcoin</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755598709" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755598709.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1758,9 +1862,12 @@ and then you get more QE/lower rates to address that</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755598653" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755598653.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755595543-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: here&#x27;s what yield spreads are saying about Bitcoin">🧵 here&#x27;s what yield spreads are saying about Bitcoin</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755598653" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755598653.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1798,9 +1905,12 @@ and then you get more QE/lower rates to address that</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755598478" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755598478.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755595543-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: here&#x27;s what yield spreads are saying about Bitcoin">🧵 here&#x27;s what yield spreads are saying about Bitcoin</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755598478" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755598478.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1840,9 +1950,12 @@ if the Central Bank purchases assets from non-bank financial institutions, then 
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755598260" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755598260.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755595543-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: here&#x27;s what yield spreads are saying about Bitcoin">🧵 here&#x27;s what yield spreads are saying about Bitcoin</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755598260" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755598260.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1884,9 +1997,12 @@ end result: more safe assets/prime collateral provided to markets. remember that
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755597487" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755597487.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755595543-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: here&#x27;s what yield spreads are saying about Bitcoin">🧵 here&#x27;s what yield spreads are saying about Bitcoin</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755597487" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755597487.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1928,9 +2044,12 @@ i wrote a thread/article explaining how US Treasuries are the dominant collatera
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755596647" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755596647.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755595543-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: here&#x27;s what yield spreads are saying about Bitcoin">🧵 here&#x27;s what yield spreads are saying about Bitcoin</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755596647" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755596647.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1970,9 +2089,12 @@ i wrote a thread/article explaining how US Treasuries are the dominant collatera
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1755596444" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755596444.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1755595543-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: here&#x27;s what yield spreads are saying about Bitcoin">🧵 here&#x27;s what yield spreads are saying about Bitcoin</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1755596444" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1755596444.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>

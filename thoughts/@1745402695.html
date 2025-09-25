@@ -828,6 +828,50 @@
         .thought-actions {
             padding-top: 8pt;
         }
+        .action-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px; /* small gap without changing height */
+        }
+        .thread-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 3px;
+            min-height: 1.2em; /* one line high */
+            min-width: 0; /* allow flex shrink for ellipsis */
+            flex: 1 1 auto;
+            color: var(--secondary-text-color);
+            font-size: 0.9em;
+            font-family: 'Literata', Georgia, serif; /* match reading surface */
+            font-weight: 270;
+            font-optical-sizing: auto;
+            line-height: 1.2;
+        }
+        .thread-links-prefix { opacity: 0.9; margin-right: 2px; }
+        .thread-chip {
+            display: inline-block;
+            padding: 0 5px; /* compact */
+            border: 1px solid var(--soft-border-color);
+            border-radius: 5px; /* rectangular with subtle rounding */
+            color: var(--secondary-text-color);
+            font-size: 0.85em;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        .thread-chip.primary {
+            font-weight: 300;
+            flex: 0 1 auto; /* allow shrink, but don't grow unnecessarily */
+            width: max-content; /* size to text when space allows */
+            max-width: 100%;   /* but never exceed available space */
+            min-width: 0;      /* enable shrink inside flex */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .thread-chip.more { pointer-events: none; }
+        .thread-chip:hover { background: var(--hover-bg-color); border-color: var(--border-color); color: var(--text-color); text-decoration: none; }
 
         .action-separator {
             height: 1px;
@@ -846,6 +890,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            flex: 0 0 auto; /* prevent growth; leave width to thread-links */
         }
 
         .share-button {
@@ -905,6 +950,8 @@
 
         /* Mobile optimizations for action bar */
         @media (max-width: 600px) {
+            .action-row { gap: 4px; }
+            .thread-links { max-width: none; font-size: 0.9em; }
             .share-button {
                 margin-right: 2pt;
                 padding: 0;
@@ -992,9 +1039,12 @@ Signs of QT, but it won't last. Soon, the balance sheet will expand again. High 
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1745402695" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1745402695.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1745402695" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1745402695.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>

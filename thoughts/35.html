@@ -828,6 +828,50 @@
         .thought-actions {
             padding-top: 8pt;
         }
+        .action-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px; /* small gap without changing height */
+        }
+        .thread-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 3px;
+            min-height: 1.2em; /* one line high */
+            min-width: 0; /* allow flex shrink for ellipsis */
+            flex: 1 1 auto;
+            color: var(--secondary-text-color);
+            font-size: 0.9em;
+            font-family: 'Literata', Georgia, serif; /* match reading surface */
+            font-weight: 270;
+            font-optical-sizing: auto;
+            line-height: 1.2;
+        }
+        .thread-links-prefix { opacity: 0.9; margin-right: 2px; }
+        .thread-chip {
+            display: inline-block;
+            padding: 0 5px; /* compact */
+            border: 1px solid var(--soft-border-color);
+            border-radius: 5px; /* rectangular with subtle rounding */
+            color: var(--secondary-text-color);
+            font-size: 0.85em;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        .thread-chip.primary {
+            font-weight: 300;
+            flex: 0 1 auto; /* allow shrink, but don't grow unnecessarily */
+            width: max-content; /* size to text when space allows */
+            max-width: 100%;   /* but never exceed available space */
+            min-width: 0;      /* enable shrink inside flex */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .thread-chip.more { pointer-events: none; }
+        .thread-chip:hover { background: var(--hover-bg-color); border-color: var(--border-color); color: var(--text-color); text-decoration: none; }
 
         .action-separator {
             height: 1px;
@@ -846,6 +890,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            flex: 0 0 auto; /* prevent growth; leave width to thread-links */
         }
 
         .share-button {
@@ -905,6 +950,8 @@
 
         /* Mobile optimizations for action bar */
         @media (max-width: 600px) {
+            .action-row { gap: 4px; }
+            .thread-links { max-width: none; font-size: 0.9em; }
             .share-button {
                 margin-right: 2pt;
                 padding: 0;
@@ -1000,9 +1047,12 @@
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757113604" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757113604.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757113604" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757113604.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1040,9 +1090,12 @@
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757113513" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757113513.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757113513" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757113513.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1082,9 +1135,12 @@ these bilateral arrangements is where financial institutions manage their liquid
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757113413" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757113413.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757113413" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757113413.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1126,9 +1182,12 @@ they use NCCBR to manage their balance sheets and regulatory obligations. so a h
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757113356" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757113356.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757113356" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757113356.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1168,9 +1227,12 @@ they use NCCBR to manage their balance sheets and regulatory obligations. so a h
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757113245" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757113245.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757113245" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757113245.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1208,9 +1270,12 @@ they use NCCBR to manage their balance sheets and regulatory obligations. so a h
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757113214" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757113214.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757113214" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757113214.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1252,9 +1317,12 @@ the smaller the haircut - the larger the maximum rehypothecated credit</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757113182" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757113182.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757113182" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757113182.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1298,9 +1366,12 @@ you cannot leverage as much with reserve money. so a $1000 bond can create more 
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757076013" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757076013.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757076013" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757076013.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1344,9 +1415,12 @@ computed using the formula above: 1000/0.02=50000</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757029828" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757029828.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757029828" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757029828.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1388,9 +1462,12 @@ computed using the formula above: 1000/0.02=50000</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757029671" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757029671.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757029671" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757029671.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1430,9 +1507,12 @@ dealers re-pledge/re-use Treasuries, e.g. through repo and reverse repo. thus, t
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757029412" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757029412.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757029412" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757029412.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1477,9 +1557,12 @@ so the end result is more base and/or broad money, but less prime/repo-eligible 
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757029249" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757029249.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757029249" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757029249.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1524,9 +1607,12 @@ so gold revaluation is insignificant for US federal government's debt problem</p
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757029102" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757029102.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757029102" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757029102.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1566,9 +1652,12 @@ so gold revaluation is insignificant for US federal government's debt problem</p
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757028864" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757028864.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757028864" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757028864.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1608,9 +1697,12 @@ central banks of Italy, Germany, Lebanon, South Africa & Curaçao and Sint Maart
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757028646" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757028646.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757028646" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757028646.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1656,9 +1748,12 @@ previously, $1T in new debt was added in ≈100 days</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757024972" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757024972.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757024972" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757024972.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1686,9 +1781,12 @@ previously, $1T in new debt was added in ≈100 days</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1757024181" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757024181.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1757024181-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: gold revaluation will NOT solve the US debt problem">🧵 gold revaluation will NOT solve the US debt problem</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1757024181" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1757024181.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1736,9 +1834,12 @@ the extended consolidation built up a strong future support</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1756991234" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756991234.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1749828575-7.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🤯 Gold may just go straight to $3500 in the next few hours #7">🧵 🤯 Gold may just go straight to $3500 in the next few hours #7</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1756991234" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756991234.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1784,9 +1885,12 @@ the last main resistance is the upper yellow trend line. once it's claimed as su
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1756824686" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756824686.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1749828575-7.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🤯 Gold may just go straight to $3500 in the next few hours #7">🧵 🤯 Gold may just go straight to $3500 in the next few hours #7</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1756824686" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756824686.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1810,9 +1914,12 @@ government and corporate bonds are the most common RWA to be tokenized</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1756494089" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756494089.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1756494089" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756494089.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1858,9 +1965,12 @@ use these trend lines as a guide</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1756421254" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756421254.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1749828575-7.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🤯 Gold may just go straight to $3500 in the next few hours #7">🧵 🤯 Gold may just go straight to $3500 in the next few hours #7</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1756421254" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756421254.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1898,9 +2008,12 @@ use these trend lines as a guide</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1756368814" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756368814.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1756336264-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 91% of central banks are working on CBDCs, but not on a public blockchain">🧵 91% of central banks are working on CBDCs, but not on a public blockchain</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1756368814" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756368814.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1940,9 +2053,12 @@ this means that wholesale CBDC is likely to be implemented using some form of bl
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1756368751" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756368751.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1756336264-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 91% of central banks are working on CBDCs, but not on a public blockchain">🧵 91% of central banks are working on CBDCs, but not on a public blockchain</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1756368751" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756368751.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1984,9 +2100,12 @@ here, consider DLT = blockchain</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1756368478" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756368478.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1756336264-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 91% of central banks are working on CBDCs, but not on a public blockchain">🧵 91% of central banks are working on CBDCs, but not on a public blockchain</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1756368478" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756368478.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -2030,9 +2149,12 @@ however, don't expect CBDCs to be implemented on permissionless blockchains like
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1756368356" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756368356.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1756336264-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 91% of central banks are working on CBDCs, but not on a public blockchain">🧵 91% of central banks are working on CBDCs, but not on a public blockchain</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1756368356" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1756368356.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>

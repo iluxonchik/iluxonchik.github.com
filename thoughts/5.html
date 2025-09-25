@@ -828,6 +828,50 @@
         .thought-actions {
             padding-top: 8pt;
         }
+        .action-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px; /* small gap without changing height */
+        }
+        .thread-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 3px;
+            min-height: 1.2em; /* one line high */
+            min-width: 0; /* allow flex shrink for ellipsis */
+            flex: 1 1 auto;
+            color: var(--secondary-text-color);
+            font-size: 0.9em;
+            font-family: 'Literata', Georgia, serif; /* match reading surface */
+            font-weight: 270;
+            font-optical-sizing: auto;
+            line-height: 1.2;
+        }
+        .thread-links-prefix { opacity: 0.9; margin-right: 2px; }
+        .thread-chip {
+            display: inline-block;
+            padding: 0 5px; /* compact */
+            border: 1px solid var(--soft-border-color);
+            border-radius: 5px; /* rectangular with subtle rounding */
+            color: var(--secondary-text-color);
+            font-size: 0.85em;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        .thread-chip.primary {
+            font-weight: 300;
+            flex: 0 1 auto; /* allow shrink, but don't grow unnecessarily */
+            width: max-content; /* size to text when space allows */
+            max-width: 100%;   /* but never exceed available space */
+            min-width: 0;      /* enable shrink inside flex */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .thread-chip.more { pointer-events: none; }
+        .thread-chip:hover { background: var(--hover-bg-color); border-color: var(--border-color); color: var(--text-color); text-decoration: none; }
 
         .action-separator {
             height: 1px;
@@ -846,6 +890,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            flex: 0 0 auto; /* prevent growth; leave width to thread-links */
         }
 
         .share-button {
@@ -905,6 +950,8 @@
 
         /* Mobile optimizations for action bar */
         @media (max-width: 600px) {
+            .action-row { gap: 4px; }
+            .thread-links { max-width: none; font-size: 0.9em; }
             .share-button {
                 margin-right: 2pt;
                 padding: 0;
@@ -984,9 +1031,12 @@
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1716546262" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1716546262.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1716546262" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1716546262.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1010,9 +1060,12 @@ While the former is understandable, the latter is surprising. The broader contex
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1716456336" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1716456336.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1716456336" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1716456336.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1038,9 +1091,12 @@ Debt-to-GDP ratio presents a much clearer picture (smaller is better)👇</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1716213807" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1716213807.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1716213807" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1716213807.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1066,9 +1122,12 @@ Net exports provide a more objective measure of self-sustainability and relative
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1716212238" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1716212238.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1716212238" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1716212238.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1090,9 +1149,12 @@ Net exports provide a more objective measure of self-sustainability and relative
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1715697394" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1715697394.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1715697394" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1715697394.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1116,9 +1178,12 @@ Net exports provide a more objective measure of self-sustainability and relative
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1714427087" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714427087.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1714427087" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714427087.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1162,9 +1227,12 @@ A more efficient, interoperable, decentralized, and inclusive financial system a
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1714328893" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328893.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1714328887-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒">🧵 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1714328893" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328893.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1208,9 +1276,12 @@ Demand is driven by incentives for participating in the BRICS economic network �
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1714328892" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328892.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1714328887-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒">🧵 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1714328892" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328892.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1256,9 +1327,12 @@ zkLocus turns geolocation into a programmable real-world asset (RWA), enabling l
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1714328890" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328890.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1714328887-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒">🧵 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1714328890" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328890.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1284,9 +1358,12 @@ zkLocus turns geolocation into a programmable real-world asset (RWA), enabling l
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1714328887" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328887.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1714328887-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒">🧵 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1714328887" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328887.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1336,9 +1413,12 @@ Like Algorithmic stablecoins and Uniswap</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1714328886" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328886.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1714328884-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙">🧵 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1714328886" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328886.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1384,9 +1464,12 @@ A public blockchain with SmartContracts, combined with Zero-Knowledge Proofs (ZK
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1714328886" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328886.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1714328884-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙">🧵 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1714328886" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328886.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1428,9 +1511,12 @@ Its value is algorithmically derived from various economic factors of the partic
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1714328885" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328885.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1714328884-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙">🧵 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1714328885" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328885.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1472,9 +1558,12 @@ In this article, we explore how the BRICS currency can be implemented on a publi
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1714328885" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328885.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1714328884-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙">🧵 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1714328885" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328885.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1498,9 +1587,12 @@ In this article, we explore how the BRICS currency can be implemented on a publi
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1714328884" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328884.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1714328884-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙">🧵 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1714328884" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1714328884.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1522,9 +1614,12 @@ In this article, we explore how the BRICS currency can be implemented on a publi
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1713784426" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713784426.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1713784426" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713784426.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1568,9 +1663,12 @@ Feel free to ask any questions or share your thoughts! 💬
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1713209069" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209069.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1713209062-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐">🧵 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1713209069" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209069.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1614,9 +1712,12 @@ Code & Tests: <a href="https://github.com/iluxonchik/randomina" target="_blank">
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1713209068" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209068.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1713209062-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐">🧵 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1713209068" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209068.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1664,9 +1765,12 @@ Code & Tests: <a href="https://github.com/iluxonchik/randomina" target="_blank">
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1713209068" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209068.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1713209062-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐">🧵 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1713209068" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209068.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1712,9 +1816,12 @@ Code & Tests: <a href="https://github.com/iluxonchik/randomina" target="_blank">
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1713209067" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209067.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1713209062-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐">🧵 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1713209067" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209067.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1760,9 +1867,12 @@ Code & Tests: <a href="https://github.com/iluxonchik/randomina" target="_blank">
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1713209067" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209067.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1713209062-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐">🧵 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1713209067" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209067.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1808,9 +1918,12 @@ Code & Tests: <a href="https://github.com/iluxonchik/randomina" target="_blank">
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1713209066" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209066.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1713209062-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐">🧵 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1713209066" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209066.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1854,9 +1967,12 @@ It's designed to be used or integrated by other contracts needing secure randomn
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1713209066" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209066.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1713209062-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐">🧵 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1713209066" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209066.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1898,9 +2014,12 @@ By varying this private nonce, an infinite number of pseudo-random numbers can b
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1713209065" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209065.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1713209062-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐">🧵 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1713209065" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209065.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1942,9 +2061,12 @@ It's computed by Poseidon-hashing the public key, adding a global uniqueness com
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1713209064" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209064.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1713209062-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐">🧵 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1713209064" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1713209064.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>

@@ -828,6 +828,50 @@
         .thought-actions {
             padding-top: 8pt;
         }
+        .action-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px; /* small gap without changing height */
+        }
+        .thread-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 3px;
+            min-height: 1.2em; /* one line high */
+            min-width: 0; /* allow flex shrink for ellipsis */
+            flex: 1 1 auto;
+            color: var(--secondary-text-color);
+            font-size: 0.9em;
+            font-family: 'Literata', Georgia, serif; /* match reading surface */
+            font-weight: 270;
+            font-optical-sizing: auto;
+            line-height: 1.2;
+        }
+        .thread-links-prefix { opacity: 0.9; margin-right: 2px; }
+        .thread-chip {
+            display: inline-block;
+            padding: 0 5px; /* compact */
+            border: 1px solid var(--soft-border-color);
+            border-radius: 5px; /* rectangular with subtle rounding */
+            color: var(--secondary-text-color);
+            font-size: 0.85em;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        .thread-chip.primary {
+            font-weight: 300;
+            flex: 0 1 auto; /* allow shrink, but don't grow unnecessarily */
+            width: max-content; /* size to text when space allows */
+            max-width: 100%;   /* but never exceed available space */
+            min-width: 0;      /* enable shrink inside flex */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .thread-chip.more { pointer-events: none; }
+        .thread-chip:hover { background: var(--hover-bg-color); border-color: var(--border-color); color: var(--text-color); text-decoration: none; }
 
         .action-separator {
             height: 1px;
@@ -846,6 +890,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            flex: 0 0 auto; /* prevent growth; leave width to thread-links */
         }
 
         .share-button {
@@ -905,6 +950,8 @@
 
         /* Mobile optimizations for action bar */
         @media (max-width: 600px) {
+            .action-row { gap: 4px; }
+            .thread-links { max-width: none; font-size: 0.9em; }
             .share-button {
                 margin-right: 2pt;
                 padding: 0;
@@ -1012,9 +1059,12 @@ so gold can't be in "Tier"</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751487182" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751487182.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751485407-2.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚨🏦 claims that gold is a Tier 1 asset under Basel III are FALSE: #2">🧵 🚨🏦 claims that gold is a Tier 1 asset under Basel III are FALSE: #2</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751487182" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751487182.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1062,9 +1112,12 @@ so for every $1B of gold that a bank holds - $850M must be funded with longer te
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751486011" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751486011.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751485407-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚨🏦 claims that gold is a Tier 1 asset under Basel III are FALSE: #1">🧵 🚨🏦 claims that gold is a Tier 1 asset under Basel III are FALSE: #1</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751486011" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751486011.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1092,9 +1145,12 @@ so for every $1B of gold that a bank holds - $850M must be funded with longer te
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751485407" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751485407.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><span class="thread-links-prefix">🧵</span> <a class="thread-chip" href="https://illya.sh/threads/@1751485407-1.html" target="_blank" rel="noopener" title="🚨🏦 claims that gold is a Tier 1 asset under Basel III are FALSE: #1" aria-label="Open Illya's thread #1: 🚨🏦 claims that gold is a Tier 1 asset under Basel III are FALSE: #1">#1</a> <a class="thread-chip" href="https://illya.sh/threads/@1751485407-2.html" target="_blank" rel="noopener" title="🚨🏦 claims that gold is a Tier 1 asset under Basel III are FALSE: #2" aria-label="Open Illya's thread #2: 🚨🏦 claims that gold is a Tier 1 asset under Basel III are FALSE: #2">#2</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751485407" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751485407.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1123,9 +1179,12 @@ the high risk already existed while there was low volatility</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751476464" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751476464.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751476464" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751476464.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1151,9 +1210,12 @@ it's all about where the credit flows</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751376973" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751376973.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751376973" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751376973.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1201,9 +1263,12 @@ the same for risky assets</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751202359" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751202359.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751201012-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 💧FED swap lines = infinite liquidity pool">🧵 💧FED swap lines = infinite liquidity pool</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751202359" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751202359.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1253,9 +1318,12 @@ and then you wonder about inflation 😄</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751201858" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751201858.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751201012-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 💧FED swap lines = infinite liquidity pool">🧵 💧FED swap lines = infinite liquidity pool</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751201858" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751201858.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1307,9 +1375,12 @@ thus, USD demand is met</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751201671" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751201671.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751201012-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 💧FED swap lines = infinite liquidity pool">🧵 💧FED swap lines = infinite liquidity pool</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751201671" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751201671.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1339,9 +1410,12 @@ thus, USD demand is met</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751201012" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751201012.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751201012-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 💧FED swap lines = infinite liquidity pool">🧵 💧FED swap lines = infinite liquidity pool</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751201012" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751201012.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1391,9 +1465,12 @@ demo in reply ⬇️</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751191284" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751191284.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751100704-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 added stateless comments on posts">🧵 🚀 added stateless comments on posts</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751191284" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751191284.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1421,9 +1498,12 @@ demo in reply ⬇️</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1751100704" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751100704.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1751100704-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 added stateless comments on posts">🧵 🚀 added stateless comments on posts</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1751100704" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1751100704.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1475,9 +1555,12 @@ enjoy the dip, because smart money is!</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1750964140" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750964140.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1750949562-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: central banks will continue to buy gold #1">🧵 central banks will continue to buy gold #1</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1750964140" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750964140.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1503,9 +1586,12 @@ a lot of them, specially the larger are definitely hedging behind the scenes</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1750955751" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750955751.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1750955751" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750955751.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1555,9 +1641,12 @@ You don't have to trust me. Trust the price action</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1750955533" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750955533.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1702337019-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: If you only understood how cheap $GOLD is now. To put it in perspective, its current FIAT price only reflects inflation prior to 2011 🤯">🧵 If you only understood how cheap $GOLD is now. To put it in perspective, its current FIAT price only reflects inflation prior to 2011 🤯</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1750955533" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750955533.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1583,9 +1672,12 @@ enjoy the dip, because smart money is!</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1750949562" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750949562.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><span class="thread-links-prefix">🧵</span> <a class="thread-chip" href="https://illya.sh/threads/@1750949562-1.html" target="_blank" rel="noopener" title="central banks will continue to buy gold #1" aria-label="Open Illya's thread #1: central banks will continue to buy gold #1">#1</a> <a class="thread-chip" href="https://illya.sh/threads/@1750949562-2.html" target="_blank" rel="noopener" title="central banks will continue to buy gold #2" aria-label="Open Illya's thread #2: central banks will continue to buy gold #2">#2</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1750949562" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750949562.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1631,9 +1723,12 @@ The next destination is low 98's</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1750944334" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750944334.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1744899762-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚨US Dollar Index going to ≈98.3">🧵 🚨US Dollar Index going to ≈98.3</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1750944334" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750944334.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1663,9 +1758,12 @@ example in reply ⬇️</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1750873467" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750873467.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1750873467" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750873467.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1693,9 +1791,12 @@ at maturity the repurchaser repurchases the collateral</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1750858112" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750858112.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1750858112" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750858112.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1745,9 +1846,12 @@ This isn't a joke</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1750853755" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750853755.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1750077674-5.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: &#x27;The market is never wrong&#x27; #5">🧵 &#x27;The market is never wrong&#x27; #5</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1750853755" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750853755.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1789,9 +1893,12 @@ are you ready?</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1750630038" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750630038.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1749828575-8.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🤯 Gold may just go straight to $3500 in the next few hours #8">🧵 🤯 Gold may just go straight to $3500 in the next few hours #8</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1750630038" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750630038.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1837,9 +1944,12 @@ now it looks like a breakout from another consolidation phase 📈</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1750629516" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750629516.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1749828575-8.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🤯 Gold may just go straight to $3500 in the next few hours #8">🧵 🤯 Gold may just go straight to $3500 in the next few hours #8</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1750629516" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750629516.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1885,9 +1995,12 @@ Do not underestimate what the new all time highs in gold are telling you</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1750599289" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750599289.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1749830117-4.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: While Ethereum has built a strong-ish support in the current area, it currently looks more likely to fall towards the ≈$2180 monthly support #4">🧵 While Ethereum has built a strong-ish support in the current area, it currently looks more likely to fall towards the ≈$2180 monthly support #4</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1750599289" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750599289.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1922,9 +2035,12 @@ but then again, you must remember the global market is NOT a free market economy
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1750598450" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750598450.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1750598450-0.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: UN&#x27;s Model Double Taxation Convention has a clear key benefit over OCED&#x27;s">🧵 UN&#x27;s Model Double Taxation Convention has a clear key benefit over OCED&#x27;s</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1750598450" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750598450.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1976,9 +2092,12 @@ Road to $3500 🚀</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1750590658" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750590658.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1749828575-2.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🤯 Gold may just go straight to $3500 in the next few hours #2">🧵 🤯 Gold may just go straight to $3500 in the next few hours #2</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1750590658" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750590658.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -2032,9 +2151,12 @@ spoiler: higher price</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1750590485" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750590485.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><span class="thread-links-prefix">🧵</span> <a class="thread-chip" href="https://illya.sh/threads/@1749828575-2.html" target="_blank" rel="noopener" title="🤯 Gold may just go straight to $3500 in the next few hours #2" aria-label="Open Illya's thread #2: 🤯 Gold may just go straight to $3500 in the next few hours #2">#2</a> <a class="thread-chip" href="https://illya.sh/threads/@1749828575-3.html" target="_blank" rel="noopener" title="🤯 Gold may just go straight to $3500 in the next few hours #3" aria-label="Open Illya's thread #3: 🤯 Gold may just go straight to $3500 in the next few hours #3">#3</a> <a class="thread-chip" href="https://illya.sh/threads/@1749828575-4.html" target="_blank" rel="noopener" title="🤯 Gold may just go straight to $3500 in the next few hours #4" aria-label="Open Illya's thread #4: 🤯 Gold may just go straight to $3500 in the next few hours #4">#4</a> <a class="thread-chip" href="https://illya.sh/threads/@1749828575-5.html" target="_blank" rel="noopener" title="🤯 Gold may just go straight to $3500 in the next few hours #5" aria-label="Open Illya's thread #5: 🤯 Gold may just go straight to $3500 in the next few hours #5">#5</a> <span class="thread-chip more" title="and 2 more threads">+2</span></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1750590485" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1750590485.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>

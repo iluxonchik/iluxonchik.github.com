@@ -828,6 +828,50 @@
         .thought-actions {
             padding-top: 8pt;
         }
+        .action-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px; /* small gap without changing height */
+        }
+        .thread-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 3px;
+            min-height: 1.2em; /* one line high */
+            min-width: 0; /* allow flex shrink for ellipsis */
+            flex: 1 1 auto;
+            color: var(--secondary-text-color);
+            font-size: 0.9em;
+            font-family: 'Literata', Georgia, serif; /* match reading surface */
+            font-weight: 270;
+            font-optical-sizing: auto;
+            line-height: 1.2;
+        }
+        .thread-links-prefix { opacity: 0.9; margin-right: 2px; }
+        .thread-chip {
+            display: inline-block;
+            padding: 0 5px; /* compact */
+            border: 1px solid var(--soft-border-color);
+            border-radius: 5px; /* rectangular with subtle rounding */
+            color: var(--secondary-text-color);
+            font-size: 0.85em;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        .thread-chip.primary {
+            font-weight: 300;
+            flex: 0 1 auto; /* allow shrink, but don't grow unnecessarily */
+            width: max-content; /* size to text when space allows */
+            max-width: 100%;   /* but never exceed available space */
+            min-width: 0;      /* enable shrink inside flex */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .thread-chip.more { pointer-events: none; }
+        .thread-chip:hover { background: var(--hover-bg-color); border-color: var(--border-color); color: var(--text-color); text-decoration: none; }
 
         .action-separator {
             height: 1px;
@@ -846,6 +890,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            flex: 0 0 auto; /* prevent growth; leave width to thread-links */
         }
 
         .share-button {
@@ -905,6 +950,8 @@
 
         /* Mobile optimizations for action bar */
         @media (max-width: 600px) {
+            .action-row { gap: 4px; }
+            .thread-links { max-width: none; font-size: 0.9em; }
             .share-button {
                 margin-right: 2pt;
                 padding: 0;
@@ -988,9 +1035,12 @@ ex: 🇮🇳 India invoices 86% of its exports in USD, while only 15% of its exp
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1754234694" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754234694.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1754234694-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🇺🇸 USD dominance is alluring, accounting for ≈70% of currency usage worldwide">🧵 🇺🇸 USD dominance is alluring, accounting for ≈70% of currency usage worldwide</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1754234694" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754234694.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1034,9 +1084,12 @@ if those happen at a smaller rate - the duration increases</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1754152780" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754152780.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1754148538-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008">🧵 to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1754152780" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754152780.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1078,9 +1131,12 @@ thus, the duration increases when yields are raising - so even a higher price de
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1754152411" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754152411.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1754148538-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008">🧵 to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1754152411" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754152411.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1122,9 +1178,12 @@ when market yields fall the price should rise, but since borrowers take advantag
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1754152089" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754152089.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1754148538-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008">🧵 to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1754152089" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754152089.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1168,9 +1227,12 @@ thus, the yields fell</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1754151561" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754151561.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1754148538-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008">🧵 to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1754151561" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754151561.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1218,9 +1280,12 @@ once exhausted it will surely be increased</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1754150421" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754150421.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1754148538-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008">🧵 to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1754150421" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754150421.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1268,9 +1333,12 @@ expect some MBS QE to come in the near future</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1754149939" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754149939.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1754148538-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008">🧵 to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1754149939" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754149939.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1296,9 +1364,12 @@ expect some MBS QE to come in the near future</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1754148538" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754148538.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1754148538-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008">🧵 to lower the mortgage rates the Fed can purchase agency MBS - likely they did in QE 1 2008</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1754148538" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754148538.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1342,9 +1413,12 @@ so it indeed was a good idea to long it at the pullback</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1754092790" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754092790.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1749828575-5.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🤯 Gold may just go straight to $3500 in the next few hours #5">🧵 🤯 Gold may just go straight to $3500 in the next few hours #5</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1754092790" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754092790.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1384,9 +1458,12 @@ so it indeed was a good idea to long it at the pullback</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1754081156" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754081156.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><span class="thread-links-prefix">🧵</span> <a class="thread-chip" href="https://illya.sh/threads/@1749828575-5.html" target="_blank" rel="noopener" title="🤯 Gold may just go straight to $3500 in the next few hours #5" aria-label="Open Illya's thread #5: 🤯 Gold may just go straight to $3500 in the next few hours #5">#5</a> <a class="thread-chip" href="https://illya.sh/threads/@1749828575-6.html" target="_blank" rel="noopener" title="🤯 Gold may just go straight to $3500 in the next few hours #6" aria-label="Open Illya's thread #6: 🤯 Gold may just go straight to $3500 in the next few hours #6">#6</a> <a class="thread-chip" href="https://illya.sh/threads/@1749828575-7.html" target="_blank" rel="noopener" title="🤯 Gold may just go straight to $3500 in the next few hours #7" aria-label="Open Illya's thread #7: 🤯 Gold may just go straight to $3500 in the next few hours #7">#7</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1754081156" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754081156.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1434,9 +1511,12 @@ despite oil down - gold is up. this is about the monetary policy of Russia and t
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1754068467" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754068467.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1750077674-7.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: &#x27;The market is never wrong&#x27; #7">🧵 &#x27;The market is never wrong&#x27; #7</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1754068467" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754068467.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1485,9 +1565,12 @@ mark my words:
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1754067497" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754067497.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1750077674-7.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: &#x27;The market is never wrong&#x27; #7">🧵 &#x27;The market is never wrong&#x27; #7</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1754067497" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1754067497.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1529,9 +1612,12 @@ follow the quoted posts to read the full thread/article</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1753956410" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753956410.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1753951176-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: how does the Federal Reserve set interest rates?">🧵 how does the Federal Reserve set interest rates?</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1753956410" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753956410.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1576,9 +1662,12 @@ follow the quoted posts to read the full thread/article</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1753955028" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753955028.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1753951176-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: how does the Federal Reserve set interest rates?">🧵 how does the Federal Reserve set interest rates?</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1753955028" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753955028.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1623,9 +1712,12 @@ let's consolidate everything with an example using current, real-world data</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1753954839" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954839.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1753951176-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: how does the Federal Reserve set interest rates?">🧵 how does the Federal Reserve set interest rates?</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1753954839" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954839.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1667,9 +1759,12 @@ this is because banks avoid using the discount rate - as that is often seen as a
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1753954727" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954727.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1753951176-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: how does the Federal Reserve set interest rates?">🧵 how does the Federal Reserve set interest rates?</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1753954727" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954727.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1711,9 +1806,12 @@ in other words, it strengthens the cap on short-term interest rates</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1753954560" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954560.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1753951176-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: how does the Federal Reserve set interest rates?">🧵 how does the Federal Reserve set interest rates?</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1753954560" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954560.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1755,9 +1853,12 @@ the institution provides high quality collateral (e.g. treasury bond) and gets a
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1753954461" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954461.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1753951176-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: how does the Federal Reserve set interest rates?">🧵 how does the Federal Reserve set interest rates?</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1753954461" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954461.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1801,9 +1902,12 @@ window comes from the fact that these were sold at counter/teller windows at the
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1753954328" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954328.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1753951176-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: how does the Federal Reserve set interest rates?">🧵 how does the Federal Reserve set interest rates?</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1753954328" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954328.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1847,9 +1951,12 @@ it's really meant to serve as an emergency lending source - only when other fina
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1753954252" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954252.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1753951176-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: how does the Federal Reserve set interest rates?">🧵 how does the Federal Reserve set interest rates?</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1753954252" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954252.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1893,9 +2000,12 @@ since banks can always get a loan at that rate - it caps the short-term interest
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1753954215" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954215.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1753951176-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: how does the Federal Reserve set interest rates?">🧵 how does the Federal Reserve set interest rates?</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1753954215" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954215.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1939,9 +2049,12 @@ ON RRP addresses exactly that sector, thus setting the lower bound of the target
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1753954124" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954124.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1753951176-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: how does the Federal Reserve set interest rates?">🧵 how does the Federal Reserve set interest rates?</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1753954124" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954124.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -1983,9 +2096,12 @@ since it's accessible to a broader set of financial institutions - not only bank
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1753954033" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954033.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1753951176-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: how does the Federal Reserve set interest rates?">🧵 how does the Federal Reserve set interest rates?</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1753954033" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753954033.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -2029,9 +2145,12 @@ ON RRP is accessible to both banks & non-banks (e.g. money market funds)</p>
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1753953969" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753953969.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1753951176-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: how does the Federal Reserve set interest rates?">🧵 how does the Federal Reserve set interest rates?</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1753953969" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753953969.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
@@ -2075,9 +2194,12 @@ effectively, this sets the floor (lower bound of the corridor) for interest rate
     <!-- Action Bar -->
     <div class="thought-actions">
         <div class="action-separator"></div>
-        <div class="action-buttons">
-            <a href="comment.html?id=1753953090" class="comment-button" aria-label="Comment on this thought">💬</a>
-            <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753953090.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/@1753951176-1.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: how does the Federal Reserve set interest rates?">🧵 how does the Federal Reserve set interest rates?</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=1753953090" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/@1753953090.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
         </div>
     </div>
 </div>
