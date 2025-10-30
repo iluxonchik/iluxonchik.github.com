@@ -17,12 +17,13 @@
     <meta name="twitter:title" content='Illya: Just launched ' />
     <meta name="twitter:description" content="Just launched . I'll use for short-form posts. Think Twitter/X, but self-hosted under my domain. It's an MVP and for now contains a subset of X posts. Later I'll make it real-timish and..." />
     <meta name="twitter:image" content='https://illya.sh/staticthoughts/images/@1744386896.png' />
-    <!-- Preload variable fonts (matching @font-face src), with correct CORS and type -->
-    <link rel="preload" href="/staticthoughts/data/fonts/literata/Literata-VF-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/staticthoughts/data/fonts/literata/Literata-Italic-VF-latin.woff2" as="font" type="font/woff2" crossorigin>
     <!-- RSS Feed Discovery -->
     <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Thoughts RSS" href="https://illya.sh/thoughts/feed.xml"/>
     <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Threads RSS" href="https://illya.sh/threads/feed.xml"/>
+
+    <!-- Font Preload (CORS/crossorigin required for woff2) -->
+    <link rel="preload" href="/staticthoughts/data/fonts/literata/Literata-VF-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/staticthoughts/data/fonts/literata/Literata-Italic-VF-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
     <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/"}, {"@type": "BlogPosting", "headline": "Just launched ", "articleBody": "Just launched \n\nI'll use for short-form posts. Think Twitter/X, but self-hosted under my domain\n\nIt's an MVP and for now contains a subset of X posts. Later I'll make it real-timish and cross-post some of my content from here\n\nCoded using Gemini 2.5 Pro", "author": {"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/"}, "url": "https://illya.sh/thoughts/just-launched.html", "mainEntityOfPage": "https://illya.sh/thoughts/just-launched.html", "datePublished": "2025-04-11T15:54:56+00:00", "dateModified": "2025-04-11T15:54:56+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets"}]}

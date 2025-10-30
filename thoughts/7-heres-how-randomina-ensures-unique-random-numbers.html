@@ -17,12 +17,13 @@
     <meta name="twitter:title" content='Illya: 8️⃣ When two identities generate random numbers using RandoMina:' />
     <meta name="twitter:description" content='8️⃣ When two identities generate random numbers using RandoMina:. ✅ Sender-Specific Nonce is unique due to different public keys. ✅ Combining unique Sender-Specific Nonce with Network State...' />
     <meta name="twitter:image" content='https://illya.sh/staticthoughts/images/@1713209066.png' />
-    <!-- Preload variable fonts (matching @font-face src), with correct CORS and type -->
-    <link rel="preload" href="/staticthoughts/data/fonts/literata/Literata-VF-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/staticthoughts/data/fonts/literata/Literata-Italic-VF-latin.woff2" as="font" type="font/woff2" crossorigin>
     <!-- RSS Feed Discovery -->
     <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Thoughts RSS" href="https://illya.sh/thoughts/feed.xml"/>
     <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Threads RSS" href="https://illya.sh/threads/feed.xml"/>
+
+    <!-- Font Preload (CORS/crossorigin required for woff2) -->
+    <link rel="preload" href="/staticthoughts/data/fonts/literata/Literata-VF-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/staticthoughts/data/fonts/literata/Literata-Italic-VF-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
     <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/"}, {"@type": "BlogPosting", "headline": "8️⃣ When two identities generate random numbers using RandoMina:", "articleBody": "8️⃣ When two identities generate random numbers using RandoMina:\n\n✅ Sender-Specific Nonce is unique due to different public keys\n✅ Combining unique Sender-Specific Nonce with Network State and Local Seed/Nonce\n➡️ Always results in different random numbers for each identity! 🎉", "author": {"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/"}, "url": "https://illya.sh/thoughts/7-heres-how-randomina-ensures-unique-random-numbers.html", "mainEntityOfPage": "https://illya.sh/thoughts/7-heres-how-randomina-ensures-unique-random-numbers.html", "datePublished": "2024-04-15T19:24:26+00:00", "dateModified": "2024-04-15T19:24:26+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets"}]}
