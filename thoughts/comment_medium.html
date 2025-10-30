@@ -150,7 +150,10 @@
   if(!id){document.body.innerHTML='Invalid request';return;}
   document.getElementById('message-display').textContent=msg;
 
-  const thoughtUrl='https://illya.sh/thoughts'.replace(/\/$/,'')+'/@'+id+'.html';
+  const baseThoughts='https://illya.sh/thoughts'.replace(/\/$/,'');
+  const isNumericId=/^\d+$/.test(id);
+  const thoughtFilename=(isNumericId?'@'+id:id)+'.html';
+  const thoughtUrl=baseThoughts+'/'+thoughtFilename;
 
   const encodedMessage=`Hello Illya,%0A%0AI have some thoughts on ${encodeURIComponent(thoughtUrl)}:%0A%0A${encodeURIComponent(msg)}`;
 
@@ -158,11 +161,11 @@
   const tgLink=document.getElementById('tg-link');
   const xLink=document.getElementById('x-link');
 
-  emailLink.href=`mailto:hello@illya.sh?subject=Thought%20comment&body=${encodedMessage}`;
-  tgLink.href=`https://t.me/illya_gerasymchuk?text=${encodedMessage}`;
+  if(emailLink){ emailLink.href=`mailto:hello@illya.sh?subject=Thought%20comment&body=${encodedMessage}`; }
+  if(tgLink){ tgLink.href=`https://t.me/illya_gerasymchuk?text=${encodedMessage}`; }
   const tweetTextBase = `👋 @illyaGera\n\n${msg}\n\n`;
   const tweetTextEnc = encodeURIComponent(tweetTextBase);
-  xLink.href=`https://twitter.com/intent/tweet?text=${tweetTextEnc}&url=${encodeURIComponent(thoughtUrl)}`;
+  if(xLink){ xLink.href=`https://twitter.com/intent/tweet?text=${tweetTextEnc}&url=${encodeURIComponent(thoughtUrl)}`; }
 
   const backBtn=document.getElementById('back-btn');
   function navigateBack(){
@@ -194,12 +197,12 @@
       document.getElementById('after-action').style.display='block';
       updateExpiry(1); // set to 1 hour
   }
-  emailLink.addEventListener('click',revealBack);
-  tgLink.addEventListener('click',revealBack);
-  xLink.addEventListener('click',revealBack);
+  if(emailLink){ emailLink.addEventListener('click',revealBack); }
+  if(tgLink){ tgLink.addEventListener('click',revealBack); }
+  if(xLink){ xLink.addEventListener('click',revealBack); }
 
-  // Quote fetch
-  fetch('@'+id+'.html').then(r=>r.text()).then(html=>{
+  // Quote fetch (slug/timestamp aware)
+  fetch(thoughtFilename).then(r=>r.text()).then(html=>{
     const parser=new DOMParser();
     const doc=parser.parseFromString(html,'text/html');
     let tb=doc.querySelector('.thought-box');

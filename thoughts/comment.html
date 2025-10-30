@@ -209,8 +209,10 @@
     window.location.href='comment_medium.html?id='+encodeURIComponent(id)+'&msg='+encoded;
   });
 
-  // Fetch the thought HTML and embed
-  fetch('@'+id+'.html').then(r=>r.text()).then(html=>{
+  // Fetch the thought HTML and embed (slug/timestamp aware)
+  const isNumericId=/^\d+$/.test(id);
+  const thoughtFilename=(isNumericId?'@'+id:id)+'.html';
+  fetch(thoughtFilename).then(r=>r.text()).then(html=>{
     const parser=new DOMParser();
     const doc=parser.parseFromString(html,'text/html');
     let tb=doc.querySelector('.thought-box');
