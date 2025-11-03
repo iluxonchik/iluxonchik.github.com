@@ -6,6 +6,108 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-11-02 21:03
+
+Anyone can buy 1 JPEG, but not everyone 
+
+2 JPEGs for 8 billion people (there are 2 fungible copies)
+
+Everyone on earth is in this race to accumulate JPEGs, but 99% haven't realized it yet
+
+~ ✨ ~
+
+⏰ 2025-11-02 19:31
+
+A U.S. dollar note doesn't care who you are or where you're from - the laws of physics are fair for everyone
+
+Neither does gold, nor a coffee bean or a rock. In fact, this is true for most inanimate objects.
+
+There is nothing special about that property.
+
+~ ✨ ~
+
+⏰ 2025-11-02 19:07
+
+More Bitcoin has been seized than Gold 
+
+If you think that Bitcoin is harder to seize than gold, you are probably wrong. At least according to the data.
+
+In the history of Bitcoin's existence, much much more Bitcoin has been seized than Gold. You don't need to compromise cryptographic primitives to seize Bitcoin. 
+
+Apparently this isn't a very well known fact in the Bitcoin Maxi world 😄
+
+~ ✨ ~
+
+⏰ 2025-11-02 14:59
+
+Gold is within the fabric of money, not just Central Banks
+
+A lot of posts on X frame Central Banks as malevolent institutions, and by some form of conspiracy they hold gold in their reserve accounts. And apparently not holding gold is a step towards monetary freedom - even more if you forego an atomic element (Au) for a cryptographic computer algorithm (Bitcoin).
+
+A more productive approach is asking why do Central Banks chose gold over all other commodities and assets. Every single world reserve currency, without exception, started on a gold and/or silver standard. Gold has been used as money for over 5000 years.
+
+I've written several articles on what makes gold so special and how Bitcoin is not a replacement for gold. I'll leave them linked below
+
+~ ✨ ~
+
+⏰ 2025-11-01 15:24
+
+Multiple governments have sized Bitcoin
+
+In fact, more Bitcoin has been seized than gold in the U.S. It's really not hard to google this, but here are some examples:
+
+- Silk Road takedown (2013–2015) - ≈175K BTC
+- "Individual X" Silk Road stash (2020) - ≈75K BTC
+- Bitfinex-hack recovery (2022) - >94K BTC
+- Movie2K piracy case - ≈50K BTC
+- Finland Customs seizures - ≈2K BTC
+- Netherlands money-laundering case - ≈2.5K BTC
+- China PlusToken crackdown ≈200K BTC
+
+Regarding gold - yes, it was seized in the past in the US, but it was at a much smaller scale than you imagine.
+
+The publicly documented, conservative floor for government-seized BTC is ≈700K BTC (≈$77B today), which is already above the $58–110B value range for U.S. public gold coin surrendered in 1933–34.
+
+If your argument is that Bitcoin is better than gold, because it's more private/seizure resistant - you are wrong.
+
+If you think that by holding Bitcoin you're immune to U.S. government policies you're also wrong, as more than 90% of all Bitcoin buying volume comes from USD or USD derivatives (including stablecoins).
+
+~ ✨ ~
+
+⏰ 2025-11-01 12:13
+
+Why would a Central Bank hold Bitcoin in reserves?
+
+1. Even assuming that Bitcoin is an inflation hedge - it still doesn't mean that Central Banks should hold it. What would be the purpose of that? Central Banks are not commercial institutions - they hold assets for very specific reasons (e.g. FX rate stabilization).
+
+2. You may have misunderstood me. I said that Bitcoin isn't money - but that by itself doesn't mean that Central Banks shouldn't hold it. FIAT currencies aren't money either. Neither are government bonds. BUT - those bonds or currencies generally don't crash >50% on cycle tops. So it's the fact that it's not money, combined with the other points I mentioned here and in the article that i linked
+
+3. Kaspa isn't money. It certainly hasn't been long enough to be classified as money, nor it has enough intrinsic value. It carries the same set of technology risks as other cryptocurrencies- and even without looking at the chart - I can tell you that it's correlated to the rest of the crypto market. 
+
+I am a big fan of crypto, but we need to keep it real 😄
+
+This X account (@DavidFBailey) , like thousands of others, shill Bitcoin/Crypto non-stop, with little reasoning behind it. They either do it for pay, engagement or a mix of both.
+
+You don't have to look far - usually just search for "gold" on their profile and you'll find something like this (see screenshot).
+
+If you want to understand how Bitcoin is not gold, it will never be gold, and it will never replace gold - read this article: https://illya.sh/threads/bitcoin-needs-gold-gold-doesnt-need-bitcoin.html
+
+~ ✨ ~
+
+⏰ 2025-10-30 21:42
+
+Is the rotation from Gold to Bitcoin in the room with us? 😉
+
+Over the past 2 weeks hundreds of X accounts with large following have been posting about an imminent rotation from gold to Bitcoin, once gold reaches a correction level.
+
+Their main argument seemed to be based on Bitcoin's historic price correlation - essentially "here are some select occurrences from the past where this happened, so it will happen now". Many of them went as far as claiming that gold has topped in this cycle (it hasn't).
+
+Local top for gold was reached, but rotation didn't happen. As I've been alluding to over this same timeframe - the reality in financial market is seldom this simplistic.
+
+In general, you should be very wary of market thesis that are too abstract, or fail to consider the macro picture.
+
+~ ✨ ~
+
 ⏰ 2025-10-30 11:30
 
 Tokenizing European Long-Term Investment Funds (ELTIF 2.0) on a Public Blockchain

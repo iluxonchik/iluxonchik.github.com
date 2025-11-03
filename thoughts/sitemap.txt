@@ -84,6 +84,7 @@ https://illya.sh/thoughts/a-moment-of-appreciation-for-how-the-us-treasury-repor
 https://illya.sh/thoughts/a-month-ago-me-and-gemini-2-5-pro-deep-research-had-a
 https://illya.sh/thoughts/a-reminder-that-russia-doesnt-trade-with-usa-anymore
 https://illya.sh/thoughts/a-small-insight-into-the-meticulous-care-that-is-necessary
+https://illya.sh/thoughts/a-u-s-dollar-note-doesnt-care-who-you-are-or-where-youre
 https://illya.sh/thoughts/aaand-crude-oil-futures-are-back-above-70
 https://illya.sh/thoughts/aaand-crude-oil-is-trading-above-70
 https://illya.sh/thoughts/added-a-share-action-to-every-post
@@ -124,6 +125,7 @@ https://illya.sh/thoughts/and-yes-to-get-this-data-i-had-to-download-an-excel-fi
 https://illya.sh/thoughts/another-important-fact-to-mention-regarding-russia-is-that
 https://illya.sh/thoughts/another-reason-for-a-strong-ruble-is-the-consistent-negative
 https://illya.sh/thoughts/any-defi-ecosystem-built-around-brc-20-will-need-off-chain
+https://illya.sh/thoughts/anyone-can-buy-1-jpeg-but-not-everyone
 https://illya.sh/thoughts/architecting-your-balance-sheet-around-highly-speculative
 https://illya.sh/thoughts/are-you-building-defi-in-the-eu-heres-what-you-need-to-know
 https://illya.sh/thoughts/are-you-ready
@@ -344,6 +346,7 @@ https://illya.sh/thoughts/gold-is-down-6-from-its-ath
 https://illya.sh/thoughts/gold-is-having-its-calm-before-the-storm-moment
 https://illya.sh/thoughts/gold-is-in-the-same-price-range-as-when-the-us-dollar-index
 https://illya.sh/thoughts/gold-is-up-20-000-since-1832
+https://illya.sh/thoughts/gold-is-within-the-fabric-of-money-not-just-central-banks
 https://illya.sh/thoughts/gold-look-for-rejection-at-4155
 https://illya.sh/thoughts/gold-may-just-go-straight-to-3500-in-the-next-few-hours
 https://illya.sh/thoughts/gold-moves-up-by-13-on-breakouts-thus-4000-oz-gold-in
@@ -478,6 +481,7 @@ https://illya.sh/thoughts/interest-on-reserve-balances-iorb-is-the-rate-fed-pays
 https://illya.sh/thoughts/interestingly-the-yields-on-us-bonds-are-up-across-the-yield
 https://illya.sh/thoughts/intermediation-started-with-paper-records-physical-bank
 https://illya.sh/thoughts/introducing-randomina-a-protocol-for-provable-random-number
+https://illya.sh/thoughts/is-the-rotation-from-gold-to-bitcoin-in-the-room-with-us
 https://illya.sh/thoughts/it-gets-crazier
 https://illya.sh/thoughts/it-took-quite-a-bit-of-python-scripting-and-image-editing-to
 https://illya.sh/thoughts/its-a-mystery-why-us-bond-yields-are-skyrocketing
@@ -550,12 +554,14 @@ https://illya.sh/thoughts/minas-got-recursion
 https://illya.sh/thoughts/modified-duration-quantifies-how-much-a-bonds-price-will
 https://illya.sh/thoughts/moex-down-22-since-feb
 https://illya.sh/thoughts/money-market-funds-yield-close-to-the-risk-free-rate-think
+https://illya.sh/thoughts/more-bitcoin-has-been-seized-than-gold
 https://illya.sh/thoughts/moreover-as-per-eurosystems-accounting-framework-unrealized
 https://illya.sh/thoughts/moreover-currently-the-us-treasury-is-issuing-debt-and-cash
 https://illya.sh/thoughts/mortgage-rates-targeted-qe-such-as-the-mass-purchase-of
 https://illya.sh/thoughts/most-of-auctioned-treasury-bills-in-2025-are-bought
 https://illya.sh/thoughts/most-of-debt-is-issued-for-re-financing-of-existing-debt-not
 https://illya.sh/thoughts/most-of-financial-institutions-assets-have-an-expiration
+https://illya.sh/thoughts/multiple-governments-have-sized-bitcoin
 https://illya.sh/thoughts/my-article-on-repo-rates-and-btc-price-was-referenced-on
 https://illya.sh/thoughts/my-vibe-meter-on-bitcoin-is-off-the-charts
 https://illya.sh/thoughts/national-bank-of-romanias-gold-reserves-are-13-of-their
@@ -987,6 +993,7 @@ https://illya.sh/thoughts/whos-ready-for-a-new-gold-ath
 https://illya.sh/thoughts/whos-selling-silver
 https://illya.sh/thoughts/why-inscriptions-matter-for-artists-theyre-on-bitcoin-high
 https://illya.sh/thoughts/why-is-a-loan-an-asset-to-the-bank
+https://illya.sh/thoughts/why-would-a-central-bank-hold-bitcoin-in-reserves
 https://illya.sh/thoughts/with-brc-20-there-are-no-numeric-balances-instead-you-need
 https://illya.sh/thoughts/with-srf-the-fed-sets-an-upper-limit-on-repo-market-rates
 https://illya.sh/thoughts/with-the-inflation-trend
