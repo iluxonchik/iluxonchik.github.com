@@ -50,6 +50,7 @@ https://illya.sh/threads/ecb-recorded-an-8-billion-loss-in-2024-what-happens-in-
 https://illya.sh/threads/ecbs-legal-framework-forbids-the-use-of-gold-revaluation
 https://illya.sh/threads/ethereum-fell-below-2500
 https://illya.sh/threads/eu-real-estate-prices-will-continue-to-increase
+https://illya.sh/threads/european-investment-funds-explained-ucits-aifs-aifmd-and-the
 https://illya.sh/threads/ever-wondered-how-zksnarks-zkstarks-actually-work-under-the
 https://illya.sh/threads/exploring-tokenized-liquid-futures-contracts
 https://illya.sh/threads/fed-just-injected-11b-of-liquidity-1
@@ -84,6 +85,7 @@ https://illya.sh/threads/if-usd-eur-falls-below-the-pink-trend-line-its-a-fall-t
 https://illya.sh/threads/if-you-buy-a-car-with-bitcoin-youre-still-subject-to-capital
 https://illya.sh/threads/if-you-only-understood-how-cheap-gold-is-now-to-put-it-in
 https://illya.sh/threads/if-you-think-they-crypto-will-replace-banks-you-dont
+https://illya.sh/threads/illyas-threads-and-thoughts-now-uses-slugs-in-urls
 https://illya.sh/threads/imagine-24-7-global-video-surveillance-that-doesnt
 https://illya.sh/threads/integrating-zklocus-allows-associating-geolocation-data-with
 https://illya.sh/threads/introducing-randomina-a-protocol-for-provable-random-number
@@ -94,7 +96,7 @@ https://illya.sh/threads/its-not-yet-the-top-of-the-cycle-for-equities
 https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol
 https://illya.sh/threads/lower-interest-rates-means-less-attractive-repo-and-deposit
 https://illya.sh/threads/market-makers-and-other-dealers-are-also-subject-to
-https://illya.sh/threads/multiple-governments-have-sized-bitcoin
+https://illya.sh/threads/multiple-governments-have-seized-bitcoin
 https://illya.sh/threads/my-article-on-repo-rates-and-btc-price-was-referenced-on
 https://illya.sh/threads/my-vibe-meter-on-bitcoin-is-off-the-charts
 https://illya.sh/threads/neither-supply-nor-demand-are-static
