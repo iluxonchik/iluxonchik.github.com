@@ -20,15 +20,15 @@ Since this falls under my current area of work - I thought that it would be usef
 
 So first of all let’s start with the definition of a “fund”. EU law doesn’t have a unanimous definition for what constitutes a fund. Instead, it defines rules for two collective investment schemes:
 
-1. Undertakings for Collective Investment In Transferable Securities (UCITS) defined in Directive 2009/65/EC
-2. Alternative Investment Funds (AIFs) defined in AIFMD Directive 2011/61/EU
+1️⃣ Undertakings for Collective Investment In Transferable Securities (UCITS) defined in Directive 2009/65/EC
+2️⃣ Alternative Investment Funds (AIFs) defined in AIFMD Directive 2011/61/EU
 
 UCITS is defined as an undertaking whose sole purpose is collective investment in transferable securities and other liquid financial assets, with the holders of UCITS units/shares being able to redeem/repurchase them on demand out of UCITS’s assets/holdings. The strict list of eligible assets is defined in Article 50 of Directive 2009/65/EC and it includes:
 
-1. Transferable securities, which are securities that are negotiable/tradable on capital markets, such as shares/equities and bonds.
-2. Money market instruments
-3. Deposits with credit institutions
-4. Certain financial derivatives
+1️⃣ Transferable securities, which are securities that are negotiable/tradable on capital markets, such as shares/equities and bonds.
+2️⃣ Money market instruments
+3️⃣ Deposits with credit institutions
+4️⃣ Certain financial derivatives
 
 As per Article 5, a UCITS must be managed by “management company”, which is defined as a company whose regular business is to manage UCITS (Article 2(1)(b)), or set up as a self-managed investment company under Articles 29-31. As per Article 6(1) this management company must be authorized. Before a UCITS is authorized its’s management company must be authorized.
 
