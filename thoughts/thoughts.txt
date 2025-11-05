@@ -10,7 +10,7 @@
 
 European Investment Funds Explained: UCITS, AIFs, AIFMD and the ELTIF Regime
 
- As I’ve previously written, I am working on a framework for tokenizing European Long Term Investment Fund operation (ELTIF 2.0) on a public, smart-contract enabled blockchain like Ethereum. You can read more about it here: https://illya.sh/threads/tokenizing-european-long-term-investment-funds-eltif-2-0-on
+As I’ve previously written, I am working on a framework for tokenizing European Long Term Investment Fund operation (ELTIF 2.0) on a public, smart-contract enabled blockchain like Ethereum. You can read more about it here: https://illya.sh/threads/tokenizing-european-long-term-investment-funds-eltif-2-0-on
 
 This is financial markets legislation heavy topic, and it involves several regulations and directives, each one meticulously outlining rules and exceptions which together form a framework for operating various investment funds in the European Union.
 
