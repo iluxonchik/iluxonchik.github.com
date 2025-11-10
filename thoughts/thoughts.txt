@@ -6,6 +6,66 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-11-10 16:26
+
+Gold as a percentage of balance sheet size in Central Banks (ranked):
+
+🇯🇵 Japan (MoF + BoJ): ≈2.4%
+🇨🇳 China (PBoC): ≈4.5%
+🇺🇸 U.S. (Fed gold certificates): ≈15.9%
+🇪🇺 European Union (ECB + Eurosystem): ≈19.4%
+🇷🇺 Russia (BoR): ≈36.1%
+
+All of the above will expand their balance sheets, but it's mostly China & Russia actively buying more gold.
+
+Conclusions you can take from here:
+
+➖ China's gold holdings are relatively small when compared to their Central Bank's balance sheet size, and given their efforts to promote renminbi as the invoice currency worldwide, you can expect PBoC to continue their gold purchases for the medium-long term. The gold share must at least double to come close to the current reserve currency - the U.S. dollar. All reserve currencies started on a gold and/or silver standard - and the pressure towards this direction won't be different for renminbi/yen. When the USD became the world reserve currency with the Bretton-Woods agreement - gold certificates accounted for ≈40% of the Fed's balance sheet.
+
+➖ Russia has built up a massive balance sheet capacity for the future. Once the international trade markets with Russia re-open, there will be a plenty of reserves to back-up a massive wave of Ruble credit. Expect Russian capital markets to rally then.
+
+➖ European Union has a healthy relative position. Given that the Euro is currently the closest alternative to the U.S. Dollar - it's a good idea to both, expand gold reserves and promote capital markets. The latter is an explicit goal via the Capital Markets Union (CMU). Given that EU will further expand the balance sheet, it's necessary to increase the gold reserves - repricing won't be enough. Gold will make Euro more attractive, and with it the FX holdings of Euro by sovereigns.
+
+~ ✨ ~
+
+⏰ 2025-11-06 15:07
+
+Bitcoin is not just for speculative gambling
+
+Nation state-linked companies are already settling their transactions in Bitcoin. Sure, they're using Bitcoin only as an intermediary, not as the end settlement unit of account, but this takes Bitcoin's utility far beyond gambling.
+
+Just because Bitcoin isn't replacing gold as money, doesn't mean that it's a failure. Just because Bitcoin bitcoin collapsed below 100K, doesn't mean it won't come back higher (liquidity cycles suggest it will).
+
+Extremes are better for engagement, but reality is very inclusive.
+
+~ ✨ ~
+
+⏰ 2025-11-05 21:25
+
+My article on how all reserve currencies started on a gold and/or silver standard: https://illya.sh/threads/all-reserve-currencies-achieved-reserve-status-under-gold-or
+
+📖 Quoting from 2025-11-05 21:14:
+┌─ My article on Gold vs Bitcoin, and how Bitcoin needs Gold, but Gold doesn't need Bitcoin: https://illya.sh/threads/bitcoin-needs-gold-gold-doesnt-need-bitcoin.html
+└─
+
+~ ✨ ~
+
+⏰ 2025-11-05 21:14
+
+My article on Gold vs Bitcoin, and how Bitcoin needs Gold, but Gold doesn't need Bitcoin: https://illya.sh/threads/bitcoin-needs-gold-gold-doesnt-need-bitcoin.html
+
+📖 Quoting from 2025-11-02 14:59:
+┌─ Gold is within the fabric of money, not just Central Banks
+│ 
+│ A lot of posts on X frame Central Banks as malevolent institutions, and by some form of conspiracy they hold gold in their reserve accounts. And apparently not holding gold is a step towards monetary freedom - even more if you forego an atomic element (Au) for a cryptographic computer algorithm (Bitcoin).
+│ 
+│ A more productive approach is asking why do Central Banks chose gold over all other commodities and assets. Every single world reserve currency, without exception, started on a gold and/or silver standard. Gold has been used as money for over 5000 years.
+│ 
+│ I've written several articles on what makes gold so special and how Bitcoin is not a replacement for gold. I'll leave them linked below
+└─
+
+~ ✨ ~
+
 ⏰ 2025-11-05 20:10
 
 European Investment Funds Explained: UCITS, AIFs, AIFMD and the ELTIF Regime
