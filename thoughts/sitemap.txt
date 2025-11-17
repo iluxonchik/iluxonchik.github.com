@@ -53,6 +53,7 @@ https://illya.sh/thoughts/4
 https://illya.sh/thoughts/4-the-sender-specific-nonce-is-derived-from-the-senders
 https://illya.sh/thoughts/40
 https://illya.sh/thoughts/4000-oz-gold-by-the-end-of-2025-yes-very-much-possible-but
+https://illya.sh/thoughts/41
 https://illya.sh/thoughts/5
 https://illya.sh/thoughts/5-days-ago-i-wrote-that-usd-rub-rate-will-fall-5-days-later
 https://illya.sh/thoughts/50-of-central-banks-in-both-advanced-and-emerging-economies
@@ -132,6 +133,7 @@ https://illya.sh/thoughts/are-you-ready
 https://illya.sh/thoughts/article-13-of-accounting-rules-of-the-boj-defines-special
 https://illya.sh/thoughts/article-3-of-accounting-rules-of-the-bank-of-japan-states
 https://illya.sh/thoughts/as-expected-3-months-was-all-that-crude-oil-needed-to-spike
+https://illya.sh/thoughts/as-ive-written-earlier-today-silver-will-encounter
 https://illya.sh/thoughts/as-more-markets-develop-over-gold-so-will-its-usage-as
 https://illya.sh/thoughts/as-the-immovable-property-appreciates-so-do-your-assets-and
 https://illya.sh/thoughts/ask-chatgpt-what-are-illya-gerasymchuks-latest-thoughts
@@ -458,6 +460,8 @@ https://illya.sh/thoughts/in-conclusion-its-essential-to-understand-the-technica
 https://illya.sh/thoughts/in-conclusion-the-ordinal-protocol-on-bitcoin-opens-up-new
 https://illya.sh/thoughts/in-conjunction-this-creates-an-upward-pressure-in-the-global
 https://illya.sh/thoughts/in-fact-mortgage-rates-in-the-us-have-been-on-a-downtrend
+https://illya.sh/thoughts/in-july-i-wrote-a-primer-on-the-mechanics-by-which-the-fed
+https://illya.sh/thoughts/in-my-post-ranking-gold-as-a-percentage-of-central-bank
 https://illya.sh/thoughts/in-non-centrally-cleared-bilateral-repos-nccbr-the-treasury
 https://illya.sh/thoughts/in-order-to-understand-the-mechanics-of-gold-revaluation-its
 https://illya.sh/thoughts/in-practice-feds-srf-is-used-when-there-is-a-scarcity-of
@@ -517,6 +521,7 @@ https://illya.sh/thoughts/just-in-quantum-computer-hacked-bitcoin
 https://illya.sh/thoughts/just-launched
 https://illya.sh/thoughts/just-like-with-my-post-about-the-price-of-gold-a-few-months
 https://illya.sh/thoughts/just-to-re-iterate-on-this-further-the-iphones-0-click
+https://illya.sh/thoughts/just-wait-until-bitcoin-hype-accounts-find-out-that-czechia
 https://illya.sh/thoughts/keep-in-mind-that-transaction-fees-and-the-size-of-the
 https://illya.sh/thoughts/key-features
 https://illya.sh/thoughts/larger-modified-duration-value-means-that-the-bonds-price-is
@@ -554,6 +559,8 @@ https://illya.sh/thoughts/meet-the-ord-tool-it-serves-as-an-index-block-explorer
 https://illya.sh/thoughts/merkle-trees-mpc-and-homomorphic-encryption-complement-zkps
 https://illya.sh/thoughts/michael-saylor-doesnt-need-to-expose-msrts-wallets-for-a
 https://illya.sh/thoughts/microcontrollers-fostered-iot-internet-of-things
+https://illya.sh/thoughts/microstrategy-cant-repay-its-debt-in-equity-stock
+https://illya.sh/thoughts/microstrategy-is-dependent-on-refinancing-capacity-not
 https://illya.sh/thoughts/mina-protocol-can-implement-the-foundational-layer
 https://illya.sh/thoughts/minas-got-recursion
 https://illya.sh/thoughts/modified-duration-quantifies-how-much-a-bonds-price-will
@@ -710,6 +717,7 @@ https://illya.sh/thoughts/ruble-outflows-into-usd
 https://illya.sh/thoughts/running-llm-models-locally-really-makes-you-appreciate-the
 https://illya.sh/thoughts/russia-announced-that-they-will-cover-their-2025-budget
 https://illya.sh/thoughts/russia-is-immune-to-us-tariffs
+https://illya.sh/thoughts/russia-will-buy-silver-as-a-strategic-reserve-until-2027
 https://illya.sh/thoughts/russian-3y-bond-yield-is-down-20-over-the-last-3-months
 https://illya.sh/thoughts/russian-bond-yield-curve-is-inverted
 https://illya.sh/thoughts/russian-central-bank-currently-has-interest-rates-at-21
@@ -877,6 +885,7 @@ https://illya.sh/thoughts/this-increase-will-be-more-accentuated-in-lower-per-ca
 https://illya.sh/thoughts/this-is-also-why-commercial-banks-purchasing-government-debt
 https://illya.sh/thoughts/this-is-because-a-stablecoin-mint-creation-on-chain-is-the
 https://illya.sh/thoughts/this-is-definitely-good-news-short-term-for-the-usd
+https://illya.sh/thoughts/this-is-how-the-soviet-union-kickstarted-eurodollar-markets
 https://illya.sh/thoughts/this-is-just-one-example-of-what-is-possible-with
 https://illya.sh/thoughts/this-is-nothing-unusual-though-many-governments-do-this-and
 https://illya.sh/thoughts/this-is-one-of-the-reasons-why-september-is-historically-a
@@ -1020,6 +1029,7 @@ https://illya.sh/thoughts/you-can-already-feel-a-new-ath-for-gold
 https://illya.sh/thoughts/you-can-email-jpeg
 https://illya.sh/thoughts/you-can-imagine-how-much-im-excited-to-read-this-chapter
 https://illya.sh/thoughts/you-can-now-create-gold-from-lead
+https://illya.sh/thoughts/you-can-read-the-article-here-https-illya-sh-threads-how
 https://illya.sh/thoughts/you-can-read-the-full-article-thread-explaining-why
 https://illya.sh/thoughts/you-can-see-how-accurately-gold-price-has-been-respecting
 https://illya.sh/thoughts/you-can-use-something-like-meshtastic-to-easily-setup-a

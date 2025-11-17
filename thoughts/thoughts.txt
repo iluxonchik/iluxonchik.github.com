@@ -6,6 +6,138 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-11-16 23:01
+
+MicroStrategy Can't Repay Its Debt In Equity/Stock
+
+Most of MicroStrategy's debt is in the form of convertible bonds, meaning that by default the principal and the coupons get repaid the cash. 
+
+The "convertible" part means the bondholder can choose to convert the bond into shares/equity instead, and then MSTR chooses how settle the conversion of the bond's value in cash, equity or mix.
+
+So MSTR cannot force the debt settlement/repayment in stock/equity - that's simply an option that the bondholders/investors have. 
+
+The repayment can always be in cash assuming that MSTR is solvent, as most of the debt is unsecured, meaning that there is no specific collateral pledged against that debt. In case of insolvency, unsecured debt holders are treated as general creditors of the company, and are repaid out of the remaining assets only after secured debt holders are repaid, but before equity holders.
+
+~ ✨ ~
+
+⏰ 2025-11-16 16:41
+
+Microstrategy Is Dependent On Refinancing Capacity, Not Bitcoin Price
+
+MSTR won't have to sell Bitcoin if BTC price goes down, they'll have to sell Bitcoin if they're unable to acquire funding along the maturity of their debt wall. 
+
+Microstrategy is essentially a leveraged trade on Bitcoin, based on the following cycle:
+
+1️⃣ Acquire funding via debt or equity
+2️⃣ Buy Bitcoin
+3️⃣ Repeat
+
+This cycle works for as long as MSTR is able to obtain funding. Once funding becomes unavailable (i.e. market isn't willing to lend at favorable interest rates), funding must come from asset liquidation (i.e. the sale of Bitcoin).
+
+The availability of funding is mostly dependent on Bitcoin's price. As long as Bitcoin price and trend is favorable around the dates when the debt wall matures - MSTR should be able to continue their leveraged trade. MSTR share price vs Bitcoin NAV is also important. If MSTR trades a premium over Bitcoin's NAV it allows Microstrategy to short their own equity and long Bitcoin.
+
+However, an unfavorable Bitcoin price action environment (e.g. during a bear market) that coincides with debt repayment obligations may trigger the unwinding of this leveraged position, forcing MSRT to sell Bitcoin, thus putting further downwards price pressure on Bitcoin, which lowers Microstrategy's equity even more, which makes lender even less likely to lend. The end result is an even more degraded funding capacity, which at the limit leads to bankruptcy.
+
+Debt starts maturing from 2028 (≈$1B), but the most significant portion of ≈70%/$5.8B matures in 2029-2030. This is where the price of Bitcoin is of great importance for Microstrategy's solvency.
+
+So don't expect Microstrategy to have pressure to sell significant amounts of Bitcoin before at least 2027, even if the Bitcoin price stays low.
+
+~ ✨ ~
+
+⏰ 2025-11-15 17:12
+
+Just wait until Bitcoin hype accounts find out that Czechia has not adapted the Euro, so it's not a part of the Eurozone.
+
+Thus, the Czech National Bank (CNB) is a part of European System of Central Banks (ESCB), but not a full Eurosystem central bank, so it's not represented in and not bound by the ECB Governing Council's monetary policy decisions.
+
+No Eurozone National Central Bank (NCB) is holding Bitcoin in their reserves, and ECB's current policy rejects the idea of BTC as a reserve asset.
+
+Watch what they do, not what Bitcoin hype media says.
+
+~ ✨ ~
+
+⏰ 2025-11-14 23:08
+
+In my post ranking gold as a percentage of central bank balance sheet size I wrote renminbi/yen, when I meant renminbi/yuan
+
+Yen is, of course, the Japanese, not PRC's local currency. I will correct this under threads & thoughts on my website, but it will remain with this typo on X (you can't update the post after 1 hour)
+
+~ ✨ ~
+
+⏰ 2025-11-14 19:14
+
+Russia will buy Silver as a strategic reserve until 2027
+
+I'm not speculating on anything, this comes directly from the Russian legislation, namely the Federal Law № 419-ФЗ (in Russian/cyrilic: Федеральный закон от 30 ноября 2024 г. № 419-ФЗ) whose budget tables for 2025–2027 allocate ≈51.5 billion rubles (≈$640M) per year as budget for the "acquisition of state reserves of precious metals and precious stones".
+
+Silver falls explicitly under the definition of "precious metals". More specifically, under Russian framework law № 41-ФЗ the term "precious metals" ("драгоценные металлы") is explicitly defined as gold, silver, platinum and the metals of the platinum group.
+
+In addition to the above, in the official explanatory note (пояснительная записка) to the draft of Federal Law № 419-ФЗ the Russian Ministry of Finance explicitly states that the plan is to acquire refined gold, refined silver, refined platinum and refined palladium for strategic goals. More specifically, the aim is to increase the share of "highly liquid valuables" in the State Fund of Precious Metals and Precious Stones of the Russian Federation (Госфонд России).
+
+~ ✨ ~
+
+⏰ 2025-11-14 16:00
+
+You can read the article here: https://illya.sh/threads/how-does-the-federal-reserve-set-interest-rates
+
+📖 Quoting from 2025-11-13 22:12:
+┌─ In July I wrote a primer on the mechanics by which the Fed steers the prevailing interest rates in the economy.
+│ 
+│ It covers the ON RRP, IORB, Discount Rate and SRF channels, explaining how together they set a corridor with upper and lower limits for the effective rate.
+│ 
+│ Prior to today the article reading experience was subpar, due to the amount of supporting images - the thread is composed of several shorter posts, and each one came with an image.
+│ 
+│ I've made it a lot more readable by removing most of the images
+└─
+
+~ ✨ ~
+
+⏰ 2025-11-14 14:03
+
+This is how The Soviet Union kickstarted Eurodollar markets in the 1950's
+
+Eurodollars are USD deposits held at banks outside the U.S. Originally, they were held mostly in European jurisdictions, thus the "Euro" in the name.
+
+URSS needed U.S. dollars for international trade, but they didn't trust keeping balances directly in New York, as they feared that U.S. would freeze or seize those deposits.
+
+So URSS placed their USD deposits in European banks, often via Soviet-linked banks. Those European banks then re-deposited or lent out those dollars to other banks and institutions.
+
+I've written extensively how the policies of the current U.S. administration are a negative for the USD. Asian countries have been progressively moving away from USD, and this is a sign from Europe in that direction (but don't expect heavy de-dollarization in the near future). 
+
+Overall, I view this as a net positive for the sovereignty of EU/Europe as a whole. A more developed financial system infrastructure is crucial for attracting the use of Euro, which is already the 2nd most used currency in the world.
+
+~ ✨ ~
+
+⏰ 2025-11-13 23:09
+
+As I've written earlier today, Silver will encounter corrections
+
+These are all buying opportunities - as is the whole price range within current larger pullback. The price bottoms I written about remain unchanged. The uptrend will resume
+
+The same is true for gold
+
+📖 Quoting from 2025-11-13 11:48:
+┌─ My prediction on Silver's bottom was correct: ≈$43-45 ✅
+│ 
+│ The uptrend goes on. The price will encounter more corrections along the way, but the bottoms I described previously remain valid.
+│ 
+│ Like for gold, I would re-analyze critically all sources that were claiming that the bullrun for silver is over.
+└─
+
+~ ✨ ~
+
+⏰ 2025-11-13 22:12
+
+In July I wrote a primer on the mechanics by which the Fed steers the prevailing interest rates in the economy.
+
+It covers the ON RRP, IORB, Discount Rate and SRF channels, explaining how together they set a corridor with upper and lower limits for the effective rate.
+
+Prior to today the article reading experience was subpar, due to the amount of supporting images - the thread is composed of several shorter posts, and each one came with an image.
+
+I've made it a lot more readable by removing most of the images
+
+~ ✨ ~
+
 ⏰ 2025-11-13 11:48
 
 My prediction on Silver's bottom was correct: ≈$43-45 ✅
@@ -62,7 +194,7 @@ All of the above will expand their balance sheets, but it's mostly China & Russi
 
 Conclusions you can take from here:
 
-➖ China's gold holdings are relatively small when compared to their Central Bank's balance sheet size, and given their efforts to promote renminbi as the invoice currency worldwide, you can expect PBoC to continue their gold purchases for the medium-long term. The gold share must at least double to come close to the current reserve currency - the U.S. dollar. All reserve currencies started on a gold and/or silver standard - and the pressure towards this direction won't be different for renminbi/yen. When the USD became the world reserve currency with the Bretton-Woods agreement - gold certificates accounted for ≈40% of the Fed's balance sheet.
+➖ China's gold holdings are relatively small when compared to their Central Bank's balance sheet size, and given their efforts to promote renminbi as the invoice currency worldwide, you can expect PBoC to continue their gold purchases for the medium-long term. The gold share must at least double to come close to the current reserve currency - the U.S. dollar. All reserve currencies started on a gold and/or silver standard - and the pressure towards this direction won't be different for renminbi/yuan. When the USD became the world reserve currency with the Bretton-Woods agreement - gold certificates accounted for ≈40% of the Fed's balance sheet.
 
 ➖ Russia has built up a massive balance sheet capacity for the future. Once the international trade markets with Russia re-open, there will be a plenty of reserves to back-up a massive wave of Ruble credit. Expect Russian capital markets to rally then.
 
