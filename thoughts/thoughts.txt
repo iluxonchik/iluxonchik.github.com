@@ -6,6 +6,46 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-11-18 15:38
+
+How MicroStrategy Pays Interest On Its Debt?
+
+The short answer is that MSTR finances its debt service via a mixture of:
+
+➖ Software business cashflow
+➖ Existing reserves & short-term investments
+➖ Capital market instruments, such as issuing new equity or debt
+➖ Asset liquidation (Bitcoin sales)
+
+MSTR's annual coupon payments are not that, summing up to ≈$40M/year. The convertible bonds that they issue come with small coupons, so relatively small interest payments.
+
+More specifically, here is how MicroStrategy's outstanding outstanding convertible bond maturity, principal, coupon rate and total yearly interest  look like:
+
+2028     | $1.01B   @ 0.625%   | $6.3M
+2029     | $3.0B    @ 0%            | $0M
+2030A  | $0.8B     @ 0.625%  | $5M
+2030B  | $2.0B     @ 0%           | $0M
+2031     | $0.604B @ 0.875%  | $5.3M
+2032    | $0.8B       @ 2.25%     | $18M
+
+(Format: <year> | <principal> @ <coupon> | <anual interest>)
+
+If you sum up the interest payments you’ll get ≈$34.6M/year in total. I mentioned ≈$40M/year previously, because besides convertible bond interest, MSTR also pays interest on various other loans.
+
+The yearly revenue of MSTR's software services business is almost 500M/year. Just that revenue is more enough to finance the interest payments on their debt.
+
+~ ✨ ~
+
+⏰ 2025-11-18 14:54
+
+MicroStrategy pays interest on their debt via a mixture of their software business cashflow, existing reserves & short-term investments, credit and Bitcoin sales.
+
+MSTR's annual coupon payments are not that high, maybe ≈$40M/year. The convertible bonds that they issue come with small coupons (e.g. 0%, 0.625%, %0.875, 2.25%)
+
+Given MSTR's software business revenue of ≈500M/year - that portion is more that enough to cover the interest/coupon payments.
+
+~ ✨ ~
+
 ⏰ 2025-11-17 12:44
 
 Europe's Gold Imports and Exports Explained

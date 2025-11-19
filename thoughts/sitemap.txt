@@ -403,6 +403,7 @@ https://illya.sh/thoughts/how-does-the-federal-reserve-set-interest-rates
 https://illya.sh/thoughts/how-does-the-russian-government-get-the-oil-gas-revenue
 https://illya.sh/thoughts/how-exactly-does-bitcoin-break-u-s-dollar-control-when-90-of
 https://illya.sh/thoughts/how-fast-do-you-get-your-deposits-back
+https://illya.sh/thoughts/how-microstrategy-pays-interest-on-its-debt
 https://illya.sh/thoughts/how-will-asset-prices-react-to-feds-interest-rate-decision
 https://illya.sh/thoughts/however-even-if-cbdcs-are-implemented-using-blockchain-its
 https://illya.sh/thoughts/however-eventually-yield-spreads-will-raise-with-high
@@ -562,6 +563,7 @@ https://illya.sh/thoughts/michael-saylor-doesnt-need-to-expose-mstrs-wallets-for
 https://illya.sh/thoughts/microcontrollers-fostered-iot-internet-of-things
 https://illya.sh/thoughts/microstrategy-cant-repay-its-debt-in-equity-stock
 https://illya.sh/thoughts/microstrategy-is-dependent-on-refinancing-capacity-not
+https://illya.sh/thoughts/microstrategy-pays-interest-on-their-debt-via-a-mixture-of
 https://illya.sh/thoughts/mina-protocol-can-implement-the-foundational-layer
 https://illya.sh/thoughts/minas-got-recursion
 https://illya.sh/thoughts/modified-duration-quantifies-how-much-a-bonds-price-will
