@@ -1024,25 +1024,7 @@
         <p class="thought-date-time"><a href="illyas-threads-and-thoughts-now-uses-slugs-in-urls.html" class="thought-permalink">2025-11-04 20:07</a></p>
     </div>
     <div class="thought-content">
-        <p>Illya's Threads and Thoughts Now Uses Slugs In URLs
-
-I've extended my static site with short (thoughts) and longer-form (threads) posts to have their URLs structured in the form of a slug.
-
-Before, each individual thought’s and thread's HTML page name (and by extension, its URL) was based on the timestamp of the post. Now, it’s based on the first line of the post.
-
-So now the URLs are nicer looking, more human readable, and much more SEO and LLM friendly.
-
-For example <a href="https://illya.sh/threads/@1761122490-0" target="_blank">https://illya.sh/threads/@1761122490-0</a> becomes <a href="https://illya.sh/threads/bitcoin-needs-gold-gold-doesnt-need-bitcoin" target="_blank">https://illya.sh/threads/bitcoin-needs-gold-gold-doesnt-need-bitcoin</a>
-
-You will notice that the former URL still functions via a redirect to the new slug-based URL. This is because there were already thousands of pages indexed in search engines, and a smaller amount of third-party links (mostly other platforms, comments, direct shares and intra-links).
-
-This was on the future TODO list since pretty much the start of the project, but it was purposefully delayed until the amount of content justified it. Also ChatGPT kept bugging me to update to slugs for a better SEO
-
-From an architectural perspective everything is still fully static, automated and straightforward:
-
-➖ The slug is constructed by getting the first line of the post, sanitizing it and adding dashes. It can have up to 60 characters in length
-
-➖ The redirects are static. There is a Python list with hardcoded IDs for all previously generated threads and thoughts</p>
+        <p>Illya&#x27;s Threads and Thoughts Now Uses Slugs In URLs<br><br>I&#x27;ve extended my static site with short (thoughts) and longer-form (threads) posts to have their URLs structured in the form of a slug.<br><br>Before, each individual thought’s and thread&#x27;s HTML page name (and by extension, its URL) was based on the timestamp of the post. Now, it’s based on the first line of the post.<br><br>So now the URLs are nicer looking, more human readable, and much more SEO and LLM friendly.<br><br>For example <a href="https://illya.sh/threads/@1761122490-0" target="_blank">https://illya.sh/threads/@1761122490-0</a> becomes <a href="https://illya.sh/threads/bitcoin-needs-gold-gold-doesnt-need-bitcoin" target="_blank">https://illya.sh/threads/bitcoin-needs-gold-gold-doesnt-need-bitcoin</a><br><br>You will notice that the former URL still functions via a redirect to the new slug-based URL. This is because there were already thousands of pages indexed in search engines, and a smaller amount of third-party links (mostly other platforms, comments, direct shares and intra-links).<br><br>This was on the future TODO list since pretty much the start of the project, but it was purposefully delayed until the amount of content justified it. Also ChatGPT kept bugging me to update to slugs for a better SEO<br><br>From an architectural perspective everything is still fully static, automated and straightforward:<br><br>➖ The slug is constructed by getting the first line of the post, sanitizing it and adding dashes. It can have up to 60 characters in length<br><br>➖ The redirects are static. There is a Python list with hardcoded IDs for all previously generated threads and thoughts</p>
         <div class="thought-image">
             <a href="https://illya.sh/staticthoughts/data/images/a780c7bf-36a7-5026-b471-5cf5a374d4e0.jpg" class="lightbox-trigger"><img loading="lazy" src="https://illya.sh/staticthoughts/data/images/a780c7bf-36a7-5026-b471-5cf5a374d4e0.jpg" alt="Thought Image" class="thought-img"></a>
         </div>
