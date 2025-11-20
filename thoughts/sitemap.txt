@@ -563,7 +563,6 @@ https://illya.sh/thoughts/michael-saylor-doesnt-need-to-expose-mstrs-wallets-for
 https://illya.sh/thoughts/microcontrollers-fostered-iot-internet-of-things
 https://illya.sh/thoughts/microstrategy-cant-repay-its-debt-in-equity-stock
 https://illya.sh/thoughts/microstrategy-is-dependent-on-refinancing-capacity-not
-https://illya.sh/thoughts/microstrategy-pays-interest-on-their-debt-via-a-mixture-of
 https://illya.sh/thoughts/mina-protocol-can-implement-the-foundational-layer
 https://illya.sh/thoughts/minas-got-recursion
 https://illya.sh/thoughts/modified-duration-quantifies-how-much-a-bonds-price-will
@@ -794,6 +793,7 @@ https://illya.sh/thoughts/standing-repo-facility-srf-allows-banks-other-financia
 https://illya.sh/thoughts/standing-repo-facility-srf-is-a-policy-rate-set-by-the-fed
 https://illya.sh/thoughts/start-by-asking-chatgpt-or-another-llm-with-the-basel-iii
 https://illya.sh/thoughts/still-at-some-point-qes-wont-be-able-to-prevent-a-prolonged
+https://illya.sh/thoughts/strategy-mstr-pays-interest-on-its-debt-via-a-mixture-of
 https://illya.sh/thoughts/such-an-approach-allows-us-to-search-for-data-with-a
 https://illya.sh/thoughts/sure-if-you
 https://illya.sh/thoughts/sustained-high-bond-yields-combined-with-qe-will-lead-to-an

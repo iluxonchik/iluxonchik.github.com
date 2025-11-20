@@ -6,7 +6,7 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
-⏰ 2025-11-18 15:38
+⏰ 2025-11-20 08:56
 
 How MicroStrategy Pays Interest On Its Debt?
 
@@ -17,9 +17,9 @@ The short answer is that MSTR finances its debt service via a mixture of:
 ➖ Capital market instruments, such as issuing new equity or debt
 ➖ Asset liquidation (Bitcoin sales)
 
-MSTR's annual coupon payments are not that, summing up to ≈$40M/year. The convertible bonds that they issue come with small coupons, so relatively small interest payments.
+MSTR's annual coupon payments sum up to ≈$34.6M/year. Currently, virtually all of MSTR's financial debt is in convertible bonds/senior notes. Those bonds come with small coupons, so relatively small interest payments.
 
-More specifically, here is how MicroStrategy's outstanding outstanding convertible bond maturity, principal, coupon rate and total yearly interest  look like:
+More specifically, here is how MicroStrategy's/Strategy's outstanding outstanding convertible bond maturity, principal, coupon rate and total yearly interest  look like:
 
 2028     | $1.01B   @ 0.625%   | $6.3M
 2029     | $3.0B    @ 0%            | $0M
@@ -30,19 +30,35 @@ More specifically, here is how MicroStrategy's outstanding outstanding convertib
 
 (Format: <year> | <principal> @ <coupon> | <anual interest>)
 
-If you sum up the interest payments you’ll get ≈$34.6M/year in total. I mentioned ≈$40M/year previously, because besides convertible bond interest, MSTR also pays interest on various other loans.
+If you sum up the interest payments you’ll get ≈$34.6M/year in total.
 
-The yearly revenue of MSTR's software services business is almost 500M/year. Just that revenue is more enough to finance the interest payments on their debt.
+The yearly revenue of MSTR's software services business is almost ≈$500M/year. However, their software portion of the business actually operates at ≈60M/year loss, when using U.S. Generally Accepted Accounting Principles (GAAP).
+
+Strategy advertises their software portion of the business as being in profit, but they "manipulate" those numbers a little. This "manipulation" involves MSTR not counting stock-based compensation as expenses.
+
+So when you hear Strategy advertising profit from their software business - they're not using a legally recognized and standardized measure of profit (in the U.S. it's GAAP). So they take the GAAP software profit and then add some things back at their discretion (i.e. they don't count some expenses), thus turning a negative profit (loss) into a positive one.
+
+This means that while their software business revenue can help them with having liquidity for interest payments - it doesn't cover those costs (since they operate at loss, it actually increases the total cost!).
+
+Thus, Strategy finances their interest rate payments with a mixture of:
+
+➖ Existing reserves & short-term investments
+➖ Capital market instruments, such as issuing new equity or debt (main source)
+➖ Asset liquidation
+
+The software revenue provides significant cashflow (compared to interest rate costs), so it can help with having cash readily available to make an interest payment (liquidity), but it doesn't effectively cover them, thus requiring financing from other sources.
 
 ~ ✨ ~
 
 ⏰ 2025-11-18 14:54
 
-MicroStrategy pays interest on their debt via a mixture of their software business cashflow, existing reserves & short-term investments, credit and Bitcoin sales.
+Strategy (MSTR) pays interest on its debt via a mixture of capital markets, software business cashflow, existing reserves & investments and Bitcoin sales.
 
-MSTR's annual coupon payments are not that high, maybe ≈$40M/year. The convertible bonds that they issue come with small coupons (e.g. 0%, 0.625%, %0.875, 2.25%)
+MSTR's annual coupon payments are not that high - ≈$40M/year. The convertible bonds that they issue come with small coupons (e.g. 0%, 0.625%, %0.875, 2.25%)
 
-Given MSTR's software business revenue of ≈500M/year - that portion is more that enough to cover the interest/coupon payments.
+Given MSTR's software business revenue of ≈$500M/year, but it actually operates at a ≈$60M loss after expenses are accounted for.
+
+So effectively, strategy pays interest expenses from the same corporate funds bucket that they rase to purchase Bitcoin in capital markets.
 
 ~ ✨ ~
 
