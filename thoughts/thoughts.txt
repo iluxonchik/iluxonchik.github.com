@@ -6,6 +6,34 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-11-21 14:07
+
+Strategy Invents Financial Metrics And Everybody Applauds 👏
+
+MSTR's own website states that their reports do not reflect the financial reality:
+
+"None of BTC Rating, BTC Credit, or BTC Risk are measures of financial results or liquidity, or key performance indicators."
+
+Strategy's software business also operates at a ≈$60M loss, but on their website and socials they decide to ignore a part of expenses and market it as profit. So they create their own non-standard accounting and credit metrics and advertise those.
+
+Strategy has a consistent pattern of misrepresenting their financials to look more favorable in their public marketing campaigns. A lot of it is in the form of Michael Saylor's videos, podcast appearances and posts on X. A lot seem to think that just because someone says something in a video or a social media post it must be true. 
+
+Words can be deceiving, numbers not so much.
+
+~ ✨ ~
+
+⏰ 2025-11-20 16:41
+
+In Net Terms, Bitcoin is a Geopolitical Liability, Not an Asset
+
+This is because Bitcoin is vulnerable to attacks targeting its consensus and network availability. A sufficiently resourceful adversary can yield the Bitcoin network inoperable and/or untrustable
+
+A nation state adversary can take the Bitcoin network down, at least a significant portion of it. And it doesn't require them having access to quantum computers or compromising the underlying cryptographic primitives in other manner.
+
+This is why sovereign strategic Bitcoin reserves, including BTC as a Central Bank reserve asset is not a good idea, at least in the current state and design of the Bitcoin protocol.
+
+~ ✨ ~
+
 ⏰ 2025-11-20 08:56
 
 How MicroStrategy Pays Interest On Its Debt?
