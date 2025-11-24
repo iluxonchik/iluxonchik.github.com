@@ -6,6 +6,26 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-11-24 15:34
+
+A Primer On Strategy/MSTR Business, Financials, Liquidity and Solvency
+
+There's a lot of misinformation how Strategy/MicroStrategy operates, its business model and what MSTR can and can't do.
+
+This served as a motivation for me to write 4 short, primer-style articles on MSTR:
+
+1️⃣ MSTR’s business model, describing how the company operates as a "Bitcoin treasury" and what does it mean for its solvency. You can read it here: https://illya.sh/threads/microstrategy-is-dependent-on-refinancing-capacity-not
+
+2️⃣ Why MicroStrategy can’t replay its debt using equity/stock. You can read it here: https://illya.sh/threads/microstrategy-cant-repay-its-debt-in-equity-stock
+
+3️⃣ How Strategy pays for its interest, which currently accounts to ≈$40M/year. You can read it here:  https://illya.sh/threads/how-microstrategy-pays-interest-on-its-debt
+  
+4️⃣ How Strategy's marketing is misleading regarding MSTR’s risk, liquidity and solvency. You can read it here: https://illya.sh/threads/strategy-invents-financial-metrics-and-everybody-applauds
+
+I suggest reading them in the same order as above, but they're self-isolated. It's a short read, and together they will give you a good understanding on how Strategy operates (its business model), what are its main risks, what MSTR can and cannot do regarding debt repayments, and why you probably shouldn’t trust their marketing campaigns, including the statements made by Michael Saylor on X and various podcasts/videos where he appears.
+
+~ ✨ ~
+
 ⏰ 2025-11-23 16:11
 
 How the 1916 Fed Act Made Treasuries Prime Collateral
