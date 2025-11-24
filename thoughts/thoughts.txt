@@ -6,6 +6,61 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2025-11-23 16:11
+
+How the 1916 Fed Act Made Treasuries Prime Collateral
+
+Before 1916, the Fed would only lend to banks against "eligible paper", which included self-liquidating commercial loans and agricultural loans.
+
+The Federal Reserve Act 1916 amendment expanded the Fed's legal power to allow for lending to commercial banks against U.S. Treasuries (government bonds).
+
+This effectively turned U.S. government debt into collateral backing Fed's liabilities. This paved the way for the U.S. Treasuries to become the most used form of collateral in short-term wholesale debt markets (e.g. repo/repurchase agreements) today.
+
+~ ✨ ~
+
+⏰ 2025-11-23 13:58
+
+1 oz of Gold: Production Cost and Miner Profit
+
+1 oz of gold costs ≈$1500 to mine (AISC), ≈10$ to transport and refine and another ≈$400 in various other expenses.
+
+In total, that sums to about ≈$1910 to get 1 ounce of gold from the ground to bullion gold bar.
+
+Currently, gold trades at ≈$4100/oz (when you're reading this it's probably much higher 😄). This means there is about $4100-$1910=$2190 of margin on each ounce of refined gold. Almost all of this margin on the sale of an ounce of gold is pocketed by gold miners.
+
+Let's compute the profit per ounce of gold from the perspective of a miner. Gold miners generally sell gold to refineries at a fixed haircut over the spot price. This haircut is generally very small, ≈$10 which accounts mainly for refining and treatment costs. So with the numbers above (also see attached image), gold miners are making a profit of $4100-$(1500+400+10)=$2190 (the same number we computed above).
+
+The larger the premium/gap of gold's spot price over its production costs, the larger is the profit for the miners. As the cost of labor and industrial production increases due to global monetary debasement, so will gold production costs. The same monetary debasement, combined with strong demand for gold will push its price further up. 
+
+In the next 2-3 years, I expect gold price to increase by a larger proportion than gold mining costs, as gold is under several positive price pressure points (central banks, USD alternatives, monetary debasement, etc). Thus, the margin over mining costs should remain high, leading to a sustained high profit per ounce of gold for miners.
+
+This is why gold mining stocks are currently a great investment. The same is true for other miners, such as silver.
+
+~ ✨ ~
+
+⏰ 2025-11-23 01:34
+
+1 oz of Bullion Gold Costs ≈$1910 to Produce
+
+Gold's current spot price is ≈$4100. There's a ≈$2190 price gap between what gold costs to buy and what it costs to mine & refine.
+
+The majority of that $2190 profit per 1 ounce of gold goes to the miners. Gold refiners earn just a few dollars per ounce in profit.
+
+This is why mining stocks are currently such a good investment idea.
+
+~ ✨ ~
+
+⏰ 2025-11-21 20:38
+
+Updated OpenGraph Images On Thoughts & Threads At My Website
+
+Before the OG image was always a "screenshot" of the starting text. Now, if the post or article has an attached image (most of them do), it gets used instead.
+
+Here's an example:
+https://illya.sh/threads/how-microstrategy-pays-interest-on-its-debt
+
+~ ✨ ~
+
 ⏰ 2025-11-21 14:07
 
 Strategy Invents Financial Metrics And Everybody Applauds 👏

@@ -3,6 +3,8 @@ https://illya.sh/thoughts/1
 https://illya.sh/thoughts/1-bitcoin-is-not-money-calling-it-money-wont-make-it-money
 https://illya.sh/thoughts/1-it-will-not-happen
 https://illya.sh/thoughts/1-month-ago-i-wrote-that-silver-could-extend-its-current
+https://illya.sh/thoughts/1-oz-of-bullion-gold-costs-1910-to-produce
+https://illya.sh/thoughts/1-oz-of-gold-production-cost-and-miner-profit
 https://illya.sh/thoughts/10
 https://illya.sh/thoughts/11
 https://illya.sh/thoughts/11-generating-a-random-number-involves
@@ -404,6 +406,7 @@ https://illya.sh/thoughts/how-does-the-russian-government-get-the-oil-gas-revenu
 https://illya.sh/thoughts/how-exactly-does-bitcoin-break-u-s-dollar-control-when-90-of
 https://illya.sh/thoughts/how-fast-do-you-get-your-deposits-back
 https://illya.sh/thoughts/how-microstrategy-pays-interest-on-its-debt
+https://illya.sh/thoughts/how-the-1916-fed-act-made-treasuries-prime-collateral
 https://illya.sh/thoughts/how-will-asset-prices-react-to-feds-interest-rate-decision
 https://illya.sh/thoughts/however-even-if-cbdcs-are-implemented-using-blockchain-its
 https://illya.sh/thoughts/however-eventually-yield-spreads-will-raise-with-high
@@ -940,6 +943,7 @@ https://illya.sh/thoughts/update-usd-index-in-fact-did-not-enjoy-this
 https://illya.sh/thoughts/updated-https-illya-sh-thoughts
 https://illya.sh/thoughts/updated-illyas-threads-url-to-https-illya-sh-threads
 https://illya.sh/thoughts/updated-my-thoughts-section
+https://illya.sh/thoughts/updated-opengraph-images-on-thoughts-threads-at-my-website
 https://illya.sh/thoughts/upwards-retracements-for-us-dollar-index-are-normal
 https://illya.sh/thoughts/us-10-year-bond-yield-spikes-above-4-5-at-open
 https://illya.sh/thoughts/us-bond-yields-are-at-their-2006-levels
