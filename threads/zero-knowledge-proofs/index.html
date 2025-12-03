@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero-knowledge proofs: privacy and verifiable computation</title>
+    
+    <meta property="og:title" content='Zero-knowledge proofs: privacy and verifiable computation' />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content='https://illya.sh/threads/zero-knowledge-proofs' />
+    <meta property="og:image" content='https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp' />
+    <meta property="og:description" content="ZKPs are redefining what's possible in cryptography. These articles dive into zkSNARKs, zkSTARKs, and their applications — from blockchain scaling to privacy-preserving systems that don't require trusting anyone." />
+    <meta property="og:site_name" content="Illya's Finance, Crypto & Macro Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content='Zero-knowledge proofs: privacy and verifiable computation' />
+    <meta name="twitter:description" content="ZKPs are redefining what's possible in cryptography. These articles dive into zkSNARKs, zkSTARKs, and their applications — from blockchain scaling to privacy-preserving systems that don't require trusting anyone." />
+    <meta name="twitter:image" content='https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp' />
+    <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Threads RSS" href="https://illya.sh/threads/feed.xml"/>
+    <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Thoughts RSS" href="https://illya.sh/thoughts/feed.xml"/>
+    
+    <script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/threads"}, {"@type": "CollectionPage", "name": "Zero-knowledge proofs: privacy and verifiable computation", "url": "https://illya.sh/threads/zero-knowledge-proofs", "description": "ZKPs are redefining what's possible in cryptography. These articles dive into zkSNARKs, zkSTARKs, and their applications — from blockchain scaling to privacy-preserving systems that don't require trusting anyone.", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}}, {"@type": "Article", "headline": "zkSNARKs & zkSTARKs: Disrupting Verifiable Computation", "url": "https://illya.sh/threads/zksnarks-zkstarks-disrupting-verifiable-computation.html", "mainEntityOfPage": "https://illya.sh/threads/zksnarks-zkstarks-disrupting-verifiable-computation.html", "datePublished": "2024-04-13T17:28:14+00:00", "dateModified": "2024-04-13T17:28:19+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/favicon.png", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}}, {"@type": "Article", "headline": "Ever wondered how zkSNARKs & zkSTARKs ACTUALLY work under the hood? 🤔", "url": "https://illya.sh/threads/ever-wondered-how-zksnarks-zkstarks-actually-work-under-the.html", "mainEntityOfPage": "https://illya.sh/threads/ever-wondered-how-zksnarks-zkstarks-actually-work-under-the.html", "datePublished": "2024-04-14T12:28:35+00:00", "dateModified": "2024-04-14T12:28:39+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/favicon.png", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}}, {"@type": "Article", "headline": "🎲 Introducing RandoMina - a protocol for provable random number generation on the Mina Protocol blockchain  blockchain! 🔢🔐", "url": "https://illya.sh/threads/introducing-randomina-a-protocol-for-provable-random-number.html", "mainEntityOfPage": "https://illya.sh/threads/introducing-randomina-a-protocol-for-provable-random-number.html", "datePublished": "2024-04-15T17:58:32+00:00", "dateModified": "2024-04-15T17:58:36+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/favicon.png", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}}, {"@type": "Article", "headline": "🧵 Let's dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐", "url": "https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol.html", "mainEntityOfPage": "https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol.html", "datePublished": "2024-04-15T19:24:22+00:00", "dateModified": "2024-04-15T19:24:29+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/favicon.png", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}}, {"@type": "Article", "headline": "🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒", "url": "https://illya.sh/threads/integrating-zklocus-allows-associating-geolocation-data-with.html", "mainEntityOfPage": "https://illya.sh/threads/integrating-zklocus-allows-associating-geolocation-data-with.html", "datePublished": "2024-04-28T18:28:07+00:00", "dateModified": "2024-04-28T18:28:13+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/favicon.png", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}}, {"@type": "Article", "headline": "🚨 PRIVACY IS A MYTH! 🕵️‍♂️", "url": "https://illya.sh/threads/privacy-is-a-myth.html", "mainEntityOfPage": "https://illya.sh/threads/privacy-is-a-myth.html", "datePublished": "2024-05-26T12:01:49+00:00", "dateModified": "2024-05-26T12:02:00+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/favicon.png", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}}, {"@type": "Article", "headline": "🌍 Imagine 24/7 global video surveillance that doesn't compromise privacy", "url": "https://illya.sh/threads/imagine-24-7-global-video-surveillance-that-doesnt.html", "mainEntityOfPage": "https://illya.sh/threads/imagine-24-7-global-video-surveillance-that-doesnt.html", "datePublished": "2024-05-30T17:57:11+00:00", "dateModified": "2024-05-30T17:57:17+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/0804f423-a913-5581-a166-1f019068ac4d.jpg", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}}, {"@type": "Article", "headline": "🛒 E-commerce & Privacy - Myth or Reality? 🔐", "url": "https://illya.sh/threads/e-commerce-privacy-myth-or-reality.html", "mainEntityOfPage": "https://illya.sh/threads/e-commerce-privacy-myth-or-reality.html", "datePublished": "2024-06-01T10:26:59+00:00", "dateModified": "2024-06-01T10:27:09+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/favicon.png", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}}, {"@type": "Article", "headline": "there should be more blockchains running over mesh technologies like LoRA", "url": "https://illya.sh/threads/there-should-be-more-blockchains-running-over-mesh.html", "mainEntityOfPage": "https://illya.sh/threads/there-should-be-more-blockchains-running-over-mesh.html", "datePublished": "2025-08-19T07:52:09+00:00", "dateModified": "2025-08-19T07:54:57+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/e7c63d89-6a15-5a69-82c6-d19fb0c5196d.jpg", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}}]}
+</script>
+    
+    <style>
+        :root {
+            --bg-color: #f4f4f4;
+            --container-bg: #ffffff;
+            --box-bg: #fff;
+            --text-color: #333;
+            --secondary-text-color: #555;
+            --light-text-color: #666;
+            --link-color: #007bff;
+            --link-hover-color: #0056b3;
+            --border-color: #ddd;
+            --soft-border-color: #eee;
+            --dashed-border-color: #aaa;
+            --box-shadow-color: rgba(0,0,0,0.08);
+            --disabled-text-color: #aaa;
+            --disabled-bg-color: #f9f9f9;
+            --hover-bg-color: #eee;
+        }
+
+        .dark-mode {
+            --bg-color: #1a1a1a;
+            --container-bg: #2b2b2b;
+            --box-bg: #2b2b2b;
+            --text-color: #e0e0e0;
+            --secondary-text-color: #b0b0b0;
+            --light-text-color: #999;
+            --link-color: #58a6ff;
+            --link-hover-color: #80bfff;
+            --border-color: #444;
+            --soft-border-color: #333;
+            --dashed-border-color: #666;
+            --box-shadow-color: rgba(255,255,255,0.08);
+            --disabled-text-color: #777;
+            --disabled-bg-color: #3a3a3a;
+            --hover-bg-color: #383838;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --container-bg: #2b2b2b;
+                --box-bg: #2b2b2b;
+                --text-color: #e0e0e0;
+                --secondary-text-color: #b0b0b0;
+                --light-text-color: #999;
+                --link-color: #58a6ff;
+                --link-hover-color: #80bfff;
+                --border-color: #444;
+                --soft-border-color: #333;
+                --dashed-border-color: #666;
+                --box-shadow-color: rgba(255,255,255,0.08);
+                --disabled-text-color: #777;
+                --disabled-bg-color: #3a3a3a;
+                --hover-bg-color: #383838;
+            }
+            .light-mode {
+                --bg-color: #f4f4f4;
+                --container-bg: #ffffff;
+                --box-bg: #fff;
+                --text-color: #333;
+                --secondary-text-color: #555;
+                --light-text-color: #666;
+                --link-color: #007bff;
+                --link-hover-color: #0056b3;
+                --border-color: #ddd;
+                --soft-border-color: #eee;
+                --dashed-border-color: #aaa;
+                --box-shadow-color: rgba(0,0,0,0.08);
+                --disabled-text-color: #aaa;
+                --disabled-bg-color: #f9f9f9;
+                --hover-bg-color: #eee;
+            }
+        }
+
+        /* --- Webfont: Literata (variable, WOFF2) for reading surfaces --- */
+        @font-face {
+            font-family: 'Literata';
+            src: url('/staticthoughts/data/fonts/literata/Literata-VF-latin.woff2') format('woff2-variations');
+            font-style: normal;
+            font-weight: 200 900;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Literata';
+            src: url('/staticthoughts/data/fonts/literata/Literata-Italic-VF-latin.woff2') format('woff2-variations');
+            font-style: italic;
+            font-weight: 200 900;
+            font-display: swap;
+        }
+
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
+        a:visited {
+            color: var(--link-color);
+        }
+
+        .container {
+            background-color: var(--container-bg);
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            max-width: 750px;
+            width: 100%;
+            box-shadow: 0 1px 4px var(--box-shadow-color);
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        /* Profile Box Styling */
+        .profile-box {
+            border: 2px dashed var(--dashed-border-color); /* USE VAR */
+            padding: 15px; 
+            margin-bottom: 30px; 
+            background-color: var(--box-bg); /* USE VAR */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+        }
+        .profile-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0; /* Remove vertical spacing */
+            width: 100%;
+        }
+        .profile-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 1px solid var(--soft-border-color); /* USE VAR */
+            flex-shrink: 0;
+            cursor: pointer; /* Add cursor pointer for toggle */
+            transition: border-color 0.3s ease; /* Smooth transition */
+        }
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .profile-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 2px;
+            color: var(--text-color); /* Ensure uses variable */
+        }
+        .profile-title {
+            color: var(--secondary-text-color); /* USE VAR */
+            font-size: 0.95em;
+        }
+        .profile-links {
+            font-size: 0.9em;
+            color: var(--secondary-text-color); /* USE VAR */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            align-items: center;
+            gap: 8px 16px; 
+            padding: 0; 
+            margin-top: 12px; 
+            line-height: 1.4;
+        }
+        .profile-links a {
+            text-decoration: none;
+            color: var(--link-color); /* USE VAR */
+            transition: color 0.2s ease;
+            white-space: nowrap;
+            padding: 2px 4px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .profile-links a:hover {
+            color: var(--link-hover-color); /* USE VAR */
+            background-color: var(--hover-bg-color);
+        }
+
+        /* Threads header */
+        .threads-header {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: var(--text-color);
+            margin: 0 0 25px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--soft-border-color);
+            text-align: center;
+        }
+        .threads-header {
+            font-family: Georgia, 'Literata', serif;
+            font-weight: 600;
+            font-optical-sizing: auto;
+        }
+        .threads-description {
+            margin: -10px 0 25px 0;
+            color: var(--secondary-text-color);
+            text-align: center;
+            font-size: 0.95em;
+            line-height: 1.35;
+        }
+
+        /* Thread entry styling */
+        .thread-entry {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--box-bg);
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .thread-entry:hover {
+            background-color: var(--hover-bg-color);
+            border-color: var(--text-color);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .thread-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 1px solid var(--soft-border-color);
+            flex-shrink: 0;
+        }
+
+        .thread-info {
+            flex-grow: 1;
+            min-width: 0;
+        }
+
+        .thread-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: var(--text-color);
+            margin: 0 0 3px 0;
+            line-height: 1.25;
+            word-wrap: break-word;
+        }
+        .thread-title {
+            font-family: 'Literata', Georgia, serif;
+            font-weight: 400;
+            font-optical-sizing: auto;
+        }
+
+        .thread-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 0.8em;
+            color: var(--secondary-text-color);
+            margin-top: 2px;
+            line-height: 1.2;
+        }
+
+        .thread-stats {
+            font-size: 0.75em;
+            color: var(--light-text-color);
+            margin-top: 1px;
+            line-height: 1.2;
+        }
+
+        /* Pagination styling */
+        .pagination {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--soft-border-color);
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: border-color 0.3s ease;
+        }
+        .pagination a, .pagination span {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 0 4px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: var(--link-color);
+            text-decoration: none;
+            transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+            font-size: 0.9em;
+        }
+        .pagination a:hover {
+            background-color: var(--hover-bg-color);
+            color: var(--link-hover-color);
+        }
+        .pagination span.disabled {
+            color: var(--disabled-text-color);
+            background-color: var(--disabled-bg-color);
+            cursor: default;
+            border-color: var(--border-color);
+        }
+        .pagination span.page-info {
+            border: none;
+            color: var(--secondary-text-color);
+            background-color: transparent;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                max-width: 100%;
+            }
+             /* Adjusted Profile Box for Mobile */
+             .profile-box {
+                 padding: 12px; /* Further reduced padding */
+                 margin-bottom: 25px; /* Further reduced margin */
+             }
+            /* Adjusted Profile Content for Mobile */
+            .profile-content {
+                 align-items: center;
+                 justify-content: center;
+                 margin-bottom: 0; /* No spacing between profile content and links */
+            }
+            .profile-img {
+                width: 50px;
+                height: 50px;
+                margin-right: 12px;
+            }
+             .profile-name {
+                 font-size: 1.1em;
+             }
+             .profile-title {
+                 font-size: 0.9em;
+             }
+             /* Adjusted Profile Links for Mobile */
+            .profile-links {
+                font-size: 0.82em;
+                margin-top: 10px;
+                gap: 6px 12px; /* Optimized gap for mobile */
+                justify-content: center; /* Ensure centering on mobile too */
+                line-height: 1.3;
+            }
+            .profile-links a {
+                padding: 3px 6px; /* Slightly more padding for easier mobile tapping */
+                border-radius: 4px;
+            }
+            .threads-header {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+            }
+            .thread-entry {
+                padding: 12px;
+                margin-bottom: 12px;
+            }
+            .thread-image {
+                width: 50px;
+                height: 50px;
+                margin-right: 12px;
+            }
+            .thread-title {
+                font-size: 1em;
+            }
+            .thread-meta {
+                flex-direction: column;
+                gap: 2px;
+                font-size: 0.75em;
+            }
+            .thread-stats {
+                font-size: 0.7em;
+                margin-top: 1px;
+            }
+            .pagination {
+                margin-top: 20px;
+                padding-top: 15px;
+                font-size: 0.85em;
+            }
+            .pagination a, .pagination span {
+                padding: 6px 10px;
+                margin: 0 2px;
+            }
+            .pagination span.page-info {
+                display: none;
+            }
+        }
+
+        /* Extra small screens (iPhone SE, etc.) */
+        @media (max-width: 375px) {
+            .profile-links {
+                font-size: 0.78em;
+                gap: 4px 8px; /* Tighter gap for very small screens */
+                margin-top: 8px;
+            }
+            .profile-links a {
+                padding: 2px 4px; /* Compact padding for very small screens */
+                border-radius: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-box">
+    <div class="profile-content">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="Profile Picture" class="profile-img">
+        <div class="profile-details">
+            <div class="profile-name">Illya Gerasymchuk</div>
+            <div class="profile-title">Entrepreneur / Engineer</div>
+        </div>
+    </div>
+    <div class="profile-links">
+        <a href="https://illya.sh" target="_blank">🏠 Homepage</a><a href="https://illya.sh/thoughts/">💭 Thoughts</a><a href="https://illya.sh/threads/tags/">📂 Topics</a><a href="mailto:hello@illya.sh" target="_blank">✉️ Email</a><a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a><a href="https://illya.sh/threads/feed.xml" target="_blank">📡 RSS</a>
+    </div>
+</div>
+
+        <h2 class="threads-header">Zero-knowledge proofs: privacy and verifiable computation</h2>
+        <p class="threads-description">ZKPs are redefining what&#x27;s possible in cryptography. These articles dive into zkSNARKs, zkSTARKs, and their applications — from blockchain scaling to privacy-preserving systems that don&#x27;t require trusting anyone.</p>
+        <div class="threads-section">
+            <a href="https://illya.sh/threads/there-should-be-more-blockchains-running-over-mesh.html" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/images/e7c63d89-6a15-5a69-82c6-d19fb0c5196d.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">there should be more blockchains running over mesh technologies like LoRA</div>
+        <div class="thread-meta">
+            <span>Started: 2025-08-19</span>
+            <span>Updated: 2025-08-19</span>
+        </div>
+        <div class="thread-stats">4 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/e-commerce-privacy-myth-or-reality.html" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/favicon.png" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🛒 E-commerce &amp; Privacy - Myth or Reality? 🔐</div>
+        <div class="thread-meta">
+            <span>Started: 2024-06-01</span>
+            <span>Updated: 2024-06-01</span>
+        </div>
+        <div class="thread-stats">15 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/imagine-24-7-global-video-surveillance-that-doesnt.html" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/images/0804f423-a913-5581-a166-1f019068ac4d.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🌍 Imagine 24/7 global video surveillance that doesn&#x27;t compromise privacy</div>
+        <div class="thread-meta">
+            <span>Started: 2024-05-30</span>
+            <span>Updated: 2024-05-30</span>
+        </div>
+        <div class="thread-stats">10 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/privacy-is-a-myth.html" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/favicon.png" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🚨 PRIVACY IS A MYTH! 🕵️‍♂️</div>
+        <div class="thread-meta">
+            <span>Started: 2024-05-26</span>
+            <span>Updated: 2024-05-26</span>
+        </div>
+        <div class="thread-stats">12 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/integrating-zklocus-allows-associating-geolocation-data-with.html" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/favicon.png" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒</div>
+        <div class="thread-meta">
+            <span>Started: 2024-04-28</span>
+            <span>Updated: 2024-04-28</span>
+        </div>
+        <div class="thread-stats">4 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol.html" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/favicon.png" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐</div>
+        <div class="thread-meta">
+            <span>Started: 2024-04-15</span>
+            <span>Updated: 2024-04-15</span>
+        </div>
+        <div class="thread-stats">14 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/introducing-randomina-a-protocol-for-provable-random-number.html" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/favicon.png" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">🎲 Introducing RandoMina - a protocol for provable random number generation on the Mina Protocol blockchain  blockchain! 🔢🔐</div>
+        <div class="thread-meta">
+            <span>Started: 2024-04-15</span>
+            <span>Updated: 2024-04-15</span>
+        </div>
+        <div class="thread-stats">8 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/ever-wondered-how-zksnarks-zkstarks-actually-work-under-the.html" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/favicon.png" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">Ever wondered how zkSNARKs &amp; zkSTARKs ACTUALLY work under the hood? 🤔</div>
+        <div class="thread-meta">
+            <span>Started: 2024-04-14</span>
+            <span>Updated: 2024-04-14</span>
+        </div>
+        <div class="thread-stats">7 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/zksnarks-zkstarks-disrupting-verifiable-computation.html" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/favicon.png" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">zkSNARKs &amp; zkSTARKs: Disrupting Verifiable Computation</div>
+        <div class="thread-meta">
+            <span>Started: 2024-04-13</span>
+            <span>Updated: 2024-04-13</span>
+        </div>
+        <div class="thread-stats">10 thoughts</div>
+    </div>
+</a>
+        </div>
+        
+    </div>
+</body>
+</html>
