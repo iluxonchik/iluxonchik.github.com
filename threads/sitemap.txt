@@ -162,7 +162,6 @@ https://illya.sh/threads/stablecoins
 https://illya.sh/threads/strategy-invents-financial-metrics-and-everybody-applauds
 https://illya.sh/threads/strategy-mstr-microstrategy
 https://illya.sh/threads/strategy-mstr-pays-interest-on-its-debt-via-a-mixture-of
-https://illya.sh/threads/tags
 https://illya.sh/threads/tariffs
 https://illya.sh/threads/the-best-countermeasure-that-eu-can-take-is-swapping-us
 https://illya.sh/threads/the-bitcoin-ordinal-protocol-explained-an-innovation-which
@@ -182,6 +181,7 @@ https://illya.sh/threads/this-is-how-the-soviet-union-kickstarted-eurodollar-mar
 https://illya.sh/threads/to-lower-the-mortgage-rates-the-fed-can-purchase-agency-mbs
 https://illya.sh/threads/tokenization-rwa
 https://illya.sh/threads/tokenizing-european-long-term-investment-funds-eltif-2-0-on
+https://illya.sh/threads/topics
 https://illya.sh/threads/uns-model-double-taxation-convention-has-a-clear-key-benefit
 https://illya.sh/threads/us-dollar-index-going-to-98-3
 https://illya.sh/threads/us-treasuries-are-by-far-the-most-popular-collateral-type-in

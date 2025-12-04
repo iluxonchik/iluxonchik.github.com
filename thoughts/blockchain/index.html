@@ -1,0 +1,2274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basic SEO / Title -->
+    <title>Blockchain infrastructure &amp; scaling updates – Thoughts</title> 
+    
+    <!-- Open Graph / Social Media Tags -->
+    <meta property="og:title" content='Blockchain infrastructure & scaling updates – Thoughts' />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content='https://illya.sh/thoughts/blockchain' />
+    <meta property="og:image" content='https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp' />
+    <meta property="og:description" content='Short notes on L1 and L2 roadmaps, consensus changes, validator economics, MEV and scaling milestones.' />
+    <meta property="og:site_name" content="Illya's Finance, Crypto & Macro Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content='Blockchain infrastructure & scaling updates – Thoughts' />
+    <meta name="twitter:description" content='Short notes on L1 and L2 roadmaps, consensus changes, validator economics, MEV and scaling milestones.' />
+    <meta name="twitter:image" content='https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp' />
+    <!-- RSS Feed Discovery -->
+    <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Thoughts RSS" href="https://illya.sh/thoughts/feed.xml"/>
+    <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Threads RSS" href="https://illya.sh/threads/feed.xml"/>
+
+    <!-- Font Preload (CORS/crossorigin required for woff2) -->
+    <link rel="preload" href="/staticthoughts/data/fonts/literata/Literata-VF-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/staticthoughts/data/fonts/literata/Literata-Italic-VF-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/thoughts"}, {"@type": "CollectionPage", "name": "Blockchain infrastructure & scaling updates", "url": "https://illya.sh/thoughts/blockchain", "description": "Short notes on L1 and L2 roadmaps, consensus changes, validator economics, MEV and scaling milestones.", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}}, {"@type": "BlogPosting", "headline": "however, even if CBDCs are implemented using blockchain - it's unlikely to be a public, permissionless blockc...", "articleBody": "however, even if CBDCs are implemented using blockchain - it's unlikely to be a public, permissionless blockchain like Ethereum", "url": "https://illya.sh/thoughts/however-even-if-cbdcs-are-implemented-using-blockchain-its.html", "mainEntityOfPage": "https://illya.sh/thoughts/however-even-if-cbdcs-are-implemented-using-blockchain-its.html", "datePublished": "2025-08-28T08:12:31+00:00", "dateModified": "2025-08-28T08:12:31+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "only 6% of advanced economies (AE) central banks and 40% of emerging economies (EM) central banks are conside...", "articleBody": "only 6% of advanced economies (AE) central banks and 40% of emerging economies (EM) central banks are considering distributed ledger technology (DLT) as an implementation layer for retail CBDCs\n\nhere, consider DLT = blockchain", "url": "https://illya.sh/thoughts/only-6-of-advanced-economies-ae-central-banks-and-40-of.html", "mainEntityOfPage": "https://illya.sh/thoughts/only-6-of-advanced-economies-ae-central-banks-and-40-of.html", "datePublished": "2025-08-28T08:05:56+00:00", "dateModified": "2025-08-28T08:05:56+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/images/156ef508-a7b2-57d3-bb41-71a6fc51903b.jpg"}, {"@type": "BlogPosting", "headline": "there should be more blockchains running over mesh technologies like LoRA", "articleBody": "there should be more blockchains running over mesh technologies like LoRA\n\nthis way you can keep the consensus and payments running even when internet is down\n\npolynomial commitments (ZK) can be used to store-and-forward transactions", "url": "https://illya.sh/thoughts/there-should-be-more-blockchains-running-over-mesh.html", "mainEntityOfPage": "https://illya.sh/thoughts/there-should-be-more-blockchains-running-over-mesh.html", "datePublished": "2025-08-19T07:52:09+00:00", "dateModified": "2025-08-19T07:52:09+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/images/e7c63d89-6a15-5a69-82c6-d19fb0c5196d.jpg"}, {"@type": "BlogPosting", "headline": "stablecoin issuers could intermediate the issuance process, so you don't need to get all credit institutions...", "articleBody": "stablecoin issuers could intermediate the issuance process, so you don't need to get all credit institutions on-chain from the start\n\nnon-algorithmic stablecoin issuance already happens off-chain and presumes trust in a third party\n\nthis would just be faster. more liquidity", "url": "https://illya.sh/thoughts/stablecoin-issuers-could-intermediate-the-issuance-process.html", "mainEntityOfPage": "https://illya.sh/thoughts/stablecoin-issuers-could-intermediate-the-issuance-process.html", "datePublished": "2025-08-09T14:37:34+00:00", "dateModified": "2025-08-09T14:37:34+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "now imagine when credit institutions can tokenize new credit and allow automated stablecoin issuance backed b...", "articleBody": "now imagine when credit institutions can tokenize new credit and allow automated stablecoin issuance backed by that credit\n\nin practice it's code in smart contract that wraps one token with another\n\ni created a similar project on an Ethereum hackathon ⬇️\nhttps://github.com/iluxonchik/eth-lisbon-hackathon-23", "url": "https://illya.sh/thoughts/now-imagine-when-credit-institutions-can-tokenize-new-credit.html", "mainEntityOfPage": "https://illya.sh/thoughts/now-imagine-when-credit-institutions-can-tokenize-new-credit.html", "datePublished": "2025-08-09T14:30:53+00:00", "dateModified": "2025-08-09T14:30:53+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "Part of Bitcoin's value derives from the total electricity cost of maintaining a decentralized, trustless, im...", "articleBody": "Part of Bitcoin's value derives from the total electricity cost of maintaining a decentralized, trustless, immutable ledger of transactions for >15 years\n\n20% of GDP is spent on financial services. Blockchains remove intermediaries & improve efficiency\n\nIt's apples to oranges 🤷‍♀️ https:/", "url": "https://illya.sh/thoughts/part-of-bitcoins-value-derives-from-the-total-electricity.html", "mainEntityOfPage": "https://illya.sh/thoughts/part-of-bitcoins-value-derives-from-the-total-electricity.html", "datePublished": "2024-11-15T10:15:51+00:00", "dateModified": "2024-11-15T10:15:51+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "🚀🎧 Podcast covering #BRICS Currency on the blockchain is out!", "articleBody": "🚀🎧 Podcast covering #BRICS Currency on the blockchain is out!\n\n🔗🔈: \n\n🤖 Smart contracts & #DeFi are an ideal match for #BRICSPay showcased at #BRICS2024 summit. Podcast & article exply why\n\n🎤 AI Audio created with NotebookLM  https://", "url": "https://illya.sh/thoughts/podcast-covering-brics-currency-on-the-blockchain-is-out.html", "mainEntityOfPage": "https://illya.sh/thoughts/podcast-covering-brics-currency-on-the-blockchain-is-out.html", "datePublished": "2024-11-05T21:36:52+00:00", "dateModified": "2024-11-05T21:36:52+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/images/a778ee08-5c4d-5fa5-a552-172c1163f16e.jpg"}, {"@type": "BlogPosting", "headline": "In summary, blockchain-based Tokenized Liquid Futures:", "articleBody": "In summary, blockchain-based Tokenized Liquid Futures:\n\n- Eliminate intermediaries\n- Increase transparency\n- Enhance liquidity\n- Automate risk management\n- Provide flexible capital deployment\n\nThus enabling a disruptive #DeFi use-case over its #TradFi equivalent", "url": "https://illya.sh/thoughts/in-summary-blockchain-based-tokenized-liquid-futures.html", "mainEntityOfPage": "https://illya.sh/thoughts/in-summary-blockchain-based-tokenized-liquid-futures.html", "datePublished": "2024-07-01T21:00:36+00:00", "dateModified": "2024-07-01T21:00:36+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "The smart contract automates risk management on-chain by:", "articleBody": "The smart contract automates risk management on-chain by:\n\n1️⃣ Enforcing margin requirements\n2️⃣ Handling liquidations\n3️⃣ Ensuring contract settlement\n\nRemoving the need for trusted third parties and ensuring transparency 🛡️", "url": "https://illya.sh/thoughts/the-tokenization-of-the-long-and-the-short-positions-of-the.html", "mainEntityOfPage": "https://illya.sh/thoughts/the-tokenization-of-the-long-and-the-short-positions-of-the.html", "datePublished": "2024-07-01T21:00:35+00:00", "dateModified": "2024-07-01T21:00:35+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "Smart contract on the blockchain tracks:", "articleBody": "Smart contract on the blockchain tracks:\n\n1️⃣ Deposited amounts for each party\n2️⃣ Required deposits at each checkpoint\n3️⃣ Maturity date\n\nIt uses this data to automatically enforce the increasing margin schedule 🔐", "url": "https://illya.sh/thoughts/smart-contract-on-the-blockchain-tracks.html", "mainEntityOfPage": "https://illya.sh/thoughts/smart-contract-on-the-blockchain-tracks.html", "datePublished": "2024-07-01T21:00:33+00:00", "dateModified": "2024-07-01T21:00:33+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "🔐 Smart contracts on the blockchain enable full tokenization of futures contracts", "articleBody": "🔐 Smart contracts on the blockchain enable full tokenization of futures contracts\n\n📈 Both long and short positions become tokens, representing a \"promise of future asset or money\"\n\nThis allows partial selling of positions, increasing liquidity, flexibility and reducing risk 💧", "url": "https://illya.sh/thoughts/smart-contracts-on-the-blockchain-enable-full-tokenization.html", "mainEntityOfPage": "https://illya.sh/thoughts/smart-contracts-on-the-blockchain-enable-full-tokenization.html", "datePublished": "2024-07-01T21:00:29+00:00", "dateModified": "2024-07-01T21:00:29+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "🏦 Traditional futures require centralized clearing houses", "articleBody": "🏦 Traditional futures require centralized clearing houses\n\nOn the blockchain, smart contracts eliminate intermediaries, enabling decentralized peer-to-peer agreements\n\nExample: A contract to trade 1000 $MINA for 2000 $USDC in 1 year, regardless of future $MINA price 📊", "url": "https://illya.sh/thoughts/traditional-futures-require-centralized-clearing-houses.html", "mainEntityOfPage": "https://illya.sh/thoughts/traditional-futures-require-centralized-clearing-houses.html", "datePublished": "2024-07-01T21:00:28+00:00", "dateModified": "2024-07-01T21:00:28+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "👉 Learn more about Zero-Knowledge Proofs, their applications, and how they redefine privacy:", "articleBody": "👉 Learn more about Zero-Knowledge Proofs, their applications, and how they redefine privacy:\n\n📍 zkLocus: https://zklocus.dev/\n\n📖 Full article: https://illya.sh/blog/posts/privacy-is-a-myth-without-zero-knowledge-proofs/\n\n💜 Let's build a Web3 future where privacy is the default, not an afterthought", "url": "https://illya.sh/thoughts/learn-more-about-zero-knowledge-proofs-their-applications.html", "mainEntityOfPage": "https://illya.sh/thoughts/learn-more-about-zero-knowledge-proofs-their-applications.html", "datePublished": "2024-06-01T10:27:09+00:00", "dateModified": "2024-06-01T10:27:09+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "🟣 This entire solution can be implemented on Mina Protocol blockchain! 💪", "articleBody": "🟣 This entire solution can be implemented on Mina Protocol blockchain! 💪\n\n💻 $MINA's zkApps enable efficient, scalable and verifiable computation powered by zkSNARKs \n\n📍 Combined with zkLocus for geolocation proofs, we have all of the necessary components", "url": "https://illya.sh/thoughts/throughout-this-process-your-name-and-address-remain-hidden.html", "mainEntityOfPage": "https://illya.sh/thoughts/throughout-this-process-your-name-and-address-remain-hidden.html", "datePublished": "2024-06-01T10:27:06+00:00", "dateModified": "2024-06-01T10:27:06+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "📋 Here's how Mina Protocol blockchain fits into the picture:", "articleBody": "📋 Here's how Mina Protocol blockchain fits into the picture:\n\n1️⃣ zkSNARK circuits verifying camera code execution are stored on Mina\n2️⃣ Commitments & ZKP circuits to the zkML model are also stored on the blockchain\n3️⃣ All proofs from cameras are submitted & verified against them", "url": "https://illya.sh/thoughts/heres-how-mina-protocol-blockchain-fits-into-the-picture.html", "mainEntityOfPage": "https://illya.sh/thoughts/heres-how-mina-protocol-blockchain-fits-into-the-picture.html", "datePublished": "2024-05-30T17:57:16+00:00", "dateModified": "2024-05-30T17:57:16+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "🟣 Mina Protocol can implement the foundational layer 🚀", "articleBody": "🟣 Mina Protocol can implement the foundational layer 🚀\n\nVerification keys that attest to the correct execution of the camera's code can be stored on $MINA 🔑\n\nIn practice, this involves commitments and ZKP circuits to the zkML model, thus ensuring the right one is used 🧠", "url": "https://illya.sh/thoughts/mina-protocol-can-implement-the-foundational-layer.html", "mainEntityOfPage": "https://illya.sh/thoughts/mina-protocol-can-implement-the-foundational-layer.html", "datePublished": "2024-05-30T17:57:15+00:00", "dateModified": "2024-05-30T17:57:15+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "Read the full article to dive deeper into how the BRICS digital currency can be realized as a cryptocurrency...", "articleBody": "Read the full article to dive deeper into how the BRICS digital currency can be realized as a cryptocurrency on a public blockchain. 📖\n\n🔗 https://illya.sh/blog/posts/brics-cryptocurrency-blockchain/\n\nLet's discuss! Share your thoughts below🗣️", "url": "https://illya.sh/thoughts/read-the-full-article-to-dive-deeper-into-how-the-brics.html", "mainEntityOfPage": "https://illya.sh/thoughts/read-the-full-article-to-dive-deeper-into-how-the-brics.html", "datePublished": "2024-04-28T18:28:13+00:00", "dateModified": "2024-04-28T18:28:13+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "🌟 By embracing public blockchains and ZeroKnowledge technologies, the BRICS digital currency can pioneer a ne...", "articleBody": "🌟 By embracing public blockchains and ZeroKnowledge technologies, the BRICS digital currency can pioneer a new era of finance🔮\n\nA more efficient, interoperable, decentralized, and inclusive financial system aligned with Web3 principles 🌍", "url": "https://illya.sh/thoughts/by-embracing-public-blockchains-and-zeroknowledge.html", "mainEntityOfPage": "https://illya.sh/thoughts/by-embracing-public-blockchains-and-zeroknowledge.html", "datePublished": "2024-04-28T18:28:12+00:00", "dateModified": "2024-04-28T18:28:12+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "🧩 Implementing the BRICS currency on a public blockchain reduces cost & complexity", "articleBody": "🧩 Implementing the BRICS currency on a public blockchain reduces cost & complexity\n\nThe dynamic supply is controlled by smart contracts, while ZKPs bridge data from arbitrary sources 🌉\n\nDemand is driven by incentives for participating in the BRICS economic network 💰", "url": "https://illya.sh/thoughts/implementing-the-brics-currency-on-a-public-blockchain.html", "mainEntityOfPage": "https://illya.sh/thoughts/implementing-the-brics-currency-on-a-public-blockchain.html", "datePublished": "2024-04-28T18:28:10+00:00", "dateModified": "2024-04-28T18:28:10+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "🔍 Let's explore how the BRICS currency can leverage these technologies:", "articleBody": "🔍 Let's explore how the BRICS currency can leverage these technologies:\n\n✅ Dynamic supply mechanism via smart contracts\n✅ Legal compliance on-chain using ZKPs\n✅ Integration with DeFi and zkLocus for authenticated private geolocation\n\n👉 A cryptocurrency for Web3", "url": "https://illya.sh/thoughts/lets-explore-how-the-brics-currency-can-leverage-these.html", "mainEntityOfPage": "https://illya.sh/thoughts/lets-explore-how-the-brics-currency-can-leverage-these.html", "datePublished": "2024-04-28T18:28:06+00:00", "dateModified": "2024-04-28T18:28:06+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "💡 While the original paper suggests the impossibility of realizing the BRICS currency as a cryptocurrency, we...", "articleBody": "💡 While the original paper suggests the impossibility of realizing the BRICS currency as a cryptocurrency, we'll challenge it 🤔\n\nA public blockchain with SmartContracts, combined with Zero-Knowledge Proofs (ZKP), provides a natural fit for the implementation 🧩", "url": "https://illya.sh/thoughts/the-brics-digital-currency-aims-to-integrate-with-existing.html", "mainEntityOfPage": "https://illya.sh/thoughts/the-brics-digital-currency-aims-to-integrate-with-existing.html", "datePublished": "2024-04-28T18:28:05+00:00", "dateModified": "2024-04-28T18:28:05+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙", "articleBody": "🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙\n\nIn this article, we explore how the BRICS currency can be implemented on a public blockchain and challenge the claims made in \"Digital Money Options for the BRICS\" for Web3", "url": "https://illya.sh/thoughts/brics-digital-currency-cryptocurrency-on-a-public-blockchain.html", "mainEntityOfPage": "https://illya.sh/thoughts/brics-digital-currency-cryptocurrency-on-a-public-blockchain.html", "datePublished": "2024-04-28T18:28:04+00:00", "dateModified": "2024-04-28T18:28:04+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "🧵 Let's dive into the technical details of RandoMina: a protocol for provable random number generation on  Mi...", "articleBody": "🧵 Let's dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐\n\n💡 Powering zkLocus\n\n🔗 GitHub: https://github.com/iluxonchik/randomina/", "url": "https://illya.sh/thoughts/lets-dive-into-the-technical-details-of-randomina-a-protocol.html", "mainEntityOfPage": "https://illya.sh/thoughts/lets-dive-into-the-technical-details-of-randomina-a-protocol.html", "datePublished": "2024-04-15T19:24:22+00:00", "dateModified": "2024-04-15T19:24:22+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "⚡ Key Features:", "articleBody": "⚡ Key Features:\n\n🔀 Provable pseudo-randomness: VRF\n🔒 Fresh & Tamper-proof: ZK and Mina Protocol blockchain\n⚡ Efficient & scalable: zkSNARKs\n🌐 Decentralized & trustless: $MINA\n🔭 Transparent & auditable: OpenSource", "url": "https://illya.sh/thoughts/key-features.html", "mainEntityOfPage": "https://illya.sh/thoughts/key-features.html", "datePublished": "2024-04-15T17:58:33+00:00", "dateModified": "2024-04-15T17:58:33+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}, {"@type": "BlogPosting", "headline": "🔗 Deep dive into ZKP protocols of zkSNARK/zkSTARK and how combined with the blockchain they enable a new Veri...", "articleBody": "🔗 Deep dive into ZKP protocols of zkSNARK/zkSTARK and how combined with the blockchain they enable a new Verifiable Computation model by providing a cryptographic observation of a computation👇\n\nhttps://illya.sh/blog/posts/zksnark-zkstark-verifiable-computation-model-blockchain/", "url": "https://illya.sh/thoughts/when-combined-with-the-blockchain-zksnarks-zkstarks-are.html", "mainEntityOfPage": "https://illya.sh/thoughts/when-combined-with-the-blockchain-zksnarks-zkstarks-are.html", "datePublished": "2024-04-14T12:28:39+00:00", "dateModified": "2024-04-14T12:28:39+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "author": {"@type": "Person", "name": "Illya Gerasymchuk"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk"}, "image": "https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp"}]}
+</script>
+    
+    <style>
+        :root {
+            /* Light Theme Variables */
+            --bg-color: #f4f4f4;
+            --container-bg: #ffffff;
+            --box-bg: #fff;
+            --text-color: #333;
+            --secondary-text-color: #555;
+            --light-text-color: #666;
+            --link-color: #007bff;
+            --link-hover-color: #0056b3;
+            --border-color: #ddd;
+            --soft-border-color: #eee;
+            --dashed-border-color: #aaa;
+            --box-shadow-color: rgba(0,0,0,0.08);
+            --lightbox-bg: rgba(0, 0, 0, 0.9);
+            --lightbox-close-bg: rgba(255, 255, 255, 0.8);
+            --lightbox-close-hover-bg: rgba(255, 255, 255, 1);
+            --lightbox-close-color: #000;
+            --disabled-text-color: #aaa;
+            --disabled-bg-color: #f9f9f9;
+            --hover-bg-color: #eee;
+        }
+
+        /* Dark Theme Variables (applied via media query or body class) */
+        .dark-mode {
+            --bg-color: #1a1a1a; /* Dark grey background */
+            --container-bg: #2b2b2b; /* Slightly lighter container */
+            --box-bg: #2b2b2b; /* Same as container for profile/thought boxes */
+            --text-color: #e0e0e0; /* Light grey text */
+            --secondary-text-color: #b0b0b0; /* Medium grey */
+            --light-text-color: #999; /* Lighter grey for dates etc. */
+            --link-color: #58a6ff; /* Lighter blue for links */
+            --link-hover-color: #80bfff; /* Even lighter blue on hover */
+            --border-color: #444; /* Darker border */
+            --soft-border-color: #333; /* Even darker soft border */
+            --dashed-border-color: #666; /* Darker dashed border */
+            --box-shadow-color: rgba(255,255,255,0.08); /* Light shadow */
+            --lightbox-bg: rgba(0, 0, 0, 0.95); /* Slightly more opaque */
+            --lightbox-close-bg: rgba(50, 50, 50, 0.8);
+            --lightbox-close-hover-bg: rgba(70, 70, 70, 1);
+            --lightbox-close-color: #eee;
+            --disabled-text-color: #777;
+            --disabled-bg-color: #3a3a3a;
+            --hover-bg-color: #383838;
+        }
+
+        /* Apply dark mode based on system preference */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                /* Default to dark variables if system preference is dark */
+                /* This will be overridden if .light-mode is explicitly set */
+                --bg-color: #1a1a1a;
+                --container-bg: #2b2b2b;
+                --box-bg: #2b2b2b;
+                --text-color: #e0e0e0;
+                --secondary-text-color: #b0b0b0;
+                --light-text-color: #999;
+                --link-color: #58a6ff;
+                --link-hover-color: #80bfff;
+                --border-color: #444;
+                --soft-border-color: #333;
+                --dashed-border-color: #666;
+                --box-shadow-color: rgba(255,255,255,0.08);
+                --lightbox-bg: rgba(0, 0, 0, 0.95);
+                --lightbox-close-bg: rgba(50, 50, 50, 0.8);
+                --lightbox-close-hover-bg: rgba(70, 70, 70, 1);
+                --lightbox-close-color: #eee;
+                --disabled-text-color: #777;
+                --disabled-bg-color: #3a3a3a;
+                --hover-bg-color: #383838;
+            }
+            /* Ensure explicit light mode overrides system pref */
+            .light-mode {
+                --bg-color: #f4f4f4;
+                --container-bg: #ffffff;
+                --box-bg: #fff;
+                --text-color: #333;
+                --secondary-text-color: #555;
+                --light-text-color: #666;
+                --link-color: #007bff;
+                --link-hover-color: #0056b3;
+                --border-color: #ddd;
+                --soft-border-color: #eee;
+                --dashed-border-color: #aaa;
+                --box-shadow-color: rgba(0,0,0,0.08);
+                --lightbox-bg: rgba(0, 0, 0, 0.9);
+                --lightbox-close-bg: rgba(255, 255, 255, 0.8);
+                --lightbox-close-hover-bg: rgba(255, 255, 255, 1);
+                --lightbox-close-color: #000;
+                --disabled-text-color: #aaa;
+                --disabled-bg-color: #f9f9f9;
+                --hover-bg-color: #eee;
+            }
+        }
+
+        /* --- Webfont: Literata (variable, WOFF2) for reading surfaces --- */
+        @font-face {
+            font-family: 'Literata';
+            src: url('/staticthoughts/data/fonts/literata/Literata-VF-latin.woff2') format('woff2-variations');
+            font-style: normal;
+            font-weight: 200 900;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Literata';
+            src: url('/staticthoughts/data/fonts/literata/Literata-Italic-VF-latin.woff2') format('woff2-variations');
+            font-style: italic;
+            font-weight: 200 900;
+            font-display: swap;
+        }
+
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: var(--bg-color); /* USE VAR */
+            color: var(--text-color); /* USE VAR - Set default text color */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none; /* Consistent link styling */
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: var(--link-hover-color);
+            text-decoration: underline; /* Underline on hover for clarity */
+        }
+        a:visited {
+            color: var(--link-color); /* Ensure visited links use theme color */
+        }
+        .container {
+            background-color: var(--container-bg); /* USE VAR */
+            padding: 25px; 
+            border: 1px solid var(--border-color); /* USE VAR */
+            max-width: 750px; 
+            width: 100%;
+            box-shadow: 0 1px 4px var(--box-shadow-color); /* USE VAR */
+            transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+        }
+
+        /* Profile Box Styling */
+        .profile-box {
+            border: 2px dashed var(--dashed-border-color); /* USE VAR */
+            padding: 15px; 
+            margin-bottom: 30px; 
+            background-color: var(--box-bg); /* USE VAR */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+        }
+        .profile-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0; /* Remove vertical spacing */
+            width: 100%;
+        }
+        .profile-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 1px solid var(--soft-border-color); /* USE VAR */
+            flex-shrink: 0;
+            cursor: pointer; /* Add cursor pointer for toggle */
+            transition: border-color 0.3s ease; /* Smooth transition */
+        }
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .profile-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 2px;
+            color: var(--text-color); /* Ensure uses variable */
+        }
+        .profile-title {
+            color: var(--secondary-text-color); /* USE VAR */
+            font-size: 0.95em;
+        }
+        .profile-links {
+            font-size: 0.9em;
+            color: var(--secondary-text-color); /* USE VAR */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            align-items: center;
+            gap: 8px 16px; 
+            padding: 0; 
+            margin-top: 12px; 
+            line-height: 1.4;
+        }
+        .profile-links a {
+            text-decoration: none;
+            color: var(--link-color); /* USE VAR */
+            transition: color 0.2s ease;
+            white-space: nowrap;
+            padding: 2px 4px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .profile-links a:hover {
+            color: var(--link-hover-color); /* USE VAR */
+            background-color: var(--hover-bg-color);
+        }
+
+
+        /* Thoughts Header - Section Title Style */
+        .thoughts-header {
+            border: none;
+            background-color: transparent;
+            padding: 0; 
+            display: block; 
+            font-size: 1.4em; 
+            font-weight: bold;
+            color: var(--text-color); /* USE VAR */
+            margin-top: 0; 
+            margin-bottom: 25px; 
+            padding-bottom: 8px; 
+            border-bottom: 2px solid var(--soft-border-color); /* USE VAR */
+            text-align: center; 
+            transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+        }
+        /* Apply Literata to the primary reading title */
+        .thoughts-header {
+            font-family: Georgia, 'Literata', serif;
+            font-weight: 600;
+            font-optical-sizing: auto;
+        }
+
+        /* Thought Box Styling */
+        .thought-box {
+            border: 2px dashed var(--dashed-border-color); /* USE VAR */
+            padding: 10pt;
+            padding-top: 1pt;
+            padding-bottom: 1pt;
+            margin-bottom: 14pt; 
+            background-color: var(--box-bg); /* USE VAR */
+            transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+        }
+
+        /* Hover effect for clickable thought boxes (applied via JavaScript based on page type) */
+        .thought-box.clickable:hover {
+            background-color: var(--hover-bg-color);
+            border-color: var(--text-color);
+        }
+        .thought-header {
+            display: flex; 
+            align-items: center; 
+            flex-wrap: wrap; 
+            gap: 0.5em;
+            padding-bottom: 0px;
+            font-size: 0.95em;
+            color: var(--secondary-text-color); /* USE VAR */
+        }
+        .thought-user-img { 
+             width: 25px;
+             height: 25px;
+             border-radius: 50%;
+             object-fit: cover;
+             border: 1px solid var(--soft-border-color); /* USE VAR */
+             vertical-align: middle; 
+             transition: border-color 0.3s ease; /* Smooth transition */
+        }
+        .thought-header .user-name {
+            font-weight: bold;
+            color: var(--text-color); /* USE VAR */
+            margin: 0; 
+        }
+         .thought-header .separator {
+             margin: 0 0.2em; 
+             color: var(--light-text-color); /* Separator should probably use this */
+         }
+         .thought-header .date-time {
+             color: var(--light-text-color); /* USE VAR */
+             flex-shrink: 0; 
+         }
+
+        .thought-content p {
+            margin-top: 0;
+            margin-bottom: 10px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: var(--text-color); /* Ensure paragraph text uses variable */
+        }
+        /* Apply Literata to main reading paragraphs */
+        .thought-content p,
+        .quoted-thought-content p {
+            font-family: 'Literata', Georgia, serif;
+            font-weight: 270;
+            font-optical-sizing: auto;
+            line-height: 1.2;
+        }
+        .thought-image {
+            margin-top: 15px; 
+        }
+        .thought-image .lightbox-trigger {
+            display: block;
+            max-width: 550px;  
+            width: 100%; 
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid var(--border-color); /* USE VAR */
+            position: relative;
+            transition: border-color 0.3s ease; /* Smooth transition */
+        }
+        .thought-image img.thought-img {
+            display: block; 
+            width: 100%; 
+            height: auto; 
+            transition: opacity 0.2s ease-in-out; 
+        }
+         .thought-image .lightbox-trigger:hover img.thought-img {
+              opacity: 0.9; 
+         }
+
+        /* Lightbox Overlay */
+        .lightbox-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--lightbox-bg); /* USE VAR */
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            padding: 40px;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+        .lightbox-overlay.visible {
+            display: flex; 
+        }
+        .lightbox-content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%; 
+            max-height: 100%;
+        }
+        .lightbox-content img {
+            display: block;
+            max-width: 100%; 
+            max-height: 100%; 
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border: none;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.5); /* Keep shadow potentially dark */
+        }
+        .lightbox-close {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: var(--lightbox-close-bg); /* USE VAR */
+            color: var(--lightbox-close-color); /* USE VAR */
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 24px;
+            font-weight: normal;
+            line-height: 28px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: background-color 0.2s ease, color 0.2s ease; /* Smooth transition */
+        }
+        .lightbox-close:hover {
+            background-color: var(--lightbox-close-hover-bg); /* USE VAR */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                max-width: 100%;
+            }
+             /* Adjusted Profile Box for Mobile */
+             .profile-box {
+                 padding: 12px; /* Further reduced padding */
+                 margin-bottom: 25px; /* Further reduced margin */
+             }
+            /* Adjusted Profile Content for Mobile */
+            .profile-content {
+                 align-items: center;
+                 justify-content: center;
+                 margin-bottom: 0; /* No spacing between profile content and links */
+            }
+            .profile-img {
+                width: 50px;
+                height: 50px;
+                margin-right: 12px;
+            }
+             .profile-name {
+                 font-size: 1.1em;
+             }
+             .profile-title {
+                 font-size: 0.9em;
+             }
+             /* Adjusted Profile Links for Mobile */
+            .profile-links {
+                font-size: 0.82em;
+                margin-top: 10px;
+                gap: 6px 12px; /* Optimized gap for mobile */
+                justify-content: center; /* Ensure centering on mobile too */
+                line-height: 1.3;
+            }
+            .profile-links a {
+                padding: 3px 6px; /* Slightly more padding for easier mobile tapping */
+                border-radius: 4px;
+            }
+
+            .thoughts-header {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+            }
+            .thought-box {
+                padding: 10pt;
+                padding-bottom: 1pt;
+                padding-top: 1pt;
+                margin-bottom: 14pt;
+            }
+             .thought-header {
+                font-size: 0.85em; /* Even smaller font for mobile header */
+                gap: 0.3em; /* Further reduce gap */
+                padding-bottom: 0px; /* Reduce padding */
+             }
+             .thought-user-img {
+                 width: 20px; /* Even smaller image on mobile */
+                 height: 20px;
+             }
+             /* Optionally hide separator on very small screens if needed */
+             /* .thought-header .separator { display: none; } */
+        }
+
+        /* Extra small screens (iPhone SE, etc.) */
+        @media (max-width: 380px) {
+             .thought-header {
+                font-size: 0.8em; /* Even smaller font for very small screens */
+                gap: 0.25em; /* Minimal gap */
+             }
+             .thought-header .date-time {
+                flex-shrink: 1; /* Allow date to shrink if needed */
+                min-width: 0; /* Allow text truncation */
+             }
+
+             .thought-image .lightbox-trigger {
+                  /* Remove max-width on mobile to allow full width */
+                  max-width: 100%; 
+                  border-radius: 6px; 
+             }
+
+             .lightbox-overlay { padding: 10px; }
+             .lightbox-content {
+                  /* Adjust max size slightly for smaller padding */
+                  /* REMOVE THESE - they were overriding the general rules */
+                  /* max-width: calc(100vw - 20px); */
+                  /* max-height: calc(100vh - 20px); */
+              }
+             .lightbox-close {
+                 top: 5px; right: 5px; width: 28px; height: 28px;
+                 font-size: 20px; line-height: 26px;
+             }
+
+            .pagination {
+                margin-top: 20px;
+                padding-top: 15px;
+                font-size: 0.85em; /* Smaller text on mobile */
+            }
+             .pagination a, .pagination span {
+                 padding: 6px 10px; /* Smaller padding */
+                 margin: 0 2px; /* Less margin */
+             }
+             .pagination span.page-info {
+                 display: none; /* Optionally hide page number on very small screens */
+             }
+
+            /* Individual thought navigation responsive */
+            .individual-thought-navigation {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 10px !important;
+                margin-top: 20px !important;
+            }
+            .individual-thought-navigation .nav-button {
+                width: 100% !important;
+                margin-right: 0 !important;
+                margin-left: 0 !important;
+                text-align: center !important;
+                box-sizing: border-box !important;
+            }
+
+            /* Quoted thought images on mobile */
+            .quoted-thought-image img {
+                max-width: 70%; /* Even smaller on mobile for better proportion */
+                max-height: 200px; /* Smaller height limit on mobile */
+            }
+        }
+
+        /* Extra small screens (iPhone SE, etc.) */
+        @media (max-width: 375px) {
+            .profile-links {
+                font-size: 0.78em;
+                gap: 4px 8px; /* Tighter gap for very small screens */
+                margin-top: 8px;
+            }
+            .profile-links a {
+                padding: 2px 4px; /* Compact padding for very small screens */
+                border-radius: 3px;
+            }
+        }
+
+        /* Pagination Styling */
+        .pagination {
+            margin-top: 30px; /* Space above pagination */
+            padding-top: 20px; /* Space below last thought */
+            border-top: 1px solid var(--soft-border-color); /* USE VAR */
+            text-align: center;
+            display: flex; /* Use flexbox for alignment */
+            justify-content: space-between; /* Space out Prev, Info, Next */
+            align-items: center;
+            transition: border-color 0.3s ease; /* Smooth transition */
+        }
+        .pagination a, .pagination span {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 0 4px;
+            border: 1px solid var(--border-color); /* USE VAR */
+            border-radius: 4px;
+            color: var(--link-color); /* USE VAR */
+            text-decoration: none;
+            transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+            font-size: 0.9em;
+        }
+        .pagination a:hover {
+            background-color: var(--hover-bg-color); /* USE VAR */
+            color: var(--link-hover-color); /* USE VAR */
+        }
+        .pagination span.disabled {
+            color: var(--disabled-text-color); /* USE VAR */
+            background-color: var(--disabled-bg-color); /* USE VAR */
+            cursor: default;
+            border-color: var(--border-color); /* USE VAR - Use regular border color for consistency */
+        }
+        .pagination span.page-info {
+             border: none; 
+             color: var(--secondary-text-color); /* USE VAR */
+             background-color: transparent;
+        }
+
+        /* Quoted Thought Styling */
+        .quoted-thought-container {
+            margin-top: 15px;
+            border-left: 3px solid var(--border-color);
+            padding-left: 15px;
+            transition: border-color 0.3s ease;
+        }
+
+        .quoted-thought-box {
+            border: 1px solid var(--soft-border-color);
+            border-radius: 8px;
+            padding: 12px;
+            background-color: var(--box-bg);
+            font-size: 0.9em; /* Slightly smaller text */
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .quoted-thought-box:hover {
+            background-color: var(--hover-bg-color);
+            cursor: pointer;
+        }
+
+        .quoted-thought-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 0.85em;
+        }
+
+        .quoted-thought-user-img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 8px;
+            border: 1px solid var(--soft-border-color);
+            transition: border-color 0.3s ease;
+        }
+
+        .quoted-user-name {
+            font-weight: bold;
+            color: var(--text-color);
+            margin-right: 5px;
+        }
+
+        .quoted-thought-date-time {
+            color: var(--light-text-color);
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        .quoted-thought-permalink {
+            color: var(--light-text-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .quoted-thought-permalink:hover {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
+
+        /* Mobile responsive adjustments for quoted thoughts */
+        @media (max-width: 600px) {
+            .quoted-thought-container {
+                padding-left: 10px;
+                margin-top: 12px;
+            }
+            
+            .quoted-thought-box {
+                padding: 10px;
+                font-size: 0.85em;
+            }
+            
+            .quoted-thought-user-img {
+                width: 20px;
+                height: 20px;
+                margin-right: 6px;
+            }
+            
+            .quoted-thought-header {
+                font-size: 0.8em;
+            }
+        }
+
+        /* Theme Feedback Styling */
+        .theme-feedback {
+            position: fixed;
+            top: 20px; /* Position from the top */
+            left: 50%;
+            transform: translateX(-50%); /* Center horizontally */
+            background-color: var(--container-bg); /* Use theme background */
+            color: var(--text-color); /* Use theme text color */
+            padding: 10px 20px;
+            border-radius: 20px; /* Rounded corners */
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            font-size: 0.9em;
+            z-index: 1001; /* Above lightbox overlay */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease, top 0.4s ease;
+            white-space: nowrap;
+        }
+        .theme-feedback.visible {
+            opacity: 1;
+            visibility: visible;
+            top: 30px; /* Slightly move down when visible */
+        }
+
+        /* Quoted thought styles */
+        .quoted-thought-container {
+            margin-top: 16px;
+            position: relative;
+            padding: 0;
+        }
+        
+        .quoted-thought-box {
+            border-left: 3px solid var(--secondary-text-color);
+            background: linear-gradient(135deg, 
+                rgba(128, 128, 128, 0.03) 0%, 
+                rgba(128, 128, 128, 0.01) 100%);
+            border-radius: 0 12px 12px 0;
+            padding: 14px 16px;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        .quoted-thought-box:hover {
+            background: linear-gradient(135deg, 
+                rgba(128, 128, 128, 0.08) 0%, 
+                rgba(128, 128, 128, 0.03) 100%);
+            border-left-color: var(--text-color);
+        }
+        
+        .quoted-thought-box::before {
+            content: "";
+            position: absolute;
+            left: -3px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, 
+                var(--secondary-text-color) 0%, 
+                transparent 100%);
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .quoted-thought-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            gap: 8px;
+        }
+        
+        .quoted-thought-user-img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            opacity: 0.9;
+        }
+        
+        .quoted-thought-user-info {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            min-width: 0;
+        }
+        
+        .quoted-user-name {
+            font-weight: 500;
+            font-size: 1.1em;
+            color: var(--text-color);
+            line-height: 1.2;
+            opacity: 0.85;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .quoted-thought-date-time {
+            font-size: 0.72em;
+            color: var(--secondary-text-color);
+            line-height: 1.2;
+            opacity: 0.8;
+            white-space: nowrap;
+        }
+        
+        .quoted-thought-permalink {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border-radius: 3px;
+            padding: 1px 3px;
+            margin: -1px -3px;
+        }
+        
+        .quoted-thought-permalink:hover {
+            color: var(--text-color);
+            background-color: rgba(128, 128, 128, 0.1);
+            text-decoration: none;
+        }
+        
+        .quoted-thought-content p {
+            font-size: 0.95em;
+            margin: 0;
+            color: var(--text-color);
+            opacity: 0.9;
+        }
+        
+        .quoted-thought-image {
+        }
+        
+        .quoted-thought-image img {
+            max-width: 80%; /* Smaller than main thought images */
+            max-height: 300px; /* Limit height to maintain proportions */
+            width: auto;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid rgba(128, 128, 128, 0.15);
+            transition: border-color 0.2s ease;
+            object-fit: cover;
+        }
+        
+        .quoted-thought-image img:hover {
+            border-color: var(--border-color);
+        }
+
+        /* Action Bar Styling */
+        .thought-actions {
+            padding-top: 8pt;
+        }
+        .action-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px; /* small gap without changing height */
+        }
+        .thread-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 3px;
+            min-height: 1.2em; /* one line high */
+            min-width: 0; /* allow flex shrink for ellipsis */
+            flex: 1 1 auto;
+            color: var(--secondary-text-color);
+            font-size: 0.9em;
+            font-family: 'Literata', Georgia, serif; /* match reading surface */
+            font-weight: 270;
+            font-optical-sizing: auto;
+            line-height: 1.2;
+        }
+        .thread-links-prefix { opacity: 0.9; margin-right: 2px; }
+        .thread-chip {
+            display: inline-block;
+            padding: 0 5px; /* compact */
+            border: 1px solid var(--soft-border-color);
+            border-radius: 5px; /* rectangular with subtle rounding */
+            color: var(--secondary-text-color);
+            font-size: 0.85em;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        .thread-chip.primary {
+            font-weight: 300;
+            flex: 0 1 auto; /* allow shrink, but don't grow unnecessarily */
+            width: max-content; /* size to text when space allows */
+            max-width: 100%;   /* but never exceed available space */
+            min-width: 0;      /* enable shrink inside flex */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .thread-chip.more { pointer-events: none; }
+        .thread-chip:hover { background: var(--hover-bg-color); border-color: var(--border-color); color: var(--text-color); text-decoration: none; }
+
+        .action-separator {
+            height: 1px;
+            background: repeating-linear-gradient(
+                to right,
+                var(--light-text-color) 0px,
+                var(--light-text-color) 2px,
+                transparent 2px,
+                transparent 6px
+            );
+            margin-bottom: 2pt;
+            opacity: 0.6;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex: 0 0 auto; /* prevent growth; leave width to thread-links */
+        }
+
+        .share-button {
+            background: transparent;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            padding: 0;
+            border-radius: 4px;
+            color: var(--secondary-text-color);
+            transition: color 0.2s ease, transform 0.2s ease;
+            font-family: inherit;
+            outline: none;
+            margin-right: 2pt;
+            -webkit-tap-highlight-color: transparent;
+            text-shadow: 0 0 1px rgba(0,0,0,0.5), 0 0 4px rgba(0,0,0,0.35);
+        }
+
+        .share-button:hover {
+            color: var(--text-color);
+            transform: scale(1.1);
+        }
+
+        .share-button:active {
+            transform: scale(0.95);
+            color: var(--text-color);
+        }
+
+        /* Share Feedback Toast */
+        .share-feedback {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            z-index: 1001;
+            animation: slideUp 0.3s ease-out;
+            max-width: 90%;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        /* Mobile optimizations for action bar */
+        @media (max-width: 600px) {
+            .action-row { gap: 4px; }
+            .thread-links { max-width: none; font-size: 0.9em; }
+            .share-button {
+                margin-right: 2pt;
+                padding: 0;
+                font-size: 1.3em;
+            }
+            .action-separator {
+                margin-bottom: 2pt;
+            }
+            .thought-actions {
+                padding-top: 8pt;
+            }
+        }
+
+        .comment-button {
+            background: transparent;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            padding: 0;
+            border-radius: 4px;
+            color: var(--secondary-text-color);
+            transition: color 0.2s ease, transform 0.2s ease;
+            font-family: inherit;
+            outline: none;
+            margin-right: 6pt; /* Extra gap before share icon */
+            -webkit-tap-highlight-color: transparent;
+            text-decoration: none;
+            text-shadow: 0 0 0.5px rgba(0,0,0,0.5), 0 0 4px rgba(0,0,0,0.35);
+        }
+
+        .comment-button:hover {
+            color: var(--text-color);
+            transform: scale(1.1);
+        }
+
+        .comment-button:active {
+            transform: scale(0.95);
+            color: var(--text-color);
+        }
+
+    </style>
+
+    <!-- Theme Feedback Element -->
+    <div id="theme-feedback" class="theme-feedback" aria-live="polite"></div>
+
+</head>
+<body>
+    <div class="container">
+        <div class="profile-box">
+    <div class="profile-content">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="Profile Picture" class="profile-img">
+        <div class="profile-details">
+            <div class="profile-name">Illya Gerasymchuk</div>
+            <div class="profile-title">Entrepreneur / Engineer</div>
+        </div>
+    </div>
+    <div class="profile-links">
+        <a href="https://illya.sh" target="_blank">🏠 Homepage</a><a href="https://illya.sh/threads/">🧵 Threads</a><a href="https://illya.sh/thoughts/topics/">📂 Topics</a><a href="mailto:hello@illya.sh" target="_blank">✉️ Email</a><a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a><a href="https://illya.sh/thoughts/feed.xml" target="_blank">📡 RSS</a>
+    </div>
+</div>
+
+        <h2 class="thoughts-header">Blockchain infrastructure &amp; scaling updates</h2>
+<p class="threads-description" style="margin: -10px 0 25px 0; color: var(--secondary-text-color); text-align: center; font-size: 0.95em; line-height: 1.35;">Short notes on L1 and L2 roadmaps, consensus changes, validator economics, MEV and scaling milestones.</p>
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../however-even-if-cbdcs-are-implemented-using-blockchain-its.html" class="thought-permalink">2025-08-28 09:12</a></p>
+    </div>
+    <div class="thought-content">
+        <p>however, even if CBDCs are implemented using blockchain - it&#x27;s unlikely to be a public, permissionless blockchain like Ethereum</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="50-of-central-banks-in-both-advanced-and-emerging-economies.html" class="quoted-thought-permalink">2025-08-28 09:07</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>&gt;50% of central banks in both, advanced and emerging economies are considering using DLT for wholesale CBDCs<br><br>this means that wholesale CBDC is likely to be implemented using some form of blockchain technology - much more likely than the retail CBDC</p>
+            <div class="quoted-thought-image"><a href="https://illya.sh/staticthoughts/data/images/ead7af63-0e6f-5de3-a7b8-14a1b1c7cff4.jpg" class="lightbox-trigger"><img loading="lazy" src="https://illya.sh/staticthoughts/data/images/ead7af63-0e6f-5de3-a7b8-14a1b1c7cff4.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/91-of-central-banks-are-working-on-cbdcs-but-not-on-a-public.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 91% of central banks are working on CBDCs, but not on a public blockchain">🧵 91% of central banks are working on CBDCs, but not on a public blockchain</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=however-even-if-cbdcs-are-implemented-using-blockchain-its" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/however-even-if-cbdcs-are-implemented-using-blockchain-its.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../only-6-of-advanced-economies-ae-central-banks-and-40-of.html" class="thought-permalink">2025-08-28 09:05</a></p>
+    </div>
+    <div class="thought-content">
+        <p>only 6% of advanced economies (AE) central banks and 40% of emerging economies (EM) central banks are considering distributed ledger technology (DLT) as an implementation layer for retail CBDCs<br><br>here, consider DLT = blockchain</p>
+        <div class="thought-image">
+            <a href="https://illya.sh/staticthoughts/data/images/156ef508-a7b2-57d3-bb41-71a6fc51903b.jpg" class="lightbox-trigger"><img loading="lazy" src="https://illya.sh/staticthoughts/data/images/156ef508-a7b2-57d3-bb41-71a6fc51903b.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="91-of-central-banks-are-working-on-cbdcs-but-not-on-a-public.html" class="quoted-thought-permalink">2025-08-28 00:11</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>91% of central banks are working on CBDCs, but not on a public blockchain<br><br>85 out of 93 central banks (≈94% of global economic output) are engaged in some form of CBDC work<br><br>however, don&#x27;t expect CBDCs to be implemented on permissionless blockchains like Ethereum</p>
+            <div class="quoted-thought-image"><a href="https://illya.sh/staticthoughts/data/images/6727d2a1-4d24-5f90-a3f5-54c6800934bd.jpg" class="lightbox-trigger"><img loading="lazy" src="https://illya.sh/staticthoughts/data/images/6727d2a1-4d24-5f90-a3f5-54c6800934bd.jpg" alt="Quoted Thought Image" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/91-of-central-banks-are-working-on-cbdcs-but-not-on-a-public.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 91% of central banks are working on CBDCs, but not on a public blockchain">🧵 91% of central banks are working on CBDCs, but not on a public blockchain</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=only-6-of-advanced-economies-ae-central-banks-and-40-of" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/only-6-of-advanced-economies-ae-central-banks-and-40-of.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../there-should-be-more-blockchains-running-over-mesh.html" class="thought-permalink">2025-08-19 08:52</a></p>
+    </div>
+    <div class="thought-content">
+        <p>there should be more blockchains running over mesh technologies like LoRA<br><br>this way you can keep the consensus and payments running even when internet is down<br><br>polynomial commitments (ZK) can be used to store-and-forward transactions</p>
+        <div class="thought-image">
+            <a href="https://illya.sh/staticthoughts/data/images/e7c63d89-6a15-5a69-82c6-d19fb0c5196d.jpg" class="lightbox-trigger"><img loading="lazy" src="https://illya.sh/staticthoughts/data/images/e7c63d89-6a15-5a69-82c6-d19fb0c5196d.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/there-should-be-more-blockchains-running-over-mesh.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: there should be more blockchains running over mesh technologies like LoRA">🧵 there should be more blockchains running over mesh technologies like LoRA</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=there-should-be-more-blockchains-running-over-mesh" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/there-should-be-more-blockchains-running-over-mesh.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../stablecoin-issuers-could-intermediate-the-issuance-process.html" class="thought-permalink">2025-08-09 15:37</a></p>
+    </div>
+    <div class="thought-content">
+        <p>stablecoin issuers could intermediate the issuance process, so you don&#x27;t need to get all credit institutions on-chain from the start<br><br>non-algorithmic stablecoin issuance already happens off-chain and presumes trust in a third party<br><br>this would just be faster. more liquidity</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="now-imagine-when-credit-institutions-can-tokenize-new-credit.html" class="quoted-thought-permalink">2025-08-09 15:30</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>now imagine when credit institutions can tokenize new credit and allow automated stablecoin issuance backed by that credit<br><br>in practice it&#x27;s code in smart contract that wraps one token with another<br><br>i created a similar project on an Ethereum hackathon ⬇️<br><a href="https://github.com/iluxonchik/eth-lisbon-hackathon-23" target="_blank">https://github.com/iluxonchik/eth-lisbon-hackathon-23</a></p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/now-imagine-when-credit-institutions-can-tokenize-new-credit.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: now imagine when credit institutions can tokenize new credit and allow automated stablecoin issuance backed by that credit">🧵 now imagine when credit institutions can tokenize new credit and allow automated stablecoin issuance backed by that credit</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=stablecoin-issuers-could-intermediate-the-issuance-process" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/stablecoin-issuers-could-intermediate-the-issuance-process.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../now-imagine-when-credit-institutions-can-tokenize-new-credit.html" class="thought-permalink">2025-08-09 15:30</a></p>
+    </div>
+    <div class="thought-content">
+        <p>now imagine when credit institutions can tokenize new credit and allow automated stablecoin issuance backed by that credit<br><br>in practice it&#x27;s code in smart contract that wraps one token with another<br><br>i created a similar project on an Ethereum hackathon ⬇️<br><a href="https://github.com/iluxonchik/eth-lisbon-hackathon-23" target="_blank">https://github.com/iluxonchik/eth-lisbon-hackathon-23</a></p>
+        <div class="thought-image">
+            
+        </div>
+        
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/now-imagine-when-credit-institutions-can-tokenize-new-credit.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: now imagine when credit institutions can tokenize new credit and allow automated stablecoin issuance backed by that credit">🧵 now imagine when credit institutions can tokenize new credit and allow automated stablecoin issuance backed by that credit</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=now-imagine-when-credit-institutions-can-tokenize-new-credit" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/now-imagine-when-credit-institutions-can-tokenize-new-credit.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../part-of-bitcoins-value-derives-from-the-total-electricity.html" class="thought-permalink">2024-11-15 10:15</a></p>
+    </div>
+    <div class="thought-content">
+        <p>Part of Bitcoin&#x27;s value derives from the total electricity cost of maintaining a decentralized, trustless, immutable ledger of transactions for &gt;15 years<br><br>20% of GDP is spent on financial services. Blockchains remove intermediaries &amp; improve efficiency<br><br>It&#x27;s apples to oranges 🤷‍♀️ https:/</p>
+        <div class="thought-image">
+            
+        </div>
+        
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=part-of-bitcoins-value-derives-from-the-total-electricity" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/part-of-bitcoins-value-derives-from-the-total-electricity.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../podcast-covering-brics-currency-on-the-blockchain-is-out.html" class="thought-permalink">2024-11-05 21:36</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🚀🎧 Podcast covering #BRICS Currency on the blockchain is out!<br><br>🔗🔈: <br><br>🤖 Smart contracts &amp; #DeFi are an ideal match for #BRICSPay showcased at #BRICS2024 summit. Podcast &amp; article exply why<br><br>🎤 AI Audio created with NotebookLM  https://</p>
+        <div class="thought-image">
+            <a href="https://illya.sh/staticthoughts/data/images/a778ee08-5c4d-5fa5-a552-172c1163f16e.jpg" class="lightbox-trigger"><img loading="lazy" src="https://illya.sh/staticthoughts/data/images/a778ee08-5c4d-5fa5-a552-172c1163f16e.jpg" alt="Thought Image" class="thought-img"></a>
+        </div>
+        
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=podcast-covering-brics-currency-on-the-blockchain-is-out" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/podcast-covering-brics-currency-on-the-blockchain-is-out.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../in-summary-blockchain-based-tokenized-liquid-futures.html" class="thought-permalink">2024-07-01 22:00</a></p>
+    </div>
+    <div class="thought-content">
+        <p>In summary, blockchain-based Tokenized Liquid Futures:<br><br>- Eliminate intermediaries<br>- Increase transparency<br>- Enhance liquidity<br>- Automate risk management<br>- Provide flexible capital deployment<br><br>Thus enabling a disruptive #DeFi use-case over its #TradFi equivalent</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="the-tokenization-of-the-long-and-the-short-positions-of-the.html" class="quoted-thought-permalink">2024-07-01 22:00</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>The smart contract automates risk management on-chain by:<br><br>1️⃣ Enforcing margin requirements<br>2️⃣ Handling liquidations<br>3️⃣ Ensuring contract settlement<br><br>Removing the need for trusted third parties and ensuring transparency 🛡️</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/exploring-tokenized-liquid-futures-contracts.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 Exploring Tokenized Liquid Futures Contracts">🧵 🚀 Exploring Tokenized Liquid Futures Contracts</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=in-summary-blockchain-based-tokenized-liquid-futures" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/in-summary-blockchain-based-tokenized-liquid-futures.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../the-tokenization-of-the-long-and-the-short-positions-of-the.html" class="thought-permalink">2024-07-01 22:00</a></p>
+    </div>
+    <div class="thought-content">
+        <p>The smart contract automates risk management on-chain by:<br><br>1️⃣ Enforcing margin requirements<br>2️⃣ Handling liquidations<br>3️⃣ Ensuring contract settlement<br><br>Removing the need for trusted third parties and ensuring transparency 🛡️</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="the-tokenization-of-the-long-and-the-short-positions-of-the.html" class="quoted-thought-permalink">2024-07-01 22:00</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>The tokenization of the long and the short positions of the futures contact allows for trading of the positions in a fully decentralized manner, without the need for need for a clearing house<br><br>This means no trusted entity or oracles are required, ensuring full decentralization</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/exploring-tokenized-liquid-futures-contracts.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 Exploring Tokenized Liquid Futures Contracts">🧵 🚀 Exploring Tokenized Liquid Futures Contracts</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=the-tokenization-of-the-long-and-the-short-positions-of-the" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/the-tokenization-of-the-long-and-the-short-positions-of-the.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../smart-contract-on-the-blockchain-tracks.html" class="thought-permalink">2024-07-01 22:00</a></p>
+    </div>
+    <div class="thought-content">
+        <p>Smart contract on the blockchain tracks:<br><br>1️⃣ Deposited amounts for each party<br>2️⃣ Required deposits at each checkpoint<br>3️⃣ Maturity date<br><br>It uses this data to automatically enforce the increasing margin schedule 🔐</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="the-margin-in-defi-futures-acts-as.html" class="quoted-thought-permalink">2024-07-01 22:00</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>The margin in DeFi futures acts as:<br><br>1️⃣ Traditional margin, as in TradFi<br>2️⃣ Collateral hedging the counterparty risk<br>3️⃣ Under-collateralized assurance for a futures contract delivery<br><br>Daily/periodic settlement can be incorporated into the dynamic margin requirements</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/exploring-tokenized-liquid-futures-contracts.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 Exploring Tokenized Liquid Futures Contracts">🧵 🚀 Exploring Tokenized Liquid Futures Contracts</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=smart-contract-on-the-blockchain-tracks" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/smart-contract-on-the-blockchain-tracks.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../smart-contracts-on-the-blockchain-enable-full-tokenization.html" class="thought-permalink">2024-07-01 22:00</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🔐 Smart contracts on the blockchain enable full tokenization of futures contracts<br><br>📈 Both long and short positions become tokens, representing a &quot;promise of future asset or money&quot;<br><br>This allows partial selling of positions, increasing liquidity, flexibility and reducing risk 💧</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="traditional-futures-require-centralized-clearing-houses.html" class="quoted-thought-permalink">2024-07-01 22:00</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>Futures pricing is deterministic, and its main goal is to prevent arbitrage:<br><br>💰 Futures Price = Spot Price * e^(rT)<br>- r: risk-free rate (e.g., $MINA staking yield)<br>- T: time to maturity<br><br>This formula approximates pricing at maturity in both TradFi and DeFi  🧮</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/exploring-tokenized-liquid-futures-contracts.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 Exploring Tokenized Liquid Futures Contracts">🧵 🚀 Exploring Tokenized Liquid Futures Contracts</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=smart-contracts-on-the-blockchain-enable-full-tokenization" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/smart-contracts-on-the-blockchain-enable-full-tokenization.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../traditional-futures-require-centralized-clearing-houses.html" class="thought-permalink">2024-07-01 22:00</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🏦 Traditional futures require centralized clearing houses<br><br>On the blockchain, smart contracts eliminate intermediaries, enabling decentralized peer-to-peer agreements<br><br>Example: A contract to trade 1000 $MINA for 2000 $USDC in 1 year, regardless of future $MINA price 📊</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="futures-contracts-serve-crucial-roles-in-finance.html" class="quoted-thought-permalink">2024-07-01 22:00</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>Futures contracts serve crucial roles in finance:<br><br>1️⃣ Hedging against price volatility<br>2️⃣ Speculation on future asset prices<br>3️⃣ Price discovery for underlying assets<br><br>Smart contracts on the blockchain will disrupt this  $1T+ market. Here&#x27;s how ⬇️</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/exploring-tokenized-liquid-futures-contracts.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 Exploring Tokenized Liquid Futures Contracts">🧵 🚀 Exploring Tokenized Liquid Futures Contracts</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=traditional-futures-require-centralized-clearing-houses" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/traditional-futures-require-centralized-clearing-houses.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../learn-more-about-zero-knowledge-proofs-their-applications.html" class="thought-permalink">2024-06-01 11:27</a></p>
+    </div>
+    <div class="thought-content">
+        <p>👉 Learn more about Zero-Knowledge Proofs, their applications, and how they redefine privacy:<br><br>📍 zkLocus: <a href="https://zklocus.dev/" target="_blank">https://zklocus.dev/</a><br><br>📖 Full article: <a href="https://illya.sh/blog/posts/privacy-is-a-myth-without-zero-knowledge-proofs/" target="_blank">https://illya.sh/blog/posts/privacy-is-a-myth-without-zero-knowledge-proofs/</a><br><br>💜 Let&#x27;s build a Web3 future where privacy is the default, not an afterthought</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="the-result-is-an-e-commerce-platform-that-respects-end-user.html" class="quoted-thought-permalink">2024-06-01 11:27</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>🛡️ The result is an e-commerce platform that respects end-user privacy without sacrificing functionality 🎉<br><br>❌ There is no need to trade personal data for convenience<br><br>🙌 ZKP, Mina Protocol blockchain and zkLocus  enable us to have both!</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/e-commerce-privacy-myth-or-reality.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🛒 E-commerce &amp; Privacy - Myth or Reality? 🔐">🧵 🛒 E-commerce &amp; Privacy - Myth or Reality? 🔐</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=learn-more-about-zero-knowledge-proofs-their-applications" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/learn-more-about-zero-knowledge-proofs-their-applications.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../throughout-this-process-your-name-and-address-remain-hidden.html" class="thought-permalink">2024-06-01 11:27</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🟣 This entire solution can be implemented on Mina Protocol blockchain! 💪<br><br>💻 $MINA&#x27;s zkApps enable efficient, scalable and verifiable computation powered by zkSNARKs <br><br>📍 Combined with zkLocus for geolocation proofs, we have all of the necessary components</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="throughout-this-process-your-name-and-address-remain-hidden.html" class="quoted-thought-permalink">2024-06-01 11:27</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>🔐 Throughout this process, your name and address remain hidden from the e-commerce platform. 😌<br><br>🌍 The platform only knows a broad area, not your specific location<br><br>🪪 The processing center only gets your exact info when you choose to reveal it</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/e-commerce-privacy-myth-or-reality.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🛒 E-commerce &amp; Privacy - Myth or Reality? 🔐">🧵 🛒 E-commerce &amp; Privacy - Myth or Reality? 🔐</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=throughout-this-process-your-name-and-address-remain-hidden" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/throughout-this-process-your-name-and-address-remain-hidden.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../heres-how-mina-protocol-blockchain-fits-into-the-picture.html" class="thought-permalink">2024-05-30 18:57</a></p>
+    </div>
+    <div class="thought-content">
+        <p>📋 Here&#x27;s how Mina Protocol blockchain fits into the picture:<br><br>1️⃣ zkSNARK circuits verifying camera code execution are stored on Mina<br>2️⃣ Commitments &amp; ZKP circuits to the zkML model are also stored on the blockchain<br>3️⃣ All proofs from cameras are submitted &amp; verified against them</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="mina-protocol-can-implement-the-foundational-layer.html" class="quoted-thought-permalink">2024-05-30 18:57</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>🟣 Mina Protocol can implement the foundational layer 🚀<br><br>Verification keys that attest to the correct execution of the camera&#x27;s code can be stored on $MINA 🔑<br><br>In practice, this involves commitments and ZKP circuits to the zkML model, thus ensuring the right one is used 🧠</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/imagine-24-7-global-video-surveillance-that-doesnt.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🌍 Imagine 24/7 global video surveillance that doesn&#x27;t compromise privacy">🧵 🌍 Imagine 24/7 global video surveillance that doesn&#x27;t compromise privacy</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=heres-how-mina-protocol-blockchain-fits-into-the-picture" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/heres-how-mina-protocol-blockchain-fits-into-the-picture.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../mina-protocol-can-implement-the-foundational-layer.html" class="thought-permalink">2024-05-30 18:57</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🟣 Mina Protocol can implement the foundational layer 🚀<br><br>Verification keys that attest to the correct execution of the camera&#x27;s code can be stored on $MINA 🔑<br><br>In practice, this involves commitments and ZKP circuits to the zkML model, thus ensuring the right one is used 🧠</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="zksnarks-zkstarks-can-be-used-to-create-zk-proofs-that.html" class="quoted-thought-permalink">2024-05-30 18:57</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>🔐 zkSNARKs/zkSTARKs can be used to create ZK proofs that attest to the correct execution of the camera&#x27;s code 📸<br><br>👮‍♀️ These proofs, representing an observation of a computation, ensure that non-suspicious video is  discarded, thus preserving privacy<br><br>👉 Do not trust, verify 👈</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/imagine-24-7-global-video-surveillance-that-doesnt.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🌍 Imagine 24/7 global video surveillance that doesn&#x27;t compromise privacy">🧵 🌍 Imagine 24/7 global video surveillance that doesn&#x27;t compromise privacy</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=mina-protocol-can-implement-the-foundational-layer" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/mina-protocol-can-implement-the-foundational-layer.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../read-the-full-article-to-dive-deeper-into-how-the-brics.html" class="thought-permalink">2024-04-28 19:28</a></p>
+    </div>
+    <div class="thought-content">
+        <p>Read the full article to dive deeper into how the BRICS digital currency can be realized as a cryptocurrency on a public blockchain. 📖<br><br>🔗 <a href="https://illya.sh/blog/posts/brics-cryptocurrency-blockchain/" target="_blank">https://illya.sh/blog/posts/brics-cryptocurrency-blockchain/</a><br><br>Let&#x27;s discuss! Share your thoughts below🗣️</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="by-embracing-public-blockchains-and-zeroknowledge.html" class="quoted-thought-permalink">2024-04-28 19:28</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>🌟 By embracing public blockchains and ZeroKnowledge technologies, the BRICS digital currency can pioneer a new era of finance🔮<br><br>A more efficient, interoperable, decentralized, and inclusive financial system aligned with Web3 principles 🌍</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/integrating-zklocus-allows-associating-geolocation-data-with.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒">🧵 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=read-the-full-article-to-dive-deeper-into-how-the-brics" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/read-the-full-article-to-dive-deeper-into-how-the-brics.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../by-embracing-public-blockchains-and-zeroknowledge.html" class="thought-permalink">2024-04-28 19:28</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🌟 By embracing public blockchains and ZeroKnowledge technologies, the BRICS digital currency can pioneer a new era of finance🔮<br><br>A more efficient, interoperable, decentralized, and inclusive financial system aligned with Web3 principles 🌍</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="implementing-the-brics-currency-on-a-public-blockchain.html" class="quoted-thought-permalink">2024-04-28 19:28</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>🧩 Implementing the BRICS currency on a public blockchain reduces cost &amp; complexity<br><br>The dynamic supply is controlled by smart contracts, while ZKPs bridge data from arbitrary sources 🌉<br><br>Demand is driven by incentives for participating in the BRICS economic network 💰</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/integrating-zklocus-allows-associating-geolocation-data-with.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒">🧵 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=by-embracing-public-blockchains-and-zeroknowledge" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/by-embracing-public-blockchains-and-zeroknowledge.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../implementing-the-brics-currency-on-a-public-blockchain.html" class="thought-permalink">2024-04-28 19:28</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🧩 Implementing the BRICS currency on a public blockchain reduces cost &amp; complexity<br><br>The dynamic supply is controlled by smart contracts, while ZKPs bridge data from arbitrary sources 🌉<br><br>Demand is driven by incentives for participating in the BRICS economic network 💰</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="integrating-zklocus-allows-associating-geolocation-data-with.html" class="quoted-thought-permalink">2024-04-28 19:28</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒<br><br>zkLocus turns geolocation into a programmable real-world asset (RWA), enabling location-based fees and taxation📍<br><br>✨ Native on MinaProtocol</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/integrating-zklocus-allows-associating-geolocation-data-with.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒">🧵 🌍 Integrating zkLocus allows associating geolocation data with each BRICS transaction while preserving user privacy 🔒</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=implementing-the-brics-currency-on-a-public-blockchain" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/implementing-the-brics-currency-on-a-public-blockchain.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../lets-explore-how-the-brics-currency-can-leverage-these.html" class="thought-permalink">2024-04-28 19:28</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🔍 Let&#x27;s explore how the BRICS currency can leverage these technologies:<br><br>✅ Dynamic supply mechanism via smart contracts<br>✅ Legal compliance on-chain using ZKPs<br>✅ Integration with DeFi and zkLocus for authenticated private geolocation<br><br>👉 A cryptocurrency for Web3</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="the-brics-digital-currency-aims-to-integrate-with-existing.html" class="quoted-thought-permalink">2024-04-28 19:28</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>💡 While the original paper suggests the impossibility of realizing the BRICS currency as a cryptocurrency, we&#x27;ll challenge it 🤔<br><br>A public blockchain with SmartContracts, combined with Zero-Knowledge Proofs (ZKP), provides a natural fit for the implementation 🧩</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/brics-digital-currency-cryptocurrency-on-a-public-blockchain.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙">🧵 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=lets-explore-how-the-brics-currency-can-leverage-these" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/lets-explore-how-the-brics-currency-can-leverage-these.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../the-brics-digital-currency-aims-to-integrate-with-existing.html" class="thought-permalink">2024-04-28 19:28</a></p>
+    </div>
+    <div class="thought-content">
+        <p>💡 While the original paper suggests the impossibility of realizing the BRICS currency as a cryptocurrency, we&#x27;ll challenge it 🤔<br><br>A public blockchain with SmartContracts, combined with Zero-Knowledge Proofs (ZKP), provides a natural fit for the implementation 🧩</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="the-brics-digital-currency-aims-to-integrate-with-existing.html" class="quoted-thought-permalink">2024-04-28 19:28</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>🌍 The BRICS digital currency aims to integrate with existing monetary systems, creating a unified economic area for member nations 🤝<br><br>Its value is algorithmically derived from various economic factors of the participating countries 📈</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/brics-digital-currency-cryptocurrency-on-a-public-blockchain.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙">🧵 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=the-brics-digital-currency-aims-to-integrate-with-existing" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/the-brics-digital-currency-aims-to-integrate-with-existing.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../brics-digital-currency-cryptocurrency-on-a-public-blockchain.html" class="thought-permalink">2024-04-28 19:28</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙<br><br>In this article, we explore how the BRICS currency can be implemented on a public blockchain and challenge the claims made in &quot;Digital Money Options for the BRICS&quot; for Web3</p>
+        <div class="thought-image">
+            
+        </div>
+        
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/brics-digital-currency-cryptocurrency-on-a-public-blockchain.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙">🧵 🚀 BRICS Digital Currency: Cryptocurrency on a Public Blockchain 🪙</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=brics-digital-currency-cryptocurrency-on-a-public-blockchain" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/brics-digital-currency-cryptocurrency-on-a-public-blockchain.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../lets-dive-into-the-technical-details-of-randomina-a-protocol.html" class="thought-permalink">2024-04-15 20:24</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐<br><br>💡 Powering zkLocus<br><br>🔗 GitHub: <a href="https://github.com/iluxonchik/randomina/" target="_blank">https://github.com/iluxonchik/randomina/</a></p>
+        <div class="thought-image">
+            
+        </div>
+        
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐">🧵 🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=lets-dive-into-the-technical-details-of-randomina-a-protocol" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/lets-dive-into-the-technical-details-of-randomina-a-protocol.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../key-features.html" class="thought-permalink">2024-04-15 18:58</a></p>
+    </div>
+    <div class="thought-content">
+        <p>⚡ Key Features:<br><br>🔀 Provable pseudo-randomness: VRF<br>🔒 Fresh &amp; Tamper-proof: ZK and Mina Protocol blockchain<br>⚡ Efficient &amp; scalable: zkSNARKs<br>🌐 Decentralized &amp; trustless: $MINA<br>🔭 Transparent &amp; auditable: OpenSource</p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="introducing-randomina-a-protocol-for-provable-random-number.html" class="quoted-thought-permalink">2024-04-15 18:58</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>🔒 RandoMina leverages the power of Zero-Knowledge (ZK) proofs to ensure random numbers are:<br><br>✅ Provable<br>✅ Secure<br>✅ Trustless<br><br>🌐 Built on Mina Protocol blockchain, RandoMina is tamper-proof and transparent! 🙌</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/introducing-randomina-a-protocol-for-provable-random-number.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: 🎲 Introducing RandoMina - a protocol for provable random number generation on the Mina Protocol blockchain  blockchain! 🔢🔐">🧵 🎲 Introducing RandoMina - a protocol for provable random number generation on the Mina Protocol blockchain  blockchain! 🔢🔐</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=key-features" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/key-features.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <span class="user-name">Illya Gerasymchuk</span> -
+        <p class="thought-date-time"><a href="../when-combined-with-the-blockchain-zksnarks-zkstarks-are.html" class="thought-permalink">2024-04-14 13:28</a></p>
+    </div>
+    <div class="thought-content">
+        <p>🔗 Deep dive into ZKP protocols of zkSNARK/zkSTARK and how combined with the blockchain they enable a new Verifiable Computation model by providing a cryptographic observation of a computation👇<br><br><a href="https://illya.sh/blog/posts/zksnark-zkstark-verifiable-computation-model-blockchain/" target="_blank">https://illya.sh/blog/posts/zksnark-zkstark-verifiable-computation-model-blockchain/</a></p>
+        <div class="thought-image">
+            
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="when-combined-with-the-blockchain-zksnarks-zkstarks-are.html" class="quoted-thought-permalink">2024-04-14 13:28</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>💡 When combined with the blockchain, zkSNARKs &amp; zkSTARKs are disruptive:<br><br>🌍 zkLocus: geolocation RWA<br>🏥 zkSafeZones: Safeguarding civilians in warzones. Proposing to UN and ICRC<br>⚖️ Automated legal compliance on-chain<br>🕵️ Privacy-preserving AI systems<br><br>🛠️</p>
+            <div class="quoted-thought-image"></div>
+        </div>
+    </div>
+</div> 
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/ever-wondered-how-zksnarks-zkstarks-actually-work-under-the.html" target="_blank" rel="noopener" aria-label="Open Illya's thread: Ever wondered how zkSNARKs &amp; zkSTARKs ACTUALLY work under the hood? 🤔">🧵 Ever wondered how zkSNARKs &amp; zkSTARKs ACTUALLY work under the hood? 🤔</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=when-combined-with-the-blockchain-zksnarks-zkstarks-are" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/when-combined-with-the-blockchain-zksnarks-zkstarks-are.html" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        <nav class="pagination"><span class="newer disabled">← Newer</span><span class="page-info">Page 1 of 2</span><a href="1.html" class="older">Older →</a></nav>
+    </div>
+
+    <!-- Lightbox Structure (Initially Hidden) -->
+    <div id="lightbox" class="lightbox-overlay">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close">&times;</button>
+            <img src="" alt="Lightbox image">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = lightbox.querySelector('img');
+            const lightboxClose = lightbox.querySelector('.lightbox-close');
+            const triggers = document.querySelectorAll('.lightbox-trigger');
+
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent default link behavior
+                    const imgSrc = trigger.getAttribute('href');
+                    lightboxImg.setAttribute('src', imgSrc);
+                    lightbox.classList.add('visible');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling background
+                });
+            });
+
+            // Check if we're on an individual thought page (robust across URL modes)
+            const isIndividualThoughtPage = !!document.querySelector('.individual-thought-navigation');
+            
+            // Handle quoted thought box clicks for navigation (always clickable)
+            const quotedThoughts = document.querySelectorAll('.quoted-thought-box');
+            quotedThoughts.forEach(quotedBox => {
+                quotedBox.addEventListener('click', (e) => {
+                    // Don't navigate if clicking on an image or link within the quoted thought
+                    if (e.target.tagName === 'IMG' || e.target.tagName === 'A') {
+                        return;
+                    }
+                    e.preventDefault();
+                    // Find the permalink within this quoted thought
+                    const permalink = quotedBox.querySelector('.quoted-thought-permalink');
+                    if (permalink) {
+                        window.location.href = permalink.getAttribute('href');
+                    }
+                });
+                
+                // Add cursor pointer to indicate clickability
+                quotedBox.style.cursor = 'pointer';
+            });
+
+            // Handle main thought box clicks (only in timeline/list views, not on individual pages)
+            if (!isIndividualThoughtPage) {
+                const mainThoughts = document.querySelectorAll('.thought-box');
+                mainThoughts.forEach(thoughtBox => {
+                    // Skip if this is a quoted thought box (already handled above)
+                    if (thoughtBox.closest('.quoted-thought-container')) {
+                        return;
+                    }
+                    
+                    thoughtBox.addEventListener('click', (e) => {
+                        // Don't navigate if clicking on an image, link, quoted thought, or action buttons within the main thought
+                        if (e.target.tagName === 'IMG' || 
+                            e.target.tagName === 'A' || 
+                            e.target.closest('.quoted-thought-container') ||
+                            e.target.closest('.thought-actions')) {
+                            return;
+                        }
+                        e.preventDefault();
+                        // Find the permalink within this main thought
+                        const permalink = thoughtBox.querySelector('.thought-permalink');
+                        if (permalink) {
+                            window.location.href = permalink.getAttribute('href');
+                        }
+                    });
+                    
+                    // Add cursor pointer and clickable class to indicate clickability
+                    thoughtBox.style.cursor = 'pointer';
+                    thoughtBox.classList.add('clickable');
+                });
+            }
+
+            // --- Share button logic with single vs double-click ---
+            const shareButtons = document.querySelectorAll('.share-button');
+            const DOUBLE_THRESHOLD = 500; // ms
+
+            shareButtons.forEach(btn => {
+                let clickTimer = null;
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const shareData = {
+                        title: btn.dataset.shareTitle,
+                        text: btn.dataset.shareText,
+                        url: btn.dataset.shareUrl
+                    };
+
+                    // If this is the second click within threshold → double-click
+                    if (clickTimer) {
+                        clearTimeout(clickTimer);
+                        clickTimer = null;
+                        performCopy(shareData.url); // Double-click action
+                        return;
+                    }
+
+                    // First click – set up timer for single-click action
+                    clickTimer = setTimeout(() => {
+                        clickTimer = null;
+                        showNativeShare(shareData);
+                    }, DOUBLE_THRESHOLD);
+                });
+            });
+
+            async function showNativeShare(shareData) {
+                if (navigator.share) {
+                    try {
+                        await navigator.share(shareData);
+                        return;
+                    } catch (err) {
+                        // Ignore user cancellation; fallback otherwise
+                        if (!err || (err.name !== 'AbortError' && err.name !== 'NotAllowedError')) {
+                            performCopy(shareData.url);
+                        }
+                        return;
+                    }
+                }
+                performCopy(shareData.url); // Fallback when Web Share not available
+            }
+
+            function performCopy(url) {
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(url).then(() => {
+                        toast('Link copied to clipboard! 📋');
+                    }).catch(() => {
+                        toast('Copy this link: ' + url);
+                    });
+                } else {
+                    toast('Copy this link: ' + url);
+                }
+            }
+
+            // Simple toast helper
+            function toast(msg) {
+                const old = document.querySelector('.share-feedback');
+                if (old) old.remove();
+                const el = document.createElement('div');
+                el.className = 'share-feedback';
+                el.textContent = msg;
+                document.body.appendChild(el);
+                setTimeout(() => el.remove(), 3000);
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('visible');
+                lightboxImg.setAttribute('src', ''); // Clear image src
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+
+            // Close on button click
+            lightboxClose.addEventListener('click', closeLightbox);
+
+            // Close on clicking overlay background
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) { // Only close if overlay itself is clicked
+                    closeLightbox();
+                }
+            });
+
+            // Close on Escape key press
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && lightbox.classList.contains('visible')) {
+                    closeLightbox();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        // Dark Mode Toggle Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            const profileImg = document.querySelector('.profile-img');
+            const feedbackElement = document.getElementById('theme-feedback');
+            const themeLocalStorageKey = 'themePreference'; // Stores 'auto', 'light', or 'dark'
+            let feedbackTimeout;
+
+            function applyTheme(theme) {
+                // Remove specific mode classes first
+                body.classList.remove('light-mode', 'dark-mode');
+                let actualTheme = theme;
+
+                if (theme === 'auto') {
+                    // Check system preference if auto
+                    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    actualTheme = prefersDark ? 'dark' : 'light';
+                } 
+
+                // Apply the determined theme class
+                if (actualTheme === 'dark') {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.add('light-mode'); 
+                }
+            }
+
+            function showFeedback(message) {
+                if (!feedbackElement) return;
+                
+                // Clear any existing timeout to prevent overlap
+                if (feedbackTimeout) {
+                    clearTimeout(feedbackTimeout);
+                }
+
+                feedbackElement.innerHTML = message;
+                feedbackElement.classList.add('visible');
+
+                // Hide feedback after a delay
+                feedbackTimeout = setTimeout(() => {
+                    feedbackElement.classList.remove('visible');
+                }, 1700); // 1.7 seconds
+            }
+
+            function setThemePreference(theme) {
+                localStorage.setItem(themeLocalStorageKey, theme);
+                applyTheme(theme);
+                // Show feedback based on the *newly set* preference
+                let feedbackMessage = '';
+                if (theme === 'light') {
+                    feedbackMessage = '💡 Light Mode Activated';
+                } else if (theme === 'dark') {
+                    feedbackMessage = '🌙 Dark Mode Activated';
+                } else {
+                    feedbackMessage = '⚙️ Auto Mode Activated';
+                }
+                 showFeedback(feedbackMessage);
+            }
+
+            function cycleTheme() {
+                const currentPreference = localStorage.getItem(themeLocalStorageKey) || 'auto'; // Default to auto
+                let nextPreference;
+
+                if (currentPreference === 'auto') {
+                    nextPreference = 'light';
+                } else if (currentPreference === 'light') {
+                    nextPreference = 'dark';
+                } else { // currentPreference === 'dark'
+                    nextPreference = 'auto';
+                }
+                setThemePreference(nextPreference);
+            }
+
+            // Set initial theme
+            const savedTheme = localStorage.getItem(themeLocalStorageKey) || 'auto'; // Default to auto
+            applyTheme(savedTheme);
+
+            // Add click listener to profile image
+            if (profileImg) {
+                profileImg.addEventListener('click', cycleTheme);
+            }
+
+             // Listen for system theme changes
+             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+                 // Only apply change if the current preference is 'auto'
+                 if (localStorage.getItem(themeLocalStorageKey) === 'auto' || !localStorage.getItem(themeLocalStorageKey)) {
+                     applyTheme('auto'); // Re-apply auto theme to respect the change
+                 }
+             });
+        });
+    </script>
+
+</body>
+</html>
