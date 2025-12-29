@@ -76,6 +76,7 @@ https://illya.sh/thoughts/a-bank-may-buy-a-us-treasury-bond-ust-and-hold-it-as-a
 https://illya.sh/thoughts/a-bounce-back-into-the-upper-part-of-the-previous-weekly
 https://illya.sh/thoughts/a-clarification-the-table-is-cbrs-gold-holdings-in-usd-so
 https://illya.sh/thoughts/a-cut-larger-than-25bp-is-highly-unlikely-since-the-current
+https://illya.sh/thoughts/a-few-months-ago-i-wrote-about-lora-meshes
 https://illya.sh/thoughts/a-good-software-engineer-follows-the-best-practices-a-great
 https://illya.sh/thoughts/a-kind-reminder-that-higher-oil-prices-benefit-russia-and
 https://illya.sh/thoughts/a-liquid-asset-is-one-with-low-credit-and-duration-risk
@@ -95,6 +96,7 @@ https://illya.sh/thoughts/added-a-share-action-to-every-post
 https://illya.sh/thoughts/added-an-audio-version-of-the-article
 https://illya.sh/thoughts/added-an-rss-feed-to-my-thoughts
 https://illya.sh/thoughts/added-rss-feed-to-illyas-threads-articles-https-illya-sh
+https://illya.sh/thoughts/added-semantic-categorization-via-embeddings-to-articles
 https://illya.sh/thoughts/added-stateless-comments-on-posts
 https://illya.sh/thoughts/added-threads-to-my-posts-thoughts-now-you-can-read-them-as
 https://illya.sh/thoughts/added-transport-layer-security-for-internet-of-things-tls
@@ -201,6 +203,7 @@ https://illya.sh/thoughts/cbdc
 https://illya.sh/thoughts/central-bank-balance-sheets-are-an-underrated-resource-for
 https://illya.sh/thoughts/central-bank-liquidity-injection-includes-direct-indirect-qe
 https://illya.sh/thoughts/central-banks-have-rejected-holding-bitcoin-in-their
+https://illya.sh/thoughts/central-banks-were-more-influenced-by-farming-than-you
 https://illya.sh/thoughts/central-banks-will-continue-to-buy-gold
 https://illya.sh/thoughts/chatgpt-ratio-is-great-a-book-quality-metric-in-post-llm-era
 https://illya.sh/thoughts/chatgpt-reaffirms-its-preference-for-txt-over-html
@@ -210,6 +213,7 @@ https://illya.sh/thoughts/china-announces-tariffs-on-5-of-us-exports
 https://illya.sh/thoughts/china-has-been-increasing-their-gold-reserves-ytd
 https://illya.sh/thoughts/china-injects-liquidity-mainly-via-reverse-repurchase
 https://illya.sh/thoughts/china-is-considering-yuan-backed-stablecoins-which-will
+https://illya.sh/thoughts/china-is-hoarding-commodities
 https://illya.sh/thoughts/china-is-the-2nd-largest-holder-of-us-treasury-bonds-a
 https://illya.sh/thoughts/china-sold-us-treasuries-and-bought-gold-just-like-i-wrote
 https://illya.sh/thoughts/china-will-win-the-ai-race-but-not-because-theyre-releasing
@@ -540,6 +544,7 @@ https://illya.sh/thoughts/just-to-re-iterate-on-this-further-the-iphones-0-click
 https://illya.sh/thoughts/just-wait-until-bitcoin-hype-accounts-find-out-that-czechia
 https://illya.sh/thoughts/keep-in-mind-that-transaction-fees-and-the-size-of-the
 https://illya.sh/thoughts/key-features
+https://illya.sh/thoughts/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python
 https://illya.sh/thoughts/larger-modified-duration-value-means-that-the-bonds-price-is
 https://illya.sh/thoughts/learn-anything-with-ai-fast
 https://illya.sh/thoughts/learn-more-about-zero-knowledge-proofs-their-applications
@@ -941,6 +946,7 @@ https://illya.sh/thoughts/to-clarify-here-youre-stating-with-us-dollar-and-then-
 https://illya.sh/thoughts/to-estimate-the-maximum-liquidity-that-can-be-added-by-a
 https://illya.sh/thoughts/to-lower-the-mortgage-rates-the-fed-can-purchase-agency-mbs
 https://illya.sh/thoughts/today-i-asked-gpt-4o-to-create-a-meme-about-vibe-coding
+https://illya.sh/thoughts/todays-gold-silver-and-their-miners-sell-off-is-a-buying
 https://illya.sh/thoughts/together-on-rrp-iorb-discount-rate-and-srf-create-a-corridor
 https://illya.sh/thoughts/together-on-rrp-iorb-discount-rate-and-srf-define-an
 https://illya.sh/thoughts/tokenization-rwa
@@ -1093,6 +1099,7 @@ https://illya.sh/thoughts/global-liquidity/5
 https://illya.sh/thoughts/gold/1
 https://illya.sh/thoughts/gold/2
 https://illya.sh/thoughts/gold/3
+https://illya.sh/thoughts/gold/4
 https://illya.sh/thoughts/monetary-policy/1
 https://illya.sh/thoughts/monetary-policy/2
 https://illya.sh/thoughts/monetary-policy/3

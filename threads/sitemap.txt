@@ -15,6 +15,7 @@ https://illya.sh/threads/91-of-central-banks-are-working-on-cbdcs-but-not-on-a-p
 https://illya.sh/threads/a-primer-on-strategy-mstr-business-financials-liquidity-and
 https://illya.sh/threads/added-an-rss-feed-to-my-thoughts
 https://illya.sh/threads/added-rss-feed-to-illyas-threads-articles-https-illya-sh
+https://illya.sh/threads/added-semantic-categorization-via-embeddings-to-articles
 https://illya.sh/threads/added-stateless-comments-on-posts
 https://illya.sh/threads/added-threads-to-my-posts-thoughts-now-you-can-read-them-as
 https://illya.sh/threads/added-transport-layer-security-for-internet-of-things-tls
@@ -40,6 +41,7 @@ https://illya.sh/threads/central-banks-will-continue-to-buy-gold-1
 https://illya.sh/threads/central-banks-will-continue-to-buy-gold-2
 https://illya.sh/threads/chatgpt-ratio-is-great-a-book-quality-metric-in-post-llm-era
 https://illya.sh/threads/china-has-been-increasing-their-gold-reserves-ytd
+https://illya.sh/threads/china-is-hoarding-commodities
 https://illya.sh/threads/china-yuan
 https://illya.sh/threads/chinas-central-bank-uses-usd-value-as-a-key-driver-in
 https://illya.sh/threads/chinas-central-bank-uses-usd-value-as-a-key-driver-in-2
@@ -113,6 +115,7 @@ https://illya.sh/threads/its-not-about-lowering-gold
 https://illya.sh/threads/its-not-just-the-fed-the-ecb-is-also-lowering-rates-into
 https://illya.sh/threads/its-not-yet-the-top-of-the-cycle-for-equities
 https://illya.sh/threads/just-wait-until-bitcoin-hype-accounts-find-out-that-czechia
+https://illya.sh/threads/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python
 https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol
 https://illya.sh/threads/lower-interest-rates-means-less-attractive-repo-and-deposit
 https://illya.sh/threads/market-makers-and-other-dealers-are-also-subject-to
