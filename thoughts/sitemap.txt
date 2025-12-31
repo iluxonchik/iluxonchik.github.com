@@ -56,6 +56,7 @@ https://illya.sh/thoughts/4-the-sender-specific-nonce-is-derived-from-the-sender
 https://illya.sh/thoughts/40
 https://illya.sh/thoughts/4000-oz-gold-by-the-end-of-2025-yes-very-much-possible-but
 https://illya.sh/thoughts/41
+https://illya.sh/thoughts/42
 https://illya.sh/thoughts/5
 https://illya.sh/thoughts/5-days-ago-i-wrote-that-usd-rub-rate-will-fall-5-days-later
 https://illya.sh/thoughts/50-of-central-banks-in-both-advanced-and-emerging-economies
@@ -362,6 +363,8 @@ https://illya.sh/thoughts/gold-futures-market-opens-in-2-mins
 https://illya.sh/thoughts/gold-futures-new-all-time-high-above-3500
 https://illya.sh/thoughts/gold-has-formed-a-double-top-on-the-4h-chart
 https://illya.sh/thoughts/gold-hasnt-broken-the-weekly-uptrend-note-the-higher-highs
+https://illya.sh/thoughts/gold-hasnt-even-touched-its-daily-level-uptrend-support-and
+https://illya.sh/thoughts/gold-hasnt-even-touched-its-daily-support-line-from-october
 https://illya.sh/thoughts/gold-hitting-another-ath
 https://illya.sh/thoughts/gold-is-a-great-asset-to-hold-for-the-next-5-years
 https://illya.sh/thoughts/gold-is-currently-the-only-asset-whose-leveraged-long
@@ -570,6 +573,7 @@ https://illya.sh/thoughts/looks-like-crypto-twitter-has-not-discovered-mendeleev
 https://illya.sh/thoughts/looks-like-lowest-renminbi-yuan-since-2008-didnt-last-long
 https://illya.sh/thoughts/lower-interest-rates-means-less-attractive-repo-and-deposit
 https://illya.sh/thoughts/lower-usd-index-usd-devaluation-higher-premium-for-usd-loans
+https://illya.sh/thoughts/m2-money-supply-is-a-bad-measure-of-global-liquidity
 https://illya.sh/thoughts/m2-supply-liquidity
 https://illya.sh/thoughts/many-boast-about-uss-higher-gdp-than-eu-without-looking-at
 https://illya.sh/thoughts/market-makers-and-other-dealers-are-also-subject-to
@@ -762,7 +766,9 @@ https://illya.sh/thoughts/silver-a-breakdown-below-the-bottom-orange-line-will-l
 https://illya.sh/thoughts/silver-and-gold-move-differently-which-why-i-generally
 https://illya.sh/thoughts/silver-back-to-august-2020-price
 https://illya.sh/thoughts/silver-could-pullback-to-40-before-continuing-its-uptrend
+https://illya.sh/thoughts/silver-didnt-even-break-its-4-hour-trend-support-on-the
 https://illya.sh/thoughts/silver-is-down-almost-20
+https://illya.sh/thoughts/silver-is-up-193-in-2025-but-it-only-takes-a-16-pullback-for
 https://illya.sh/thoughts/silver-physcial-delivery-demand-high
 https://illya.sh/thoughts/silver-price-reaching-14-year-aths
 https://illya.sh/thoughts/silver-was-another-spot-on-prediction
@@ -887,6 +893,7 @@ https://illya.sh/thoughts/the-rates-define-the-interest-rate-corridor-in-the-fol
 https://illya.sh/thoughts/the-result-is-an-e-commerce-platform-that-respects-end-user
 https://illya.sh/thoughts/the-ruble-thesis-remains-valid
 https://illya.sh/thoughts/the-same-is-true-for-government-policies-or-programs-those
+https://illya.sh/thoughts/the-same-x-accounts-that-were-telling-you-to-buy-the-bitcoin
 https://illya.sh/thoughts/the-specific-qe-policies-will-vary-but-it-will-probably
 https://illya.sh/thoughts/the-system-faced-its-biggest-test-during-the-90s-banking
 https://illya.sh/thoughts/the-tariffs-are-not-on-all-gold-imports-just-on-a-specific
@@ -970,6 +977,7 @@ https://illya.sh/thoughts/updated-illyas-threads-url-to-https-illya-sh-threads
 https://illya.sh/thoughts/updated-my-thoughts-section
 https://illya.sh/thoughts/updated-opengraph-images-on-thoughts-threads-at-my-website
 https://illya.sh/thoughts/upwards-retracements-for-us-dollar-index-are-normal
+https://illya.sh/thoughts/uranium-nuclear-energy-electrical-grid-lithium-and-copper
 https://illya.sh/thoughts/us-10-year-bond-yield-spikes-above-4-5-at-open
 https://illya.sh/thoughts/us-bond-yields-are-at-their-2006-levels
 https://illya.sh/thoughts/us-bond-yields-directly-affect-usd-liquidity
