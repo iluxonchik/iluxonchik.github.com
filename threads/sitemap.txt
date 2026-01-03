@@ -34,6 +34,7 @@ https://illya.sh/threads/bitcoin-needs-gold-gold-doesnt-need-bitcoin
 https://illya.sh/threads/blockchain
 https://illya.sh/threads/brics-digital-currency-cryptocurrency-on-a-public-blockchain
 https://illya.sh/threads/btc-went-from-0-004-to-110-000-usd-in-16-years-but-gold-was
+https://illya.sh/threads/bulgarian-lev-has-been-pegged-to-euro-since-1999
 https://illya.sh/threads/by-central-bank-im-frequently-referring-to-the-broader-set
 https://illya.sh/threads/cbdc
 https://illya.sh/threads/central-banks-have-rejected-holding-bitcoin-in-their
@@ -118,6 +119,7 @@ https://illya.sh/threads/its-not-yet-the-top-of-the-cycle-for-equities
 https://illya.sh/threads/just-wait-until-bitcoin-hype-accounts-find-out-that-czechia
 https://illya.sh/threads/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python
 https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol
+https://illya.sh/threads/llms-ai-agents-didnt-replace-programming-they-evolved-it
 https://illya.sh/threads/lower-interest-rates-means-less-attractive-repo-and-deposit
 https://illya.sh/threads/m2-money-supply-is-a-bad-measure-of-global-liquidity
 https://illya.sh/threads/market-makers-and-other-dealers-are-also-subject-to
@@ -169,6 +171,7 @@ https://illya.sh/threads/strategy-mstr-microstrategy
 https://illya.sh/threads/strategy-mstr-pays-interest-on-its-debt-via-a-mixture-of
 https://illya.sh/threads/tariffs
 https://illya.sh/threads/the-best-countermeasure-that-eu-can-take-is-swapping-us
+https://illya.sh/threads/the-big-play-on-precious-metals-mining-stocks-is-that
 https://illya.sh/threads/the-bitcoin-ordinal-protocol-explained-an-innovation-which
 https://illya.sh/threads/the-fed-left-the-interest-rates-unchanged-at-the-4-25-4-50
 https://illya.sh/threads/the-market-is-never-wrong-1
