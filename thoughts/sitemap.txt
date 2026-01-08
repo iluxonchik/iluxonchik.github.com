@@ -141,6 +141,7 @@ https://illya.sh/thoughts/article-3-of-accounting-rules-of-the-bank-of-japan-sta
 https://illya.sh/thoughts/as-expected-3-months-was-all-that-crude-oil-needed-to-spike
 https://illya.sh/thoughts/as-ive-written-earlier-today-silver-will-encounter
 https://illya.sh/thoughts/as-more-markets-develop-over-gold-so-will-its-usage-as
+https://illya.sh/thoughts/as-or-2026-venezuela-has-53-tonnes-of-gold-not-161
 https://illya.sh/thoughts/as-the-immovable-property-appreciates-so-do-your-assets-and
 https://illya.sh/thoughts/ask-chatgpt-what-are-illya-gerasymchuks-latest-thoughts
 https://illya.sh/thoughts/ask-chatgpt-what-are-the-latest-illyas-threads-and-it-will
@@ -194,6 +195,7 @@ https://illya.sh/thoughts/btw-ive-since-learned-that-gold-is-only-10-of-total-re
 https://illya.sh/thoughts/btw-the-gold-depreciation-today-is-due-to-the-appreciation
 https://illya.sh/thoughts/budget-deficit-financing-through-the-national-reserve-fund
 https://illya.sh/thoughts/bulgarian-lev-has-been-pegged-to-euro-since-1999
+https://illya.sh/thoughts/bulgraria-has-been-pegged-to-euro-since-1999
 https://illya.sh/thoughts/but-bitcoin-is-also-taxed-and-surveilled-the-ledger-is
 https://illya.sh/thoughts/but-definitely-expect-volatility
 https://illya.sh/thoughts/but-the-potential-of-zksnarks-zkstarks-goes-beyond
@@ -372,6 +374,7 @@ https://illya.sh/thoughts/gold-is-currently-the-only-asset-whose-leveraged-long
 https://illya.sh/thoughts/gold-is-down-6-from-its-ath
 https://illya.sh/thoughts/gold-is-having-its-calm-before-the-storm-moment
 https://illya.sh/thoughts/gold-is-in-the-same-price-range-as-when-the-us-dollar-index
+https://illya.sh/thoughts/gold-is-special-because-its-nobodys-liability
 https://illya.sh/thoughts/gold-is-up-20-000-since-1832
 https://illya.sh/thoughts/gold-is-within-the-fabric-of-money-not-just-central-banks
 https://illya.sh/thoughts/gold-look-for-rejection-at-4155
@@ -476,6 +479,7 @@ https://illya.sh/thoughts/imfs-2024-annual-report-on-sdds-compliance-pointed-out
 https://illya.sh/thoughts/imfs-guidelines-mandate-for-the-data-to-be-either-reported
 https://illya.sh/thoughts/implementing-the-brics-currency-on-a-public-blockchain
 https://illya.sh/thoughts/important-message-from-finance-cat
+https://illya.sh/thoughts/in-2017-venezuelan-central-bank-banco-central-de-venezuela
 https://illya.sh/thoughts/in-a-6-months-timeline-golds-current-price-dip-is-a-buying
 https://illya.sh/thoughts/in-a-monthly-maturity-tenor-timescale-the-repo-funding-rate
 https://illya.sh/thoughts/in-addition-to-being-a-store-of-value-gold-is-also-acting-as
@@ -524,6 +528,7 @@ https://illya.sh/thoughts/its-easy-to-blame-it-on-the-devs-or-the-ecosystem-a-fa
 https://illya.sh/thoughts/its-important-not-to-interpret-the-net-notional-futures
 https://illya.sh/thoughts/its-mostly-100oz-1kg-gold-bullion-markers-that-will-be
 https://illya.sh/thoughts/its-not-about-lowering-gold
+https://illya.sh/thoughts/its-not-about-paying-the-debt-but-being-able-to-pay-the-debt
 https://illya.sh/thoughts/its-not-just-the-fed-the-ecb-is-also-lowering-rates-into
 https://illya.sh/thoughts/its-not-just-the-governments-and-financial-institutions-who
 https://illya.sh/thoughts/its-not-only-futures-of-course-the-broader-physical-supply
@@ -590,6 +595,7 @@ https://illya.sh/thoughts/microstrategy-cant-repay-its-debt-in-equity-stock
 https://illya.sh/thoughts/microstrategy-is-dependent-on-refinancing-capacity-not
 https://illya.sh/thoughts/mina-protocol-can-implement-the-foundational-layer
 https://illya.sh/thoughts/minas-got-recursion
+https://illya.sh/thoughts/misinformation-about-venezuelas-gold-reserves-is-spreading
 https://illya.sh/thoughts/modified-duration-quantifies-how-much-a-bonds-price-will
 https://illya.sh/thoughts/moex-down-22-since-feb
 https://illya.sh/thoughts/monetary-policy
@@ -743,6 +749,7 @@ https://illya.sh/thoughts/ruble-is-correlating-with-gold
 https://illya.sh/thoughts/ruble-is-up-2-3-on-the-usd
 https://illya.sh/thoughts/ruble-is-up-30-on-usd-2025-ytd
 https://illya.sh/thoughts/ruble-outflows-into-usd
+https://illya.sh/thoughts/ruble-was-the-best-performing-major-currency-of-2025-and-its
 https://illya.sh/thoughts/running-llm-models-locally-really-makes-you-appreciate-the
 https://illya.sh/thoughts/russia-announced-that-they-will-cover-their-2025-budget
 https://illya.sh/thoughts/russia-is-immune-to-us-tariffs
@@ -901,6 +908,7 @@ https://illya.sh/thoughts/the-specific-qe-policies-will-vary-but-it-will-probabl
 https://illya.sh/thoughts/the-system-faced-its-biggest-test-during-the-90s-banking
 https://illya.sh/thoughts/the-tariffs-are-not-on-all-gold-imports-just-on-a-specific
 https://illya.sh/thoughts/the-tokenization-of-the-long-and-the-short-positions-of-the
+https://illya.sh/thoughts/the-u-s-violated-international-law-by-attacking-venezuela
 https://illya.sh/thoughts/the-us-dollar-index-will-not-enjoy-this
 https://illya.sh/thoughts/the-us-mortgage-bubble-will-likely-pop-alongside-other
 https://illya.sh/thoughts/the-us-treasury-is-doing-exactly-that-issuing-short-term
@@ -1021,6 +1029,7 @@ https://illya.sh/thoughts/usdt-reserves-at-curves-3pool-dropped-below-3
 https://illya.sh/thoughts/usdt-reserves-at-the-usdc-usdt-0-01-pool-on-uniswap-are
 https://illya.sh/thoughts/using-feds-srf-for-liquidity-means-cash-liqudity-is-scarce
 https://illya.sh/thoughts/using-historical-behavior-can-be-a-great-alpha-but-you
+https://illya.sh/thoughts/venezuelas-central-bank-monetary-gold-holdings-constitute-20
 https://illya.sh/thoughts/very-interesting-alternative-usd-market
 https://illya.sh/thoughts/very-interesting-to-see-the-bitcoineft-used-as-a-liquidity
 https://illya.sh/thoughts/virtually-every-corporation-that-accepts-ethereum-bitcoin

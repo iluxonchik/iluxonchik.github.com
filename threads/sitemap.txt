@@ -35,6 +35,7 @@ https://illya.sh/threads/blockchain
 https://illya.sh/threads/brics-digital-currency-cryptocurrency-on-a-public-blockchain
 https://illya.sh/threads/btc-went-from-0-004-to-110-000-usd-in-16-years-but-gold-was
 https://illya.sh/threads/bulgarian-lev-has-been-pegged-to-euro-since-1999
+https://illya.sh/threads/bulgraria-has-been-pegged-to-euro-since-1999
 https://illya.sh/threads/by-central-bank-im-frequently-referring-to-the-broader-set
 https://illya.sh/threads/cbdc
 https://illya.sh/threads/central-banks-have-rejected-holding-bitcoin-in-their
@@ -114,6 +115,7 @@ https://illya.sh/threads/integrating-zklocus-allows-associating-geolocation-data
 https://illya.sh/threads/introducing-randomina-a-protocol-for-provable-random-number
 https://illya.sh/threads/is-the-rotation-from-gold-to-bitcoin-in-the-room-with-us
 https://illya.sh/threads/its-not-about-lowering-gold
+https://illya.sh/threads/its-not-about-paying-the-debt-but-being-able-to-pay-the-debt
 https://illya.sh/threads/its-not-just-the-fed-the-ecb-is-also-lowering-rates-into
 https://illya.sh/threads/its-not-yet-the-top-of-the-cycle-for-equities
 https://illya.sh/threads/just-wait-until-bitcoin-hype-accounts-find-out-that-czechia
@@ -125,6 +127,7 @@ https://illya.sh/threads/m2-money-supply-is-a-bad-measure-of-global-liquidity
 https://illya.sh/threads/market-makers-and-other-dealers-are-also-subject-to
 https://illya.sh/threads/microstrategy-cant-repay-its-debt-in-equity-stock
 https://illya.sh/threads/microstrategy-is-dependent-on-refinancing-capacity-not
+https://illya.sh/threads/misinformation-about-venezuelas-gold-reserves-is-spreading
 https://illya.sh/threads/monetary-policy
 https://illya.sh/threads/multiple-governments-have-seized-bitcoin
 https://illya.sh/threads/my-article-on-repo-rates-and-btc-price-was-referenced-on
@@ -150,6 +153,7 @@ https://illya.sh/threads/repurchase-agreements-are-almost-always-over-collateral
 https://illya.sh/threads/repurchase-agreements-are-almost-always-over-collateralized-2
 https://illya.sh/threads/ruble-is-a-gold-success-story
 https://illya.sh/threads/ruble-is-up-30-on-usd-2025-ytd
+https://illya.sh/threads/ruble-was-the-best-performing-major-currency-of-2025-and-its
 https://illya.sh/threads/russia-is-immune-to-us-tariffs-1
 https://illya.sh/threads/russia-is-immune-to-us-tariffs-2
 https://illya.sh/threads/russia-ruble
@@ -183,6 +187,7 @@ https://illya.sh/threads/the-market-is-never-wrong-6
 https://illya.sh/threads/the-market-is-never-wrong-7
 https://illya.sh/threads/the-market-is-never-wrong-8
 https://illya.sh/threads/the-market-is-never-wrong-9
+https://illya.sh/threads/the-u-s-violated-international-law-by-attacking-venezuela
 https://illya.sh/threads/there-should-be-more-blockchains-running-over-mesh
 https://illya.sh/threads/there-will-not-be-a-50-bps-rate-cut
 https://illya.sh/threads/this-is-how-the-soviet-union-kickstarted-eurodollar-markets
@@ -200,6 +205,7 @@ https://illya.sh/threads/usd-dominance-is-alluring-accounting-for-70-of-currency
 https://illya.sh/threads/usd-index-bearish-in-a-downtrend
 https://illya.sh/threads/usd-is-the-worlds-reserve-currency-but-what-does-that-mean
 https://illya.sh/threads/usd-us-dollar
+https://illya.sh/threads/venezuelas-central-bank-monetary-gold-holdings-constitute-20
 https://illya.sh/threads/virtually-every-corporation-that-accepts-ethereum-bitcoin
 https://illya.sh/threads/watch-the-feds-projection-dot-plot-not-the-fed-funds-rate
 https://illya.sh/threads/we-are-approaching-a-local-top-for-silver-and-gold-according
