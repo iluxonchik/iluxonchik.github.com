@@ -31,7 +31,7 @@ export function HomepageCard() {
               className="rounded-full w-40 h-40 object-cover border-4 border-purple-500 shadow-lg"
             />
             <h1 className="text-2xl font-bold mt-4 text-center">Illya Gerasymchuk</h1>
-            <p className="text-gray-600 text-center">Entrepreneur/Engineer</p>
+            <p className="text-gray-600 text-center">Engineering & Finance</p>
             <div className="flex mt-4 space-x-4">
               <a href="https://github.com/iluxonchik/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-purple-500 transition-colors">
                 <Github className="w-6 h-6" />

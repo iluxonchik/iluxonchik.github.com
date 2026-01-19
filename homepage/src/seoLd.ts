@@ -4,7 +4,7 @@ export const seoLd = [
     "@type": "WebSite",
     "name": "Illya Karram Gerasymchuk",
     "url": "https://illya.sh/",
-    "description": "Portfolio, CV, publications, and contact information for entrepreneur & software engineer Illya Karram Gerasymchuk. Illya's homepage.",
+    "description": "Portfolio, CV, publications, and contact information for software engineer & finance professional Illya Karram Gerasymchuk. Illya's homepage.",
     "inLanguage": "en",
     "publisher": {
       "@type": "Person",
@@ -22,7 +22,7 @@ export const seoLd = [
     "@type": "WebPage",
     "name": "Illya Karram Gerasymchuk – Homepage",
     "url": "https://illya.sh/",
-    "description": "Homepage of Illya Karram Gerasymchuk – entrepreneur & software engineer specializing in blockchain, distributed systems, AI agents and zero-knowledge proofs.",
+    "description": "Homepage of Illya Karram Gerasymchuk – software engineer & finance professional specializing in blockchain, distributed systems, AI agents and zero-knowledge proofs.",
     "inLanguage": "en",
     "isPartOf": {
       "@type": "WebSite",
@@ -47,8 +47,8 @@ export const seoLd = [
     "name": "Illya Karram Gerasymchuk",
     "alternateName": "Illya Gerasymchuk",
     "image": "https://illya.sh/profile-2.png",
-    "jobTitle": "Entrepreneur & Software Engineer",
-    "description": "Entrepreneur & software engineer specializing in blockchain, distributed systems, AI agent development, zero-knowledge proofs, and traditional Web2 systems.",
+    "jobTitle": "software engineer & finance professional",
+    "description": "software engineer & finance professional specializing in blockchain, distributed systems, AI agent development, zero-knowledge proofs, and traditional Web2 systems.",
     "url": "https://illya.sh",
     "sameAs": [
       "https://github.com/iluxonchik",
