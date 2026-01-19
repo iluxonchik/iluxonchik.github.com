@@ -57,6 +57,7 @@ https://illya.sh/thoughts/40
 https://illya.sh/thoughts/4000-oz-gold-by-the-end-of-2025-yes-very-much-possible-but
 https://illya.sh/thoughts/41
 https://illya.sh/thoughts/42
+https://illya.sh/thoughts/43
 https://illya.sh/thoughts/5
 https://illya.sh/thoughts/5-days-ago-i-wrote-that-usd-rub-rate-will-fall-5-days-later
 https://illya.sh/thoughts/50-of-central-banks-in-both-advanced-and-emerging-economies
@@ -306,6 +307,7 @@ https://illya.sh/thoughts/europe-eu
 https://illya.sh/thoughts/european-investment-funds-explained-ucits-aifs-aifmd-and-the
 https://illya.sh/thoughts/europes-gold-imports-and-exports-explained
 https://illya.sh/thoughts/even-24-7-global-video-surveillance-can-be-privacy
+https://illya.sh/thoughts/even-as-central-banks-bought-gold-the-market-analysts
 https://illya.sh/thoughts/even-if-it-doesnt-happen-directly-at-the-start-eventually-qe
 https://illya.sh/thoughts/even-if-silver-goes-down-to-30-oz-it-will-still-be-in-an
 https://illya.sh/thoughts/eventually-the-carry-will-unwind-and-debt-needs-to-be
@@ -380,6 +382,7 @@ https://illya.sh/thoughts/gold-is-up-20-000-since-1832
 https://illya.sh/thoughts/gold-is-within-the-fabric-of-money-not-just-central-banks
 https://illya.sh/thoughts/gold-look-for-rejection-at-4155
 https://illya.sh/thoughts/gold-may-just-go-straight-to-3500-in-the-next-few-hours
+https://illya.sh/thoughts/gold-miners-are-about-to-breakout
 https://illya.sh/thoughts/gold-moves-up-by-13-on-breakouts-thus-4000-oz-gold-in
 https://illya.sh/thoughts/gold-price-is-back-up-to-its-price-2-weeks-ago
 https://illya.sh/thoughts/gold-reached-3500-new-all-time-high
@@ -781,6 +784,7 @@ https://illya.sh/thoughts/silver-could-pullback-to-40-before-continuing-its-uptr
 https://illya.sh/thoughts/silver-didnt-even-break-its-4-hour-trend-support-on-the
 https://illya.sh/thoughts/silver-is-down-almost-20
 https://illya.sh/thoughts/silver-is-up-193-in-2025-but-it-only-takes-a-16-pullback-for
+https://illya.sh/thoughts/silver-mining-stocks-are-undervalued-in-2026
 https://illya.sh/thoughts/silver-physcial-delivery-demand-high
 https://illya.sh/thoughts/silver-price-reaching-14-year-aths
 https://illya.sh/thoughts/silver-was-another-spot-on-prediction
@@ -1073,6 +1077,7 @@ https://illya.sh/thoughts/whos-selling-silver
 https://illya.sh/thoughts/why-inscriptions-matter-for-artists-theyre-on-bitcoin-high
 https://illya.sh/thoughts/why-is-a-loan-an-asset-to-the-bank
 https://illya.sh/thoughts/why-would-a-central-bank-hold-bitcoin-in-reserves
+https://illya.sh/thoughts/why-wouldnt-markets-be-able-to-react-to-trumps-new-tariffs
 https://illya.sh/thoughts/with-brc-20-there-are-no-numeric-balances-instead-you-need
 https://illya.sh/thoughts/with-srf-the-fed-sets-an-upper-limit-on-repo-market-rates
 https://illya.sh/thoughts/with-the-inflation-trend
@@ -1083,6 +1088,7 @@ https://illya.sh/thoughts/yens-exchange-rate-stabilization-is-a-responsibility-o
 https://illya.sh/thoughts/yes-and-zero-knowledge-proofs-are-the-answer
 https://illya.sh/thoughts/yes-us-china-eu-others-will-print-a-lot-more-as-well
 https://illya.sh/thoughts/yes-you-always-have-access-to-the-bitcoin-network
+https://illya.sh/thoughts/yesterday-i-explained-why-silver-mining-stocks-are
 https://illya.sh/thoughts/yield-spread-between-a-safe-asset-and-a-riskier-one-is-an
 https://illya.sh/thoughts/yield-spreads-between-us-treasuries-and-riskier-bonds-mirror
 https://illya.sh/thoughts/you-can-already-feel-a-new-ath-for-gold
