@@ -589,7 +589,8 @@
                 --color-text: #000000;
                 --color-text-light: #333333;
                 --color-text-muted: #666666;
-                --color-accent: #000000;
+                /* Keep accent blue in print so links render as links */
+                --color-accent: #0066cc;
                 --color-border: #000000;
                 --font-size-base: 12pt;
                 --font-size-sm: 10pt;
@@ -620,8 +621,10 @@
             }
             
             a {
-                color: inherit;
-                text-decoration: none;
+                color: var(--color-accent) !important;
+                text-decoration: underline;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
             
             .footer {
