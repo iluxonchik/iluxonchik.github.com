@@ -68,6 +68,7 @@ https://illya.sh/thoughts/7
 https://illya.sh/thoughts/7-heres-how-randomina-ensures-unique-random-numbers
 https://illya.sh/thoughts/8
 https://illya.sh/thoughts/8-month-later-after-my-initial-post-usd-index-is-down-8
+https://illya.sh/thoughts/8-months-later-japans-30-year-bond-yield-is-now-32-higher
 https://illya.sh/thoughts/80-of-central-banks-plan-to-operate-the-dlt-blockchain-for
 https://illya.sh/thoughts/80-of-lending-in-financial-markets-is-collateral-based
 https://illya.sh/thoughts/9
@@ -236,6 +237,7 @@ https://illya.sh/thoughts/collateralized-lending-comes-with-smaller-interest-rat
 https://illya.sh/thoughts/comment
 https://illya.sh/thoughts/comment_medium
 https://illya.sh/thoughts/commercial-paper-is-unsecured-short-term-debt-issued-by
+https://illya.sh/thoughts/commodities
 https://illya.sh/thoughts/compared-to-the-ethereum-evms-linear-verifiable
 https://illya.sh/thoughts/comparisons-to-other-platforms-ordinal-protocol-has-been
 https://illya.sh/thoughts/congratulations-to-freddie-mac-fannie-mae-in-their-first
@@ -244,6 +246,8 @@ https://illya.sh/thoughts/consider-this-gold-pullback-as-a-free-gift-to-further-
 https://illya.sh/thoughts/contract-as-product-approach
 https://illya.sh/thoughts/contrary-to-popular-belief-brc-20-isnt-fully-on-the-bitcoin
 https://illya.sh/thoughts/converting-pdf-to-html-is-tricky-due-to-formatting-but-i
+https://illya.sh/thoughts/copper-is-a-great-investment-in-2026-technical-fundamentals
+https://illya.sh/thoughts/copper-is-another-great-buy-for-2026-at-current-prices
 https://illya.sh/thoughts/correlation-between-ruble-gold
 https://illya.sh/thoughts/coverage-limits
 https://illya.sh/thoughts/covered-bonds-are-issued-by-a-financial-institution-e-g-bank
@@ -335,6 +339,7 @@ https://illya.sh/thoughts/financial-stress-index-fsi-update
 https://illya.sh/thoughts/financial-stress-index-keeps-going-up
 https://illya.sh/thoughts/financial-stress-index-tariffs-update
 https://illya.sh/thoughts/financial-system-infrastructure-plumbing
+https://illya.sh/thoughts/first-european-pension-fund-the-danish-pension-fund
 https://illya.sh/thoughts/first-indication-of-crypto-downtrend
 https://illya.sh/thoughts/for-a-deeper-dive-into-japans-deposit-insurance-system-read
 https://illya.sh/thoughts/for-llm-engine-optimization-add-json-ld
@@ -594,6 +599,7 @@ https://illya.sh/thoughts/market-makers-and-other-dealers-are-also-subject-to
 https://illya.sh/thoughts/mass-usdc-to-usdt-swapping-has-caused-busd-to-fall-below
 https://illya.sh/thoughts/maximum-liquidity-added-by-bond-market-value-haircut
 https://illya.sh/thoughts/may-9th-1945-the-red-army-lead-by-zhukov-raises-the-soviet
+https://illya.sh/thoughts/maybe-just-maybe-the-eu-will-start-swapping-their-usd
 https://illya.sh/thoughts/meet-the-ord-tool-it-serves-as-an-index-block-explorer-and
 https://illya.sh/thoughts/merkle-trees-mpc-and-homomorphic-encryption-complement-zkps
 https://illya.sh/thoughts/michael-saylor-doesnt-need-to-expose-mstrs-wallets-for-a
@@ -786,6 +792,7 @@ https://illya.sh/thoughts/silver-could-pullback-to-40-before-continuing-its-uptr
 https://illya.sh/thoughts/silver-didnt-even-break-its-4-hour-trend-support-on-the
 https://illya.sh/thoughts/silver-is-down-almost-20
 https://illya.sh/thoughts/silver-is-up-193-in-2025-but-it-only-takes-a-16-pullback-for
+https://illya.sh/thoughts/silver-miners-are-up-another-4-today-and-more-than-10-in-the
 https://illya.sh/thoughts/silver-mining-stocks-are-undervalued-in-2026
 https://illya.sh/thoughts/silver-physcial-delivery-demand-high
 https://illya.sh/thoughts/silver-price-reaching-14-year-aths
@@ -1091,6 +1098,7 @@ https://illya.sh/thoughts/yes-and-zero-knowledge-proofs-are-the-answer
 https://illya.sh/thoughts/yes-us-china-eu-others-will-print-a-lot-more-as-well
 https://illya.sh/thoughts/yes-you-always-have-access-to-the-bitcoin-network
 https://illya.sh/thoughts/yesterday-i-explained-why-silver-mining-stocks-are
+https://illya.sh/thoughts/yesterday-i-wrote-an-article-explaining-why-us-tariffs-on
 https://illya.sh/thoughts/yield-spread-between-a-safe-asset-and-a-riskier-one-is-an
 https://illya.sh/thoughts/yield-spreads-between-us-treasuries-and-riskier-bonds-mirror
 https://illya.sh/thoughts/you-can-already-feel-a-new-ath-for-gold
