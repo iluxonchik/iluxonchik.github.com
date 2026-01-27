@@ -120,6 +120,7 @@ https://illya.sh/thoughts/and-ethereums-downtrend-continues-on
 https://illya.sh/thoughts/and-gold-is-up-over-50-since-january-20th
 https://illya.sh/thoughts/and-indeed-bank-of-russia-cuts-interest-rates-down-to-20
 https://illya.sh/thoughts/and-indeed-the-crypto-cap-increased-even-more
+https://illya.sh/thoughts/and-people-still-think-that-silver-and-bitcoin-are-within
 https://illya.sh/thoughts/and-ruble-is-up-on-gold-since-january
 https://illya.sh/thoughts/and-soon-the-eurozone-will-join-the-new-btc-all-time-high
 https://illya.sh/thoughts/and-the-crypto-market-cap-has-now-been-sitting-at-4-trillion
@@ -130,6 +131,7 @@ https://illya.sh/thoughts/and-there-you-go-bitcoin-reached-a-new-all-time-high
 https://illya.sh/thoughts/and-there-you-go-the-fed-cut-the-rates-by-25-bps
 https://illya.sh/thoughts/and-this-is-how-the-federal-reserve-steers-the-federal-funds
 https://illya.sh/thoughts/and-this-is-how-the-gold-market-opened
+https://illya.sh/thoughts/and-this-is-why-copper-is-currently-a-good-idea-to-complete
 https://illya.sh/thoughts/and-yes-to-get-this-data-i-had-to-download-an-excel-file
 https://illya.sh/thoughts/another-important-fact-to-mention-regarding-russia-is-that
 https://illya.sh/thoughts/another-reason-for-a-strong-ruble-is-the-consistent-negative
@@ -282,6 +284,7 @@ https://illya.sh/thoughts/do-not-browse-insider-trading-sec-filings-on-edgar-dir
 https://illya.sh/thoughts/do-you-face-the-same-philosophical-issues-with-your-cat
 https://illya.sh/thoughts/dont-forget-to-setup-your-buy-limit-orders-for-gold-silver
 https://illya.sh/thoughts/dont-learn-to-code-there-is-ai
+https://illya.sh/thoughts/dont-overthink-commodity-miners-investments
 https://illya.sh/thoughts/duration-matching-protects
 https://illya.sh/thoughts/duration-matching-protects-liquidity-and-solvency-by
 https://illya.sh/thoughts/duration-matching-protects-solvency-and-liquidity-when
@@ -365,6 +368,7 @@ https://illya.sh/thoughts/ginnie-fannie-mae-conservatorship-in-sept-2008-made-ag
 https://illya.sh/thoughts/given-that-housing-is-a-core-necessity-for-most-combined
 https://illya.sh/thoughts/global-liquidity
 https://illya.sh/thoughts/gold
+https://illya.sh/thoughts/gold-5000
 https://illya.sh/thoughts/gold-and-silver-miners
 https://illya.sh/thoughts/gold-approaching-3400-3300-was-a-good-price-for-longs-like-i
 https://illya.sh/thoughts/gold-as-a-percentage-of-balance-sheet-size-in-central-banks
@@ -629,6 +633,7 @@ https://illya.sh/thoughts/my-prediction-on-golds-bottom-was-correct-3900
 https://illya.sh/thoughts/my-prediction-on-silvers-bottom-was-correct-43-45
 https://illya.sh/thoughts/my-vibe-meter-on-bitcoin-is-off-the-charts
 https://illya.sh/thoughts/national-bank-of-romanias-gold-reserves-are-13-of-their
+https://illya.sh/thoughts/natural-gas-prices-are-very-volatile
 https://illya.sh/thoughts/navigating-the-world-of-defi-without-a-deep-understanding-of
 https://illya.sh/thoughts/nccbr-are-essentially-bilateral-otc-agreements-no-central
 https://illya.sh/thoughts/nccbr-participants-are-generally-subject-to-regulations-and
@@ -715,6 +720,7 @@ https://illya.sh/thoughts/quantitative-easing-qe-by-a-central-bank-cb-increase-b
 https://illya.sh/thoughts/quick-update-on-gold
 https://illya.sh/thoughts/quoted-thoughts-are-neatly-rendered
 https://illya.sh/thoughts/raising-yields-means-lower-incentives-to-re-finance
+https://illya.sh/thoughts/random-forest-is-currently-my-favorite-term-from-financial
 https://illya.sh/thoughts/randomina-is-an-open-source-effort-to-empower-the-mina
 https://illya.sh/thoughts/randomina-is-designed-as-a-smartcontract-in-o1js-making-it
 https://illya.sh/thoughts/re-iterating-on-the-1-5-month-old-thread
@@ -982,6 +988,7 @@ https://illya.sh/thoughts/to-clarify-here-youre-stating-with-us-dollar-and-then-
 https://illya.sh/thoughts/to-estimate-the-maximum-liquidity-that-can-be-added-by-a
 https://illya.sh/thoughts/to-lower-the-mortgage-rates-the-fed-can-purchase-agency-mbs
 https://illya.sh/thoughts/today-i-asked-gpt-4o-to-create-a-meme-about-vibe-coding
+https://illya.sh/thoughts/todays-commodity-miners-sell-off-is-a-buying-opportunity
 https://illya.sh/thoughts/todays-gold-silver-and-their-miners-sell-off-is-a-buying
 https://illya.sh/thoughts/together-on-rrp-iorb-discount-rate-and-srf-create-a-corridor
 https://illya.sh/thoughts/together-on-rrp-iorb-discount-rate-and-srf-define-an
@@ -1149,6 +1156,7 @@ https://illya.sh/thoughts/real-estate/1
 https://illya.sh/thoughts/russia-ruble/1
 https://illya.sh/thoughts/russia-ruble/2
 https://illya.sh/thoughts/silver/1
+https://illya.sh/thoughts/silver/2
 https://illya.sh/thoughts/tariffs/1
 https://illya.sh/thoughts/tokenization-rwa/1
 https://illya.sh/thoughts/us-treasury/1
