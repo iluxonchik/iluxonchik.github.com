@@ -58,6 +58,7 @@ https://illya.sh/thoughts/4000-oz-gold-by-the-end-of-2025-yes-very-much-possible
 https://illya.sh/thoughts/41
 https://illya.sh/thoughts/42
 https://illya.sh/thoughts/43
+https://illya.sh/thoughts/44
 https://illya.sh/thoughts/5
 https://illya.sh/thoughts/5-days-ago-i-wrote-that-usd-rub-rate-will-fall-5-days-later
 https://illya.sh/thoughts/50-of-central-banks-in-both-advanced-and-emerging-economies
@@ -93,6 +94,7 @@ https://illya.sh/thoughts/a-primer-on-strategy-mstr-business-financials-liquidit
 https://illya.sh/thoughts/a-reminder-that-russia-doesnt-trade-with-usa-anymore
 https://illya.sh/thoughts/a-small-insight-into-the-meticulous-care-that-is-necessary
 https://illya.sh/thoughts/a-u-s-dollar-note-doesnt-care-who-you-are-or-where-youre
+https://illya.sh/thoughts/a-week-ago-i-wrote-an-article-explaining-why-copper-is-a
 https://illya.sh/thoughts/aaand-crude-oil-futures-are-back-above-70
 https://illya.sh/thoughts/aaand-crude-oil-is-trading-above-70
 https://illya.sh/thoughts/added-a-share-action-to-every-post
@@ -217,6 +219,7 @@ https://illya.sh/thoughts/chatgpt-ratio-is-great-a-book-quality-metric-in-post-l
 https://illya.sh/thoughts/chatgpt-reaffirms-its-preference-for-txt-over-html
 https://illya.sh/thoughts/chatgpt-states-that-a-higher-interest-rate-means-bad
 https://illya.sh/thoughts/check-the-correlation-between-fed-swap-line-volumes-and
+https://illya.sh/thoughts/cherry-picking-goes-both-ways
 https://illya.sh/thoughts/china-announces-tariffs-on-5-of-us-exports
 https://illya.sh/thoughts/china-has-been-increasing-their-gold-reserves-ytd
 https://illya.sh/thoughts/china-injects-liquidity-mainly-via-reverse-repurchase
@@ -248,8 +251,10 @@ https://illya.sh/thoughts/consider-this-gold-pullback-as-a-free-gift-to-further-
 https://illya.sh/thoughts/contract-as-product-approach
 https://illya.sh/thoughts/contrary-to-popular-belief-brc-20-isnt-fully-on-the-bitcoin
 https://illya.sh/thoughts/converting-pdf-to-html-is-tricky-due-to-formatting-but-i
+https://illya.sh/thoughts/copper-extends-its-gains-to-9-on-the-day-and-its
 https://illya.sh/thoughts/copper-is-a-great-investment-in-2026-technicals-fundamentals
 https://illya.sh/thoughts/copper-is-another-great-buy-for-2026-at-current-prices
+https://illya.sh/thoughts/copper-just-hit-a-new-all-time-high-and-its-not-stopping
 https://illya.sh/thoughts/correlation-between-ruble-gold
 https://illya.sh/thoughts/coverage-limits
 https://illya.sh/thoughts/covered-bonds-are-issued-by-a-financial-institution-e-g-bank
@@ -301,6 +306,7 @@ https://illya.sh/thoughts/ecbs-legal-framework-forbids-the-use-of-gold-revaluati
 https://illya.sh/thoughts/edgartools-on-github
 https://illya.sh/thoughts/effectively-this-means-that-if-both-parties-involved-in-the
 https://illya.sh/thoughts/electromagnetic-waves-propagate-at-a-constant-speed-speed-of
+https://illya.sh/thoughts/enjoy-the-price-dip-across-communities
 https://illya.sh/thoughts/equity-is-the-residual-claim-on-assets-after-all-liabilities
 https://illya.sh/thoughts/essentially-many-t-bill-sales-flood-the-market-at-once-so
 https://illya.sh/thoughts/eth-btc-shorts-update
@@ -631,6 +637,7 @@ https://illya.sh/thoughts/my-article-on-how-all-reserve-currencies-started-on-a-
 https://illya.sh/thoughts/my-article-on-repo-rates-and-btc-price-was-referenced-on
 https://illya.sh/thoughts/my-prediction-on-golds-bottom-was-correct-3900
 https://illya.sh/thoughts/my-prediction-on-silvers-bottom-was-correct-43-45
+https://illya.sh/thoughts/my-target-for-gold-is-at-least-7500-usd-per-ounce
 https://illya.sh/thoughts/my-vibe-meter-on-bitcoin-is-off-the-charts
 https://illya.sh/thoughts/national-bank-of-romanias-gold-reserves-are-13-of-their
 https://illya.sh/thoughts/natural-gas-prices-are-very-volatile
@@ -690,6 +697,7 @@ https://illya.sh/thoughts/over-1-5-billion-usdc-have-been-burned-in-the-last-8-h
 https://illya.sh/thoughts/over-10-years-the-russian-central-bank-has-increased-gold
 https://illya.sh/thoughts/overall-blockchain-defi-lacks-development-for-short-term
 https://illya.sh/thoughts/overnight-reverse-repo-rate-on-rrp-defines-the-rate-at
+https://illya.sh/thoughts/palladium-is-a-great-investment-in-2026
 https://illya.sh/thoughts/part-of-bitcoins-value-derives-from-the-total-electricity
 https://illya.sh/thoughts/paxg-is-trading-at-an-80-premium-over-gold
 https://illya.sh/thoughts/pboc-provides-commercial-policy-banks-with-liquidity-via
@@ -1132,6 +1140,7 @@ https://illya.sh/thoughts/bitcoin/3
 https://illya.sh/thoughts/bitcoin/4
 https://illya.sh/thoughts/blockchain/1
 https://illya.sh/thoughts/china-yuan/1
+https://illya.sh/thoughts/commodities/1
 https://illya.sh/thoughts/europe-eu/1
 https://illya.sh/thoughts/financial-law/1
 https://illya.sh/thoughts/financial-law/2
