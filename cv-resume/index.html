@@ -4,7 +4,7 @@
     <!-- ==== BASIC META TAGS ==== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Illya Karram Gerasymchuk – CV Resume</title>
+    <title>Illya Gerasymchuk – CV Resume</title>
     <meta name="description" content="Software engineer & finance professional specializing in blockchain, distributed systems, AI agent development, and zero-knowledge proofs.">
     <meta name="author" content="Illya Karram Gerasymchuk">
     <meta name="robots" content="index, follow">
@@ -267,6 +267,11 @@
             --color-text-muted: #777777;
             --color-accent: #0066cc;
             --color-border: #e0e0e0;
+
+            /* Profile photo */
+            --profile-ring-color: #00aef5;
+            --profile-ring-width: 5px;
+            --profile-photo-size: clamp(80px, 22vw, 82px);
             
             /* Typography */
             --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -355,6 +360,27 @@
             border-bottom: 1px solid var(--color-border);
             margin-bottom: var(--space-sm);
             padding-bottom: var(--space-xs);
+        }
+
+        .header-layout {
+            align-items: flex-start;
+            display: flex;
+            gap: var(--space-md);
+        }
+
+        .header-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .profile-photo {
+            border: var(--profile-ring-width) solid var(--profile-ring-color);
+            border-radius: 50%;
+            display: block;
+            flex: 0 0 auto;
+            height: var(--profile-photo-size);
+            object-fit: cover;
+            width: var(--profile-photo-size);
         }
         
         .job-title {
@@ -554,8 +580,12 @@
             .competencies-list ul {
                 columns: 1;
             }
+
+            .header-layout {
+                gap: var(--space-sm);
+            }
         }
-        
+
         /* Responsive Design - Tablet */
         @media (min-width: 600px) {
             .container {
@@ -652,10 +682,15 @@
     <div class="container">
         <!-- ==== HEADER SECTION ==== -->
         <header class="header" role="banner">
-            <h1>Illya Karram Gerasymchuk</h1>
-            <div class="job-title">Engineering & Finance</div>
-            <div class="contact-info">
-                🇪🇺 • <a href="mailto:hello@illya.sh" target="_blank" rel="noopener noreferrer">hello@illya.sh ↗</a> • <a href="https://github.com/iluxonchik" target="_blank" rel="noopener noreferrer">GitHub ↗</a> • <a href="https://illya.sh/threads/" target="_blank" rel="noopener noreferrer">Threads ↗</a> • <a href="https://illya.sh/thoughts/" target="_blank" rel="noopener noreferrer">Thoughts ↗</a>
+            <div class="header-layout">
+                <img class="profile-photo" src="illya.webp" alt="Illya Gerasymchuk" width="512" height="512" decoding="async">
+                <div class="header-text">
+                    <h1>Illya Gerasymchuk</h1>
+                    <div class="job-title">Engineering & Finance</div>
+                    <div class="contact-info">
+                        🇪🇺 • <a href="mailto:hello@illya.sh" target="_blank" rel="noopener noreferrer">hello@illya.sh ↗</a> • <a href="https://github.com/iluxonchik" target="_blank" rel="noopener noreferrer">GitHub ↗</a> • <a href="https://illya.sh/threads/" target="_blank" rel="noopener noreferrer">Threads ↗</a> • <a href="https://illya.sh/thoughts/" target="_blank" rel="noopener noreferrer">Thoughts ↗</a>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -697,7 +732,7 @@
                         <ul>
                             <li>Lead a team of 15 engineers across multiple projects</li>
                             <li>Implemented Machine Learning models and piplines and agentic systems for video image similarity search used at scale</li>
-                            <li>Architected, led, and deployed a quasi-real-time, exactly-once, eventually consistent systems processing 300 K+ TPS</li>
+                            <li>Architected, led, and deployed a quasi-real-time, exactly-once, eventually consistent systems processing 300K+ TPS</li>
                             <li>Refactored user-facing payment systems improving traceability, security, performance and double charge issues</li>
                             <li>Reverse-engineered numberous 30+ year old legacy systems for maintanance, development and rewrites</li>
                             <li>Managed, debugged, and optimized infrastructure mostly with Kubernetes</li>
