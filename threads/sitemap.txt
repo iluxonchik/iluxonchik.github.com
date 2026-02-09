@@ -21,6 +21,7 @@ https://illya.sh/threads/added-semantic-categorization-via-embeddings-to-article
 https://illya.sh/threads/added-stateless-comments-on-posts
 https://illya.sh/threads/added-threads-to-my-posts-thoughts-now-you-can-read-them-as
 https://illya.sh/threads/added-transport-layer-security-for-internet-of-things-tls
+https://illya.sh/threads/ai-will-follow-a-much-more-logarithmic-growth-than-the-hype
 https://illya.sh/threads/all-reserve-currencies-achieved-reserve-status-under-gold-or
 https://illya.sh/threads/all-time-high-for-gold-incoming
 https://illya.sh/threads/are-you-ready
@@ -59,6 +60,7 @@ https://illya.sh/threads/credit-continues-to-expand-in-the-non-financial-sector-
 https://illya.sh/threads/crypto-market-cap-down-2-6-today
 https://illya.sh/threads/debunking-a-common-misconception-in-the-crypto-world-brc-20
 https://illya.sh/threads/decentralized-digital-euro-will-not-work-because-the-ecb
+https://illya.sh/threads/dont-be-fooled-by-backtest-performance
 https://illya.sh/threads/dont-overthink-commodity-miners-investments
 https://illya.sh/threads/duration-matching-protects-solvency-and-liquidity-when
 https://illya.sh/threads/e-commerce-privacy-myth-or-reality
@@ -135,6 +137,7 @@ https://illya.sh/threads/llms-ai-agents-didnt-replace-programming-they-evolved-i
 https://illya.sh/threads/lower-interest-rates-means-less-attractive-repo-and-deposit
 https://illya.sh/threads/m2-money-supply-is-a-bad-measure-of-global-liquidity
 https://illya.sh/threads/market-makers-and-other-dealers-are-also-subject-to
+https://illya.sh/threads/metropolitan-capital-bank-trust-is-the-first-us-bank-to-fail
 https://illya.sh/threads/microstrategy-cant-repay-its-debt-in-equity-stock
 https://illya.sh/threads/microstrategy-is-dependent-on-refinancing-capacity-not
 https://illya.sh/threads/misinformation-about-venezuelas-gold-reserves-is-spreading
@@ -144,6 +147,7 @@ https://illya.sh/threads/my-article-on-repo-rates-and-btc-price-was-referenced-o
 https://illya.sh/threads/my-vibe-meter-on-bitcoin-is-off-the-charts
 https://illya.sh/threads/natural-gas-prices-are-very-volatile
 https://illya.sh/threads/neither-supply-nor-demand-are-static
+https://illya.sh/threads/no-agi-with-llms-in-their-current-form
 https://illya.sh/threads/no-permissioned-assets-running-on-blockchains-are-not-sheep
 https://illya.sh/threads/no-the-west-is-not-manipulating-gold-and-silver-prices
 https://illya.sh/threads/now-imagine-when-credit-institutions-can-tokenize-new-credit
@@ -173,6 +177,7 @@ https://illya.sh/threads/russia-ruble
 https://illya.sh/threads/russia-will-buy-silver-as-a-strategic-reserve-until-2027
 https://illya.sh/threads/russian-central-bank-key-interest-rate-is-at-21-1
 https://illya.sh/threads/russian-central-bank-key-interest-rate-is-at-21-2
+https://illya.sh/threads/scarcity-doesnt-make-bitcoin-better-than-gold
 https://illya.sh/threads/silver
 https://illya.sh/threads/silver-and-gold-move-differently-which-why-i-generally
 https://illya.sh/threads/silver-back-to-august-2020-price-1

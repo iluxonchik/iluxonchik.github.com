@@ -6,6 +6,127 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2026-02-09 12:55
+
+Scarcity Doesn't Make Bitcoin Better Than Gold 
+
+Just because something is more scarce, doesn't mean it's more valuable. The number of existing Picasso paintings is much more scarce than Bitcoin - and that number won't increase. 
+
+Would you rather have all of Picasso's paintings or all of the Bitcoin? Or maybe that's a bad example. If you own all of the Bitcoin, it's a big question what will the other market participants value it at -- definitely much below the current prices though.  
+
+There's a lot more than you can do with gold than with Bitcoin. In fact, the nodes supporting Bitcoin network use gold in their connectors. Not to mention that you can take down Bitcoin, but you can't take down gold (just cut electricity and/or node subnets).  
+
+Moreover, saying that gold is "infinite" is wrong technically and practically. There is a big distinction in the amount of gold existent in the universe and Planet Earth, and the amount of gold that's economically viable to obtain.
+
+If your argument on why Bitcoin is better than gold relies heavily on the scarcity aspect - it's probably a weak argument.
+
+~ ✨ ~
+
+⏰ 2026-02-08 23:58
+
+As I've explained in my prior posts: the commodities rally isn't over
+
+Gold is back above $5000
+Silver is back above $80
+Copper is back above $6
+
+Prices below the above remain a buying opportunity
+
+Enjoy!
+
+~ ✨ ~
+
+⏰ 2026-02-08 17:36
+
+It’s literally impossible to compete with calculators
+
+- it doesn’t need breaks or sleep or weekends
+- it costs sub minimum wage an hour
+
+It’s hard to make the case to hire quants anymore.
+
+The thing I don’t get is why all the financial companies are hiring so many quants still?
+
+(or you can use an an analogy with autopilot and human pilots to answer this question 😄)
+
+~ ✨ ~
+
+⏰ 2026-02-08 17:09
+
+AGI Is Perpetually 6-12 Months Away
+
+Anthropic's CEO warned that software engineers will be obsolete in the next 12 months. But then again, he said the same thing about a year ago 😂
+
+It seems that AI is perpetually 6-12 months away from replacing software engineers.
+
+I don't think that people who spread these claims actually understand how much of a gap AI needs to close for this to happen.
+
+It certainly won't happen in the next year.
+
+~ ✨ ~
+
+⏰ 2026-02-07 19:12
+
+Don't Be Fooled By Backtest Performance
+
+I've been coming accross of posts on X from accounts showcasing 70%+ returns when backtesting their vibe-coded trading strategies. Don't be misguidaded by those numbers and claims.
+
+Most likely it performs well on historical data, but is random at best with new data.Agents are not that good at developing profitable trading strategies, as they tend to stick 'default' statistical measures like RSI and hope for the best 😄 If it was that easy - everyone would do it, thus erasing any alpha
+
+These vibe-coded models most likely overfitting
+
+~ ✨ ~
+
+⏰ 2026-02-05 17:07
+
+No AGI With LLMs In Their Current Form.
+
+Generative models are just one type of models in ML. Neither self-driving cars, nor inference about financial data primarily rely on generative models. Perhaps you can have LLM program that logic on the go, but that would require the LLM to effectively dominate those tasks (i.e. effectively become good at driving a car and being able to build sound financial models via a programming language), and given the probabilistic nature of the inference I don’t think we can have LLMs and agents fully taking over these critical areas. Regarding the probabilistic nature, I’m specifically referring the unsecured/unparameterized probability - it’s hard to modulate the potential error.
+
+Right now, agent setups are very good at boilerplate, repeatable code - and most of the code is like that. Most of software development is already abstracted by various frameworks, and a lot of the softwares do very similar tasks and are implemented in similar ways, following specific patterns. Anecdotally, think of a generic SaaS - there are several competing products that do basically the same thing, because they solve a common problem. Agents/LLMs are already great at predicting code of which they have a lot of examples in their training set. This alone, is a massive productivity boost, especially if you are prototyping/iterating.
+
+To give a more concrete answer, the current tech would probably top out at multi-agent, multi-model and some form of DSL(s). So you would have multiple agents, some of them using distinct models. For example, one model for planning, another model for writing code, another model for debugging, etc. The DSLs would be used for both: customizing agents and models (input) and the model would output the code in a DSL (output). So when you ask the model to generate code, it would output it in a higher-level programming language/DSL, and then that one would either be compiled down/translated into a different target, wether that is machine code or a programming language like Python. The DSL design would be optimized for this “generative development” - in practice it will make things like math-induced security issues more difficult for LLMs to make (e.g. the DSL forces the LLM to use pre-defined cryptographic primitives, and at compilation time type metadata is associated to enforce its correct usage across schemes). So at this tech’s peak, the LLMs probably won’t be outputting their code in directly Python. I don’t mean that this is the peak for generative models or ML field as a whole, but for the current state of the tech and the approaches it uses.
+
+Before the tech tops out, however, I think there will be a security issue at scale, followed by an increased focus on security of agents and the the inferred code. Since many products will be using the same models to generate code, the same flawed security patterns will arise in many places, and it will be “easy” to exploit them at scale. Even with detailed instructions, SOTA models still generate vulnerabilities. Even though most of the code is fine, it takes one small issue in a sensitive place to compromise the system - and if you write any non-trivial code with LLMs, you will run into them. I’ve encountered a lot of this issues myself, and in the code that I’ve reviewed from other developers who wrote their code with LLMs. Proper context helps a lot, but it doesn’t resolve the probabilistic nature of the output.
+
+Regarding getting closer to human-like functionality, it will almost certainly require other ML schemes/approaches in addition to what we have now and further refining and combination of existing approaches. I think we will soon go into meta-models, where a model internally uses other models/sub models to produce the output (in its simplest form, think of a random forest that “choses” the most appropriate sub-model to run or the output which one of the sub-model’s outputs to use for the next step) - this can help mitigate some of the risks arising from the probabilistic nature of the inference. That would require coordinated, specialized agents, powered by meta-models.
+
+Where I think we have a lot to still to gain with the current tech, even if its progress freezes, is education. LLMs provide a novel way to interact with digital information, you can do it in the same way that you would interact with another human - via spoken language. Being able to formulate your very specific questions, in your very specific way and usually getting a correct answer to it still amazes me to this day. If you combine generative models with VR, you get a whole new dimension of experiencing information, allowing to learn more effectively.
+
+~ ✨ ~
+
+⏰ 2026-02-03 12:58
+
+AI will follow a much more logarithmic growth than the hype may lead you to believe
+
+We've been perpetually '6 months away from AGI', yet as amazing the SOTA generative models are - we're no where near that.
+
+I don't believe that the current generative ML architectures will be enough to deliver the promises even over the next decade. Generative models have their limits.
+
+There's also a massive AI bubble in the U.S., wit the same entities over promising on results directly benefiting from public funds, which get counted as revenue many times over. Maybe this need a new term like, rerevenuezation (like rehypothecation with bonds) 😄
+
+With that said, I don't think we're anywhere near the full benefits just from the tech we have available up to today. Agentic systems in particular.
+
+~ ✨ ~
+
+⏰ 2026-01-31 10:39
+
+Metropolitan Capital Bank & Trust is the first US bank to fail in 2026
+
+January 30th 2026: Metropolitan Capital Bank & Trust was closed by the Illinois Department of Financial and Professional Regulation, appointing the Federal Deposit Insurance Corporation (FDIC) as the receiver.
+
+The failure is expected to cost the Deposit Insurance Fund (DIF) ≈$20M, but it can changed depending on the price the failed bank's assets are liquidated at.
+
+Back in August 2019 the same bank was formally accused and investigated for unsafe and unsound banking practices by the regulators (FDIC, IDFPR). It was concluded that there were weaknesses in liquidity, solvency, management and asset quality. As a result of that, the bank was forced into a corrective action plan.
+
+~ ✨ ~
+
+⏰ 2026-01-30 18:04
+
+Massive buying opportunity in commodities with these pullbacks
+
+~ ✨ ~
+
 ⏰ 2026-01-29 16:05
 
 Enjoy the price dip across communities

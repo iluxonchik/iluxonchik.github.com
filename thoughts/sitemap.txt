@@ -108,6 +108,8 @@ https://illya.sh/thoughts/added-transport-layer-security-for-internet-of-things-
 https://illya.sh/thoughts/additional-insights-from-a-practical-perspective-can-be
 https://illya.sh/thoughts/advanced-prompt-injection-technique-for-github-copilot-gpt-4
 https://illya.sh/thoughts/after-ecbs-realized-gains-are-booked-to-pnl-the-ecb-splits
+https://illya.sh/thoughts/agi-is-perpetually-6-12-months-away
+https://illya.sh/thoughts/ai-will-follow-a-much-more-logarithmic-growth-than-the-hype
 https://illya.sh/thoughts/all-eyes-on-gold-futures
 https://illya.sh/thoughts/all-of-this-very-bullish-for-gold-other-commodities
 https://illya.sh/thoughts/all-reserve-currencies-achieved-reserve-status-under-gold-or
@@ -145,6 +147,7 @@ https://illya.sh/thoughts/are-you-ready
 https://illya.sh/thoughts/article-13-of-accounting-rules-of-the-boj-defines-special
 https://illya.sh/thoughts/article-3-of-accounting-rules-of-the-bank-of-japan-states
 https://illya.sh/thoughts/as-expected-3-months-was-all-that-crude-oil-needed-to-spike
+https://illya.sh/thoughts/as-ive-explained-in-my-prior-posts-the-commodities-rally
 https://illya.sh/thoughts/as-ive-written-earlier-today-silver-will-encounter
 https://illya.sh/thoughts/as-more-markets-develop-over-gold-so-will-its-usage-as
 https://illya.sh/thoughts/as-or-2026-venezuela-has-53-tonnes-of-gold-not-161
@@ -287,6 +290,7 @@ https://illya.sh/thoughts/digital-money-e-money
 https://illya.sh/thoughts/discount-rate-is-the-rate-at-which-the-fed-lends-directly-to
 https://illya.sh/thoughts/do-not-browse-insider-trading-sec-filings-on-edgar-directly
 https://illya.sh/thoughts/do-you-face-the-same-philosophical-issues-with-your-cat
+https://illya.sh/thoughts/dont-be-fooled-by-backtest-performance
 https://illya.sh/thoughts/dont-forget-to-setup-your-buy-limit-orders-for-gold-silver
 https://illya.sh/thoughts/dont-learn-to-code-there-is-ai
 https://illya.sh/thoughts/dont-overthink-commodity-miners-investments
@@ -548,6 +552,7 @@ https://illya.sh/thoughts/its-confirmed
 https://illya.sh/thoughts/its-crucial-to-understand-what-these-tokens-are-brc-20-is
 https://illya.sh/thoughts/its-easy-to-blame-it-on-the-devs-or-the-ecosystem-a-fair
 https://illya.sh/thoughts/its-important-not-to-interpret-the-net-notional-futures
+https://illya.sh/thoughts/its-literally-impossible-to-compete-with-calculators
 https://illya.sh/thoughts/its-mostly-100oz-1kg-gold-bullion-markers-that-will-be
 https://illya.sh/thoughts/its-not-about-lowering-gold
 https://illya.sh/thoughts/its-not-about-paying-the-debt-but-being-able-to-pay-the-debt
@@ -607,11 +612,13 @@ https://illya.sh/thoughts/m2-supply-liquidity
 https://illya.sh/thoughts/many-boast-about-uss-higher-gdp-than-eu-without-looking-at
 https://illya.sh/thoughts/market-makers-and-other-dealers-are-also-subject-to
 https://illya.sh/thoughts/mass-usdc-to-usdt-swapping-has-caused-busd-to-fall-below
+https://illya.sh/thoughts/massive-buying-opportunity-in-commodities-with-these
 https://illya.sh/thoughts/maximum-liquidity-added-by-bond-market-value-haircut
 https://illya.sh/thoughts/may-9th-1945-the-red-army-lead-by-zhukov-raises-the-soviet
 https://illya.sh/thoughts/maybe-just-maybe-the-eu-will-start-swapping-their-usd
 https://illya.sh/thoughts/meet-the-ord-tool-it-serves-as-an-index-block-explorer-and
 https://illya.sh/thoughts/merkle-trees-mpc-and-homomorphic-encryption-complement-zkps
+https://illya.sh/thoughts/metropolitan-capital-bank-trust-is-the-first-us-bank-to-fail
 https://illya.sh/thoughts/michael-saylor-doesnt-need-to-expose-mstrs-wallets-for-a
 https://illya.sh/thoughts/microcontrollers-fostered-iot-internet-of-things
 https://illya.sh/thoughts/microstrategy-cant-repay-its-debt-in-equity-stock
@@ -650,6 +657,7 @@ https://illya.sh/thoughts/new-all-time-high-for-gold-is-near
 https://illya.sh/thoughts/new-currency-in-circulation-is-just-one-of-the-side-effects
 https://illya.sh/thoughts/new-gold-ath-is-in-3440-per-oz
 https://illya.sh/thoughts/nice-catch
+https://illya.sh/thoughts/no-agi-with-llms-in-their-current-form
 https://illya.sh/thoughts/no-permissioned-assets-running-on-blockchains-are-not-sheep
 https://illya.sh/thoughts/no-tests-no-code
 https://illya.sh/thoughts/no-the-u-s-will-not-pay-off-its-debt-with-tariffs
@@ -793,6 +801,7 @@ https://illya.sh/thoughts/russian-ruble-vs-euro
 https://illya.sh/thoughts/s-p-500-motor-industry-nasdaq-bitcoin-all-down
 https://illya.sh/thoughts/same-for-wall-street-main-street-hawkish-dovish-bull-bear
 https://illya.sh/thoughts/saying-that-silvergate-represents-crypto-is-like-saying-that
+https://illya.sh/thoughts/scarcity-doesnt-make-bitcoin-better-than-gold
 https://illya.sh/thoughts/sell-your-gold-and-buy-bitcoin
 https://illya.sh/thoughts/september-2025-fomc-dot-plot-suggests-lower-rates-than-in
 https://illya.sh/thoughts/shekel-is-headed-down-to-sub-4
