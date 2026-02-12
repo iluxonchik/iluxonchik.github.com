@@ -223,6 +223,7 @@ https://illya.sh/thoughts/chatgpt-reaffirms-its-preference-for-txt-over-html
 https://illya.sh/thoughts/chatgpt-states-that-a-higher-interest-rate-means-bad
 https://illya.sh/thoughts/check-the-correlation-between-fed-swap-line-volumes-and
 https://illya.sh/thoughts/cherry-picking-goes-both-ways
+https://illya.sh/thoughts/chf-is-attractive-even-at-negative-yield
 https://illya.sh/thoughts/china-announces-tariffs-on-5-of-us-exports
 https://illya.sh/thoughts/china-has-been-increasing-their-gold-reserves-ytd
 https://illya.sh/thoughts/china-injects-liquidity-mainly-via-reverse-repurchase
@@ -340,6 +341,7 @@ https://illya.sh/thoughts/expected-yes
 https://illya.sh/thoughts/exploring-tokenized-liquid-futures-contracts
 https://illya.sh/thoughts/extending-with-a-personal-thank-you
 https://illya.sh/thoughts/extending-with-a-personal-thank-you-one-more-time
+https://illya.sh/thoughts/fact-check-russia-moving-back-to-usd
 https://illya.sh/thoughts/failing-banks-will-tank-price-of-bitcoin-down-with-them
 https://illya.sh/thoughts/falling-us-dollar-index-played-out-exactly-as-expected
 https://illya.sh/thoughts/fed-just-injected-11b-of-liquidity
@@ -610,6 +612,7 @@ https://illya.sh/thoughts/lower-usd-index-usd-devaluation-higher-premium-for-usd
 https://illya.sh/thoughts/m2-money-supply-is-a-bad-measure-of-global-liquidity
 https://illya.sh/thoughts/m2-supply-liquidity
 https://illya.sh/thoughts/many-boast-about-uss-higher-gdp-than-eu-without-looking-at
+https://illya.sh/thoughts/many-underestimate-the-smart-contract-blockchain-protocol
 https://illya.sh/thoughts/market-makers-and-other-dealers-are-also-subject-to
 https://illya.sh/thoughts/mass-usdc-to-usdt-swapping-has-caused-busd-to-fall-below
 https://illya.sh/thoughts/massive-buying-opportunity-in-commodities-with-these
@@ -644,7 +647,9 @@ https://illya.sh/thoughts/my-article-on-how-all-reserve-currencies-started-on-a-
 https://illya.sh/thoughts/my-article-on-repo-rates-and-btc-price-was-referenced-on
 https://illya.sh/thoughts/my-prediction-on-golds-bottom-was-correct-3900
 https://illya.sh/thoughts/my-prediction-on-silvers-bottom-was-correct-43-45
+https://illya.sh/thoughts/my-random-forest-guided-meta-model-factory-discovered-a
 https://illya.sh/thoughts/my-target-for-gold-is-at-least-7500-usd-per-ounce
+https://illya.sh/thoughts/my-trading-ml-factory-yielded-22-return-on-gold-on-a-daily
 https://illya.sh/thoughts/my-vibe-meter-on-bitcoin-is-off-the-charts
 https://illya.sh/thoughts/national-bank-of-romanias-gold-reserves-are-13-of-their
 https://illya.sh/thoughts/natural-gas-prices-are-very-volatile
@@ -689,6 +694,7 @@ https://illya.sh/thoughts/offsetting-losses-with-future-profits-is-explicitly-al
 https://illya.sh/thoughts/oh-btw-this-was-also-about-option-pricing
 https://illya.sh/thoughts/oil-gold-back-on-the-rise
 https://illya.sh/thoughts/oil-up-is-good-news-for-russia-ruble
+https://illya.sh/thoughts/okay-i-found-another-source-of-overfitting-data-leakage-in
 https://illya.sh/thoughts/okay-looks-like-it-started-before-i-could-finish-typing
 https://illya.sh/thoughts/on-a-weekly-timeframe-a-stronger-future-support-is
 https://illya.sh/thoughts/on-rrp-further-reinforces-the-the-floor-for-the-market-wide
@@ -841,6 +847,7 @@ https://illya.sh/thoughts/so-everything-that-i-post-on-other-social-media-like-x
 https://illya.sh/thoughts/so-expect-a-2008-qe-1-style-balance-sheet-expansion-by-the
 https://illya.sh/thoughts/so-how-can-you-buy-russian-securities-in-the-eu
 https://illya.sh/thoughts/so-how-does-the-fed-currently-targets-an-interest-rate-range
+https://illya.sh/thoughts/so-i-solved-the-overfitting-issue-and-as-i-suspected
 https://illya.sh/thoughts/so-if-the-us-treasury-revaluated-gold-and-used-all-those
 https://illya.sh/thoughts/so-if-you-have-a-ust-bond-worth-100
 https://illya.sh/thoughts/so-if-you-open-the-thoughs-feed-in-an-rss-reader-you-can-see
@@ -852,6 +859,7 @@ https://illya.sh/thoughts/so-the-fed-will-fully-resume-treasury-purchasing-as-a-
 https://illya.sh/thoughts/so-the-market-operations-of-dealers-market-markers-is-quite
 https://illya.sh/thoughts/so-the-most-likely-outcome-is-a-25bp-0-25-rate-cut-on
 https://illya.sh/thoughts/so-the-us-government-funds-contracts-openai-buys-10-of-intel
+https://illya.sh/thoughts/so-the-yield-on-usdt-on-aave-is-below-2-usd-money-markets
 https://illya.sh/thoughts/so-today-it-may-not-be-wise-to-assume-that-the-fed-will-hike
 https://illya.sh/thoughts/so-when-banks-and-other-financial-institutions-need-to-lend
 https://illya.sh/thoughts/so-when-market-signals-a-higher-risk-appetite-bitcoin-tends
@@ -1111,6 +1119,7 @@ https://illya.sh/thoughts/whos-selling-silver
 https://illya.sh/thoughts/why-inscriptions-matter-for-artists-theyre-on-bitcoin-high
 https://illya.sh/thoughts/why-is-a-loan-an-asset-to-the-bank
 https://illya.sh/thoughts/why-would-a-central-bank-hold-bitcoin-in-reserves
+https://illya.sh/thoughts/why-would-anyone-take-us-job-number-reports-seriously-at
 https://illya.sh/thoughts/why-wouldnt-markets-be-able-to-react-to-trumps-new-tariffs
 https://illya.sh/thoughts/with-brc-20-there-are-no-numeric-balances-instead-you-need
 https://illya.sh/thoughts/with-srf-the-fed-sets-an-upper-limit-on-repo-market-rates

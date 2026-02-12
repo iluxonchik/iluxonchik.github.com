@@ -6,6 +6,133 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2026-02-12 17:10
+
+Fact-Check: Russia Moving Back To USD?
+
+Today, financial news sources are flooded with information claiming that Russia is planning a return to the US dollar, as a part of wider strategic-economic partnership with Trump, but it is true?
+
+Reportedly, Russia’s move back to USD comes packaged with other economic cooperation points, mostly around commodities (fossil fuels in particular). This is what mainstream financial media like Bloomberg, Reuters and accounts with millions followers on X have been spreading viciously today, many of which frame this as the end of BRICS and/or the successful policies of the Trump administration.
+
+What bothered me, is that none of them seem to clearly outline the source, mostly citing it as “Bloomberg reports”. This brings the obvious question: what sources did Bloomberg use in making this report? Well, reports regarding “Russia returning to USD settlement system” arise from an "internal Kremlin memo" that Bloomberg supposedly had access to. No further information is provided regarding the nature of this memo. No Russian state sources confirmed this information. It’s also not clear why Russia would seemingly sidestep their main strategic partner - China with this move (especially for those claiming the end of BRICS). So we are in a situation where Bloomberg claims they’ve seen X, and X gets spread as a fact, based on the claim by Bloomberg.
+
+Major news sources are reposting this memo and framing it as Russias’s return to USD without stepping back to analyze it critically. Why would Russia, which gradually moved away from USD throughout the last 20 years, would suddenly reverse their policy to accept USD as the preferred medium of settlement? Would Russia trade in USD again — of course, I don’t believe they ever refused that.
+
+Eventually, I fully expect Russia to be reintegrated back into international trade, and that includes trading in USD. I’ve written about that many times. What I do not expect is the Central Bank of Russia to dramatically increase USD instruments in their FX reserves. They were already sanctioned once, and that will remain a perpetual risk. Russia has successfully moved away from the U.S. Dollar, by replacing it with gold and renminbi, and they don’t have a serious dependency on US trade. If you think that you will have American companies owning Russian fossil fuel production in the near future you are mistaken.
+
+So my take on this: claims of Russia’s return to USD settlement are overblown. This looks more like a coordinated campaign than something with real substance.
+
+~ ✨ ~
+
+⏰ 2026-02-12 15:07
+
+Why would anyone take US job number reports seriously at this point is beyond me
+
+They keep getting revised down. Those who celebrate when new job numbers are above expectations, are the same who remain quiet once they get revised down
+
+The cycle is as follows:
+
+1. Release numbers surpassing expectations
+2. Coordinated celebration in praising the US economy and current administration
+3. Numbers get revised down
+4. *crickets*
+
+At this point you should be used to this playbook.
+
+~ ✨ ~
+
+⏰ 2026-02-11 18:32
+
+Okay I found another source of overfitting/data leakage in my trading ML factory 😁
+
+The triple barrier label is computed at *position close time*, which is determined by which deviation from price returns hits first (upper bound, lower bound or timeout). The training set was including everything until a specific date, *BUT* many positions before that date close in the future - after the training cutoff date. I only got a few confirmed leaks from my run - but still overfitting.
+
+These series of posts I’ve been making, provide you with a small practical glance into why mere backtest performance is not an indication of absolutely NOTHING. This is also what essentially goes into constructing an automated, machine-learning driven trading strategy (or rather a factory for those!). It’s very easy to overfit.
+
+There are many large-following accounts on X/Twitter that post about the strategies that they discovered, with impressive performance on historical data. Usually those same accounts have ulterior motives, such as selling courses or access to trading signal groups. Be aware that their backtest results are NOT an indication that their strategy will work in a real-world scenario. As a general rule, if those pay-to-access strategies really performed that well with novel price data - the individuals running those strategies would be much better off operating on a fee-basis (i.e. they charge a percentage of returns on your capital, rather than a fixed fee.
+
+📖 Quoting from 2026-02-11 17:46:
+┌─ My trading ML factory yielded ≈22% return on gold on a daily timeframe, which is almost a double of gold's return in the same time period (≈12%)
+│ 
+│ This was after running in on price data of gold futures most recent drawdown from ≈$5600. The model yielded its largest returns by longing the pullbacks during the correction and closing the positions at the right time (the exit logic is based on deviations from price returns). This is very interesting, as it could be an indication of model's utility during drawdowns. Its largest loss was also during the same event frame, but I believe that can be greatly optimized with model parameters and thresholds (which I haven’t optimized at all yet).
+│ 
+│ The entry/exit times are imprecise, because the strategy is based on volume dollar bars sampling, which I'm extracting/approximating from OCHLV data from TradingView.
+│ 
+│ Entry/exit decisions are driven by a random forest, which learns from the signals of various "experts”, and a tripple-barrier outcome of those signals. In practice, the experts are just Python functions which perform statistical analysis on the dollar volume feature matrix containing combined price history from various timeframes, and output a buy(1), sell(-1) or do nothing(0) signal. Then, the buy and sell signals from experts are passed to a random forest in a matrix, which then “learns” which combination of expert calls yields the most correct returns. The experts only produce position entry signals, each position is then closed based on standard deviation of price returns (intuitively: the position is closed when the price exhibits an “unusual” perceptual move, either up or down).
+│ 
+│ This trading ML factory was designed to work under significant constraints of historical price data. I limited it to the one available for export in TradingView. For example, 1 hour candle data only goes back a little over 2 years. In principle, there is little alpha to be extracted from here, but I was able to mitigate it by following a “hybrid spine” approach, where multiple timeframes are combined statistically and made available in the matrix passed to the random forest. More granular OCHLV data is scarce (e.g. the 1 minute OCHLV data that I have available for gold futures, goes back less than a month, and there are some continuity gaps in it), however it is still useful to provide some micromarket structure int terms of volume that the random forest can rely on. As such, the factory performs best on higher timeframes (4h and above).
+│ 
+│ The ML factory learns and predicts based on the prices of multiple assets (and the ratios between them). At the moment, it computes our to gold, silver and copper futures OCHLV data. But it’s designed to be dynamically extendable by adding CSVs with new asset price data.
+│ 
+│ Currently, I’m very much at the prototyping/exploratory phase with this project, so I don’t have the code publicly available yet. If you want access to the code, just reach out to me. I’m not claiming in any way that it will consistently yield >20% returns, and I understand that the trade count, trading data set granularity and backtesting timeframe are not sufficient for a strong statistical confidence in evaluating the quality of the model factory, but I am claiming that it provides a starting point for directing the factory’s approach. Also, trading costs, slippage, position sizing are not accounted for. Even with limited historical data, I believe that a careful selection of experts can yield profitable automated strategies.
+└─
+
+~ ✨ ~
+
+⏰ 2026-02-11 17:46
+
+My trading ML factory yielded ≈22% return on gold on a daily timeframe, which is almost a double of gold's return in the same time period (≈12%)
+
+This was after running in on price data of gold futures most recent drawdown from ≈$5600. The model yielded its largest returns by longing the pullbacks during the correction and closing the positions at the right time (the exit logic is based on deviations from price returns). This is very interesting, as it could be an indication of model's utility during drawdowns. Its largest loss was also during the same event frame, but I believe that can be greatly optimized with model parameters and thresholds (which I haven’t optimized at all yet).
+
+The entry/exit times are imprecise, because the strategy is based on volume dollar bars sampling, which I'm extracting/approximating from OCHLV data from TradingView.
+
+Entry/exit decisions are driven by a random forest, which learns from the signals of various "experts”, and a tripple-barrier outcome of those signals. In practice, the experts are just Python functions which perform statistical analysis on the dollar volume feature matrix containing combined price history from various timeframes, and output a buy(1), sell(-1) or do nothing(0) signal. Then, the buy and sell signals from experts are passed to a random forest in a matrix, which then “learns” which combination of expert calls yields the most correct returns. The experts only produce position entry signals, each position is then closed based on standard deviation of price returns (intuitively: the position is closed when the price exhibits an “unusual” perceptual move, either up or down).
+
+This trading ML factory was designed to work under significant constraints of historical price data. I limited it to the one available for export in TradingView. For example, 1 hour candle data only goes back a little over 2 years. In principle, there is little alpha to be extracted from here, but I was able to mitigate it by following a “hybrid spine” approach, where multiple timeframes are combined statistically and made available in the matrix passed to the random forest. More granular OCHLV data is scarce (e.g. the 1 minute OCHLV data that I have available for gold futures, goes back less than a month, and there are some continuity gaps in it), however it is still useful to provide some micromarket structure int terms of volume that the random forest can rely on. As such, the factory performs best on higher timeframes (4h and above).
+
+The ML factory learns and predicts based on the prices of multiple assets (and the ratios between them). At the moment, it computes our to gold, silver and copper futures OCHLV data. But it’s designed to be dynamically extendable by adding CSVs with new asset price data.
+
+Currently, I’m very much at the prototyping/exploratory phase with this project, so I don’t have the code publicly available yet. If you want access to the code, just reach out to me. I’m not claiming in any way that it will consistently yield >20% returns, and I understand that the trade count, trading data set granularity and backtesting timeframe are not sufficient for a strong statistical confidence in evaluating the quality of the model factory, but I am claiming that it provides a starting point for directing the factory’s approach. Also, trading costs, slippage, position sizing are not accounted for. Even with limited historical data, I believe that a careful selection of experts can yield profitable automated strategies.
+
+~ ✨ ~
+
+⏰ 2026-02-11 15:34
+
+So I solved the overfitting issue, and as I suspected backtest data was leaking into the training set
+
+In 13 trading days it yields ≈12% with gold on an hourly timeframe target. For silver it goes up to ≈30% (expectedly)
+
+I'm going to add 15m, 5m and 1m data to see how it performs during the drawdown
+
+~ ✨ ~
+
+⏰ 2026-02-10 19:04
+
+My random-forest guided meta model factory discovered a trading strategy which profits 87773.98% in the past 7 years
+
+There is definitely no overfitting here 😂
+
+~ ✨ ~
+
+⏰ 2026-02-10 17:56
+
+Many underestimate the smart contract, blockchain protocol and oracle risks in Polymarket
+
+Polymarket positions are always far from "risk free". This is also why liquidity on the platform is skewed with ample arbitrage opportunities.
+
+There is no free lunch
+
+~ ✨ ~
+
+⏰ 2026-02-09 23:34
+
+So the yield on USDT on AAVE is below 2%. USD Money markets currently yield ≈3.5%
+
+Why would you take on much more risk on-chain for a smaller return?
+
+You are much less likely to lose your funds in a regulated venue than on an Ethereum-based derivative.
+
+~ ✨ ~
+
+⏰ 2026-02-09 16:21
+
+CHF Is Attractive Even At Negative Yield
+
+For those who wonder why it makes sense to hold Swiss Frac, even in times when Swiss government bonds have a negative yield, just take a look at the chart in the image
+
+~ ✨ ~
+
 ⏰ 2026-02-09 12:55
 
 Scarcity Doesn't Make Bitcoin Better Than Gold 
