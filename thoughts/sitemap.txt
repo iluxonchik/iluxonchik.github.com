@@ -59,6 +59,7 @@ https://illya.sh/thoughts/41
 https://illya.sh/thoughts/42
 https://illya.sh/thoughts/43
 https://illya.sh/thoughts/44
+https://illya.sh/thoughts/45
 https://illya.sh/thoughts/5
 https://illya.sh/thoughts/5-days-ago-i-wrote-that-usd-rub-rate-will-fall-5-days-later
 https://illya.sh/thoughts/50-of-central-banks-in-both-advanced-and-emerging-economies
@@ -215,6 +216,7 @@ https://illya.sh/thoughts/catastrophe-bonds-cat-bonds-work-by-having-an-investor
 https://illya.sh/thoughts/cbdc
 https://illya.sh/thoughts/central-bank-balance-sheets-are-an-underrated-resource-for
 https://illya.sh/thoughts/central-bank-liquidity-injection-includes-direct-indirect-qe
+https://illya.sh/thoughts/central-bank-of-russia-denies-return-to-usd-payments
 https://illya.sh/thoughts/central-banks-have-rejected-holding-bitcoin-in-their
 https://illya.sh/thoughts/central-banks-were-more-influenced-by-farming-than-you
 https://illya.sh/thoughts/central-banks-will-continue-to-buy-gold
@@ -224,7 +226,9 @@ https://illya.sh/thoughts/chatgpt-states-that-a-higher-interest-rate-means-bad
 https://illya.sh/thoughts/check-the-correlation-between-fed-swap-line-volumes-and
 https://illya.sh/thoughts/cherry-picking-goes-both-ways
 https://illya.sh/thoughts/chf-is-attractive-even-at-negative-yield
+https://illya.sh/thoughts/china-also-banned-gold-silver-in-1983
 https://illya.sh/thoughts/china-announces-tariffs-on-5-of-us-exports
+https://illya.sh/thoughts/china-banned-gold-silver-as-money-in-1983
 https://illya.sh/thoughts/china-has-been-increasing-their-gold-reserves-ytd
 https://illya.sh/thoughts/china-injects-liquidity-mainly-via-reverse-repurchase
 https://illya.sh/thoughts/china-is-considering-yuan-backed-stablecoins-which-will
@@ -406,6 +410,7 @@ https://illya.sh/thoughts/gold-look-for-rejection-at-4155
 https://illya.sh/thoughts/gold-may-just-go-straight-to-3500-in-the-next-few-hours
 https://illya.sh/thoughts/gold-miners-are-about-to-breakout
 https://illya.sh/thoughts/gold-moves-up-by-13-on-breakouts-thus-4000-oz-gold-in
+https://illya.sh/thoughts/gold-outperformed-bitcoin-in-the-last-8-years
 https://illya.sh/thoughts/gold-price-is-back-up-to-its-price-2-weeks-ago
 https://illya.sh/thoughts/gold-reached-3500-new-all-time-high
 https://illya.sh/thoughts/gold-revaluation-proceeds-are-not-necessarily-used-to-cover
@@ -455,6 +460,7 @@ https://illya.sh/thoughts/how-exactly-does-bitcoin-break-u-s-dollar-control-when
 https://illya.sh/thoughts/how-fast-do-you-get-your-deposits-back
 https://illya.sh/thoughts/how-microstrategy-pays-interest-on-its-debt
 https://illya.sh/thoughts/how-the-1916-fed-act-made-treasuries-prime-collateral
+https://illya.sh/thoughts/how-usa-profited-70-on-gold-in-1-year
 https://illya.sh/thoughts/how-will-asset-prices-react-to-feds-interest-rate-decision
 https://illya.sh/thoughts/however-even-if-cbdcs-are-implemented-using-blockchain-its
 https://illya.sh/thoughts/however-eventually-yield-spreads-will-raise-with-high
@@ -507,6 +513,7 @@ https://illya.sh/thoughts/imfs-2024-annual-report-on-sdds-compliance-pointed-out
 https://illya.sh/thoughts/imfs-guidelines-mandate-for-the-data-to-be-either-reported
 https://illya.sh/thoughts/implementing-the-brics-currency-on-a-public-blockchain
 https://illya.sh/thoughts/important-message-from-finance-cat
+https://illya.sh/thoughts/in-1934-the-u-s-government-had-to-legally-raise-the-price-of
 https://illya.sh/thoughts/in-2017-venezuelan-central-bank-banco-central-de-venezuela
 https://illya.sh/thoughts/in-a-6-months-timeline-golds-current-price-dip-is-a-buying
 https://illya.sh/thoughts/in-a-monthly-maturity-tenor-timescale-the-repo-funding-rate
@@ -558,6 +565,7 @@ https://illya.sh/thoughts/its-literally-impossible-to-compete-with-calculators
 https://illya.sh/thoughts/its-mostly-100oz-1kg-gold-bullion-markers-that-will-be
 https://illya.sh/thoughts/its-not-about-lowering-gold
 https://illya.sh/thoughts/its-not-about-paying-the-debt-but-being-able-to-pay-the-debt
+https://illya.sh/thoughts/its-not-about-whether-you-have-a-use-for-the-land-you-own
 https://illya.sh/thoughts/its-not-just-the-fed-the-ecb-is-also-lowering-rates-into
 https://illya.sh/thoughts/its-not-just-the-governments-and-financial-institutions-who
 https://illya.sh/thoughts/its-not-only-futures-of-course-the-broader-physical-supply
@@ -651,6 +659,7 @@ https://illya.sh/thoughts/my-random-forest-guided-meta-model-factory-discovered-
 https://illya.sh/thoughts/my-target-for-gold-is-at-least-7500-usd-per-ounce
 https://illya.sh/thoughts/my-trading-ml-factory-yielded-22-return-on-gold-on-a-daily
 https://illya.sh/thoughts/my-vibe-meter-on-bitcoin-is-off-the-charts
+https://illya.sh/thoughts/my-wife-and-i-met-the-charging-bull-himself
 https://illya.sh/thoughts/national-bank-of-romanias-gold-reserves-are-13-of-their
 https://illya.sh/thoughts/natural-gas-prices-are-very-volatile
 https://illya.sh/thoughts/navigating-the-world-of-defi-without-a-deep-understanding-of
@@ -702,6 +711,7 @@ https://illya.sh/thoughts/once-a-gain-is-realized-the-corresponding-proportion-i
 https://illya.sh/thoughts/once-fed-cuts-interest-rates-more-borrowing-will-occur-thus
 https://illya.sh/thoughts/once-fed-does-qe-reserve-account-balances-increase-thus
 https://illya.sh/thoughts/once-fed-lowers-interest-rates-its-likely-to-put-downward
+https://illya.sh/thoughts/one-idea-for-vibe-coding-profitable-trading-strategies-is-to
 https://illya.sh/thoughts/one-of-the-core-ideas-behind-the-tariffs-is-to-solve-uss-the
 https://illya.sh/thoughts/only-6-of-advanced-economies-ae-central-banks-and-40-of
 https://illya.sh/thoughts/optionality-convexity-premium-in-mortgage-backed-securities
@@ -710,6 +720,7 @@ https://illya.sh/thoughts/outstanding-cross-border-bank-credit-reached-a-record-
 https://illya.sh/thoughts/over-1-5-billion-usdc-have-been-burned-in-the-last-8-hours
 https://illya.sh/thoughts/over-10-years-the-russian-central-bank-has-increased-gold
 https://illya.sh/thoughts/overall-blockchain-defi-lacks-development-for-short-term
+https://illya.sh/thoughts/overfitting-in-machine-learning-models-visualized
 https://illya.sh/thoughts/overnight-reverse-repo-rate-on-rrp-defines-the-rate-at
 https://illya.sh/thoughts/palladium-is-a-great-investment-in-2026
 https://illya.sh/thoughts/part-of-bitcoins-value-derives-from-the-total-electricity
