@@ -6,6 +6,163 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2026-02-19 16:04
+
+The time to optimize hyperparameters of the random forest has come
+
+Starting with a grid search approach
+
+~ ✨ ~
+
+⏰ 2026-02-19 13:56
+
+The model's first live data trade was a successful Bitcoin short! The position was open for 4 minutes, for a 0.11% return
+
+~ ✨ ~
+
+⏰ 2026-02-19 13:52
+
+Added a connection to Binance's futures API and now I have the base learners and the random forest looking for profitable 5-minute Bitcoin trades in real time
+
+Let's see how it goes, the model already entered its first trade. Let's see how it goes 😄
+
+~ ✨ ~
+
+⏰ 2026-02-19 12:31
+
+This a gross oversimplification of what it takes to replicate the human brain with AI
+
+The post is assuming we have a model that can accurately replicate the human brain, which we don't.
+
+200T parameter models won't solve that -- you'll still have a high model bias.
+
+~ ✨ ~
+
+⏰ 2026-02-18 16:19
+
+Vibe-Coding Vulnerabilities With Claude Code
+
+A decade ago there was a joke that IoT stands for "Internet of Vulnerabilities", given how vulnerable many Internet of Things devices were and how easy it was to exploit them.
+
+I think we will enter an even bigger era of vulnerabilities with vibe-coded systems, especially with agents handling everything from feature development to deployment. You are outsourcing the security of your product/application to a probabilistic mathematical model, which hallucinates by design.
+
+For a sufficiently complex system, it's not a question of IF but of WHEN the LLM will make a security-compromising mistake. Unfortunately, large customer data leaks may become the norm.
+
+If you care about the secrecy of your data, I would advise you be very wary of products developed in such manner. Of course, for many use cases you may also not care about this, and prioritize lower cost or specific features. But you must be aware of the risks.
+
+You are essentially one prompt away from compromising your system and its data. We will probably even have new laws/regulations coming out to address this.
+
+~ ✨ ~
+
+⏰ 2026-02-18 16:06
+
+Proxy Model From Polymarket's 15 Minute Bitcoin Price
+
+I found historical datasets for Polymarket's 15 minute up or down Bitcoin price and I think I can use this data to obtain useful signals via a proxy model. I'll start with linear regression to build a prediction model, to see if this transfer learning approach works here.
+
+Yes, it will be overfitting, but for this signal generator it would be by design. The end goal is to find features that improve the random forest's split rules, thus further improving the win rate.
+
+~ ✨ ~
+
+⏰ 2026-02-18 14:40
+
+Primary Dealers Failures To Settle Implications For Risk Assets
+
+Security settlement failures on the dealer side are a signal of liquidity stress. In short, it signals that either collateral (securities) or USD liquidity are short. Generally, this is bearish for risk assets.
+
+Dealers exercise a key liquidity role in the financial markets microstructure, so a significant stress on their operations will propagate throughout the market.
+
+You can anecdotally visualize this correlation in Bitcoin by noticing that the peaks of failures to receive/deliver by dealers coincide with at least short-term tops for Bitcoin prices.
+
+This weekly set of data is made freely available by Office of Financial Research (OFR), and you can download it CSV or JSON formats. If you are incorporating this data into your machine-learning trading models, beware of the look-ahead bias, as this OFR data is released with about a week of delay.
+
+~ ✨ ~
+
+⏰ 2026-02-18 14:30
+
+After tweaking the existing set of base learner models, the random-forest driven trading model factory continues to improve
+
+The win rate for predicting Bitcoin's 5-minute price moves (binary) is now approaching 54%. A win rate of ≈56% should suffice to accommodate for transaction costs. Win rates over 60% is where it starts to get interesting.
+
+~ ✨ ~
+
+⏰ 2026-02-18 01:40
+
+If you invested just $100 in Gold in 4000 BCE, today it would be worth $100
+
+This is because USD didn't exist 6000 years ago, so it wouldn't be accepted as means of settlement in Ancient Egypt, thus you wouldn't find a counterparty willing to sell you gold in exchange for US currency.
+
+6000 years is also for how long gold has been used as money. Yet, some still believe that Bitcoin is the new gold and that it will replace gold as money 😄
+
+~ ✨ ~
+
+⏰ 2026-02-17 17:12
+
+Expert optimization is going well, and I'm starting to move towards the alpha in 5-minute Bitcoin price markets
+
+I'm not claiming that the model that I currently have is meaningful (it's NOT!), but it's getting closer to interesting win rate ratios (>55%)
+
+~ ✨ ~
+
+⏰ 2026-02-17 16:33
+
+Currently, this is the most valued expert in my model factory pipeline
+
+Not because it does anything useful, but precisely because it does not
+
+The expert randomly emits positive(buy) or negative(sell) signals. This is a rough baseline for random behaviour. Very useful for the integration testing of the pipeline and identifying noise
+
+~ ✨ ~
+
+⏰ 2026-02-17 15:01
+
+My random forest looks much better after the clean-up
+
+The feature matrix has been refactored to only include features from which the random forest will be able to learn more effectively. This should greatly reduce the noise
+
+Now, it's time to optimize signals 😄
+
+~ ✨ ~
+
+⏰ 2026-02-17 14:57
+
+My ML model factory produced this amazing model that trades Bitcoin on 5-minute intervals, cut off at each 5th minute (very similar to Polymarket's 5 minute BTC markets) and it made over 200K trades in ≈7 months
+
+Stats:
+- 200K trades
+- 6.69% profit
+- 49% win rate
+
+So I've pretty much discovered a coin flip 🤣
+
+~ ✨ ~
+
+⏰ 2026-02-17 13:35
+
+They say that AI agents will replace all white collar-jobs in the next 6-12 months 😄
+
+So LLMs only have 5-11 months to learn about car washing.
+
+This simple prompt breaks ChatGPT, DeepSeek, Qwen and Kimi. Works on Gemini though.
+
+~ ✨ ~
+
+⏰ 2026-02-16 15:03
+
+The random forest that guides my model factory needs refactoring
+
+While the current architecture shows good prospects for generating profitable trading models, the random forest is currently a bit of a mess 😅 If you look at the image attached to the post, you can see why.
+ 
+Since the random forest can’t extrapolate, features like the date and source segment will just make the forest learn on noise (it will train on association between those features, e.g. it’s not very useful to learn that volume in 2025 was higher than in 2024). But this was expected. The goal was to validate an architectural approach that could work. Now it’s time for optimizations and changes. Actually, changes before optimizations.
+
+Another thing that I’ll get rid of is the hybrid spine for supporting data from multiple timeframes, as the model didn’t extract any meaningful alpha — and some of it has even confused the random forest. I’m sure there is way to make even with limited data, but I’ll be moving to testing it on dataset for which I have access to highly granular data (hello, Bitcoin!). So the logic of the data loader in the pipeline will be greatly simplified.
+
+I’ll also make the labeler configurable, so that you can use the same set of features for different types of predictions. For example, you could have the “unconstrained” standard deviation labelling in the sense hat you can enter and exit the position at any time, to constrained logic scenarios such as the ones of Polymarket’s 5-minute price predictions on Bitcoin, where you can only enter a position at specific times, and the resolution happens at specific times (e.g. at the end of every 5th minute of the day, starting from 0).
+
+The core logic of the ML pipeline remans the same.
+
+~ ✨ ~
+
 ⏰ 2026-02-16 11:25
 
 China Banned Gold & Silver As Money In 1983

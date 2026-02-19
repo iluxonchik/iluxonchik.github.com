@@ -11,6 +11,7 @@ https://illya.sh/threads/5
 https://illya.sh/threads/6
 https://illya.sh/threads/7
 https://illya.sh/threads/8
+https://illya.sh/threads/9
 https://illya.sh/threads/90-of-all-newly-issued-debt-is-for-refinancing-of-existing
 https://illya.sh/threads/91-of-central-banks-are-working-on-cbdcs-but-not-on-a-public
 https://illya.sh/threads/a-month-ago-me-and-gemini-2-5-pro-deep-research-had-a
@@ -165,7 +166,9 @@ https://illya.sh/threads/overfitting-in-machine-learning-models-visualized
 https://illya.sh/threads/palladium-is-a-great-investment-in-2026
 https://illya.sh/threads/people-are-calling-christine-lagarde-ignorant-on-bitcoin-but
 https://illya.sh/threads/portugal-golden-visa-real-estate-investments-are-less-than-3
+https://illya.sh/threads/primary-dealers-failures-to-settle-implications-for-risk
 https://illya.sh/threads/privacy-is-a-myth
+https://illya.sh/threads/proxy-model-from-polymarkets-15-minute-bitcoin-price
 https://illya.sh/threads/putin-instructed-central-bank-of-russia-to-buy-gold-in-2005
 https://illya.sh/threads/real-estate
 https://illya.sh/threads/real-estate-is-a-great-asset-because-banks-lend-75-of-its
@@ -215,6 +218,7 @@ https://illya.sh/threads/the-market-is-never-wrong-6
 https://illya.sh/threads/the-market-is-never-wrong-7
 https://illya.sh/threads/the-market-is-never-wrong-8
 https://illya.sh/threads/the-market-is-never-wrong-9
+https://illya.sh/threads/the-random-forest-that-guides-my-model-factory-needs
 https://illya.sh/threads/the-u-s-violated-international-law-by-attacking-venezuela
 https://illya.sh/threads/there-should-be-more-blockchains-running-over-mesh
 https://illya.sh/threads/there-will-not-be-a-50-bps-rate-cut
@@ -235,6 +239,7 @@ https://illya.sh/threads/usd-index-bearish-in-a-downtrend
 https://illya.sh/threads/usd-is-the-worlds-reserve-currency-but-what-does-that-mean
 https://illya.sh/threads/usd-us-dollar
 https://illya.sh/threads/venezuelas-central-bank-monetary-gold-holdings-constitute-20
+https://illya.sh/threads/vibe-coding-vulnerabilities-with-claude-code
 https://illya.sh/threads/virtually-every-corporation-that-accepts-ethereum-bitcoin
 https://illya.sh/threads/watch-the-feds-projection-dot-plot-not-the-fed-funds-rate
 https://illya.sh/threads/we-are-approaching-a-local-top-for-silver-and-gold-according

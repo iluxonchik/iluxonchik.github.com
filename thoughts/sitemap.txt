@@ -98,6 +98,7 @@ https://illya.sh/thoughts/a-u-s-dollar-note-doesnt-care-who-you-are-or-where-you
 https://illya.sh/thoughts/a-week-ago-i-wrote-an-article-explaining-why-copper-is-a
 https://illya.sh/thoughts/aaand-crude-oil-futures-are-back-above-70
 https://illya.sh/thoughts/aaand-crude-oil-is-trading-above-70
+https://illya.sh/thoughts/added-a-connection-to-binances-futures-api-and-now-i-have
 https://illya.sh/thoughts/added-a-share-action-to-every-post
 https://illya.sh/thoughts/added-an-audio-version-of-the-article
 https://illya.sh/thoughts/added-an-rss-feed-to-my-thoughts
@@ -109,6 +110,7 @@ https://illya.sh/thoughts/added-transport-layer-security-for-internet-of-things-
 https://illya.sh/thoughts/additional-insights-from-a-practical-perspective-can-be
 https://illya.sh/thoughts/advanced-prompt-injection-technique-for-github-copilot-gpt-4
 https://illya.sh/thoughts/after-ecbs-realized-gains-are-booked-to-pnl-the-ecb-splits
+https://illya.sh/thoughts/after-tweaking-the-existing-set-of-base-learner-models-the
 https://illya.sh/thoughts/agi-is-perpetually-6-12-months-away
 https://illya.sh/thoughts/ai-will-follow-a-much-more-logarithmic-growth-than-the-hype
 https://illya.sh/thoughts/all-eyes-on-gold-futures
@@ -280,6 +282,7 @@ https://illya.sh/thoughts/current-rates-set-by-fed
 https://illya.sh/thoughts/current-risks
 https://illya.sh/thoughts/current-srf-minimum-bid-rate-is-4-5
 https://illya.sh/thoughts/current-tri-party-repo-haircut-average-for-treasury
+https://illya.sh/thoughts/currently-this-is-the-most-valued-expert-in-my-model-factory
 https://illya.sh/thoughts/dealers-market-makers-are-legally-limited-in-their-balance
 https://illya.sh/thoughts/debt-bubble-about-to-pop
 https://illya.sh/thoughts/debt-includes-all-form-tenor-and-issuers-of-usd-denominated
@@ -342,6 +345,7 @@ https://illya.sh/thoughts/everybody-has-been-so-focused-on-oil-price-that-they-l
 https://illya.sh/thoughts/ex-in-the-1980s-us-fought-high-inflation-by-raising-interest
 https://illya.sh/thoughts/expect-silver-to-correct-down-by-18
 https://illya.sh/thoughts/expected-yes
+https://illya.sh/thoughts/expert-optimization-is-going-well-and-im-starting-to-move
 https://illya.sh/thoughts/exploring-tokenized-liquid-futures-contracts
 https://illya.sh/thoughts/extending-with-a-personal-thank-you
 https://illya.sh/thoughts/extending-with-a-personal-thank-you-one-more-time
@@ -490,6 +494,7 @@ https://illya.sh/thoughts/if-regulatory-ratios-are-breached-they-must-be-restore
 https://illya.sh/thoughts/if-usd-eur-falls-below-the-pink-trend-line-its-a-fall-to-0
 https://illya.sh/thoughts/if-you-buy-a-car-with-bitcoin-youre-still-subject-to-capital
 https://illya.sh/thoughts/if-you-can-actually-take-a-loan-of-10m-just-get-a-bunch-of
+https://illya.sh/thoughts/if-you-invested-just-100-in-gold-in-4000-bce-today-it-would
 https://illya.sh/thoughts/if-you-noticed-the-imf-template-reported-by-russian-central
 https://illya.sh/thoughts/if-you-only-understood-how-cheap-gold-is-now-to-put-it-in
 https://illya.sh/thoughts/if-you-overlay-bitcoins-price-history-over-those-yield
@@ -653,9 +658,11 @@ https://illya.sh/thoughts/multiple-governments-have-seized-bitcoin
 https://illya.sh/thoughts/my-article-on-gold-vs-bitcoin-and-how-bitcoin-needs-gold-but
 https://illya.sh/thoughts/my-article-on-how-all-reserve-currencies-started-on-a-gold
 https://illya.sh/thoughts/my-article-on-repo-rates-and-btc-price-was-referenced-on
+https://illya.sh/thoughts/my-ml-model-factory-produced-this-amazing-model-that-trades
 https://illya.sh/thoughts/my-prediction-on-golds-bottom-was-correct-3900
 https://illya.sh/thoughts/my-prediction-on-silvers-bottom-was-correct-43-45
 https://illya.sh/thoughts/my-random-forest-guided-meta-model-factory-discovered-a
+https://illya.sh/thoughts/my-random-forest-looks-much-better-after-the-clean-up
 https://illya.sh/thoughts/my-target-for-gold-is-at-least-7500-usd-per-ounce
 https://illya.sh/thoughts/my-trading-ml-factory-yielded-22-return-on-gold-on-a-daily
 https://illya.sh/thoughts/my-vibe-meter-on-bitcoin-is-off-the-charts
@@ -738,11 +745,13 @@ https://illya.sh/thoughts/post-1742935746
 https://illya.sh/thoughts/post-1752488719
 https://illya.sh/thoughts/pre-market-tesla-is-already-down-to-a-weekly-support-back
 https://illya.sh/thoughts/previously-there-was-only-a-web-version-at-https-illya-sh
+https://illya.sh/thoughts/primary-dealers-failures-to-settle-implications-for-risk
 https://illya.sh/thoughts/privacy-is-a-fundamental-human-right-and-digital-privacy-is
 https://illya.sh/thoughts/privacy-is-a-myth
 https://illya.sh/thoughts/private-search-quries-are-great-but-can-we-go-a-step-further
 https://illya.sh/thoughts/promissory-notes-are-very-simple-legal-documents-generally-1
 https://illya.sh/thoughts/proof-of-everything
+https://illya.sh/thoughts/proxy-model-from-polymarkets-15-minute-bitcoin-price
 https://illya.sh/thoughts/public-petition-to-call-them-minafts
 https://illya.sh/thoughts/pushed-an-update-to-my-homepage-at-https-illya-sh
 https://illya.sh/thoughts/pushed-updates-to-https-illya-sh-thoughts
@@ -949,6 +958,7 @@ https://illya.sh/thoughts/the-margin-in-defi-futures-acts-as
 https://illya.sh/thoughts/the-margin-requirements-increase-algorithmically-over-the
 https://illya.sh/thoughts/the-market-is-never-wrong
 https://illya.sh/thoughts/the-market-reacted-exactly-as-i-anticipated-in-a-prior-post
+https://illya.sh/thoughts/the-models-first-live-data-trade-was-a-successful-bitcoin
 https://illya.sh/thoughts/the-negative-connotation-associated-with-weirdness-is-a
 https://illya.sh/thoughts/the-new-gpt-4o-image-generator-is-cool-but-who-else-thinks
 https://illya.sh/thoughts/the-new-gpt-4o-image-generator-is-impressive
@@ -959,6 +969,7 @@ https://illya.sh/thoughts/the-power-of-ordinal-theory-collecting-trading-and-sch
 https://illya.sh/thoughts/the-problem-with-digital-privacy-lies-not-in-how-data-is
 https://illya.sh/thoughts/the-process-leverages-several-zkp-building-blocks
 https://illya.sh/thoughts/the-promised-gold-silver-sale-is-here
+https://illya.sh/thoughts/the-random-forest-that-guides-my-model-factory-needs
 https://illya.sh/thoughts/the-rates-define-the-interest-rate-corridor-in-the-following
 https://illya.sh/thoughts/the-result-is-an-e-commerce-platform-that-respects-end-user
 https://illya.sh/thoughts/the-ruble-thesis-remains-valid
@@ -967,6 +978,7 @@ https://illya.sh/thoughts/the-same-x-accounts-that-were-telling-you-to-buy-the-b
 https://illya.sh/thoughts/the-specific-qe-policies-will-vary-but-it-will-probably
 https://illya.sh/thoughts/the-system-faced-its-biggest-test-during-the-90s-banking
 https://illya.sh/thoughts/the-tariffs-are-not-on-all-gold-imports-just-on-a-specific
+https://illya.sh/thoughts/the-time-to-optimize-hyperparameters-of-the-random-forest
 https://illya.sh/thoughts/the-tokenization-of-the-long-and-the-short-positions-of-the
 https://illya.sh/thoughts/the-u-s-violated-international-law-by-attacking-venezuela
 https://illya.sh/thoughts/the-us-dollar-index-will-not-enjoy-this
@@ -985,8 +997,10 @@ https://illya.sh/thoughts/there-you-go
 https://illya.sh/thoughts/these-boom-bust-leverage-debt-cycles-have-been-the-norm-in
 https://illya.sh/thoughts/these-dynamics-create-an-incentive-for-further-upward-price
 https://illya.sh/thoughts/these-regulatory-constraints-are-synchronized-to-a
+https://illya.sh/thoughts/they-say-that-ai-agents-will-replace-all-white-collar-jobs
 https://illya.sh/thoughts/think-about-all-of-those-us-market-outflows-due-to-deepseek
 https://illya.sh/thoughts/think-of-these-4-rates-as-defining-a-corridor-with-an-upper
+https://illya.sh/thoughts/this-a-gross-oversimplification-of-what-it-takes-to
 https://illya.sh/thoughts/this-collateral-us-treasury-bonds-can-then-be-used-on
 https://illya.sh/thoughts/this-doesnt-mean-that-you-shouldnt-invest-into-us-stocks-or
 https://illya.sh/thoughts/this-increase-will-be-more-accentuated-in-lower-per-capita
@@ -1093,6 +1107,7 @@ https://illya.sh/thoughts/using-historical-behavior-can-be-a-great-alpha-but-you
 https://illya.sh/thoughts/venezuelas-central-bank-monetary-gold-holdings-constitute-20
 https://illya.sh/thoughts/very-interesting-alternative-usd-market
 https://illya.sh/thoughts/very-interesting-to-see-the-bitcoineft-used-as-a-liquidity
+https://illya.sh/thoughts/vibe-coding-vulnerabilities-with-claude-code
 https://illya.sh/thoughts/virtually-every-corporation-that-accepts-ethereum-bitcoin
 https://illya.sh/thoughts/vix-is-a-measure-of-expected-volatility
 https://illya.sh/thoughts/volatility-is-at-best-a-part-of-a-the-risk
