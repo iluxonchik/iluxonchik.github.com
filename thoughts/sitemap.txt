@@ -251,8 +251,6 @@ https://illya.sh/thoughts/cme-publishes-daily-data-on-physical-settlement-on-gol
 https://illya.sh/thoughts/coffee-outperformed-gold-in-the-last-5-years
 https://illya.sh/thoughts/collateral-gets-reused-rehypothecated-reserves-dont
 https://illya.sh/thoughts/collateralized-lending-comes-with-smaller-interest-rates
-https://illya.sh/thoughts/comment
-https://illya.sh/thoughts/comment_medium
 https://illya.sh/thoughts/commercial-paper-is-unsecured-short-term-debt-issued-by
 https://illya.sh/thoughts/commodities
 https://illya.sh/thoughts/compared-to-the-ethereum-evms-linear-verifiable
