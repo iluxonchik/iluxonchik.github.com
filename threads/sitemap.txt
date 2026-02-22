@@ -160,6 +160,7 @@ https://illya.sh/threads/no-the-west-is-not-manipulating-gold-and-silver-prices
 https://illya.sh/threads/now-imagine-when-credit-institutions-can-tokenize-new-credit
 https://illya.sh/threads/now-that-gold-is-down-below-3-3k-its-a-good-time-to-say-this
 https://illya.sh/threads/observe
+https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random
 https://illya.sh/threads/outstanding-cross-border-bank-credit-reached-a-record-of-34
 https://illya.sh/threads/over-10-years-the-russian-central-bank-has-increased-gold
 https://illya.sh/threads/overfitting-in-machine-learning-models-visualized

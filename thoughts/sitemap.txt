@@ -60,6 +60,7 @@ https://illya.sh/thoughts/42
 https://illya.sh/thoughts/43
 https://illya.sh/thoughts/44
 https://illya.sh/thoughts/45
+https://illya.sh/thoughts/46
 https://illya.sh/thoughts/5
 https://illya.sh/thoughts/5-days-ago-i-wrote-that-usd-rub-rate-will-fall-5-days-later
 https://illya.sh/thoughts/50-of-central-banks-in-both-advanced-and-emerging-economies
@@ -149,6 +150,7 @@ https://illya.sh/thoughts/are-you-building-defi-in-the-eu-heres-what-you-need-to
 https://illya.sh/thoughts/are-you-ready
 https://illya.sh/thoughts/article-13-of-accounting-rules-of-the-boj-defines-special
 https://illya.sh/thoughts/article-3-of-accounting-rules-of-the-bank-of-japan-states
+https://illya.sh/thoughts/as-a-result-of-the-first-step-in-optimizing-prioritizing-the
 https://illya.sh/thoughts/as-expected-3-months-was-all-that-crude-oil-needed-to-spike
 https://illya.sh/thoughts/as-ive-explained-in-my-prior-posts-the-commodities-rally
 https://illya.sh/thoughts/as-ive-written-earlier-today-silver-will-encounter
@@ -276,6 +278,7 @@ https://illya.sh/thoughts/crude-oil-price-is-heading-back-up-just-like-i-wrote-e
 https://illya.sh/thoughts/crude-oil-up-to-almost-70
 https://illya.sh/thoughts/crypto-down
 https://illya.sh/thoughts/crypto-inflows-materialized-as-expected
+https://illya.sh/thoughts/crypto-is-not-cryptocurrency
 https://illya.sh/thoughts/crypto-market-cap-down-2-6-today
 https://illya.sh/thoughts/cryptocurrency-prices-perform-well-when-yield-spreads-are
 https://illya.sh/thoughts/current-rates-set-by-fed
@@ -504,6 +507,7 @@ https://illya.sh/thoughts/if-you-think-you-understand-futures-contracts-you-must
 https://illya.sh/thoughts/if-you-want-to-invest-in-copper-miners-just-go-with-the
 https://illya.sh/thoughts/if-youve-read-my-previous-posts-you-know-that-gold-is-36-of
 https://illya.sh/thoughts/ill-be-explaining-the-details-of-how-the-federal-reserve
+https://illya.sh/thoughts/ill-be-using-paxg-prices-as-a-proxy-for-gold-prices-the
 https://illya.sh/thoughts/illya-gerasymchuk-there-are-60m-millionaires-and-only-281m
 https://illya.sh/thoughts/illyas-thought-threads-is-available-under-https-illya-sh
 https://illya.sh/thoughts/illyas-threads-and-thoughts-now-uses-slugs-in-urls
@@ -723,6 +727,7 @@ https://illya.sh/thoughts/one-of-the-core-ideas-behind-the-tariffs-is-to-solve-u
 https://illya.sh/thoughts/only-6-of-advanced-economies-ae-central-banks-and-40-of
 https://illya.sh/thoughts/optionality-convexity-premium-in-mortgage-backed-securities
 https://illya.sh/thoughts/ordinal-theory-assigns-serial-numbers-to-satoshis-the
+https://illya.sh/thoughts/out-of-sample-permutation-feature-importance-for-random
 https://illya.sh/thoughts/outstanding-cross-border-bank-credit-reached-a-record-of-34
 https://illya.sh/thoughts/over-1-5-billion-usdc-have-been-burned-in-the-last-8-hours
 https://illya.sh/thoughts/over-10-years-the-russian-central-bank-has-increased-gold
@@ -970,6 +975,7 @@ https://illya.sh/thoughts/the-problem-with-digital-privacy-lies-not-in-how-data-
 https://illya.sh/thoughts/the-process-leverages-several-zkp-building-blocks
 https://illya.sh/thoughts/the-promised-gold-silver-sale-is-here
 https://illya.sh/thoughts/the-random-forest-that-guides-my-model-factory-needs
+https://illya.sh/thoughts/the-random-forests-features-have-been-heavily-refactored-i
 https://illya.sh/thoughts/the-rates-define-the-interest-rate-corridor-in-the-following
 https://illya.sh/thoughts/the-result-is-an-e-commerce-platform-that-respects-end-user
 https://illya.sh/thoughts/the-ruble-thesis-remains-valid
