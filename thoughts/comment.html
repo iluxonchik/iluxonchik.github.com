@@ -211,8 +211,26 @@
 
   // Fetch the thought HTML and embed (slug/timestamp aware)
   const isNumericId=/^\d+$/.test(id);
-  const thoughtFilename=(isNumericId?'@'+id:id)+'.html';
-  fetch(thoughtFilename).then(r=>r.text()).then(html=>{
+  const preferredThoughtPath=isNumericId?('@'+id+'.html'):id;
+  const fallbackThoughtPath=isNumericId?null:(id+'.html');
+
+  async function fetchThoughtHtml(primaryPath, fallbackPath){
+    try{
+      const primaryRes=await fetch(primaryPath);
+      if(primaryRes.ok){
+        return await primaryRes.text();
+      }
+    }catch(e){}
+    if(fallbackPath){
+      const fallbackRes=await fetch(fallbackPath);
+      if(fallbackRes.ok){
+        return await fallbackRes.text();
+      }
+    }
+    throw new Error('Thought HTML not found');
+  }
+
+  fetchThoughtHtml(preferredThoughtPath, fallbackThoughtPath).then(html=>{
     const parser=new DOMParser();
     const doc=parser.parseFromString(html,'text/html');
     let tb=doc.querySelector('.thought-box');

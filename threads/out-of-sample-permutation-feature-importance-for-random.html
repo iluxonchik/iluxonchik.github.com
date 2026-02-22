@@ -7,7 +7,7 @@
     
     <meta property="og:title" content='🧵Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization' />
     <meta property="og:type" content='article' />
-    <meta property="og:url" content='https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random.html' />
+    <meta property="og:url" content='https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random' />
     <meta property="og:image" content='https://illya.sh/staticthoughts/data/images/out-of-sample-permutation-feature-importance-for-random.jpg' />
     <meta property="og:description" content='After the first level of tuning of the random forest’s parameters, it came time to optimize the features on which the random forest gets trained on. I’ve already did a minor cleanup, but I didn’t...' />
     <meta property="og:site_name" content="Illya's Finance, Crypto & Macro Thoughts" />
@@ -19,7 +19,7 @@
     <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Thoughts RSS" href="https://illya.sh/thoughts/feed.xml"/>
     
     <script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/"}, {"@type": "Article", "headline": "Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization", "articleBody": "After the first level of tuning of the random forest’s parameters, it came time to optimize the features on which the random forest gets trained on. I’ve already did a minor cleanup, but I didn’t yet test for the predictive importance of each feature in the random forest.\n\nTo optimize the random forest’s features, I’m using Out of Sample Permutation Feature Importance (OOS). The OOS approach consists in three core steps:\n\n1️⃣ Train the random forest once on the training data\n2️⃣ Take out-of-sample validation data (testing data), permute the values of a single feature/values within the same column and pass them to the model trained in step 1.\n3️⃣ A feature is important for the model if the model’s predictive power reduces significantly when that feature’s values are randomly shuffled.\n\nThe “out of sample” part refers to the fact that the set of data used to train the model and evaluate it after permutations is distinct, thus reducing the contribution of noise to the evaluation metrics. By default, scikit-learn uses Gini Importance to rank features by their utility to the model. Gini is a bad metric for my data because of:\n\n➖ High cardinality bias (it has an inherent bias towards continuous variables, and some of my features are discrete)\n➖ Gini importance is computed on the training data\n➖ In case of two correlated features, the random forest will randomly pick one at each split, but Gini will actually divide the importance between the two\n\nAdditionally, the out-of-sample Area Under the ROC Curve (AUC) of 0.7566 is unrealistically good for predicting 5-minute Bitcoin price moves. This value implies that if you pick a random 5-minute winning window and a 5-minute losing one, my model ranks the winner window ≈76% of the time. Either I found a model that beats virtually every financial institution in existence, or there is a lookahead bias and overfitting happening in the model. \n\nConclusion: my meta forest — the “seconds_to_settle” feature is basically carrying the entire model 😂 So in its current state, the random forest is training almost entirely on the time of day/time to expiration. The cleanup has started.\n\nAs a result of the first step in optimizing/prioritizing the random forest’s features -- I've dropped about half of them 😁\n\nThe random forest's features have been heavily refactored. I also replaced the polymarket feature with lookahead bias (the proxy model) with a combination of other indicators.", "author": {"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/threads/"}, "url": "https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random.html", "mainEntityOfPage": "https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random.html", "datePublished": "2026-02-20T15:08:42+00:00", "dateModified": "2026-02-20T16:51:38+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/out-of-sample-permutation-feature-importance-for-random.jpg"}]}
+{"@context": "https://schema.org", "@graph": [{"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/"}, {"@type": "Article", "headline": "Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization", "articleBody": "After the first level of tuning of the random forest’s parameters, it came time to optimize the features on which the random forest gets trained on. I’ve already did a minor cleanup, but I didn’t yet test for the predictive importance of each feature in the random forest.\n\nTo optimize the random forest’s features, I’m using Out of Sample Permutation Feature Importance (OOS). The OOS approach consists in three core steps:\n\n1️⃣ Train the random forest once on the training data\n2️⃣ Take out-of-sample validation data (testing data), permute the values of a single feature/values within the same column and pass them to the model trained in step 1.\n3️⃣ A feature is important for the model if the model’s predictive power reduces significantly when that feature’s values are randomly shuffled.\n\nThe “out of sample” part refers to the fact that the set of data used to train the model and evaluate it after permutations is distinct, thus reducing the contribution of noise to the evaluation metrics. By default, scikit-learn uses Gini Importance to rank features by their utility to the model. Gini is a bad metric for my data because of:\n\n➖ High cardinality bias (it has an inherent bias towards continuous variables, and some of my features are discrete)\n➖ Gini importance is computed on the training data\n➖ In case of two correlated features, the random forest will randomly pick one at each split, but Gini will actually divide the importance between the two\n\nAdditionally, the out-of-sample Area Under the ROC Curve (AUC) of 0.7566 is unrealistically good for predicting 5-minute Bitcoin price moves. This value implies that if you pick a random 5-minute winning window and a 5-minute losing one, my model ranks the winner window ≈76% of the time. Either I found a model that beats virtually every financial institution in existence, or there is a lookahead bias and overfitting happening in the model. \n\nConclusion: my meta forest — the “seconds_to_settle” feature is basically carrying the entire model 😂 So in its current state, the random forest is training almost entirely on the time of day/time to expiration. The cleanup has started.\n\nAs a result of the first step in optimizing/prioritizing the random forest’s features -- I've dropped about half of them 😁\n\nThe random forest's features have been heavily refactored. I also replaced the polymarket feature with lookahead bias (the proxy model) with a combination of other indicators.", "author": {"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/threads/"}, "url": "https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random", "mainEntityOfPage": "https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random", "datePublished": "2026-02-20T15:08:42+00:00", "dateModified": "2026-02-20T16:51:38+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/out-of-sample-permutation-feature-importance-for-random.jpg"}]}
 </script>
     
     <style>
@@ -630,7 +630,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/out-of-sample-permutation-feature-importance-for-random.html" class="thread-separator-timestamp">2026-02-20 15:08</a>
+    <a href="https://illya.sh/thoughts/out-of-sample-permutation-feature-importance-for-random" class="thread-separator-timestamp">2026-02-20 15:08</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -640,7 +640,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/as-a-result-of-the-first-step-in-optimizing-prioritizing-the.html" class="thread-separator-timestamp">2026-02-20 15:26</a>
+    <a href="https://illya.sh/thoughts/as-a-result-of-the-first-step-in-optimizing-prioritizing-the" class="thread-separator-timestamp">2026-02-20 15:26</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -650,14 +650,14 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/the-random-forests-features-have-been-heavily-refactored-i.html" class="thread-separator-timestamp">2026-02-20 16:51</a>
+    <a href="https://illya.sh/thoughts/the-random-forests-features-have-been-heavily-refactored-i" class="thread-separator-timestamp">2026-02-20 16:51</a>
 </div>
     
         <div class="thread-actions">
             <div class="action-separator"></div>
             <div class="action-buttons">
                 <a href="https://illya.sh/thoughts/comment.html?id=out-of-sample-permutation-feature-importance-for-random" class="comment-button" aria-label="Comment on this thread">💬</a>
-                <button class="share-button" data-share-url="https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random.html" data-share-title="Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization" data-share-text="" aria-label="Share this thread">📤</button>
+                <button class="share-button" data-share-url="https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random" data-share-title="Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization" data-share-text="" aria-label="Share this thread">📤</button>
             </div>
         </div>
 </div>

@@ -152,8 +152,9 @@
 
   const baseThoughts='https://illya.sh/thoughts'.replace(/\/$/,'');
   const isNumericId=/^\d+$/.test(id);
-  const thoughtFilename=(isNumericId?'@'+id:id)+'.html';
-  const thoughtUrl=baseThoughts+'/'+thoughtFilename;
+  const preferredThoughtPath=isNumericId?('@'+id+'.html'):id;
+  const fallbackThoughtPath=isNumericId?null:(id+'.html');
+  const thoughtUrl=baseThoughts+'/'+preferredThoughtPath;
 
   const encodedMessage=`Hello Illya,%0A%0AI have some thoughts on ${encodeURIComponent(thoughtUrl)}:%0A%0A${encodeURIComponent(msg)}`;
 
@@ -201,8 +202,24 @@
   if(tgLink){ tgLink.addEventListener('click',revealBack); }
   if(xLink){ xLink.addEventListener('click',revealBack); }
 
+  async function fetchThoughtHtml(primaryPath, fallbackPath){
+    try{
+      const primaryRes=await fetch(primaryPath);
+      if(primaryRes.ok){
+        return await primaryRes.text();
+      }
+    }catch(e){}
+    if(fallbackPath){
+      const fallbackRes=await fetch(fallbackPath);
+      if(fallbackRes.ok){
+        return await fallbackRes.text();
+      }
+    }
+    throw new Error('Thought HTML not found');
+  }
+
   // Quote fetch (slug/timestamp aware)
-  fetch(thoughtFilename).then(r=>r.text()).then(html=>{
+  fetchThoughtHtml(preferredThoughtPath, fallbackThoughtPath).then(html=>{
     const parser=new DOMParser();
     const doc=parser.parseFromString(html,'text/html');
     let tb=doc.querySelector('.thought-box');

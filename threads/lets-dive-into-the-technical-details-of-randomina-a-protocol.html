@@ -7,7 +7,7 @@
     
     <meta property="og:title" content="🧵🧵 Let's dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐" />
     <meta property="og:type" content='article' />
-    <meta property="og:url" content='https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol.html' />
+    <meta property="og:url" content='https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol' />
     <meta property="og:image" content='https://illya.sh/staticthoughts/images/@1713209062.png' />
     <meta property="og:description" content='💡 Powering zkLocus  🔗 GitHub: https://github.com/iluxonchik/randomina/' />
     <meta property="og:site_name" content="Illya's Finance, Crypto & Macro Thoughts" />
@@ -19,7 +19,7 @@
     <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Thoughts RSS" href="https://illya.sh/thoughts/feed.xml"/>
     
     <script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/"}, {"@type": "Article", "headline": "🧵 Let's dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐", "articleBody": "💡 Powering zkLocus\n\n🔗 GitHub: https://github.com/iluxonchik/randomina/\n\n1️⃣ RandoMina uses Zero-Knowledge proofs to ensure random numbers are provable, fresh, and trustless. It combines:\n\n- Network State 🌐\n- Sender-Specific Nonce 🔒\n- Local Seed/Nonce 🌱\n\n2️⃣ To ensure freshness, RandoMina leverages $Mina's VRF (Verifiable Random Function) values, specifically `stakingEpochData.seed.value`. 🔐\n\nThis value is updated with each new staking epoch, providing a unique seed for each epoch. 📅\n\n3️⃣ Using `stakingEpochData.seed.value` as part of the PRNG seed ensures that random numbers are tied to the current epoch, preventing manipulation and guaranteeing freshness. 🌿\n\n4️⃣ The Sender-Specific Nonce is derived from the sender's public key, ensuring unique (pseudo)random numbers across the network. 🌍\n\nIt's computed by Poseidon-hashing the public key, adding a global uniqueness component. 🔑\n\n5️⃣ The Local Seed/Nonce allows generating multiple random numbers per epoch for each sender. 🎲\n\nBy varying this private nonce, an infinite number of pseudo-random numbers can be generated within a single epoch. ♾️\n\n6️⃣ RandoMina's smart contract, `RandoMinaContract`, verifies the computation and ensures the claimed network state matches the current epoch. ✅\n\nIt's designed to be used or integrated by other contracts needing secure randomness. 🧩\n\n7️⃣ Here's how RandoMina ensures unique random numbers! 🕵️\n\n- Two identities (public keys) will always generate different random numbers 🔑\n- Same identity with different local seeds produces unique numbers 🌱\n- Same identity across different epochs generates distinct numbers 📅\n\n8️⃣ When two identities generate random numbers using RandoMina:\n\n✅ Sender-Specific Nonce is unique due to different public keys\n✅ Combining unique Sender-Specific Nonce with Network State and Local Seed/Nonce\n➡️ Always results in different random numbers for each identity! 🎉\n\n9️⃣ For the same identity, using different Local Seed/Nonce values:\n\n🔄 Varying the Local Seed/Nonce\n🔗 While keeping the Sender-Specific Nonce and Network State constant\n➡️ Produces unique random numbers for the same identity within an epoch! 🪄\n\n🔟 Across different epochs, the same identity generates distinct random numbers:\n\n🌐 Network State changes with each new epoch\n🆕 Updated Network State is combined with Sender-Specific Nonce and Local Seed/Nonce\n➡️ Guarantees diff numbers for the same identity across epochs! ⏰\n\n1️⃣1️⃣ Generating a random number involves:\n\n1. Preparing public (Network State, Sender) and private (Nonce) inputs\n2. Generating a proof using `RandomNumberObservationCircuit`\n3. Verifying the proof and network state with `RandoMinaContract`\n\nCode & Tests: https://github.com/iluxonchik/randomina\n\n1️⃣2️⃣ In summary, RandoMina leverages ZK proofs, $Mina's VRF `stakingEpochData.seed.value`, and a combination of network state, sender info, and local nonces to provide secure, verifiable, and infinite randomness for dAppss 🌟\n\nThat's it for technical deep dive into RandoMina and its 01JS implementation on Mina Protocol blockchain ! 🤿\n\nFor more details, check out the source code and tests on GitHub. ⭐️\n\nFeel free to ask any questions or share your thoughts! 💬\n\n🔗 https://github.com/iluxonchik/randomina", "author": {"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/threads/"}, "url": "https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol.html", "mainEntityOfPage": "https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol.html", "datePublished": "2024-04-15T19:24:22+00:00", "dateModified": "2024-04-15T19:24:29+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/images/@1713209062.png"}]}
+{"@context": "https://schema.org", "@graph": [{"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/"}, {"@type": "Article", "headline": "🧵 Let's dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐", "articleBody": "💡 Powering zkLocus\n\n🔗 GitHub: https://github.com/iluxonchik/randomina/\n\n1️⃣ RandoMina uses Zero-Knowledge proofs to ensure random numbers are provable, fresh, and trustless. It combines:\n\n- Network State 🌐\n- Sender-Specific Nonce 🔒\n- Local Seed/Nonce 🌱\n\n2️⃣ To ensure freshness, RandoMina leverages $Mina's VRF (Verifiable Random Function) values, specifically `stakingEpochData.seed.value`. 🔐\n\nThis value is updated with each new staking epoch, providing a unique seed for each epoch. 📅\n\n3️⃣ Using `stakingEpochData.seed.value` as part of the PRNG seed ensures that random numbers are tied to the current epoch, preventing manipulation and guaranteeing freshness. 🌿\n\n4️⃣ The Sender-Specific Nonce is derived from the sender's public key, ensuring unique (pseudo)random numbers across the network. 🌍\n\nIt's computed by Poseidon-hashing the public key, adding a global uniqueness component. 🔑\n\n5️⃣ The Local Seed/Nonce allows generating multiple random numbers per epoch for each sender. 🎲\n\nBy varying this private nonce, an infinite number of pseudo-random numbers can be generated within a single epoch. ♾️\n\n6️⃣ RandoMina's smart contract, `RandoMinaContract`, verifies the computation and ensures the claimed network state matches the current epoch. ✅\n\nIt's designed to be used or integrated by other contracts needing secure randomness. 🧩\n\n7️⃣ Here's how RandoMina ensures unique random numbers! 🕵️\n\n- Two identities (public keys) will always generate different random numbers 🔑\n- Same identity with different local seeds produces unique numbers 🌱\n- Same identity across different epochs generates distinct numbers 📅\n\n8️⃣ When two identities generate random numbers using RandoMina:\n\n✅ Sender-Specific Nonce is unique due to different public keys\n✅ Combining unique Sender-Specific Nonce with Network State and Local Seed/Nonce\n➡️ Always results in different random numbers for each identity! 🎉\n\n9️⃣ For the same identity, using different Local Seed/Nonce values:\n\n🔄 Varying the Local Seed/Nonce\n🔗 While keeping the Sender-Specific Nonce and Network State constant\n➡️ Produces unique random numbers for the same identity within an epoch! 🪄\n\n🔟 Across different epochs, the same identity generates distinct random numbers:\n\n🌐 Network State changes with each new epoch\n🆕 Updated Network State is combined with Sender-Specific Nonce and Local Seed/Nonce\n➡️ Guarantees diff numbers for the same identity across epochs! ⏰\n\n1️⃣1️⃣ Generating a random number involves:\n\n1. Preparing public (Network State, Sender) and private (Nonce) inputs\n2. Generating a proof using `RandomNumberObservationCircuit`\n3. Verifying the proof and network state with `RandoMinaContract`\n\nCode & Tests: https://github.com/iluxonchik/randomina\n\n1️⃣2️⃣ In summary, RandoMina leverages ZK proofs, $Mina's VRF `stakingEpochData.seed.value`, and a combination of network state, sender info, and local nonces to provide secure, verifiable, and infinite randomness for dAppss 🌟\n\nThat's it for technical deep dive into RandoMina and its 01JS implementation on Mina Protocol blockchain ! 🤿\n\nFor more details, check out the source code and tests on GitHub. ⭐️\n\nFeel free to ask any questions or share your thoughts! 💬\n\n🔗 https://github.com/iluxonchik/randomina", "author": {"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/"}, "publisher": {"@type": "Person", "name": "Illya Gerasymchuk", "url": "https://illya.sh/threads/"}, "url": "https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol", "mainEntityOfPage": "https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol", "datePublished": "2024-04-15T19:24:22+00:00", "dateModified": "2024-04-15T19:24:29+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/images/@1713209062.png"}]}
 </script>
     
     <style>
@@ -630,7 +630,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/lets-dive-into-the-technical-details-of-randomina-a-protocol.html" class="thread-separator-timestamp">2024-04-15 20:24</a>
+    <a href="https://illya.sh/thoughts/lets-dive-into-the-technical-details-of-randomina-a-protocol" class="thread-separator-timestamp">2024-04-15 20:24</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -640,7 +640,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/lets-dive-into-the-technical-details-of-randomina-a-protocol.html" class="thread-separator-timestamp">2024-04-15 20:24</a>
+    <a href="https://illya.sh/thoughts/lets-dive-into-the-technical-details-of-randomina-a-protocol" class="thread-separator-timestamp">2024-04-15 20:24</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -650,7 +650,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/2-to-ensure-freshness-randomina-leverages-minas-vrf.html" class="thread-separator-timestamp">2024-04-15 20:24</a>
+    <a href="https://illya.sh/thoughts/2-to-ensure-freshness-randomina-leverages-minas-vrf" class="thread-separator-timestamp">2024-04-15 20:24</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -660,7 +660,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/2-to-ensure-freshness-randomina-leverages-minas-vrf.html" class="thread-separator-timestamp">2024-04-15 20:24</a>
+    <a href="https://illya.sh/thoughts/2-to-ensure-freshness-randomina-leverages-minas-vrf" class="thread-separator-timestamp">2024-04-15 20:24</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -670,7 +670,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/4-the-sender-specific-nonce-is-derived-from-the-senders.html" class="thread-separator-timestamp">2024-04-15 20:24</a>
+    <a href="https://illya.sh/thoughts/4-the-sender-specific-nonce-is-derived-from-the-senders" class="thread-separator-timestamp">2024-04-15 20:24</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -680,7 +680,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/4-the-sender-specific-nonce-is-derived-from-the-senders.html" class="thread-separator-timestamp">2024-04-15 20:24</a>
+    <a href="https://illya.sh/thoughts/4-the-sender-specific-nonce-is-derived-from-the-senders" class="thread-separator-timestamp">2024-04-15 20:24</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -690,7 +690,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/6-randominas-smart-contract-randominacontract-verifies-the.html" class="thread-separator-timestamp">2024-04-15 20:24</a>
+    <a href="https://illya.sh/thoughts/6-randominas-smart-contract-randominacontract-verifies-the" class="thread-separator-timestamp">2024-04-15 20:24</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -700,7 +700,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/7-heres-how-randomina-ensures-unique-random-numbers.html" class="thread-separator-timestamp">2024-04-15 20:24</a>
+    <a href="https://illya.sh/thoughts/7-heres-how-randomina-ensures-unique-random-numbers" class="thread-separator-timestamp">2024-04-15 20:24</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -710,7 +710,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/7-heres-how-randomina-ensures-unique-random-numbers.html" class="thread-separator-timestamp">2024-04-15 20:24</a>
+    <a href="https://illya.sh/thoughts/7-heres-how-randomina-ensures-unique-random-numbers" class="thread-separator-timestamp">2024-04-15 20:24</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -720,7 +720,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/9-for-the-same-identity-using-different-local-seed-nonce.html" class="thread-separator-timestamp">2024-04-15 20:24</a>
+    <a href="https://illya.sh/thoughts/9-for-the-same-identity-using-different-local-seed-nonce" class="thread-separator-timestamp">2024-04-15 20:24</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -730,7 +730,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/9-for-the-same-identity-using-different-local-seed-nonce.html" class="thread-separator-timestamp">2024-04-15 20:24</a>
+    <a href="https://illya.sh/thoughts/9-for-the-same-identity-using-different-local-seed-nonce" class="thread-separator-timestamp">2024-04-15 20:24</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -740,7 +740,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/11-generating-a-random-number-involves.html" class="thread-separator-timestamp">2024-04-15 20:24</a>
+    <a href="https://illya.sh/thoughts/11-generating-a-random-number-involves" class="thread-separator-timestamp">2024-04-15 20:24</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -750,7 +750,7 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/11-generating-a-random-number-involves.html" class="thread-separator-timestamp">2024-04-15 20:24</a>
+    <a href="https://illya.sh/thoughts/11-generating-a-random-number-involves" class="thread-separator-timestamp">2024-04-15 20:24</a>
 </div>
 <div class="thread-thought">
     <div class="thought-content">
@@ -760,14 +760,14 @@ a:visited {
 </div>
 <div class="thread-separator">
     <div class="thread-separator-dot"></div>
-    <a href="https://illya.sh/thoughts/thats-it-for-technical-deep-dive-into-randomina-and-its-01js.html" class="thread-separator-timestamp">2024-04-15 20:24</a>
+    <a href="https://illya.sh/thoughts/thats-it-for-technical-deep-dive-into-randomina-and-its-01js" class="thread-separator-timestamp">2024-04-15 20:24</a>
 </div>
     
         <div class="thread-actions">
             <div class="action-separator"></div>
             <div class="action-buttons">
                 <a href="https://illya.sh/thoughts/comment.html?id=lets-dive-into-the-technical-details-of-randomina-a-protocol" class="comment-button" aria-label="Comment on this thread">💬</a>
-                <button class="share-button" data-share-url="https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol.html" data-share-title="🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐" data-share-text="" aria-label="Share this thread">📤</button>
+                <button class="share-button" data-share-url="https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-protocol" data-share-title="🧵 Let&#x27;s dive into the technical details of RandoMina: a protocol for provable random number generation on  Mina Protocol blockchain blockchain written in 01JS! 🔢🔐" data-share-text="" aria-label="Share this thread">📤</button>
             </div>
         </div>
 </div>
