@@ -142,6 +142,7 @@ https://illya.sh/threads/lets-dive-into-the-technical-details-of-randomina-a-pro
 https://illya.sh/threads/llms-ai-agents-didnt-replace-programming-they-evolved-it
 https://illya.sh/threads/lower-interest-rates-means-less-attractive-repo-and-deposit
 https://illya.sh/threads/m2-money-supply-is-a-bad-measure-of-global-liquidity
+https://illya.sh/threads/machine-learning
 https://illya.sh/threads/market-makers-and-other-dealers-are-also-subject-to
 https://illya.sh/threads/metropolitan-capital-bank-trust-is-the-first-us-bank-to-fail
 https://illya.sh/threads/microstrategy-cant-repay-its-debt-in-equity-stock
@@ -239,6 +240,7 @@ https://illya.sh/threads/usd-dominance-is-alluring-accounting-for-70-of-currency
 https://illya.sh/threads/usd-index-bearish-in-a-downtrend
 https://illya.sh/threads/usd-is-the-worlds-reserve-currency-but-what-does-that-mean
 https://illya.sh/threads/usd-us-dollar
+https://illya.sh/threads/using-neural-networks-to-find-imbalances-in-limit-order
 https://illya.sh/threads/venezuelas-central-bank-monetary-gold-holdings-constitute-20
 https://illya.sh/threads/vibe-coding-vulnerabilities-with-claude-code
 https://illya.sh/threads/virtually-every-corporation-that-accepts-ethereum-bitcoin

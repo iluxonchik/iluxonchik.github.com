@@ -6,6 +6,46 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2026-02-27 12:29
+
+Using Neural Networks To Find Imbalances In Limit Order Books
+
+I've been working on model factory that predicts short-term asset movements. The model focuses on predicting whether the price of an asset at a future time T+c will be below or above the current asset's price at time T. c is an arbitrary constant which in my model represents the number of minutes.
+
+Currently, it's structured to match Polymarket's 5 minute BTC up or down markets, so this model can be used for trading on those markets. In this setup, the return is binary -- you either almost double or lose the whole position (assuming an entry as within a small delta of the market open). But this model can also be easily adapted to long/short futures positions with more flexibility on entry or exit times — it would require adapting the labeler and the backtest configuration (namely the cost model and position sizing).
+
+The first version of the model factory relied on features derived from 1 minute OCHLV data for Bitcoin. I focused on setting up a multi-model pipeline, and generalize it into a configurable DSL-like experience. I also focused on avoiding a big part of overfitting/looking forward and doing the first level of parameter optimization. I was able to obtain a small edge (≈0.54 win rate), and short-run live tests showed the model to be profitable, however I’m not very sure how resilient it is to regime changes, nor I find the computed edge sufficient (the win rate is subject to the error from the models). I also wasn’t expecting to achieve a meaningful edge with just OCHLV data, so I’m integrating limit order book (LOB) data in order to extract price movement predictive patterns from the lower level dynamics that end up determining the price.
+
+Given that the order book drives the market price, its reasonable to assume that there is a function that expresses the relationship between the current order book state, and in which direction that state is more likely to move the price in the short-term. It’s my first time working with LOB data, so I looked for papers which explore a framework for modeling price predictions based on a multi-level LOB with price and volume data for bid and ask at each level. After filtering through several options, I settled on one titled “DeepLOB: Deep Convolutional Neural Networks for Limit Order Books” by Zihao Zhang, Stefan Zohren, and Stephen Roberts. I liked it because the authors taking care in avoiding overfitting and leaking forwarding the data, by splitting the data set into one for training, one for validation and one for testing. The model is trained on the training set, the hyperparameters are optimized on the validation set, and the verification/backtesting is done on the test set. I also wanted to integrate neural networks into the pipeline, and DeepLOB model uses a Convolutional Neural Network (CNN) and a Long Short-Term Memory (LSTM) network in its construction.
+
+The neural networks in DeepLOB works as follows. First, the raw LOB data passes through a CNN to summarize/extract patterns from the data via filters whose weights are learned by the network. The output then goes through the inception module, which is another CNN which operates with multiple convolutional filters if different sizes to capture multiple time window patterns. Then, the resulting matrix is passed to LSTM, which is a recurrent neural network, meaning it’s able to maintain “memory” of the past state when evaluating the new state. LSTM outputs a vector, which is then multiplied by a weight matrix to produce 3 raw scores (logits), which then get mapped to probability for each one of the 3 classes via Softmax: (Up, No Change, Down), which serve as a trading signal.
+
+I’ll be incorporating something similar as signals/experts and/or features in the existing pipeline of my model factory. I’ll also extend the pipeline to add an additional split for the validation set to optimize the hyper parameters of the random forest. I’ll upload the code to GitHub soon, but note that it’s a work in progress.
+
+~ ✨ ~
+
+⏰ 2026-02-24 13:10
+
+I've been running live a tuned model designed to predict Bitcoin's price moves in Polymarket's BTC's 5 minute up or down markets
+
+Backtests had a quite remarkable perfomance, with PnL over 70% across >500 trades
+
+As expected, real world performance is not as impressive, but it's managing to be slightly profitable 😁 LOB data integration should improve the model's accuracy further.
+
+~ ✨ ~
+
+⏰ 2026-02-24 12:55
+
+The model factory has been refactored to use a DSL for configuring the pipeline -- so now you can visualize and configure the whole flow from a single place
+
+This also makes it easier for agents to autonomously discover and verify profitable trading strategies, but I'll cover that in more detail in another post 😁
+
+📖 Quoting from 2026-02-20 16:51:
+┌─ The random forest's features have been heavily refactored. I also replaced the polymarket feature with lookahead bias (the proxy model) with a combination of other indicators.
+└─
+
+~ ✨ ~
+
 ⏰ 2026-02-21 20:23
 
 crypto is not cryptocurrency

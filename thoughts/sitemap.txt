@@ -583,6 +583,7 @@ https://illya.sh/thoughts/its-over-for-gold
 https://illya.sh/thoughts/its-totally-okay-to-use-exceptions-for-error-handling
 https://illya.sh/thoughts/its-very-okay-to-leverage-as-long-as-you-are-sufficiently
 https://illya.sh/thoughts/itt-called-discount-window-for-historical-reasons
+https://illya.sh/thoughts/ive-been-running-live-a-tuned-model-designed-to-predict
 https://illya.sh/thoughts/ive-previously-written-an-article-about-what-makes-real
 https://illya.sh/thoughts/ive-referred-to-gold-being-35-of-russian-central-banks
 https://illya.sh/thoughts/ive-said-this-before-but-im-still-amazed-daily-by-how-much
@@ -626,6 +627,7 @@ https://illya.sh/thoughts/lower-interest-rates-means-less-attractive-repo-and-de
 https://illya.sh/thoughts/lower-usd-index-usd-devaluation-higher-premium-for-usd-loans
 https://illya.sh/thoughts/m2-money-supply-is-a-bad-measure-of-global-liquidity
 https://illya.sh/thoughts/m2-supply-liquidity
+https://illya.sh/thoughts/machine-learning
 https://illya.sh/thoughts/many-boast-about-uss-higher-gdp-than-eu-without-looking-at
 https://illya.sh/thoughts/many-underestimate-the-smart-contract-blockchain-protocol
 https://illya.sh/thoughts/market-makers-and-other-dealers-are-also-subject-to
@@ -961,6 +963,7 @@ https://illya.sh/thoughts/the-margin-in-defi-futures-acts-as
 https://illya.sh/thoughts/the-margin-requirements-increase-algorithmically-over-the
 https://illya.sh/thoughts/the-market-is-never-wrong
 https://illya.sh/thoughts/the-market-reacted-exactly-as-i-anticipated-in-a-prior-post
+https://illya.sh/thoughts/the-model-factory-has-been-refactored-to-use-a-dsl-for
 https://illya.sh/thoughts/the-models-first-live-data-trade-was-a-successful-bitcoin
 https://illya.sh/thoughts/the-negative-connotation-associated-with-weirdness-is-a
 https://illya.sh/thoughts/the-new-gpt-4o-image-generator-is-cool-but-who-else-thinks
@@ -1108,6 +1111,7 @@ https://illya.sh/thoughts/usdt-reserves-at-curves-3pool-dropped-below-3
 https://illya.sh/thoughts/usdt-reserves-at-the-usdc-usdt-0-01-pool-on-uniswap-are
 https://illya.sh/thoughts/using-feds-srf-for-liquidity-means-cash-liqudity-is-scarce
 https://illya.sh/thoughts/using-historical-behavior-can-be-a-great-alpha-but-you
+https://illya.sh/thoughts/using-neural-networks-to-find-imbalances-in-limit-order
 https://illya.sh/thoughts/venezuelas-central-bank-monetary-gold-holdings-constitute-20
 https://illya.sh/thoughts/very-interesting-alternative-usd-market
 https://illya.sh/thoughts/very-interesting-to-see-the-bitcoineft-used-as-a-liquidity
@@ -1206,6 +1210,8 @@ https://illya.sh/thoughts/gold/1
 https://illya.sh/thoughts/gold/2
 https://illya.sh/thoughts/gold/3
 https://illya.sh/thoughts/gold/4
+https://illya.sh/thoughts/machine-learning/1
+https://illya.sh/thoughts/machine-learning/2
 https://illya.sh/thoughts/monetary-policy/1
 https://illya.sh/thoughts/monetary-policy/2
 https://illya.sh/thoughts/monetary-policy/3

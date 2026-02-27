@@ -1,0 +1,3973 @@
+{
+  "generated_at": "2026-02-22T12:22:39.791422+00:00",
+  "retention_weeks": 12,
+  "cleanup_not_before": "2026-05-17T12:22:39.791422+00:00",
+  "entries": [
+    {
+      "uuid": "1bf048e4-28b8-5b28-a363-1de2cd9c1f21",
+      "date": 1678497830,
+      "old_image": "images/1bf048e4-28b8-5b28-a363-1de2cd9c1f21.jpg",
+      "new_image": "images/usdc-trading-below-usd-and-usdt-above-usd.jpg"
+    },
+    {
+      "uuid": "dee8bb18-5fb7-5cc5-9cfa-4406892df25b",
+      "date": 1678499248,
+      "old_image": "images/dee8bb18-5fb7-5cc5-9cfa-4406892df25b.jpg",
+      "new_image": "images/usdt-reserves-at-curve-are-almost-depleted-with-less-than-4.jpg"
+    },
+    {
+      "uuid": "53a373e8-5860-56b2-bba1-0e2c0d0ed0c9",
+      "date": 1678500135,
+      "old_image": "images/53a373e8-5860-56b2-bba1-0e2c0d0ed0c9.jpg",
+      "new_image": "images/mass-usdc-to-usdt-swapping-has-caused-busd-to-fall-below.jpg"
+    },
+    {
+      "uuid": "fb1aab81-5429-506e-8545-c755aafd0c85",
+      "date": 1678500875,
+      "old_image": "images/fb1aab81-5429-506e-8545-c755aafd0c85.jpg",
+      "new_image": "images/usdt-reserves-at-curves-3pool-dropped-below-3.jpg"
+    },
+    {
+      "uuid": "12641037-9a65-5047-ac4b-e7c709ccbd0a",
+      "date": 1678501596,
+      "old_image": "images/12641037-9a65-5047-ac4b-e7c709ccbd0a.jpg",
+      "new_image": "images/usdt-reserves-at-the-usdc-usdt-0-01-pool-on-uniswap-are.jpg"
+    },
+    {
+      "uuid": "43a980dc-c778-57b4-b5a3-d951beac4714",
+      "date": 1678502039,
+      "old_image": "images/43a980dc-c778-57b4-b5a3-d951beac4714.jpg",
+      "new_image": "images/usdt-reserves-are-depleting-across-all-dex-pools-that-have.jpg"
+    },
+    {
+      "uuid": "090908e5-75b4-5e49-89cc-2a6696828bdf",
+      "date": 1678503539,
+      "old_image": "images/090908e5-75b4-5e49-89cc-2a6696828bdf.jpg",
+      "new_image": "images/usdc-is-the-2nd-smart-contract-with-the-most-gas-usage-on.jpg"
+    },
+    {
+      "uuid": "ffde4d1f-a369-5383-9a4c-f8220d6907f1",
+      "date": 1678506514,
+      "old_image": "images/ffde4d1f-a369-5383-9a4c-f8220d6907f1.jpg",
+      "new_image": "images/over-1-5-billion-usdc-have-been-burned-in-the-last-8-hours.jpg"
+    },
+    {
+      "uuid": "b2f732d6-e65c-55fc-aaf3-10d6651c8629",
+      "date": 1678507343,
+      "old_image": "images/b2f732d6-e65c-55fc-aaf3-10d6651c8629.jpg",
+      "new_image": "images/usdt-liquidity-on-dex-pools-decreased-to-almost-zero-while.jpg"
+    },
+    {
+      "uuid": "14113758-f1ce-5981-86c8-1b5e79241557",
+      "date": 1678594429,
+      "old_image": "images/14113758-f1ce-5981-86c8-1b5e79241557.jpg",
+      "new_image": "images/usdt-apy-on-aave-is-60.jpg"
+    },
+    {
+      "uuid": "ba3e9690-7956-512e-8933-8ace3a7237c9",
+      "date": 1678636487,
+      "old_image": "images/ba3e9690-7956-512e-8933-8ace3a7237c9.jpg",
+      "new_image": "images/bank-failures-will-not-drive-btc-price-up.jpg"
+    },
+    {
+      "uuid": "84dc91ec-06df-5a64-8991-6be32aeec932",
+      "date": 1678649300,
+      "old_image": "images/84dc91ec-06df-5a64-8991-6be32aeec932.jpg",
+      "new_image": "images/paxg-is-trading-at-an-80-premium-over-gold.jpg"
+    },
+    {
+      "uuid": "114e72b0-a989-59c9-b635-ba97e935b2c7",
+      "date": 1678680726,
+      "old_image": "images/114e72b0-a989-59c9-b635-ba97e935b2c7.jpg",
+      "new_image": "images/despite-the-goldman-sachss-statement-regarding-rate-hikes.jpg"
+    },
+    {
+      "uuid": "3083ce0c-69d0-54e1-bd95-6a669ebc8b07",
+      "date": 1678682211,
+      "old_image": "images/3083ce0c-69d0-54e1-bd95-6a669ebc8b07.jpg",
+      "new_image": "images/the-failure-and-the-bailout-of-svb-and-sivb-has-shifted-the.jpg"
+    },
+    {
+      "uuid": "2af759bd-c009-5e8d-8cd7-bd10b0c2c0a6",
+      "date": 1678729662,
+      "old_image": "images/2af759bd-c009-5e8d-8cd7-bd10b0c2c0a6.jpg",
+      "new_image": "images/bitcoin-bullmarket-confirmed.jpg"
+    },
+    {
+      "uuid": "d80c2cf5-c1bf-5f42-a057-e92775e629f8",
+      "date": 1678730241,
+      "old_image": "images/d80c2cf5-c1bf-5f42-a057-e92775e629f8.jpg",
+      "new_image": "images/a-bounce-back-into-the-upper-part-of-the-previous-weekly.jpg"
+    },
+    {
+      "uuid": "e651dc3a-5177-53fe-b5b1-2513e8101a94",
+      "date": 1678841817,
+      "old_image": "images/e651dc3a-5177-53fe-b5b1-2513e8101a94.jpg",
+      "new_image": "images/first-indication-of-crypto-downtrend.jpg"
+    },
+    {
+      "uuid": "c06f45cf-3e7c-566a-876c-3cde481bd56c",
+      "date": 1678897749,
+      "old_image": "images/c06f45cf-3e7c-566a-876c-3cde481bd56c.jpg",
+      "new_image": "images/crypto-down.jpg"
+    },
+    {
+      "uuid": "72b60bee-1004-5148-a723-82cca7b0d90a",
+      "date": 1683732667,
+      "old_image": "images/72b60bee-1004-5148-a723-82cca7b0d90a.jpg",
+      "new_image": "images/the-bitcoin-ordinal-protocol-explained-an-innovation-which.jpg"
+    },
+    {
+      "uuid": "2963894e-741a-5bee-91e2-c3de5479d864",
+      "date": 1684348771,
+      "old_image": "images/2963894e-741a-5bee-91e2-c3de5479d864.jpg",
+      "new_image": "images/what-if-i-told-you-that-bitcoin-is-not-just-about-money-but.jpg"
+    },
+    {
+      "uuid": "04b75a31-a806-5d2c-b155-77f7954d8d0c",
+      "date": 1684363420,
+      "old_image": "images/04b75a31-a806-5d2c-b155-77f7954d8d0c.jpg",
+      "new_image": "images/debunking-a-common-misconception-in-the-crypto-world-brc-20.jpg"
+    },
+    {
+      "uuid": "bb329cdd-b9fa-5592-939f-5c9cdb0af623",
+      "date": 1698346553,
+      "old_image": "images/bb329cdd-b9fa-5592-939f-5c9cdb0af623.jpg",
+      "new_image": "images/zero-knowledge-cryptography-is-how-the-blockchain-will.jpg"
+    },
+    {
+      "uuid": "e01b84e3-d7ca-5989-993a-8b69671772a7",
+      "date": 1702337019,
+      "old_image": "images/e01b84e3-d7ca-5989-993a-8b69671772a7.jpg",
+      "new_image": "images/if-you-only-understood-how-cheap-gold-is-now-to-put-it-in.jpg"
+    },
+    {
+      "uuid": "20b3c67b-34f4-53b3-b758-8228d39e2b4e",
+      "date": 1704540375,
+      "old_image": "images/20b3c67b-34f4-53b3-b758-8228d39e2b4e.jpg",
+      "new_image": "images/just-to-re-iterate-on-this-further-the-iphones-0-click.jpg"
+    },
+    {
+      "uuid": "0cb277ad-8881-5846-a64f-2d6730d9026d",
+      "date": 1704655335,
+      "old_image": "images/0cb277ad-8881-5846-a64f-2d6730d9026d.jpg",
+      "new_image": "images/a-little-trip-into-circular-dependencies-in-typescript-will.jpg"
+    },
+    {
+      "uuid": "c5a2a9dd-2eb0-5c92-a002-8e15f9cb6b0c",
+      "date": 1713029295,
+      "old_image": "images/c5a2a9dd-2eb0-5c92-a002-8e15f9cb6b0c.jpg",
+      "new_image": "images/zksnarks-zkstarks-offer-a-constant-verifiable-computational.jpg"
+    },
+    {
+      "uuid": "6b063b43-b5db-556b-8176-e3399cba5eb2",
+      "date": 1713029296,
+      "old_image": "images/6b063b43-b5db-556b-8176-e3399cba5eb2.jpg",
+      "new_image": "images/the-implications-are-massive.jpg"
+    },
+    {
+      "uuid": "77cd56f2-fd5e-5c96-b7cd-8dc7c865ffb9",
+      "date": 1715697394,
+      "old_image": "images/77cd56f2-fd5e-5c96-b7cd-8dc7c865ffb9.jpg",
+      "new_image": "images/minas-got-recursion.jpg"
+    },
+    {
+      "uuid": "2159f92f-a7d8-52d4-b239-444503d0af1c",
+      "date": 1716213807,
+      "old_image": "images/2159f92f-a7d8-52d4-b239-444503d0af1c.jpg",
+      "new_image": "images/gdp-is-a-useless-metric.jpg"
+    },
+    {
+      "uuid": "114ba5d4-bb18-5694-864b-b56d12d1f09e",
+      "date": 1716456336,
+      "old_image": "images/114ba5d4-bb18-5694-864b-b56d12d1f09e.jpg",
+      "new_image": "images/gpt-4-outperforms-both-carbon-based-financial-analysts.jpg"
+    },
+    {
+      "uuid": "bbc67bd1-408d-5e60-a8bb-0f981cd354e2",
+      "date": 1716546262,
+      "old_image": "images/bbc67bd1-408d-5e60-a8bb-0f981cd354e2.jpg",
+      "new_image": "images/advanced-prompt-injection-technique-for-github-copilot-gpt-4.jpg"
+    },
+    {
+      "uuid": "e032bb51-f882-5137-bf86-720d4d5ddda6",
+      "date": 1716724910,
+      "old_image": "images/e032bb51-f882-5137-bf86-720d4d5ddda6.jpg",
+      "new_image": "images/the-problem-with-digital-privacy-lies-not-in-how-data-is.jpg"
+    },
+    {
+      "uuid": "3944e23e-97f4-5685-844b-bee4eb9ee147",
+      "date": 1716724912,
+      "old_image": "images/3944e23e-97f4-5685-844b-bee4eb9ee147.jpg",
+      "new_image": "images/zero-knowledge-proofs-fix-digital-privacy.jpg"
+    },
+    {
+      "uuid": "cab786d3-b307-58aa-9dd9-55245ba06097",
+      "date": 1716724917,
+      "old_image": "images/cab786d3-b307-58aa-9dd9-55245ba06097.jpg",
+      "new_image": "images/imagine-a-search-engine-that-never-sees-your-raw-queries-or.jpg"
+    },
+    {
+      "uuid": "3841f191-a9c8-58e5-80e5-ed89325bbfce",
+      "date": 1716724919,
+      "old_image": "images/3841f191-a9c8-58e5-80e5-ed89325bbfce.jpg",
+      "new_image": "images/privacy-is-a-fundamental-human-right-and-digital-privacy-is.jpg"
+    },
+    {
+      "uuid": "0804f423-a913-5581-a166-1f019068ac4d",
+      "date": 1717091831,
+      "old_image": "images/0804f423-a913-5581-a166-1f019068ac4d.jpg",
+      "new_image": "images/imagine-24-7-global-video-surveillance-that-doesnt.jpg"
+    },
+    {
+      "uuid": "32e88cea-3662-5bfb-919a-ff2cae3c5263",
+      "date": 1717237622,
+      "old_image": "images/32e88cea-3662-5bfb-919a-ff2cae3c5263.jpg",
+      "new_image": "images/yes-and-zero-knowledge-proofs-are-the-answer.jpg"
+    },
+    {
+      "uuid": "11c6e874-8dc9-52f2-b180-210043fee9b9",
+      "date": 1717341592,
+      "old_image": "images/11c6e874-8dc9-52f2-b180-210043fee9b9.jpg",
+      "new_image": "images/treasury-rates-treasury-bills-bonds-are-risk-free-but-they.jpg"
+    },
+    {
+      "uuid": "2dc69da1-9321-55c5-9b33-559382d4a2d4",
+      "date": 1717365800,
+      "old_image": "images/2dc69da1-9321-55c5-9b33-559382d4a2d4.jpg",
+      "new_image": "images/every-time-the-treasury-bond-rate-dgs10-us10y-raises-above.jpg"
+    },
+    {
+      "uuid": "9c32bba3-3c1f-5375-a980-0f5d8d74103b",
+      "date": 1717444753,
+      "old_image": "images/9c32bba3-3c1f-5375-a980-0f5d8d74103b.jpg",
+      "new_image": "images/besides-inflation-there-is-also-discounting-which-measures.jpg"
+    },
+    {
+      "uuid": "d0ad3514-0f42-5e2b-9f46-9ed5b25f0827",
+      "date": 1718017728,
+      "old_image": "images/d0ad3514-0f42-5e2b-9f46-9ed5b25f0827.jpg",
+      "new_image": "images/forward-rates-compute-the-borrowing-cost-of-money-for-a.jpg"
+    },
+    {
+      "uuid": "dcd8a94b-0c62-564b-b34c-ac92f1870593",
+      "date": 1718212598,
+      "old_image": "images/dcd8a94b-0c62-564b-b34c-ac92f1870593.jpg",
+      "new_image": "images/learning-how-derivatives-are-priced-will-make-you-realize.jpg"
+    },
+    {
+      "uuid": "c6c9a57d-3c51-52a1-8322-034de9b094e8",
+      "date": 1719156538,
+      "old_image": "images/c6c9a57d-3c51-52a1-8322-034de9b094e8.jpg",
+      "new_image": "images/if-you-think-you-understand-futures-contracts-you-must-learn.jpg"
+    },
+    {
+      "uuid": "12a5886e-76e5-55d1-9687-319e95e77c90",
+      "date": 1719867626,
+      "old_image": "images/12a5886e-76e5-55d1-9687-319e95e77c90.jpg",
+      "new_image": "images/exploring-tokenized-liquid-futures-contracts.jpg"
+    },
+    {
+      "uuid": "02b25834-cd45-539d-9202-1e44711d05cc",
+      "date": 1729338751,
+      "old_image": "images/02b25834-cd45-539d-9202-1e44711d05cc.jpg",
+      "new_image": "images/tried-out-the-brics-pay-demo-gold-xau-is-one-of-the.jpg"
+    },
+    {
+      "uuid": "b30fa92e-7a63-5880-8379-5d59ae3f660e",
+      "date": 1730044256,
+      "old_image": "images/b30fa92e-7a63-5880-8379-5d59ae3f660e.jpg",
+      "new_image": "images/the-deposit-insurance-corporation-of-japan-dicj-provisioned.jpg"
+    },
+    {
+      "uuid": "f6ce7b94-f025-58ba-9107-9f7944b5ebb6",
+      "date": 1730044260,
+      "old_image": "images/f6ce7b94-f025-58ba-9107-9f7944b5ebb6.jpg",
+      "new_image": "images/coverage-limits.jpg"
+    },
+    {
+      "uuid": "b162262a-8512-5051-a39e-645bb3ad9e6f",
+      "date": 1730044264,
+      "old_image": "images/b162262a-8512-5051-a39e-645bb3ad9e6f.jpg",
+      "new_image": "images/how-fast-do-you-get-your-deposits-back.jpg"
+    },
+    {
+      "uuid": "890b0235-849a-5efd-b384-aa556e59ee51",
+      "date": 1730044267,
+      "old_image": "images/890b0235-849a-5efd-b384-aa556e59ee51.jpg",
+      "new_image": "images/dicjs-funding-comes-from.jpg"
+    },
+    {
+      "uuid": "fc8ab1f4-e9c0-52dd-b5d0-eb1b0733585b",
+      "date": 1730044269,
+      "old_image": "images/fc8ab1f4-e9c0-52dd-b5d0-eb1b0733585b.jpg",
+      "new_image": "images/post-1730044269.jpg"
+    },
+    {
+      "uuid": "8a4c1f4e-b69d-5974-a37f-541f8136cb50",
+      "date": 1730044274,
+      "old_image": "images/8a4c1f4e-b69d-5974-a37f-541f8136cb50.jpg",
+      "new_image": "images/while-japan-has-been-successful-in-resolving-hundreds-of.jpg"
+    },
+    {
+      "uuid": "144472f7-ef89-5089-bd5e-6b1e83936881",
+      "date": 1730050806,
+      "old_image": "images/144472f7-ef89-5089-bd5e-6b1e83936881.jpg",
+      "new_image": "images/added-an-audio-version-of-the-article.jpg"
+    },
+    {
+      "uuid": "a778ee08-5c4d-5fa5-a552-172c1163f16e",
+      "date": 1730842612,
+      "old_image": "images/a778ee08-5c4d-5fa5-a552-172c1163f16e.jpg",
+      "new_image": "images/podcast-covering-brics-currency-on-the-blockchain-is-out.jpg"
+    },
+    {
+      "uuid": "e0c5dabe-72ad-5220-a84d-33b9ab516552",
+      "date": 1734193773,
+      "old_image": "images/e0c5dabe-72ad-5220-a84d-33b9ab516552.jpg",
+      "new_image": "images/just-in-quantum-computer-hacked-bitcoin.jpg"
+    },
+    {
+      "uuid": "d0afdf4b-05de-5412-94a5-0089e766d268",
+      "date": 1735145042,
+      "old_image": "images/d0afdf4b-05de-5412-94a5-0089e766d268.jpg",
+      "new_image": "images/the-future-of-web3-defi-in-the-eu.jpg"
+    },
+    {
+      "uuid": "76e0ce66-a227-5d67-aba9-8785602e51e4",
+      "date": 1735657978,
+      "old_image": "images/76e0ce66-a227-5d67-aba9-8785602e51e4.jpg",
+      "new_image": "images/are-you-building-defi-in-the-eu-heres-what-you-need-to-know.jpg"
+    },
+    {
+      "uuid": "61b32a26-7de4-5c69-a9cc-85bcc816a32f",
+      "date": 1737564417,
+      "old_image": "images/61b32a26-7de4-5c69-a9cc-85bcc816a32f.jpg",
+      "new_image": "images/running-llm-models-locally-really-makes-you-appreciate-the.jpg"
+    },
+    {
+      "uuid": "0d361c6b-b67e-5376-af0b-0b40ed1419dd",
+      "date": 1738588157,
+      "old_image": "images/0d361c6b-b67e-5376-af0b-0b40ed1419dd.jpg",
+      "new_image": "images/think-about-all-of-those-us-market-outflows-due-to-deepseek.jpg"
+    },
+    {
+      "uuid": "cf04bb57-fece-5e28-bb10-b3041387d5c4",
+      "date": 1739366967,
+      "old_image": "images/cf04bb57-fece-5e28-bb10-b3041387d5c4.jpg",
+      "new_image": "images/im-working-on-an-agent-and-was-debugging-why-the-responses.jpg"
+    },
+    {
+      "uuid": "3aa4121d-7fd6-5618-a1bd-47be318c8b5b",
+      "date": 1740678194,
+      "old_image": "images/3aa4121d-7fd6-5618-a1bd-47be318c8b5b.jpg",
+      "new_image": "images/yeah-crypto-stocks-is-fun-but-have-you-tried-orange-juice.jpg"
+    },
+    {
+      "uuid": "367869a2-39a6-5c2b-85d8-f0b9153553bd",
+      "date": 1742561137,
+      "old_image": "images/367869a2-39a6-5c2b-85d8-f0b9153553bd.jpg",
+      "new_image": "images/over-10-years-the-russian-central-bank-has-increased-gold.jpg"
+    },
+    {
+      "uuid": "9fcef424-b228-5ce3-b00c-6b50e50b886a",
+      "date": 1742897403,
+      "old_image": "images/9fcef424-b228-5ce3-b00c-6b50e50b886a.jpg",
+      "new_image": "images/hedge-funds-are-shorting-eth-in-record-numbers.jpg"
+    },
+    {
+      "uuid": "d8f381af-48b7-540a-b072-953747c1eef0",
+      "date": 1742909237,
+      "old_image": "images/d8f381af-48b7-540a-b072-953747c1eef0.jpg",
+      "new_image": "images/institutional-investors-have-increased-their-reverse.jpg"
+    },
+    {
+      "uuid": "c97d4462-908f-53ff-8aef-346330535651",
+      "date": 1742910064,
+      "old_image": "images/c97d4462-908f-53ff-8aef-346330535651.jpg",
+      "new_image": "images/debt-bubble-about-to-pop.jpg"
+    },
+    {
+      "uuid": "6ba59c65-7440-5897-98e4-c0dac94087f8",
+      "date": 1742934237,
+      "old_image": "images/6ba59c65-7440-5897-98e4-c0dac94087f8.jpg",
+      "new_image": "images/the-new-gpt-4o-image-generator-is-impressive.jpg"
+    },
+    {
+      "uuid": "8a626784-7e61-5e9a-bcdb-d160961c2b97",
+      "date": 1742935697,
+      "old_image": "images/8a626784-7e61-5e9a-bcdb-d160961c2b97.jpg",
+      "new_image": "images/the-new-gpt-4o-is-also-quite-good-as-an-image-editor.jpg"
+    },
+    {
+      "uuid": "fc661223-cb32-5502-bd1f-09501e5b8644",
+      "date": 1742935746,
+      "old_image": "images/fc661223-cb32-5502-bd1f-09501e5b8644.jpg",
+      "new_image": "images/post-1742935746.jpg"
+    },
+    {
+      "uuid": "06da1667-936c-5233-b7fa-fe744965f8bf",
+      "date": 1742935835,
+      "old_image": "images/06da1667-936c-5233-b7fa-fe744965f8bf.jpg",
+      "new_image": "images/2nd-attempt-was-much-better.jpg"
+    },
+    {
+      "uuid": "71d3496d-bf8b-5f68-b3ec-253dacce6632",
+      "date": 1742937192,
+      "old_image": "images/71d3496d-bf8b-5f68-b3ec-253dacce6632.jpg",
+      "new_image": "images/do-you-face-the-same-philosophical-issues-with-your-cat.jpg"
+    },
+    {
+      "uuid": "ac4a4955-9c76-55ca-bc6a-bca804fcbe90",
+      "date": 1742960751,
+      "old_image": "images/ac4a4955-9c76-55ca-bc6a-bca804fcbe90.jpg",
+      "new_image": "images/gpt-4o-new-image-gen-is-surprisingly-good-at-generating.jpg"
+    },
+    {
+      "uuid": "6142e374-ee03-5e15-bfb7-e434ef9dd7fc",
+      "date": 1743021921,
+      "old_image": "images/6142e374-ee03-5e15-bfb7-e434ef9dd7fc.jpg",
+      "new_image": "images/today-i-asked-gpt-4o-to-create-a-meme-about-vibe-coding.jpg"
+    },
+    {
+      "uuid": "96e6e807-e00d-5af7-b6b5-0e04d6a562e8",
+      "date": 1743022888,
+      "old_image": "images/96e6e807-e00d-5af7-b6b5-0e04d6a562e8.jpg",
+      "new_image": "images/its-confirmed.jpg"
+    },
+    {
+      "uuid": "86d016cb-54ff-5f02-9c93-145a0e19b27d",
+      "date": 1743024648,
+      "old_image": "images/86d016cb-54ff-5f02-9c93-145a0e19b27d.jpg",
+      "new_image": "images/architecting-your-balance-sheet-around-highly-speculative.jpg"
+    },
+    {
+      "uuid": "0ad2093e-fd96-506c-89d3-ff39d3c341a0",
+      "date": 1743028613,
+      "old_image": "images/0ad2093e-fd96-506c-89d3-ff39d3c341a0.jpg",
+      "new_image": "images/congratulations-to-the-american-consumer-who-now-has-2.jpg"
+    },
+    {
+      "uuid": "89913a4b-1fe7-5c6e-afed-3e960b9a7c9c",
+      "date": 1743089376,
+      "old_image": "images/89913a4b-1fe7-5c6e-afed-3e960b9a7c9c.jpg",
+      "new_image": "images/so-the-car-tariffs-are-also-inflationary.jpg"
+    },
+    {
+      "uuid": "253187bd-79ee-585a-8b2a-f4e2a474df38",
+      "date": 1743092296,
+      "old_image": "images/253187bd-79ee-585a-8b2a-f4e2a474df38.jpg",
+      "new_image": "images/s-p-500-motor-industry-nasdaq-bitcoin-all-down.jpg"
+    },
+    {
+      "uuid": "d2ae9f46-8dbc-5973-8815-f394cba6deb0",
+      "date": 1743208952,
+      "old_image": "images/d2ae9f46-8dbc-5973-8815-f394cba6deb0.jpg",
+      "new_image": "images/update-on-ethereum-shorts.jpg"
+    },
+    {
+      "uuid": "fc5b8e72-6cfd-5bd8-a001-d329cfbb4801",
+      "date": 1743431678,
+      "old_image": "images/fc5b8e72-6cfd-5bd8-a001-d329cfbb4801.jpg",
+      "new_image": "images/trumps-tariffs-update.jpg"
+    },
+    {
+      "uuid": "71ee351e-e5c2-5280-a3a3-82e55fddd206",
+      "date": 1743613203,
+      "old_image": "images/71ee351e-e5c2-5280-a3a3-82e55fddd206.jpg",
+      "new_image": "images/just-in-87k-bitcoin.jpg"
+    },
+    {
+      "uuid": "c21a113c-ba39-5fa4-a9af-d657c25fea09",
+      "date": 1743627418,
+      "old_image": "images/c21a113c-ba39-5fa4-a9af-d657c25fea09.jpg",
+      "new_image": "images/btc-dxy-xau-during-trumps-tariffs-speech.jpg"
+    },
+    {
+      "uuid": "44d7079b-9203-5c9d-a193-9d92e732ce57",
+      "date": 1743631484,
+      "old_image": "images/44d7079b-9203-5c9d-a193-9d92e732ce57.jpg",
+      "new_image": "images/reacting-to-us-tariffs.jpg"
+    },
+    {
+      "uuid": "1ee2207d-cd67-5ebb-bb69-de1991cf91a7",
+      "date": 1743683500,
+      "old_image": "images/1ee2207d-cd67-5ebb-bb69-de1991cf91a7.jpg",
+      "new_image": "images/usd-eur-down-3-cents-overnight.jpg"
+    },
+    {
+      "uuid": "0ca005d4-42c7-5013-9f5d-ce6b36a739de",
+      "date": 1743701593,
+      "old_image": "images/0ca005d4-42c7-5013-9f5d-ce6b36a739de.jpg",
+      "new_image": "images/financial-stress-index-tariffs-update.jpg"
+    },
+    {
+      "uuid": "592de67e-0292-5b18-82ba-e6adae8a92a2",
+      "date": 1743703724,
+      "old_image": "images/592de67e-0292-5b18-82ba-e6adae8a92a2.jpg",
+      "new_image": "images/remember-fiat-currencies-come-go.jpg"
+    },
+    {
+      "uuid": "bb842943-144a-5c99-b2d3-35f048a15812",
+      "date": 1743761121,
+      "old_image": "images/bb842943-144a-5c99-b2d3-35f048a15812.jpg",
+      "new_image": "images/usd-m2-money-supply-is-almost-back-at-pre-interest-rate.jpg"
+    },
+    {
+      "uuid": "52ac116e-9221-5c15-89c4-2beb003702e1",
+      "date": 1743761964,
+      "old_image": "images/52ac116e-9221-5c15-89c4-2beb003702e1.jpg",
+      "new_image": "images/usd-m2-money-supply.jpg"
+    },
+    {
+      "uuid": "0919384c-0ba2-5135-8636-6233ea81b7ef",
+      "date": 1743762925,
+      "old_image": "images/0919384c-0ba2-5135-8636-6233ea81b7ef.jpg",
+      "new_image": "images/if-you-think-usd-m2-is-bad-look-at-russias.jpg"
+    },
+    {
+      "uuid": "019a5c8e-bb05-5ee3-af46-8c4101f11702",
+      "date": 1743763701,
+      "old_image": "images/019a5c8e-bb05-5ee3-af46-8c4101f11702.jpg",
+      "new_image": "images/china-announces-tariffs-on-5-of-us-exports.jpg"
+    },
+    {
+      "uuid": "a982949b-2743-56fe-aa56-1be3fd79ec9e",
+      "date": 1743793636,
+      "old_image": "images/a982949b-2743-56fe-aa56-1be3fd79ec9e.jpg",
+      "new_image": "images/whos-selling-silver.jpg"
+    },
+    {
+      "uuid": "c84b17be-4280-5182-8101-886f0d4d7b6c",
+      "date": 1743794345,
+      "old_image": "images/c84b17be-4280-5182-8101-886f0d4d7b6c.jpg",
+      "new_image": "images/i-asked-grok-3-why-silver-is-down-today.jpg"
+    },
+    {
+      "uuid": "15bce4d4-da26-5a96-9c1b-080c65de1d2f",
+      "date": 1743796491,
+      "old_image": "images/15bce4d4-da26-5a96-9c1b-080c65de1d2f.jpg",
+      "new_image": "images/silver-back-to-august-2020-price.jpg"
+    },
+    {
+      "uuid": "7a29ab71-b14f-5315-ae96-4d85d8db403c",
+      "date": 1743798700,
+      "old_image": "images/7a29ab71-b14f-5315-ae96-4d85d8db403c.jpg",
+      "new_image": "images/russian-ruble-vs-euro.jpg"
+    },
+    {
+      "uuid": "9d63e001-975c-5594-a1de-28be9d5fb930",
+      "date": 1743808934,
+      "old_image": "images/9d63e001-975c-5594-a1de-28be9d5fb930.jpg",
+      "new_image": "images/switzerland-2-year-bond-yield-went-negative.jpg"
+    },
+    {
+      "uuid": "b2ea862e-15f6-5c89-967a-f2b12fac2103",
+      "date": 1743856982,
+      "old_image": "images/b2ea862e-15f6-5c89-967a-f2b12fac2103.jpg",
+      "new_image": "images/silver-physcial-delivery-demand-high.jpg"
+    },
+    {
+      "uuid": "d11b05a6-6b65-5f4f-882e-e04cc587f822",
+      "date": 1743859997,
+      "old_image": "images/d11b05a6-6b65-5f4f-882e-e04cc587f822.jpg",
+      "new_image": "images/physical-gold-rush.jpg"
+    },
+    {
+      "uuid": "92bdf671-c313-541f-a770-4564f1b1dfb0",
+      "date": 1743862987,
+      "old_image": "images/92bdf671-c313-541f-a770-4564f1b1dfb0.jpg",
+      "new_image": "images/financial-stress-index-fsi-update.jpg"
+    },
+    {
+      "uuid": "a3c840ed-020a-5eb3-9098-2aca2f6c3e66",
+      "date": 1743869129,
+      "old_image": "images/a3c840ed-020a-5eb3-9098-2aca2f6c3e66.jpg",
+      "new_image": "images/hedge-funds-high-risk-loans.jpg"
+    },
+    {
+      "uuid": "371fcb01-0239-5d97-a0b6-cfbd79c7800d",
+      "date": 1743873199,
+      "old_image": "images/371fcb01-0239-5d97-a0b6-cfbd79c7800d.jpg",
+      "new_image": "images/institutional-longs-were-just-reaching-2022-levels-at-q2.jpg"
+    },
+    {
+      "uuid": "6951668d-014e-568f-9ff0-4bd88ac44f3c",
+      "date": 1743875435,
+      "old_image": "images/6951668d-014e-568f-9ff0-4bd88ac44f3c.jpg",
+      "new_image": "images/tbh-vix-isnt-that-high-yet.jpg"
+    },
+    {
+      "uuid": "9f80819d-d854-5440-b577-71a5dfa5a608",
+      "date": 1743897849,
+      "old_image": "images/9f80819d-d854-5440-b577-71a5dfa5a608.jpg",
+      "new_image": "images/india-has-accumulated-a-massive-trade-deficit.jpg"
+    },
+    {
+      "uuid": "8dd15e45-b3fb-5050-8322-19da2fa542b4",
+      "date": 1743951540,
+      "old_image": "images/8dd15e45-b3fb-5050-8322-19da2fa542b4.jpg",
+      "new_image": "images/brics-tariffs.jpg"
+    },
+    {
+      "uuid": "e64f63af-3fec-5a7d-832e-aee8af7bf615",
+      "date": 1743954867,
+      "old_image": "images/e64f63af-3fec-5a7d-832e-aee8af7bf615.jpg",
+      "new_image": "images/indian-rupees-m2-supply-makes-it-even-worse.jpg"
+    },
+    {
+      "uuid": "a1cf110c-57dd-5419-b8e1-83c2bfa481bf",
+      "date": 1743956555,
+      "old_image": "images/a1cf110c-57dd-5419-b8e1-83c2bfa481bf.jpg",
+      "new_image": "images/us-yield-curve-update.jpg"
+    },
+    {
+      "uuid": "1e89aac7-a95f-505e-9d92-e265d199d521",
+      "date": 1743957241,
+      "old_image": "images/1e89aac7-a95f-505e-9d92-e265d199d521.jpg",
+      "new_image": "images/moex-down-22-since-feb.jpg"
+    },
+    {
+      "uuid": "6b2acdf1-390c-5ff7-9be0-2691ce215083",
+      "date": 1743972184,
+      "old_image": "images/6b2acdf1-390c-5ff7-9be0-2691ce215083.jpg",
+      "new_image": "images/tariffs-are-just-a-distraction-from-the-fact-that-orange.jpg"
+    },
+    {
+      "uuid": "f1b7473f-b19d-58cb-a22c-7cf74874d23f",
+      "date": 1743980053,
+      "old_image": "images/f1b7473f-b19d-58cb-a22c-7cf74874d23f.jpg",
+      "new_image": "images/breaking-s-p-500-fell-to-2021-prices.jpg"
+    },
+    {
+      "uuid": "9afb6291-ca02-569e-92e3-0dd5c97de835",
+      "date": 1743984918,
+      "old_image": "images/9afb6291-ca02-569e-92e3-0dd5c97de835.jpg",
+      "new_image": "images/gold-is-down-6-from-its-ath.jpg"
+    },
+    {
+      "uuid": "b9cbe029-0b0d-58b6-a4b1-4e16f74530b8",
+      "date": 1743985701,
+      "old_image": "images/b9cbe029-0b0d-58b6-a4b1-4e16f74530b8.jpg",
+      "new_image": "images/silver-is-down-almost-20.jpg"
+    },
+    {
+      "uuid": "55daee73-ba3a-5d8e-9bff-ac34aa867d8f",
+      "date": 1744042548,
+      "old_image": "images/55daee73-ba3a-5d8e-9bff-ac34aa867d8f.jpg",
+      "new_image": "images/insider-trading-before-tariffs.jpg"
+    },
+    {
+      "uuid": "a9880dd0-da01-5a57-993a-7db51de05673",
+      "date": 1744042900,
+      "old_image": "images/a9880dd0-da01-5a57-993a-7db51de05673.jpg",
+      "new_image": "images/til-that-you-can-pay-taxes-on-vested-securities-equities.jpg"
+    },
+    {
+      "uuid": "1490e261-688f-5f3f-93f3-e0a9240be226",
+      "date": 1744044526,
+      "old_image": "images/1490e261-688f-5f3f-93f3-e0a9240be226.jpg",
+      "new_image": "images/do-not-browse-insider-trading-sec-filings-on-edgar-directly.jpg"
+    },
+    {
+      "uuid": "bb82f7b6-cd92-5214-8c7a-70f0925e4ff1",
+      "date": 1744047099,
+      "old_image": "images/bb82f7b6-cd92-5214-8c7a-70f0925e4ff1.jpg",
+      "new_image": "images/ruble-is-up-2-3-on-the-usd.jpg"
+    },
+    {
+      "uuid": "a36caf75-2329-5cfa-a3ef-9ff05afee55a",
+      "date": 1744061888,
+      "old_image": "images/a36caf75-2329-5cfa-a3ef-9ff05afee55a.jpg",
+      "new_image": "images/china-is-the-2nd-largest-holder-of-us-treasury-bonds-a.jpg"
+    },
+    {
+      "uuid": "844af59f-ba57-5422-bbdb-58a534b13d05",
+      "date": 1744110142,
+      "old_image": "images/844af59f-ba57-5422-bbdb-58a534b13d05.jpg",
+      "new_image": "images/russia-is-immune-to-us-tariffs.jpg"
+    },
+    {
+      "uuid": "534922fb-d1c6-5764-9cb1-e0b1677729de",
+      "date": 1744318023,
+      "old_image": "images/534922fb-d1c6-5764-9cb1-e0b1677729de.jpg",
+      "new_image": "images/regulated-equities-market-which-is-supposed-to-be-low-risk.jpg"
+    },
+    {
+      "uuid": "0bc174d0-3f8c-5641-9230-81b74d0fee6c",
+      "date": 1744324253,
+      "old_image": "images/0bc174d0-3f8c-5641-9230-81b74d0fee6c.jpg",
+      "new_image": "images/financial-stress-index-keeps-going-up.jpg"
+    },
+    {
+      "uuid": "966c213a-04a4-598a-bb93-dee8b3e8e1c1",
+      "date": 1744324679,
+      "old_image": "images/966c213a-04a4-598a-bb93-dee8b3e8e1c1.jpg",
+      "new_image": "images/ruble-is-a-gold-success-story.jpg"
+    },
+    {
+      "uuid": "820b8c7c-5cc6-564f-af37-75a1e431ee1b",
+      "date": 1744325815,
+      "old_image": "images/820b8c7c-5cc6-564f-af37-75a1e431ee1b.jpg",
+      "new_image": "images/it-gets-crazier.jpg"
+    },
+    {
+      "uuid": "1c89231a-2daf-5d8a-81ec-6b8dc1edfc02",
+      "date": 1744326231,
+      "old_image": "images/1c89231a-2daf-5d8a-81ec-6b8dc1edfc02.jpg",
+      "new_image": "images/and-ruble-is-up-on-gold-since-january.jpg"
+    },
+    {
+      "uuid": "99d78a7a-3669-5afd-8563-18e118c048c6",
+      "date": 1744329515,
+      "old_image": "images/99d78a7a-3669-5afd-8563-18e118c048c6.jpg",
+      "new_image": "images/to-clarify-here-youre-stating-with-us-dollar-and-then-buying.jpg"
+    },
+    {
+      "uuid": "027c631a-dca2-5990-8d2c-d828ee7cc2bf",
+      "date": 1744367653,
+      "old_image": "images/027c631a-dca2-5990-8d2c-d828ee7cc2bf.jpg",
+      "new_image": "images/us-dollar-index-dxy-fell-below-100.jpg"
+    },
+    {
+      "uuid": "2f6ddfe7-376f-5e1f-a429-24fd96598dc9",
+      "date": 1744387211,
+      "old_image": "images/2f6ddfe7-376f-5e1f-a429-24fd96598dc9.jpg",
+      "new_image": "images/heres-a-visual-of-how-it-looks-like.jpg"
+    },
+    {
+      "uuid": "b3baaa11-c2af-5d21-ab7f-4e872acee456",
+      "date": 1744397716,
+      "old_image": "images/b3baaa11-c2af-5d21-ab7f-4e872acee456.jpg",
+      "new_image": "images/us-treasury-bond-yields-are-acting-as-a-risky-asset.jpg"
+    },
+    {
+      "uuid": "2e1ae53b-173f-561b-a271-e67fc6d87f8f",
+      "date": 1744417701,
+      "old_image": "images/2e1ae53b-173f-561b-a271-e67fc6d87f8f.jpg",
+      "new_image": "images/looks-like-lowest-renminbi-yuan-since-2008-didnt-last-long.jpg"
+    },
+    {
+      "uuid": "fbd0eba1-291d-55fe-9782-9e0638533104",
+      "date": 1744439358,
+      "old_image": "images/fbd0eba1-291d-55fe-9782-9e0638533104.jpg",
+      "new_image": "images/lower-usd-index-usd-devaluation-higher-premium-for-usd-loans.jpg"
+    },
+    {
+      "uuid": "df4dddf5-9060-507a-b228-5c40f7b70618",
+      "date": 1744440433,
+      "old_image": "images/df4dddf5-9060-507a-b228-5c40f7b70618.jpg",
+      "new_image": "images/another-important-fact-to-mention-regarding-russia-is-that.jpg"
+    },
+    {
+      "uuid": "d30f2c6d-06c6-546d-8eb3-e05dafdd0b9e",
+      "date": 1744440848,
+      "old_image": "images/d30f2c6d-06c6-546d-8eb3-e05dafdd0b9e.jpg",
+      "new_image": "images/regarding-the-bond-market-collapse.jpg"
+    },
+    {
+      "uuid": "30d45f21-9fa9-5d58-9870-e7b7bbb94121",
+      "date": 1744468300,
+      "old_image": "images/30d45f21-9fa9-5d58-9870-e7b7bbb94121.jpg",
+      "new_image": "images/germanys-gdp-is-1-4-of-eus-gdp.jpg"
+    },
+    {
+      "uuid": "015c2d71-1bf9-50fd-bb52-4a84e4cd2672",
+      "date": 1744545190,
+      "old_image": "images/015c2d71-1bf9-50fd-bb52-4a84e4cd2672.jpg",
+      "new_image": "images/chinese-1-year-bond-prices-are-up-6.jpg"
+    },
+    {
+      "uuid": "0d72a726-d4c0-5652-95f0-4a0eba291815",
+      "date": 1744545606,
+      "old_image": "images/0d72a726-d4c0-5652-95f0-4a0eba291815.jpg",
+      "new_image": "images/yuan-downside-party-really-didnt-last.jpg"
+    },
+    {
+      "uuid": "99be92e7-72be-5336-8a41-0eb7440adeaa",
+      "date": 1744583635,
+      "old_image": "images/99be92e7-72be-5336-8a41-0eb7440adeaa.jpg",
+      "new_image": "images/us-10-year-bond-yield-spikes-above-4-5-at-open.jpg"
+    },
+    {
+      "uuid": "583d427d-3c44-56b9-8eca-cfe62605e654",
+      "date": 1744621532,
+      "old_image": "images/583d427d-3c44-56b9-8eca-cfe62605e654.jpg",
+      "new_image": "images/chatgpt-states-that-a-higher-interest-rate-means-bad.jpg"
+    },
+    {
+      "uuid": "8333527f-9a0a-5605-954a-f32f5c1e1a5e",
+      "date": 1744622466,
+      "old_image": "images/8333527f-9a0a-5605-954a-f32f5c1e1a5e.jpg",
+      "new_image": "images/ruble-is-up-30-on-usd-2025-ytd.jpg"
+    },
+    {
+      "uuid": "5dfbbd9e-21a3-5add-8e65-ad989ab8cb06",
+      "date": 1744622683,
+      "old_image": "images/5dfbbd9e-21a3-5add-8e65-ad989ab8cb06.jpg",
+      "new_image": "images/look-at-that-liquidity-moving-from-short-term-chinese-bonds.jpg"
+    },
+    {
+      "uuid": "36a86ead-0f95-5edf-9f18-312088f3fccc",
+      "date": 1744624715,
+      "old_image": "images/36a86ead-0f95-5edf-9f18-312088f3fccc.jpg",
+      "new_image": "images/2y-us-bond-is-a-good-factor-signal-of-fed-funds-rate-but.jpg"
+    },
+    {
+      "uuid": "05c08ac2-7a37-52b3-9ab3-8731f3810d44",
+      "date": 1744629258,
+      "old_image": "images/05c08ac2-7a37-52b3-9ab3-8731f3810d44.jpg",
+      "new_image": "images/so-how-can-you-buy-russian-securities-in-the-eu.jpg"
+    },
+    {
+      "uuid": "036a426e-6e01-5565-9b85-7a0721864d2c",
+      "date": 1744819080,
+      "old_image": "images/036a426e-6e01-5565-9b85-7a0721864d2c.jpg",
+      "new_image": "images/breaking-gold.jpg"
+    },
+    {
+      "uuid": "2737c5a6-ba99-5292-b2d5-655029bb6aac",
+      "date": 1744832899,
+      "old_image": "images/2737c5a6-ba99-5292-b2d5-655029bb6aac.jpg",
+      "new_image": "images/gold-hitting-another-ath.jpg"
+    },
+    {
+      "uuid": "3c87100c-f591-5b38-a52c-0e582f8dea98",
+      "date": 1744883817,
+      "old_image": "images/3c87100c-f591-5b38-a52c-0e582f8dea98.jpg",
+      "new_image": "images/ruble-falls-below-82-against-usd.jpg"
+    },
+    {
+      "uuid": "00439005-33b8-57a0-b7a0-821c8e040a45",
+      "date": 1744884076,
+      "old_image": "images/00439005-33b8-57a0-b7a0-821c8e040a45.jpg",
+      "new_image": "images/68-82-is-the-next-range-for-usd-rub.jpg"
+    },
+    {
+      "uuid": "cb7141a7-e918-55b7-8071-ea7b2840e2b1",
+      "date": 1744899762,
+      "old_image": "images/cb7141a7-e918-55b7-8071-ea7b2840e2b1.jpg",
+      "new_image": "images/us-dollar-index-going-to-98-3.jpg"
+    },
+    {
+      "uuid": "f436ef4d-5147-509d-8fcd-3c9f318ba442",
+      "date": 1744920545,
+      "old_image": "images/f436ef4d-5147-509d-8fcd-3c9f318ba442.jpg",
+      "new_image": "images/usd-rub-dipped-under-82.jpg"
+    },
+    {
+      "uuid": "c2e9c09d-1d6c-5397-99ca-0a704f7c6f9f",
+      "date": 1744962749,
+      "old_image": "images/c2e9c09d-1d6c-5397-99ca-0a704f7c6f9f.jpg",
+      "new_image": "images/portugals-central-bank-is-loaded-with-gold.jpg"
+    },
+    {
+      "uuid": "f976ae54-b0cf-5c1a-8f86-d6ad1b66eb33",
+      "date": 1744963799,
+      "old_image": "images/f976ae54-b0cf-5c1a-8f86-d6ad1b66eb33.jpg",
+      "new_image": "images/usd-is-tanking-against-ruble.jpg"
+    },
+    {
+      "uuid": "fd6d1dfc-c81b-59ac-8c85-996803a21368",
+      "date": 1745021319,
+      "old_image": "images/fd6d1dfc-c81b-59ac-8c85-996803a21368.jpg",
+      "new_image": "images/ive-referred-to-gold-being-35-of-russian-central-banks.jpg"
+    },
+    {
+      "uuid": "8bd15cf5-78cd-5d53-b4c2-4098298de084",
+      "date": 1745022111,
+      "old_image": "images/8bd15cf5-78cd-5d53-b4c2-4098298de084.jpg",
+      "new_image": "images/ruble-correlates-with-gold-becoming-a-hedge-against-usd.jpg"
+    },
+    {
+      "uuid": "800fce4a-b06d-5630-a5e5-aedb7834e593",
+      "date": 1745025157,
+      "old_image": "images/800fce4a-b06d-5630-a5e5-aedb7834e593.jpg",
+      "new_image": "images/another-reason-for-a-strong-ruble-is-the-consistent-negative.jpg"
+    },
+    {
+      "uuid": "15535db4-edda-52ea-94a0-8a8379b10279",
+      "date": 1745026402,
+      "old_image": "images/15535db4-edda-52ea-94a0-8a8379b10279.jpg",
+      "new_image": "images/russian-government-gets-a-lot-of-revenue-from-natural.jpg"
+    },
+    {
+      "uuid": "ef874022-c543-5e7f-8a61-8a40878446b9",
+      "date": 1745063229,
+      "old_image": "images/ef874022-c543-5e7f-8a61-8a40878446b9.jpg",
+      "new_image": "images/usd-index-bearish-in-a-downtrend.jpg"
+    },
+    {
+      "uuid": "5703fb62-e38c-5b9d-8fb6-099bdc6a7306",
+      "date": 1745065595,
+      "old_image": "images/5703fb62-e38c-5b9d-8fb6-099bdc6a7306.jpg",
+      "new_image": "images/russian-residents-are-net-creditors-to-the-world.jpg"
+    },
+    {
+      "uuid": "b1562c7e-4a3b-5e67-8d9b-799090e0bcc8",
+      "date": 1745098548,
+      "old_image": "images/b1562c7e-4a3b-5e67-8d9b-799090e0bcc8.jpg",
+      "new_image": "images/ford-f-150-sold-2285-units-in-china.jpg"
+    },
+    {
+      "uuid": "7e097faa-ae8f-52a6-a17c-5a53d247319d",
+      "date": 1745143684,
+      "old_image": "images/7e097faa-ae8f-52a6-a17c-5a53d247319d.jpg",
+      "new_image": "images/i-like-how-romanias-central-bank-has-this-image-breaking.jpg"
+    },
+    {
+      "uuid": "8374e516-87a0-566c-bd62-7d144d980f8e",
+      "date": 1745144207,
+      "old_image": "images/8374e516-87a0-566c-bd62-7d144d980f8e.jpg",
+      "new_image": "images/national-bank-of-romanias-gold-reserves-are-13-of-their.jpg"
+    },
+    {
+      "uuid": "d5b4a6e9-5c2c-5eca-be73-3a352b269fec",
+      "date": 1745204581,
+      "old_image": "images/d5b4a6e9-5c2c-5eca-be73-3a352b269fec.jpg",
+      "new_image": "images/3-days-later-and-dxy-is-at-98-3.jpg"
+    },
+    {
+      "uuid": "e29907be-37d6-5d0d-ae19-34e9adc760c7",
+      "date": 1745244922,
+      "old_image": "images/e29907be-37d6-5d0d-ae19-34e9adc760c7.jpg",
+      "new_image": "images/russian-central-bank-key-interest-rate-is-at-21.jpg"
+    },
+    {
+      "uuid": "426e2f68-f2d2-5e87-93bc-53b37a4078f6",
+      "date": 1745340170,
+      "old_image": "images/426e2f68-f2d2-5e87-93bc-53b37a4078f6.jpg",
+      "new_image": "images/pushed-an-update-to-my-homepage-at-https-illya-sh.jpg"
+    },
+    {
+      "uuid": "f3897659-0685-500e-a7c0-055ff205977f",
+      "date": 1745350159,
+      "old_image": "images/f3897659-0685-500e-a7c0-055ff205977f.jpg",
+      "new_image": "images/updated-https-illya-sh-thoughts.jpg"
+    },
+    {
+      "uuid": "b9a3ac13-f81a-51ff-8980-badae45e4171",
+      "date": 1745360467,
+      "old_image": "images/b9a3ac13-f81a-51ff-8980-badae45e4171.jpg",
+      "new_image": "images/short-term-usd-risk-is-up.jpg"
+    },
+    {
+      "uuid": "75918796-ef24-5789-b757-2ae7378afc1e",
+      "date": 1745400547,
+      "old_image": "images/75918796-ef24-5789-b757-2ae7378afc1e.png",
+      "new_image": "images/a-moment-of-appreciation-for-how-the-us-treasury-reports-the.png"
+    },
+    {
+      "uuid": "5988f91d-756c-57a3-9f35-22a5bcf466cd",
+      "date": 1745402695,
+      "old_image": "images/5988f91d-756c-57a3-9f35-22a5bcf466cd.jpg",
+      "new_image": "images/bank-of-japan-just-released-their-10-day-account-balance.jpg"
+    },
+    {
+      "uuid": "1a07411b-238f-59fe-ad79-7e5289c77920",
+      "date": 1745403205,
+      "old_image": "images/1a07411b-238f-59fe-ad79-7e5289c77920.jpg",
+      "new_image": "images/gemini-2-5-pro-deep-research-says-bank-of-japan-will.jpg"
+    },
+    {
+      "uuid": "72ee30b8-2db6-5210-94e4-826a492321a9",
+      "date": 1745404200,
+      "old_image": "images/72ee30b8-2db6-5210-94e4-826a492321a9.jpg",
+      "new_image": "images/bojs-gold-holdings-have-been-constant-for-10-years.jpg"
+    },
+    {
+      "uuid": "0ccb5d30-ca47-5bec-bafd-eaef0ec828bb",
+      "date": 1745404473,
+      "old_image": "images/0ccb5d30-ca47-5bec-bafd-eaef0ec828bb.jpg",
+      "new_image": "images/article-3-of-accounting-rules-of-the-bank-of-japan-states.jpg"
+    },
+    {
+      "uuid": "31d9fb0e-ce49-5835-bf93-c0e5c476f71d",
+      "date": 1745404819,
+      "old_image": "images/31d9fb0e-ce49-5835-bf93-c0e5c476f71d.jpg",
+      "new_image": "images/generally-accepted-principles-of-corporate-accounting-are.jpg"
+    },
+    {
+      "uuid": "2129bae8-6281-5d21-8c9d-a319b7ae3b01",
+      "date": 1745405239,
+      "old_image": "images/2129bae8-6281-5d21-8c9d-a319b7ae3b01.jpg",
+      "new_image": "images/article-13-of-accounting-rules-of-the-boj-defines-special.jpg"
+    },
+    {
+      "uuid": "a8fb9f23-2e7e-557b-8b53-0fd6f1903cdf",
+      "date": 1745406138,
+      "old_image": "images/a8fb9f23-2e7e-557b-8b53-0fd6f1903cdf.png",
+      "new_image": "images/china-has-been-increasing-their-gold-reserves-ytd.png"
+    },
+    {
+      "uuid": "9e3dd8d7-3fcd-5cba-9b95-abd37c1692ed",
+      "date": 1745407193,
+      "old_image": "images/9e3dd8d7-3fcd-5cba-9b95-abd37c1692ed.jpg",
+      "new_image": "images/heres-why-trade-war-with-china-will-hurt-the-us.jpg"
+    },
+    {
+      "uuid": "8cf60422-2be4-5cc6-84cb-f595ecf228da",
+      "date": 1745409915,
+      "old_image": "images/8cf60422-2be4-5cc6-84cb-f595ecf228da.jpg",
+      "new_image": "images/upwards-retracements-for-us-dollar-index-are-normal.jpg"
+    },
+    {
+      "uuid": "8744029b-94d6-50e1-99d1-4f0edc2dfd6b",
+      "date": 1745435298,
+      "old_image": "images/8744029b-94d6-50e1-99d1-4f0edc2dfd6b.jpg",
+      "new_image": "images/ruble-outflows-into-usd.jpg"
+    },
+    {
+      "uuid": "ffa7d20c-3ae6-5072-9a93-24068b54cc63",
+      "date": 1745444706,
+      "old_image": "images/ffa7d20c-3ae6-5072-9a93-24068b54cc63.jpg",
+      "new_image": "images/ruble-is-correlating-with-gold.jpg"
+    },
+    {
+      "uuid": "781dd393-5a88-55b2-8324-188c61826eae",
+      "date": 1745492937,
+      "old_image": "images/781dd393-5a88-55b2-8324-188c61826eae.jpg",
+      "new_image": "images/correlation-between-ruble-gold.jpg"
+    },
+    {
+      "uuid": "3e8003ba-467e-50e6-9ecb-a811ef423458",
+      "date": 1745575233,
+      "old_image": "images/3e8003ba-467e-50e6-9ecb-a811ef423458.jpg",
+      "new_image": "images/now-that-gold-is-down-below-3-3k-its-a-good-time-to-say-this.jpg"
+    },
+    {
+      "uuid": "3b744c08-3789-565d-acc5-11819c4f1901",
+      "date": 1745577053,
+      "old_image": "images/3b744c08-3789-565d-acc5-11819c4f1901.jpg",
+      "new_image": "images/regarding-the-1492-gold-top-533-years-breakeven-the.jpg"
+    },
+    {
+      "uuid": "0e003ee6-af84-5eec-8f86-6b376f6e0d98",
+      "date": 1745588344,
+      "old_image": "images/0e003ee6-af84-5eec-8f86-6b376f6e0d98.jpg",
+      "new_image": "images/lets-see-how-chinas-us-bond-holdings-evolve-from-hereon.jpg"
+    },
+    {
+      "uuid": "9fc89022-b964-571b-bbc2-4b6ac07f6414",
+      "date": 1745658938,
+      "old_image": "images/9fc89022-b964-571b-bbc2-4b6ac07f6414.jpg",
+      "new_image": "images/regarding-cme-comex-100-gold-futures.jpg"
+    },
+    {
+      "uuid": "40bbb5f4-d475-5091-9988-3fe16e46e260",
+      "date": 1745659780,
+      "old_image": "images/40bbb5f4-d475-5091-9988-3fe16e46e260.jpg",
+      "new_image": "images/rest-of-april-was-relatively-uneventful.jpg"
+    },
+    {
+      "uuid": "e11431dd-235b-5aaa-abb4-1bf3d0cb25f7",
+      "date": 1745676173,
+      "old_image": "images/e11431dd-235b-5aaa-abb4-1bf3d0cb25f7.jpg",
+      "new_image": "images/many-boast-about-uss-higher-gdp-than-eu-without-looking-at.jpg"
+    },
+    {
+      "uuid": "ef69be31-ab48-5637-a120-48d8736026b4",
+      "date": 1745756749,
+      "old_image": "images/ef69be31-ab48-5637-a120-48d8736026b4.jpg",
+      "new_image": "images/cme-publishes-daily-data-on-physical-settlement-on-gold.jpg"
+    },
+    {
+      "uuid": "27fe5400-0c85-5902-8241-ef51239d83da",
+      "date": 1745757362,
+      "old_image": "images/27fe5400-0c85-5902-8241-ef51239d83da.jpg",
+      "new_image": "images/i-asked-chatgpt-o3-what-will-happen-to-the-economy-of-the-us.jpg"
+    },
+    {
+      "uuid": "7b1f77e2-824d-5e51-8e48-efed0e04c0d2",
+      "date": 1745765562,
+      "old_image": "images/7b1f77e2-824d-5e51-8e48-efed0e04c0d2.jpg",
+      "new_image": "images/eth-btc-shorts-update.jpg"
+    },
+    {
+      "uuid": "31aa7929-3252-5164-ba11-84b084b2c39d",
+      "date": 1745784186,
+      "old_image": "images/31aa7929-3252-5164-ba11-84b084b2c39d.jpg",
+      "new_image": "images/promissory-notes-are-very-simple-legal-documents-generally-1.jpg"
+    },
+    {
+      "uuid": "2d934e7f-ea95-59ff-9092-c109b81e1ac7",
+      "date": 1745790443,
+      "old_image": "images/2d934e7f-ea95-59ff-9092-c109b81e1ac7.jpg",
+      "new_image": "images/reminder-to-do-a-deep-dive-into-funding-rates-if-you-still.jpg"
+    },
+    {
+      "uuid": "2da8f961-5e17-5b54-8d71-92811981319e",
+      "date": 1745797889,
+      "old_image": "images/2da8f961-5e17-5b54-8d71-92811981319e.jpg",
+      "new_image": "images/basis-carry-yield-in-expiring-futures-funding-rate-in.jpg"
+    },
+    {
+      "uuid": "cdeeaa8d-e22e-593a-9bc7-4cbcf6b049a5",
+      "date": 1745834735,
+      "old_image": "images/cdeeaa8d-e22e-593a-9bc7-4cbcf6b049a5.jpg",
+      "new_image": "images/catastrophe-bonds-cat-bonds-work-by-having-an-investor-pool.jpg"
+    },
+    {
+      "uuid": "23f5cb5f-5903-5ee4-944e-f4abf0707949",
+      "date": 1745854473,
+      "old_image": "images/23f5cb5f-5903-5ee4-944e-f4abf0707949.jpg",
+      "new_image": "images/gold-up-exactly-as-expected.jpg"
+    },
+    {
+      "uuid": "f7deb2d5-4970-5b1a-8d42-4a65ad59fe17",
+      "date": 1745871458,
+      "old_image": "images/f7deb2d5-4970-5b1a-8d42-4a65ad59fe17.jpg",
+      "new_image": "images/usd-index-update-its-down.jpg"
+    },
+    {
+      "uuid": "58fbf24f-ae94-5b38-8494-c44948620a4c",
+      "date": 1746127745,
+      "old_image": "images/58fbf24f-ae94-5b38-8494-c44948620a4c.jpg",
+      "new_image": "images/covered-bonds-are-issued-by-a-financial-institution-e-g-bank.jpg"
+    },
+    {
+      "uuid": "5bc01f3d-9d15-5b6d-8f0d-5feec67643f5",
+      "date": 1746128872,
+      "old_image": "images/5bc01f3d-9d15-5b6d-8f0d-5feec67643f5.jpg",
+      "new_image": "images/ive-said-this-before-but-im-still-amazed-daily-by-how-much.jpg"
+    },
+    {
+      "uuid": "ee3445d9-1330-5c49-97bb-70351aa7da4c",
+      "date": 1746188316,
+      "old_image": "images/ee3445d9-1330-5c49-97bb-70351aa7da4c.jpg",
+      "new_image": "images/google-zero-knowledge-proofs.jpg"
+    },
+    {
+      "uuid": "60fca5a7-679d-5830-bd94-2f87ee3fdd03",
+      "date": 1746199256,
+      "old_image": "images/60fca5a7-679d-5830-bd94-2f87ee3fdd03.jpg",
+      "new_image": "images/wow.jpg"
+    },
+    {
+      "uuid": "bf6482fa-6135-59e5-ad56-341bb357777b",
+      "date": 1746199928,
+      "old_image": "images/bf6482fa-6135-59e5-ad56-341bb357777b.jpg",
+      "new_image": "images/eu-securitisation-tl-dr.jpg"
+    },
+    {
+      "uuid": "67df613c-0bc0-5e1e-a726-9a1087e9e6ff",
+      "date": 1746748739,
+      "old_image": "images/67df613c-0bc0-5e1e-a726-9a1087e9e6ff.jpg",
+      "new_image": "images/may-9th-1945-the-red-army-lead-by-zhukov-raises-the-soviet.jpg"
+    },
+    {
+      "uuid": "7268c3f8-165c-5a8e-a314-2e5fd0d39b93",
+      "date": 1746798018,
+      "old_image": "images/7268c3f8-165c-5a8e-a314-2e5fd0d39b93.jpg",
+      "new_image": "images/til-russia-has-a-national-wealth-fund.jpg"
+    },
+    {
+      "uuid": "d695876f-aed4-56c5-b9d2-2f9fd3bb096f",
+      "date": 1746801480,
+      "old_image": "images/d695876f-aed4-56c5-b9d2-2f9fd3bb096f.jpg",
+      "new_image": "images/how-does-the-russian-government-get-the-oil-gas-revenue.jpg"
+    },
+    {
+      "uuid": "775b0012-c19c-55f2-8083-6992557cdf9b",
+      "date": 1746825217,
+      "old_image": "images/775b0012-c19c-55f2-8083-6992557cdf9b.jpg",
+      "new_image": "images/russia-announced-that-they-will-cover-their-2025-budget.jpg"
+    },
+    {
+      "uuid": "b69bac4c-fbc3-545f-b76a-94f67df57caa",
+      "date": 1746885602,
+      "old_image": "images/b69bac4c-fbc3-545f-b76a-94f67df57caa.jpg",
+      "new_image": "images/you-can-now-create-gold-from-lead.jpg"
+    },
+    {
+      "uuid": "7cf84b2e-06eb-5a06-87ab-705f881a7eca",
+      "date": 1747057237,
+      "old_image": "images/7cf84b2e-06eb-5a06-87ab-705f881a7eca.jpg",
+      "new_image": "images/2y-bond-up-3-percent-to-a-4-yield.jpg"
+    },
+    {
+      "uuid": "019a7f2a-e474-5993-93e0-590ea588833d",
+      "date": 1747059601,
+      "old_image": "images/019a7f2a-e474-5993-93e0-590ea588833d.jpg",
+      "new_image": "images/this-makes-no-sense.jpg"
+    },
+    {
+      "uuid": "32c843f8-9b5f-5663-849a-2f40354dc47f",
+      "date": 1747060332,
+      "old_image": "images/32c843f8-9b5f-5663-849a-2f40354dc47f.jpg",
+      "new_image": "images/budget-deficit-financing-through-the-national-reserve-fund.jpg"
+    },
+    {
+      "uuid": "d3204796-8301-57a7-aba9-45a27843587d",
+      "date": 1747060834,
+      "old_image": "images/d3204796-8301-57a7-aba9-45a27843587d.jpg",
+      "new_image": "images/russian-central-bank-currently-has-interest-rates-at-21.jpg"
+    },
+    {
+      "uuid": "f40d9940-1524-5547-b305-abf8ab067ccc",
+      "date": 1747061182,
+      "old_image": "images/f40d9940-1524-5547-b305-abf8ab067ccc.jpg",
+      "new_image": "images/its-a-mystery-why-us-bond-yields-are-skyrocketing.jpg"
+    },
+    {
+      "uuid": "3d058350-3474-5fe0-a07f-463ae77a9a78",
+      "date": 1747072063,
+      "old_image": "images/3d058350-3474-5fe0-a07f-463ae77a9a78.jpg",
+      "new_image": "images/of-course-temporary-but-still-gold-down-3-today.jpg"
+    },
+    {
+      "uuid": "1d705745-25a3-5085-a3bd-25a24d94a2cd",
+      "date": 1747490425,
+      "old_image": "images/1d705745-25a3-5085-a3bd-25a24d94a2cd.jpg",
+      "new_image": "images/information-ratio-is-a-risk-adjusted-measure-of-how-good.jpg"
+    },
+    {
+      "uuid": "8fe03a2b-452d-527f-901d-76a207ad02b5",
+      "date": 1747588528,
+      "old_image": "images/8fe03a2b-452d-527f-901d-76a207ad02b5.jpg",
+      "new_image": "images/there-is-also-ex-ante-information-ratio-i-e-the-expected.jpg"
+    },
+    {
+      "uuid": "e016c008-45d2-5c23-8cb4-21e9559a6b77",
+      "date": 1747644396,
+      "old_image": "images/e016c008-45d2-5c23-8cb4-21e9559a6b77.jpg",
+      "new_image": "images/30y-us-bond-yield-just-crossed-5.jpg"
+    },
+    {
+      "uuid": "276d2635-e045-5a37-906c-8bb1aa3f35e2",
+      "date": 1747644544,
+      "old_image": "images/276d2635-e045-5a37-906c-8bb1aa3f35e2.jpg",
+      "new_image": "images/the-5-year-gold-char-is-wild.jpg"
+    },
+    {
+      "uuid": "2bdc0768-3043-5af3-a9ee-914740a2926f",
+      "date": 1747654875,
+      "old_image": "images/2bdc0768-3043-5af3-a9ee-914740a2926f.jpg",
+      "new_image": "images/ever-since-i-wrote-this-about-japans-easing-monetary-policy.jpg"
+    },
+    {
+      "uuid": "1118a78c-ba1f-59b4-adb2-5ecb21fcb498",
+      "date": 1747742787,
+      "old_image": "images/1118a78c-ba1f-59b4-adb2-5ecb21fcb498.jpg",
+      "new_image": "images/russian-bond-yield-curve-is-inverted.jpg"
+    },
+    {
+      "uuid": "ae9a9d75-f6cb-5638-bef7-16ba1f75456f",
+      "date": 1747747905,
+      "old_image": "images/ae9a9d75-f6cb-5638-bef7-16ba1f75456f.jpg",
+      "new_image": "images/good-morning.jpg"
+    },
+    {
+      "uuid": "2c05492e-0a6e-5317-b63d-ff48c244ca5d",
+      "date": 1747825113,
+      "old_image": "images/2c05492e-0a6e-5317-b63d-ff48c244ca5d.jpg",
+      "new_image": "images/us-bond-yields-are-at-their-2006-levels.jpg"
+    },
+    {
+      "uuid": "d68da047-a14e-5c73-92e5-d518a634b4e4",
+      "date": 1747828126,
+      "old_image": "images/d68da047-a14e-5c73-92e5-d518a634b4e4.jpg",
+      "new_image": "images/a-month-ago-me-and-gemini-2-5-pro-deep-research-had-a.jpg"
+    },
+    {
+      "uuid": "5cd95d29-0cf6-5ea4-b688-bca24235cd54",
+      "date": 1747854747,
+      "old_image": "images/5cd95d29-0cf6-5ea4-b688-bca24235cd54.jpg",
+      "new_image": "images/30y-bond-yield-is-up-132-bp-in-1h.jpg"
+    },
+    {
+      "uuid": "51754a35-dc72-58c2-aa47-1003e4875d0a",
+      "date": 1747855218,
+      "old_image": "images/51754a35-dc72-58c2-aa47-1003e4875d0a.jpg",
+      "new_image": "images/not-all-european-bonds-are-crashing.jpg"
+    },
+    {
+      "uuid": "ca3df885-bb97-5615-a0c6-fa8e305d0dbc",
+      "date": 1747862046,
+      "old_image": "images/ca3df885-bb97-5615-a0c6-fa8e305d0dbc.jpg",
+      "new_image": "images/whos-ready-for-a-new-gold-ath.jpg"
+    },
+    {
+      "uuid": "924cbf8e-34c8-5bbe-8067-25cd2c2e5213",
+      "date": 1747914267,
+      "old_image": "images/924cbf8e-34c8-5bbe-8067-25cd2c2e5213.jpg",
+      "new_image": "images/the-year-is-2002.jpg"
+    },
+    {
+      "uuid": "644b3346-2d7e-5b85-9056-58f66c968c1f",
+      "date": 1747914745,
+      "old_image": "images/644b3346-2d7e-5b85-9056-58f66c968c1f.jpg",
+      "new_image": "images/of-course-context-is-always-needed.jpg"
+    },
+    {
+      "uuid": "88869d9a-26a0-5471-a03f-1d59e7fdc224",
+      "date": 1747915598,
+      "old_image": "images/88869d9a-26a0-5471-a03f-1d59e7fdc224.jpg",
+      "new_image": "images/gold-is-having-its-calm-before-the-storm-moment.jpg"
+    },
+    {
+      "uuid": "8cc50cf7-89df-5246-b4d4-f72c8013478a",
+      "date": 1747937641,
+      "old_image": "images/8cc50cf7-89df-5246-b4d4-f72c8013478a.jpg",
+      "new_image": "images/learn-anything-with-ai-fast.jpg"
+    },
+    {
+      "uuid": "c570670d-de70-5b68-8e35-8cbecf789f45",
+      "date": 1748030582,
+      "old_image": "images/c570670d-de70-5b68-8e35-8cbecf789f45.jpg",
+      "new_image": "images/crypto-market-cap-down-2-6-today.jpg"
+    },
+    {
+      "uuid": "d991a959-8ab1-5c6e-878a-8ce4fd714905",
+      "date": 1748187610,
+      "old_image": "images/d991a959-8ab1-5c6e-878a-8ce4fd714905.jpg",
+      "new_image": "images/m2-supply-liquidity.jpg"
+    },
+    {
+      "uuid": "9660873a-3a6f-5ee7-9a3c-31b38ffcee30",
+      "date": 1748192677,
+      "old_image": "images/9660873a-3a6f-5ee7-9a3c-31b38ffcee30.jpg",
+      "new_image": "images/quantitative-easing-qe-by-a-central-bank-cb-increase-both.jpg"
+    },
+    {
+      "uuid": "60298208-127c-57ea-8100-bf4778e0e3e1",
+      "date": 1748202706,
+      "old_image": "images/60298208-127c-57ea-8100-bf4778e0e3e1.jpg",
+      "new_image": "images/us-bond-yields-directly-affect-usd-liquidity.jpg"
+    },
+    {
+      "uuid": "2301e84b-273e-5904-ad9e-4e4828158018",
+      "date": 1748205243,
+      "old_image": "images/2301e84b-273e-5904-ad9e-4e4828158018.jpg",
+      "new_image": "images/sustained-high-bond-yields-combined-with-qe-will-lead-to-an.jpg"
+    },
+    {
+      "uuid": "4b448099-4436-5d5d-9ad5-f1f5d6fd9e6d",
+      "date": 1748271417,
+      "old_image": "images/4b448099-4436-5d5d-9ad5-f1f5d6fd9e6d.jpg",
+      "new_image": "images/all-time-high-for-gold-incoming.jpg"
+    },
+    {
+      "uuid": "5e46af67-e593-50d7-9e6f-9d7007e1e518",
+      "date": 1748355739,
+      "old_image": "images/5e46af67-e593-50d7-9e6f-9d7007e1e518.jpg",
+      "new_image": "images/90-of-all-newly-issued-debt-is-for-refinancing-of-existing.jpg"
+    },
+    {
+      "uuid": "43cfec29-bb0c-58bb-8938-eb3af4d80332",
+      "date": 1748625103,
+      "old_image": "images/43cfec29-bb0c-58bb-8938-eb3af4d80332.jpg",
+      "new_image": "images/if-usd-eur-falls-below-the-pink-trend-line-its-a-fall-to-0.jpg"
+    },
+    {
+      "uuid": "cef314ba-0517-565d-a1df-a9d677a85590",
+      "date": 1748802703,
+      "old_image": "images/cef314ba-0517-565d-a1df-a9d677a85590.jpg",
+      "new_image": "images/txt-mirror-for-my-x-tweets-posts.jpg"
+    },
+    {
+      "uuid": "5c5aeada-1717-55bb-bb06-bd8921cd2240",
+      "date": 1748877333,
+      "old_image": "images/5c5aeada-1717-55bb-bb06-bd8921cd2240.jpg",
+      "new_image": "images/usd-eur-price-action-is-developing-exactly-as-described.jpg"
+    },
+    {
+      "uuid": "0b41122b-235c-5057-93d0-e6c79323602c",
+      "date": 1749240794,
+      "old_image": "images/0b41122b-235c-5057-93d0-e6c79323602c.jpg",
+      "new_image": "images/observe.jpg"
+    },
+    {
+      "uuid": "b025ae0e-86c7-5030-adaf-c3938a301402",
+      "date": 1749243275,
+      "old_image": "images/b025ae0e-86c7-5030-adaf-c3938a301402.jpg",
+      "new_image": "images/there-you-go.jpg"
+    },
+    {
+      "uuid": "c037d9c7-5677-5090-bfad-5d8a1d47007f",
+      "date": 1749571837,
+      "old_image": "images/c037d9c7-5677-5090-bfad-5d8a1d47007f.jpg",
+      "new_image": "images/quant-trading-secrets-they-dont-want-you-to-know.jpg"
+    },
+    {
+      "uuid": "4f6db8e9-0244-51c6-b9c8-86a77a973635",
+      "date": 1749580699,
+      "old_image": "images/4f6db8e9-0244-51c6-b9c8-86a77a973635.jpg",
+      "new_image": "images/the-ruble-thesis-remains-valid.jpg"
+    },
+    {
+      "uuid": "45167618-003b-53da-b193-eba5cb58c06c",
+      "date": 1749683191,
+      "old_image": "images/45167618-003b-53da-b193-eba5cb58c06c.jpg",
+      "new_image": "images/risk-free-rate-returns-with-quant-trading-strategies-may-be.jpg"
+    },
+    {
+      "uuid": "faae2800-5910-513f-ae3e-f4ae5909c8c0",
+      "date": 1749684261,
+      "old_image": "images/faae2800-5910-513f-ae3e-f4ae5909c8c0.jpg",
+      "new_image": "images/are-you-ready.jpg"
+    },
+    {
+      "uuid": "77196138-6409-5ef6-9463-7a665deeac67",
+      "date": 1749775971,
+      "old_image": "images/77196138-6409-5ef6-9463-7a665deeac67.jpg",
+      "new_image": "images/while-gold-oil-are-up-ethereum-and-bitcoin-are-down.jpg"
+    },
+    {
+      "uuid": "6059d01f-3a3b-5d03-921a-7081d7b3846a",
+      "date": 1749776235,
+      "old_image": "images/6059d01f-3a3b-5d03-921a-7081d7b3846a.jpg",
+      "new_image": "images/as-expected-3-months-was-all-that-crude-oil-needed-to-spike.jpg"
+    },
+    {
+      "uuid": "fed01689-4cb1-5feb-9723-0b7690ed98d4",
+      "date": 1749776803,
+      "old_image": "images/fed01689-4cb1-5feb-9723-0b7690ed98d4.jpg",
+      "new_image": "images/i-hope-you-used-the-earlier-advice-to-prepare-for-a-new-gold.jpg"
+    },
+    {
+      "uuid": "70483f87-14b5-5054-9234-49e032eb9dbe",
+      "date": 1749821908,
+      "old_image": "images/70483f87-14b5-5054-9234-49e032eb9dbe.jpg",
+      "new_image": "images/new-gold-ath-is-in-3440-per-oz.jpg"
+    },
+    {
+      "uuid": "26a3b562-7ba3-5685-b375-488a0467d0c7",
+      "date": 1749828575,
+      "old_image": "images/26a3b562-7ba3-5685-b375-488a0467d0c7.jpg",
+      "new_image": "images/gold-may-just-go-straight-to-3500-in-the-next-few-hours.jpg"
+    },
+    {
+      "uuid": "8a370d5a-0b56-5cc9-a60f-7e0e25aae2fb",
+      "date": 1749829153,
+      "old_image": "images/8a370d5a-0b56-5cc9-a60f-7e0e25aae2fb.jpg",
+      "new_image": "images/interestingly-the-yields-on-us-bonds-are-up-across-the-yield.jpg"
+    },
+    {
+      "uuid": "c8ed64e6-0164-5db0-99b8-ef01919db358",
+      "date": 1749829485,
+      "old_image": "images/c8ed64e6-0164-5db0-99b8-ef01919db358.jpg",
+      "new_image": "images/falling-us-dollar-index-played-out-exactly-as-expected.jpg"
+    },
+    {
+      "uuid": "be01b03b-64fc-5472-8557-a31a40949864",
+      "date": 1749830117,
+      "old_image": "images/be01b03b-64fc-5472-8557-a31a40949864.jpg",
+      "new_image": "images/while-ethereum-has-built-a-strong-ish-support-in-the-current.jpg"
+    },
+    {
+      "uuid": "2ec3e60e-4d59-55e3-b19e-fbcde51ac5b1",
+      "date": 1750077674,
+      "old_image": "images/2ec3e60e-4d59-55e3-b19e-fbcde51ac5b1.jpg",
+      "new_image": "images/the-market-is-never-wrong.jpg"
+    },
+    {
+      "uuid": "541e4495-9df1-56c9-9591-689a69e6a21d",
+      "date": 1750078039,
+      "old_image": "images/541e4495-9df1-56c9-9591-689a69e6a21d.jpg",
+      "new_image": "images/shekel-is-headed-down-to-sub-4.jpg"
+    },
+    {
+      "uuid": "b896b300-c11e-55b0-9bff-7826469f266a",
+      "date": 1750091982,
+      "old_image": "images/b896b300-c11e-55b0-9bff-7826469f266a.jpg",
+      "new_image": "images/aaand-crude-oil-futures-are-back-above-70.jpg"
+    },
+    {
+      "uuid": "68aa61bc-814b-5aca-8b3c-8222ae11010e",
+      "date": 1750098423,
+      "old_image": "images/68aa61bc-814b-5aca-8b3c-8222ae11010e.jpg",
+      "new_image": "images/contract-as-product-approach.jpg"
+    },
+    {
+      "uuid": "ca481e00-4f3b-55cf-8f68-16b0151aedf1",
+      "date": 1750114377,
+      "old_image": "images/ca481e00-4f3b-55cf-8f68-16b0151aedf1.jpg",
+      "new_image": "images/oil-gold-back-on-the-rise.jpg"
+    },
+    {
+      "uuid": "cb1773a5-0605-5e16-91dc-75a389acf57b",
+      "date": 1750177244,
+      "old_image": "images/cb1773a5-0605-5e16-91dc-75a389acf57b.jpg",
+      "new_image": "images/crude-oil-back-above-72-per-barrel.jpg"
+    },
+    {
+      "uuid": "12a71ad2-f4e2-59f5-b81d-36cd074b913f",
+      "date": 1750206084,
+      "old_image": "images/12a71ad2-f4e2-59f5-b81d-36cd074b913f.jpg",
+      "new_image": "images/everybody-has-been-so-focused-on-oil-price-that-they-largely.jpg"
+    },
+    {
+      "uuid": "55f16fec-d40d-550f-8e0e-b810ee21d8ae",
+      "date": 1750250916,
+      "old_image": "images/55f16fec-d40d-550f-8e0e-b810ee21d8ae.jpg",
+      "new_image": "images/ethereum-fell-below-2500.jpg"
+    },
+    {
+      "uuid": "6ac49aed-9a7c-5f5f-b060-dafe498d26de",
+      "date": 1750250984,
+      "old_image": "images/6ac49aed-9a7c-5f5f-b060-dafe498d26de.jpg",
+      "new_image": "images/fyi-the-new-brics-banknote-that-has-been-circulating-on.jpg"
+    },
+    {
+      "uuid": "ca04f5dc-73cd-530d-9f5d-3c578e64231d",
+      "date": 1750251065,
+      "old_image": "images/ca04f5dc-73cd-530d-9f5d-3c578e64231d.jpg",
+      "new_image": "images/watch-the-move.jpg"
+    },
+    {
+      "uuid": "d5d6d9b4-5159-50d5-ae87-8fcae38abbb7",
+      "date": 1750350009,
+      "old_image": "images/d5d6d9b4-5159-50d5-ae87-8fcae38abbb7.jpg",
+      "new_image": "images/crude-oil-back-above-75.jpg"
+    },
+    {
+      "uuid": "b799d7b0-669a-5689-a551-7e194fc17f5b",
+      "date": 1750443801,
+      "old_image": "images/b799d7b0-669a-5689-a551-7e194fc17f5b.jpg",
+      "new_image": "images/ethereum-heading-down-towards-2180.jpg"
+    },
+    {
+      "uuid": "2c12f09f-a4e5-578b-9a96-c4c06a0e1a14",
+      "date": 1750519721,
+      "old_image": "images/2c12f09f-a4e5-578b-9a96-c4c06a0e1a14.jpg",
+      "new_image": "images/fyi-there-is-plain-text-version-of-my-x-posts.jpg"
+    },
+    {
+      "uuid": "01fe7502-2d85-5c78-9075-e780bd0c8a30",
+      "date": 1750520484,
+      "old_image": "images/01fe7502-2d85-5c78-9075-e780bd0c8a30.jpg",
+      "new_image": "images/this-was-fully-vibe-coded.jpg"
+    },
+    {
+      "uuid": "613f7eb7-f52b-5833-816a-84d040edc283",
+      "date": 1750521407,
+      "old_image": "images/613f7eb7-f52b-5833-816a-84d040edc283.jpg",
+      "new_image": "images/although-google-clearly-isnt-a-fan-of-plain-text.jpg"
+    },
+    {
+      "uuid": "1ff3bbeb-3408-5380-bc86-a4c24acd3c11",
+      "date": 1750522415,
+      "old_image": "images/1ff3bbeb-3408-5380-bc86-a4c24acd3c11.jpg",
+      "new_image": "images/grok-confirms-what-i-said-regarding-txt-format.jpg"
+    },
+    {
+      "uuid": "7c8fdac5-38dc-5a17-bdae-dd54d7bdde1e",
+      "date": 1750523288,
+      "old_image": "images/7c8fdac5-38dc-5a17-bdae-dd54d7bdde1e.jpg",
+      "new_image": "images/chatgpt-reaffirms-its-preference-for-txt-over-html.jpg"
+    },
+    {
+      "uuid": "ecb4820c-427d-5345-b3af-5459578c7379",
+      "date": 1750527753,
+      "old_image": "images/ecb4820c-427d-5345-b3af-5459578c7379.jpg",
+      "new_image": "images/soooo-new-gold-ath-next-week.jpg"
+    },
+    {
+      "uuid": "e6b32516-ff69-5f39-b63c-5ffe752ddd28",
+      "date": 1750528104,
+      "old_image": "images/e6b32516-ff69-5f39-b63c-5ffe752ddd28.jpg",
+      "new_image": "images/hello-hello-looks-like-there-wasnt-much-momentum-behind.jpg"
+    },
+    {
+      "uuid": "2021ea60-912d-557d-860c-de5732ff7b87",
+      "date": 1750528335,
+      "old_image": "images/2021ea60-912d-557d-860c-de5732ff7b87.jpg",
+      "new_image": "images/both-gold-crude-oil-are-finishing-their-consolidation-before.jpg"
+    },
+    {
+      "uuid": "8915f010-113e-5801-924e-d372f6f8846a",
+      "date": 1750540480,
+      "old_image": "images/8915f010-113e-5801-924e-d372f6f8846a.jpg",
+      "new_image": "images/silver-was-another-spot-on-prediction.jpg"
+    },
+    {
+      "uuid": "e5c903e3-4679-5f7c-9e1a-f746db045be3",
+      "date": 1750542268,
+      "old_image": "images/e5c903e3-4679-5f7c-9e1a-f746db045be3.jpg",
+      "new_image": "images/and-a-week-later-ethereum-indeed-falls-sharply-towards-the.jpg"
+    },
+    {
+      "uuid": "25ecdeac-3967-5e43-a46b-752d1cad9b09",
+      "date": 1750545406,
+      "old_image": "images/25ecdeac-3967-5e43-a46b-752d1cad9b09.jpg",
+      "new_image": "images/ethereums-resumed-downfall-towards-monthly-2180-support-may.jpg"
+    },
+    {
+      "uuid": "73079b91-ae1a-5cfa-9192-44718c46f3bc",
+      "date": 1750547019,
+      "old_image": "images/73079b91-ae1a-5cfa-9192-44718c46f3bc.jpg",
+      "new_image": "images/look-at-that-buy-pressure-exhaustion.jpg"
+    },
+    {
+      "uuid": "62c7be0f-fa7c-5b4b-b94b-c1fe2202f54e",
+      "date": 1750547106,
+      "old_image": "images/62c7be0f-fa7c-5b4b-b94b-c1fe2202f54e.jpg",
+      "new_image": "images/okay-looks-like-it-started-before-i-could-finish-typing.jpg"
+    },
+    {
+      "uuid": "3aff2ad5-c8f6-5661-9237-fff4f2bbf7ea",
+      "date": 1750548041,
+      "old_image": "images/3aff2ad5-c8f6-5661-9237-fff4f2bbf7ea.jpg",
+      "new_image": "images/and-ethereums-downtrend-continues-on.jpg"
+    },
+    {
+      "uuid": "d383ec5c-9bb5-558c-988e-8ca7fe052759",
+      "date": 1750579663,
+      "old_image": "images/d383ec5c-9bb5-558c-988e-8ca7fe052759.jpg",
+      "new_image": "images/notebooklm-explains-international-tax-law-to-a-software.jpg"
+    },
+    {
+      "uuid": "5af309e5-3458-5d79-8162-d5c25483c521",
+      "date": 1750580850,
+      "old_image": "images/5af309e5-3458-5d79-8162-d5c25483c521.jpg",
+      "new_image": "images/record-7-trillion-usd-in-money-market-funds-mmf.jpg"
+    },
+    {
+      "uuid": "788aeaf6-a199-5f01-a14c-7704499d85e7",
+      "date": 1750583314,
+      "old_image": "images/788aeaf6-a199-5f01-a14c-7704499d85e7.jpg",
+      "new_image": "images/all-eyes-on-gold-futures.jpg"
+    },
+    {
+      "uuid": "31081bc0-eaf5-5e42-9413-5ed477dcef22",
+      "date": 1750585546,
+      "old_image": "images/31081bc0-eaf5-5e42-9413-5ed477dcef22.jpg",
+      "new_image": "images/heres-some-ethereum-alpha-for-the-next-hours.jpg"
+    },
+    {
+      "uuid": "e3329fed-14a7-525a-aef1-c1ff7a6e0b89",
+      "date": 1750587402,
+      "old_image": "images/e3329fed-14a7-525a-aef1-c1ff7a6e0b89.jpg",
+      "new_image": "images/i-warned-about-ethereums-price-downfall-towards-the-monthly.jpg"
+    },
+    {
+      "uuid": "1f782847-2d0b-557b-b52f-f5bb8f06204b",
+      "date": 1750590485,
+      "old_image": "images/1f782847-2d0b-557b-b52f-f5bb8f06204b.jpg",
+      "new_image": "images/golds-behavior-during-the-current-bullrun-has-been.jpg"
+    },
+    {
+      "uuid": "61654e1a-c529-5f7a-a9af-35ab78c54614",
+      "date": 1750598450,
+      "old_image": "images/61654e1a-c529-5f7a-a9af-35ab78c54614.jpg",
+      "new_image": "images/uns-model-double-taxation-convention-has-a-clear-key-benefit.jpg"
+    },
+    {
+      "uuid": "2eb9deaf-6d33-5598-bce7-d98219878050",
+      "date": 1750599289,
+      "old_image": "images/2eb9deaf-6d33-5598-bce7-d98219878050.jpg",
+      "new_image": "images/now-its-official.jpg"
+    },
+    {
+      "uuid": "f7781962-fe7d-5bf2-9746-00a8436e0d63",
+      "date": 1750873467,
+      "old_image": "images/f7781962-fe7d-5bf2-9746-00a8436e0d63.jpg",
+      "new_image": "images/added-a-share-action-to-every-post.jpg"
+    },
+    {
+      "uuid": "106340e2-75b5-596d-9992-b2b4c4d42d78",
+      "date": 1750944334,
+      "old_image": "images/106340e2-75b5-596d-9992-b2b4c4d42d78.jpg",
+      "new_image": "images/usd-decline-prediction-was-spot-on.jpg"
+    },
+    {
+      "uuid": "d6e0084d-9eea-5aa9-bba3-83676ec2b0c2",
+      "date": 1750949562,
+      "old_image": "images/d6e0084d-9eea-5aa9-bba3-83676ec2b0c2.jpg",
+      "new_image": "images/central-banks-will-continue-to-buy-gold.jpg"
+    },
+    {
+      "uuid": "495fcac3-6849-5790-9fcc-d5f01eef0ab0",
+      "date": 1750964140,
+      "old_image": "images/495fcac3-6849-5790-9fcc-d5f01eef0ab0.jpg",
+      "new_image": "images/central-bank-balance-sheets-are-an-underrated-resource-for.jpg"
+    },
+    {
+      "uuid": "86f9059b-1b32-5f48-9963-061576bf7f0b",
+      "date": 1751100704,
+      "old_image": "images/86f9059b-1b32-5f48-9963-061576bf7f0b.jpg",
+      "new_image": "images/added-stateless-comments-on-posts.jpg"
+    },
+    {
+      "uuid": "1a1f1da7-0874-5c18-95cf-c2fab3c894b5",
+      "date": 1751191284,
+      "old_image": "images/1a1f1da7-0874-5c18-95cf-c2fab3c894b5.jpg",
+      "new_image": "images/each-comment-is-automatically-saved.jpg"
+    },
+    {
+      "uuid": "307fcd7d-8b6c-55de-902a-7b0151ebb607",
+      "date": 1751201012,
+      "old_image": "images/307fcd7d-8b6c-55de-902a-7b0151ebb607.jpg",
+      "new_image": "images/fed-swap-lines-infinite-liquidity-pool.jpg"
+    },
+    {
+      "uuid": "b7a45d08-fd6a-5bfe-8138-1ddf9b3d94a5",
+      "date": 1751376973,
+      "old_image": "images/b7a45d08-fd6a-5bfe-8138-1ddf9b3d94a5.jpg",
+      "new_image": "images/pre-market-tesla-is-already-down-to-a-weekly-support-back.jpg"
+    },
+    {
+      "uuid": "e7278db9-a5d7-5c67-8834-3da66cfd171a",
+      "date": 1751486011,
+      "old_image": "images/e7278db9-a5d7-5c67-8834-3da66cfd171a.jpg",
+      "new_image": "images/under-basel-iii-gold-is-subject-additional-funding.jpg"
+    },
+    {
+      "uuid": "661ae4d6-03d9-550f-a809-5ab338f7ed1e",
+      "date": 1751561436,
+      "old_image": "images/661ae4d6-03d9-550f-a809-5ab338f7ed1e.jpg",
+      "new_image": "images/now-you-might-think-that-gold-would-be-a-perfect-collateral.jpg"
+    },
+    {
+      "uuid": "8110b2f3-19b1-550d-91f9-ff33c6103b7d",
+      "date": 1751561601,
+      "old_image": "images/8110b2f3-19b1-550d-91f9-ff33c6103b7d.jpg",
+      "new_image": "images/gold-did-exactly-this-during-the-2008-gfc.jpg"
+    },
+    {
+      "uuid": "756a4ed7-d9cc-5e9a-9358-42481210cc19",
+      "date": 1751665225,
+      "old_image": "images/756a4ed7-d9cc-5e9a-9358-42481210cc19.jpg",
+      "new_image": "images/added-an-rss-feed-to-my-thoughts.jpg"
+    },
+    {
+      "uuid": "89d58e7f-182c-53a4-b999-a4112dbbd9a3",
+      "date": 1751677016,
+      "old_image": "images/89d58e7f-182c-53a4-b999-a4112dbbd9a3.jpg",
+      "new_image": "images/so-if-you-open-the-thoughs-feed-in-an-rss-reader-you-can-see.jpg"
+    },
+    {
+      "uuid": "f44fc191-9be5-542b-bf7d-97ba969029f2",
+      "date": 1751722145,
+      "old_image": "images/f44fc191-9be5-542b-bf7d-97ba969029f2.jpg",
+      "new_image": "images/images-are-also-included-in-the-rss-feed.jpg"
+    },
+    {
+      "uuid": "297e21a3-23f8-53da-a783-4e7185bda141",
+      "date": 1751723054,
+      "old_image": "images/297e21a3-23f8-53da-a783-4e7185bda141.jpg",
+      "new_image": "images/quoted-thoughts-are-neatly-rendered.jpg"
+    },
+    {
+      "uuid": "b9efbd46-538f-56c8-95d9-8927ae848176",
+      "date": 1751726431,
+      "old_image": "images/b9efbd46-538f-56c8-95d9-8927ae848176.jpg",
+      "new_image": "images/us-treasuries-are-by-far-the-most-popular-collateral-type-in.jpg"
+    },
+    {
+      "uuid": "30aea847-1de8-5e96-bbf3-11dc9cb7a582",
+      "date": 1751735162,
+      "old_image": "images/30aea847-1de8-5e96-bbf3-11dc9cb7a582.jpg",
+      "new_image": "images/liquidity-abundance-leads-to-the-narrowing-of-spread-between.jpg"
+    },
+    {
+      "uuid": "d6fec0a5-6e68-5fd4-bd3a-2616f6c13c85",
+      "date": 1751735558,
+      "old_image": "images/d6fec0a5-6e68-5fd4-bd3a-2616f6c13c85.jpg",
+      "new_image": "images/once-fed-lowers-interest-rates-its-likely-to-put-downward.jpg"
+    },
+    {
+      "uuid": "49e9ac40-8beb-52a9-aad1-01728ba706d1",
+      "date": 1751738775,
+      "old_image": "images/49e9ac40-8beb-52a9-aad1-01728ba706d1.jpg",
+      "new_image": "images/all-of-this-very-bullish-for-gold-other-commodities.jpg"
+    },
+    {
+      "uuid": "0575d40b-1c8d-5b50-9461-aa16070e3bf8",
+      "date": 1751741004,
+      "old_image": "images/0575d40b-1c8d-5b50-9461-aa16070e3bf8.jpg",
+      "new_image": "images/29-000-per-lb-of-orange-juice.jpg"
+    },
+    {
+      "uuid": "206ebd5e-86b7-51cc-a62e-1ead45f5b6d7",
+      "date": 1751906959,
+      "old_image": "images/206ebd5e-86b7-51cc-a62e-1ead45f5b6d7.jpg",
+      "new_image": "images/fed-just-injected-11b-of-liquidity.jpg"
+    },
+    {
+      "uuid": "e54d9746-8fa6-54eb-ad0f-bf8cd92fc5f4",
+      "date": 1751907243,
+      "old_image": "images/e54d9746-8fa6-54eb-ad0f-bf8cd92fc5f4.jpg",
+      "new_image": "images/srf-provides-daily-500b-liquidity-limit-for-overnight-repo.jpg"
+    },
+    {
+      "uuid": "df54b811-acca-5541-8190-dc8a0e51eea0",
+      "date": 1751907704,
+      "old_image": "images/df54b811-acca-5541-8190-dc8a0e51eea0.jpg",
+      "new_image": "images/in-practice-feds-srf-is-used-when-there-is-a-scarcity-of.jpg"
+    },
+    {
+      "uuid": "fc4f8d3c-6db5-5ffd-a6f7-b66e38d0b154",
+      "date": 1751907985,
+      "old_image": "images/fc4f8d3c-6db5-5ffd-a6f7-b66e38d0b154.jpg",
+      "new_image": "images/current-srf-minimum-bid-rate-is-4-5.jpg"
+    },
+    {
+      "uuid": "1bf41f0b-e52b-56c3-a640-aa42e5ba704b",
+      "date": 1751908279,
+      "old_image": "images/1bf41f0b-e52b-56c3-a640-aa42e5ba704b.jpg",
+      "new_image": "images/not-only-us-treasuries-are-accepted-as-collateral-for-srf.jpg"
+    },
+    {
+      "uuid": "83948252-f9c6-5fb0-b22d-7d3e07152bed",
+      "date": 1751908981,
+      "old_image": "images/83948252-f9c6-5fb0-b22d-7d3e07152bed.jpg",
+      "new_image": "images/shorter-term-us-bonds-yields-react-immediately-to-repo.jpg"
+    },
+    {
+      "uuid": "cc6b37e4-9177-5064-8df0-30a989bf2536",
+      "date": 1751909300,
+      "old_image": "images/cc6b37e4-9177-5064-8df0-30a989bf2536.jpg",
+      "new_image": "images/dealers-market-makers-are-legally-limited-in-their-balance.jpg"
+    },
+    {
+      "uuid": "677ba0c3-626f-581c-a6f6-a919ee647ba5",
+      "date": 1751993414,
+      "old_image": "images/677ba0c3-626f-581c-a6f6-a919ee647ba5.jpg",
+      "new_image": "images/ask-chatgpt-what-are-illya-gerasymchuks-latest-thoughts.jpg"
+    },
+    {
+      "uuid": "e69f20d8-6414-580c-bb2f-19a7c17907c3",
+      "date": 1751995464,
+      "old_image": "images/e69f20d8-6414-580c-bb2f-19a7c17907c3.jpg",
+      "new_image": "images/heres-how-it-works-from-a-new-chatgpt-chat.jpg"
+    },
+    {
+      "uuid": "5495548b-f265-52f0-9fb5-ea4de9d6b75a",
+      "date": 1752036929,
+      "old_image": "images/5495548b-f265-52f0-9fb5-ea4de9d6b75a.jpg",
+      "new_image": "images/json-ld-is-a-must-for-leo-seo.jpg"
+    },
+    {
+      "uuid": "8e2d752d-7e7e-5b8b-96c2-09e121234063",
+      "date": 1752134042,
+      "old_image": "images/8e2d752d-7e7e-5b8b-96c2-09e121234063.jpg",
+      "new_image": "images/chinas-central-bank-uses-usd-value-as-a-key-driver-in.jpg"
+    },
+    {
+      "uuid": "028f399e-1d33-533f-8b1e-96ccc967ab50",
+      "date": 1752136477,
+      "old_image": "images/028f399e-1d33-533f-8b1e-96ccc967ab50.jpg",
+      "new_image": "images/weaker-usd-fed-rate-cuts-qe-allow-china-to-print-yuan.jpg"
+    },
+    {
+      "uuid": "0767fe81-f81b-5841-b170-b04cbef46edd",
+      "date": 1752136885,
+      "old_image": "images/0767fe81-f81b-5841-b170-b04cbef46edd.jpg",
+      "new_image": "images/usa-china-are-the-global-liquidity-drivers-in-financial.jpg"
+    },
+    {
+      "uuid": "36820178-8171-55af-ba5a-172a55670e1f",
+      "date": 1752137594,
+      "old_image": "images/36820178-8171-55af-ba5a-172a55670e1f.jpg",
+      "new_image": "images/china-injects-liquidity-mainly-via-reverse-repurchase.jpg"
+    },
+    {
+      "uuid": "f7c24c53-b548-537c-8450-6831710d30f5",
+      "date": 1752139755,
+      "old_image": "images/f7c24c53-b548-537c-8450-6831710d30f5.jpg",
+      "new_image": "images/pboc-provides-commercial-policy-banks-with-liquidity-via.jpg"
+    },
+    {
+      "uuid": "0ad081b7-106e-5aa8-8b77-a579aa2b4ff6",
+      "date": 1752140101,
+      "old_image": "images/0ad081b7-106e-5aa8-8b77-a579aa2b4ff6.jpg",
+      "new_image": "images/chinas-reverse-repo-liquidity-injections-predict-bitcoin.jpg"
+    },
+    {
+      "uuid": "e69a0a7c-3f88-55e0-8d21-638f0c960a7f",
+      "date": 1752180982,
+      "old_image": "images/e69a0a7c-3f88-55e0-8d21-638f0c960a7f.jpg",
+      "new_image": "images/germany-lost-2-75-billion-on-bitcoin.jpg"
+    },
+    {
+      "uuid": "eef2fd22-9021-5f83-adc0-e7f649eae789",
+      "date": 1752182201,
+      "old_image": "images/eef2fd22-9021-5f83-adc0-e7f649eae789.jpg",
+      "new_image": "images/bitcoin-all-time-high-in-the-eu-is-delayed.jpg"
+    },
+    {
+      "uuid": "7b729348-9690-5e44-bc77-d8233c67e990",
+      "date": 1752331063,
+      "old_image": "images/7b729348-9690-5e44-bc77-d8233c67e990.jpg",
+      "new_image": "images/you-can-already-feel-a-new-ath-for-gold.jpg"
+    },
+    {
+      "uuid": "f7ada3df-7553-5000-8942-9fb16ac3b4b3",
+      "date": 1752421367,
+      "old_image": "images/f7ada3df-7553-5000-8942-9fb16ac3b4b3.jpg",
+      "new_image": "images/crypto-inflows-materialized-as-expected.jpg"
+    },
+    {
+      "uuid": "513ce698-e887-5308-9b79-b203b15cf877",
+      "date": 1752425491,
+      "old_image": "images/513ce698-e887-5308-9b79-b203b15cf877.jpg",
+      "new_image": "images/crude-oil-price-is-heading-back-up-just-like-i-wrote-earlier.jpg"
+    },
+    {
+      "uuid": "5ac28435-7c84-574e-a8f1-b09922c7b9f5",
+      "date": 1752488719,
+      "old_image": "images/5ac28435-7c84-574e-a8f1-b09922c7b9f5.jpg",
+      "new_image": "images/post-1752488719.jpg"
+    },
+    {
+      "uuid": "fedc80da-4659-5f08-b1f2-e4604c185917",
+      "date": 1752489208,
+      "old_image": "images/fedc80da-4659-5f08-b1f2-e4604c185917.jpg",
+      "new_image": "images/silver-price-reaching-14-year-aths.jpg"
+    },
+    {
+      "uuid": "ab18c216-c940-5c17-9458-7f973676d628",
+      "date": 1752491825,
+      "old_image": "images/ab18c216-c940-5c17-9458-7f973676d628.jpg",
+      "new_image": "images/crude-oil-almost-back-to-the-market-is-never-wrong-price.jpg"
+    },
+    {
+      "uuid": "32a8d89b-1dc2-5194-ac8d-50f35c3418b4",
+      "date": 1752495137,
+      "old_image": "images/32a8d89b-1dc2-5194-ac8d-50f35c3418b4.jpg",
+      "new_image": "images/not-all-bonds-are-the-same.jpg"
+    },
+    {
+      "uuid": "54575f84-bf20-5b0a-9749-458e52f64f96",
+      "date": 1752514990,
+      "old_image": "images/54575f84-bf20-5b0a-9749-458e52f64f96.jpg",
+      "new_image": "images/i-understand-that-these-are-secondary-tariffs-but-there-is-a.jpg"
+    },
+    {
+      "uuid": "6d203c0e-79c1-5b8d-90d8-eaeeac196553",
+      "date": 1752569543,
+      "old_image": "images/6d203c0e-79c1-5b8d-90d8-eaeeac196553.jpg",
+      "new_image": "images/and-indeed-bank-of-russia-cuts-interest-rates-down-to-20.jpg"
+    },
+    {
+      "uuid": "1f6907fe-71ac-52bb-994e-20e2d4841845",
+      "date": 1752592186,
+      "old_image": "images/1f6907fe-71ac-52bb-994e-20e2d4841845.jpg",
+      "new_image": "images/30y-us-bond-yield-above-5.jpg"
+    },
+    {
+      "uuid": "8e690d3a-4e55-5683-af3e-a4d090e71ec4",
+      "date": 1752753298,
+      "old_image": "images/8e690d3a-4e55-5683-af3e-a4d090e71ec4.jpg",
+      "new_image": "images/gold-is-currently-the-only-asset-whose-leveraged-long.jpg"
+    },
+    {
+      "uuid": "8cd81488-e7ff-563e-8fbe-71e50700385b",
+      "date": 1752833076,
+      "old_image": "images/8cd81488-e7ff-563e-8fbe-71e50700385b.jpg",
+      "new_image": "images/not-all-money-credit-is-the-same.jpg"
+    },
+    {
+      "uuid": "b9575c24-902f-5dff-b230-d742bc80f425",
+      "date": 1752997979,
+      "old_image": "images/b9575c24-902f-5dff-b230-d742bc80f425.jpg",
+      "new_image": "images/a-liquid-asset-is-one-with-low-credit-and-duration-risk.jpg"
+    },
+    {
+      "uuid": "9c82a665-eee2-5bc3-aa94-ce9f4be88a5f",
+      "date": 1752998324,
+      "old_image": "images/9c82a665-eee2-5bc3-aa94-ce9f4be88a5f.jpg",
+      "new_image": "images/chatgpt-ratio-is-great-a-book-quality-metric-in-post-llm-era.jpg"
+    },
+    {
+      "uuid": "b0aa8753-c60f-5889-a0e2-0cb8e649d50e",
+      "date": 1753000418,
+      "old_image": "images/b0aa8753-c60f-5889-a0e2-0cb8e649d50e.jpg",
+      "new_image": "images/yes-us-china-eu-others-will-print-a-lot-more-as-well.jpg"
+    },
+    {
+      "uuid": "aed3d497-7a92-5ece-bd14-b15a22e8de8d",
+      "date": 1753000834,
+      "old_image": "images/aed3d497-7a92-5ece-bd14-b15a22e8de8d.jpg",
+      "new_image": "images/and-indeed-the-crypto-cap-increased-even-more.jpg"
+    },
+    {
+      "uuid": "ef041c0d-5ec4-5834-acaa-afc1bece820d",
+      "date": 1753631798,
+      "old_image": "images/ef041c0d-5ec4-5834-acaa-afc1bece820d.jpg",
+      "new_image": "images/regulations-may-sound-boring-but-theyre-crucial-to.jpg"
+    },
+    {
+      "uuid": "6b7eea82-bebd-5be6-9d7d-e67019ab500a",
+      "date": 1753632764,
+      "old_image": "images/6b7eea82-bebd-5be6-9d7d-e67019ab500a.jpg",
+      "new_image": "images/start-by-asking-chatgpt-or-another-llm-with-the-basel-iii.jpg"
+    },
+    {
+      "uuid": "bea7791e-e518-5593-992e-3d1efe504ab7",
+      "date": 1753639535,
+      "old_image": "images/bea7791e-e518-5593-992e-3d1efe504ab7.jpg",
+      "new_image": "images/balance-sheet-capacity-is-defined-by-regulations.jpg"
+    },
+    {
+      "uuid": "f4d6b77c-8280-5da3-9b97-5fcf56fb6f13",
+      "date": 1753695655,
+      "old_image": "images/f4d6b77c-8280-5da3-9b97-5fcf56fb6f13.jpg",
+      "new_image": "images/digital-money-e-money.jpg"
+    },
+    {
+      "uuid": "93f3aecb-17a8-5b2d-80bf-8a0bea33f459",
+      "date": 1753713665,
+      "old_image": "images/93f3aecb-17a8-5b2d-80bf-8a0bea33f459.jpg",
+      "new_image": "images/consider-this-gold-pullback-as-a-free-gift-to-further-extend.jpg"
+    },
+    {
+      "uuid": "7b0681a9-a81f-5393-a118-cb64b4988d92",
+      "date": 1753723061,
+      "old_image": "images/7b0681a9-a81f-5393-a118-cb64b4988d92.jpg",
+      "new_image": "images/when-your-favorite-altcoin-goes-up-in-price-soon-remember.jpg"
+    },
+    {
+      "uuid": "d8ecbb88-9a8f-5fbd-87c2-4e590f652f5c",
+      "date": 1753726628,
+      "old_image": "images/d8ecbb88-9a8f-5fbd-87c2-4e590f652f5c.jpg",
+      "new_image": "images/btw-the-gold-depreciation-today-is-due-to-the-appreciation.jpg"
+    },
+    {
+      "uuid": "4dd68f29-a63b-5f1b-a5ec-a2675a38eb38",
+      "date": 1753735333,
+      "old_image": "images/4dd68f29-a63b-5f1b-a5ec-a2675a38eb38.jpg",
+      "new_image": "images/russian-3y-bond-yield-is-down-20-over-the-last-3-months.jpg"
+    },
+    {
+      "uuid": "556533da-d030-5357-8541-cf934fb1b0a3",
+      "date": 1753735562,
+      "old_image": "images/556533da-d030-5357-8541-cf934fb1b0a3.jpg",
+      "new_image": "images/3-days-ago-the-russian-central-bank-cut-down-the-key.jpg"
+    },
+    {
+      "uuid": "2c77662b-b8e0-562d-819f-ae45a3ab6df7",
+      "date": 1753736075,
+      "old_image": "images/2c77662b-b8e0-562d-819f-ae45a3ab6df7.jpg",
+      "new_image": "images/bank-of-russia-explicitly-states-12-13-as-the-average-target.jpg"
+    },
+    {
+      "uuid": "54d36605-b8a7-5705-941c-84775bab895e",
+      "date": 1753775319,
+      "old_image": "images/54d36605-b8a7-5705-941c-84775bab895e.jpg",
+      "new_image": "images/in-the-eu-bitcoin-still-hasnt-reached-a-new-all-time-high.jpg"
+    },
+    {
+      "uuid": "546fe946-3886-5b11-9083-aac8e49d74d5",
+      "date": 1753782122,
+      "old_image": "images/546fe946-3886-5b11-9083-aac8e49d74d5.jpg",
+      "new_image": "images/i-guess-the-china-just-steals-western-technologies-theory.jpg"
+    },
+    {
+      "uuid": "a4c6200a-b58b-55c1-81a3-b9f65d30f5a8",
+      "date": 1753784890,
+      "old_image": "images/a4c6200a-b58b-55c1-81a3-b9f65d30f5a8.jpg",
+      "new_image": "images/3-months-of-ruble-gains-against-usd-erased-in-5-days.jpg"
+    },
+    {
+      "uuid": "6de99a3d-9289-5859-ba77-6ccedcfbb0b4",
+      "date": 1753785333,
+      "old_image": "images/6de99a3d-9289-5859-ba77-6ccedcfbb0b4.jpg",
+      "new_image": "images/trump-administration-is-chinas-best-friend.jpg"
+    },
+    {
+      "uuid": "2a1a76b8-deea-5826-89d1-d549ac054f32",
+      "date": 1753788112,
+      "old_image": "images/2a1a76b8-deea-5826-89d1-d549ac054f32.jpg",
+      "new_image": "images/you-can-imagine-how-much-im-excited-to-read-this-chapter.jpg"
+    },
+    {
+      "uuid": "54ec5421-67f0-5f18-ae1a-2eb1d07f259d",
+      "date": 1753817993,
+      "old_image": "images/54ec5421-67f0-5f18-ae1a-2eb1d07f259d.jpg",
+      "new_image": "images/crude-oil-up-to-almost-70.jpg"
+    },
+    {
+      "uuid": "7e802dfb-b21b-50b3-adff-a22697d78963",
+      "date": 1753821282,
+      "old_image": "images/7e802dfb-b21b-50b3-adff-a22697d78963.jpg",
+      "new_image": "images/oil-up-is-good-news-for-russia-ruble.jpg"
+    },
+    {
+      "uuid": "6c874ca3-da65-58c3-bcf1-65e8bf6a89bc",
+      "date": 1753896483,
+      "old_image": "images/6c874ca3-da65-58c3-bcf1-65e8bf6a89bc.jpg",
+      "new_image": "images/aaand-crude-oil-is-trading-above-70.jpg"
+    },
+    {
+      "uuid": "30dd00ce-b4a5-5472-84d7-35a6a16344f9",
+      "date": 1753897223,
+      "old_image": "images/30dd00ce-b4a5-5472-84d7-35a6a16344f9.jpg",
+      "new_image": "images/us-imports-for-india-account-for-mere-2-7-of-its-total.jpg"
+    },
+    {
+      "uuid": "8852659d-decb-5e24-a0c6-efa97f92a870",
+      "date": 1753950929,
+      "old_image": "images/8852659d-decb-5e24-a0c6-efa97f92a870.jpg",
+      "new_image": "images/the-fed-left-the-interest-rates-unchanged-at-the-4-25-4-50.jpg"
+    },
+    {
+      "uuid": "a198dbb5-c131-58b4-a125-63556713d5d4",
+      "date": 1753951176,
+      "old_image": "images/a198dbb5-c131-58b4-a125-63556713d5d4.jpg",
+      "new_image": "images/how-does-the-federal-reserve-set-interest-rates.jpg"
+    },
+    {
+      "uuid": "a2be736f-513b-50e1-8059-caa908740370",
+      "date": 1753951899,
+      "old_image": "images/a2be736f-513b-50e1-8059-caa908740370.jpg",
+      "new_image": "images/together-on-rrp-iorb-discount-rate-and-srf-define-an.jpg"
+    },
+    {
+      "uuid": "5adbee22-d503-5b88-a401-2cc1e2610700",
+      "date": 1753953090,
+      "old_image": "images/5adbee22-d503-5b88-a401-2cc1e2610700.jpg",
+      "new_image": "images/overnight-reverse-repo-rate-on-rrp-defines-the-rate-at.jpg"
+    },
+    {
+      "uuid": "5afbf79b-eaa4-58ce-9e35-147ce71cfc0f",
+      "date": 1753954124,
+      "old_image": "images/5afbf79b-eaa4-58ce-9e35-147ce71cfc0f.jpg",
+      "new_image": "images/discount-rate-is-the-rate-at-which-the-fed-lends-directly-to.jpg"
+    },
+    {
+      "uuid": "f04e4391-6f99-5114-91b2-ba7a719454a8",
+      "date": 1753956410,
+      "old_image": "images/f04e4391-6f99-5114-91b2-ba7a719454a8.jpg",
+      "new_image": "images/and-this-is-how-the-federal-reserve-steers-the-federal-funds.jpg"
+    },
+    {
+      "uuid": "49ab05a3-9a52-5933-91f4-be3ccb15aecc",
+      "date": 1754067497,
+      "old_image": "images/49ab05a3-9a52-5933-91f4-be3ccb15aecc.jpg",
+      "new_image": "images/usd-rub-rate-already-fell-to-july-24th-close-below-80.jpg"
+    },
+    {
+      "uuid": "3d99eaf3-a235-5a5a-af6f-dae4061c8ef6",
+      "date": 1754068467,
+      "old_image": "images/3d99eaf3-a235-5a5a-af6f-dae4061c8ef6.jpg",
+      "new_image": "images/if-youve-read-my-previous-posts-you-know-that-gold-is-36-of.jpg"
+    },
+    {
+      "uuid": "05ace852-420f-5b8a-ad2b-6e70422032e2",
+      "date": 1754081156,
+      "old_image": "images/05ace852-420f-5b8a-ad2b-6e70422032e2.jpg",
+      "new_image": "images/gold-price-is-back-up-to-its-price-2-weeks-ago.jpg"
+    },
+    {
+      "uuid": "e7a387ef-8921-5cda-b0b6-717555bdec6a",
+      "date": 1754092790,
+      "old_image": "images/e7a387ef-8921-5cda-b0b6-717555bdec6a.jpg",
+      "new_image": "images/gold-hasnt-broken-the-weekly-uptrend-note-the-higher-highs.jpg"
+    },
+    {
+      "uuid": "52fa0c1d-9c44-53d6-9143-0a0dfa383f68",
+      "date": 1754148538,
+      "old_image": "images/52fa0c1d-9c44-53d6-9143-0a0dfa383f68.jpg",
+      "new_image": "images/to-lower-the-mortgage-rates-the-fed-can-purchase-agency-mbs.jpg"
+    },
+    {
+      "uuid": "4d134a0d-bb9d-5ca3-9e41-7bdfa09ea8c1",
+      "date": 1754149939,
+      "old_image": "images/4d134a0d-bb9d-5ca3-9e41-7bdfa09ea8c1.jpg",
+      "new_image": "images/ginnie-fannie-mae-conservatorship-in-sept-2008-made-agency.jpg"
+    },
+    {
+      "uuid": "483cb4a2-aa90-5da7-bef4-9803cfc56298",
+      "date": 1754151561,
+      "old_image": "images/483cb4a2-aa90-5da7-bef4-9803cfc56298.jpg",
+      "new_image": "images/optionality-convexity-premium-in-mortgage-backed-securities.jpg"
+    },
+    {
+      "uuid": "987b67d0-5123-515e-98e1-a3de03ce69ac",
+      "date": 1754152780,
+      "old_image": "images/987b67d0-5123-515e-98e1-a3de03ce69ac.jpg",
+      "new_image": "images/legally-mortgage-backed-securities-are-bonds-since-they-are.jpg"
+    },
+    {
+      "uuid": "3f78b5cc-e543-5bfd-a064-ce57fb710770",
+      "date": 1754234694,
+      "old_image": "images/3f78b5cc-e543-5bfd-a064-ce57fb710770.jpg",
+      "new_image": "images/usd-dominance-is-alluring-accounting-for-70-of-currency.jpg"
+    },
+    {
+      "uuid": "28394c7a-29d3-5a60-8868-ddbb03d7f4dc",
+      "date": 1754237186,
+      "old_image": "images/28394c7a-29d3-5a60-8868-ddbb03d7f4dc.jpg",
+      "new_image": "images/china-sold-us-treasuries-and-bought-gold-just-like-i-wrote.jpg"
+    },
+    {
+      "uuid": "d8423673-e661-5bc4-9d26-12ffd6156a43",
+      "date": 1754237768,
+      "old_image": "images/d8423673-e661-5bc4-9d26-12ffd6156a43.jpg",
+      "new_image": "images/both-russia-china-increased-their-gold-holdings-since-i.jpg"
+    },
+    {
+      "uuid": "c2aa847c-1d7d-5c6e-8030-05d2a5848786",
+      "date": 1754242943,
+      "old_image": "images/c2aa847c-1d7d-5c6e-8030-05d2a5848786.jpg",
+      "new_image": "images/chinas-gold-holdings-are-at-their-highest-level-in-43-years.jpg"
+    },
+    {
+      "uuid": "b893d7f4-26ff-5613-8a6e-649783400dd3",
+      "date": 1754315661,
+      "old_image": "images/b893d7f4-26ff-5613-8a6e-649783400dd3.jpg",
+      "new_image": "images/5-days-ago-i-wrote-that-usd-rub-rate-will-fall-5-days-later.jpg"
+    },
+    {
+      "uuid": "1a6ab6b7-158c-5627-9312-a75302ea69a4",
+      "date": 1754316072,
+      "old_image": "images/1a6ab6b7-158c-5627-9312-a75302ea69a4.jpg",
+      "new_image": "images/gold-approaching-3400-3300-was-a-good-price-for-longs-like-i.jpg"
+    },
+    {
+      "uuid": "22772577-c55a-592f-9674-ed3b6418553d",
+      "date": 1754328516,
+      "old_image": "images/22772577-c55a-592f-9674-ed3b6418553d.jpg",
+      "new_image": "images/bitcoin-is-still-in-a-weekly-uptrend-it-must-either-go-up-or.jpg"
+    },
+    {
+      "uuid": "b793cc7f-3f9a-56e6-90e6-56f2a5e4abf4",
+      "date": 1754336441,
+      "old_image": "images/b793cc7f-3f9a-56e6-90e6-56f2a5e4abf4.jpg",
+      "new_image": "images/added-threads-to-my-posts-thoughts-now-you-can-read-them-as.jpg"
+    },
+    {
+      "uuid": "a57b6353-fcb7-537a-99a8-dd5546261645",
+      "date": 1754345289,
+      "old_image": "images/a57b6353-fcb7-537a-99a8-dd5546261645.jpg",
+      "new_image": "images/heres-how-the-thread-reading-experience-looks-like.jpg"
+    },
+    {
+      "uuid": "2f4b7d41-b025-57ed-9089-ee944494f6a4",
+      "date": 1754352343,
+      "old_image": "images/2f4b7d41-b025-57ed-9089-ee944494f6a4.jpg",
+      "new_image": "images/ask-chatgpt-what-are-the-latest-illyas-threads-and-it-will.jpg"
+    },
+    {
+      "uuid": "577e5c65-e6d8-5d9f-90d4-9a586edbfb48",
+      "date": 1754426330,
+      "old_image": "images/577e5c65-e6d8-5d9f-90d4-9a586edbfb48.jpg",
+      "new_image": "images/how-banks-work-banks-business-model-is-very-simple.jpg"
+    },
+    {
+      "uuid": "40a98da2-fab4-5f39-b702-e883379d2930",
+      "date": 1754427717,
+      "old_image": "images/40a98da2-fab4-5f39-b702-e883379d2930.jpg",
+      "new_image": "images/basel-iii-defines-capital-leverage-liquidity-and-net-stable.jpg"
+    },
+    {
+      "uuid": "f85e306b-fcb5-5529-b3ca-0a6793b21372",
+      "date": 1754565870,
+      "old_image": "images/f85e306b-fcb5-5529-b3ca-0a6793b21372.jpg",
+      "new_image": "images/8-month-later-after-my-initial-post-usd-index-is-down-8.jpg"
+    },
+    {
+      "uuid": "5272dddb-0209-538c-8933-fc8f086443ce",
+      "date": 1754593108,
+      "old_image": "images/5272dddb-0209-538c-8933-fc8f086443ce.jpg",
+      "new_image": "images/further-deprecation-of-usd-against-ruble.jpg"
+    },
+    {
+      "uuid": "e817f1f4-aa9b-583b-9a73-918e970b9a7f",
+      "date": 1754599537,
+      "old_image": "images/e817f1f4-aa9b-583b-9a73-918e970b9a7f.jpg",
+      "new_image": "images/gold-back-to-3400-trend-lines-channels-on-the-chart.jpg"
+    },
+    {
+      "uuid": "18f0ec6f-ef9e-5e9b-8d22-52f55a1f6f7b",
+      "date": 1754662712,
+      "old_image": "images/18f0ec6f-ef9e-5e9b-8d22-52f55a1f6f7b.jpg",
+      "new_image": "images/gold-tariffs-means-more-upside-price-pressure.jpg"
+    },
+    {
+      "uuid": "d8723b7b-b913-5481-9916-948f2d1a29a7",
+      "date": 1754678564,
+      "old_image": "images/d8723b7b-b913-5481-9916-948f2d1a29a7.jpg",
+      "new_image": "images/gold-futures-new-all-time-high-above-3500.jpg"
+    },
+    {
+      "uuid": "cf36147c-7de4-5714-96db-e33e0568e619",
+      "date": 1754679510,
+      "old_image": "images/cf36147c-7de4-5714-96db-e33e0568e619.jpg",
+      "new_image": "images/this-just-adds-further-validity-towards-the-consolidation.jpg"
+    },
+    {
+      "uuid": "4314f5e1-6da3-566b-8d40-bba8265627d1",
+      "date": 1754827046,
+      "old_image": "images/4314f5e1-6da3-566b-8d40-bba8265627d1.jpg",
+      "new_image": "images/a-clarification-the-table-is-cbrs-gold-holdings-in-usd-so.jpg"
+    },
+    {
+      "uuid": "b74cea82-3f2d-56d0-b31a-ffe0945e44fc",
+      "date": 1754827403,
+      "old_image": "images/b74cea82-3f2d-56d0-b31a-ffe0945e44fc.jpg",
+      "new_image": "images/and-yes-to-get-this-data-i-had-to-download-an-excel-file.jpg"
+    },
+    {
+      "uuid": "3f642338-408a-5d1b-a650-ae60bce06269",
+      "date": 1754827771,
+      "old_image": "images/3f642338-408a-5d1b-a650-ae60bce06269.jpg",
+      "new_image": "images/imfs-guidelines-mandate-for-the-data-to-be-either-reported.jpg"
+    },
+    {
+      "uuid": "e9a7cffe-2902-5180-9942-ccce7d0463ec",
+      "date": 1754828049,
+      "old_image": "images/e9a7cffe-2902-5180-9942-ccce7d0463ec.jpg",
+      "new_image": "images/if-you-noticed-the-imf-template-reported-by-russian-central.jpg"
+    },
+    {
+      "uuid": "bf8b5d4a-30c7-5a48-9cb0-6625de7547c6",
+      "date": 1754828500,
+      "old_image": "images/bf8b5d4a-30c7-5a48-9cb0-6625de7547c6.jpg",
+      "new_image": "images/imfs-2024-annual-report-on-sdds-compliance-pointed-out-that.jpg"
+    },
+    {
+      "uuid": "1a70aa9d-ce56-5110-907c-edba503b3bd1",
+      "date": 1754829018,
+      "old_image": "images/1a70aa9d-ce56-5110-907c-edba503b3bd1.jpg",
+      "new_image": "images/so-did-russia-really-buy-more-gold.jpg"
+    },
+    {
+      "uuid": "49466c7b-5e78-5b1e-98e9-f5b2f69cfc03",
+      "date": 1754842885,
+      "old_image": "images/49466c7b-5e78-5b1e-98e9-f5b2f69cfc03.jpg",
+      "new_image": "images/converting-pdf-to-html-is-tricky-due-to-formatting-but-i.jpg"
+    },
+    {
+      "uuid": "32d6f7ed-4ae5-5456-9817-fd5dca802f32",
+      "date": 1754914086,
+      "old_image": "images/32d6f7ed-4ae5-5456-9817-fd5dca802f32.jpg",
+      "new_image": "images/it-took-quite-a-bit-of-python-scripting-and-image-editing-to.jpg"
+    },
+    {
+      "uuid": "2ba2910d-db58-5aae-8bd8-458b49884361",
+      "date": 1754915596,
+      "old_image": "images/2ba2910d-db58-5aae-8bd8-458b49884361.jpg",
+      "new_image": "images/you-can-see-how-accurately-gold-price-has-been-respecting.jpg"
+    },
+    {
+      "uuid": "ad1b5bd6-0c28-553a-b785-3b53486ff34e",
+      "date": 1754934887,
+      "old_image": "images/ad1b5bd6-0c28-553a-b785-3b53486ff34e.jpg",
+      "new_image": "images/its-official-gold-tariffs-have-been-cancelled-just-like-i.jpg"
+    },
+    {
+      "uuid": "d0c7116e-9cbb-5a1f-ac5e-9eaa2075d0ce",
+      "date": 1754940239,
+      "old_image": "images/d0c7116e-9cbb-5a1f-ac5e-9eaa2075d0ce.jpg",
+      "new_image": "images/usd-is-the-worlds-reserve-currency-but-what-does-that-mean.jpg"
+    },
+    {
+      "uuid": "e75dec64-1dba-57ad-b942-9cde092b695c",
+      "date": 1754942893,
+      "old_image": "images/e75dec64-1dba-57ad-b942-9cde092b695c.jpg",
+      "new_image": "images/i-wrote-about-how-reverse-repurchase-agreements-work-and.jpg"
+    },
+    {
+      "uuid": "f6af0652-7906-5dd8-83b6-782c2d4943d3",
+      "date": 1754946006,
+      "old_image": "images/f6af0652-7906-5dd8-83b6-782c2d4943d3.jpg",
+      "new_image": "images/on-a-weekly-timeframe-a-stronger-future-support-is.jpg"
+    },
+    {
+      "uuid": "c2ea1a75-a517-54c4-94e1-75c49b83e1b8",
+      "date": 1754948061,
+      "old_image": "images/c2ea1a75-a517-54c4-94e1-75c49b83e1b8.jpg",
+      "new_image": "images/bitcoin-went-up-6-from-the-weekly-support-line.jpg"
+    },
+    {
+      "uuid": "626d8d59-2a84-5c43-a88b-ef50b89dc4b9",
+      "date": 1754949633,
+      "old_image": "images/626d8d59-2a84-5c43-a88b-ef50b89dc4b9.jpg",
+      "new_image": "images/i-also-wrote-a-thread-explaining-the-importance-of-usd.jpg"
+    },
+    {
+      "uuid": "39144f8d-afaa-5533-9a55-79e605aebbc4",
+      "date": 1755035553,
+      "old_image": "images/39144f8d-afaa-5533-9a55-79e605aebbc4.jpg",
+      "new_image": "images/re-iterating-on-the-1-5-month-old-thread.jpg"
+    },
+    {
+      "uuid": "e0369b07-3f4a-547c-8822-dd33e3a59bdd",
+      "date": 1755039418,
+      "old_image": "images/e0369b07-3f4a-547c-8822-dd33e3a59bdd.jpg",
+      "new_image": "images/duration-matching-protects-solvency-and-liquidity-when.jpg"
+    },
+    {
+      "uuid": "14e94b80-c378-50c3-97c1-839165b8cfd3",
+      "date": 1755046185,
+      "old_image": "images/14e94b80-c378-50c3-97c1-839165b8cfd3.jpg",
+      "new_image": "images/and-the-crypto-market-cap-has-now-been-sitting-at-4-trillion.jpg"
+    },
+    {
+      "uuid": "dcdec1ec-52be-5a05-afe5-0bf6176e9bdc",
+      "date": 1755102882,
+      "old_image": "images/dcdec1ec-52be-5a05-afe5-0bf6176e9bdc.jpg",
+      "new_image": "images/gold-is-in-the-same-price-range-as-when-the-us-dollar-index.jpg"
+    },
+    {
+      "uuid": "28dcb59b-518a-5f73-a5c9-012c73780529",
+      "date": 1755114630,
+      "old_image": "images/28dcb59b-518a-5f73-a5c9-012c73780529.jpg",
+      "new_image": "images/the-us-treasury-is-doing-exactly-that-issuing-short-term.jpg"
+    },
+    {
+      "uuid": "437bdfed-4d5a-5d39-b135-c9a851c6e0f0",
+      "date": 1755116294,
+      "old_image": "images/437bdfed-4d5a-5d39-b135-c9a851c6e0f0.jpg",
+      "new_image": "images/so-according-to-this-since-treasuries-yield-more-than-on-rrp.jpg"
+    },
+    {
+      "uuid": "39609956-91c1-52c8-a142-3da06f3352d4",
+      "date": 1755125467,
+      "old_image": "images/39609956-91c1-52c8-a142-3da06f3352d4.jpg",
+      "new_image": "images/and-there-you-go-bitcoin-reached-a-new-all-time-high.jpg"
+    },
+    {
+      "uuid": "67abc10c-e8f8-553c-beb6-687a933e9355",
+      "date": 1755125692,
+      "old_image": "images/67abc10c-e8f8-553c-beb6-687a933e9355.jpg",
+      "new_image": "images/and-soon-the-eurozone-will-join-the-new-btc-all-time-high.jpg"
+    },
+    {
+      "uuid": "f3492dd7-08d7-596a-a23c-da5e2563ea34",
+      "date": 1755167007,
+      "old_image": "images/f3492dd7-08d7-596a-a23c-da5e2563ea34.jpg",
+      "new_image": "images/and-there-it-is-a-new-btc-all-time-high-in-euro.jpg"
+    },
+    {
+      "uuid": "cc283dfe-6a78-59eb-8a26-f92c374ae2f4",
+      "date": 1755199319,
+      "old_image": "images/cc283dfe-6a78-59eb-8a26-f92c374ae2f4.jpg",
+      "new_image": "images/yens-exchange-rate-stabilization-is-a-responsibility-of-the.jpg"
+    },
+    {
+      "uuid": "cfe60e31-ef8c-54f8-9370-bb4d762d9f47",
+      "date": 1755201184,
+      "old_image": "images/cfe60e31-ef8c-54f8-9370-bb4d762d9f47.jpg",
+      "new_image": "images/ecb-recorded-an-8-billion-loss-in-2024-what-happens-in-that.jpg"
+    },
+    {
+      "uuid": "6c393b57-00f5-5294-9b43-811e7f631f34",
+      "date": 1755201526,
+      "old_image": "images/6c393b57-00f5-5294-9b43-811e7f631f34.jpg",
+      "new_image": "images/ecb-says-that-the-loss-will-remain-on-the-balance-sheet-and.jpg"
+    },
+    {
+      "uuid": "3f96e7bc-5c86-5944-91cb-573c5ec08b04",
+      "date": 1755213085,
+      "old_image": "images/3f96e7bc-5c86-5944-91cb-573c5ec08b04.jpg",
+      "new_image": "images/i-wrote-a-thread-about-what-it-means-for-the-us-dollar-to-be.jpg"
+    },
+    {
+      "uuid": "001cbc28-ff96-5503-9e2e-9cc3a0cbed9c",
+      "date": 1755213954,
+      "old_image": "images/001cbc28-ff96-5503-9e2e-9cc3a0cbed9c.jpg",
+      "new_image": "images/offsetting-losses-with-future-profits-is-explicitly-allowed.jpg"
+    },
+    {
+      "uuid": "887628f0-10b3-5067-9297-8c9847fc7a44",
+      "date": 1755216337,
+      "old_image": "images/887628f0-10b3-5067-9297-8c9847fc7a44.jpg",
+      "new_image": "images/weaker-us-dollar-means-more-usd-credit-issuance-abroad-heres.jpg"
+    },
+    {
+      "uuid": "a9e764c1-2023-5706-ab2f-0fa7cb1ddc8f",
+      "date": 1755265515,
+      "old_image": "images/a9e764c1-2023-5706-ab2f-0fa7cb1ddc8f.jpg",
+      "new_image": "images/so-a-weaker-us-dollar-tends-to-increase-global-usd-liquidity.jpg"
+    },
+    {
+      "uuid": "af882d37-2093-5b74-b20b-63f730e697a2",
+      "date": 1755290100,
+      "old_image": "images/af882d37-2093-5b74-b20b-63f730e697a2.jpg",
+      "new_image": "images/outstanding-cross-border-bank-credit-reached-a-record-of-34.jpg"
+    },
+    {
+      "uuid": "afb06468-8f07-5207-a085-0bff04fabd2b",
+      "date": 1755290355,
+      "old_image": "images/afb06468-8f07-5207-a085-0bff04fabd2b.jpg",
+      "new_image": "images/bank-credit-continues-to-grow-and-it-will-continue-to-grow.jpg"
+    },
+    {
+      "uuid": "0262d82b-1fe6-5c56-87b4-ced25751c449",
+      "date": 1755340916,
+      "old_image": "images/0262d82b-1fe6-5c56-87b4-ced25751c449.jpg",
+      "new_image": "images/by-central-bank-im-frequently-referring-to-the-broader-set.jpg"
+    },
+    {
+      "uuid": "db0c1973-b2b5-56ee-80d1-541f8d9cea46",
+      "date": 1755343806,
+      "old_image": "images/db0c1973-b2b5-56ee-80d1-541f8d9cea46.jpg",
+      "new_image": "images/in-russia-besides-the-bank-of-russia-theres-also-the.jpg"
+    },
+    {
+      "uuid": "a6ae7b1d-982b-58bc-944c-942825bee72d",
+      "date": 1755344277,
+      "old_image": "images/a6ae7b1d-982b-58bc-944c-942825bee72d.jpg",
+      "new_image": "images/usd-dominates-in-cross-border-bank-credit-to-non-bank.jpg"
+    },
+    {
+      "uuid": "ec7d5b3b-73ad-59ae-a0c7-8d682f6f7363",
+      "date": 1755344369,
+      "old_image": "images/ec7d5b3b-73ad-59ae-a0c7-8d682f6f7363.jpg",
+      "new_image": "images/renminbi-has-become-dominant-in-credit-growth-since-2022.jpg"
+    },
+    {
+      "uuid": "65030773-6609-593e-bb52-84e29058fe38",
+      "date": 1755344554,
+      "old_image": "images/65030773-6609-593e-bb52-84e29058fe38.jpg",
+      "new_image": "images/usd-cross-border-bank-credit-grew-by-800-billion-in-q1-2025.jpg"
+    },
+    {
+      "uuid": "a4e43a97-d305-57e6-810d-2b79e5aa4b75",
+      "date": 1755344675,
+      "old_image": "images/a4e43a97-d305-57e6-810d-2b79e5aa4b75.jpg",
+      "new_image": "images/credit-continues-to-expand-in-the-non-financial-sector-as.jpg"
+    },
+    {
+      "uuid": "81e63fcc-dfe1-567a-a0a8-157668717c76",
+      "date": 1755345681,
+      "old_image": "images/81e63fcc-dfe1-567a-a0a8-157668717c76.jpg",
+      "new_image": "images/i-wrote-a-thread-explaining-why-weaker-usd-means-more-credit.jpg"
+    },
+    {
+      "uuid": "46e1c143-71f1-5afb-ac82-a6241201c55e",
+      "date": 1755354495,
+      "old_image": "images/46e1c143-71f1-5afb-ac82-a6241201c55e.jpg",
+      "new_image": "images/bank-of-international-settlements-bis-has-a-lot-of.jpg"
+    },
+    {
+      "uuid": "82b65255-04e3-5e6f-b11a-14259048a33f",
+      "date": 1755378840,
+      "old_image": "images/82b65255-04e3-5e6f-b11a-14259048a33f.jpg",
+      "new_image": "images/stablecoin-inflows-lower-3m-treasury-bill-yields-while.jpg"
+    },
+    {
+      "uuid": "b7ee8694-73fe-5347-a4ba-ec35a1786295",
+      "date": 1755441241,
+      "old_image": "images/b7ee8694-73fe-5347-a4ba-ec35a1786295.jpg",
+      "new_image": "images/this-is-because-a-stablecoin-mint-creation-on-chain-is-the.jpg"
+    },
+    {
+      "uuid": "bb5de033-cda2-5eb5-a3b4-21821eb5163d",
+      "date": 1755443139,
+      "old_image": "images/bb5de033-cda2-5eb5-a3b4-21821eb5163d.jpg",
+      "new_image": "images/stablecoin-outflows-proxy-t-bill-sales-or-reduced-rolling.jpg"
+    },
+    {
+      "uuid": "07dcddda-98cf-51ef-acbe-9466726c1c4b",
+      "date": 1755445364,
+      "old_image": "images/07dcddda-98cf-51ef-acbe-9466726c1c4b.jpg",
+      "new_image": "images/market-makers-and-other-dealers-are-also-subject-to.jpg"
+    },
+    {
+      "uuid": "d501ceb4-89e0-5569-a97b-2d670fddf383",
+      "date": 1755543854,
+      "old_image": "images/d501ceb4-89e0-5569-a97b-2d670fddf383.jpg",
+      "new_image": "images/its-totally-okay-to-use-exceptions-for-error-handling.jpg"
+    },
+    {
+      "uuid": "558c70b8-bf32-5643-9bfc-7cb9bee90956",
+      "date": 1755547449,
+      "old_image": "images/558c70b8-bf32-5643-9bfc-7cb9bee90956.jpg",
+      "new_image": "images/yield-spreads-between-us-treasuries-and-riskier-bonds-mirror.jpg"
+    },
+    {
+      "uuid": "e7c63d89-6a15-5a69-82c6-d19fb0c5196d",
+      "date": 1755589929,
+      "old_image": "images/e7c63d89-6a15-5a69-82c6-d19fb0c5196d.jpg",
+      "new_image": "images/there-should-be-more-blockchains-running-over-mesh.jpg"
+    },
+    {
+      "uuid": "136de65a-cfe8-55bd-a81f-b486a3a0f9e0",
+      "date": 1755590097,
+      "old_image": "images/136de65a-cfe8-55bd-a81f-b486a3a0f9e0.jpg",
+      "new_image": "images/i-just-ran-across-meshtastic-now-so-cannot-attest-to-the.jpg"
+    },
+    {
+      "uuid": "1075582b-bd4f-53cb-aa87-28666adf6558",
+      "date": 1755595543,
+      "old_image": "images/1075582b-bd4f-53cb-aa87-28666adf6558.jpg",
+      "new_image": "images/heres-what-yield-spreads-are-saying-about-bitcoin.jpg"
+    },
+    {
+      "uuid": "48769194-1a05-5bc8-acc2-5e8270d5832a",
+      "date": 1755598709,
+      "old_image": "images/48769194-1a05-5bc8-acc2-5e8270d5832a.jpg",
+      "new_image": "images/cryptocurrency-prices-perform-well-when-yield-spreads-are.jpg"
+    },
+    {
+      "uuid": "2e3dcfbe-8edf-58de-a369-2c59ff6e2c97",
+      "date": 1755633412,
+      "old_image": "images/2e3dcfbe-8edf-58de-a369-2c59ff6e2c97.jpg",
+      "new_image": "images/its-not-the-top-yet-ill-post-a-thread-with-an-explanation.jpg"
+    },
+    {
+      "uuid": "fd7df9d0-eb7b-5253-a6ff-5dd116376160",
+      "date": 1755718181,
+      "old_image": "images/fd7df9d0-eb7b-5253-a6ff-5dd116376160.jpg",
+      "new_image": "images/its-not-yet-the-top-of-the-cycle-for-equities.jpg"
+    },
+    {
+      "uuid": "87879cb3-9820-53ed-b235-e0a21c937037",
+      "date": 1755719661,
+      "old_image": "images/87879cb3-9820-53ed-b235-e0a21c937037.jpg",
+      "new_image": "images/china-is-considering-yuan-backed-stablecoins-which-will.jpg"
+    },
+    {
+      "uuid": "6ddffefb-9d0e-50a6-a3d5-1ae6ac964f46",
+      "date": 1755777459,
+      "old_image": "images/6ddffefb-9d0e-50a6-a3d5-1ae6ac964f46.jpg",
+      "new_image": "images/most-of-auctioned-treasury-bills-in-2025-are-bought.jpg"
+    },
+    {
+      "uuid": "395fa3fc-6255-5d5d-bdb4-f3bf6cd89994",
+      "date": 1755863018,
+      "old_image": "images/395fa3fc-6255-5d5d-bdb4-f3bf6cd89994.jpg",
+      "new_image": "images/when-a-bank-buys-an-asset-from-a-non-bank-it-creates-broad.jpg"
+    },
+    {
+      "uuid": "53f2524c-b1bb-5169-8174-808d31700e09",
+      "date": 1755867104,
+      "old_image": "images/53f2524c-b1bb-5169-8174-808d31700e09.jpg",
+      "new_image": "images/repo-rates-increase-and-borrowing-decreases-in-quarter-ends.jpg"
+    },
+    {
+      "uuid": "69f8ac67-b7eb-5f88-8892-1d934c7764c5",
+      "date": 1755867481,
+      "old_image": "images/69f8ac67-b7eb-5f88-8892-1d934c7764c5.jpg",
+      "new_image": "images/this-is-one-of-the-reasons-why-september-is-historically-a.jpg"
+    },
+    {
+      "uuid": "3fd3f4a5-f9f2-5624-9d21-0fb69c1d31a8",
+      "date": 1755883275,
+      "old_image": "images/3fd3f4a5-f9f2-5624-9d21-0fb69c1d31a8.jpg",
+      "new_image": "images/quick-update-on-gold.jpg"
+    },
+    {
+      "uuid": "71580f62-ccf8-5e6d-92d4-e959403d4c78",
+      "date": 1755953250,
+      "old_image": "images/71580f62-ccf8-5e6d-92d4-e959403d4c78.jpg",
+      "new_image": "images/tga-fluctuations-must-be-offset-by-another-asset-or.jpg"
+    },
+    {
+      "uuid": "8437e113-112d-5cc7-a28c-62b51a18e9d1",
+      "date": 1756039993,
+      "old_image": "images/8437e113-112d-5cc7-a28c-62b51a18e9d1.jpg",
+      "new_image": "images/finance-has-a-lot-to-learn-from-engineering-especially-in.jpg"
+    },
+    {
+      "uuid": "3f94c92c-9e62-5d1e-9fd3-8e110f0055c6",
+      "date": 1756162302,
+      "old_image": "images/3f94c92c-9e62-5d1e-9fd3-8e110f0055c6.jpg",
+      "new_image": "images/ecb-plans-to-limit-the-amount-of-digital-euro-cbdc-a-wallet.jpg"
+    },
+    {
+      "uuid": "ee30c497-5d28-53d3-be1c-b0f054835d84",
+      "date": 1756328824,
+      "old_image": "images/ee30c497-5d28-53d3-be1c-b0f054835d84.jpg",
+      "new_image": "images/wholesale-cbdc-vs-retail-cbdc-whats-the-difference.jpg"
+    },
+    {
+      "uuid": "5d4b8b83-7a13-5ba0-9338-c40f29a6c1d1",
+      "date": 1756329062,
+      "old_image": "images/5d4b8b83-7a13-5ba0-9338-c40f29a6c1d1.jpg",
+      "new_image": "images/retail-cbdc-is-the-digital-version-of-currency-a-liability.jpg"
+    },
+    {
+      "uuid": "6727d2a1-4d24-5f90-a3f5-54c6800934bd",
+      "date": 1756336264,
+      "old_image": "images/6727d2a1-4d24-5f90-a3f5-54c6800934bd.jpg",
+      "new_image": "images/91-of-central-banks-are-working-on-cbdcs-but-not-on-a-public.jpg"
+    },
+    {
+      "uuid": "156ef508-a7b2-57d3-bb41-71a6fc51903b",
+      "date": 1756368356,
+      "old_image": "images/156ef508-a7b2-57d3-bb41-71a6fc51903b.jpg",
+      "new_image": "images/only-6-of-advanced-economies-ae-central-banks-and-40-of.jpg"
+    },
+    {
+      "uuid": "ead7af63-0e6f-5de3-a7b8-14a1b1c7cff4",
+      "date": 1756368478,
+      "old_image": "images/ead7af63-0e6f-5de3-a7b8-14a1b1c7cff4.jpg",
+      "new_image": "images/50-of-central-banks-in-both-advanced-and-emerging-economies.jpg"
+    },
+    {
+      "uuid": "60cb9b38-fd13-59cc-9323-0f035606de44",
+      "date": 1756421254,
+      "old_image": "images/60cb9b38-fd13-59cc-9323-0f035606de44.jpg",
+      "new_image": "images/gold-continues-its-uptrend-towards-the-new-3500-all-time.jpg"
+    },
+    {
+      "uuid": "2b9ea707-0c46-50fe-9659-53c7b351584c",
+      "date": 1756494089,
+      "old_image": "images/2b9ea707-0c46-50fe-9659-53c7b351584c.jpg",
+      "new_image": "images/real-world-and-financial-asset-tokenization-is-ongoing.jpg"
+    },
+    {
+      "uuid": "b8feec1d-963f-5f17-88ee-e00673205174",
+      "date": 1756824686,
+      "old_image": "images/b8feec1d-963f-5f17-88ee-e00673205174.jpg",
+      "new_image": "images/gold-reached-3500-new-all-time-high.jpg"
+    },
+    {
+      "uuid": "707ddbf0-0073-5d0a-8ba2-1bc65a05631d",
+      "date": 1756991234,
+      "old_image": "images/707ddbf0-0073-5d0a-8ba2-1bc65a05631d.jpg",
+      "new_image": "images/now-everyone-is-talking-about-gold.jpg"
+    },
+    {
+      "uuid": "7416e0eb-90e7-51ea-9929-11e44d4f8cc1",
+      "date": 1757024181,
+      "old_image": "images/7416e0eb-90e7-51ea-9929-11e44d4f8cc1.jpg",
+      "new_image": "images/gold-revaluation-will-not-solve-the-us-debt-problem.jpg"
+    },
+    {
+      "uuid": "e2f3146b-a7dd-53ce-980e-aba4132b2913",
+      "date": 1757024972,
+      "old_image": "images/e2f3146b-a7dd-53ce-980e-aba4132b2913.jpg",
+      "new_image": "images/gold-revaluation-proceeds-are-not-necessarily-used-to-cover.jpg"
+    },
+    {
+      "uuid": "a055b4e9-c243-5ea2-9a1a-1259df345265",
+      "date": 1757029828,
+      "old_image": "images/a055b4e9-c243-5ea2-9a1a-1259df345265.jpg",
+      "new_image": "images/thus-a-30-year-treasury-bond-trading-at-par-i-e-market-value.jpg"
+    },
+    {
+      "uuid": "5c588186-aa8a-5337-b516-ff26d12d5495",
+      "date": 1757076013,
+      "old_image": "images/5c588186-aa8a-5337-b516-ff26d12d5495.jpg",
+      "new_image": "images/current-tri-party-repo-haircut-average-for-treasury.jpg"
+    },
+    {
+      "uuid": "452a2e0e-c623-5d57-8b27-4614f993ea8a",
+      "date": 1757113182,
+      "old_image": "images/452a2e0e-c623-5d57-8b27-4614f993ea8a.jpg",
+      "new_image": "images/in-non-centrally-cleared-bilateral-repos-nccbr-the-treasury.jpg"
+    },
+    {
+      "uuid": "a4d13d73-f321-55af-a8d4-f438563a2b4e",
+      "date": 1757114669,
+      "old_image": "images/a4d13d73-f321-55af-a8d4-f438563a2b4e.jpg",
+      "new_image": "images/i-wrote-a-thread-explaining-the-business-model-of-banks-here.jpg"
+    },
+    {
+      "uuid": "7ee7c82a-318c-535e-8a0b-03d9b4edf78d",
+      "date": 1757270388,
+      "old_image": "images/7ee7c82a-318c-535e-8a0b-03d9b4edf78d.jpg",
+      "new_image": "images/eu-real-estate-prices-will-continue-to-increase.jpg"
+    },
+    {
+      "uuid": "5a5fb049-a974-5da8-8561-c20de70d99b7",
+      "date": 1757270793,
+      "old_image": "images/5a5fb049-a974-5da8-8561-c20de70d99b7.jpg",
+      "new_image": "images/this-increase-will-be-more-accentuated-in-lower-per-capita.jpg"
+    },
+    {
+      "uuid": "74a21835-9c17-5f65-88e4-69686c4ce27b",
+      "date": 1757339651,
+      "old_image": "images/74a21835-9c17-5f65-88e4-69686c4ce27b.jpg",
+      "new_image": "images/just-as-charted-with-the-yellow-line-resistance-broken-gold.jpg"
+    },
+    {
+      "uuid": "f4802e31-9887-5664-a5d8-fbc5479eb5d1",
+      "date": 1757632740,
+      "old_image": "images/f4802e31-9887-5664-a5d8-fbc5479eb5d1.jpg",
+      "new_image": "images/real-estate-is-a-great-asset-because-banks-lend-75-of-its.jpg"
+    },
+    {
+      "uuid": "f0c905bb-4a69-5244-b8fd-51b7e720b4a8",
+      "date": 1757856516,
+      "old_image": "images/f0c905bb-4a69-5244-b8fd-51b7e720b4a8.jpg",
+      "new_image": "images/since-ive-written-this-gold-is-up-16.jpg"
+    },
+    {
+      "uuid": "84da5c02-514b-5952-92fc-f9e453cb4024",
+      "date": 1757965977,
+      "old_image": "images/84da5c02-514b-5952-92fc-f9e453cb4024.jpg",
+      "new_image": "images/ecb-gained-10-5b-on-gold-from-2023-to-2024.jpg"
+    },
+    {
+      "uuid": "878472ca-522c-54a8-9835-f78bb7309da0",
+      "date": 1758023386,
+      "old_image": "images/878472ca-522c-54a8-9835-f78bb7309da0.jpg",
+      "new_image": "images/ecbs-legal-framework-forbids-the-use-of-gold-revaluation.jpg"
+    },
+    {
+      "uuid": "4885e320-d9bc-5308-a5bf-bacd14a0e0b8",
+      "date": 1758023479,
+      "old_image": "images/4885e320-d9bc-5308-a5bf-bacd14a0e0b8.jpg",
+      "new_image": "images/moreover-as-per-eurosystems-accounting-framework-unrealized.jpg"
+    },
+    {
+      "uuid": "a5aad368-aa45-5719-8c7b-81ab207cd9ec",
+      "date": 1758023736,
+      "old_image": "images/a5aad368-aa45-5719-8c7b-81ab207cd9ec.jpg",
+      "new_image": "images/thus-unrealized-gold-gains-accumulate-on-the-ecbs-liability.jpg"
+    },
+    {
+      "uuid": "8a32229c-11b8-553e-a392-ca3226c90ace",
+      "date": 1758023842,
+      "old_image": "images/8a32229c-11b8-553e-a392-ca3226c90ace.jpg",
+      "new_image": "images/after-ecbs-realized-gains-are-booked-to-pnl-the-ecb-splits.jpg"
+    },
+    {
+      "uuid": "8efecb5b-9fc2-5228-9222-ac2641555c3f",
+      "date": 1758029202,
+      "old_image": "images/8efecb5b-9fc2-5228-9222-ac2641555c3f.jpg",
+      "new_image": "images/hello-3700-gold.jpg"
+    },
+    {
+      "uuid": "30da5a59-7640-5657-a74a-34f55cb5f39e",
+      "date": 1758095826,
+      "old_image": "images/30da5a59-7640-5657-a74a-34f55cb5f39e.jpg",
+      "new_image": "images/watch-the-feds-projection-dot-plot-not-the-fed-funds-rate.jpg"
+    },
+    {
+      "uuid": "e0189278-b14e-5bd9-873d-94a2647ff9a2",
+      "date": 1758095911,
+      "old_image": "images/e0189278-b14e-5bd9-873d-94a2647ff9a2.jpg",
+      "new_image": "images/a-cut-larger-than-25bp-is-highly-unlikely-since-the-current.jpg"
+    },
+    {
+      "uuid": "cd0b4389-2f66-54b7-a17c-4574172955dc",
+      "date": 1758096629,
+      "old_image": "images/cd0b4389-2f66-54b7-a17c-4574172955dc.jpg",
+      "new_image": "images/how-will-asset-prices-react-to-feds-interest-rate-decision.jpg"
+    },
+    {
+      "uuid": "5be5a4bb-f861-5817-8f43-34294a2407f0",
+      "date": 1758107409,
+      "old_image": "images/5be5a4bb-f861-5817-8f43-34294a2407f0.png",
+      "new_image": "images/its-not-just-the-fed-the-ecb-is-also-lowering-rates-into.png"
+    },
+    {
+      "uuid": "8233ebdc-b43a-5ddb-acaf-bf55c75051f8",
+      "date": 1758113490,
+      "old_image": "images/8233ebdc-b43a-5ddb-acaf-bf55c75051f8.jpg",
+      "new_image": "images/whats-up-with-the-urging-the-fed-to-cut-by-50-bps-today.jpg"
+    },
+    {
+      "uuid": "a32e748b-83ab-51a9-9ecf-e5ba2cc4c29f",
+      "date": 1758126480,
+      "old_image": "images/a32e748b-83ab-51a9-9ecf-e5ba2cc4c29f.jpg",
+      "new_image": "images/there-will-not-be-a-50-bps-rate-cut.jpg"
+    },
+    {
+      "uuid": "e478d56f-9667-558b-92ad-063f2be4fb6c",
+      "date": 1758136401,
+      "old_image": "images/e478d56f-9667-558b-92ad-063f2be4fb6c.jpg",
+      "new_image": "images/that-1-hour-candle-on-gold.jpg"
+    },
+    {
+      "uuid": "4d03e94d-3451-5827-86d4-83440d834310",
+      "date": 1758215217,
+      "old_image": "images/4d03e94d-3451-5827-86d4-83440d834310.jpg",
+      "new_image": "images/3515-is-a-great-price-area-to-long-gold-during-the-pullback.jpg"
+    },
+    {
+      "uuid": "424f31bf-5909-56b2-8e9f-77a46b1bda6b",
+      "date": 1758222212,
+      "old_image": "images/424f31bf-5909-56b2-8e9f-77a46b1bda6b.jpg",
+      "new_image": "images/39-6-is-a-great-area-to-long-silver-during-the-pullback.jpg"
+    },
+    {
+      "uuid": "aa8f8038-336a-53e1-ad90-08a41ebb26b9",
+      "date": 1758311427,
+      "old_image": "images/aa8f8038-336a-53e1-ad90-08a41ebb26b9.jpg",
+      "new_image": "images/in-fact-mortgage-rates-in-the-us-have-been-on-a-downtrend.jpg"
+    },
+    {
+      "uuid": "74233934-3452-5363-8587-29a1b1ca0241",
+      "date": 1758373536,
+      "old_image": "images/74233934-3452-5363-8587-29a1b1ca0241.jpg",
+      "new_image": "images/september-2025-fomc-dot-plot-suggests-lower-rates-than-in.jpg"
+    },
+    {
+      "uuid": "68b400b5-4fe4-5225-a3df-14bac0974f2b",
+      "date": 1758374656,
+      "old_image": "images/68b400b5-4fe4-5225-a3df-14bac0974f2b.jpg",
+      "new_image": "images/the-market-reacted-exactly-as-i-anticipated-in-a-prior-post.jpg"
+    },
+    {
+      "uuid": "9aa4349a-6719-523b-9b09-2c4e01f28f9c",
+      "date": 1758567668,
+      "old_image": "images/9aa4349a-6719-523b-9b09-2c4e01f28f9c.jpg",
+      "new_image": "images/silvers-current-move-is-already-up-25-its-better-to-have-a.jpg"
+    },
+    {
+      "uuid": "ba4c2414-d679-5207-8297-6753871f55bb",
+      "date": 1758616575,
+      "old_image": "images/ba4c2414-d679-5207-8297-6753871f55bb.jpg",
+      "new_image": "images/gold-moves-up-by-13-on-breakouts-thus-4000-oz-gold-in.jpg"
+    },
+    {
+      "uuid": "89cd48c3-9b72-5b86-b7d9-68aaa32a3faf",
+      "date": 1758654211,
+      "old_image": "images/89cd48c3-9b72-5b86-b7d9-68aaa32a3faf.jpg",
+      "new_image": "images/expect-silver-to-correct-down-by-18.jpg"
+    },
+    {
+      "uuid": "f69903ea-2cff-5d4d-ad3a-8e405142dff4",
+      "date": 1758671155,
+      "old_image": "images/f69903ea-2cff-5d4d-ad3a-8e405142dff4.jpg",
+      "new_image": "images/silvers-key-short-term-trend-support-is-the-green-light-from.jpg"
+    },
+    {
+      "uuid": "623fa679-3cba-513e-a0da-57f7fe72b56a",
+      "date": 1758721583,
+      "old_image": "images/623fa679-3cba-513e-a0da-57f7fe72b56a.jpg",
+      "new_image": "images/silver-a-breakdown-below-the-bottom-orange-line-will-likely.jpg"
+    },
+    {
+      "uuid": "78da3bd1-6bdf-575f-a44b-c12490bb0df2",
+      "date": 1758738327,
+      "old_image": "images/78da3bd1-6bdf-575f-a44b-c12490bb0df2.jpg",
+      "new_image": "images/added-rss-feed-to-illyas-threads-articles-https-illya-sh.jpg"
+    },
+    {
+      "uuid": "0359ae6b-d9db-54f0-95d1-34d8418b1b64",
+      "date": 1758740983,
+      "old_image": "images/0359ae6b-d9db-54f0-95d1-34d8418b1b64.jpg",
+      "new_image": "images/previously-there-was-only-a-web-version-at-https-illya-sh.jpg"
+    },
+    {
+      "uuid": "38c70532-9a5d-5f39-b415-3a580ce15258",
+      "date": 1758741374,
+      "old_image": "images/38c70532-9a5d-5f39-b415-3a580ce15258.jpg",
+      "new_image": "images/illyas-threads-illyas-thoughts-are-also-on-substack.jpg"
+    },
+    {
+      "uuid": "5f9f1c60-4d07-50f0-a524-d5b851ffe112",
+      "date": 1758742553,
+      "old_image": "images/5f9f1c60-4d07-50f0-a524-d5b851ffe112.jpg",
+      "new_image": "images/in-a-6-months-timeline-golds-current-price-dip-is-a-buying.jpg"
+    },
+    {
+      "uuid": "cc570728-8faf-5e4b-912e-4ad76847b414",
+      "date": 1758800466,
+      "old_image": "images/cc570728-8faf-5e4b-912e-4ad76847b414.jpg",
+      "new_image": "images/even-if-silver-goes-down-to-30-oz-it-will-still-be-in-an.jpg"
+    },
+    {
+      "uuid": "a61dd4da-545a-5074-86fb-eb0cef0931f5",
+      "date": 1758827526,
+      "old_image": "images/a61dd4da-545a-5074-86fb-eb0cef0931f5.jpg",
+      "new_image": "images/my-article-on-repo-rates-and-btc-price-was-referenced-on.jpg"
+    },
+    {
+      "uuid": "79345246-1233-50fe-9e6d-1e921abfef95",
+      "date": 1758828006,
+      "old_image": "images/79345246-1233-50fe-9e6d-1e921abfef95.jpg",
+      "new_image": "images/you-can-read-the-full-article-thread-explaining-why.jpg"
+    },
+    {
+      "uuid": "1d71ac4e-52bc-52f2-a5e0-4223f54477db",
+      "date": 1758915714,
+      "old_image": "images/1d71ac4e-52bc-52f2-a5e0-4223f54477db.jpg",
+      "new_image": "images/how-banks-create-money-when-purchasing-assets.jpg"
+    },
+    {
+      "uuid": "d3856009-9c88-591f-bf5c-2804af0ae873",
+      "date": 1758928112,
+      "old_image": "images/d3856009-9c88-591f-bf5c-2804af0ae873.jpg",
+      "new_image": "images/when-mega-caps-like-gold-explode-by-50-in-a-year-and-you.jpg"
+    },
+    {
+      "uuid": "867ce955-dcae-5423-8cbe-09e4d3230104",
+      "date": 1758968345,
+      "old_image": "images/867ce955-dcae-5423-8cbe-09e4d3230104.jpg",
+      "new_image": "images/portugal-golden-visa-real-estate-investments-are-less-than-3.jpg"
+    },
+    {
+      "uuid": "3d6dead3-9fb0-5cc3-88a4-58153d5a0ded",
+      "date": 1759070439,
+      "old_image": "images/3d6dead3-9fb0-5cc3-88a4-58153d5a0ded.jpg",
+      "new_image": "images/virtually-every-corporation-that-accepts-ethereum-bitcoin.jpg"
+    },
+    {
+      "uuid": "ec173835-45d8-556a-849e-b45d20351a3f",
+      "date": 1759077800,
+      "old_image": "images/ec173835-45d8-556a-849e-b45d20351a3f.jpg",
+      "new_image": "images/central-banks-have-rejected-holding-bitcoin-in-their.jpg"
+    },
+    {
+      "uuid": "a4aec67b-7801-5e64-8ff7-6ee92a35ac79",
+      "date": 1759079227,
+      "old_image": "images/a4aec67b-7801-5e64-8ff7-6ee92a35ac79.jpg",
+      "new_image": "images/if-you-buy-a-car-with-bitcoin-youre-still-subject-to-capital.jpg"
+    },
+    {
+      "uuid": "b37fb3b1-ad81-5b01-9e7e-00308ec37add",
+      "date": 1759155185,
+      "old_image": "images/b37fb3b1-ad81-5b01-9e7e-00308ec37add.jpg",
+      "new_image": "images/illya-gerasymchuk-there-are-60m-millionaires-and-only-281m.jpg"
+    },
+    {
+      "uuid": "d3a7bcc9-d93b-5bef-ab03-f548cdb482d8",
+      "date": 1759187962,
+      "old_image": "images/d3a7bcc9-d93b-5bef-ab03-f548cdb482d8.jpg",
+      "new_image": "images/silvers-current-short-term-support-line-is-in-green.jpg"
+    },
+    {
+      "uuid": "90574104-e459-51c4-bc62-142effb9b5fa",
+      "date": 1759224222,
+      "old_image": "images/90574104-e459-51c4-bc62-142effb9b5fa.jpg",
+      "new_image": "images/and-there-you-go.jpg"
+    },
+    {
+      "uuid": "e56eda86-995f-58f7-ad73-70ffcf3cb941",
+      "date": 1759313904,
+      "old_image": "images/e56eda86-995f-58f7-ad73-70ffcf3cb941.jpg",
+      "new_image": "images/no-the-west-is-not-manipulating-gold-and-silver-prices.jpg"
+    },
+    {
+      "uuid": "a5836a25-3266-5ac2-8110-25cc3cfffcc5",
+      "date": 1759517888,
+      "old_image": "images/a5836a25-3266-5ac2-8110-25cc3cfffcc5.jpg",
+      "new_image": "images/we-are-approaching-a-local-top-for-silver-and-gold-according.jpg"
+    },
+    {
+      "uuid": "59e95b33-6283-5cf8-b9cc-ec01a3a1edaa",
+      "date": 1759581625,
+      "old_image": "images/59e95b33-6283-5cf8-b9cc-ec01a3a1edaa.jpg",
+      "new_image": "images/decentralized-digital-euro-will-not-work-because-the-ecb.jpg"
+    },
+    {
+      "uuid": "91b360a6-fd0a-5a6f-b1d4-53127fd09dad",
+      "date": 1759937478,
+      "old_image": "images/91b360a6-fd0a-5a6f-b1d4-53127fd09dad.jpg",
+      "new_image": "images/people-are-calling-christine-lagarde-ignorant-on-bitcoin-but.jpg"
+    },
+    {
+      "uuid": "47841d5f-3258-553c-83ab-df9d8cbacb4f",
+      "date": 1759957133,
+      "old_image": "images/47841d5f-3258-553c-83ab-df9d8cbacb4f.jpg",
+      "new_image": "images/less-than-50-of-total-land-is-buildable.jpg"
+    },
+    {
+      "uuid": "b229748e-f941-5dee-b9b0-402a9aadf531",
+      "date": 1760058955,
+      "old_image": "images/b229748e-f941-5dee-b9b0-402a9aadf531.jpg",
+      "new_image": "images/no-permissioned-assets-running-on-blockchains-are-not-sheep.jpg"
+    },
+    {
+      "uuid": "11f376ba-2e26-58cf-aa48-8a20bba3bc42",
+      "date": 1760790483,
+      "old_image": "images/11f376ba-2e26-58cf-aa48-8a20bba3bc42.jpg",
+      "new_image": "images/btc-went-from-0-004-to-110-000-usd-in-16-years-but-gold-was.jpg"
+    },
+    {
+      "uuid": "84accd28-a2f8-56af-b86d-4838a35d5f73",
+      "date": 1760794205,
+      "old_image": "images/84accd28-a2f8-56af-b86d-4838a35d5f73.jpg",
+      "new_image": "images/sell-your-gold-and-buy-bitcoin.jpg"
+    },
+    {
+      "uuid": "e3c76e8b-46f4-5308-b905-7505cd3f75ff",
+      "date": 1760797842,
+      "old_image": "images/e3c76e8b-46f4-5308-b905-7505cd3f75ff.jpg",
+      "new_image": "images/governments-are-already-converting-from-physical-currencies.jpg"
+    },
+    {
+      "uuid": "2a920d5f-32d1-5e8c-83fc-399a929b5577",
+      "date": 1760879563,
+      "old_image": "images/2a920d5f-32d1-5e8c-83fc-399a929b5577.jpg",
+      "new_image": "images/my-vibe-meter-on-bitcoin-is-off-the-charts.jpg"
+    },
+    {
+      "uuid": "1ac8e7fc-62a5-56d1-a052-4e1924d54254",
+      "date": 1760897289,
+      "old_image": "images/1ac8e7fc-62a5-56d1-a052-4e1924d54254.jpg",
+      "new_image": "images/hope-you-enjoyed-fridays-gold-silver-miners-sell-off.jpg"
+    },
+    {
+      "uuid": "cf832993-f531-56ea-9377-76c21472131d",
+      "date": 1760912200,
+      "old_image": "images/cf832993-f531-56ea-9377-76c21472131d.jpg",
+      "new_image": "images/looks-like-crypto-twitter-has-not-discovered-mendeleevs.jpg"
+    },
+    {
+      "uuid": "e0ae7665-667a-5fb2-b8a2-d11556576bb7",
+      "date": 1760917425,
+      "old_image": "images/e0ae7665-667a-5fb2-b8a2-d11556576bb7.jpg",
+      "new_image": "images/bitcoin-isnt-private-at-best-its-anonymous.jpg"
+    },
+    {
+      "uuid": "a3e517b3-34f8-5852-80ef-8ec4027cd444",
+      "date": 1761045625,
+      "old_image": "images/a3e517b3-34f8-5852-80ef-8ec4027cd444.jpg",
+      "new_image": "images/the-promised-gold-silver-sale-is-here.jpg"
+    },
+    {
+      "uuid": "7a11ae50-16d9-5bbf-a6e9-16874750dc46",
+      "date": 1761053490,
+      "old_image": "images/7a11ae50-16d9-5bbf-a6e9-16874750dc46.jpg",
+      "new_image": "images/gold-has-formed-a-double-top-on-the-4h-chart.jpg"
+    },
+    {
+      "uuid": "fb9dba92-2429-527b-b272-9d6a82ff874a",
+      "date": 1761075250,
+      "old_image": "images/fb9dba92-2429-527b-b272-9d6a82ff874a.jpg",
+      "new_image": "images/1-month-ago-i-wrote-that-silver-could-extend-its-current.jpg"
+    },
+    {
+      "uuid": "bbbbeba0-2528-5e09-851d-65da33002561",
+      "date": 1761078020,
+      "old_image": "images/bbbbeba0-2528-5e09-851d-65da33002561.jpg",
+      "new_image": "images/silver-could-pullback-to-40-before-continuing-its-uptrend.jpg"
+    },
+    {
+      "uuid": "097682b6-14c6-56c5-a661-f1c31964f071",
+      "date": 1761122490,
+      "old_image": "images/097682b6-14c6-56c5-a661-f1c31964f071.jpg",
+      "new_image": "images/bitcoin-needs-gold-gold-doesnt-need-bitcoin.jpg"
+    },
+    {
+      "uuid": "a02a108b-7e30-580d-abb7-b0ece046bb26",
+      "date": 1761127235,
+      "old_image": "images/a02a108b-7e30-580d-abb7-b0ece046bb26.jpg",
+      "new_image": "images/gold-and-silver-miners.jpg"
+    },
+    {
+      "uuid": "188a09ca-9296-54fb-a007-fe239728dbcd",
+      "date": 1761128674,
+      "old_image": "images/188a09ca-9296-54fb-a007-fe239728dbcd.jpg",
+      "new_image": "images/its-over-for-gold.jpg"
+    },
+    {
+      "uuid": "da088378-0896-59b7-b803-f4111c25baa1",
+      "date": 1761139490,
+      "old_image": "images/da088378-0896-59b7-b803-f4111c25baa1.jpg",
+      "new_image": "images/if-ai-will-want-something-it-would-be-gold-not-bitcoin.jpg"
+    },
+    {
+      "uuid": "74f79015-4ffe-54ae-9cb8-97ce8f00574d",
+      "date": 1761163149,
+      "old_image": "images/74f79015-4ffe-54ae-9cb8-97ce8f00574d.jpg",
+      "new_image": "images/but-bitcoin-is-also-taxed-and-surveilled-the-ledger-is.jpg"
+    },
+    {
+      "uuid": "a73c562b-82ac-5a49-95e5-f829e9455b37",
+      "date": 1761210896,
+      "old_image": "images/a73c562b-82ac-5a49-95e5-f829e9455b37.jpg",
+      "new_image": "images/if-you-think-they-crypto-will-replace-banks-you-dont.jpg"
+    },
+    {
+      "uuid": "e9f7a977-b3ef-597a-bdab-9a4dea985b45",
+      "date": 1761213589,
+      "old_image": "images/e9f7a977-b3ef-597a-bdab-9a4dea985b45.jpg",
+      "new_image": "images/and-gold-is-up-over-50-since-january-20th.jpg"
+    },
+    {
+      "uuid": "c082a9ac-d5a8-5a84-9f42-29589ab9adff",
+      "date": 1761221152,
+      "old_image": "images/c082a9ac-d5a8-5a84-9f42-29589ab9adff.jpg",
+      "new_image": "images/you-can-email-jpeg.jpg"
+    },
+    {
+      "uuid": "1310e22e-3bac-5f42-b020-d8f7327f1337",
+      "date": 1761221694,
+      "old_image": "images/1310e22e-3bac-5f42-b020-d8f7327f1337.jpg",
+      "new_image": "images/gold-is-up-20-000-since-1832.jpg"
+    },
+    {
+      "uuid": "9d4a1944-8fbc-5859-bd5b-411507a72726",
+      "date": 1761289466,
+      "old_image": "images/9d4a1944-8fbc-5859-bd5b-411507a72726.jpg",
+      "new_image": "images/golds-lowest-possible-bottom-for-current-correction-is-3900.jpg"
+    },
+    {
+      "uuid": "1d1403ac-15f9-5af9-9fc1-0c658a1052be",
+      "date": 1761315268,
+      "old_image": "images/1d1403ac-15f9-5af9-9fc1-0c658a1052be.jpg",
+      "new_image": "images/gold-look-for-rejection-at-4155.jpg"
+    },
+    {
+      "uuid": "0923ee87-fabc-51b8-8558-16ad95ad443a",
+      "date": 1761342427,
+      "old_image": "images/0923ee87-fabc-51b8-8558-16ad95ad443a.jpg",
+      "new_image": "images/a-kind-reminder-that-higher-oil-prices-benefit-russia-and.jpg"
+    },
+    {
+      "uuid": "b1384ea8-ce9c-5371-8897-1ffa9c7a6e1b",
+      "date": 1761375278,
+      "old_image": "images/b1384ea8-ce9c-5371-8897-1ffa9c7a6e1b.jpg",
+      "new_image": "images/all-reserve-currencies-achieved-reserve-status-under-gold-or.jpg"
+    },
+    {
+      "uuid": "bfc9f49d-16c1-5f4c-8f82-2ef4d3e1ead6",
+      "date": 1761478446,
+      "old_image": "images/bfc9f49d-16c1-5f4c-8f82-2ef4d3e1ead6.jpg",
+      "new_image": "images/important-message-from-finance-cat.jpg"
+    },
+    {
+      "uuid": "091b4b36-1bbb-5888-99e6-c1b096fcb36a",
+      "date": 1761760406,
+      "old_image": "images/091b4b36-1bbb-5888-99e6-c1b096fcb36a.jpg",
+      "new_image": "images/how-exactly-does-bitcoin-break-u-s-dollar-control-when-90-of.jpg"
+    },
+    {
+      "uuid": "9e9d3708-c5df-5c52-9b13-6cdd432ff7f7",
+      "date": 1761765718,
+      "old_image": "images/9e9d3708-c5df-5c52-9b13-6cdd432ff7f7.jpg",
+      "new_image": "images/so-the-fed-will-fully-resume-treasury-purchasing-as-a-part.jpg"
+    },
+    {
+      "uuid": "b69e5486-bc2f-5b6f-b16b-3908af13e561",
+      "date": 1761823814,
+      "old_image": "images/b69e5486-bc2f-5b6f-b16b-3908af13e561.jpg",
+      "new_image": "images/tokenizing-european-long-term-investment-funds-eltif-2-0-on.jpg"
+    },
+    {
+      "uuid": "9c365773-272c-5916-8712-fc2132f30825",
+      "date": 1761860540,
+      "old_image": "images/9c365773-272c-5916-8712-fc2132f30825.jpg",
+      "new_image": "images/is-the-rotation-from-gold-to-bitcoin-in-the-room-with-us.jpg"
+    },
+    {
+      "uuid": "931c4d5a-0227-5b70-858b-8d87dac02892",
+      "date": 1761999182,
+      "old_image": "images/931c4d5a-0227-5b70-858b-8d87dac02892.jpg",
+      "new_image": "images/why-would-a-central-bank-hold-bitcoin-in-reserves.jpg"
+    },
+    {
+      "uuid": "3f6eccab-76e6-50a2-8ec8-0fd8ba528b24",
+      "date": 1762010661,
+      "old_image": "images/3f6eccab-76e6-50a2-8ec8-0fd8ba528b24.jpg",
+      "new_image": "images/multiple-governments-have-seized-bitcoin.jpg"
+    },
+    {
+      "uuid": "61587952-e09a-51ca-9654-2cac68454943",
+      "date": 1762095591,
+      "old_image": "images/61587952-e09a-51ca-9654-2cac68454943.jpg",
+      "new_image": "images/gold-is-within-the-fabric-of-money-not-just-central-banks.jpg"
+    },
+    {
+      "uuid": "affda92c-7670-5224-a62e-602e0f12ab1f",
+      "date": 1762110476,
+      "old_image": "images/affda92c-7670-5224-a62e-602e0f12ab1f.jpg",
+      "new_image": "images/more-bitcoin-has-been-seized-than-gold.jpg"
+    },
+    {
+      "uuid": "87476937-be22-5622-9081-c08ae19a6eef",
+      "date": 1762111889,
+      "old_image": "images/87476937-be22-5622-9081-c08ae19a6eef.jpg",
+      "new_image": "images/a-u-s-dollar-note-doesnt-care-who-you-are-or-where-youre.jpg"
+    },
+    {
+      "uuid": "beb4ed5f-8014-5f4c-b7fb-77b71f5e67cb",
+      "date": 1762117409,
+      "old_image": "images/beb4ed5f-8014-5f4c-b7fb-77b71f5e67cb.jpg",
+      "new_image": "images/anyone-can-buy-1-jpeg-but-not-everyone.jpg"
+    },
+    {
+      "uuid": "5fcae9f0-96d9-5a1d-86b5-e6153319ef0f",
+      "date": 1762201857,
+      "old_image": "images/5fcae9f0-96d9-5a1d-86b5-e6153319ef0f.jpg",
+      "new_image": "images/coffee-outperformed-gold-in-the-last-5-years.jpg"
+    },
+    {
+      "uuid": "a780c7bf-36a7-5026-b471-5cf5a374d4e0",
+      "date": 1762286864,
+      "old_image": "images/a780c7bf-36a7-5026-b471-5cf5a374d4e0.jpg",
+      "new_image": "images/illyas-threads-and-thoughts-now-uses-slugs-in-urls.jpg"
+    },
+    {
+      "uuid": "71758d39-a421-54dc-89a4-7761d6761d6a",
+      "date": 1762373441,
+      "old_image": "images/71758d39-a421-54dc-89a4-7761d6761d6a.jpg",
+      "new_image": "images/european-investment-funds-explained-ucits-aifs-aifmd-and-the.jpg"
+    },
+    {
+      "uuid": "ebc9725a-51e1-5ced-93d3-f6277a101446",
+      "date": 1762377291,
+      "old_image": "images/ebc9725a-51e1-5ced-93d3-f6277a101446.jpg",
+      "new_image": "images/my-article-on-gold-vs-bitcoin-and-how-bitcoin-needs-gold-but.jpg"
+    },
+    {
+      "uuid": "fe92ad84-67cf-53d4-aefe-642249f23b41",
+      "date": 1762377905,
+      "old_image": "images/fe92ad84-67cf-53d4-aefe-642249f23b41.jpg",
+      "new_image": "images/my-article-on-how-all-reserve-currencies-started-on-a-gold.jpg"
+    },
+    {
+      "uuid": "403b7fe3-f1b5-5d6c-92eb-26e2979f93c4",
+      "date": 1762441665,
+      "old_image": "images/403b7fe3-f1b5-5d6c-92eb-26e2979f93c4.jpg",
+      "new_image": "images/bitcoin-is-not-just-for-speculative-gambling.jpg"
+    },
+    {
+      "uuid": "2ec60c80-04bc-53bc-9203-5f48185df02a",
+      "date": 1762791969,
+      "old_image": "images/2ec60c80-04bc-53bc-9203-5f48185df02a.jpg",
+      "new_image": "images/gold-as-a-percentage-of-balance-sheet-size-in-central-banks.jpg"
+    },
+    {
+      "uuid": "26bf184f-5502-5636-940a-9738167b7268",
+      "date": 1762966049,
+      "old_image": "images/26bf184f-5502-5636-940a-9738167b7268.jpg",
+      "new_image": "images/my-prediction-on-golds-bottom-was-correct-3900.jpg"
+    },
+    {
+      "uuid": "5194895a-3ee1-51ad-b873-92ae0b470056",
+      "date": 1763034535,
+      "old_image": "images/5194895a-3ee1-51ad-b873-92ae0b470056.jpg",
+      "new_image": "images/my-prediction-on-silvers-bottom-was-correct-43-45.jpg"
+    },
+    {
+      "uuid": "9d948c1a-4067-5b91-bfe5-42ff9f7185e0",
+      "date": 1763071970,
+      "old_image": "images/9d948c1a-4067-5b91-bfe5-42ff9f7185e0.jpg",
+      "new_image": "images/in-july-i-wrote-a-primer-on-the-mechanics-by-which-the-fed.jpg"
+    },
+    {
+      "uuid": "7e8ad0fd-5cc1-5481-a7c7-739db9787f3c",
+      "date": 1763075344,
+      "old_image": "images/7e8ad0fd-5cc1-5481-a7c7-739db9787f3c.jpg",
+      "new_image": "images/as-ive-written-earlier-today-silver-will-encounter.jpg"
+    },
+    {
+      "uuid": "c75695d5-7e9b-5a56-af4e-35cc9ed4e489",
+      "date": 1763128981,
+      "old_image": "images/c75695d5-7e9b-5a56-af4e-35cc9ed4e489.jpg",
+      "new_image": "images/this-is-how-the-soviet-union-kickstarted-eurodollar-markets.jpg"
+    },
+    {
+      "uuid": "147ef72d-0f1f-59b8-a1f3-e73e176ff810",
+      "date": 1763136045,
+      "old_image": "images/147ef72d-0f1f-59b8-a1f3-e73e176ff810.jpg",
+      "new_image": "images/you-can-read-the-article-here-https-illya-sh-threads-how.jpg"
+    },
+    {
+      "uuid": "87cfc537-2114-5ada-a661-009f95862336",
+      "date": 1763147699,
+      "old_image": "images/87cfc537-2114-5ada-a661-009f95862336.jpg",
+      "new_image": "images/russia-will-buy-silver-as-a-strategic-reserve-until-2027.jpg"
+    },
+    {
+      "uuid": "816bb7a0-4eb1-5dd4-9aa7-897ac8d7667e",
+      "date": 1763161705,
+      "old_image": "images/816bb7a0-4eb1-5dd4-9aa7-897ac8d7667e.jpg",
+      "new_image": "images/in-my-post-ranking-gold-as-a-percentage-of-central-bank.jpg"
+    },
+    {
+      "uuid": "31d8e2f6-9c99-5baa-9b54-159aa66f64a3",
+      "date": 1763226756,
+      "old_image": "images/31d8e2f6-9c99-5baa-9b54-159aa66f64a3.jpg",
+      "new_image": "images/just-wait-until-bitcoin-hype-accounts-find-out-that-czechia.jpg"
+    },
+    {
+      "uuid": "75ce6ec5-31a7-5167-a9cc-d1261b0a643e",
+      "date": 1763311318,
+      "old_image": "images/75ce6ec5-31a7-5167-a9cc-d1261b0a643e.jpg",
+      "new_image": "images/microstrategy-is-dependent-on-refinancing-capacity-not.jpg"
+    },
+    {
+      "uuid": "fc2f00b2-4899-50b3-bb5a-1c8f8962cc0b",
+      "date": 1763334072,
+      "old_image": "images/fc2f00b2-4899-50b3-bb5a-1c8f8962cc0b.jpg",
+      "new_image": "images/microstrategy-cant-repay-its-debt-in-equity-stock.jpg"
+    },
+    {
+      "uuid": "8fca78e7-1f2d-56e5-9c85-2bb0a47791b8",
+      "date": 1763383485,
+      "old_image": "images/8fca78e7-1f2d-56e5-9c85-2bb0a47791b8.jpg",
+      "new_image": "images/europes-gold-imports-and-exports-explained.jpg"
+    },
+    {
+      "uuid": "2b7f2105-7dbb-5ec9-801f-c20bce390a4c",
+      "date": 1763628999,
+      "old_image": "images/2b7f2105-7dbb-5ec9-801f-c20bce390a4c.jpg",
+      "new_image": "images/how-microstrategy-pays-interest-on-its-debt.jpg"
+    },
+    {
+      "uuid": "6e6881cc-d943-57b1-9fce-1603b63e4c7d",
+      "date": 1763656893,
+      "old_image": "images/6e6881cc-d943-57b1-9fce-1603b63e4c7d.jpg",
+      "new_image": "images/in-net-terms-bitcoin-is-a-geopolitical-liability-not-an.jpg"
+    },
+    {
+      "uuid": "03f2e53f-81bd-5cbd-9394-9ef325a06b4d",
+      "date": 1763734028,
+      "old_image": "images/03f2e53f-81bd-5cbd-9394-9ef325a06b4d.jpg",
+      "new_image": "images/strategy-invents-financial-metrics-and-everybody-applauds.jpg"
+    },
+    {
+      "uuid": "3a581086-c81f-54c4-b91c-e17e5eb869ee",
+      "date": 1763861642,
+      "old_image": "images/3a581086-c81f-54c4-b91c-e17e5eb869ee.jpg",
+      "new_image": "images/1-oz-of-bullion-gold-costs-1910-to-produce.jpg"
+    },
+    {
+      "uuid": "341bb749-d8fc-5ce5-b039-9ea3de25bca9",
+      "date": 1763906319,
+      "old_image": "images/341bb749-d8fc-5ce5-b039-9ea3de25bca9.jpg",
+      "new_image": "images/1-oz-of-gold-production-cost-and-miner-profit.jpg"
+    },
+    {
+      "uuid": "329fd72c-e8b9-5a86-9454-921e6a170704",
+      "date": 1763914273,
+      "old_image": "images/329fd72c-e8b9-5a86-9454-921e6a170704.jpg",
+      "new_image": "images/how-the-1916-fed-act-made-treasuries-prime-collateral.jpg"
+    },
+    {
+      "uuid": "e5564276-a3df-5416-9f64-af2dc8356959",
+      "date": 1763998487,
+      "old_image": "images/e5564276-a3df-5416-9f64-af2dc8356959.jpg",
+      "new_image": "images/a-primer-on-strategy-mstr-business-financials-liquidity-and.jpg"
+    },
+    {
+      "uuid": "e807680e-c1e7-5eb3-8152-f42e30b10574",
+      "date": 1764169585,
+      "old_image": "images/e807680e-c1e7-5eb3-8152-f42e30b10574.jpg",
+      "new_image": "images/central-banks-were-more-influenced-by-farming-than-you.jpg"
+    },
+    {
+      "uuid": "de3faa0c-5a99-59ac-992b-bdda6a31b8ee",
+      "date": 1764876131,
+      "old_image": "images/de3faa0c-5a99-59ac-992b-bdda6a31b8ee.jpg",
+      "new_image": "images/a-few-months-ago-i-wrote-about-lora-meshes.jpg"
+    },
+    {
+      "uuid": "88359b41-6d44-59bf-b07a-7413cc96d14d",
+      "date": 1764925203,
+      "old_image": "images/88359b41-6d44-59bf-b07a-7413cc96d14d.jpg",
+      "new_image": "images/added-semantic-categorization-via-embeddings-to-articles.jpg"
+    },
+    {
+      "uuid": "dfc958f2-2831-552f-bdb9-34ba63a1e343",
+      "date": 1765036287,
+      "old_image": "images/dfc958f2-2831-552f-bdb9-34ba63a1e343.jpg",
+      "new_image": "images/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python.jpg"
+    },
+    {
+      "uuid": "b96ac55a-7c1d-5f34-bc8e-8d78bb6735c4",
+      "date": 1767024303,
+      "old_image": "images/b96ac55a-7c1d-5f34-bc8e-8d78bb6735c4.jpg",
+      "new_image": "images/china-is-hoarding-commodities.jpg"
+    },
+    {
+      "uuid": "1c187298-d0fb-58f4-adad-e811453f8e8d",
+      "date": 1767024593,
+      "old_image": "images/1c187298-d0fb-58f4-adad-e811453f8e8d.jpg",
+      "new_image": "images/todays-gold-silver-and-their-miners-sell-off-is-a-buying.jpg"
+    },
+    {
+      "uuid": "759a84a5-e633-5adf-b9b9-71e19e8b69ae",
+      "date": 1767034308,
+      "old_image": "images/759a84a5-e633-5adf-b9b9-71e19e8b69ae.jpg",
+      "new_image": "images/silver-is-up-193-in-2025-but-it-only-takes-a-16-pullback-for.jpg"
+    },
+    {
+      "uuid": "36ce1253-8d15-5c5d-b6af-2037a5908840",
+      "date": 1767048626,
+      "old_image": "images/36ce1253-8d15-5c5d-b6af-2037a5908840.jpg",
+      "new_image": "images/m2-money-supply-is-a-bad-measure-of-global-liquidity.jpg"
+    },
+    {
+      "uuid": "36a8c9b5-2937-5130-b8f7-c91f18ebdc35",
+      "date": 1767058859,
+      "old_image": "images/36a8c9b5-2937-5130-b8f7-c91f18ebdc35.jpg",
+      "new_image": "images/silver-didnt-even-break-its-4-hour-trend-support-on-the.jpg"
+    },
+    {
+      "uuid": "5e1f8268-44f4-5f22-b3ed-b64ec0fa853d",
+      "date": 1767111078,
+      "old_image": "images/5e1f8268-44f4-5f22-b3ed-b64ec0fa853d.jpg",
+      "new_image": "images/gold-hasnt-even-touched-its-daily-support-line-from-october.jpg"
+    },
+    {
+      "uuid": "0d8f847d-b800-574b-bcaa-d9ea0f66b6b2",
+      "date": 1767194023,
+      "old_image": "images/0d8f847d-b800-574b-bcaa-d9ea0f66b6b2.jpg",
+      "new_image": "images/uranium-nuclear-energy-electrical-grid-lithium-and-copper.jpg"
+    },
+    {
+      "uuid": "c61358bc-c132-5ae6-95c0-92f942a87cf6",
+      "date": 1767203460,
+      "old_image": "images/c61358bc-c132-5ae6-95c0-92f942a87cf6.jpg",
+      "new_image": "images/the-same-x-accounts-that-were-telling-you-to-buy-the-bitcoin.jpg"
+    },
+    {
+      "uuid": "a12b7801-c8df-53c0-aeae-b46278c2f460",
+      "date": 1767205589,
+      "old_image": "images/a12b7801-c8df-53c0-aeae-b46278c2f460.jpg",
+      "new_image": "images/gold-hasnt-even-touched-its-daily-level-uptrend-support-and.jpg"
+    },
+    {
+      "uuid": "79eee9d6-e9b7-590f-b682-adc1a104e27c",
+      "date": 1767299856,
+      "old_image": "images/79eee9d6-e9b7-590f-b682-adc1a104e27c.jpg",
+      "new_image": "images/bulgarian-lev-has-been-pegged-to-euro-since-1999.jpg"
+    },
+    {
+      "uuid": "fdbc28eb-a91f-569d-b572-e3f77c2a355e",
+      "date": 1767379055,
+      "old_image": "images/fdbc28eb-a91f-569d-b572-e3f77c2a355e.jpg",
+      "new_image": "images/the-big-play-on-precious-metals-mining-stocks-is-that.jpg"
+    },
+    {
+      "uuid": "a54b430a-7406-5c4d-ba6e-f8734ff372e7",
+      "date": 1767428820,
+      "old_image": "images/a54b430a-7406-5c4d-ba6e-f8734ff372e7.jpg",
+      "new_image": "images/ruble-was-the-best-performing-major-currency-of-2025-and-its.jpg"
+    },
+    {
+      "uuid": "95146530-c00f-5786-a04c-22dce1c9bb48",
+      "date": 1767469649,
+      "old_image": "images/95146530-c00f-5786-a04c-22dce1c9bb48.jpg",
+      "new_image": "images/in-2017-venezuelan-central-bank-banco-central-de-venezuela.jpg"
+    },
+    {
+      "uuid": "d86bb87d-de00-5ca8-8d96-706354a89923",
+      "date": 1767520084,
+      "old_image": "images/d86bb87d-de00-5ca8-8d96-706354a89923.jpg",
+      "new_image": "images/as-or-2026-venezuela-has-53-tonnes-of-gold-not-161.jpg"
+    },
+    {
+      "uuid": "84de6dd8-65dd-5e18-b5ba-15cb3e54116d",
+      "date": 1767541663,
+      "old_image": "images/84de6dd8-65dd-5e18-b5ba-15cb3e54116d.jpg",
+      "new_image": "images/misinformation-about-venezuelas-gold-reserves-is-spreading.jpg"
+    },
+    {
+      "uuid": "e7a86aaf-02d6-57b4-b1b9-7501cb629dd1",
+      "date": 1767621258,
+      "old_image": "images/e7a86aaf-02d6-57b4-b1b9-7501cb629dd1.jpg",
+      "new_image": "images/the-u-s-violated-international-law-by-attacking-venezuela.jpg"
+    },
+    {
+      "uuid": "f89c5464-1336-57ad-9534-d029680b3470",
+      "date": 1767704598,
+      "old_image": "images/f89c5464-1336-57ad-9534-d029680b3470.jpg",
+      "new_image": "images/bulgraria-has-been-pegged-to-euro-since-1999.jpg"
+    },
+    {
+      "uuid": "b27f4f3e-34be-54a3-ac45-60886c633396",
+      "date": 1767874422,
+      "old_image": "images/b27f4f3e-34be-54a3-ac45-60886c633396.jpg",
+      "new_image": "images/venezuelas-central-bank-monetary-gold-holdings-constitute-20.jpg"
+    },
+    {
+      "uuid": "14b4256c-da8a-52a9-b736-133665752e64",
+      "date": 1768060601,
+      "old_image": "images/14b4256c-da8a-52a9-b736-133665752e64.jpg",
+      "new_image": "images/congratulations-to-freddie-mac-fannie-mae-in-their-first.jpg"
+    },
+    {
+      "uuid": "a2173a97-801f-5eaa-aa2c-92238efc2cec",
+      "date": 1768239913,
+      "old_image": "images/a2173a97-801f-5eaa-aa2c-92238efc2cec.jpg",
+      "new_image": "images/so-silver-didnt-top-for-the-cycle-2011-didnt-repeat-and.jpg"
+    },
+    {
+      "uuid": "d7af1c7a-8f31-595e-93ed-96a93579e3a8",
+      "date": 1768305746,
+      "old_image": "images/d7af1c7a-8f31-595e-93ed-96a93579e3a8.jpg",
+      "new_image": "images/if-you-want-to-invest-in-copper-miners-just-go-with-the.jpg"
+    },
+    {
+      "uuid": "0b0fcf93-a6fe-5e34-a19c-9b5c671a5fef",
+      "date": 1768392904,
+      "old_image": "images/0b0fcf93-a6fe-5e34-a19c-9b5c671a5fef.jpg",
+      "new_image": "images/putin-instructed-central-bank-of-russia-to-buy-gold-in-2005.jpg"
+    },
+    {
+      "uuid": "585ac043-ca45-5442-b832-8d46f666e14e",
+      "date": 1768488842,
+      "old_image": "images/585ac043-ca45-5442-b832-8d46f666e14e.jpg",
+      "new_image": "images/gold-miners-are-about-to-breakout.jpg"
+    },
+    {
+      "uuid": "f9af16d0-6e5b-535b-b36e-c8592e42866c",
+      "date": 1768672892,
+      "old_image": "images/f9af16d0-6e5b-535b-b36e-c8592e42866c.jpg",
+      "new_image": "images/why-wouldnt-markets-be-able-to-react-to-trumps-new-tariffs.jpg"
+    },
+    {
+      "uuid": "7e8ecd06-e120-5c7a-9846-510fb991ff97",
+      "date": 1768747296,
+      "old_image": "images/7e8ecd06-e120-5c7a-9846-510fb991ff97.jpg",
+      "new_image": "images/silver-mining-stocks-are-undervalued-in-2026.jpg"
+    },
+    {
+      "uuid": "ae0328c9-090f-51a8-af82-737c8d103030",
+      "date": 1768837089,
+      "old_image": "images/ae0328c9-090f-51a8-af82-737c8d103030.jpg",
+      "new_image": "images/even-as-central-banks-bought-gold-the-market-analysts.jpg"
+    },
+    {
+      "uuid": "36678b17-2520-57aa-a5fe-05463cbc5017",
+      "date": 1768838228,
+      "old_image": "images/36678b17-2520-57aa-a5fe-05463cbc5017.jpg",
+      "new_image": "images/yesterday-i-explained-why-silver-mining-stocks-are.jpg"
+    },
+    {
+      "uuid": "b9d24e56-1a7a-59f5-9817-b48ef1647d42",
+      "date": 1768918976,
+      "old_image": "images/b9d24e56-1a7a-59f5-9817-b48ef1647d42.jpg",
+      "new_image": "images/every-day-it-becomes-more-obvious-how-us-tariffs-unilateral.jpg"
+    },
+    {
+      "uuid": "7841e1af-42db-5ebf-8415-5a9a1951150b",
+      "date": 1768920608,
+      "old_image": "images/7841e1af-42db-5ebf-8415-5a9a1951150b.jpg",
+      "new_image": "images/good-for-gold-bad-for-usd-us-tariffs-on-europe.jpg"
+    },
+    {
+      "uuid": "524c34eb-c924-51be-90fe-bd8aa2f9c604",
+      "date": 1768977000,
+      "old_image": "images/524c34eb-c924-51be-90fe-bd8aa2f9c604.jpg",
+      "new_image": "images/8-months-later-japans-30-year-bond-yield-is-now-32-higher.jpg"
+    },
+    {
+      "uuid": "2a3e8f56-7110-54af-bc58-383a7101a72d",
+      "date": 1768989385,
+      "old_image": "images/2a3e8f56-7110-54af-bc58-383a7101a72d.jpg",
+      "new_image": "images/yesterday-i-wrote-an-article-explaining-why-us-tariffs-on.jpg"
+    },
+    {
+      "uuid": "2d7a7560-9c56-591c-b176-798cd7e6c551",
+      "date": 1768993577,
+      "old_image": "images/2d7a7560-9c56-591c-b176-798cd7e6c551.jpg",
+      "new_image": "images/silver-miners-are-up-another-4-today-and-more-than-10-in-the.jpg"
+    },
+    {
+      "uuid": "68383e9c-5224-5c4c-aa6b-eec0f8b0a949",
+      "date": 1768993965,
+      "old_image": "images/68383e9c-5224-5c4c-aa6b-eec0f8b0a949.jpg",
+      "new_image": "images/copper-is-another-great-buy-for-2026-at-current-prices.jpg"
+    },
+    {
+      "uuid": "99f6dd14-b267-5c80-8da8-56ebef0f0323",
+      "date": 1768999177,
+      "old_image": "images/99f6dd14-b267-5c80-8da8-56ebef0f0323.jpg",
+      "new_image": "images/copper-is-a-great-investment-in-2026-technicals-fundamentals.jpg"
+    },
+    {
+      "uuid": "2eef21a0-b667-5cfe-82e8-b998ccfabd96",
+      "date": 1769081369,
+      "old_image": "images/2eef21a0-b667-5cfe-82e8-b998ccfabd96.jpg",
+      "new_image": "images/dont-overthink-commodity-miners-investments.jpg"
+    },
+    {
+      "uuid": "851540aa-1477-5cfd-90b0-212f9599fef9",
+      "date": 1769098142,
+      "old_image": "images/851540aa-1477-5cfd-90b0-212f9599fef9.jpg",
+      "new_image": "images/silver-miners-are-up-12-since-my-recommendation-from-4-days.jpg"
+    },
+    {
+      "uuid": "c0181f36-3527-54ba-b735-942dbbddc11a",
+      "date": 1769175645,
+      "old_image": "images/c0181f36-3527-54ba-b735-942dbbddc11a.jpg",
+      "new_image": "images/and-this-is-why-copper-is-currently-a-good-idea-to-complete.jpg"
+    },
+    {
+      "uuid": "844cc229-6478-5541-81b7-a44c38e269f0",
+      "date": 1769190239,
+      "old_image": "images/844cc229-6478-5541-81b7-a44c38e269f0.jpg",
+      "new_image": "images/gold-5000.jpg"
+    },
+    {
+      "uuid": "57127eb3-d25d-504e-8347-dbcc8ec691d8",
+      "date": 1769256460,
+      "old_image": "images/57127eb3-d25d-504e-8347-dbcc8ec691d8.jpg",
+      "new_image": "images/and-people-still-think-that-silver-and-bitcoin-are-within.jpg"
+    },
+    {
+      "uuid": "6edeab43-976c-58bc-bbc7-49192a0c03a1",
+      "date": 1769273246,
+      "old_image": "images/6edeab43-976c-58bc-bbc7-49192a0c03a1.jpg",
+      "new_image": "images/random-forest-is-currently-my-favorite-term-from-financial.jpg"
+    },
+    {
+      "uuid": "22c9c988-ed79-5679-ba60-e3fdc5ca9ef7",
+      "date": 1769525099,
+      "old_image": "images/22c9c988-ed79-5679-ba60-e3fdc5ca9ef7.jpg",
+      "new_image": "images/natural-gas-prices-are-very-volatile.jpg"
+    },
+    {
+      "uuid": "6ebdec01-660f-588b-b8fa-4b772520fb69",
+      "date": 1769531580,
+      "old_image": "images/6ebdec01-660f-588b-b8fa-4b772520fb69.jpg",
+      "new_image": "images/todays-commodity-miners-sell-off-is-a-buying-opportunity.jpg"
+    },
+    {
+      "uuid": "4a26b568-a03a-5cdb-929d-6c9250b85431",
+      "date": 1769681212,
+      "old_image": "images/4a26b568-a03a-5cdb-929d-6c9250b85431.jpg",
+      "new_image": "images/a-week-ago-i-wrote-an-article-explaining-why-copper-is-a.jpg"
+    },
+    {
+      "uuid": "67694aaf-ef60-582c-8643-84fc794b637c",
+      "date": 1769682779,
+      "old_image": "images/67694aaf-ef60-582c-8643-84fc794b637c.jpg",
+      "new_image": "images/copper-just-hit-a-new-all-time-high-and-its-not-stopping.jpg"
+    },
+    {
+      "uuid": "992fd918-c8c2-5222-be0e-6aa00d7911fe",
+      "date": 1769696255,
+      "old_image": "images/992fd918-c8c2-5222-be0e-6aa00d7911fe.jpg",
+      "new_image": "images/copper-extends-its-gains-to-9-on-the-day-and-its.jpg"
+    },
+    {
+      "uuid": "80e2ca59-975c-5358-a9b1-d567ac675100",
+      "date": 1769697016,
+      "old_image": "images/80e2ca59-975c-5358-a9b1-d567ac675100.jpg",
+      "new_image": "images/cherry-picking-goes-both-ways.jpg"
+    },
+    {
+      "uuid": "5eb15b82-e6df-53a3-9379-326417874bb1",
+      "date": 1769697769,
+      "old_image": "images/5eb15b82-e6df-53a3-9379-326417874bb1.jpg",
+      "new_image": "images/palladium-is-a-great-investment-in-2026.jpg"
+    },
+    {
+      "uuid": "b9f0934a-76de-59f8-a407-5fa002c1878f",
+      "date": 1769699007,
+      "old_image": "images/b9f0934a-76de-59f8-a407-5fa002c1878f.jpg",
+      "new_image": "images/my-target-for-gold-is-at-least-7500-usd-per-ounce.jpg"
+    },
+    {
+      "uuid": "d0e28a7e-b92a-565a-8c3d-c9cc10200157",
+      "date": 1769702751,
+      "old_image": "images/d0e28a7e-b92a-565a-8c3d-c9cc10200157.jpg",
+      "new_image": "images/enjoy-the-price-dip-across-communities.jpg"
+    },
+    {
+      "uuid": "3ff60afe-26d8-5346-b09c-54921a70a723",
+      "date": 1769796264,
+      "old_image": "images/3ff60afe-26d8-5346-b09c-54921a70a723.jpg",
+      "new_image": "images/massive-buying-opportunity-in-commodities-with-these.jpg"
+    },
+    {
+      "uuid": "b55eade9-f785-5b93-8f7d-dc2d0f0e807e",
+      "date": 1769855966,
+      "old_image": "images/b55eade9-f785-5b93-8f7d-dc2d0f0e807e.jpg",
+      "new_image": "images/metropolitan-capital-bank-trust-is-the-first-us-bank-to-fail.jpg"
+    },
+    {
+      "uuid": "65956b7b-3e10-50f4-9b72-441320b145c9",
+      "date": 1770570575,
+      "old_image": "images/65956b7b-3e10-50f4-9b72-441320b145c9.jpg",
+      "new_image": "images/agi-is-perpetually-6-12-months-away.jpg"
+    },
+    {
+      "uuid": "d6b8da17-c876-532a-9dfb-272554aa60f4",
+      "date": 1770572218,
+      "old_image": "images/d6b8da17-c876-532a-9dfb-272554aa60f4.jpg",
+      "new_image": "images/its-literally-impossible-to-compete-with-calculators.jpg"
+    },
+    {
+      "uuid": "0e7a709e-86a4-51a0-a57d-08ef2d8a6071",
+      "date": 1770595098,
+      "old_image": "images/0e7a709e-86a4-51a0-a57d-08ef2d8a6071.jpg",
+      "new_image": "images/as-ive-explained-in-my-prior-posts-the-commodities-rally.jpg"
+    },
+    {
+      "uuid": "b59896bc-6361-5522-8d1c-64703acc9f19",
+      "date": 1770641711,
+      "old_image": "images/b59896bc-6361-5522-8d1c-64703acc9f19.jpg",
+      "new_image": "images/scarcity-doesnt-make-bitcoin-better-than-gold.jpg"
+    },
+    {
+      "uuid": "46cd0b0f-838f-53dd-b8cc-af59eb30f92d",
+      "date": 1770654100,
+      "old_image": "images/46cd0b0f-838f-53dd-b8cc-af59eb30f92d.jpg",
+      "new_image": "images/chf-is-attractive-even-at-negative-yield.jpg"
+    },
+    {
+      "uuid": "b03a08ea-4d18-5af4-847b-1ba4e585c37f",
+      "date": 1770680047,
+      "old_image": "images/b03a08ea-4d18-5af4-847b-1ba4e585c37f.jpg",
+      "new_image": "images/so-the-yield-on-usdt-on-aave-is-below-2-usd-money-markets.jpg"
+    },
+    {
+      "uuid": "7cb63990-6408-5b3c-9fd4-12f448746c30",
+      "date": 1770750251,
+      "old_image": "images/7cb63990-6408-5b3c-9fd4-12f448746c30.jpg",
+      "new_image": "images/my-random-forest-guided-meta-model-factory-discovered-a.jpg"
+    },
+    {
+      "uuid": "7c868bd0-bf2f-5864-880d-a72b69f1e731",
+      "date": 1770824073,
+      "old_image": "images/7c868bd0-bf2f-5864-880d-a72b69f1e731.jpg",
+      "new_image": "images/so-i-solved-the-overfitting-issue-and-as-i-suspected.jpg"
+    },
+    {
+      "uuid": "4f065b91-83a3-5098-a70c-f29b6843feef",
+      "date": 1770832004,
+      "old_image": "images/4f065b91-83a3-5098-a70c-f29b6843feef.jpg",
+      "new_image": "images/my-trading-ml-factory-yielded-22-return-on-gold-on-a-daily.jpg"
+    },
+    {
+      "uuid": "1b57d80a-23c4-5381-ae8f-72516bfc24fd",
+      "date": 1770834741,
+      "old_image": "images/1b57d80a-23c4-5381-ae8f-72516bfc24fd.jpg",
+      "new_image": "images/okay-i-found-another-source-of-overfitting-data-leakage-in.jpg"
+    },
+    {
+      "uuid": "6b867277-98ad-5faa-812d-9fc3007dd4eb",
+      "date": 1770908860,
+      "old_image": "images/6b867277-98ad-5faa-812d-9fc3007dd4eb.jpg",
+      "new_image": "images/why-would-anyone-take-us-job-number-reports-seriously-at.jpg"
+    },
+    {
+      "uuid": "30995b3b-b645-5471-a5ad-febf9e18c63e",
+      "date": 1770916257,
+      "old_image": "images/30995b3b-b645-5471-a5ad-febf9e18c63e.jpg",
+      "new_image": "images/fact-check-russia-moving-back-to-usd.jpg"
+    },
+    {
+      "uuid": "ded26344-1c69-5b70-94f1-e52f260b1236",
+      "date": 1770922063,
+      "old_image": "images/ded26344-1c69-5b70-94f1-e52f260b1236.jpg",
+      "new_image": "images/its-not-about-whether-you-have-a-use-for-the-land-you-own.jpg"
+    },
+    {
+      "uuid": "29d5ab24-cdb0-5f6b-a01b-8b699347ec7c",
+      "date": 1770990246,
+      "old_image": "images/29d5ab24-cdb0-5f6b-a01b-8b699347ec7c.jpg",
+      "new_image": "images/overfitting-in-machine-learning-models-visualized.jpg"
+    },
+    {
+      "uuid": "aa6d7a01-a329-5458-afbc-935811e4cccc",
+      "date": 1770994522,
+      "old_image": "images/aa6d7a01-a329-5458-afbc-935811e4cccc.jpg",
+      "new_image": "images/one-idea-for-vibe-coding-profitable-trading-strategies-is-to.jpg"
+    },
+    {
+      "uuid": "f78c16e2-cfa2-5275-a7af-e11eaa9349a6",
+      "date": 1771010489,
+      "old_image": "images/f78c16e2-cfa2-5275-a7af-e11eaa9349a6.jpg",
+      "new_image": "images/central-bank-of-russia-denies-return-to-usd-payments.jpg"
+    },
+    {
+      "uuid": "f3b1cb2c-552e-5a54-ad92-99b992c87d07",
+      "date": 1771087745,
+      "old_image": "images/f3b1cb2c-552e-5a54-ad92-99b992c87d07.jpg",
+      "new_image": "images/how-usa-profited-70-on-gold-in-1-year.jpg"
+    },
+    {
+      "uuid": "9f4d8b1f-3d07-59de-abb9-d3dfb79072a8",
+      "date": 1771089421,
+      "old_image": "images/9f4d8b1f-3d07-59de-abb9-d3dfb79072a8.jpg",
+      "new_image": "images/in-1934-the-u-s-government-had-to-legally-raise-the-price-of.jpg"
+    },
+    {
+      "uuid": "1690bb19-39ca-5722-8b60-a8ce91999dae",
+      "date": 1771090166,
+      "old_image": "images/1690bb19-39ca-5722-8b60-a8ce91999dae.jpg",
+      "new_image": "images/china-also-banned-gold-silver-in-1983.jpg"
+    },
+    {
+      "uuid": "a002684f-2dd7-51f4-b6cf-1e7b2ac3777c",
+      "date": 1771167799,
+      "old_image": "images/a002684f-2dd7-51f4-b6cf-1e7b2ac3777c.jpg",
+      "new_image": "images/my-wife-and-i-met-the-charging-bull-himself.jpg"
+    },
+    {
+      "uuid": "ae960b56-79e2-5c28-a985-052ef1460438",
+      "date": 1771175008,
+      "old_image": "images/ae960b56-79e2-5c28-a985-052ef1460438.jpg",
+      "new_image": "images/gold-outperformed-bitcoin-in-the-last-8-years.jpg"
+    },
+    {
+      "uuid": "a34ea166-2c05-560d-92e7-952d819d595c",
+      "date": 1771241150,
+      "old_image": "images/a34ea166-2c05-560d-92e7-952d819d595c.jpg",
+      "new_image": "images/china-banned-gold-silver-as-money-in-1983.jpg"
+    },
+    {
+      "uuid": "32bbd811-42a4-5eef-a81c-3375b4e13ce9",
+      "date": 1771254182,
+      "old_image": "images/32bbd811-42a4-5eef-a81c-3375b4e13ce9.png",
+      "new_image": "images/the-random-forest-that-guides-my-model-factory-needs.png"
+    },
+    {
+      "uuid": "d8b3a485-533f-59ea-9119-c8ba0abb3921",
+      "date": 1771335307,
+      "old_image": "images/d8b3a485-533f-59ea-9119-c8ba0abb3921.jpg",
+      "new_image": "images/they-say-that-ai-agents-will-replace-all-white-collar-jobs.jpg"
+    },
+    {
+      "uuid": "e670ab57-0d26-5ae6-b337-b2060872d616",
+      "date": 1771340258,
+      "old_image": "images/e670ab57-0d26-5ae6-b337-b2060872d616.png",
+      "new_image": "images/my-ml-model-factory-produced-this-amazing-model-that-trades.png"
+    },
+    {
+      "uuid": "594f6067-6d63-5473-bec0-4f8ecf15fd71",
+      "date": 1771340467,
+      "old_image": "images/594f6067-6d63-5473-bec0-4f8ecf15fd71.png",
+      "new_image": "images/my-random-forest-looks-much-better-after-the-clean-up.png"
+    },
+    {
+      "uuid": "4a38439f-2990-5d1a-be55-31748a8aaa11",
+      "date": 1771346009,
+      "old_image": "images/4a38439f-2990-5d1a-be55-31748a8aaa11.jpg",
+      "new_image": "images/currently-this-is-the-most-valued-expert-in-my-model-factory.jpg"
+    },
+    {
+      "uuid": "155cd450-dee6-5939-91a2-68c103c42583",
+      "date": 1771348327,
+      "old_image": "images/155cd450-dee6-5939-91a2-68c103c42583.jpg",
+      "new_image": "images/expert-optimization-is-going-well-and-im-starting-to-move.jpg"
+    },
+    {
+      "uuid": "5ded4d8c-926a-553f-8d2c-e120bda182f9",
+      "date": 1771378819,
+      "old_image": "images/5ded4d8c-926a-553f-8d2c-e120bda182f9.jpg",
+      "new_image": "images/if-you-invested-just-100-in-gold-in-4000-bce-today-it-would.jpg"
+    },
+    {
+      "uuid": "46265009-3a7b-59ca-b510-6bac3b51b443",
+      "date": 1771425010,
+      "old_image": "images/46265009-3a7b-59ca-b510-6bac3b51b443.jpg",
+      "new_image": "images/after-tweaking-the-existing-set-of-base-learner-models-the.jpg"
+    },
+    {
+      "uuid": "af2c640d-e362-5360-82c4-4c174e1965e2",
+      "date": 1771425600,
+      "old_image": "images/af2c640d-e362-5360-82c4-4c174e1965e2.jpg",
+      "new_image": "images/primary-dealers-failures-to-settle-implications-for-risk.jpg"
+    },
+    {
+      "uuid": "2ccebc05-ff94-55cc-80a3-ed15662439ae",
+      "date": 1771430782,
+      "old_image": "images/2ccebc05-ff94-55cc-80a3-ed15662439ae.png",
+      "new_image": "images/proxy-model-from-polymarkets-15-minute-bitcoin-price.png"
+    },
+    {
+      "uuid": "7dff02cc-70eb-53e5-bfea-a24ddf5e122f",
+      "date": 1771431590,
+      "old_image": "images/7dff02cc-70eb-53e5-bfea-a24ddf5e122f.jpg",
+      "new_image": "images/vibe-coding-vulnerabilities-with-claude-code.jpg"
+    },
+    {
+      "uuid": "09a49ae6-3618-5a48-9304-c0777a9a8b36",
+      "date": 1771504296,
+      "old_image": "images/09a49ae6-3618-5a48-9304-c0777a9a8b36.jpg",
+      "new_image": "images/this-a-gross-oversimplification-of-what-it-takes-to.jpg"
+    },
+    {
+      "uuid": "278dbc39-7323-5f0a-828b-620c28f2eccb",
+      "date": 1771509179,
+      "old_image": "images/278dbc39-7323-5f0a-828b-620c28f2eccb.png",
+      "new_image": "images/added-a-connection-to-binances-futures-api-and-now-i-have.png"
+    },
+    {
+      "uuid": "e06ee014-b16c-5ba2-b710-b605ba1eb64e",
+      "date": 1771509387,
+      "old_image": "images/e06ee014-b16c-5ba2-b710-b605ba1eb64e.png",
+      "new_image": "images/the-models-first-live-data-trade-was-a-successful-bitcoin.png"
+    },
+    {
+      "uuid": "34cac71b-9fbe-5aa7-81e4-ff42c8ba594a",
+      "date": 1771517074,
+      "old_image": "images/34cac71b-9fbe-5aa7-81e4-ff42c8ba594a.jpg",
+      "new_image": "images/the-time-to-optimize-hyperparameters-of-the-random-forest.jpg"
+    }
+  ]
+}

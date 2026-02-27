@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine learning &amp; LLMs: models, forecasting, and finance applications</title>
+    <link rel="canonical" href="https://illya.sh/threads/machine-learning">
+    <meta name="description" content="Research and implementation notes on machine learning systems, including model design, feature engineering, out-of-sample validation, and practical use of LL...">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content='Machine learning & LLMs: models, forecasting, and finance applications' />
+    <meta property="og:type" content='website' />
+    <meta property="og:url" content='https://illya.sh/threads/machine-learning' />
+    <meta property="og:image" content='https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp' />
+    <meta property="og:description" content='Research and implementation notes on machine learning systems, including model design, feature engineering, out-of-sample validation, and practical use of LLMs for financial analysis.' />
+    <meta property="og:site_name" content="Illya's Finance, Crypto & Macro Thoughts" />
+    <meta name="twitter:card" content='summary_large_image' />
+    <meta name="twitter:title" content='Machine learning & LLMs: models, forecasting, and finance applications' />
+    <meta name="twitter:description" content='Research and implementation notes on machine learning systems, including model design, feature engineering, out-of-sample validation, and practical use of LLMs for financial analysis.' />
+    <meta name="twitter:image" content='https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp' />
+    <meta property="og:image:alt" content='Machine learning & LLMs: models, forecasting, and finance applications' />
+    <meta name="twitter:image:alt" content='Machine learning & LLMs: models, forecasting, and finance applications' />
+    <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Threads RSS" href="https://illya.sh/threads/feed.xml"/>
+    <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Thoughts RSS" href="https://illya.sh/thoughts/feed.xml"/>
+    
+    <script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://illya.sh/#person", "name": "Illya Gerasymchuk", "url": "https://illya.sh", "image": "https://illya.sh/staticthoughts/data/profile.png", "sameAs": ["https://github.com/iluxonchik", "https://twitter.com/illyaGera"], "alternateName": "Illya"}, {"@type": "CollectionPage", "name": "Machine learning & LLMs: models, forecasting, and finance applications", "url": "https://illya.sh/threads/machine-learning", "description": "Research and implementation notes on machine learning systems, including model design, feature engineering, out-of-sample validation, and practical use of LLMs for financial analysis.", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "Article", "headline": "record $7 trillion USD in money market funds (mmf)", "url": "https://illya.sh/threads/record-7-trillion-usd-in-money-market-funds-mmf", "mainEntityOfPage": "https://illya.sh/threads/record-7-trillion-usd-in-money-market-funds-mmf", "datePublished": "2025-06-22T08:27:30+00:00", "dateModified": "2025-06-22T08:34:22+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/record-7-trillion-usd-in-money-market-funds-mmf.jpg", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "Article", "headline": "📚chatgpt ratio is great a book quality metric in post-LLM era", "url": "https://illya.sh/threads/chatgpt-ratio-is-great-a-book-quality-metric-in-post-llm-era", "mainEntityOfPage": "https://illya.sh/threads/chatgpt-ratio-is-great-a-book-quality-metric-in-post-llm-era", "datePublished": "2025-07-20T07:58:44+00:00", "dateModified": "2025-07-20T08:11:55+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/chatgpt-ratio-is-great-a-book-quality-metric-in-post-llm-era.jpg", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "Article", "headline": "my article on repo rates and BTC price was referenced on bitcoin.com", "url": "https://illya.sh/threads/my-article-on-repo-rates-and-btc-price-was-referenced-on", "mainEntityOfPage": "https://illya.sh/threads/my-article-on-repo-rates-and-btc-price-was-referenced-on", "datePublished": "2025-09-25T19:12:06+00:00", "dateModified": "2025-09-25T19:20:06+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/my-article-on-repo-rates-and-btc-price-was-referenced-on.jpg", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "Article", "headline": "Added Semantic Categorization Via Embeddings To Articles/Threads On My Website", "url": "https://illya.sh/threads/added-semantic-categorization-via-embeddings-to-articles", "mainEntityOfPage": "https://illya.sh/threads/added-semantic-categorization-via-embeddings-to-articles", "datePublished": "2025-12-05T09:00:03+00:00", "dateModified": "2025-12-05T09:00:03+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/added-semantic-categorization-via-embeddings-to-articles.jpg", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "Article", "headline": "LLMs & AI Agents Didn't Replace Programming - They Evolved It", "url": "https://illya.sh/threads/llms-ai-agents-didnt-replace-programming-they-evolved-it", "mainEntityOfPage": "https://illya.sh/threads/llms-ai-agents-didnt-replace-programming-they-evolved-it", "datePublished": "2026-01-02T15:09:45+00:00", "dateModified": "2026-01-02T15:09:45+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/favicon.png", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "Article", "headline": "AI will follow a much more logarithmic growth than the hype may lead you to believe", "url": "https://illya.sh/threads/ai-will-follow-a-much-more-logarithmic-growth-than-the-hype", "mainEntityOfPage": "https://illya.sh/threads/ai-will-follow-a-much-more-logarithmic-growth-than-the-hype", "datePublished": "2026-02-03T12:58:26+00:00", "dateModified": "2026-02-03T12:58:26+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/favicon.png", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "Article", "headline": "No AGI With LLMs In Their Current Form.", "url": "https://illya.sh/threads/no-agi-with-llms-in-their-current-form", "mainEntityOfPage": "https://illya.sh/threads/no-agi-with-llms-in-their-current-form", "datePublished": "2026-02-05T17:07:46+00:00", "dateModified": "2026-02-05T17:07:46+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/favicon.png", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "Article", "headline": "Don't Be Fooled By Backtest Performance", "url": "https://illya.sh/threads/dont-be-fooled-by-backtest-performance", "mainEntityOfPage": "https://illya.sh/threads/dont-be-fooled-by-backtest-performance", "datePublished": "2026-02-07T19:12:58+00:00", "dateModified": "2026-02-07T19:12:58+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/favicon.png", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "Article", "headline": "My trading ML factory yielded ≈22% return on gold on a daily timeframe, which is almost a double of gold's return in the same time period (≈12%)", "url": "https://illya.sh/threads/my-trading-ml-factory-yielded-22-return-on-gold-on-a-daily", "mainEntityOfPage": "https://illya.sh/threads/my-trading-ml-factory-yielded-22-return-on-gold-on-a-daily", "datePublished": "2026-02-11T17:46:44+00:00", "dateModified": "2026-02-11T18:32:21+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/my-trading-ml-factory-yielded-22-return-on-gold-on-a-daily.jpg", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "Article", "headline": "Overfitting In Machine Learning Models Visualized", "url": "https://illya.sh/threads/overfitting-in-machine-learning-models-visualized", "mainEntityOfPage": "https://illya.sh/threads/overfitting-in-machine-learning-models-visualized", "datePublished": "2026-02-13T13:44:06+00:00", "dateModified": "2026-02-13T13:44:06+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/overfitting-in-machine-learning-models-visualized.jpg", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "Article", "headline": "The random forest that guides my model factory needs refactoring", "url": "https://illya.sh/threads/the-random-forest-that-guides-my-model-factory-needs", "mainEntityOfPage": "https://illya.sh/threads/the-random-forest-that-guides-my-model-factory-needs", "datePublished": "2026-02-16T15:03:02+00:00", "dateModified": "2026-02-16T15:03:02+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/the-random-forest-that-guides-my-model-factory-needs.png", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "Article", "headline": "Proxy Model From Polymarket's 15 Minute Bitcoin Price", "url": "https://illya.sh/threads/proxy-model-from-polymarkets-15-minute-bitcoin-price", "mainEntityOfPage": "https://illya.sh/threads/proxy-model-from-polymarkets-15-minute-bitcoin-price", "datePublished": "2026-02-18T16:06:22+00:00", "dateModified": "2026-02-18T16:06:22+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/proxy-model-from-polymarkets-15-minute-bitcoin-price.png", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "Article", "headline": "Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization", "url": "https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random", "mainEntityOfPage": "https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random", "datePublished": "2026-02-20T15:08:42+00:00", "dateModified": "2026-02-24T12:55:39+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/out-of-sample-permutation-feature-importance-for-random.jpg", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "Article", "headline": "Using Neural Networks To Find Imbalances In Limit Order Books", "url": "https://illya.sh/threads/using-neural-networks-to-find-imbalances-in-limit-order", "mainEntityOfPage": "https://illya.sh/threads/using-neural-networks-to-find-imbalances-in-limit-order", "datePublished": "2026-02-27T12:29:38+00:00", "dateModified": "2026-02-27T12:29:38+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/using-neural-networks-to-find-imbalances-in-limit-order.jpg", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}]}
+</script>
+    
+    <style>
+        /* Shared base layout + profile header styles.
+   Injected into templates via BASE_LAYOUT_AND_PROFILE_CSS placeholder. */
+
+:root {
+    /* Light Theme Variables */
+    --bg-color: #f4f4f4;
+    --container-bg: #ffffff;
+    --box-bg: #fff;
+    --text-color: #333;
+    --secondary-text-color: #555;
+    --light-text-color: #666;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+    --border-color: #ddd;
+    --soft-border-color: #eee;
+    --dashed-border-color: #aaa;
+    --box-shadow-color: rgba(0,0,0,0.08);
+    --lightbox-bg: rgba(0, 0, 0, 0.9);
+    --lightbox-close-bg: rgba(255, 255, 255, 0.8);
+    --lightbox-close-hover-bg: rgba(255, 255, 255, 1);
+    --lightbox-close-color: #000;
+    --disabled-text-color: #aaa;
+    --disabled-bg-color: #f9f9f9;
+    --hover-bg-color: #eee;
+}
+
+/* Dark Theme Variables (applied via media query or body class) */
+.dark-mode {
+    --bg-color: #1a1a1a; /* Dark grey background */
+    --container-bg: #2b2b2b; /* Slightly lighter container */
+    --box-bg: #2b2b2b; /* Same as container for profile/thought boxes */
+    --text-color: #e0e0e0; /* Light grey text */
+    --secondary-text-color: #b0b0b0; /* Medium grey */
+    --light-text-color: #999; /* Lighter grey for dates etc. */
+    --link-color: #58a6ff; /* Lighter blue for links */
+    --link-hover-color: #80bfff; /* Even lighter blue on hover */
+    --border-color: #444; /* Darker border */
+    --soft-border-color: #333; /* Even darker soft border */
+    --dashed-border-color: #666; /* Darker dashed border */
+    --box-shadow-color: rgba(255,255,255,0.08); /* Light shadow */
+    --lightbox-bg: rgba(0, 0, 0, 0.95); /* Slightly more opaque */
+    --lightbox-close-bg: rgba(50, 50, 50, 0.8);
+    --lightbox-close-hover-bg: rgba(70, 70, 70, 1);
+    --lightbox-close-color: #eee;
+    --disabled-text-color: #777;
+    --disabled-bg-color: #3a3a3a;
+    --hover-bg-color: #383838;
+}
+
+/* Apply dark mode based on system preference */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Default to dark variables if system preference is dark */
+        /* This will be overridden if .light-mode is explicitly set */
+        --bg-color: #1a1a1a;
+        --container-bg: #2b2b2b;
+        --box-bg: #2b2b2b;
+        --text-color: #e0e0e0;
+        --secondary-text-color: #b0b0b0;
+        --light-text-color: #999;
+        --link-color: #58a6ff;
+        --link-hover-color: #80bfff;
+        --border-color: #444;
+        --soft-border-color: #333;
+        --dashed-border-color: #666;
+        --box-shadow-color: rgba(255,255,255,0.08);
+        --lightbox-bg: rgba(0, 0, 0, 0.95);
+        --lightbox-close-bg: rgba(50, 50, 50, 0.8);
+        --lightbox-close-hover-bg: rgba(70, 70, 70, 1);
+        --lightbox-close-color: #eee;
+        --disabled-text-color: #777;
+        --disabled-bg-color: #3a3a3a;
+        --hover-bg-color: #383838;
+    }
+
+    /* Ensure explicit light mode overrides system pref */
+    .light-mode {
+        --bg-color: #f4f4f4;
+        --container-bg: #ffffff;
+        --box-bg: #fff;
+        --text-color: #333;
+        --secondary-text-color: #555;
+        --light-text-color: #666;
+        --link-color: #007bff;
+        --link-hover-color: #0056b3;
+        --border-color: #ddd;
+        --soft-border-color: #eee;
+        --dashed-border-color: #aaa;
+        --box-shadow-color: rgba(0,0,0,0.08);
+        --lightbox-bg: rgba(0, 0, 0, 0.9);
+        --lightbox-close-bg: rgba(255, 255, 255, 0.8);
+        --lightbox-close-hover-bg: rgba(255, 255, 255, 1);
+        --lightbox-close-color: #000;
+        --disabled-text-color: #aaa;
+        --disabled-bg-color: #f9f9f9;
+        --hover-bg-color: #eee;
+    }
+}
+
+/* --- Webfont: Literata (variable, WOFF2) for reading surfaces --- */
+@font-face {
+    font-family: 'Literata';
+    src: url('/staticthoughts/data/fonts/literata/Literata-VF-latin.woff2') format('woff2-variations');
+    font-style: normal;
+    font-weight: 200 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Literata';
+    src: url('/staticthoughts/data/fonts/literata/Literata-Italic-VF-latin.woff2') format('woff2-variations');
+    font-style: italic;
+    font-weight: 200 900;
+    font-display: swap;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: var(--bg-color); /* USE VAR */
+    color: var(--text-color); /* USE VAR - Set default text color */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none; /* Consistent link styling */
+    transition: color 0.2s ease;
+}
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+a:visited {
+    color: var(--link-color); /* Ensure visited links use theme color */
+}
+
+.container {
+    background-color: var(--container-bg); /* USE VAR */
+    padding: 25px;
+    border: 1px solid var(--border-color); /* USE VAR */
+    max-width: 750px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 1px 4px var(--box-shadow-color); /* USE VAR */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+/* Profile Box Styling */
+.profile-box {
+    border: 2px dashed var(--dashed-border-color); /* USE VAR */
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: var(--box-bg); /* USE VAR */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+.profile-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0; /* Remove vertical spacing */
+    width: 100%;
+}
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 1px solid var(--soft-border-color); /* USE VAR */
+    box-shadow: 0 0 0 4px #00aef5;
+    flex-shrink: 0;
+    cursor: pointer; /* Theme toggle on thoughts pages */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.profile-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 2px;
+    color: var(--text-color); /* Ensure uses variable */
+}
+.profile-title {
+    color: var(--secondary-text-color); /* USE VAR */
+    font-size: 0.95em;
+}
+.profile-links {
+    font-size: 0.9em;
+    color: var(--secondary-text-color); /* USE VAR */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px 16px;
+    padding: 0;
+    margin-top: 12px;
+    line-height: 1.4;
+}
+.profile-links a {
+    text-decoration: none;
+    color: var(--link-color); /* USE VAR */
+    transition: color 0.2s ease;
+    white-space: nowrap;
+    padding: 2px 4px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.profile-links a:hover {
+    color: var(--link-hover-color); /* USE VAR */
+    background-color: var(--hover-bg-color);
+}
+
+/* Shared responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 15px;
+        max-width: 100%;
+    }
+    /* Adjusted Profile Box for Mobile */
+    .profile-box {
+        padding: 12px; /* Further reduced padding */
+        margin-bottom: 25px; /* Further reduced margin */
+    }
+    /* Adjusted Profile Content for Mobile */
+    .profile-content {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0; /* No spacing between profile content and links */
+    }
+    .profile-img {
+        width: 50px;
+        height: 50px;
+        margin-right: 12px;
+    }
+    .profile-name {
+        font-size: 1.1em;
+    }
+    .profile-title {
+        font-size: 0.9em;
+    }
+    /* Adjusted Profile Links for Mobile */
+    .profile-links {
+        font-size: 0.82em;
+        margin-top: 10px;
+        gap: 6px 12px; /* Optimized gap for mobile */
+        justify-content: center; /* Ensure centering on mobile too */
+        line-height: 1.3;
+    }
+    .profile-links a {
+        padding: 3px 6px; /* Slightly more padding for easier mobile tapping */
+        border-radius: 4px;
+    }
+}
+
+/* Extra small screens (iPhone SE, etc.) */
+@media (max-width: 375px) {
+    .profile-links {
+        font-size: 0.78em;
+        gap: 4px 8px; /* Tighter gap for very small screens */
+        margin-top: 8px;
+    }
+    .profile-links a {
+        padding: 2px 4px; /* Compact padding for very small screens */
+        border-radius: 3px;
+    }
+}
+
+
+
+        /* Threads header */
+        .threads-header {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: var(--text-color);
+            margin: 0 0 25px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--soft-border-color);
+            text-align: center;
+        }
+        .threads-header {
+            font-family: Georgia, 'Literata', serif;
+            font-weight: 600;
+            font-optical-sizing: auto;
+        }
+        .threads-description {
+            margin: -10px 0 25px 0;
+            color: var(--secondary-text-color);
+            text-align: center;
+            font-size: 0.95em;
+            line-height: 1.35;
+        }
+
+        /* Thread entry styling */
+        .thread-entry {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--box-bg);
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .thread-entry:hover {
+            background-color: var(--hover-bg-color);
+            border-color: var(--text-color);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .thread-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 1px solid var(--soft-border-color);
+            flex-shrink: 0;
+        }
+
+        .thread-info {
+            flex-grow: 1;
+            min-width: 0;
+        }
+
+        .thread-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: var(--text-color);
+            margin: 0 0 3px 0;
+            line-height: 1.25;
+            word-wrap: break-word;
+        }
+        .thread-title {
+            font-family: 'Literata', Georgia, serif;
+            font-weight: 400;
+            font-optical-sizing: auto;
+        }
+
+        .thread-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 0.8em;
+            color: var(--secondary-text-color);
+            margin-top: 2px;
+            line-height: 1.2;
+        }
+
+        .thread-stats {
+            font-size: 0.75em;
+            color: var(--light-text-color);
+            margin-top: 1px;
+            line-height: 1.2;
+        }
+
+        /* Pagination styling */
+        .pagination {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--soft-border-color);
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: border-color 0.3s ease;
+        }
+        .pagination a, .pagination span {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 0 4px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: var(--link-color);
+            text-decoration: none;
+            transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+            font-size: 0.9em;
+        }
+        .pagination a:hover {
+            background-color: var(--hover-bg-color);
+            color: var(--link-hover-color);
+        }
+        .pagination span.disabled {
+            color: var(--disabled-text-color);
+            background-color: var(--disabled-bg-color);
+            cursor: default;
+            border-color: var(--border-color);
+        }
+        .pagination span.page-info {
+            border: none;
+            color: var(--secondary-text-color);
+            background-color: transparent;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            .threads-header {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+            }
+            .thread-entry {
+                padding: 12px;
+                margin-bottom: 12px;
+            }
+            .thread-image {
+                width: 50px;
+                height: 50px;
+                margin-right: 12px;
+            }
+            .thread-title {
+                font-size: 1em;
+            }
+            .thread-meta {
+                flex-direction: column;
+                gap: 2px;
+                font-size: 0.75em;
+            }
+            .thread-stats {
+                font-size: 0.7em;
+                margin-top: 1px;
+            }
+            .pagination {
+                margin-top: 20px;
+                padding-top: 15px;
+                font-size: 0.85em;
+            }
+            .pagination a, .pagination span {
+                padding: 6px 10px;
+                margin: 0 2px;
+            }
+            .pagination span.page-info {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-box">
+    <div class="profile-content">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="Profile Picture" class="profile-img">
+        <div class="profile-details">
+            <div class="profile-name">Illya Gerasymchuk</div>
+            <div class="profile-title">Engineering & Finance</div>
+        </div>
+    </div>
+    <div class="profile-links">
+        <a href="https://illya.sh" target="_blank">🏠 Homepage</a><a href="https://illya.sh/thoughts/">💭 Thoughts</a><a href="https://illya.sh/threads/topics/">📂 Topics</a><a href="mailto:hello@illya.sh" target="_blank">✉️ Email</a><a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a><a href="https://illya.sh/threads/feed.xml" target="_blank">📡 RSS</a>
+    </div>
+</div>
+
+        <h2 class="threads-header">Machine learning &amp; LLMs: models, forecasting, and finance applications</h2>
+        <p class="threads-description">Research and implementation notes on machine learning systems, including model design, feature engineering, out-of-sample validation, and practical use of LLMs for financial analysis.</p>
+        <div class="threads-section">
+            <a href="https://illya.sh/threads/using-neural-networks-to-find-imbalances-in-limit-order" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/images/using-neural-networks-to-find-imbalances-in-limit-order.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">Using Neural Networks To Find Imbalances In Limit Order Books</div>
+        <div class="thread-meta">
+            <span>Started: 2026-02-27</span>
+            <span>Updated: 2026-02-27</span>
+        </div>
+        <div class="thread-stats">1 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/images/out-of-sample-permutation-feature-importance-for-random.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization</div>
+        <div class="thread-meta">
+            <span>Started: 2026-02-20</span>
+            <span>Updated: 2026-02-24</span>
+        </div>
+        <div class="thread-stats">4 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/proxy-model-from-polymarkets-15-minute-bitcoin-price" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/images/proxy-model-from-polymarkets-15-minute-bitcoin-price.png" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">Proxy Model From Polymarket&#x27;s 15 Minute Bitcoin Price</div>
+        <div class="thread-meta">
+            <span>Started: 2026-02-18</span>
+            <span>Updated: 2026-02-18</span>
+        </div>
+        <div class="thread-stats">1 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/the-random-forest-that-guides-my-model-factory-needs" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/images/the-random-forest-that-guides-my-model-factory-needs.png" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">The random forest that guides my model factory needs refactoring</div>
+        <div class="thread-meta">
+            <span>Started: 2026-02-16</span>
+            <span>Updated: 2026-02-16</span>
+        </div>
+        <div class="thread-stats">1 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/overfitting-in-machine-learning-models-visualized" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/images/overfitting-in-machine-learning-models-visualized.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">Overfitting In Machine Learning Models Visualized</div>
+        <div class="thread-meta">
+            <span>Started: 2026-02-13</span>
+            <span>Updated: 2026-02-13</span>
+        </div>
+        <div class="thread-stats">1 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/my-trading-ml-factory-yielded-22-return-on-gold-on-a-daily" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/images/my-trading-ml-factory-yielded-22-return-on-gold-on-a-daily.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">My trading ML factory yielded ≈22% return on gold on a daily timeframe, which is almost a double of gold&#x27;s return in the same time period (≈12%)</div>
+        <div class="thread-meta">
+            <span>Started: 2026-02-11</span>
+            <span>Updated: 2026-02-11</span>
+        </div>
+        <div class="thread-stats">2 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/dont-be-fooled-by-backtest-performance" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/favicon.png" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">Don&#x27;t Be Fooled By Backtest Performance</div>
+        <div class="thread-meta">
+            <span>Started: 2026-02-07</span>
+            <span>Updated: 2026-02-07</span>
+        </div>
+        <div class="thread-stats">1 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/no-agi-with-llms-in-their-current-form" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/favicon.png" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">No AGI With LLMs In Their Current Form.</div>
+        <div class="thread-meta">
+            <span>Started: 2026-02-05</span>
+            <span>Updated: 2026-02-05</span>
+        </div>
+        <div class="thread-stats">1 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/ai-will-follow-a-much-more-logarithmic-growth-than-the-hype" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/favicon.png" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">AI will follow a much more logarithmic growth than the hype may lead you to believe</div>
+        <div class="thread-meta">
+            <span>Started: 2026-02-03</span>
+            <span>Updated: 2026-02-03</span>
+        </div>
+        <div class="thread-stats">1 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/llms-ai-agents-didnt-replace-programming-they-evolved-it" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/favicon.png" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">LLMs &amp; AI Agents Didn&#x27;t Replace Programming - They Evolved It</div>
+        <div class="thread-meta">
+            <span>Started: 2026-01-02</span>
+            <span>Updated: 2026-01-02</span>
+        </div>
+        <div class="thread-stats">1 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/added-semantic-categorization-via-embeddings-to-articles" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/images/added-semantic-categorization-via-embeddings-to-articles.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">Added Semantic Categorization Via Embeddings To Articles/Threads On My Website</div>
+        <div class="thread-meta">
+            <span>Started: 2025-12-05</span>
+            <span>Updated: 2025-12-05</span>
+        </div>
+        <div class="thread-stats">1 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/my-article-on-repo-rates-and-btc-price-was-referenced-on" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/images/my-article-on-repo-rates-and-btc-price-was-referenced-on.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">my article on repo rates and BTC price was referenced on bitcoin.com</div>
+        <div class="thread-meta">
+            <span>Started: 2025-09-25</span>
+            <span>Updated: 2025-09-25</span>
+        </div>
+        <div class="thread-stats">2 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/chatgpt-ratio-is-great-a-book-quality-metric-in-post-llm-era" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/images/chatgpt-ratio-is-great-a-book-quality-metric-in-post-llm-era.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">📚chatgpt ratio is great a book quality metric in post-LLM era</div>
+        <div class="thread-meta">
+            <span>Started: 2025-07-20</span>
+            <span>Updated: 2025-07-20</span>
+        </div>
+        <div class="thread-stats">2 thoughts</div>
+    </div>
+</a>
+<a href="https://illya.sh/threads/record-7-trillion-usd-in-money-market-funds-mmf" class="thread-entry">
+    <img src="https://illya.sh/staticthoughts/data/images/record-7-trillion-usd-in-money-market-funds-mmf.jpg" alt="Thread image" class="thread-image">
+    <div class="thread-info">
+        <div class="thread-title">record $7 trillion USD in money market funds (mmf)</div>
+        <div class="thread-meta">
+            <span>Started: 2025-06-22</span>
+            <span>Updated: 2025-06-22</span>
+        </div>
+        <div class="thread-stats">2 thoughts</div>
+    </div>
+</a>
+        </div>
+        
+    </div>
+</body>
+</html>
