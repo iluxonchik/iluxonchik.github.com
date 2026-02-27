@@ -1211,7 +1211,6 @@ https://illya.sh/thoughts/gold/2
 https://illya.sh/thoughts/gold/3
 https://illya.sh/thoughts/gold/4
 https://illya.sh/thoughts/machine-learning/1
-https://illya.sh/thoughts/machine-learning/2
 https://illya.sh/thoughts/monetary-policy/1
 https://illya.sh/thoughts/monetary-policy/2
 https://illya.sh/thoughts/monetary-policy/3
