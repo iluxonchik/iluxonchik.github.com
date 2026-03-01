@@ -872,6 +872,7 @@ https://illya.sh/thoughts/so-everything-that-i-post-on-other-social-media-like-x
 https://illya.sh/thoughts/so-expect-a-2008-qe-1-style-balance-sheet-expansion-by-the
 https://illya.sh/thoughts/so-how-can-you-buy-russian-securities-in-the-eu
 https://illya.sh/thoughts/so-how-does-the-fed-currently-targets-an-interest-rate-range
+https://illya.sh/thoughts/so-i-extended-my-mcp-server-with-a-tool-to-execute-arbitrary
 https://illya.sh/thoughts/so-i-solved-the-overfitting-issue-and-as-i-suspected
 https://illya.sh/thoughts/so-if-the-us-treasury-revaluated-gold-and-used-all-those
 https://illya.sh/thoughts/so-if-you-have-a-ust-bond-worth-100

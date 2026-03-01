@@ -1,10 +1,20 @@
 ﻿👋 Hi! I'm Illya Gerasymchuk
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
-🏠 Homepage: https://illya.sh
+🏠 Homepage: https://illya.sh/
 🧠 Thoughts: https://illya.sh/thoughts/
 📝 Blog: https://illya.sh/blog/
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
+
+⏰ 2026-02-27 14:35
+
+So I extended my MCP server with a tool to execute arbitrary Python code, and now that's pretty much the only tool the host agent is using 😂
+
+Instead of reusing the other tools, the agent prefers to write the whole logic from scratch and then pass to the MCP to execute it. It worked fine, but it's using too many tokens.
+
+Code and context limitations are in the process of being imposed.
+
+~ ✨ ~
 
 ⏰ 2026-02-27 12:29
 

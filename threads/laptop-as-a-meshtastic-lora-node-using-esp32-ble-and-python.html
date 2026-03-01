@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🧵Laptop as a Meshtastic LoRa Node Using ESP32, BLE and Python</title>
+    <title>Laptop as a Meshtastic LoRa Node Using ESP32, BLE and Python</title>
     <link rel="canonical" href="https://illya.sh/threads/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python">
     <meta name="description" content="Meshtastic exposes a BLE interface and comes with a nice Python library. So I connected to the ESP32 with a LoRA module over bluetooth, and was able to send...">
     <meta name="robots" content="index, follow">
     
-    <meta property="og:title" content='🧵Laptop as a Meshtastic LoRa Node Using ESP32, BLE and Python' />
-    <meta property="og:type" content='article' />
-    <meta property="og:url" content='https://illya.sh/threads/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python' />
-    <meta property="og:image" content='https://illya.sh/staticthoughts/data/images/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python.jpg' />
-    <meta property="og:description" content='Meshtastic exposes a BLE interface and comes with a nice Python library. So I connected to the ESP32 with a LoRA module over bluetooth, and was able to send and receive messages from a Python scr...' />
-    <meta property="og:site_name" content="Illya's Finance, Crypto & Macro Thoughts" />
-    <meta name="twitter:card" content='summary_large_image' />
-    <meta name="twitter:title" content='🧵Laptop as a Meshtastic LoRa Node Using ESP32, BLE and Python' />
-    <meta name="twitter:description" content='Meshtastic exposes a BLE interface and comes with a nice Python library. So I connected to the ESP32 with a LoRA module over bluetooth, and was able to send and receive messages from a Python scr...' />
-    <meta name="twitter:image" content='https://illya.sh/staticthoughts/data/images/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python.jpg' />
-    <meta property="og:image:alt" content='Laptop as a Meshtastic LoRa Node Using ESP32, BLE and Python' />
-    <meta name="twitter:image:alt" content='Laptop as a Meshtastic LoRa Node Using ESP32, BLE and Python' />
+    <meta property="og:title" content="Laptop as a Meshtastic LoRa Node Using ESP32, BLE and Python" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://illya.sh/threads/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python" />
+    <meta property="og:image" content="https://illya.sh/staticthoughts/data/images/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python.jpg" />
+    <meta property="og:description" content="Meshtastic exposes a BLE interface and comes with a nice Python library. So I connected to the ESP32 with a LoRA module over bluetooth, and was able to send and receive messages from a Python scr..." />
+    <meta property="og:site_name" content="Illya Gerasymchuk | Financial Markets, Macro, Bitcoin &amp; Commodities" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Laptop as a Meshtastic LoRa Node Using ESP32, BLE and Python" />
+    <meta name="twitter:description" content="Meshtastic exposes a BLE interface and comes with a nice Python library. So I connected to the ESP32 with a LoRA module over bluetooth, and was able to send and receive messages from a Python scr..." />
+    <meta name="twitter:image" content="https://illya.sh/staticthoughts/data/images/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python.jpg" />
+    <meta property="og:image:alt" content="Laptop as a Meshtastic LoRa Node Using ESP32, BLE and Python" />
+    <meta name="twitter:image:alt" content="Laptop as a Meshtastic LoRa Node Using ESP32, BLE and Python" />
     <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Threads RSS" href="https://illya.sh/threads/feed.xml"/>
     <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Thoughts RSS" href="https://illya.sh/thoughts/feed.xml"/>
     
     <script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://illya.sh/#person", "name": "Illya Gerasymchuk", "url": "https://illya.sh", "image": "https://illya.sh/staticthoughts/data/profile.png", "sameAs": ["https://github.com/iluxonchik", "https://twitter.com/illyaGera"], "alternateName": "Illya"}, {"@type": "Article", "headline": "Laptop as a Meshtastic LoRa Node Using ESP32, BLE and Python", "articleBody": "Meshtastic exposes a BLE interface and comes with a nice Python library. So I connected to the ESP32 with a LoRA module over bluetooth, and was able to send and receive messages from a Python script running on a laptop.\n\nEssentially, the laptop uses the microcontroller as a proxy for the sub-GHz antenna (EU_868/≈868 MHz in Europe), enabling it to send and receive LoRa messages via Meshtastic's firmware. So effectively Bluetooth Low Energy is used as a proxy protocol for LoRa.\n\nThere were two nodes in the mesh - one connected to the laptop and another to a smartphone. Both nodes had the same channel name, Pre-Shared Key (PSK) and ordering (channel id) setup. The laptop node was using Python to connect to the mesh via BLE and exchange messages. The smartphone was connected to the other node, and the official Meshtastic app was used to send and receive messages.\n\nThe setup is as follows:\n\n💻 Laptop (Python)\n   ⇅ BLE\n📡 Node A (ESP32 + LoRa)\n   ≈≈≈ 868 MHz LoRa mesh ≈≈≈\n📡 Node B (ESP32 + LoRa)\n   ⇅ BLE\n📱 Phone (Meshtastic app)\n\nSo you don't really need to program the ESP32 to make it a \"smart\" LoRa node. You can program all of the logic on your usual dev machine, and use BLE as a proxy for LoRa packets over Meshtastic. This is a great approach for iterative development, prototyping, proof of concepts and even final products. Of course, you can also put the smart node code on a Raspberry Pi, Arduino or even the microcontroller itself.", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "url": "https://illya.sh/threads/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python", "mainEntityOfPage": "https://illya.sh/threads/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python", "datePublished": "2025-12-06T15:51:27+00:00", "dateModified": "2025-12-06T15:51:27+00:00", "keywords": "crypto, finance, law, AI, software development, economics, blockchain, markets", "image": "https://illya.sh/staticthoughts/data/images/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python.jpg"}]}
+{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://illya.sh/#person", "name": "Illya Gerasymchuk", "url": "https://illya.sh", "image": "https://illya.sh/staticthoughts/data/profile.png", "sameAs": ["https://illya.sh", "https://github.com/iluxonchik", "https://twitter.com/illyaGera", "https://x.com/illyaGera"], "alternateName": "Illya", "jobTitle": "Financial & Software Engineer", "description": "I build software and write about how money moves: central banks, liquidity, financial market structure, commodities, Bitcoin, crypto markets, and AI systems.", "knowsAbout": ["Monetary policy", "Central banks", "Global liquidity", "Financial market structure", "Market microstructure", "Financial system infrastructure", "Commodities", "Gold", "Silver", "Bitcoin", "Crypto markets", "DeFi", "Stablecoins", "Foreign exchange", "AI systems", "Agentic AI systems", "Software engineering", "Financial law"]}, {"@type": "Article", "headline": "Laptop as a Meshtastic LoRa Node Using ESP32, BLE and Python", "articleBody": "Meshtastic exposes a BLE interface and comes with a nice Python library. So I connected to the ESP32 with a LoRA module over bluetooth, and was able to send and receive messages from a Python script running on a laptop.\n\nEssentially, the laptop uses the microcontroller as a proxy for the sub-GHz antenna (EU_868/≈868 MHz in Europe), enabling it to send and receive LoRa messages via Meshtastic's firmware. So effectively Bluetooth Low Energy is used as a proxy protocol for LoRa.\n\nThere were two nodes in the mesh - one connected to the laptop and another to a smartphone. Both nodes had the same channel name, Pre-Shared Key (PSK) and ordering (channel id) setup. The laptop node was using Python to connect to the mesh via BLE and exchange messages. The smartphone was connected to the other node, and the official Meshtastic app was used to send and receive messages.\n\nThe setup is as follows:\n\n💻 Laptop (Python)\n   ⇅ BLE\n📡 Node A (ESP32 + LoRa)\n   ≈≈≈ 868 MHz LoRa mesh ≈≈≈\n📡 Node B (ESP32 + LoRa)\n   ⇅ BLE\n📱 Phone (Meshtastic app)\n\nSo you don't really need to program the ESP32 to make it a \"smart\" LoRa node. You can program all of the logic on your usual dev machine, and use BLE as a proxy for LoRa packets over Meshtastic. This is a great approach for iterative development, prototyping, proof of concepts and even final products. Of course, you can also put the smart node code on a Raspberry Pi, Arduino or even the microcontroller itself.", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "url": "https://illya.sh/threads/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python", "mainEntityOfPage": "https://illya.sh/threads/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python", "datePublished": "2025-12-06T15:51:27+00:00", "dateModified": "2025-12-06T15:51:27+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "image": "https://illya.sh/staticthoughts/data/images/laptop-as-a-meshtastic-lora-node-using-esp32-ble-and-python.jpg"}]}
 </script>
     
     <style>
@@ -614,14 +614,14 @@ a:visited {
     <div class="container">
         <div class="profile-box">
     <div class="profile-content">
-        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="Profile Picture" class="profile-img">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="Illya Gerasymchuk profile photo" class="profile-img">
         <div class="profile-details">
             <div class="profile-name">Illya Gerasymchuk</div>
-            <div class="profile-title">Engineering & Finance</div>
+            <div class="profile-title">Financial & Software Engineer</div>
         </div>
     </div>
     <div class="profile-links">
-        <a href="https://illya.sh" target="_blank">🏠 Homepage</a><a href="https://illya.sh/thoughts/">💭 Thoughts</a><a href="https://illya.sh/threads/topics/">📂 Topics</a><a href="mailto:hello@illya.sh" target="_blank">✉️ Email</a><a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a><a href="https://illya.sh/threads/feed.xml" target="_blank">📡 RSS</a>
+        <a href="https://illya.sh/" target="_blank">About Illya Gerasymchuk</a><a href="https://illya.sh/thoughts/">💭 Thoughts</a><a href="https://illya.sh/threads/topics/">📂 Topics</a><a href="mailto:hello@illya.sh" target="_blank">✉️ Email</a><a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a><a href="https://illya.sh/threads/feed.xml" target="_blank">📡 RSS</a>
     </div>
 </div>
 

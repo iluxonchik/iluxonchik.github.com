@@ -1,6 +1,6 @@
-# Illya's Finance, Crypto & Macro Thoughts
+# Illya Gerasymchuk | Financial Markets, Macro, Bitcoin & Commodities
 
-Microblog and article threads by Illya Gerasymchuk on finance, money, gold & silver, global liquidity, Bitcoin & crypto, DeFi, AI and law & financial markets.
+Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financial market structure, commodities, Bitcoin, crypto markets, machine learing and agentic AI systems.
 
 ## Author
 - Name: Illya Gerasymchuk
@@ -17,7 +17,8 @@ Microblog and article threads by Illya Gerasymchuk on finance, money, gold & sil
 - Thoughts RSS: https://illya.sh/thoughts/feed.xml
 - Threads RSS: https://illya.sh/threads/feed.xml
 
-## Latest Thoughts (20)
+## Latest Thoughts (30)
+- https://illya.sh/thoughts/so-i-extended-my-mcp-server-with-a-tool-to-execute-arbitrary
 - https://illya.sh/thoughts/using-neural-networks-to-find-imbalances-in-limit-order
 - https://illya.sh/thoughts/ive-been-running-live-a-tuned-model-designed-to-predict
 - https://illya.sh/thoughts/the-model-factory-has-been-refactored-to-use-a-dsl-for
@@ -38,8 +39,17 @@ Microblog and article threads by Illya Gerasymchuk on finance, money, gold & sil
 - https://illya.sh/thoughts/expert-optimization-is-going-well-and-im-starting-to-move
 - https://illya.sh/thoughts/currently-this-is-the-most-valued-expert-in-my-model-factory
 - https://illya.sh/thoughts/my-random-forest-looks-much-better-after-the-clean-up
+- https://illya.sh/thoughts/my-ml-model-factory-produced-this-amazing-model-that-trades
+- https://illya.sh/thoughts/they-say-that-ai-agents-will-replace-all-white-collar-jobs
+- https://illya.sh/thoughts/the-random-forest-that-guides-my-model-factory-needs
+- https://illya.sh/thoughts/china-banned-gold-silver-as-money-in-1983
+- https://illya.sh/thoughts/gold-outperformed-bitcoin-in-the-last-8-years
+- https://illya.sh/thoughts/my-wife-and-i-met-the-charging-bull-himself
+- https://illya.sh/thoughts/china-also-banned-gold-silver-in-1983
+- https://illya.sh/thoughts/in-1934-the-u-s-government-had-to-legally-raise-the-price-of
+- https://illya.sh/thoughts/how-usa-profited-70-on-gold-in-1-year
 
-## Latest Threads (10)
+## Latest Threads (30)
 - https://illya.sh/threads/using-neural-networks-to-find-imbalances-in-limit-order
 - https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random
 - https://illya.sh/threads/vibe-coding-vulnerabilities-with-claude-code
@@ -50,3 +60,23 @@ Microblog and article threads by Illya Gerasymchuk on finance, money, gold & sil
 - https://illya.sh/threads/gold-outperformed-bitcoin-in-the-last-8-years
 - https://illya.sh/threads/how-usa-profited-70-on-gold-in-1-year
 - https://illya.sh/threads/central-bank-of-russia-denies-return-to-usd-payments
+- https://illya.sh/threads/overfitting-in-machine-learning-models-visualized
+- https://illya.sh/threads/fact-check-russia-moving-back-to-usd
+- https://illya.sh/threads/my-trading-ml-factory-yielded-22-return-on-gold-on-a-daily
+- https://illya.sh/threads/scarcity-doesnt-make-bitcoin-better-than-gold
+- https://illya.sh/threads/dont-be-fooled-by-backtest-performance
+- https://illya.sh/threads/no-agi-with-llms-in-their-current-form
+- https://illya.sh/threads/ai-will-follow-a-much-more-logarithmic-growth-than-the-hype
+- https://illya.sh/threads/metropolitan-capital-bank-trust-is-the-first-us-bank-to-fail
+- https://illya.sh/threads/palladium-is-a-great-investment-in-2026
+- https://illya.sh/threads/copper-extends-its-gains-to-9-on-the-day-and-its
+- https://illya.sh/threads/todays-commodity-miners-sell-off-is-a-buying-opportunity
+- https://illya.sh/threads/natural-gas-prices-are-very-volatile
+- https://illya.sh/threads/silver-miners-are-up-12-since-my-recommendation-from-4-days
+- https://illya.sh/threads/dont-overthink-commodity-miners-investments
+- https://illya.sh/threads/copper-is-a-great-investment-in-2026-technicals-fundamentals
+- https://illya.sh/threads/yesterday-i-explained-why-silver-mining-stocks-are
+- https://illya.sh/threads/a-month-ago-me-and-gemini-2-5-pro-deep-research-had-a
+- https://illya.sh/threads/good-for-gold-bad-for-usd-us-tariffs-on-europe
+- https://illya.sh/threads/even-as-central-banks-bought-gold-the-market-analysts
+- https://illya.sh/threads/silver-mining-stocks-are-undervalued-in-2026
