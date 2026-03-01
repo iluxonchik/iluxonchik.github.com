@@ -257,6 +257,19 @@ a:visited {
     background-color: var(--hover-bg-color);
 }
 
+/* Screen-reader only content (kept semantic/SEO-visible, visually hidden). */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* Shared responsive */
 @media (max-width: 600px) {
     body {
@@ -314,7 +327,6 @@ a:visited {
         border-radius: 3px;
     }
 }
-
 
 
         /* Thoughts Header - Section Title Style */
@@ -1029,11 +1041,11 @@ a:visited {
         </div>
     </div>
     <div class="profile-links">
-        <a href="https://illya.sh/" target="_blank">About Illya Gerasymchuk</a><a href="https://illya.sh/threads/">🧵 Threads</a><a href="https://illya.sh/thoughts/topics/">📂 Topics</a><a href="mailto:hello@illya.sh" target="_blank">✉️ Email</a><a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a><a href="https://illya.sh/thoughts/feed.xml" target="_blank">📡 RSS</a>
+        <a href="https://illya.sh/" target="_blank" title="About Illya Gerasymchuk (Homepage)" aria-label="About Illya Gerasymchuk (Homepage)">🏠 About Illya</a><a href="https://illya.sh/threads/">🧵 Threads</a><a href="https://illya.sh/thoughts/topics/">📂 Topics</a><a href="mailto:hello@illya.sh" target="_blank">✉️ Email</a><a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a><a href="https://illya.sh/thoughts/feed.xml" target="_blank">📡 RSS</a>
     </div>
 </div>
 
-        <h1 class="thoughts-header">Bank of International Settlements (BIS) has  a lot of interesting papers, articles and data  on global liquidity and financial system</h1>
+        <h1 class="visually-hidden thought-page-title">Bank of International Settlements (BIS) has  a lot of interesting papers, articles and data  on global liquidity and financial system</h1>
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
