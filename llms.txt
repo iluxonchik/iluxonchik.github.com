@@ -18,6 +18,8 @@ Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financ
 - Threads RSS: https://illya.sh/threads/feed.xml
 
 ## Latest Thoughts (30)
+- https://illya.sh/thoughts/why-high-oil-prices-are-bad-for-usd-hint-china-credit
+- https://illya.sh/thoughts/crude-oil-prices-continue-to-increase
 - https://illya.sh/thoughts/so-i-extended-my-mcp-server-with-a-tool-to-execute-arbitrary
 - https://illya.sh/thoughts/using-neural-networks-to-find-imbalances-in-limit-order
 - https://illya.sh/thoughts/ive-been-running-live-a-tuned-model-designed-to-predict
@@ -46,10 +48,10 @@ Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financ
 - https://illya.sh/thoughts/gold-outperformed-bitcoin-in-the-last-8-years
 - https://illya.sh/thoughts/my-wife-and-i-met-the-charging-bull-himself
 - https://illya.sh/thoughts/china-also-banned-gold-silver-in-1983
-- https://illya.sh/thoughts/in-1934-the-u-s-government-had-to-legally-raise-the-price-of
-- https://illya.sh/thoughts/how-usa-profited-70-on-gold-in-1-year
 
 ## Latest Threads (30)
+- https://illya.sh/threads/why-high-oil-prices-are-bad-for-usd-hint-china-credit
+- https://illya.sh/threads/crude-oil-prices-continue-to-increase
 - https://illya.sh/threads/using-neural-networks-to-find-imbalances-in-limit-order
 - https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random
 - https://illya.sh/threads/vibe-coding-vulnerabilities-with-claude-code
@@ -78,5 +80,3 @@ Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financ
 - https://illya.sh/threads/yesterday-i-explained-why-silver-mining-stocks-are
 - https://illya.sh/threads/a-month-ago-me-and-gemini-2-5-pro-deep-research-had-a
 - https://illya.sh/threads/good-for-gold-bad-for-usd-us-tariffs-on-europe
-- https://illya.sh/threads/even-as-central-banks-bought-gold-the-market-analysts
-- https://illya.sh/threads/silver-mining-stocks-are-undervalued-in-2026

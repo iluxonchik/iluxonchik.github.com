@@ -6,6 +6,44 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2026-03-02 15:48
+
+Why High Oil Prices Are Bad For USD (HINT: China & Credit)
+
+I don’t think that higher oil prices will help the value of US dollar medium to long-term this time. Higher oil prices induce higher prices for producers, which lead to higher prices for consumers. The US economy is already extremely dependent on its refinancing capacity. Currently, there are liquidity stress signs across several Fed facilities, which make that refinancing/rolling-over more difficult.
+
+Higher oil prices, means even more new financing to cover the additional costs, which will further increase the country's refinancing burden. So this would push up not only broad & base money, but also raise their "baseline". The "baseline" will increase because the notional USD amount to refinance in the future will increase, meaning higher future liquidity needs.
+
+In the most basic sense, this will increase the domestic supply of USD. If you consider the current slow, but steady decrease of demand for US Treasury debt instruments -- that's reduced demand for USD. Increased supply, combined with a reduced demand, implies a lower price.
+
+The most notable instance of Treasury holding reductions (including not rolling them) is by People's Republic of China -- the world's #1 largest exporter, and China's explicit goal of increasing the share of renminbi in international settlement. Although the first country to successfully move away from USD was Russia -- and they did that by effectively swapping USD-denominated assets for gold and renminbi. If you go back in history, you will find a presidential order from the Russian Federation's president instructing the Central Bank of Russia to increase their gold tonnage holdings back in 2005. Other sovereigns are likely replicate this model, at least in part.
+
+I believe the ECB + NCBs in the EU may also soon move towards the direction of reducing the share of USD-denominated holdings in their balance sheets as well. This situation presents as a great opportunity for increasing share of EUR usage, as it's already the 2nd most used currency, following the USD. Increased bi-lateral trade agreements with China would strengthen both, Euro and renminbi via increased demand -- and there's an intrinsic incentive to do that, as there is a lot of value that can be imported, and is already being imported, from the PRC. This would of course lead to the increase of renminbi-denominated holdings across the central banks in the EU.
+
+Due to the above, the demand for USD is facing a downward pressure, while USD liquidity is showing signs of stress, causing an upward pressure on its supply. Higher domestic prices will only push that supply further up, while leveraging the economy even further (more risk). Sure, higher oil prices means more demand for USD to buy oil in OPEC and higher export revenue, but I don't think that would be sufficient to offset the negative implications.
+
+~ ✨ ~
+
+⏰ 2026-03-02 14:48
+
+Crude Oil Prices Continue To Increase
+
+Over the past year, I've reiterated multiple times on the fact that that oil prices will continue to increase and that they'll soon be back up above their June 2025 prices. This happened again today, with Brent Crude Oil being up more than 10% on the day.
+
+About 8 months ago I wrote a thread explaining and predicting an increase in oil and gold prices in the near future. Since then:
+
+➖ Brent Crude Oil went up ≈17%
+➖ Gold went up ≈65%
+For reference, in the same time period, S&P 500 went up ≈18%.
+
+Worldwide oil trade was (and still is!) subject to great geopolitical risk, part of which is materializing now. In addition to that, monetary debasement continues its course and military conflicts have a tendency to exuberate it, via increased demand, sovereign debt and spending.
+
+Despite that, many continue to believe that violating the International law by invading a sovereign nation and kidnapping their leader implies lower oil prices, just because that sovereign nation is in procession of that natural resource. Of course, the reality is much more complex due to factors such as the required level skill/proficiency, infrastructure, internal risk and the implications of current geopolitical events on the international trade.
+
+To conclude, remember: commodities are at the base of global real economy, and there will be a demand for them almost "no matter what". Of course, not all commodities come with the same risk profile -- I will refer you to my past posts on this topic, which you can read under the "commodities" articles category on my website.
+
+~ ✨ ~
+
 ⏰ 2026-02-27 14:35
 
 So I extended my MCP server with a tool to execute arbitrary Python code, and now that's pretty much the only tool the host agent is using 😂
