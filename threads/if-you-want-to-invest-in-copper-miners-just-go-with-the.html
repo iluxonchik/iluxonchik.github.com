@@ -245,6 +245,10 @@ a:visited {
     border-radius: 3px;
     display: inline-block;
 }
+.profile-home-link-text {
+    /* Slightly tighten the two-word label without hurting readability. */
+    word-spacing: -0.22ch;
+}
 .profile-links a:hover {
     color: var(--link-hover-color); /* USE VAR */
     background-color: var(--hover-bg-color);
@@ -633,7 +637,7 @@ a:visited {
         </div>
     </div>
     <div class="profile-links">
-        <a href="https://illya.sh/" target="_blank" title="About Illya Gerasymchuk (Homepage)" aria-label="About Illya Gerasymchuk (Homepage)">🏠 About Illya</a><a href="https://illya.sh/thoughts/">💭 Thoughts</a><a href="https://illya.sh/threads/topics/">📂 Topics</a><a href="mailto:hello@illya.sh" target="_blank">✉️ Email</a><a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a><a href="https://illya.sh/threads/feed.xml" target="_blank">📡 RSS</a>
+        <a href="https://illya.sh/" target="_blank" title="About Illya Gerasymchuk (Homepage)" aria-label="About Illya Gerasymchuk (Homepage)">🏠 <span class="profile-home-link-text">About Illya</span></a><a href="https://illya.sh/thoughts/">💭 Thoughts</a><a href="https://illya.sh/threads/topics/">📂 Topics</a><a href="mailto:hello@illya.sh" target="_blank">✉️ Email</a><a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a><a href="https://illya.sh/threads/feed.xml" target="_blank">📡 RSS</a>
     </div>
 </div>
 
