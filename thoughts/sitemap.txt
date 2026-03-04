@@ -285,6 +285,7 @@ https://illya.sh/thoughts/current-risks
 https://illya.sh/thoughts/current-srf-minimum-bid-rate-is-4-5
 https://illya.sh/thoughts/current-tri-party-repo-haircut-average-for-treasury
 https://illya.sh/thoughts/currently-this-is-the-most-valued-expert-in-my-model-factory
+https://illya.sh/thoughts/cusum-filter-visualized
 https://illya.sh/thoughts/dealers-market-makers-are-legally-limited-in-their-balance
 https://illya.sh/thoughts/debt-bubble-about-to-pop
 https://illya.sh/thoughts/debt-includes-all-form-tenor-and-issuers-of-usd-denominated
@@ -584,6 +585,7 @@ https://illya.sh/thoughts/its-over-for-gold
 https://illya.sh/thoughts/its-totally-okay-to-use-exceptions-for-error-handling
 https://illya.sh/thoughts/its-very-okay-to-leverage-as-long-as-you-are-sufficiently
 https://illya.sh/thoughts/itt-called-discount-window-for-historical-reasons
+https://illya.sh/thoughts/ive-been-calling-for-new-local-heights-for-oil-prices-for
 https://illya.sh/thoughts/ive-been-running-live-a-tuned-model-designed-to-predict
 https://illya.sh/thoughts/ive-previously-written-an-article-about-what-makes-real
 https://illya.sh/thoughts/ive-referred-to-gold-being-35-of-russian-central-banks
@@ -768,6 +770,7 @@ https://illya.sh/thoughts/quantitative-easing-qe-by-a-central-bank-cb-increase-b
 https://illya.sh/thoughts/quick-update-on-gold
 https://illya.sh/thoughts/quoted-thoughts-are-neatly-rendered
 https://illya.sh/thoughts/raising-yields-means-lower-incentives-to-re-finance
+https://illya.sh/thoughts/random-forest-cat-an-ml-trading-factory
 https://illya.sh/thoughts/random-forest-is-currently-my-favorite-term-from-financial
 https://illya.sh/thoughts/randomina-is-an-open-source-effort-to-empower-the-mina
 https://illya.sh/thoughts/randomina-is-designed-as-a-smartcontract-in-o1js-making-it
@@ -1115,6 +1118,7 @@ https://illya.sh/thoughts/using-feds-srf-for-liquidity-means-cash-liqudity-is-sc
 https://illya.sh/thoughts/using-historical-behavior-can-be-a-great-alpha-but-you
 https://illya.sh/thoughts/using-neural-networks-to-find-imbalances-in-limit-order
 https://illya.sh/thoughts/venezuelas-central-bank-monetary-gold-holdings-constitute-20
+https://illya.sh/thoughts/very-excited-for-the-upcoming-price-rebound-in-commodity
 https://illya.sh/thoughts/very-interesting-alternative-usd-market
 https://illya.sh/thoughts/very-interesting-to-see-the-bitcoineft-used-as-a-liquidity
 https://illya.sh/thoughts/vibe-coding-vulnerabilities-with-claude-code

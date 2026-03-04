@@ -18,6 +18,10 @@ Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financ
 - Threads RSS: https://illya.sh/threads/feed.xml
 
 ## Latest Thoughts (30)
+- https://illya.sh/thoughts/random-forest-cat-an-ml-trading-factory
+- https://illya.sh/thoughts/very-excited-for-the-upcoming-price-rebound-in-commodity
+- https://illya.sh/thoughts/cusum-filter-visualized
+- https://illya.sh/thoughts/ive-been-calling-for-new-local-heights-for-oil-prices-for
 - https://illya.sh/thoughts/why-high-oil-prices-are-bad-for-usd-hint-china-credit
 - https://illya.sh/thoughts/crude-oil-prices-continue-to-increase
 - https://illya.sh/thoughts/so-i-extended-my-mcp-server-with-a-tool-to-execute-arbitrary
@@ -44,12 +48,9 @@ Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financ
 - https://illya.sh/thoughts/my-ml-model-factory-produced-this-amazing-model-that-trades
 - https://illya.sh/thoughts/they-say-that-ai-agents-will-replace-all-white-collar-jobs
 - https://illya.sh/thoughts/the-random-forest-that-guides-my-model-factory-needs
-- https://illya.sh/thoughts/china-banned-gold-silver-as-money-in-1983
-- https://illya.sh/thoughts/gold-outperformed-bitcoin-in-the-last-8-years
-- https://illya.sh/thoughts/my-wife-and-i-met-the-charging-bull-himself
-- https://illya.sh/thoughts/china-also-banned-gold-silver-in-1983
 
 ## Latest Threads (30)
+- https://illya.sh/threads/random-forest-cat-an-ml-trading-factory
 - https://illya.sh/threads/why-high-oil-prices-are-bad-for-usd-hint-china-credit
 - https://illya.sh/threads/crude-oil-prices-continue-to-increase
 - https://illya.sh/threads/using-neural-networks-to-find-imbalances-in-limit-order
@@ -79,4 +80,3 @@ Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financ
 - https://illya.sh/threads/copper-is-a-great-investment-in-2026-technicals-fundamentals
 - https://illya.sh/threads/yesterday-i-explained-why-silver-mining-stocks-are
 - https://illya.sh/threads/a-month-ago-me-and-gemini-2-5-pro-deep-research-had-a
-- https://illya.sh/threads/good-for-gold-bad-for-usd-us-tariffs-on-europe

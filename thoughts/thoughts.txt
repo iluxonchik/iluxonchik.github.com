@@ -6,6 +6,54 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2026-03-04 15:12
+
+Random Forest Cat: An ML Trading Factory
+
+I open-sourced a multi-model, machine-learning based factory for trading strategies on GitHub. It's written in Python and is highly customizable, as it exposes a framework for configuring the pipeline via a DSL.
+
+Currently, it comes with two pipeline configurations: one that focuses on predicting wether the price of Bitcoin in 5 minutes will be higher or lower than now (Polymarket style), and a more generic strategy that shorts or longs Bitcoin at its own discretion.
+
+This project also represents an experiment on enabling AI agents to discover trading strategies that will be profitable with real world, live price data. Clone the project and try asking an LLM to generate a profitable trading strategy using the framework.
+
+You can also just train your own model (or use mine) and use its signals for live trades. Beware that this is a work in progress. I've already integrated an explicit split for a the validation set, but that code is not pushed yet -- I'll probably do it today. More improvements are also on the way.
+
+In either case, the current version of the code on GitHub works, so you can download and run it.
+
+GitHub Repository Link: https://github.com/iluxonchik/random-forest-cat-ml-factory
+
+~ ✨ ~
+
+⏰ 2026-03-03 15:15
+
+Very excited for the upcoming price rebound in commodity metals
+
+Current prices remain a strong buying opportunity.
+
+Remember that silver is significantly more volatile than gold and can retrace down closer to ≈$70, but it's definitely not the top for this bullrun in metals
+
+~ ✨ ~
+
+⏰ 2026-03-03 14:57
+
+CUSUM Filter Visualized
+
+I’m looking into CUSUM Filters in more depth and just wanted to share this nice visualization that Gemini created to demonstrate graphically how the threshold affects the sampling/event emission for a price series.
+
+In this example, price is used a the feature, but note that CUSUM works with any measured quantity
+
+~ ✨ ~
+
+⏰ 2026-03-03 14:05
+
+I've been calling for new local heights for oil prices for over 6 months now
+
+Last time Brent Oil traded at $85 per barrel was in 2024
+
+Throughout 2025 and start of 2026, some of the largest finance accounts on X where telling you to short oil. Some are still referring to these price spikes as "noise"
+
+~ ✨ ~
+
 ⏰ 2026-03-02 15:48
 
 Why High Oil Prices Are Bad For USD (HINT: China & Credit)
