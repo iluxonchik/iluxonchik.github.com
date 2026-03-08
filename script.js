@@ -12,7 +12,7 @@
 
       const setExpandedState = (expanded) => {
         button.setAttribute("aria-expanded", String(expanded));
-        button.textContent = expanded ? ">" : "v";
+        button.textContent = expanded ? "−" : "+";
         card.classList.toggle("is-collapsed", !expanded);
         card.classList.toggle("is-expanded", expanded);
 
