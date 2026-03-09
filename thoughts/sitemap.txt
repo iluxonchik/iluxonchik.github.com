@@ -17,6 +17,7 @@ https://illya.sh/thoughts/17
 https://illya.sh/thoughts/18
 https://illya.sh/thoughts/19
 https://illya.sh/thoughts/2
+https://illya.sh/thoughts/2-billion-rows-and-counting-added-to-the-duckdb-table
 https://illya.sh/thoughts/2-to-ensure-freshness-randomina-leverages-minas-vrf
 https://illya.sh/thoughts/20
 https://illya.sh/thoughts/21
@@ -128,6 +129,7 @@ https://illya.sh/thoughts/and-ethereums-downtrend-continues-on
 https://illya.sh/thoughts/and-gold-is-up-over-50-since-january-20th
 https://illya.sh/thoughts/and-indeed-bank-of-russia-cuts-interest-rates-down-to-20
 https://illya.sh/thoughts/and-indeed-the-crypto-cap-increased-even-more
+https://illya.sh/thoughts/and-just-like-that-highest-oil-prices-since-2022-just-a-few
 https://illya.sh/thoughts/and-people-still-think-that-silver-and-bitcoin-are-within
 https://illya.sh/thoughts/and-ruble-is-up-on-gold-since-january
 https://illya.sh/thoughts/and-soon-the-eurozone-will-join-the-new-btc-all-time-high
@@ -198,6 +200,7 @@ https://illya.sh/thoughts/both-russia-china-increased-their-gold-holdings-since-
 https://illya.sh/thoughts/brc-20-is-also-less-efficient-than-erc-20-any-mildly-complex
 https://illya.sh/thoughts/breaking-gold
 https://illya.sh/thoughts/breaking-s-p-500-fell-to-2021-prices
+https://illya.sh/thoughts/brent-crude-oil-breaks-above-90-and-its-headed-higher
 https://illya.sh/thoughts/brics-digital-currency-cryptocurrency-on-a-public-blockchain
 https://illya.sh/thoughts/brics-tariffs
 https://illya.sh/thoughts/btc-dxy-xau-during-trumps-tariffs-speech
@@ -275,6 +278,7 @@ https://illya.sh/thoughts/crude-oil-back-above-75
 https://illya.sh/thoughts/crude-oil-price-is-heading-back-up-just-like-i-wrote-earlier
 https://illya.sh/thoughts/crude-oil-prices-continue-to-increase
 https://illya.sh/thoughts/crude-oil-up-to-almost-70
+https://illya.sh/thoughts/crue-oil-united-states-acts-russia-benefits-once-again
 https://illya.sh/thoughts/crypto-down
 https://illya.sh/thoughts/crypto-inflows-materialized-as-expected
 https://illya.sh/thoughts/crypto-is-not-cryptocurrency
@@ -365,6 +369,7 @@ https://illya.sh/thoughts/financial-stress-index-fsi-update
 https://illya.sh/thoughts/financial-stress-index-keeps-going-up
 https://illya.sh/thoughts/financial-stress-index-tariffs-update
 https://illya.sh/thoughts/financial-system-infrastructure-plumbing
+https://illya.sh/thoughts/fingerprinting-and-loading-500gb-of-bitcoin-l1-lob
 https://illya.sh/thoughts/first-european-pension-fund-the-danish-pension-fund
 https://illya.sh/thoughts/first-indication-of-crypto-downtrend
 https://illya.sh/thoughts/for-a-deeper-dive-into-japans-deposit-insurance-system-read
@@ -390,6 +395,7 @@ https://illya.sh/thoughts/get-ready-for-june
 https://illya.sh/thoughts/ginnie-fannie-mae-conservatorship-in-sept-2008-made-agency
 https://illya.sh/thoughts/given-that-housing-is-a-core-necessity-for-most-combined
 https://illya.sh/thoughts/global-liquidity
+https://illya.sh/thoughts/going-long-on-bitcoin-now-at-68k-is-very-risky-and-maybe
 https://illya.sh/thoughts/gold
 https://illya.sh/thoughts/gold-5000
 https://illya.sh/thoughts/gold-and-silver-miners
@@ -800,6 +806,7 @@ https://illya.sh/thoughts/remember-that-real-estate-runs-on-credit-and-in-the-mo
 https://illya.sh/thoughts/remember-those-huge-repo-markets-that-i-talked-about
 https://illya.sh/thoughts/reminder-to-do-a-deep-dive-into-funding-rates-if-you-still
 https://illya.sh/thoughts/renminbi-has-become-dominant-in-credit-growth-since-2022
+https://illya.sh/thoughts/reordering-of-a-5-billion-row-duckdb-table-completed
 https://illya.sh/thoughts/repo-funding-rates-are-predictors-within-this-global-multi
 https://illya.sh/thoughts/repo-funding-rates-dont-affect-us-treasury-yields
 https://illya.sh/thoughts/repo-markets-are-huge-about-the-size-of-usd-m2
@@ -978,6 +985,7 @@ https://illya.sh/thoughts/the-next-burst-in-global-liquidity-larger-financial-cr
 https://illya.sh/thoughts/the-point-of-software-is-to-be-able-to-iterate-fast-100-of
 https://illya.sh/thoughts/the-power-of-ordinal-theory-collecting-trading-and-scheming
 https://illya.sh/thoughts/the-problem-with-digital-privacy-lies-not-in-how-data-is
+https://illya.sh/thoughts/the-problem-with-granular-historical-limit-order-book-lob
 https://illya.sh/thoughts/the-process-leverages-several-zkp-building-blocks
 https://illya.sh/thoughts/the-promised-gold-silver-sale-is-here
 https://illya.sh/thoughts/the-random-forest-that-guides-my-model-factory-needs
@@ -1069,6 +1077,7 @@ https://illya.sh/thoughts/unlock-the-secret-to-predicting-any-assets-price-the-3
 https://illya.sh/thoughts/uns-model-double-taxation-convention-has-a-clear-key-benefit
 https://illya.sh/thoughts/update-gold-has-now-reached-3400
 https://illya.sh/thoughts/update-on-ethereum-shorts
+https://illya.sh/thoughts/update-the-5-billion-row-table-reordering-in-duckdb-has-been
 https://illya.sh/thoughts/update-usd-index-in-fact-did-not-enjoy-this
 https://illya.sh/thoughts/updated-https-illya-sh-thoughts
 https://illya.sh/thoughts/updated-illyas-threads-url-to-https-illya-sh-threads
@@ -1114,6 +1123,7 @@ https://illya.sh/thoughts/usdt-reserves-are-depleting-across-all-dex-pools-that-
 https://illya.sh/thoughts/usdt-reserves-at-curve-are-almost-depleted-with-less-than-4
 https://illya.sh/thoughts/usdt-reserves-at-curves-3pool-dropped-below-3
 https://illya.sh/thoughts/usdt-reserves-at-the-usdc-usdt-0-01-pool-on-uniswap-are
+https://illya.sh/thoughts/using-duckdb-to-train-a-neural-network-on-500gb-of-price
 https://illya.sh/thoughts/using-feds-srf-for-liquidity-means-cash-liqudity-is-scarce
 https://illya.sh/thoughts/using-historical-behavior-can-be-a-great-alpha-but-you
 https://illya.sh/thoughts/using-neural-networks-to-find-imbalances-in-limit-order
@@ -1152,6 +1162,7 @@ https://illya.sh/thoughts/while-japan-has-been-successful-in-resolving-hundreds-
 https://illya.sh/thoughts/while-the-bubble-will-pop-the-side-effects-can-be-minimized
 https://illya.sh/thoughts/while-the-haircut-may-also-fall-upward-pressure-on-liquidity
 https://illya.sh/thoughts/while-the-mortgage-will-eventually-bubble-pop-de-leverage-to
+https://illya.sh/thoughts/who-wouldve-thought-that-reordering-5-billion-rows-in-a
 https://illya.sh/thoughts/wholesale-cbdc-vs-retail-cbdc-whats-the-difference
 https://illya.sh/thoughts/wholesale-cbdc-will-be-used-by-financial-institutions-only
 https://illya.sh/thoughts/whos-ready-for-a-new-gold-ath

@@ -61,6 +61,7 @@ https://illya.sh/threads/copper-extends-its-gains-to-9-on-the-day-and-its
 https://illya.sh/threads/copper-is-a-great-investment-in-2026-technicals-fundamentals
 https://illya.sh/threads/credit-continues-to-expand-in-the-non-financial-sector-as
 https://illya.sh/threads/crude-oil-prices-continue-to-increase
+https://illya.sh/threads/crue-oil-united-states-acts-russia-benefits-once-again
 https://illya.sh/threads/crypto-market-cap-down-2-6-today
 https://illya.sh/threads/debunking-a-common-misconception-in-the-crypto-world-brc-20
 https://illya.sh/threads/decentralized-digital-euro-will-not-work-because-the-ecb
@@ -242,6 +243,7 @@ https://illya.sh/threads/usd-dominance-is-alluring-accounting-for-70-of-currency
 https://illya.sh/threads/usd-index-bearish-in-a-downtrend
 https://illya.sh/threads/usd-is-the-worlds-reserve-currency-but-what-does-that-mean
 https://illya.sh/threads/usd-us-dollar
+https://illya.sh/threads/using-duckdb-to-train-a-neural-network-on-500gb-of-price
 https://illya.sh/threads/using-neural-networks-to-find-imbalances-in-limit-order
 https://illya.sh/threads/venezuelas-central-bank-monetary-gold-holdings-constitute-20
 https://illya.sh/threads/vibe-coding-vulnerabilities-with-claude-code

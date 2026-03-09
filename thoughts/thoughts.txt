@@ -6,6 +6,155 @@
 💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭💭
 
 
+⏰ 2026-03-08 22:33
+
+And just like that... highest oil prices since 2022 -- just a few percent shy from the heights of May 2nd 2022
+
+I have first warned about an incoming large increase in oil prices ≈8 months ago
+
+📖 Quoting from 2026-03-06 14:31:
+┌─ Brent Crude Oil breaks above $90, and its headed higher!
+│ 
+│ You can add this to my list of correct predictions. Last time oil was this expensive was more than 2 years ago in 2023.
+│ 
+│ Perhaps it's obvious at this point -- but it won't top out at $90 😄
+└─
+
+~ ✨ ~
+
+⏰ 2026-03-08 17:53
+
+Going long on Bitcoin now at $68K is very risky (and maybe brave!). I would't do it
+
+There is too much negative pressure on global liquidity, which makes downward price shocks in the near term much more likely
+
+And once again -- global liquidity is not measured by M2, that's only a part of it.
+
+~ ✨ ~
+
+⏰ 2026-03-08 15:55
+
+Crue Oil: United States Acts, Russia Benefits (Once Again)
+
+Despite the heavy international sanctions, Russia is now selling Urals oil at a ≈$5 premium over Brent oil. Usually, Urals trades at a discount to Brent, so this is a relatively unusual situation. This is, of course, caused by the U.S. military force use against a sovereign nation once again.
+
+While oil production and export from the Arab Gulf region has now greatly reduced, the demand for oil didn't follow that downtrend. 20% of all oil passes Straight of Hormuz, the flow through which is now heavily limited. As a result, a significant part of that demand has now shifted towards Russia, which is capitalizing on that demand by selling crude oil, not only for a higher price, but also at a premium!
+
+High oil prices are also great news for Ruble. More than ≈50% of Russian oil exports are in foreign currencies, but exporters must pay their taxes in Rubles. As such, exporters must sell foreign currencies to purchase Ruble, which drives its price up. Additionally, since 2020 Russia has policies in place which cause high oil prices to usually lead to further accumulation of gold by the Central Bank of Russia (CBR): excess revenue from taxes resulting from oil sales above ≈59$/barrel are directed to the NWF for investing in precious metals (mostly gold) and FX (mostly renminbi/yuan). So instead of spending the extra revenue immediately, it gets invested.
+
+The mechanism by which the FX & gold purchase happens from excess gas and oil revenues is also interesting to explore. NWF is administrated by Russia’s Ministry of Finance (MoF), and it’s effectively MoF doing those purchases on behalf of NWF. So every time revenues from oil and gas taxes exceed the benchmark price, the MoF buys foreign assets and gold from the CBR, which then immediately repurchases what it had just sold to the MoF/NWF. As a result of this sanitization mechanism, the Central Bank of Russia net holdings of gold/FX currencies remain constant, while the net asset holdings of the NWF increase — so in net terms the Russian government holds more gold and FX.
+
+Imagine on a given period Russia recovered an extra revenue of $100M over the benchmark. Under the structure described above, the Russian government will not immediately spend those $100M, but instead invest them into gold & FX currencies. The step-by-step process looks something like this:
+
+1. MoF buys $40M worth of gold from the CBR
+2. CBR repurchases $40M worth of gold from domestic Russian market, using the proceeds from 1
+3. MoF buys $60M worth of renminbi from the CBR
+4. CBR repurchases $60M worth of renminbi from FX markets, using the proceeds from 2
+
+As you can see, the combination of steps above leaves Russia with more gold and FX reserves than before.
+
+For the month of March 2026, the Russian Federation has paused the gold/FX purchases from excess revenue from oil and gas. However, I don’t think that this pause will remain in effect much longer, as it has been explicitly linked to lowering the Ural’s oil revenue threshold from the current ≈$59 per barrel, potentially down to $45-50 per barrel. For now, all of the excess revenue from oil and gas will be going to the federal budget, available for its immediate liquidity needs.
+
+So whichever way you look at it — Russia massively benefits from the raise in price of commodities and precious metals, namely gas, oil, gold and silver.
+
+~ ✨ ~
+
+⏰ 2026-03-08 14:28
+
+Reordering of a 5 billion row DuckDB table completed yesterday 🎉
+
+The whole process took less than 48 hours. Excited to integrate DuckDB as the main data abstraction layer for the neural network-based models that will be trained on the LOB data. If everything goes well -- it will become the new default.
+
+~ ✨ ~
+
+⏰ 2026-03-06 15:29
+
+UPDATE: the 5 billion row table reordering in DuckDB has been in progress for almost 24 hours
+
+The temporary directory used by the DuckDB process has filled up to almost 550GB 😅
+
+This would've been faster, but the temp storage has limited bandwidth
+
+~ ✨ ~
+
+⏰ 2026-03-06 14:31
+
+Brent Crude Oil breaks above $90, and its headed higher!
+
+You can add this to my list of correct predictions. Last time oil was this expensive was more than 2 years ago in 2023.
+
+Perhaps it's obvious at this point -- but it won't top out at $90 😄
+
+📖 Quoting from 2026-03-02 14:48:
+┌─ Crude Oil Prices Continue To Increase
+│ 
+│ Over the past year, I've reiterated multiple times on the fact that that oil prices will continue to increase and that they'll soon be back up above their June 2025 prices. This happened again today, with Brent Crude Oil being up more than 10% on the day.
+│ 
+│ About 8 months ago I wrote a thread explaining and predicting an increase in oil and gold prices in the near future. Since then:
+│ 
+│ ➖ Brent Crude Oil went up ≈17%
+│ ➖ Gold went up ≈65%
+│ For reference, in the same time period, S&P 500 went up ≈18%.
+│ 
+│ Worldwide oil trade was (and still is!) subject to great geopolitical risk, part of which is materializing now. In addition to that, monetary debasement continues its course and military conflicts have a tendency to exuberate it, via increased demand, sovereign debt and spending.
+│ 
+│ Despite that, many continue to believe that violating the International law by invading a sovereign nation and kidnapping their leader implies lower oil prices, just because that sovereign nation is in procession of that natural resource. Of course, the reality is much more complex due to factors such as the required level skill/proficiency, infrastructure, internal risk and the implications of current geopolitical events on the international trade.
+│ 
+│ To conclude, remember: commodities are at the base of global real economy, and there will be a demand for them almost "no matter what". Of course, not all commodities come with the same risk profile -- I will refer you to my past posts on this topic, which you can read under the "commodities" articles category on my website.
+└─
+
+~ ✨ ~
+
+⏰ 2026-03-05 19:19
+
+Who would've thought that reordering 5 billion rows in a DuckDB table would need over 300GB in temporary storage on your hard drive
+
+Luckily there is `SET temp_directory`, so I'm running ORDER BY again pointing it to a medium that should meet DuckDB's storage needs
+
+I still believe my approach is feasible
+
+~ ✨ ~
+
+⏰ 2026-03-05 17:21
+
+2 billion+ rows (and counting!) added to the DuckDB table containing Bitcoin's L1 LOB data so far
+
+The .duckdb file is now 32GB. This is going to be very interesting to process. If this experiment goes well -- I'll switch to DuckDB as the default storage layer for the pipeline
+
+~ ✨ ~
+
+⏰ 2026-03-05 14:35
+
+Using DuckDB To Train A Neural Network On 500GB Of Price Data
+
+I have ≈500GB of historical Bitcoin level 1 limit order book data to process and train a neural network on.
+
+I don't want to overcomplicate the data access layer and definitely want to keep all of the training, validation and inference in Python. A simple file-based DuckDB setup sounds like a good solution for this, as it allows for iterative in-memory data loading within the model training code -- this is because DuckDB already implements all of those nice abstractions that allow it to load large datasets lazily/on-demand. So I'll neither need 500GB of RAM, nor a dedicated DBMS process.
+
+The model will be trained using a walk-forward strategy, so several versions of neural network weights/trained models will be generated. This means the amount of data loaded into the memory will be limited in either case. I may rely on DuckDB for some algebraic processing when querying data, but for now I'm planning to mostly filter for events within a specific time range.
+
+I used DuckDB several times before for finance applications, but not to actively process such a large amount of data, so I will report back if something goes wrong.
+
+~ ✨ ~
+
+⏰ 2026-03-05 14:21
+
+Fingerprinting and loading ≈500GB of Bitcoin L1 LOB historical data from CSVs into a single DuckDB file database
+
+This will take a while, but then I will be able to train neural networks on that data 😄
+
+~ ✨ ~
+
+⏰ 2026-03-04 19:04
+
+The problem with granular historical limit order book (LOB) data is its massive size
+
+I have a script downloading, decompressing and combining all of the data, and the total size was quickly over 300GB in size!
+
+I was hoping I could prototype & train a primary model  from data in CSVs, but I'm pretty sure it'll need optimizations (hello, Parquet!)
+
+~ ✨ ~
+
 ⏰ 2026-03-04 15:12
 
 Random Forest Cat: An ML Trading Factory
