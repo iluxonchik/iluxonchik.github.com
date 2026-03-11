@@ -8,139 +8,315 @@
     <meta name="robots" content="noindex, follow">
     <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Thoughts RSS" href="https://illya.sh/thoughts/feed.xml"/>
     <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Threads RSS" href="https://illya.sh/threads/feed.xml"/>
+    <link rel="preload" href="/staticthoughts/data/fonts/space-grotesk/space-grotesk-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/staticthoughts/data/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/staticthoughts/data/fonts/literata/Literata-VF-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/staticthoughts/data/fonts/literata/Literata-Italic-VF-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <style>
         :root {
-            --bg-color: #f4f4f4;
-            --container-bg: #ffffff;
-            --text-color: #333;
-            --secondary-text-color: #555;
-            --light-text-color: #666;
-            --link-color: #007bff;
-            --border-color: #ddd;
-            --dashed-border-color: #aaa;
-            --box-shadow-color: rgba(0,0,0,0.08);
-            --hover-bg-color: #eee;
+            --nb-ink: #121212;
+            --nb-paper: #efece4;
+            --nb-page: #e7e2d8;
+            --nb-yellow: #f0d54f;
+            --nb-pink: #eb4fbb;
+            --nb-white: #faf7f0;
+            --nb-link: #1734c5;
+            --nb-border: 3px;
+            --nb-content-border: 2px;
+            --nb-radius-sm: 7px;
+            --nb-radius-md: 10px;
+            --nb-shadow-sm: 2px 2px 0 var(--nb-ink);
+            --nb-shadow-lg: 4px 4px 0 var(--nb-ink);
+            --font-display: "Space Grotesk", "Arial Black", "Segoe UI", sans-serif;
+            --font-body: "IBM Plex Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --font-reading: "Literata", Georgia, serif;
         }
-        .dark-mode {
-            --bg-color: #1a1a1a;
-            --container-bg: #2b2b2b;
-            --text-color: #e0e0e0;
-            --secondary-text-color: #b0b0b0;
-            --light-text-color: #999;
-            --link-color: #58a6ff;
-            --border-color: #444;
-            --dashed-border-color: #666;
-            --box-shadow-color: rgba(255,255,255,0.08);
-            --hover-bg-color: #383838;
+
+        @font-face {
+            font-family: "Space Grotesk";
+            src: url('/staticthoughts/data/fonts/space-grotesk/space-grotesk-latin-700.woff2') format('woff2');
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
         }
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #1a1a1a;
-                --container-bg: #2b2b2b;
-                --text-color: #e0e0e0;
-                --secondary-text-color: #b0b0b0;
-                --light-text-color: #999;
-                --link-color: #58a6ff;
-                --border-color: #444;
-                --dashed-border-color: #666;
-                --box-shadow-color: rgba(255,255,255,0.08);
-                --hover-bg-color: #383838;
-            }
-            .light-mode { --bg-color:#f4f4f4; --container-bg:#ffffff; --text-color:#333; }
+
+        @font-face {
+            font-family: "IBM Plex Sans";
+            src: url('/staticthoughts/data/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2') format('woff2');
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
         }
+
+        @font-face {
+            font-family: "IBM Plex Sans";
+            src: url('/staticthoughts/data/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2') format('woff2');
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Literata';
+            src: url('/staticthoughts/data/fonts/literata/Literata-VF-latin.woff2') format('woff2-variations');
+            font-style: normal;
+            font-weight: 200 900;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Literata';
+            src: url('/staticthoughts/data/fonts/literata/Literata-Italic-VF-latin.woff2') format('woff2-variations');
+            font-style: italic;
+            font-weight: 200 900;
+            font-display: swap;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: "Courier New", Courier, monospace;
-            background-color: var(--bg-color);
-            color: var(--text-color);
             margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
+            min-height: 100vh;
+            font-family: var(--font-body);
+            color: var(--nb-ink);
+            background:
+                radial-gradient(circle at top right, rgba(246, 201, 230, 0.14), transparent 18rem),
+                linear-gradient(
+                    180deg,
+                    var(--nb-pink) 0,
+                    var(--nb-pink) 2.2rem,
+                    var(--nb-yellow) 2.2rem,
+                    var(--nb-yellow) 8.75rem,
+                    var(--nb-page) 8.75rem,
+                    var(--nb-page) 100%
+                );
+            padding: max(0.45rem, env(safe-area-inset-top)) 0.6rem max(0.8rem, env(safe-area-inset-bottom));
         }
+
+        a {
+            color: var(--nb-link);
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid #ff2f6f;
+            outline-offset: 3px;
+        }
+
         .container {
-            background-color: var(--container-bg);
-            padding: 25px;
-            border: 1px solid var(--border-color);
-            max-width: 750px;
             width: 100%;
-            box-shadow: 0 1px 4px var(--box-shadow-color);
+            max-width: 46rem;
+            margin: 0 auto;
+            display: grid;
+            gap: 0.75rem;
         }
-        .quote-wrapper { margin-bottom: 20px; }
+
+        .message-panel {
+            border: var(--nb-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-md);
+            background: var(--nb-paper);
+            box-shadow: var(--nb-shadow-lg);
+            padding: 0.75rem;
+        }
+
+        .message-title {
+            margin: 0 0 0.55rem;
+            font-family: var(--font-display);
+            font-size: clamp(1.05rem, 4.2vw, 1.22rem);
+            line-height: 1.02;
+        }
+
         .message-box {
             white-space: pre-wrap;
-            border: 1px dashed var(--border-color);
-            padding: 12px;
-            margin-bottom: 20px;
-            background-color: var(--container-bg);
-            font-size: 0.95em;
-            color: var(--text-color);
-            max-height: 200px;
+            border: var(--nb-content-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-md);
+            background: var(--nb-white);
+            box-shadow: var(--nb-shadow-sm);
+            padding: 0.65rem;
+            font-size: 0.98rem;
+            line-height: 1.42;
+            max-height: 220px;
             overflow-y: auto;
             -webkit-overflow-scrolling: touch;
         }
-        .dark-mode .message-box { background-color: var(--hover-bg-color); }
+
         .medium-buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
+            display: grid;
+            gap: 0.6rem;
+            margin-top: 0.72rem;
         }
+
         .btn-standard {
-            display:block;
-            width:100%;
-            box-sizing:border-box;
+            min-height: 34px;
+            padding: 0.3rem 0.72rem;
+            border: var(--nb-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-sm);
+            background: var(--nb-yellow);
+            color: var(--nb-ink);
+            box-shadow: var(--nb-shadow-lg);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            padding: 12px 18px;
-            border: 1px solid var(--link-color);
-            border-radius: 6px;
             text-decoration: none;
-            font-family: inherit;
-            font-size: 1em;
-            color: var(--link-color);
-            background-color: transparent;
-            transition: background-color 0.2s ease, color 0.2s ease;
+            font-family: var(--font-display);
+            font-size: 0.78rem;
+            font-weight: 700;
+            line-height: 1.05;
+            transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
         }
+
         .btn-standard:hover {
-            background-color: var(--link-color);
-            color: #fff;
+            transform: translate(1px, 1px);
+            box-shadow: 1px 1px 0 var(--nb-ink);
+            background: var(--nb-white);
+            color: var(--nb-ink);
+            text-decoration: none;
         }
-        @media (max-width: 600px){
-            body{padding:10px;}
-            .container{padding:15px;}
+
+        .quote-wrapper .thought-box {
+            border: var(--nb-content-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-md);
+            background: var(--nb-paper);
+            box-shadow: var(--nb-shadow-sm);
+            padding: 0.75rem;
+            margin: 0;
         }
-        /* Preview thought styles */
-        .quote-wrapper .thought-box { border:2px dashed var(--dashed-border-color); padding:10pt 10pt 1pt; margin-bottom:14pt; background-color:var(--container-bg); }
-        .quote-wrapper .thought-user-img { width:25px; height:25px; border-radius:50%; object-fit:cover; border:1px solid var(--border-color); }
-        .quote-wrapper .share-button { display:none !important; }
-        .quote-wrapper .comment-button { display:none !important; }
-        .quote-wrapper .thought-actions { pointer-events:none; opacity:0.9; }
-        .quote-wrapper .thought-header { flex-wrap: wrap; }
-        .quote-wrapper .thought-content p { white-space: pre-wrap; }
-        .quote-wrapper a {color: var(--link-color); text-decoration:none; }
-        .quote-wrapper a:visited {color: var(--link-color); }
-        .quote-wrapper .thought-image .lightbox-trigger { max-width:70%; width:100%; margin:12px auto 0; display:block; }
-        .quote-wrapper .thought-date-time { display:inline; margin-left:4px; }
-        .quote-wrapper .thought-image img { max-width:100%; height:auto; border:1px solid var(--border-color); border-radius:6px; }
-        .quote-wrapper .thought-image { max-width:550px; margin:12px auto 0; }
-        /* On small screens move date below name & hide dash */
-        @media(max-width:600px){
-            .quote-wrapper .thought-date-time{display:block;margin-left:0;}
-            .quote-wrapper .separator{display:none;}
+
+        .quote-wrapper .thought-header {
+            display: grid;
+            grid-template-columns: 32px minmax(0, 1fr);
+            gap: 8px;
+            align-items: start;
+            margin-bottom: 8px;
+        }
+
+        .quote-wrapper .thought-user-img {
+            width: 32px;
+            height: 32px;
+            border-radius: 999px;
+            object-fit: cover;
+            border: 2px solid var(--nb-ink);
+            background: var(--nb-white);
+            box-shadow: 0 0 0 2px var(--nb-pink);
+        }
+
+        .quote-wrapper .thought-header-main {
+            min-width: 0;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 4px 8px;
+            align-items: center;
+        }
+
+        .quote-wrapper .user-name {
+            font-family: var(--font-display);
+            font-size: 0.98rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .quote-wrapper .thought-date-time {
+            margin: 0;
+            justify-self: end;
+        }
+
+        .quote-wrapper .thought-permalink {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.14rem 0.42rem;
+            border: var(--nb-content-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-sm);
+            background: var(--nb-white);
+            box-shadow: var(--nb-shadow-sm);
+            color: var(--nb-ink);
+            font-family: var(--font-display);
+            font-size: 0.66rem;
+            font-weight: 700;
+            line-height: 1;
+            text-decoration: none;
+        }
+
+        .quote-wrapper .thought-content p {
+            margin: 0;
+            color: var(--nb-ink);
+            font-family: var(--font-reading);
+            font-weight: 280;
+            font-optical-sizing: auto;
+            font-size: 0.98rem;
+            line-height: 1.42;
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+        }
+
+        .quote-wrapper .thought-image {
+            margin-top: 0.72rem;
+        }
+
+        .quote-wrapper .thought-image .lightbox-trigger {
+            display: block;
+            width: 100%;
+            margin: 0;
+            border: var(--nb-content-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-md);
+            overflow: hidden;
+            background: var(--nb-white);
+            box-shadow: var(--nb-shadow-sm);
+        }
+
+        .quote-wrapper .thought-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .quote-wrapper .quoted-thought-container,
+        .quote-wrapper .thought-actions,
+        .quote-wrapper .share-button,
+        .quote-wrapper .comment-button {
+            display: none !important;
+        }
+
+        @media (min-width: 48rem) {
+            .medium-buttons {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: max(0.4rem, env(safe-area-inset-top)) 0.5rem max(0.75rem, env(safe-area-inset-bottom));
+            }
+
+            .message-panel {
+                padding: 0.7rem;
+            }
+
+            .quote-wrapper .thought-header-main {
+                grid-template-columns: 1fr;
+            }
+
+            .quote-wrapper .thought-date-time {
+                justify-self: start;
+            }
         }
     </style>
 </head>
 <body>
 <div class="container">
     <div id="quote-container" class="quote-wrapper"></div>
-    <div>
-        <p style="margin-top:0;margin-bottom:6px; font-weight:bold;">Your comment/response:</p>
+    <div class="message-panel">
+        <p class="message-title">Choose where to send this reply</p>
         <div id="message-display" class="message-box"></div>
-    </div>
-    <div class="medium-buttons" id="medium-buttons" style="margin-top:20px;">
-        <a id="email-link" class="btn-standard" target="_blank" rel="noopener noreferrer">📧 Comment via E-mail</a>
-        <a id="x-link" class="btn-standard" target="_blank" rel="noopener noreferrer">🐦 Comment via X / Twitter</a>
-    </div>
-    <div id="after-action" style="display:none; margin-top:20px;">
-        <a id="back-btn" href="#" class="btn-standard">⬅️ Back</a>
+        <div class="medium-buttons" id="medium-buttons">
+            <a id="email-link" class="btn-standard" target="_blank" rel="noopener noreferrer">📧 Comment via E-mail</a>
+            <a id="x-link" class="btn-standard" target="_blank" rel="noopener noreferrer">🐦 Comment via X / Twitter</a>
+        </div>
+        <div id="after-action" style="display:none; margin-top:0.85rem;">
+            <a id="back-btn" href="#" class="btn-standard">⬅️ Back</a>
+        </div>
     </div>
 </div>
 <script>
@@ -198,7 +374,7 @@
   }
   function revealBack(){
       document.getElementById('after-action').style.display='block';
-      updateExpiry(1); // set to 1 hour
+      updateExpiry(1);
   }
   if(emailLink){ emailLink.addEventListener('click',revealBack); }
   if(tgLink){ tgLink.addEventListener('click',revealBack); }
@@ -220,41 +396,20 @@
     throw new Error('Thought HTML not found');
   }
 
-  // Quote fetch (slug/timestamp aware)
-  fetchThoughtHtml(preferredThoughtPath, fallbackThoughtPath).then(html=>{
+  fetchThoughtHtml(preferredThoughtPath,fallbackThoughtPath)
+  .then(html=>{
     const parser=new DOMParser();
     const doc=parser.parseFromString(html,'text/html');
     let tb=doc.querySelector('.thought-box');
-    if(!tb)return;
+    if(!tb) throw new Error('Thought box missing');
     tb.querySelectorAll('.quoted-thought-container').forEach(el=>el.remove());
     const imported=document.importNode(tb,true);
-    imported.style.pointerEvents='none';
-    imported.style.opacity='0.9';
     document.getElementById('quote-container').appendChild(imported);
-  }).catch(()=>{});
-
-  /* --- Apply stored theme --- */
-  (function(){
-    const body=document.body;
-    function applyTheme(pref){
-      body.classList.remove('light-mode','dark-mode');
-      let actual=pref;
-      if(pref==='auto'){
-        const prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;
-        actual=prefersDark?'dark':'light';
-      }
-      body.classList.add(actual+'-mode');
-    }
-    applyTheme(localStorage.getItem('themePreference')||'auto');
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{ if((localStorage.getItem('themePreference')||'auto')==='auto') applyTheme('auto'); });
-  })();
-
-  // Ensure medium buttons are in view even for long comments
-  requestAnimationFrame(()=>{
-      const mediumSection=document.getElementById('medium-buttons');
-      if(mediumSection){ mediumSection.scrollIntoView({block:'start'}); }
+  })
+  .catch(err=>{
+    document.getElementById('quote-container').innerHTML='<p style="margin:0;">Unable to load thought preview.</p>';
   });
 })();
 </script>
 </body>
-</html> 
+</html>

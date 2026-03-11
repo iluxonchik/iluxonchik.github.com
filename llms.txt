@@ -18,6 +18,7 @@ Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financ
 - Threads RSS: https://illya.sh/threads/feed.xml
 
 ## Latest Thoughts (30)
+- https://illya.sh/thoughts/dont-expect-60-oil-in-2026
 - https://illya.sh/thoughts/and-just-like-that-highest-oil-prices-since-2022-just-a-few
 - https://illya.sh/thoughts/going-long-on-bitcoin-now-at-68k-is-very-risky-and-maybe
 - https://illya.sh/thoughts/crue-oil-united-states-acts-russia-benefits-once-again
@@ -47,9 +48,9 @@ Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financ
 - https://illya.sh/thoughts/the-time-to-optimize-hyperparameters-of-the-random-forest
 - https://illya.sh/thoughts/the-models-first-live-data-trade-was-a-successful-bitcoin
 - https://illya.sh/thoughts/added-a-connection-to-binances-futures-api-and-now-i-have
-- https://illya.sh/thoughts/this-a-gross-oversimplification-of-what-it-takes-to
 
 ## Latest Threads (30)
+- https://illya.sh/threads/dont-expect-60-oil-in-2026
 - https://illya.sh/threads/crude-oil-prices-continue-to-increase
 - https://illya.sh/threads/crue-oil-united-states-acts-russia-benefits-once-again
 - https://illya.sh/threads/using-duckdb-to-train-a-neural-network-on-500gb-of-price
@@ -79,4 +80,3 @@ Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financ
 - https://illya.sh/threads/natural-gas-prices-are-very-volatile
 - https://illya.sh/threads/silver-miners-are-up-12-since-my-recommendation-from-4-days
 - https://illya.sh/threads/dont-overthink-commodity-miners-investments
-- https://illya.sh/threads/copper-is-a-great-investment-in-2026-technicals-fundamentals

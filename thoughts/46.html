@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Basic SEO / Title -->
-    <title>Illya Gerasymchuk | Financial Markets, Macro, Bitcoin &amp; Commodities - Page 2</title> 
+    <title>Illya Gerasymchuk | Financial Markets, Macro, Bitcoin &amp; Commodities - Page 2</title>
     <link rel="canonical" href="https://illya.sh/thoughts/46.html">
     <meta name="description" content="Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financial market structure, commodities, Bitcoin, crypto markets, machine learing...">
     <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph / Social Media Tags -->
+
     <meta property="og:title" content="Illya Gerasymchuk | Financial Markets, Macro, Bitcoin &amp; Commodities - Page 2" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://illya.sh/thoughts/46.html" />
@@ -22,119 +20,82 @@
     <meta name="twitter:image" content="https://illya.sh/staticthoughts/data/illya_gerasymchuk_thoughts.webp" />
     <meta property="og:image:alt" content="Illya Gerasymchuk | Financial Markets, Macro, Bitcoin &amp; Commodities - Page 2" />
     <meta name="twitter:image:alt" content="Illya Gerasymchuk | Financial Markets, Macro, Bitcoin &amp; Commodities - Page 2" />
-    <!-- RSS Feed Discovery -->
     <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Thoughts RSS" href="https://illya.sh/thoughts/feed.xml"/>
     <link rel="alternate" type="application/rss+xml" title="Illya Gerasymchuk Threads RSS" href="https://illya.sh/threads/feed.xml"/>
 
-    <!-- Font Preload (CORS/crossorigin required for woff2) -->
+    <link rel="preload" href="/staticthoughts/data/fonts/space-grotesk/space-grotesk-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/staticthoughts/data/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/staticthoughts/data/fonts/literata/Literata-VF-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/staticthoughts/data/fonts/literata/Literata-Italic-VF-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
     <script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://illya.sh/#person", "name": "Illya Gerasymchuk", "url": "https://illya.sh", "image": "https://illya.sh/staticthoughts/data/profile.png", "sameAs": ["https://illya.sh", "https://github.com/iluxonchik", "https://twitter.com/illyaGera", "https://x.com/illyaGera"], "alternateName": "Illya", "jobTitle": "Financial & Software Engineer", "description": "I build software and write about how money moves: central banks, liquidity, financial market structure, commodities, Bitcoin, crypto markets, and AI systems.", "knowsAbout": ["Monetary policy", "Central banks", "Global liquidity", "Financial market structure", "Market microstructure", "Financial system infrastructure", "Commodities", "Gold", "Silver", "Bitcoin", "Crypto markets", "DeFi", "Stablecoins", "Foreign exchange", "AI systems", "Agentic AI systems", "Software engineering", "Financial law"]}, {"@type": "WebSite", "name": "Illya Gerasymchuk | Financial Markets, Macro, Bitcoin & Commodities", "url": "https://illya.sh/thoughts", "description": "Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financial market structure, commodities, Bitcoin, crypto markets, machine learing and agentic AI systems.", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "BlogPosting", "headline": "Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization", "articleBody": "Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization\n\nAfter the first level of tuning of the random forest’s parameters, it came time to optimize the features on which the random forest gets trained on. I’ve already did a minor cleanup, but I didn’t yet test for the predictive importance of each feature in the random forest.\n\nTo optimize the random forest’s features, I’m using Out of Sample Permutation Feature Importance (OOS). The OOS approach consists in three core steps:\n\n1️⃣ Train the random forest once on the training data\n2️⃣ Take out-of-sample validation data (testing data), permute the values of a single feature/values within the same column and pass them to the model trained in step 1.\n3️⃣ A feature is important for the model if the model’s predictive power reduces significantly when that feature’s values are randomly shuffled.\n\nThe “out of sample” part refers to the fact that the set of data used to train the model and evaluate it after permutations is distinct, thus reducing the contribution of noise to the evaluation metrics. By default, scikit-learn uses Gini Importance to rank features by their utility to the model. Gini is a bad metric for my data because of:\n\n➖ High cardinality bias (it has an inherent bias towards continuous variables, and some of my features are discrete)\n➖ Gini importance is computed on the training data\n➖ In case of two correlated features, the random forest will randomly pick one at each split, but Gini will actually divide the importance between the two\n\nAdditionally, the out-of-sample Area Under the ROC Curve (AUC) of 0.7566 is unrealistically good for predicting 5-minute Bitcoin price moves. This value implies that if you pick a random 5-minute winning window and a 5-minute losing one, my model ranks the winner window ≈76% of the time. Either I found a model that beats virtually every financial institution in existence, or there is a lookahead bias and overfitting happening in the model. \n\nConclusion: my meta forest — the “seconds_to_settle” feature is basically carrying the entire model 😂 So in its current state, the random forest is training almost entirely on the time of day/time to expiration. The cleanup has started.", "url": "https://illya.sh/thoughts/out-of-sample-permutation-feature-importance-for-random", "mainEntityOfPage": "https://illya.sh/thoughts/out-of-sample-permutation-feature-importance-for-random", "datePublished": "2026-02-20T15:08:42+00:00", "dateModified": "2026-02-20T15:08:42+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/out-of-sample-permutation-feature-importance-for-random.jpg"}, {"@type": "BlogPosting", "headline": "The time to optimize hyperparameters of the random forest has come", "articleBody": "The time to optimize hyperparameters of the random forest has come\n\nStarting with a grid search approach", "url": "https://illya.sh/thoughts/the-time-to-optimize-hyperparameters-of-the-random-forest", "mainEntityOfPage": "https://illya.sh/thoughts/the-time-to-optimize-hyperparameters-of-the-random-forest", "datePublished": "2026-02-19T16:04:34+00:00", "dateModified": "2026-02-19T16:04:34+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/the-time-to-optimize-hyperparameters-of-the-random-forest.jpg"}, {"@type": "BlogPosting", "headline": "The model's first live data trade was a successful Bitcoin short! The position was open for 4 minutes, for a…", "articleBody": "The model's first live data trade was a successful Bitcoin short! The position was open for 4 minutes, for a 0.11% return", "url": "https://illya.sh/thoughts/the-models-first-live-data-trade-was-a-successful-bitcoin", "mainEntityOfPage": "https://illya.sh/thoughts/the-models-first-live-data-trade-was-a-successful-bitcoin", "datePublished": "2026-02-19T13:56:27+00:00", "dateModified": "2026-02-19T13:56:27+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/the-models-first-live-data-trade-was-a-successful-bitcoin.png"}, {"@type": "BlogPosting", "headline": "Added a connection to Binance's futures API and now I have the base learners and the random forest looking…", "articleBody": "Added a connection to Binance's futures API and now I have the base learners and the random forest looking for profitable 5-minute Bitcoin trades in real time\n\nLet's see how it goes, the model already entered its first trade. Let's see how it goes 😄", "url": "https://illya.sh/thoughts/added-a-connection-to-binances-futures-api-and-now-i-have", "mainEntityOfPage": "https://illya.sh/thoughts/added-a-connection-to-binances-futures-api-and-now-i-have", "datePublished": "2026-02-19T13:52:59+00:00", "dateModified": "2026-02-19T13:52:59+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/added-a-connection-to-binances-futures-api-and-now-i-have.png"}, {"@type": "BlogPosting", "headline": "This a gross oversimplification of what it takes to replicate the human brain with AI", "articleBody": "This a gross oversimplification of what it takes to replicate the human brain with AI\n\nThe post is assuming we have a model that can accurately replicate the human brain, which we don't.\n\n200T parameter models won't solve that -- you'll still have a high model bias.", "url": "https://illya.sh/thoughts/this-a-gross-oversimplification-of-what-it-takes-to", "mainEntityOfPage": "https://illya.sh/thoughts/this-a-gross-oversimplification-of-what-it-takes-to", "datePublished": "2026-02-19T12:31:36+00:00", "dateModified": "2026-02-19T12:31:36+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/this-a-gross-oversimplification-of-what-it-takes-to.jpg"}, {"@type": "BlogPosting", "headline": "Vibe-Coding Vulnerabilities With Claude Code", "articleBody": "Vibe-Coding Vulnerabilities With Claude Code\n\nA decade ago there was a joke that IoT stands for \"Internet of Vulnerabilities\", given how vulnerable many Internet of Things devices were and how easy it was to exploit them.\n\nI think we will enter an even bigger era of vulnerabilities with vibe-coded systems, especially with agents handling everything from feature development to deployment. You are outsourcing the security of your product/application to a probabilistic mathematical model, which hallucinates by design.\n\nFor a sufficiently complex system, it's not a question of IF but of WHEN the LLM will make a security-compromising mistake. Unfortunately, large customer data leaks may become the norm.\n\nIf you care about the secrecy of your data, I would advise you be very wary of products developed in such manner. Of course, for many use cases you may also not care about this, and prioritize lower cost or specific features. But you must be aware of the risks.\n\nYou are essentially one prompt away from compromising your system and its data. We will probably even have new laws/regulations coming out to address this.", "url": "https://illya.sh/thoughts/vibe-coding-vulnerabilities-with-claude-code", "mainEntityOfPage": "https://illya.sh/thoughts/vibe-coding-vulnerabilities-with-claude-code", "datePublished": "2026-02-18T16:19:50+00:00", "dateModified": "2026-02-18T16:19:50+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/vibe-coding-vulnerabilities-with-claude-code.jpg"}, {"@type": "BlogPosting", "headline": "Proxy Model From Polymarket's 15 Minute Bitcoin Price", "articleBody": "Proxy Model From Polymarket's 15 Minute Bitcoin Price\n\nI found historical datasets for Polymarket's 15 minute up or down Bitcoin price and I think I can use this data to obtain useful signals via a proxy model. I'll start with linear regression to build a prediction model, to see if this transfer learning approach works here.\n\nYes, it will be overfitting, but for this signal generator it would be by design. The end goal is to find features that improve the random forest's split rules, thus further improving the win rate.", "url": "https://illya.sh/thoughts/proxy-model-from-polymarkets-15-minute-bitcoin-price", "mainEntityOfPage": "https://illya.sh/thoughts/proxy-model-from-polymarkets-15-minute-bitcoin-price", "datePublished": "2026-02-18T16:06:22+00:00", "dateModified": "2026-02-18T16:06:22+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/proxy-model-from-polymarkets-15-minute-bitcoin-price.png"}, {"@type": "BlogPosting", "headline": "Primary Dealers Failures To Settle Implications For Risk Assets", "articleBody": "Primary Dealers Failures To Settle Implications For Risk Assets\n\nSecurity settlement failures on the dealer side are a signal of liquidity stress. In short, it signals that either collateral (securities) or USD liquidity are short. Generally, this is bearish for risk assets.\n\nDealers exercise a key liquidity role in the financial markets microstructure, so a significant stress on their operations will propagate throughout the market.\n\nYou can anecdotally visualize this correlation in Bitcoin by noticing that the peaks of failures to receive/deliver by dealers coincide with at least short-term tops for Bitcoin prices.\n\nThis weekly set of data is made freely available by Office of Financial Research (OFR), and you can download it CSV or JSON formats. If you are incorporating this data into your machine-learning trading models, beware of the look-ahead bias, as this OFR data is released with about a week of delay.", "url": "https://illya.sh/thoughts/primary-dealers-failures-to-settle-implications-for-risk", "mainEntityOfPage": "https://illya.sh/thoughts/primary-dealers-failures-to-settle-implications-for-risk", "datePublished": "2026-02-18T14:40:00+00:00", "dateModified": "2026-02-18T14:40:00+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/primary-dealers-failures-to-settle-implications-for-risk.jpg"}, {"@type": "BlogPosting", "headline": "After tweaking the existing set of base learner models, the random-forest driven trading model factory…", "articleBody": "After tweaking the existing set of base learner models, the random-forest driven trading model factory continues to improve\n\nThe win rate for predicting Bitcoin's 5-minute price moves (binary) is now approaching 54%. A win rate of ≈56% should suffice to accommodate for transaction costs. Win rates over 60% is where it starts to get interesting.", "url": "https://illya.sh/thoughts/after-tweaking-the-existing-set-of-base-learner-models-the", "mainEntityOfPage": "https://illya.sh/thoughts/after-tweaking-the-existing-set-of-base-learner-models-the", "datePublished": "2026-02-18T14:30:10+00:00", "dateModified": "2026-02-18T14:30:10+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/after-tweaking-the-existing-set-of-base-learner-models-the.jpg"}, {"@type": "BlogPosting", "headline": "If you invested just $100 in Gold in 4000 BCE, today it would be worth $100", "articleBody": "If you invested just $100 in Gold in 4000 BCE, today it would be worth $100\n\nThis is because USD didn't exist 6000 years ago, so it wouldn't be accepted as means of settlement in Ancient Egypt, thus you wouldn't find a counterparty willing to sell you gold in exchange for US currency.\n\n6000 years is also for how long gold has been used as money. Yet, some still believe that Bitcoin is the new gold and that it will replace gold as money 😄", "url": "https://illya.sh/thoughts/if-you-invested-just-100-in-gold-in-4000-bce-today-it-would", "mainEntityOfPage": "https://illya.sh/thoughts/if-you-invested-just-100-in-gold-in-4000-bce-today-it-would", "datePublished": "2026-02-18T01:40:19+00:00", "dateModified": "2026-02-18T01:40:19+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/if-you-invested-just-100-in-gold-in-4000-bce-today-it-would.jpg"}, {"@type": "BlogPosting", "headline": "Expert optimization is going well, and I'm starting to move towards the alpha in 5-minute Bitcoin price…", "articleBody": "Expert optimization is going well, and I'm starting to move towards the alpha in 5-minute Bitcoin price markets\n\nI'm not claiming that the model that I currently have is meaningful (it's NOT!), but it's getting closer to interesting win rate ratios (>55%)", "url": "https://illya.sh/thoughts/expert-optimization-is-going-well-and-im-starting-to-move", "mainEntityOfPage": "https://illya.sh/thoughts/expert-optimization-is-going-well-and-im-starting-to-move", "datePublished": "2026-02-17T17:12:07+00:00", "dateModified": "2026-02-17T17:12:07+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/expert-optimization-is-going-well-and-im-starting-to-move.jpg"}, {"@type": "BlogPosting", "headline": "Currently, this is the most valued expert in my model factory pipeline", "articleBody": "Currently, this is the most valued expert in my model factory pipeline\n\nNot because it does anything useful, but precisely because it does not\n\nThe expert randomly emits positive(buy) or negative(sell) signals. This is a rough baseline for random behaviour. Very useful for the integration testing of the pipeline and identifying noise", "url": "https://illya.sh/thoughts/currently-this-is-the-most-valued-expert-in-my-model-factory", "mainEntityOfPage": "https://illya.sh/thoughts/currently-this-is-the-most-valued-expert-in-my-model-factory", "datePublished": "2026-02-17T16:33:29+00:00", "dateModified": "2026-02-17T16:33:29+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/currently-this-is-the-most-valued-expert-in-my-model-factory.jpg"}, {"@type": "BlogPosting", "headline": "My random forest looks much better after the clean-up", "articleBody": "My random forest looks much better after the clean-up\n\nThe feature matrix has been refactored to only include features from which the random forest will be able to learn more effectively. This should greatly reduce the noise\n\nNow, it's time to optimize signals 😄", "url": "https://illya.sh/thoughts/my-random-forest-looks-much-better-after-the-clean-up", "mainEntityOfPage": "https://illya.sh/thoughts/my-random-forest-looks-much-better-after-the-clean-up", "datePublished": "2026-02-17T15:01:07+00:00", "dateModified": "2026-02-17T15:01:07+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/my-random-forest-looks-much-better-after-the-clean-up.png"}, {"@type": "BlogPosting", "headline": "My ML model factory produced this amazing model that trades Bitcoin on 5-minute intervals, cut off at each…", "articleBody": "My ML model factory produced this amazing model that trades Bitcoin on 5-minute intervals, cut off at each 5th minute (very similar to Polymarket's 5 minute BTC markets) and it made over 200K trades in ≈7 months\n\nStats:\n- 200K trades\n- 6.69% profit\n- 49% win rate\n\nSo I've pretty much discovered a coin flip 🤣", "url": "https://illya.sh/thoughts/my-ml-model-factory-produced-this-amazing-model-that-trades", "mainEntityOfPage": "https://illya.sh/thoughts/my-ml-model-factory-produced-this-amazing-model-that-trades", "datePublished": "2026-02-17T14:57:38+00:00", "dateModified": "2026-02-17T14:57:38+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/my-ml-model-factory-produced-this-amazing-model-that-trades.png"}, {"@type": "BlogPosting", "headline": "They say that AI agents will replace all white collar-jobs in the next 6-12 months 😄", "articleBody": "They say that AI agents will replace all white collar-jobs in the next 6-12 months 😄\n\nSo LLMs only have 5-11 months to learn about car washing.\n\nThis simple prompt breaks ChatGPT, DeepSeek, Qwen and Kimi. Works on Gemini though.", "url": "https://illya.sh/thoughts/they-say-that-ai-agents-will-replace-all-white-collar-jobs", "mainEntityOfPage": "https://illya.sh/thoughts/they-say-that-ai-agents-will-replace-all-white-collar-jobs", "datePublished": "2026-02-17T13:35:07+00:00", "dateModified": "2026-02-17T13:35:07+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/they-say-that-ai-agents-will-replace-all-white-collar-jobs.jpg"}, {"@type": "BlogPosting", "headline": "The random forest that guides my model factory needs refactoring", "articleBody": "The random forest that guides my model factory needs refactoring\n\nWhile the current architecture shows good prospects for generating profitable trading models, the random forest is currently a bit of a mess 😅 If you look at the image attached to the post, you can see why.\n \nSince the random forest can’t extrapolate, features like the date and source segment will just make the forest learn on noise (it will train on association between those features, e.g. it’s not very useful to learn that volume in 2025 was higher than in 2024). But this was expected. The goal was to validate an architectural approach that could work. Now it’s time for optimizations and changes. Actually, changes before optimizations.\n\nAnother thing that I’ll get rid of is the hybrid spine for supporting data from multiple timeframes, as the model didn’t extract any meaningful alpha — and some of it has even confused the random forest. I’m sure there is way to make even with limited data, but I’ll be moving to testing it on dataset for which I have access to highly granular data (hello, Bitcoin!). So the logic of the data loader in the pipeline will be greatly simplified.\n\nI’ll also make the labeler configurable, so that you can use the same set of features for different types of predictions. For example, you could have the “unconstrained” standard deviation labelling in the sense hat you can enter and exit the position at any time, to constrained logic scenarios such as the ones of Polymarket’s 5-minute price predictions on Bitcoin, where you can only enter a position at specific times, and the resolution happens at specific times (e.g. at the end of every 5th minute of the day, starting from 0).\n\nThe core logic of the ML pipeline remans the same.", "url": "https://illya.sh/thoughts/the-random-forest-that-guides-my-model-factory-needs", "mainEntityOfPage": "https://illya.sh/thoughts/the-random-forest-that-guides-my-model-factory-needs", "datePublished": "2026-02-16T15:03:02+00:00", "dateModified": "2026-02-16T15:03:02+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/the-random-forest-that-guides-my-model-factory-needs.png"}, {"@type": "BlogPosting", "headline": "China Banned Gold & Silver As Money In 1983", "articleBody": "China Banned Gold & Silver As Money In 1983\n\nWhile it remained legal to hold gold as an individual in PRC, you couldn't:\n- Use gold/silver as money (unit of account/pricing)\n- Trade gold/silver privately (you could only sell it to PBoC)\n- Lend or pledge (use as collateral) gold/silver\n- Act as a dealer of gold, unless authorized by PBoC\n\nSo effectively, as an individual in PRC, you could only sell your gold & silver through the PBoC system, but it was fully lawful to own those metals. Only if you violated the rules above, authorities could force you to liquidate your gold to PBoC at a discount over the spot price.\n\nThis is a big contrast with the gold ban in the United States via Executive Order 6102 in 1933, which required all persons to surrender/liquidate their gold coins, bullion and certificates to the state. Moreover, in 1933 the U.S. government credited you $20.67 per oz gold that you surrender. About a year later, the same government that forced people to liquidate their gold at $20.67, proceeded to raise the price of gold to $35 per oz (at that time the price of the gold was fixed by the government, not determined by market price action like today). So the U.S. government made an instant ≈70% profit on the public's gold.", "url": "https://illya.sh/thoughts/china-banned-gold-silver-as-money-in-1983", "mainEntityOfPage": "https://illya.sh/thoughts/china-banned-gold-silver-as-money-in-1983", "datePublished": "2026-02-16T11:25:50+00:00", "dateModified": "2026-02-16T11:25:50+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/china-banned-gold-silver-as-money-in-1983.jpg"}, {"@type": "BlogPosting", "headline": "Gold Outperformed Bitcoin In The Last 8 Years", "articleBody": "Gold Outperformed Bitcoin In The Last 8 Years\n\nLet's go back in time. It's December 2017. You have $1000 to invest, and you have 2 options: gold or Bitcoin. Which one would you choose?\n\nIf you bought $1000 worth of BTC at ≈$20K/BTC in December 2017, you'd now have ≈$3500, or roughly a $2500 net profit.\n\nIf you instead bought $1000 worth of gold at ≈$1260/oz, you'd now have ≈$4000, or roughly $3000 net profit.\n\nAnd throughout those 8 years of holding, gold's price never crashed by ≈50%, like it's more or less the norm with Bitcoin & rest of the crypto.\n\nBitcoin can be a great idea for your portfolio, but if you're so determined to HODL long-term, you may be much better off with gold.", "url": "https://illya.sh/thoughts/gold-outperformed-bitcoin-in-the-last-8-years", "mainEntityOfPage": "https://illya.sh/thoughts/gold-outperformed-bitcoin-in-the-last-8-years", "datePublished": "2026-02-15T17:03:28+00:00", "dateModified": "2026-02-15T17:03:28+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/gold-outperformed-bitcoin-in-the-last-8-years.jpg"}, {"@type": "BlogPosting", "headline": "My wife and I met the charging bull himself", "articleBody": "My wife and I met the charging bull himself\n\nHe confirmed that he's heading towards commodities", "url": "https://illya.sh/thoughts/my-wife-and-i-met-the-charging-bull-himself", "mainEntityOfPage": "https://illya.sh/thoughts/my-wife-and-i-met-the-charging-bull-himself", "datePublished": "2026-02-15T15:03:19+00:00", "dateModified": "2026-02-15T15:03:19+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/my-wife-and-i-met-the-charging-bull-himself.jpg"}, {"@type": "BlogPosting", "headline": "China Also Banned Gold & Silver In 1983", "articleBody": "China Also Banned Gold & Silver In 1983\n\nBut unlike in 1933 in the U.S., there was no global ban on the public owning gold & silver. The public was however not allowed to use it as money, collateral, lend it or trade it. Everything gold/silver related had to go through PBoC.\n\nI'll cover this in more detail in a future post.", "url": "https://illya.sh/thoughts/china-also-banned-gold-silver-in-1983", "mainEntityOfPage": "https://illya.sh/thoughts/china-also-banned-gold-silver-in-1983", "datePublished": "2026-02-14T17:29:26+00:00", "dateModified": "2026-02-14T17:29:26+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/china-also-banned-gold-silver-in-1983.jpg"}, {"@type": "BlogPosting", "headline": "In 1934, the U.S. government had to legally raise the price of gold to make a ≈70% profit on it in ≈1 year", "articleBody": "In 1934, the U.S. government had to legally raise the price of gold to make a ≈70% profit on it in ≈1 year\n\nToday, gold goes up by more than 70%/year just by market forces 😄\n\nI've been spamming you to buy gold since it was ≈$1800/oz", "url": "https://illya.sh/thoughts/in-1934-the-u-s-government-had-to-legally-raise-the-price-of", "mainEntityOfPage": "https://illya.sh/thoughts/in-1934-the-u-s-government-had-to-legally-raise-the-price-of", "datePublished": "2026-02-14T17:17:01+00:00", "dateModified": "2026-02-14T17:17:01+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/in-1934-the-u-s-government-had-to-legally-raise-the-price-of.jpg"}, {"@type": "BlogPosting", "headline": "How USA Profited 70% On Gold In 1 Year", "articleBody": "How USA Profited 70% On Gold In 1 Year\n\nIn 1933, the U.S. government purchased gold at $20.67/oz. In 1934, gold was valued at $35/oz, or ≈70% higher!\n\nHow did they do it? Easy:\n\n1️⃣ Force public to liquidate gold at $20.67/oz\n2️⃣ Raise the official gold price to $35/oz\n3️⃣ Instant 70% profit 😄\n\nHad the United States citizens not surrendered their gold in 1933 (which would be illegal to do!), they would be 70% richer just a year later. Instead, that wealth was forcefully transferred to the government, and the people who surrendered their gold became 40% poorer just a year later.", "url": "https://illya.sh/thoughts/how-usa-profited-70-on-gold-in-1-year", "mainEntityOfPage": "https://illya.sh/thoughts/how-usa-profited-70-on-gold-in-1-year", "datePublished": "2026-02-14T16:49:05+00:00", "dateModified": "2026-02-14T16:49:05+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/how-usa-profited-70-on-gold-in-1-year.jpg"}]}
+{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://illya.sh/#person", "name": "Illya Gerasymchuk", "url": "https://illya.sh", "image": "https://illya.sh/staticthoughts/data/profile.png", "sameAs": ["https://illya.sh", "https://github.com/iluxonchik", "https://twitter.com/illyaGera", "https://x.com/illyaGera"], "alternateName": "Illya", "jobTitle": "Financial & Software Engineer", "description": "I build software and write about how money moves: central banks, liquidity, financial market structure, commodities, Bitcoin, crypto markets, and AI systems.", "knowsAbout": ["Monetary policy", "Central banks", "Global liquidity", "Financial market structure", "Market microstructure", "Financial system infrastructure", "Commodities", "Gold", "Silver", "Bitcoin", "Crypto markets", "DeFi", "Stablecoins", "Foreign exchange", "AI systems", "Agentic AI systems", "Software engineering", "Financial law"]}, {"@type": "WebSite", "name": "Illya Gerasymchuk | Financial Markets, Macro, Bitcoin & Commodities", "url": "https://illya.sh/thoughts", "description": "Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financial market structure, commodities, Bitcoin, crypto markets, machine learing and agentic AI systems.", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}}, {"@type": "BlogPosting", "headline": "As a result of the first step in optimizing/prioritizing the random forest’s features -- I've dropped about…", "articleBody": "As a result of the first step in optimizing/prioritizing the random forest’s features -- I've dropped about half of them 😁", "url": "https://illya.sh/thoughts/as-a-result-of-the-first-step-in-optimizing-prioritizing-the", "mainEntityOfPage": "https://illya.sh/thoughts/as-a-result-of-the-first-step-in-optimizing-prioritizing-the", "datePublished": "2026-02-20T15:26:09+00:00", "dateModified": "2026-02-20T15:26:09+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/as-a-result-of-the-first-step-in-optimizing-prioritizing-the.jpg"}, {"@type": "BlogPosting", "headline": "Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization", "articleBody": "Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization\n\nAfter the first level of tuning of the random forest’s parameters, it came time to optimize the features on which the random forest gets trained on. I’ve already did a minor cleanup, but I didn’t yet test for the predictive importance of each feature in the random forest.\n\nTo optimize the random forest’s features, I’m using Out of Sample Permutation Feature Importance (OOS). The OOS approach consists in three core steps:\n\n1️⃣ Train the random forest once on the training data\n2️⃣ Take out-of-sample validation data (testing data), permute the values of a single feature/values within the same column and pass them to the model trained in step 1.\n3️⃣ A feature is important for the model if the model’s predictive power reduces significantly when that feature’s values are randomly shuffled.\n\nThe “out of sample” part refers to the fact that the set of data used to train the model and evaluate it after permutations is distinct, thus reducing the contribution of noise to the evaluation metrics. By default, scikit-learn uses Gini Importance to rank features by their utility to the model. Gini is a bad metric for my data because of:\n\n➖ High cardinality bias (it has an inherent bias towards continuous variables, and some of my features are discrete)\n➖ Gini importance is computed on the training data\n➖ In case of two correlated features, the random forest will randomly pick one at each split, but Gini will actually divide the importance between the two\n\nAdditionally, the out-of-sample Area Under the ROC Curve (AUC) of 0.7566 is unrealistically good for predicting 5-minute Bitcoin price moves. This value implies that if you pick a random 5-minute winning window and a 5-minute losing one, my model ranks the winner window ≈76% of the time. Either I found a model that beats virtually every financial institution in existence, or there is a lookahead bias and overfitting happening in the model. \n\nConclusion: my meta forest — the “seconds_to_settle” feature is basically carrying the entire model 😂 So in its current state, the random forest is training almost entirely on the time of day/time to expiration. The cleanup has started.", "url": "https://illya.sh/thoughts/out-of-sample-permutation-feature-importance-for-random", "mainEntityOfPage": "https://illya.sh/thoughts/out-of-sample-permutation-feature-importance-for-random", "datePublished": "2026-02-20T15:08:42+00:00", "dateModified": "2026-02-20T15:08:42+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/out-of-sample-permutation-feature-importance-for-random.jpg"}, {"@type": "BlogPosting", "headline": "The time to optimize hyperparameters of the random forest has come", "articleBody": "The time to optimize hyperparameters of the random forest has come\n\nStarting with a grid search approach", "url": "https://illya.sh/thoughts/the-time-to-optimize-hyperparameters-of-the-random-forest", "mainEntityOfPage": "https://illya.sh/thoughts/the-time-to-optimize-hyperparameters-of-the-random-forest", "datePublished": "2026-02-19T16:04:34+00:00", "dateModified": "2026-02-19T16:04:34+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/the-time-to-optimize-hyperparameters-of-the-random-forest.jpg"}, {"@type": "BlogPosting", "headline": "The model's first live data trade was a successful Bitcoin short! The position was open for 4 minutes, for a…", "articleBody": "The model's first live data trade was a successful Bitcoin short! The position was open for 4 minutes, for a 0.11% return", "url": "https://illya.sh/thoughts/the-models-first-live-data-trade-was-a-successful-bitcoin", "mainEntityOfPage": "https://illya.sh/thoughts/the-models-first-live-data-trade-was-a-successful-bitcoin", "datePublished": "2026-02-19T13:56:27+00:00", "dateModified": "2026-02-19T13:56:27+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/the-models-first-live-data-trade-was-a-successful-bitcoin.png"}, {"@type": "BlogPosting", "headline": "Added a connection to Binance's futures API and now I have the base learners and the random forest looking…", "articleBody": "Added a connection to Binance's futures API and now I have the base learners and the random forest looking for profitable 5-minute Bitcoin trades in real time\n\nLet's see how it goes, the model already entered its first trade. Let's see how it goes 😄", "url": "https://illya.sh/thoughts/added-a-connection-to-binances-futures-api-and-now-i-have", "mainEntityOfPage": "https://illya.sh/thoughts/added-a-connection-to-binances-futures-api-and-now-i-have", "datePublished": "2026-02-19T13:52:59+00:00", "dateModified": "2026-02-19T13:52:59+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/added-a-connection-to-binances-futures-api-and-now-i-have.png"}, {"@type": "BlogPosting", "headline": "This a gross oversimplification of what it takes to replicate the human brain with AI", "articleBody": "This a gross oversimplification of what it takes to replicate the human brain with AI\n\nThe post is assuming we have a model that can accurately replicate the human brain, which we don't.\n\n200T parameter models won't solve that -- you'll still have a high model bias.", "url": "https://illya.sh/thoughts/this-a-gross-oversimplification-of-what-it-takes-to", "mainEntityOfPage": "https://illya.sh/thoughts/this-a-gross-oversimplification-of-what-it-takes-to", "datePublished": "2026-02-19T12:31:36+00:00", "dateModified": "2026-02-19T12:31:36+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/this-a-gross-oversimplification-of-what-it-takes-to.jpg"}, {"@type": "BlogPosting", "headline": "Vibe-Coding Vulnerabilities With Claude Code", "articleBody": "Vibe-Coding Vulnerabilities With Claude Code\n\nA decade ago there was a joke that IoT stands for \"Internet of Vulnerabilities\", given how vulnerable many Internet of Things devices were and how easy it was to exploit them.\n\nI think we will enter an even bigger era of vulnerabilities with vibe-coded systems, especially with agents handling everything from feature development to deployment. You are outsourcing the security of your product/application to a probabilistic mathematical model, which hallucinates by design.\n\nFor a sufficiently complex system, it's not a question of IF but of WHEN the LLM will make a security-compromising mistake. Unfortunately, large customer data leaks may become the norm.\n\nIf you care about the secrecy of your data, I would advise you be very wary of products developed in such manner. Of course, for many use cases you may also not care about this, and prioritize lower cost or specific features. But you must be aware of the risks.\n\nYou are essentially one prompt away from compromising your system and its data. We will probably even have new laws/regulations coming out to address this.", "url": "https://illya.sh/thoughts/vibe-coding-vulnerabilities-with-claude-code", "mainEntityOfPage": "https://illya.sh/thoughts/vibe-coding-vulnerabilities-with-claude-code", "datePublished": "2026-02-18T16:19:50+00:00", "dateModified": "2026-02-18T16:19:50+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/vibe-coding-vulnerabilities-with-claude-code.jpg"}, {"@type": "BlogPosting", "headline": "Proxy Model From Polymarket's 15 Minute Bitcoin Price", "articleBody": "Proxy Model From Polymarket's 15 Minute Bitcoin Price\n\nI found historical datasets for Polymarket's 15 minute up or down Bitcoin price and I think I can use this data to obtain useful signals via a proxy model. I'll start with linear regression to build a prediction model, to see if this transfer learning approach works here.\n\nYes, it will be overfitting, but for this signal generator it would be by design. The end goal is to find features that improve the random forest's split rules, thus further improving the win rate.", "url": "https://illya.sh/thoughts/proxy-model-from-polymarkets-15-minute-bitcoin-price", "mainEntityOfPage": "https://illya.sh/thoughts/proxy-model-from-polymarkets-15-minute-bitcoin-price", "datePublished": "2026-02-18T16:06:22+00:00", "dateModified": "2026-02-18T16:06:22+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/proxy-model-from-polymarkets-15-minute-bitcoin-price.png"}, {"@type": "BlogPosting", "headline": "Primary Dealers Failures To Settle Implications For Risk Assets", "articleBody": "Primary Dealers Failures To Settle Implications For Risk Assets\n\nSecurity settlement failures on the dealer side are a signal of liquidity stress. In short, it signals that either collateral (securities) or USD liquidity are short. Generally, this is bearish for risk assets.\n\nDealers exercise a key liquidity role in the financial markets microstructure, so a significant stress on their operations will propagate throughout the market.\n\nYou can anecdotally visualize this correlation in Bitcoin by noticing that the peaks of failures to receive/deliver by dealers coincide with at least short-term tops for Bitcoin prices.\n\nThis weekly set of data is made freely available by Office of Financial Research (OFR), and you can download it CSV or JSON formats. If you are incorporating this data into your machine-learning trading models, beware of the look-ahead bias, as this OFR data is released with about a week of delay.", "url": "https://illya.sh/thoughts/primary-dealers-failures-to-settle-implications-for-risk", "mainEntityOfPage": "https://illya.sh/thoughts/primary-dealers-failures-to-settle-implications-for-risk", "datePublished": "2026-02-18T14:40:00+00:00", "dateModified": "2026-02-18T14:40:00+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/primary-dealers-failures-to-settle-implications-for-risk.jpg"}, {"@type": "BlogPosting", "headline": "After tweaking the existing set of base learner models, the random-forest driven trading model factory…", "articleBody": "After tweaking the existing set of base learner models, the random-forest driven trading model factory continues to improve\n\nThe win rate for predicting Bitcoin's 5-minute price moves (binary) is now approaching 54%. A win rate of ≈56% should suffice to accommodate for transaction costs. Win rates over 60% is where it starts to get interesting.", "url": "https://illya.sh/thoughts/after-tweaking-the-existing-set-of-base-learner-models-the", "mainEntityOfPage": "https://illya.sh/thoughts/after-tweaking-the-existing-set-of-base-learner-models-the", "datePublished": "2026-02-18T14:30:10+00:00", "dateModified": "2026-02-18T14:30:10+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/after-tweaking-the-existing-set-of-base-learner-models-the.jpg"}, {"@type": "BlogPosting", "headline": "If you invested just $100 in Gold in 4000 BCE, today it would be worth $100", "articleBody": "If you invested just $100 in Gold in 4000 BCE, today it would be worth $100\n\nThis is because USD didn't exist 6000 years ago, so it wouldn't be accepted as means of settlement in Ancient Egypt, thus you wouldn't find a counterparty willing to sell you gold in exchange for US currency.\n\n6000 years is also for how long gold has been used as money. Yet, some still believe that Bitcoin is the new gold and that it will replace gold as money 😄", "url": "https://illya.sh/thoughts/if-you-invested-just-100-in-gold-in-4000-bce-today-it-would", "mainEntityOfPage": "https://illya.sh/thoughts/if-you-invested-just-100-in-gold-in-4000-bce-today-it-would", "datePublished": "2026-02-18T01:40:19+00:00", "dateModified": "2026-02-18T01:40:19+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/if-you-invested-just-100-in-gold-in-4000-bce-today-it-would.jpg"}, {"@type": "BlogPosting", "headline": "Expert optimization is going well, and I'm starting to move towards the alpha in 5-minute Bitcoin price…", "articleBody": "Expert optimization is going well, and I'm starting to move towards the alpha in 5-minute Bitcoin price markets\n\nI'm not claiming that the model that I currently have is meaningful (it's NOT!), but it's getting closer to interesting win rate ratios (>55%)", "url": "https://illya.sh/thoughts/expert-optimization-is-going-well-and-im-starting-to-move", "mainEntityOfPage": "https://illya.sh/thoughts/expert-optimization-is-going-well-and-im-starting-to-move", "datePublished": "2026-02-17T17:12:07+00:00", "dateModified": "2026-02-17T17:12:07+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/expert-optimization-is-going-well-and-im-starting-to-move.jpg"}, {"@type": "BlogPosting", "headline": "Currently, this is the most valued expert in my model factory pipeline", "articleBody": "Currently, this is the most valued expert in my model factory pipeline\n\nNot because it does anything useful, but precisely because it does not\n\nThe expert randomly emits positive(buy) or negative(sell) signals. This is a rough baseline for random behaviour. Very useful for the integration testing of the pipeline and identifying noise", "url": "https://illya.sh/thoughts/currently-this-is-the-most-valued-expert-in-my-model-factory", "mainEntityOfPage": "https://illya.sh/thoughts/currently-this-is-the-most-valued-expert-in-my-model-factory", "datePublished": "2026-02-17T16:33:29+00:00", "dateModified": "2026-02-17T16:33:29+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/currently-this-is-the-most-valued-expert-in-my-model-factory.jpg"}, {"@type": "BlogPosting", "headline": "My random forest looks much better after the clean-up", "articleBody": "My random forest looks much better after the clean-up\n\nThe feature matrix has been refactored to only include features from which the random forest will be able to learn more effectively. This should greatly reduce the noise\n\nNow, it's time to optimize signals 😄", "url": "https://illya.sh/thoughts/my-random-forest-looks-much-better-after-the-clean-up", "mainEntityOfPage": "https://illya.sh/thoughts/my-random-forest-looks-much-better-after-the-clean-up", "datePublished": "2026-02-17T15:01:07+00:00", "dateModified": "2026-02-17T15:01:07+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/my-random-forest-looks-much-better-after-the-clean-up.png"}, {"@type": "BlogPosting", "headline": "My ML model factory produced this amazing model that trades Bitcoin on 5-minute intervals, cut off at each…", "articleBody": "My ML model factory produced this amazing model that trades Bitcoin on 5-minute intervals, cut off at each 5th minute (very similar to Polymarket's 5 minute BTC markets) and it made over 200K trades in ≈7 months\n\nStats:\n- 200K trades\n- 6.69% profit\n- 49% win rate\n\nSo I've pretty much discovered a coin flip 🤣", "url": "https://illya.sh/thoughts/my-ml-model-factory-produced-this-amazing-model-that-trades", "mainEntityOfPage": "https://illya.sh/thoughts/my-ml-model-factory-produced-this-amazing-model-that-trades", "datePublished": "2026-02-17T14:57:38+00:00", "dateModified": "2026-02-17T14:57:38+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/my-ml-model-factory-produced-this-amazing-model-that-trades.png"}, {"@type": "BlogPosting", "headline": "They say that AI agents will replace all white collar-jobs in the next 6-12 months 😄", "articleBody": "They say that AI agents will replace all white collar-jobs in the next 6-12 months 😄\n\nSo LLMs only have 5-11 months to learn about car washing.\n\nThis simple prompt breaks ChatGPT, DeepSeek, Qwen and Kimi. Works on Gemini though.", "url": "https://illya.sh/thoughts/they-say-that-ai-agents-will-replace-all-white-collar-jobs", "mainEntityOfPage": "https://illya.sh/thoughts/they-say-that-ai-agents-will-replace-all-white-collar-jobs", "datePublished": "2026-02-17T13:35:07+00:00", "dateModified": "2026-02-17T13:35:07+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/they-say-that-ai-agents-will-replace-all-white-collar-jobs.jpg"}, {"@type": "BlogPosting", "headline": "The random forest that guides my model factory needs refactoring", "articleBody": "The random forest that guides my model factory needs refactoring\n\nWhile the current architecture shows good prospects for generating profitable trading models, the random forest is currently a bit of a mess 😅 If you look at the image attached to the post, you can see why.\n \nSince the random forest can’t extrapolate, features like the date and source segment will just make the forest learn on noise (it will train on association between those features, e.g. it’s not very useful to learn that volume in 2025 was higher than in 2024). But this was expected. The goal was to validate an architectural approach that could work. Now it’s time for optimizations and changes. Actually, changes before optimizations.\n\nAnother thing that I’ll get rid of is the hybrid spine for supporting data from multiple timeframes, as the model didn’t extract any meaningful alpha — and some of it has even confused the random forest. I’m sure there is way to make even with limited data, but I’ll be moving to testing it on dataset for which I have access to highly granular data (hello, Bitcoin!). So the logic of the data loader in the pipeline will be greatly simplified.\n\nI’ll also make the labeler configurable, so that you can use the same set of features for different types of predictions. For example, you could have the “unconstrained” standard deviation labelling in the sense hat you can enter and exit the position at any time, to constrained logic scenarios such as the ones of Polymarket’s 5-minute price predictions on Bitcoin, where you can only enter a position at specific times, and the resolution happens at specific times (e.g. at the end of every 5th minute of the day, starting from 0).\n\nThe core logic of the ML pipeline remans the same.", "url": "https://illya.sh/thoughts/the-random-forest-that-guides-my-model-factory-needs", "mainEntityOfPage": "https://illya.sh/thoughts/the-random-forest-that-guides-my-model-factory-needs", "datePublished": "2026-02-16T15:03:02+00:00", "dateModified": "2026-02-16T15:03:02+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/the-random-forest-that-guides-my-model-factory-needs.png"}, {"@type": "BlogPosting", "headline": "China Banned Gold & Silver As Money In 1983", "articleBody": "China Banned Gold & Silver As Money In 1983\n\nWhile it remained legal to hold gold as an individual in PRC, you couldn't:\n- Use gold/silver as money (unit of account/pricing)\n- Trade gold/silver privately (you could only sell it to PBoC)\n- Lend or pledge (use as collateral) gold/silver\n- Act as a dealer of gold, unless authorized by PBoC\n\nSo effectively, as an individual in PRC, you could only sell your gold & silver through the PBoC system, but it was fully lawful to own those metals. Only if you violated the rules above, authorities could force you to liquidate your gold to PBoC at a discount over the spot price.\n\nThis is a big contrast with the gold ban in the United States via Executive Order 6102 in 1933, which required all persons to surrender/liquidate their gold coins, bullion and certificates to the state. Moreover, in 1933 the U.S. government credited you $20.67 per oz gold that you surrender. About a year later, the same government that forced people to liquidate their gold at $20.67, proceeded to raise the price of gold to $35 per oz (at that time the price of the gold was fixed by the government, not determined by market price action like today). So the U.S. government made an instant ≈70% profit on the public's gold.", "url": "https://illya.sh/thoughts/china-banned-gold-silver-as-money-in-1983", "mainEntityOfPage": "https://illya.sh/thoughts/china-banned-gold-silver-as-money-in-1983", "datePublished": "2026-02-16T11:25:50+00:00", "dateModified": "2026-02-16T11:25:50+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/china-banned-gold-silver-as-money-in-1983.jpg"}, {"@type": "BlogPosting", "headline": "Gold Outperformed Bitcoin In The Last 8 Years", "articleBody": "Gold Outperformed Bitcoin In The Last 8 Years\n\nLet's go back in time. It's December 2017. You have $1000 to invest, and you have 2 options: gold or Bitcoin. Which one would you choose?\n\nIf you bought $1000 worth of BTC at ≈$20K/BTC in December 2017, you'd now have ≈$3500, or roughly a $2500 net profit.\n\nIf you instead bought $1000 worth of gold at ≈$1260/oz, you'd now have ≈$4000, or roughly $3000 net profit.\n\nAnd throughout those 8 years of holding, gold's price never crashed by ≈50%, like it's more or less the norm with Bitcoin & rest of the crypto.\n\nBitcoin can be a great idea for your portfolio, but if you're so determined to HODL long-term, you may be much better off with gold.", "url": "https://illya.sh/thoughts/gold-outperformed-bitcoin-in-the-last-8-years", "mainEntityOfPage": "https://illya.sh/thoughts/gold-outperformed-bitcoin-in-the-last-8-years", "datePublished": "2026-02-15T17:03:28+00:00", "dateModified": "2026-02-15T17:03:28+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/gold-outperformed-bitcoin-in-the-last-8-years.jpg"}, {"@type": "BlogPosting", "headline": "My wife and I met the charging bull himself", "articleBody": "My wife and I met the charging bull himself\n\nHe confirmed that he's heading towards commodities", "url": "https://illya.sh/thoughts/my-wife-and-i-met-the-charging-bull-himself", "mainEntityOfPage": "https://illya.sh/thoughts/my-wife-and-i-met-the-charging-bull-himself", "datePublished": "2026-02-15T15:03:19+00:00", "dateModified": "2026-02-15T15:03:19+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/my-wife-and-i-met-the-charging-bull-himself.jpg"}, {"@type": "BlogPosting", "headline": "China Also Banned Gold & Silver In 1983", "articleBody": "China Also Banned Gold & Silver In 1983\n\nBut unlike in 1933 in the U.S., there was no global ban on the public owning gold & silver. The public was however not allowed to use it as money, collateral, lend it or trade it. Everything gold/silver related had to go through PBoC.\n\nI'll cover this in more detail in a future post.", "url": "https://illya.sh/thoughts/china-also-banned-gold-silver-in-1983", "mainEntityOfPage": "https://illya.sh/thoughts/china-also-banned-gold-silver-in-1983", "datePublished": "2026-02-14T17:29:26+00:00", "dateModified": "2026-02-14T17:29:26+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/china-also-banned-gold-silver-in-1983.jpg"}, {"@type": "BlogPosting", "headline": "In 1934, the U.S. government had to legally raise the price of gold to make a ≈70% profit on it in ≈1 year", "articleBody": "In 1934, the U.S. government had to legally raise the price of gold to make a ≈70% profit on it in ≈1 year\n\nToday, gold goes up by more than 70%/year just by market forces 😄\n\nI've been spamming you to buy gold since it was ≈$1800/oz", "url": "https://illya.sh/thoughts/in-1934-the-u-s-government-had-to-legally-raise-the-price-of", "mainEntityOfPage": "https://illya.sh/thoughts/in-1934-the-u-s-government-had-to-legally-raise-the-price-of", "datePublished": "2026-02-14T17:17:01+00:00", "dateModified": "2026-02-14T17:17:01+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/in-1934-the-u-s-government-had-to-legally-raise-the-price-of.jpg"}, {"@type": "BlogPosting", "headline": "How USA Profited 70% On Gold In 1 Year", "articleBody": "How USA Profited 70% On Gold In 1 Year\n\nIn 1933, the U.S. government purchased gold at $20.67/oz. In 1934, gold was valued at $35/oz, or ≈70% higher!\n\nHow did they do it? Easy:\n\n1️⃣ Force public to liquidate gold at $20.67/oz\n2️⃣ Raise the official gold price to $35/oz\n3️⃣ Instant 70% profit 😄\n\nHad the United States citizens not surrendered their gold in 1933 (which would be illegal to do!), they would be 70% richer just a year later. Instead, that wealth was forcefully transferred to the government, and the people who surrendered their gold became 40% poorer just a year later.", "url": "https://illya.sh/thoughts/how-usa-profited-70-on-gold-in-1-year", "mainEntityOfPage": "https://illya.sh/thoughts/how-usa-profited-70-on-gold-in-1-year", "datePublished": "2026-02-14T16:49:05+00:00", "dateModified": "2026-02-14T16:49:05+00:00", "keywords": "Illya Gerasymchuk, Financial & Software Engineer, financial markets, monetary policy, central banks, global liquidity, financial market structure, commodities, gold, silver, Bitcoin, crypto markets, AI systems, software engineering, financial law, machine learning, agentic AI systems, finance, cryptocurrency, Zero-Knowledge Proofs, blockchain", "author": {"@id": "https://illya.sh/#person"}, "publisher": {"@id": "https://illya.sh/#person"}, "image": "https://illya.sh/staticthoughts/data/images/how-usa-profited-70-on-gold-in-1-year.jpg"}]}
 </script>
-    
+
     <style>
         /* Shared base layout + profile header styles.
    Injected into templates via BASE_LAYOUT_AND_PROFILE_CSS placeholder. */
 
 :root {
-    /* Light Theme Variables */
-    --bg-color: #f4f4f4;
-    --container-bg: #ffffff;
-    --box-bg: #fff;
-    --text-color: #333;
-    --secondary-text-color: #555;
-    --light-text-color: #666;
-    --link-color: #007bff;
-    --link-hover-color: #0056b3;
-    --border-color: #ddd;
-    --soft-border-color: #eee;
-    --dashed-border-color: #aaa;
-    --box-shadow-color: rgba(0,0,0,0.08);
-    --lightbox-bg: rgba(0, 0, 0, 0.9);
-    --lightbox-close-bg: rgba(255, 255, 255, 0.8);
-    --lightbox-close-hover-bg: rgba(255, 255, 255, 1);
-    --lightbox-close-color: #000;
-    --disabled-text-color: #aaa;
-    --disabled-bg-color: #f9f9f9;
-    --hover-bg-color: #eee;
+    --nb-ink: #121212;
+    --nb-paper: #efece4;
+    --nb-page: #e7e2d8;
+    --nb-yellow: #f0d54f;
+    --nb-cyan: #77cad8;
+    --nb-pink: #eb4fbb;
+    --nb-white: #faf7f0;
+    --nb-link: #1734c5;
+    --nb-green: #4eff6c;
+    --nb-border: 3px;
+    --nb-content-border: 2px;
+    --nb-radius-sm: 7px;
+    --nb-radius-md: 10px;
+    --nb-shadow-sm: 2px 2px 0 var(--nb-ink);
+    --nb-shadow-lg: 4px 4px 0 var(--nb-ink);
+    --nb-gap-1: 4px;
+    --nb-gap-2: 8px;
+    --nb-gap-3: 12px;
+    --nb-gap-4: 16px;
+    --nb-gap-5: 20px;
+    --nb-gap-6: 24px;
+    --lightbox-bg: rgba(18, 18, 18, 0.82);
+    --font-display: "Space Grotesk", "Arial Black", "Segoe UI", sans-serif;
+    --font-body: "IBM Plex Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-reading: "Literata", Georgia, serif;
 }
 
-/* Dark Theme Variables (applied via media query or body class) */
-.dark-mode {
-    --bg-color: #1a1a1a; /* Dark grey background */
-    --container-bg: #2b2b2b; /* Slightly lighter container */
-    --box-bg: #2b2b2b; /* Same as container for profile/thought boxes */
-    --text-color: #e0e0e0; /* Light grey text */
-    --secondary-text-color: #b0b0b0; /* Medium grey */
-    --light-text-color: #999; /* Lighter grey for dates etc. */
-    --link-color: #58a6ff; /* Lighter blue for links */
-    --link-hover-color: #80bfff; /* Even lighter blue on hover */
-    --border-color: #444; /* Darker border */
-    --soft-border-color: #333; /* Even darker soft border */
-    --dashed-border-color: #666; /* Darker dashed border */
-    --box-shadow-color: rgba(255,255,255,0.08); /* Light shadow */
-    --lightbox-bg: rgba(0, 0, 0, 0.95); /* Slightly more opaque */
-    --lightbox-close-bg: rgba(50, 50, 50, 0.8);
-    --lightbox-close-hover-bg: rgba(70, 70, 70, 1);
-    --lightbox-close-color: #eee;
-    --disabled-text-color: #777;
-    --disabled-bg-color: #3a3a3a;
-    --hover-bg-color: #383838;
+@font-face {
+    font-family: "Space Grotesk";
+    src: url('/staticthoughts/data/fonts/space-grotesk/space-grotesk-latin-700.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
 }
 
-/* Apply dark mode based on system preference */
-@media (prefers-color-scheme: dark) {
-    :root {
-        /* Default to dark variables if system preference is dark */
-        /* This will be overridden if .light-mode is explicitly set */
-        --bg-color: #1a1a1a;
-        --container-bg: #2b2b2b;
-        --box-bg: #2b2b2b;
-        --text-color: #e0e0e0;
-        --secondary-text-color: #b0b0b0;
-        --light-text-color: #999;
-        --link-color: #58a6ff;
-        --link-hover-color: #80bfff;
-        --border-color: #444;
-        --soft-border-color: #333;
-        --dashed-border-color: #666;
-        --box-shadow-color: rgba(255,255,255,0.08);
-        --lightbox-bg: rgba(0, 0, 0, 0.95);
-        --lightbox-close-bg: rgba(50, 50, 50, 0.8);
-        --lightbox-close-hover-bg: rgba(70, 70, 70, 1);
-        --lightbox-close-color: #eee;
-        --disabled-text-color: #777;
-        --disabled-bg-color: #3a3a3a;
-        --hover-bg-color: #383838;
-    }
-
-    /* Ensure explicit light mode overrides system pref */
-    .light-mode {
-        --bg-color: #f4f4f4;
-        --container-bg: #ffffff;
-        --box-bg: #fff;
-        --text-color: #333;
-        --secondary-text-color: #555;
-        --light-text-color: #666;
-        --link-color: #007bff;
-        --link-hover-color: #0056b3;
-        --border-color: #ddd;
-        --soft-border-color: #eee;
-        --dashed-border-color: #aaa;
-        --box-shadow-color: rgba(0,0,0,0.08);
-        --lightbox-bg: rgba(0, 0, 0, 0.9);
-        --lightbox-close-bg: rgba(255, 255, 255, 0.8);
-        --lightbox-close-hover-bg: rgba(255, 255, 255, 1);
-        --lightbox-close-color: #000;
-        --disabled-text-color: #aaa;
-        --disabled-bg-color: #f9f9f9;
-        --hover-bg-color: #eee;
-    }
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url('/staticthoughts/data/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
 
-/* --- Webfont: Literata (variable, WOFF2) for reading surfaces --- */
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url('/staticthoughts/data/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url('/staticthoughts/data/fonts/ibm-plex-sans/ibm-plex-sans-latin.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
 @font-face {
     font-family: 'Literata';
     src: url('/staticthoughts/data/fonts/literata/Literata-VF-latin.woff2') format('woff2-variations');
@@ -142,6 +103,7 @@
     font-weight: 200 900;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Literata';
     src: url('/staticthoughts/data/fonts/literata/Literata-Italic-VF-latin.woff2') format('woff2-variations');
@@ -150,118 +112,325 @@
     font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: "Courier New", Courier, monospace;
-    background-color: var(--bg-color); /* USE VAR */
-    color: var(--text-color); /* USE VAR - Set default text color */
     margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    min-height: 100vh;
+    font-family: var(--font-body);
+    color: var(--nb-ink);
+    background:
+        radial-gradient(circle at top right, rgba(246, 201, 230, 0.12), transparent 16rem),
+        linear-gradient(
+            180deg,
+            var(--nb-pink) 0,
+            var(--nb-pink) 1.8rem,
+            var(--nb-yellow) 1.8rem,
+            var(--nb-yellow) 7rem,
+            var(--nb-page) 7rem,
+            var(--nb-page) 100%
+        );
+    padding: max(0.4rem, env(safe-area-inset-top)) 0.625rem max(0.8rem, env(safe-area-inset-bottom));
+    overflow-x: hidden;
 }
 
 a {
-    color: var(--link-color);
-    text-decoration: none; /* Consistent link styling */
-    transition: color 0.2s ease;
+    color: var(--nb-link);
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 2px;
 }
+
 a:hover {
-    color: var(--link-hover-color);
-    text-decoration: underline; /* Underline on hover for clarity */
+    color: #0d268c;
 }
-a:visited {
-    color: var(--link-color); /* Ensure visited links use theme color */
+
+a:focus-visible,
+button:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #ff2f6f;
+    outline-offset: 3px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .container {
-    background-color: var(--container-bg); /* USE VAR */
-    padding: 25px;
-    border: 1px solid var(--border-color); /* USE VAR */
-    max-width: 750px;
     width: 100%;
-    box-sizing: border-box;
-    box-shadow: 0 1px 4px var(--box-shadow-color); /* USE VAR */
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+    max-width: 62rem;
+    margin: 0 auto;
 }
 
-/* Profile Box Styling */
-.profile-box {
-    border: 2px dashed var(--dashed-border-color); /* USE VAR */
-    padding: 15px;
-    margin-bottom: 30px;
-    background-color: var(--box-bg); /* USE VAR */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+.section-intro {
+    padding: 0 0 0.52rem;
+    border-bottom: var(--nb-content-border) solid rgba(18, 18, 18, 0.18);
 }
-.profile-content {
-    display: flex;
+
+.section-intro__inner {
+    display: grid;
+    gap: 0.3rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    justify-items: start;
+    text-align: left;
+}
+
+.section-intro__title {
+    margin: 0;
+    color: var(--nb-ink);
+    font-family: var(--font-display);
+    font-size: clamp(1.18rem, 4.3vw, 1.45rem);
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: 0.01em;
+}
+
+.section-intro__description {
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    color: rgba(18, 18, 18, 0.88);
+    font-size: 0.92rem;
+    line-height: 1.38;
+}
+
+.section-intro--directory .section-intro__inner {
+    max-width: 100%;
+    margin: 0;
+    justify-items: start;
+    text-align: left;
+}
+
+.section-intro--directory .section-intro__description {
+    max-width: none;
+}
+
+.section-intro--topic-feed .section-intro__inner {
+    max-width: 100%;
+    margin: 0;
+    justify-items: start;
+    text-align: left;
+}
+
+.section-intro--topic-feed .section-intro__description {
+    max-width: none;
+}
+
+.surface-card {
+    border: var(--nb-content-border) solid var(--nb-ink);
+    border-radius: var(--nb-radius-md);
+    box-shadow: var(--nb-shadow-sm);
+    overflow: hidden;
+}
+
+.tone-paper {
+    background: var(--nb-paper);
+}
+
+.tone-yellow {
+    background: var(--nb-yellow);
+}
+
+.tone-cyan {
+    background: var(--nb-cyan);
+}
+
+.tone-white {
+    background: var(--nb-white);
+}
+
+.neo-btn,
+.neo-icon-btn,
+.meta-pill,
+.profile-links a {
+    transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+
+.neo-btn,
+.profile-links a {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0; /* Remove vertical spacing */
-    width: 100%;
+    gap: 0.35rem;
+    min-height: 34px;
+    padding: 0.28rem 0.58rem;
+    border: var(--nb-border) solid var(--nb-ink);
+    border-radius: var(--nb-radius-sm);
+    background: var(--nb-paper);
+    box-shadow: var(--nb-shadow-lg);
+    color: var(--nb-ink);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: 0.79rem;
+    font-weight: 700;
+    line-height: 1.05;
+    white-space: nowrap;
 }
+
+.neo-icon-btn {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--nb-border) solid var(--nb-ink);
+    border-radius: var(--nb-radius-sm);
+    background: var(--nb-paper);
+    box-shadow: var(--nb-shadow-lg);
+    color: var(--nb-ink);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+}
+
+.meta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.16rem 0.42rem;
+    border: var(--nb-content-border) solid var(--nb-ink);
+    border-radius: var(--nb-radius-sm);
+    background: var(--nb-white);
+    box-shadow: var(--nb-shadow-sm);
+    color: var(--nb-ink);
+    font-family: var(--font-display);
+    font-size: 0.67rem;
+    font-weight: 700;
+    line-height: 1.05;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.neo-btn:hover,
+.neo-icon-btn:hover,
+.meta-pill:hover,
+.profile-links a:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0 var(--nb-ink);
+    background: var(--nb-yellow);
+    color: var(--nb-ink);
+    text-decoration: none;
+}
+
+.profile-box {
+    border: var(--nb-border) solid var(--nb-ink);
+    border-radius: var(--nb-radius-md);
+    background: var(--nb-white);
+    box-shadow: var(--nb-shadow-lg);
+    padding: 0.65rem;
+    margin-bottom: var(--nb-gap-3);
+    display: grid;
+    gap: var(--nb-gap-3);
+}
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    align-items: center;
+    column-gap: var(--nb-gap-3);
+    min-width: 0;
+}
+
 .profile-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    border-radius: 999px;
     object-fit: cover;
-    margin-right: 15px;
-    border: 1px solid var(--soft-border-color); /* USE VAR */
-    box-shadow: 0 0 0 4px #00aef5;
-    flex-shrink: 0;
-    cursor: pointer; /* Theme toggle on thoughts pages */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    border: var(--nb-border) solid var(--nb-ink);
+    box-shadow: 0 0 0 3px var(--nb-pink);
+    background: var(--nb-white);
 }
+
 .profile-details {
+    min-width: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile-name {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.7rem, 7vw, 2.6rem);
+    font-weight: 700;
+    line-height: 0.94;
+    letter-spacing: 0.01em;
+}
+
+.profile-title {
+    margin-top: 0.18rem;
+    font-size: clamp(0.9rem, 3.6vw, 1rem);
+    font-weight: 700;
+    line-height: 1.12;
+}
+
+.profile-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--nb-gap-2);
+    align-items: stretch;
+}
+
+.profile-links a {
+    width: 100%;
+    min-width: 0;
+    padding-inline: 0.46rem;
+    justify-content: center;
     text-align: center;
 }
-.profile-name {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 2px;
-    color: var(--text-color); /* Ensure uses variable */
-}
-.profile-title {
-    color: var(--secondary-text-color); /* USE VAR */
-    font-size: 0.95em;
-}
-.profile-links {
-    font-size: 0.9em;
-    color: var(--secondary-text-color); /* USE VAR */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 8px 16px;
-    padding: 0;
-    margin-top: 12px;
-    line-height: 1.4;
-}
-.profile-links a {
-    text-decoration: none;
-    color: var(--link-color); /* USE VAR */
-    transition: color 0.2s ease;
-    white-space: nowrap;
-    padding: 2px 4px;
-    border-radius: 3px;
-    display: inline-block;
-}
+
 .profile-home-link-text {
-    /* Slightly tighten the two-word label without hurting readability. */
-    word-spacing: -0.22ch;
-}
-.profile-links a:hover {
-    color: var(--link-hover-color); /* USE VAR */
-    background-color: var(--hover-bg-color);
+    word-spacing: -0.18ch;
 }
 
-/* Screen-reader only content (kept semantic/SEO-visible, visually hidden). */
+.thread-nav-container {
+    margin-top: var(--nb-gap-3);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--nb-gap-2);
+    align-items: stretch;
+}
+
+.thread-nav-container .nav-btn {
+    min-height: 34px;
+    padding: 0.3rem 0.6rem;
+    border: var(--nb-border) solid var(--nb-ink);
+    border-radius: var(--nb-radius-sm);
+    background: var(--nb-paper);
+    box-shadow: var(--nb-shadow-lg);
+    color: var(--nb-ink);
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1.05;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease, color 120ms ease;
+}
+
+.thread-nav-container .nav-btn:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0 var(--nb-ink);
+    background: var(--nb-yellow);
+    color: var(--nb-ink);
+    text-decoration: none;
+}
+
 .visually-hidden {
     position: absolute !important;
     width: 1px;
@@ -274,709 +443,595 @@ a:visited {
     border: 0;
 }
 
-/* Shared responsive */
-@media (max-width: 600px) {
+@media (min-width: 48rem) {
     body {
-        padding: 10px;
+        padding: max(0.65rem, env(safe-area-inset-top)) 0.95rem max(0.9rem, env(safe-area-inset-bottom));
     }
-    .container {
-        padding: 15px;
-        max-width: 100%;
+
+    .section-intro {
+        padding-bottom: 0.56rem;
     }
-    /* Adjusted Profile Box for Mobile */
+
     .profile-box {
-        padding: 12px; /* Further reduced padding */
-        margin-bottom: 25px; /* Further reduced margin */
+        padding: 0.72rem 0.8rem;
+        gap: var(--nb-gap-3);
     }
-    /* Adjusted Profile Content for Mobile */
+
     .profile-content {
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 0; /* No spacing between profile content and links */
+        grid-template-columns: 64px minmax(0, 1fr);
+        column-gap: var(--nb-gap-4);
     }
+
     .profile-img {
-        width: 50px;
-        height: 50px;
-        margin-right: 12px;
+        width: 64px;
+        height: 64px;
     }
+
+    .profile-links a,
+    .neo-btn {
+        min-height: 36px;
+        padding: 0.3rem 0.62rem;
+        font-size: 0.8rem;
+    }
+
+    .neo-icon-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 0.94rem;
+    }
+}
+
+@media (min-width: 56.25rem) {
+    .profile-box {
+        grid-template-columns: minmax(0, 1fr) minmax(19rem, 20.5rem);
+        align-items: start;
+        gap: var(--nb-gap-4);
+        padding: 0.72rem 0.8rem;
+    }
+
+    .profile-links {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-self: start;
+        justify-self: stretch;
+    }
+
+    .profile-links a {
+        min-height: 36px;
+    }
+}
+
+@media (min-width: 52rem) {
+    .thread-nav-container {
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-template-columns: none;
+    }
+}
+
+@media (max-width: 25rem) {
+    .profile-box {
+        padding: 0.6rem;
+        gap: var(--nb-gap-2);
+    }
+
+    .profile-links {
+        gap: 6px;
+    }
+
+    .profile-links a,
+    .neo-btn {
+        min-height: 34px;
+        padding: 0.24rem 0.42rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 23rem) {
+    body {
+        padding: max(0.35rem, env(safe-area-inset-top)) 0.45rem max(0.72rem, env(safe-area-inset-bottom));
+    }
+
+    .profile-box {
+        padding: 0.58rem;
+        gap: var(--nb-gap-2);
+    }
+
+    .profile-content {
+        grid-template-columns: 52px minmax(0, 1fr);
+        column-gap: var(--nb-gap-2);
+    }
+
+    .profile-img {
+        width: 52px;
+        height: 52px;
+    }
+
     .profile-name {
-        font-size: 1.1em;
+        font-size: 1.52rem;
     }
+
     .profile-title {
-        font-size: 0.9em;
+        font-size: 0.84rem;
     }
-    /* Adjusted Profile Links for Mobile */
+
     .profile-links {
-        font-size: 0.82em;
-        margin-top: 10px;
-        gap: 6px 12px; /* Optimized gap for mobile */
-        justify-content: center; /* Ensure centering on mobile too */
-        line-height: 1.3;
+        gap: 6px;
     }
-    .profile-links a {
-        padding: 3px 6px; /* Slightly more padding for easier mobile tapping */
-        border-radius: 4px;
+
+    .profile-links a,
+    .neo-btn {
+        min-height: 34px;
+        padding: 0.22rem 0.36rem;
+        font-size: 0.72rem;
+    }
+
+    .neo-icon-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 0.86rem;
     }
 }
 
-/* Extra small screens (iPhone SE, etc.) */
-@media (max-width: 375px) {
-    .profile-links {
-        font-size: 0.78em;
-        gap: 4px 8px; /* Tighter gap for very small screens */
-        margin-top: 8px;
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
     }
-    .profile-links a {
-        padding: 2px 4px; /* Compact padding for very small screens */
-        border-radius: 3px;
+
+    .neo-btn,
+    .neo-icon-btn,
+    .thread-nav-container .nav-btn,
+    .meta-pill,
+    .profile-links a,
+    a,
+    button,
+    textarea {
+        transition: none !important;
+        animation: none !important;
+        transform: none !important;
     }
 }
 
 
-        /* Thoughts Header - Section Title Style */
-        .thoughts-header {
-            border: none;
-            background-color: transparent;
-            padding: 0; 
-            display: block; 
-            font-size: 1.4em; 
-            font-weight: bold;
-            color: var(--text-color); /* USE VAR */
-            margin-top: 0; 
-            margin-bottom: 25px; 
-            padding-bottom: 8px; 
-            border-bottom: 2px solid var(--soft-border-color); /* USE VAR */
-            text-align: center; 
-            transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
-        }
-        /* Apply Literata to the primary reading title */
-        .thoughts-header {
-            font-family: Georgia, 'Literata', serif;
-            font-weight: 600;
-            font-optical-sizing: auto;
+        .container {
+            max-width: 54rem;
         }
 
-        /* Thought Box Styling */
+        .feed-rail {
+            width: 100%;
+            max-width: 46rem;
+            margin: 0 auto;
+            display: grid;
+            gap: var(--nb-gap-3);
+        }
+
         .thought-box {
-            border: 2px dashed var(--dashed-border-color); /* USE VAR */
-            padding: 10pt;
-            padding-top: 1pt;
-            padding-bottom: 1pt;
-            margin-bottom: 14pt; 
-            background-color: var(--box-bg); /* USE VAR */
-            transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+            border: var(--nb-content-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-md);
+            background: var(--nb-paper);
+            box-shadow: var(--nb-shadow-sm);
+            padding: 0.75rem;
+            margin-bottom: var(--nb-gap-3);
+            transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
         }
 
-        /* Hover effect for clickable thought boxes (applied via JavaScript based on page type) */
         .thought-box.clickable:hover {
-            background-color: var(--hover-bg-color);
-            border-color: var(--text-color);
+            transform: translate(1px, 1px);
+            box-shadow: 1px 1px 0 var(--nb-ink);
+            background: #f5f1e7;
         }
+
         .thought-header {
-            display: flex; 
-            align-items: center; 
-            flex-wrap: wrap; 
-            gap: 0.5em;
-            padding-bottom: 0px;
-            font-size: 0.95em;
-            color: var(--secondary-text-color); /* USE VAR */
+            display: grid;
+            grid-template-columns: 32px minmax(0, 1fr);
+            gap: var(--nb-gap-2);
+            align-items: start;
+            margin-bottom: var(--nb-gap-2);
         }
-        .thought-user-img { 
-             width: 25px;
-             height: 25px;
-             border-radius: 50%;
-             object-fit: cover;
-             border: 1px solid var(--soft-border-color); /* USE VAR */
-             vertical-align: middle; 
-             transition: border-color 0.3s ease; /* Smooth transition */
+
+        .thought-user-img {
+            width: 32px;
+            height: 32px;
+            border-radius: 999px;
+            object-fit: cover;
+            border: 2px solid var(--nb-ink);
+            background: var(--nb-white);
+            box-shadow: 0 0 0 2px var(--nb-pink);
         }
+
+        .thought-header-main {
+            min-width: 0;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: var(--nb-gap-1) var(--nb-gap-2);
+            align-items: center;
+        }
+
         .thought-header .user-name {
-            font-weight: bold;
-            color: var(--text-color); /* USE VAR */
-            margin: 0; 
+            min-width: 0;
+            font-family: var(--font-display);
+            font-size: clamp(0.98rem, 3vw, 1.05rem);
+            font-weight: 700;
+            line-height: 1;
+            overflow-wrap: anywhere;
         }
-         .thought-header .separator {
-             margin: 0 0.2em; 
-             color: var(--light-text-color); /* Separator should probably use this */
-         }
-         .thought-header .date-time {
-             color: var(--light-text-color); /* USE VAR */
-             flex-shrink: 0; 
-         }
+
+        .thought-date-time {
+            margin: 0;
+            justify-self: end;
+        }
 
         .thought-content p {
-            margin-top: 0;
-            margin-bottom: 10px;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-            color: var(--text-color); /* Ensure paragraph text uses variable */
-        }
-        /* Apply Literata to main reading paragraphs */
-        .thought-content p,
-        .quoted-thought-content p {
-            font-family: 'Literata', Georgia, serif;
-            font-weight: 270;
+            margin: 0 0 0.78rem;
+            color: var(--nb-ink);
+            font-family: var(--font-reading);
+            font-weight: 280;
             font-optical-sizing: auto;
-            line-height: 1.2;
+            font-size: clamp(0.98rem, 3.3vw, 1rem);
+            line-height: 1.44;
+            overflow-wrap: anywhere;
         }
+
+        .thought-content p:last-child,
+        .quoted-thought-content p:last-child {
+            margin-bottom: 0;
+        }
+
         .thought-image {
-            margin-top: 15px; 
+            margin-top: 0.72rem;
         }
+
         .thought-image .lightbox-trigger {
             display: block;
-            max-width: 550px;  
-            width: 100%; 
-            margin-left: auto;
-            margin-right: auto;
-            cursor: pointer;
-            overflow: hidden;
-            border-radius: 8px;
-            border: 1px solid var(--border-color); /* USE VAR */
-            position: relative;
-            transition: border-color 0.3s ease; /* Smooth transition */
-        }
-        .thought-image img.thought-img {
-            display: block; 
-            width: 100%; 
-            height: auto; 
-            transition: opacity 0.2s ease-in-out; 
-        }
-         .thought-image .lightbox-trigger:hover img.thought-img {
-              opacity: 0.9; 
-         }
-
-        /* Lightbox Overlay */
-        .lightbox-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
-            background: var(--lightbox-bg); /* USE VAR */
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            padding: 40px;
-            box-sizing: border-box;
-            transition: background-color 0.3s ease; /* Smooth transition */
+            border: var(--nb-content-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-md);
+            overflow: hidden;
+            background: var(--nb-white);
+            box-shadow: var(--nb-shadow-sm);
         }
-        .lightbox-overlay.visible {
-            display: flex; 
-        }
-        .lightbox-content {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 100%; 
-            max-height: 100%;
-        }
-        .lightbox-content img {
-            display: block;
-            max-width: 100%; 
-            max-height: 100%; 
-            width: auto;
+
+        .thought-image img.thought-img {
+            width: 100%;
             height: auto;
-            object-fit: contain;
-            border: none;
-            box-shadow: 0 5px 30px rgba(0,0,0,0.5); /* Keep shadow potentially dark */
-        }
-        .lightbox-close {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            background: var(--lightbox-close-bg); /* USE VAR */
-            color: var(--lightbox-close-color); /* USE VAR */
-            border: none;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            font-size: 24px;
-            font-weight: normal;
-            line-height: 28px;
-            text-align: center;
-            cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            transition: background-color 0.2s ease, color 0.2s ease; /* Smooth transition */
-        }
-        .lightbox-close:hover {
-            background-color: var(--lightbox-close-hover-bg); /* USE VAR */
         }
 
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            .thoughts-header {
-                font-size: 1.2em;
-                margin-bottom: 20px;
-            }
-            .thought-box {
-                padding: 10pt;
-                padding-bottom: 1pt;
-                padding-top: 1pt;
-                margin-bottom: 14pt;
-            }
-             .thought-header {
-                font-size: 0.85em; /* Even smaller font for mobile header */
-                gap: 0.3em; /* Further reduce gap */
-                padding-bottom: 0px; /* Reduce padding */
-             }
-             .thought-user-img {
-                 width: 20px; /* Even smaller image on mobile */
-                 height: 20px;
-             }
-             /* Optionally hide separator on very small screens if needed */
-             /* .thought-header .separator { display: none; } */
-        }
-
-        /* Extra small screens (iPhone SE, etc.) */
-        @media (max-width: 380px) {
-             .thought-header {
-                font-size: 0.8em; /* Even smaller font for very small screens */
-                gap: 0.25em; /* Minimal gap */
-             }
-             .thought-header .date-time {
-                flex-shrink: 1; /* Allow date to shrink if needed */
-                min-width: 0; /* Allow text truncation */
-             }
-
-             .thought-image .lightbox-trigger {
-                  /* Remove max-width on mobile to allow full width */
-                  max-width: 100%; 
-                  border-radius: 6px; 
-             }
-
-             .lightbox-overlay { padding: 10px; }
-             .lightbox-content {
-                  /* Adjust max size slightly for smaller padding */
-                  /* REMOVE THESE - they were overriding the general rules */
-                  /* max-width: calc(100vw - 20px); */
-                  /* max-height: calc(100vh - 20px); */
-              }
-             .lightbox-close {
-                 top: 5px; right: 5px; width: 28px; height: 28px;
-                 font-size: 20px; line-height: 26px;
-             }
-
-            .pagination {
-                margin-top: 20px;
-                padding-top: 15px;
-                font-size: 0.85em; /* Smaller text on mobile */
-            }
-             .pagination a, .pagination span {
-                 padding: 6px 10px; /* Smaller padding */
-                 margin: 0 2px; /* Less margin */
-             }
-             .pagination span.page-info {
-                 display: none; /* Optionally hide page number on very small screens */
-             }
-
-            /* Individual thought navigation responsive */
-            .individual-thought-navigation {
-                display: flex !important;
-                flex-direction: column !important;
-                gap: 10px !important;
-                margin-top: 20px !important;
-            }
-            .individual-thought-navigation .nav-button {
-                width: 100% !important;
-                margin-right: 0 !important;
-                margin-left: 0 !important;
-                text-align: center !important;
-                box-sizing: border-box !important;
-            }
-
-            /* Quoted thought images on mobile */
-            .quoted-thought-image img {
-                max-width: 70%; /* Even smaller on mobile for better proportion */
-                max-height: 200px; /* Smaller height limit on mobile */
-            }
-        }
-
-        /* Pagination Styling */
-        .pagination {
-            margin-top: 30px; /* Space above pagination */
-            padding-top: 20px; /* Space below last thought */
-            border-top: 1px solid var(--soft-border-color); /* USE VAR */
-            text-align: center;
-            display: flex; /* Use flexbox for alignment */
-            justify-content: space-between; /* Space out Prev, Info, Next */
-            align-items: center;
-            transition: border-color 0.3s ease; /* Smooth transition */
-        }
-        .pagination a, .pagination span {
-            display: inline-block;
-            padding: 8px 16px;
-            margin: 0 4px;
-            border: 1px solid var(--border-color); /* USE VAR */
-            border-radius: 4px;
-            color: var(--link-color); /* USE VAR */
-            text-decoration: none;
-            transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-            font-size: 0.9em;
-        }
-        .pagination a:hover {
-            background-color: var(--hover-bg-color); /* USE VAR */
-            color: var(--link-hover-color); /* USE VAR */
-        }
-        .pagination span.disabled {
-            color: var(--disabled-text-color); /* USE VAR */
-            background-color: var(--disabled-bg-color); /* USE VAR */
-            cursor: default;
-            border-color: var(--border-color); /* USE VAR - Use regular border color for consistency */
-        }
-        .pagination span.page-info {
-             border: none; 
-             color: var(--secondary-text-color); /* USE VAR */
-             background-color: transparent;
-        }
-
-        /* Quoted Thought Styling */
         .quoted-thought-container {
-            margin-top: 15px;
-            border-left: 3px solid var(--border-color);
-            padding-left: 15px;
-            transition: border-color 0.3s ease;
+            margin-top: 0.78rem;
+            padding-left: 0.28rem;
         }
 
         .quoted-thought-box {
-            border: 1px solid var(--soft-border-color);
-            border-radius: 8px;
-            padding: 12px;
-            background-color: var(--box-bg);
-            font-size: 0.9em; /* Slightly smaller text */
-            transition: background-color 0.3s ease, border-color 0.3s ease;
+            border: var(--nb-content-border) solid var(--nb-ink);
+            border-left: 3px solid var(--nb-pink);
+            border-radius: 0 var(--nb-radius-md) var(--nb-radius-md) 0;
+            background: var(--nb-white);
+            box-shadow: var(--nb-shadow-sm);
+            padding: 0.68rem;
+            transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
         }
 
         .quoted-thought-box:hover {
-            background-color: var(--hover-bg-color);
-            cursor: pointer;
+            transform: translate(1px, 1px);
+            box-shadow: 1px 1px 0 var(--nb-ink);
+            background: #fffdf8;
         }
 
         .quoted-thought-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 8px;
-            font-size: 0.85em;
+            display: grid;
+            grid-template-columns: 26px minmax(0, 1fr);
+            gap: var(--nb-gap-2);
+            align-items: start;
+            margin-bottom: var(--nb-gap-2);
         }
 
         .quoted-thought-user-img {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            border-radius: 999px;
             object-fit: cover;
-            margin-right: 8px;
-            border: 1px solid var(--soft-border-color);
-            transition: border-color 0.3s ease;
+            border: 2px solid var(--nb-ink);
+            background: var(--nb-white);
         }
 
-        .quoted-user-name {
-            font-weight: bold;
-            color: var(--text-color);
-            margin-right: 5px;
-        }
-
-        .quoted-thought-date-time {
-            color: var(--light-text-color);
-            margin: 0;
-            font-size: 0.9em;
-        }
-
-        .quoted-thought-permalink {
-            color: var(--light-text-color);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .quoted-thought-permalink:hover {
-            color: var(--link-hover-color);
-            text-decoration: underline;
-        }
-
-        /* Mobile responsive adjustments for quoted thoughts */
-        @media (max-width: 600px) {
-            .quoted-thought-container {
-                padding-left: 10px;
-                margin-top: 12px;
-            }
-            
-            .quoted-thought-box {
-                padding: 10px;
-                font-size: 0.85em;
-            }
-            
-            .quoted-thought-user-img {
-                width: 20px;
-                height: 20px;
-                margin-right: 6px;
-            }
-            
-            .quoted-thought-header {
-                font-size: 0.8em;
-            }
-        }
-
-        /* Theme Feedback Styling */
-        .theme-feedback {
-            position: fixed;
-            top: 20px; /* Position from the top */
-            left: 50%;
-            transform: translateX(-50%); /* Center horizontally */
-            background-color: var(--container-bg); /* Use theme background */
-            color: var(--text-color); /* Use theme text color */
-            padding: 10px 20px;
-            border-radius: 20px; /* Rounded corners */
-            border: 1px solid var(--border-color);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            font-size: 0.9em;
-            z-index: 1001; /* Above lightbox overlay */
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.4s ease, visibility 0.4s ease, top 0.4s ease;
-            white-space: nowrap;
-        }
-        .theme-feedback.visible {
-            opacity: 1;
-            visibility: visible;
-            top: 30px; /* Slightly move down when visible */
-        }
-
-        /* Quoted thought styles */
-        .quoted-thought-container {
-            margin-top: 16px;
-            position: relative;
-            padding: 0;
-        }
-        
-        .quoted-thought-box {
-            border-left: 3px solid var(--secondary-text-color);
-            background: linear-gradient(135deg, 
-                rgba(128, 128, 128, 0.03) 0%, 
-                rgba(128, 128, 128, 0.01) 100%);
-            border-radius: 0 12px 12px 0;
-            padding: 14px 16px;
-            transition: all 0.2s ease;
-            position: relative;
-        }
-        
-        .quoted-thought-box:hover {
-            background: linear-gradient(135deg, 
-                rgba(128, 128, 128, 0.08) 0%, 
-                rgba(128, 128, 128, 0.03) 100%);
-            border-left-color: var(--text-color);
-        }
-        
-        .quoted-thought-box::before {
-            content: "";
-            position: absolute;
-            left: -3px;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: linear-gradient(to bottom, 
-                var(--secondary-text-color) 0%, 
-                transparent 100%);
-            border-radius: 3px 0 0 3px;
-        }
-        
-        .quoted-thought-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 8px;
-            gap: 8px;
-        }
-        
-        .quoted-thought-user-img {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            flex-shrink: 0;
-            opacity: 0.9;
-        }
-        
         .quoted-thought-user-info {
-            display: flex;
-            align-items: center;
-            gap: 6px;
             min-width: 0;
-        }
-        
-        .quoted-user-name {
-            font-weight: 500;
-            font-size: 1.1em;
-            color: var(--text-color);
-            line-height: 1.2;
-            opacity: 0.85;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        
-        .quoted-thought-date-time {
-            font-size: 0.72em;
-            color: var(--secondary-text-color);
-            line-height: 1.2;
-            opacity: 0.8;
-            white-space: nowrap;
-        }
-        
-        .quoted-thought-permalink {
-            color: inherit;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            border-radius: 3px;
-            padding: 1px 3px;
-            margin: -1px -3px;
-        }
-        
-        .quoted-thought-permalink:hover {
-            color: var(--text-color);
-            background-color: rgba(128, 128, 128, 0.1);
-            text-decoration: none;
-        }
-        
-        .quoted-thought-content p {
-            font-size: 0.95em;
-            margin: 0;
-            color: var(--text-color);
-            opacity: 0.9;
-        }
-        
-        .quoted-thought-image {
-        }
-        
-        .quoted-thought-image img {
-            max-width: 80%; /* Smaller than main thought images */
-            max-height: 300px; /* Limit height to maintain proportions */
-            width: auto;
-            height: auto;
-            border-radius: 8px;
-            border: 1px solid rgba(128, 128, 128, 0.15);
-            transition: border-color 0.2s ease;
-            object-fit: cover;
-        }
-        
-        .quoted-thought-image img:hover {
-            border-color: var(--border-color);
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: var(--nb-gap-1) var(--nb-gap-2);
+            align-items: center;
         }
 
-        /* Action Bar Styling */
-        .thought-actions {
-            padding-top: 8pt;
+        .quoted-user-name {
+            font-family: var(--font-display);
+            font-size: 0.82rem;
+            font-weight: 700;
+            line-height: 1;
         }
-        .action-row {
-            display: flex;
+
+        .quoted-thought-date-time {
+            display: inline-flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 6px; /* small gap without changing height */
+            justify-self: end;
         }
-        .thread-links {
-            display: flex;
-            align-items: center;
-            flex-wrap: nowrap;
-            gap: 3px;
-            min-height: 1.2em; /* one line high */
-            min-width: 0; /* allow flex shrink for ellipsis */
-            flex: 1 1 auto;
-            color: var(--secondary-text-color);
-            font-size: 0.9em;
-            font-family: 'Literata', Georgia, serif; /* match reading surface */
-            font-weight: 270;
+
+        .quoted-thought-date-time .meta-pill {
+            font-size: 0.63rem;
+            padding: 0.13rem 0.38rem;
+        }
+
+        .quoted-thought-content p {
+            margin: 0 0 0.65rem;
+            color: var(--nb-ink);
+            font-family: var(--font-reading);
+            font-weight: 280;
             font-optical-sizing: auto;
-            line-height: 1.2;
+            font-size: 0.93rem;
+            line-height: 1.4;
+            overflow-wrap: anywhere;
         }
-        .thread-links-prefix { opacity: 0.9; margin-right: 2px; }
-        .thread-chip {
-            display: inline-block;
-            padding: 0 5px; /* compact */
-            border: 1px solid var(--soft-border-color);
-            border-radius: 5px; /* rectangular with subtle rounding */
-            color: var(--secondary-text-color);
-            font-size: 0.85em;
-            text-decoration: none;
-            vertical-align: middle;
-        }
-        .thread-chip.primary {
-            font-weight: 300;
-            flex: 0 1 auto; /* allow shrink, but don't grow unnecessarily */
-            width: max-content; /* size to text when space allows */
-            max-width: 100%;   /* but never exceed available space */
-            min-width: 0;      /* enable shrink inside flex */
+
+        .quoted-thought-image .lightbox-trigger {
+            display: block;
+            width: min(100%, 22rem);
+            margin-top: 0.7rem;
+            border: var(--nb-content-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-sm);
             overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+            background: var(--nb-paper);
+            box-shadow: var(--nb-shadow-sm);
         }
-        .thread-chip.more { pointer-events: none; }
-        .thread-chip:hover { background: var(--hover-bg-color); border-color: var(--border-color); color: var(--text-color); text-decoration: none; }
+
+        .quoted-thought-image img.quoted-thought-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .thought-actions {
+            margin-top: 0.78rem;
+        }
 
         .action-separator {
-            height: 1px;
-            background: repeating-linear-gradient(
-                to right,
-                var(--light-text-color) 0px,
-                var(--light-text-color) 2px,
-                transparent 2px,
-                transparent 6px
-            );
-            margin-bottom: 2pt;
-            opacity: 0.6;
+            height: 2px;
+            border-radius: 999px;
+            background: rgba(18, 18, 18, 0.72);
+            margin-bottom: 0.55rem;
+        }
+
+        .action-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: var(--nb-gap-2);
+            align-items: end;
+        }
+
+        .thread-links {
+            min-width: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.32rem;
+        }
+
+        .thread-links-prefix {
+            font-family: var(--font-display);
+            font-size: 0.7rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .thread-chip {
+            display: inline-flex;
+            align-items: center;
+            max-width: 100%;
+            padding: 0.12rem 0.4rem;
+            border: var(--nb-content-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-sm);
+            background: var(--nb-white);
+            color: var(--nb-ink);
+            box-shadow: none;
+            font-family: var(--font-display);
+            font-size: 0.65rem;
+            font-weight: 700;
+            line-height: 1;
+            text-decoration: none;
+            transition: transform 120ms ease, background-color 120ms ease;
+        }
+
+        .thread-chip.primary {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .thread-chip.more {
+            pointer-events: none;
+        }
+
+        .thread-chip:hover {
+            transform: translate(1px, 1px);
+            background: var(--nb-yellow);
+            color: var(--nb-ink);
+            text-decoration: none;
         }
 
         .action-buttons {
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            flex: 0 0 auto; /* prevent growth; leave width to thread-links */
+            gap: var(--nb-gap-2);
+            flex: 0 0 auto;
         }
 
+        .comment-button,
         .share-button {
-            background: transparent;
-            border: none;
-            font-size: 1.2em;
-            cursor: pointer;
+            width: 34px;
+            height: 34px;
             padding: 0;
-            border-radius: 4px;
-            color: var(--secondary-text-color);
-            transition: color 0.2s ease, transform 0.2s ease;
-            font-family: inherit;
-            outline: none;
-            margin-right: 2pt;
-            -webkit-tap-highlight-color: transparent;
-            text-shadow: 0 0 1px rgba(0,0,0,0.5), 0 0 4px rgba(0,0,0,0.35);
+            border: var(--nb-content-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-sm);
+            background: var(--nb-paper);
+            color: var(--nb-ink);
+            box-shadow: var(--nb-shadow-sm);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+            text-decoration: none;
         }
 
+        .comment-button:hover,
         .share-button:hover {
-            color: var(--text-color);
-            transform: scale(1.1);
+            transform: translate(1px, 1px);
+            box-shadow: 1px 1px 0 var(--nb-ink);
+            background: var(--nb-yellow);
+            color: var(--nb-ink);
         }
 
+        .comment-button:active,
         .share-button:active {
-            transform: scale(0.95);
-            color: var(--text-color);
+            transform: translate(1px, 1px);
         }
 
-        /* Share Feedback Toast */
+        .pagination {
+            margin-top: 0;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: var(--nb-gap-2);
+        }
+
+        .pagination a,
+        .pagination span {
+            min-height: 34px;
+            padding: 0.3rem 0.6rem;
+            border: var(--nb-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-sm);
+            background: var(--nb-paper);
+            box-shadow: var(--nb-shadow-lg);
+            color: var(--nb-ink);
+            font-family: var(--font-display);
+            font-size: 0.76rem;
+            font-weight: 700;
+            line-height: 1.05;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+        }
+
+        .pagination .newer {
+            justify-self: start;
+        }
+
+        .pagination .older {
+            justify-self: end;
+        }
+
+        .pagination a:hover {
+            transform: translate(1px, 1px);
+            box-shadow: 1px 1px 0 var(--nb-ink);
+            background: var(--nb-yellow);
+        }
+
+        .pagination span.page-info {
+            min-height: auto;
+            padding: 0;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+            justify-self: center;
+            color: rgba(18, 18, 18, 0.72);
+            font-size: 0.78rem;
+            line-height: 1.2;
+        }
+
+        .pagination span.disabled {
+            background: #d8d3ca;
+            color: rgba(18, 18, 18, 0.55);
+            border-color: rgba(18, 18, 18, 0.28);
+            box-shadow: none;
+        }
+
+        .lightbox-overlay {
+            position: fixed;
+            inset: 0;
+            background: var(--lightbox-bg);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            padding: 22px;
+        }
+
+        .lightbox-overlay.visible {
+            display: flex;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: min(92vw, 70rem);
+            max-height: 92vh;
+        }
+
+        .lightbox-content img {
+            display: block;
+            max-width: 100%;
+            max-height: 92vh;
+            width: auto;
+            height: auto;
+            border: var(--nb-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-md);
+            box-shadow: var(--nb-shadow-lg);
+            background: var(--nb-white);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -0.7rem;
+            right: -0.45rem;
+            width: 40px;
+            height: 40px;
+            border: var(--nb-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-sm);
+            background: var(--nb-white);
+            color: var(--nb-ink);
+            box-shadow: var(--nb-shadow-sm);
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 700;
+            line-height: 1;
+            cursor: pointer;
+        }
+
         .share-feedback {
             position: fixed;
-            bottom: 20px;
+            bottom: 16px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: var(--text-color);
-            color: var(--bg-color);
-            padding: 12px 20px;
-            border-radius: 6px;
-            font-size: 0.9em;
-            z-index: 1001;
-            animation: slideUp 0.3s ease-out;
-            max-width: 90%;
+            border: var(--nb-border) solid var(--nb-ink);
+            border-radius: var(--nb-radius-sm);
+            background: var(--nb-white);
+            color: var(--nb-ink);
+            box-shadow: var(--nb-shadow-lg);
+            padding: 0.6rem 0.9rem;
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            font-weight: 700;
+            line-height: 1.2;
             text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            max-width: min(92vw, 28rem);
+            z-index: 1001;
+            animation: slideUp 0.2s ease-out;
         }
 
         @keyframes slideUp {
             from {
                 opacity: 0;
-                transform: translateX(-50%) translateY(20px);
+                transform: translateX(-50%) translateY(12px);
             }
             to {
                 opacity: 1;
@@ -984,55 +1039,104 @@ a:visited {
             }
         }
 
-        /* Mobile optimizations for action bar */
+        @media (min-width: 48rem) {
+            .feed-rail {
+                max-width: 52rem;
+            }
+
+            .thought-box {
+                padding: 0.88rem;
+            }
+
+            .thought-header {
+                grid-template-columns: 36px minmax(0, 1fr);
+            }
+
+            .thought-user-img {
+                width: 36px;
+                height: 36px;
+            }
+
+            .thought-content p {
+                font-size: 1rem;
+            }
+        }
+
         @media (max-width: 600px) {
-            .action-row { gap: 4px; }
-            .thread-links { max-width: none; font-size: 0.9em; }
-            .share-button {
-                margin-right: 2pt;
-                padding: 0;
-                font-size: 1.3em;
+            .thought-header-main,
+            .quoted-thought-user-info {
+                grid-template-columns: 1fr;
             }
-            .action-separator {
-                margin-bottom: 2pt;
+
+            .thought-date-time,
+            .quoted-thought-date-time {
+                justify-self: start;
             }
-            .thought-actions {
-                padding-top: 8pt;
+
+            .action-row {
+                grid-template-columns: 1fr;
+            }
+
+            .action-buttons {
+                justify-content: flex-end;
+            }
+
+            .pagination {
+                grid-template-columns: 1fr;
+            }
+
+            .pagination a,
+            .pagination span {
+                width: 100%;
+            }
+
+            .pagination span.page-info {
+                order: -1;
+                width: auto;
+                justify-self: start;
+            }
+
+            .lightbox-overlay {
+                padding: 12px;
+            }
+
+            .lightbox-close {
+                top: 0.4rem;
+                right: 0.4rem;
+                width: 34px;
+                height: 34px;
             }
         }
 
-        .comment-button {
-            background: transparent;
-            border: none;
-            font-size: 1.2em;
-            cursor: pointer;
-            padding: 0;
-            border-radius: 4px;
-            color: var(--secondary-text-color);
-            transition: color 0.2s ease, transform 0.2s ease;
-            font-family: inherit;
-            outline: none;
-            margin-right: 6pt; /* Extra gap before share icon */
-            -webkit-tap-highlight-color: transparent;
-            text-decoration: none;
-            text-shadow: 0 0 0.5px rgba(0,0,0,0.5), 0 0 4px rgba(0,0,0,0.35);
+        @media (max-width: 23rem) {
+            .thought-content p {
+                font-size: 0.95rem;
+                line-height: 1.42;
+            }
+
+            .comment-button,
+            .share-button,
+            .pagination a,
+            .pagination span {
+                min-height: 34px;
+                font-size: 0.74rem;
+            }
         }
 
-        .comment-button:hover {
-            color: var(--text-color);
-            transform: scale(1.1);
+        @media (prefers-reduced-motion: reduce) {
+            .thought-box,
+            .quoted-thought-box,
+            .thread-chip,
+            .comment-button,
+            .share-button,
+            .pagination a,
+            .share-feedback {
+                transition: none !important;
+                animation: none !important;
+                transform: none !important;
+            }
         }
-
-        .comment-button:active {
-            transform: scale(0.95);
-            color: var(--text-color);
-        }
-
     </style>
-
-    <!-- Theme Feedback Element -->
-    <div id="theme-feedback" class="theme-feedback" aria-live="polite"></div>
-
 </head>
 <body>
     <div class="container">
@@ -1045,17 +1149,66 @@ a:visited {
         </div>
     </div>
     <div class="profile-links">
-        <a href="https://illya.sh/" target="_blank" title="About Illya Gerasymchuk (Homepage)" aria-label="About Illya Gerasymchuk (Homepage)">🏠 <span class="profile-home-link-text">About Illya</span></a><a href="https://illya.sh/threads/">🧵 Threads</a><a href="https://illya.sh/thoughts/topics/">📂 Topics</a><a href="mailto:hello@illya.sh" target="_blank">✉️ Email</a><a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a><a href="https://illya.sh/thoughts/feed.xml" target="_blank">📡 RSS</a>
+        <a href="https://illya.sh/" target="_blank" title="About Illya Gerasymchuk (Homepage)" aria-label="About Illya Gerasymchuk (Homepage)">🏠 <span class="profile-home-link-text">About Illya</span></a><a href="https://twitter.com/illyaGera" target="_blank">🐦 Twitter/X</a><a href="mailto:hello@illya.sh" target="_blank">✉️ Email</a><a href="https://illya.sh/threads/">🧵 Threads</a><a href="https://illya.sh/thoughts/topics/">📂 Topics</a><a href="https://illya.sh/thoughts/feed.xml" target="_blank">📡 RSS</a>
     </div>
 </div>
 
-        <h1 class="thoughts-header">⬇️ My Thoughts ⬇️</h1>
+        <main class="feed-rail">
+            <section class="section-intro section-intro--directory"><div class="section-intro__inner"><h1 class="section-intro__title">My Thoughts</h1><p class="section-intro__description">Short-form commentary on macro, market structure, commodities, Bitcoin, crypto markets, and AI.</p></div></section>
 
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="out-of-sample-permutation-feature-importance-for-random" class="thought-permalink">2026-02-20 15:08</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="as-a-result-of-the-first-step-in-optimizing-prioritizing-the" class="thought-permalink meta-pill">2026-02-20 15:26</a></p>
+        </div>
+    </div>
+    <div class="thought-content">
+        <p>As a result of the first step in optimizing/prioritizing the random forest’s features -- I&#x27;ve dropped about half of them 😁</p>
+        <div class="thought-image">
+            <a href="https://illya.sh/staticthoughts/data/images/as-a-result-of-the-first-step-in-optimizing-prioritizing-the.jpg" class="lightbox-trigger"><img loading="lazy" src="https://illya.sh/staticthoughts/data/images/as-a-result-of-the-first-step-in-optimizing-prioritizing-the.jpg" alt="As a result of the first step in optimizing/prioritizing the random forest’s features -- I&#x27;ve dropped about half of them 😁" class="thought-img"></a>
+        </div>
+        <div class="quoted-thought-container">
+    <div class="quoted-thought-box">
+        <div class="quoted-thought-header">
+            <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="quoted-thought-user-img">
+            <div class="quoted-thought-user-info">
+                <span class="quoted-user-name">Illya Gerasymchuk</span>
+                <span class="quoted-thought-date-time">
+                    <a href="out-of-sample-permutation-feature-importance-for-random" class="quoted-thought-permalink meta-pill">2026-02-20 15:08</a>
+                </span>
+            </div>
+        </div>
+        <div class="quoted-thought-content">
+            <p>Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization<br><br>After the first level of tuning of the random forest’s parameters, it came time to optimize the features on which the random forest gets trained on. I’ve already did a minor cleanup, but I didn’t yet test for the predictive importance of each feature in the random forest.<br><br>To optimize the random forest’s features, I’m using Out of Sample Permutation Feature Importance (OOS). The OOS approach consists in three core steps:<br><br>1️⃣ Train the random forest once on the training data<br>2️⃣ Take out-of-sample validation data (testing data), permute the values of a single feature/values within the same column and pass them to the model trained in step 1.<br>3️⃣ A feature is important for the model if the model’s predictive power reduces significantly when that feature’s values are randomly shuffled.<br><br>The “out of sample” part refers to the fact that the set of data used to train the model and evaluate it after permutations is distinct, thus reducing the contribution of noise to the evaluation metrics. By default, scikit-learn uses Gini Importance to rank features by their utility to the model. Gini is a bad metric for my data because of:<br><br>➖ High cardinality bias (it has an inherent bias towards continuous variables, and some of my features are discrete)<br>➖ Gini importance is computed on the training data<br>➖ In case of two correlated features, the random forest will randomly pick one at each split, but Gini will actually divide the importance between the two<br><br>Additionally, the out-of-sample Area Under the ROC Curve (AUC) of 0.7566 is unrealistically good for predicting 5-minute Bitcoin price moves. This value implies that if you pick a random 5-minute winning window and a 5-minute losing one, my model ranks the winner window ≈76% of the time. Either I found a model that beats virtually every financial institution in existence, or there is a lookahead bias and overfitting happening in the model. <br><br>Conclusion: my meta forest — the “seconds_to_settle” feature is basically carrying the entire model 😂 So in its current state, the random forest is training almost entirely on the time of day/time to expiration. The cleanup has started.</p>
+            <div class="quoted-thought-image"><a href="https://illya.sh/staticthoughts/data/images/out-of-sample-permutation-feature-importance-for-random.jpg" class="lightbox-trigger"><img loading="lazy" src="https://illya.sh/staticthoughts/data/images/out-of-sample-permutation-feature-importance-for-random.jpg" alt="Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization" class="quoted-thought-img"></a></div>
+        </div>
+    </div>
+</div> 
+
+    </div>
+    <!-- Action Bar -->
+    <div class="thought-actions">
+        <div class="action-separator"></div>
+        <div class="action-row">
+            <div class="thread-links" aria-label="Related threads"><a class="thread-chip primary" href="https://illya.sh/threads/out-of-sample-permutation-feature-importance-for-random" target="_blank" rel="noopener" aria-label="Open Illya's thread: Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization">🧵 Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization</a></div>
+            <div class="action-buttons">
+                <a href="comment.html?id=as-a-result-of-the-first-step-in-optimizing-prioritizing-the" class="comment-button" aria-label="Comment on this thought">💬</a>
+                <button class="share-button" data-share-url="https://illya.sh/thoughts/as-a-result-of-the-first-step-in-optimizing-prioritizing-the" data-share-title="" data-share-text="" aria-label="Share this thought">📤</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thought-box">
+    <div class="thought-header">
+        <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="out-of-sample-permutation-feature-importance-for-random" class="thought-permalink meta-pill">2026-02-20 15:08</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>Out of Sample Permutation Feature Importance For Random Forest’s Feature Optimization<br><br>After the first level of tuning of the random forest’s parameters, it came time to optimize the features on which the random forest gets trained on. I’ve already did a minor cleanup, but I didn’t yet test for the predictive importance of each feature in the random forest.<br><br>To optimize the random forest’s features, I’m using Out of Sample Permutation Feature Importance (OOS). The OOS approach consists in three core steps:<br><br>1️⃣ Train the random forest once on the training data<br>2️⃣ Take out-of-sample validation data (testing data), permute the values of a single feature/values within the same column and pass them to the model trained in step 1.<br>3️⃣ A feature is important for the model if the model’s predictive power reduces significantly when that feature’s values are randomly shuffled.<br><br>The “out of sample” part refers to the fact that the set of data used to train the model and evaluate it after permutations is distinct, thus reducing the contribution of noise to the evaluation metrics. By default, scikit-learn uses Gini Importance to rank features by their utility to the model. Gini is a bad metric for my data because of:<br><br>➖ High cardinality bias (it has an inherent bias towards continuous variables, and some of my features are discrete)<br>➖ Gini importance is computed on the training data<br>➖ In case of two correlated features, the random forest will randomly pick one at each split, but Gini will actually divide the importance between the two<br><br>Additionally, the out-of-sample Area Under the ROC Curve (AUC) of 0.7566 is unrealistically good for predicting 5-minute Bitcoin price moves. This value implies that if you pick a random 5-minute winning window and a 5-minute losing one, my model ranks the winner window ≈76% of the time. Either I found a model that beats virtually every financial institution in existence, or there is a lookahead bias and overfitting happening in the model. <br><br>Conclusion: my meta forest — the “seconds_to_settle” feature is basically carrying the entire model 😂 So in its current state, the random forest is training almost entirely on the time of day/time to expiration. The cleanup has started.</p>
@@ -1081,8 +1234,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="the-time-to-optimize-hyperparameters-of-the-random-forest" class="thought-permalink">2026-02-19 16:04</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="the-time-to-optimize-hyperparameters-of-the-random-forest" class="thought-permalink meta-pill">2026-02-19 16:04</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>The time to optimize hyperparameters of the random forest has come<br><br>Starting with a grid search approach</p>
@@ -1108,8 +1263,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="the-models-first-live-data-trade-was-a-successful-bitcoin" class="thought-permalink">2026-02-19 13:56</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="the-models-first-live-data-trade-was-a-successful-bitcoin" class="thought-permalink meta-pill">2026-02-19 13:56</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>The model&#x27;s first live data trade was a successful Bitcoin short! The position was open for 4 minutes, for a 0.11% return</p>
@@ -1135,8 +1292,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="added-a-connection-to-binances-futures-api-and-now-i-have" class="thought-permalink">2026-02-19 13:52</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="added-a-connection-to-binances-futures-api-and-now-i-have" class="thought-permalink meta-pill">2026-02-19 13:52</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>Added a connection to Binance&#x27;s futures API and now I have the base learners and the random forest looking for profitable 5-minute Bitcoin trades in real time<br><br>Let&#x27;s see how it goes, the model already entered its first trade. Let&#x27;s see how it goes 😄</p>
@@ -1162,8 +1321,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="this-a-gross-oversimplification-of-what-it-takes-to" class="thought-permalink">2026-02-19 12:31</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="this-a-gross-oversimplification-of-what-it-takes-to" class="thought-permalink meta-pill">2026-02-19 12:31</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>This a gross oversimplification of what it takes to replicate the human brain with AI<br><br>The post is assuming we have a model that can accurately replicate the human brain, which we don&#x27;t.<br><br>200T parameter models won&#x27;t solve that -- you&#x27;ll still have a high model bias.</p>
@@ -1189,8 +1350,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="vibe-coding-vulnerabilities-with-claude-code" class="thought-permalink">2026-02-18 16:19</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="vibe-coding-vulnerabilities-with-claude-code" class="thought-permalink meta-pill">2026-02-18 16:19</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>Vibe-Coding Vulnerabilities With Claude Code<br><br>A decade ago there was a joke that IoT stands for &quot;Internet of Vulnerabilities&quot;, given how vulnerable many Internet of Things devices were and how easy it was to exploit them.<br><br>I think we will enter an even bigger era of vulnerabilities with vibe-coded systems, especially with agents handling everything from feature development to deployment. You are outsourcing the security of your product/application to a probabilistic mathematical model, which hallucinates by design.<br><br>For a sufficiently complex system, it&#x27;s not a question of IF but of WHEN the LLM will make a security-compromising mistake. Unfortunately, large customer data leaks may become the norm.<br><br>If you care about the secrecy of your data, I would advise you be very wary of products developed in such manner. Of course, for many use cases you may also not care about this, and prioritize lower cost or specific features. But you must be aware of the risks.<br><br>You are essentially one prompt away from compromising your system and its data. We will probably even have new laws/regulations coming out to address this.</p>
@@ -1216,8 +1379,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="proxy-model-from-polymarkets-15-minute-bitcoin-price" class="thought-permalink">2026-02-18 16:06</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="proxy-model-from-polymarkets-15-minute-bitcoin-price" class="thought-permalink meta-pill">2026-02-18 16:06</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>Proxy Model From Polymarket&#x27;s 15 Minute Bitcoin Price<br><br>I found historical datasets for Polymarket&#x27;s 15 minute up or down Bitcoin price and I think I can use this data to obtain useful signals via a proxy model. I&#x27;ll start with linear regression to build a prediction model, to see if this transfer learning approach works here.<br><br>Yes, it will be overfitting, but for this signal generator it would be by design. The end goal is to find features that improve the random forest&#x27;s split rules, thus further improving the win rate.</p>
@@ -1243,8 +1408,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="primary-dealers-failures-to-settle-implications-for-risk" class="thought-permalink">2026-02-18 14:40</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="primary-dealers-failures-to-settle-implications-for-risk" class="thought-permalink meta-pill">2026-02-18 14:40</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>Primary Dealers Failures To Settle Implications For Risk Assets<br><br>Security settlement failures on the dealer side are a signal of liquidity stress. In short, it signals that either collateral (securities) or USD liquidity are short. Generally, this is bearish for risk assets.<br><br>Dealers exercise a key liquidity role in the financial markets microstructure, so a significant stress on their operations will propagate throughout the market.<br><br>You can anecdotally visualize this correlation in Bitcoin by noticing that the peaks of failures to receive/deliver by dealers coincide with at least short-term tops for Bitcoin prices.<br><br>This weekly set of data is made freely available by Office of Financial Research (OFR), and you can download it CSV or JSON formats. If you are incorporating this data into your machine-learning trading models, beware of the look-ahead bias, as this OFR data is released with about a week of delay.</p>
@@ -1270,8 +1437,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="after-tweaking-the-existing-set-of-base-learner-models-the" class="thought-permalink">2026-02-18 14:30</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="after-tweaking-the-existing-set-of-base-learner-models-the" class="thought-permalink meta-pill">2026-02-18 14:30</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>After tweaking the existing set of base learner models, the random-forest driven trading model factory continues to improve<br><br>The win rate for predicting Bitcoin&#x27;s 5-minute price moves (binary) is now approaching 54%. A win rate of ≈56% should suffice to accommodate for transaction costs. Win rates over 60% is where it starts to get interesting.</p>
@@ -1297,8 +1466,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="if-you-invested-just-100-in-gold-in-4000-bce-today-it-would" class="thought-permalink">2026-02-18 01:40</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="if-you-invested-just-100-in-gold-in-4000-bce-today-it-would" class="thought-permalink meta-pill">2026-02-18 01:40</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>If you invested just $100 in Gold in 4000 BCE, today it would be worth $100<br><br>This is because USD didn&#x27;t exist 6000 years ago, so it wouldn&#x27;t be accepted as means of settlement in Ancient Egypt, thus you wouldn&#x27;t find a counterparty willing to sell you gold in exchange for US currency.<br><br>6000 years is also for how long gold has been used as money. Yet, some still believe that Bitcoin is the new gold and that it will replace gold as money 😄</p>
@@ -1324,8 +1495,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="expert-optimization-is-going-well-and-im-starting-to-move" class="thought-permalink">2026-02-17 17:12</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="expert-optimization-is-going-well-and-im-starting-to-move" class="thought-permalink meta-pill">2026-02-17 17:12</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>Expert optimization is going well, and I&#x27;m starting to move towards the alpha in 5-minute Bitcoin price markets<br><br>I&#x27;m not claiming that the model that I currently have is meaningful (it&#x27;s NOT!), but it&#x27;s getting closer to interesting win rate ratios (&gt;55%)</p>
@@ -1351,8 +1524,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="currently-this-is-the-most-valued-expert-in-my-model-factory" class="thought-permalink">2026-02-17 16:33</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="currently-this-is-the-most-valued-expert-in-my-model-factory" class="thought-permalink meta-pill">2026-02-17 16:33</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>Currently, this is the most valued expert in my model factory pipeline<br><br>Not because it does anything useful, but precisely because it does not<br><br>The expert randomly emits positive(buy) or negative(sell) signals. This is a rough baseline for random behaviour. Very useful for the integration testing of the pipeline and identifying noise</p>
@@ -1378,8 +1553,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="my-random-forest-looks-much-better-after-the-clean-up" class="thought-permalink">2026-02-17 15:01</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="my-random-forest-looks-much-better-after-the-clean-up" class="thought-permalink meta-pill">2026-02-17 15:01</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>My random forest looks much better after the clean-up<br><br>The feature matrix has been refactored to only include features from which the random forest will be able to learn more effectively. This should greatly reduce the noise<br><br>Now, it&#x27;s time to optimize signals 😄</p>
@@ -1405,8 +1582,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="my-ml-model-factory-produced-this-amazing-model-that-trades" class="thought-permalink">2026-02-17 14:57</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="my-ml-model-factory-produced-this-amazing-model-that-trades" class="thought-permalink meta-pill">2026-02-17 14:57</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>My ML model factory produced this amazing model that trades Bitcoin on 5-minute intervals, cut off at each 5th minute (very similar to Polymarket&#x27;s 5 minute BTC markets) and it made over 200K trades in ≈7 months<br><br>Stats:<br>- 200K trades<br>- 6.69% profit<br>- 49% win rate<br><br>So I&#x27;ve pretty much discovered a coin flip 🤣</p>
@@ -1432,8 +1611,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="they-say-that-ai-agents-will-replace-all-white-collar-jobs" class="thought-permalink">2026-02-17 13:35</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="they-say-that-ai-agents-will-replace-all-white-collar-jobs" class="thought-permalink meta-pill">2026-02-17 13:35</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>They say that AI agents will replace all white collar-jobs in the next 6-12 months 😄<br><br>So LLMs only have 5-11 months to learn about car washing.<br><br>This simple prompt breaks ChatGPT, DeepSeek, Qwen and Kimi. Works on Gemini though.</p>
@@ -1459,8 +1640,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="the-random-forest-that-guides-my-model-factory-needs" class="thought-permalink">2026-02-16 15:03</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="the-random-forest-that-guides-my-model-factory-needs" class="thought-permalink meta-pill">2026-02-16 15:03</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>The random forest that guides my model factory needs refactoring<br><br>While the current architecture shows good prospects for generating profitable trading models, the random forest is currently a bit of a mess 😅 If you look at the image attached to the post, you can see why.<br> <br>Since the random forest can’t extrapolate, features like the date and source segment will just make the forest learn on noise (it will train on association between those features, e.g. it’s not very useful to learn that volume in 2025 was higher than in 2024). But this was expected. The goal was to validate an architectural approach that could work. Now it’s time for optimizations and changes. Actually, changes before optimizations.<br><br>Another thing that I’ll get rid of is the hybrid spine for supporting data from multiple timeframes, as the model didn’t extract any meaningful alpha — and some of it has even confused the random forest. I’m sure there is way to make even with limited data, but I’ll be moving to testing it on dataset for which I have access to highly granular data (hello, Bitcoin!). So the logic of the data loader in the pipeline will be greatly simplified.<br><br>I’ll also make the labeler configurable, so that you can use the same set of features for different types of predictions. For example, you could have the “unconstrained” standard deviation labelling in the sense hat you can enter and exit the position at any time, to constrained logic scenarios such as the ones of Polymarket’s 5-minute price predictions on Bitcoin, where you can only enter a position at specific times, and the resolution happens at specific times (e.g. at the end of every 5th minute of the day, starting from 0).<br><br>The core logic of the ML pipeline remans the same.</p>
@@ -1486,8 +1669,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="china-banned-gold-silver-as-money-in-1983" class="thought-permalink">2026-02-16 11:25</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="china-banned-gold-silver-as-money-in-1983" class="thought-permalink meta-pill">2026-02-16 11:25</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>China Banned Gold &amp; Silver As Money In 1983<br><br>While it remained legal to hold gold as an individual in PRC, you couldn&#x27;t:<br>- Use gold/silver as money (unit of account/pricing)<br>- Trade gold/silver privately (you could only sell it to PBoC)<br>- Lend or pledge (use as collateral) gold/silver<br>- Act as a dealer of gold, unless authorized by PBoC<br><br>So effectively, as an individual in PRC, you could only sell your gold &amp; silver through the PBoC system, but it was fully lawful to own those metals. Only if you violated the rules above, authorities could force you to liquidate your gold to PBoC at a discount over the spot price.<br><br>This is a big contrast with the gold ban in the United States via Executive Order 6102 in 1933, which required all persons to surrender/liquidate their gold coins, bullion and certificates to the state. Moreover, in 1933 the U.S. government credited you $20.67 per oz gold that you surrender. About a year later, the same government that forced people to liquidate their gold at $20.67, proceeded to raise the price of gold to $35 per oz (at that time the price of the gold was fixed by the government, not determined by market price action like today). So the U.S. government made an instant ≈70% profit on the public&#x27;s gold.</p>
@@ -1513,8 +1698,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="gold-outperformed-bitcoin-in-the-last-8-years" class="thought-permalink">2026-02-15 17:03</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="gold-outperformed-bitcoin-in-the-last-8-years" class="thought-permalink meta-pill">2026-02-15 17:03</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>Gold Outperformed Bitcoin In The Last 8 Years<br><br>Let&#x27;s go back in time. It&#x27;s December 2017. You have $1000 to invest, and you have 2 options: gold or Bitcoin. Which one would you choose?<br><br>If you bought $1000 worth of BTC at ≈$20K/BTC in December 2017, you&#x27;d now have ≈$3500, or roughly a $2500 net profit.<br><br>If you instead bought $1000 worth of gold at ≈$1260/oz, you&#x27;d now have ≈$4000, or roughly $3000 net profit.<br><br>And throughout those 8 years of holding, gold&#x27;s price never crashed by ≈50%, like it&#x27;s more or less the norm with Bitcoin &amp; rest of the crypto.<br><br>Bitcoin can be a great idea for your portfolio, but if you&#x27;re so determined to HODL long-term, you may be much better off with gold.</p>
@@ -1540,8 +1727,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="my-wife-and-i-met-the-charging-bull-himself" class="thought-permalink">2026-02-15 15:03</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="my-wife-and-i-met-the-charging-bull-himself" class="thought-permalink meta-pill">2026-02-15 15:03</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>My wife and I met the charging bull himself<br><br>He confirmed that he&#x27;s heading towards commodities</p>
@@ -1567,8 +1756,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="china-also-banned-gold-silver-in-1983" class="thought-permalink">2026-02-14 17:29</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="china-also-banned-gold-silver-in-1983" class="thought-permalink meta-pill">2026-02-14 17:29</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>China Also Banned Gold &amp; Silver In 1983<br><br>But unlike in 1933 in the U.S., there was no global ban on the public owning gold &amp; silver. The public was however not allowed to use it as money, collateral, lend it or trade it. Everything gold/silver related had to go through PBoC.<br><br>I&#x27;ll cover this in more detail in a future post.</p>
@@ -1594,8 +1785,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="in-1934-the-u-s-government-had-to-legally-raise-the-price-of" class="thought-permalink">2026-02-14 17:17</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="in-1934-the-u-s-government-had-to-legally-raise-the-price-of" class="thought-permalink meta-pill">2026-02-14 17:17</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>In 1934, the U.S. government had to legally raise the price of gold to make a ≈70% profit on it in ≈1 year<br><br>Today, gold goes up by more than 70%/year just by market forces 😄<br><br>I&#x27;ve been spamming you to buy gold since it was ≈$1800/oz</p>
@@ -1621,8 +1814,10 @@ a:visited {
 <div class="thought-box">
     <div class="thought-header">
         <img src="https://illya.sh/staticthoughts/data/profile.png" alt="User" class="thought-user-img">
-        <span class="user-name">Illya Gerasymchuk</span> -
-        <p class="thought-date-time"><a href="how-usa-profited-70-on-gold-in-1-year" class="thought-permalink">2026-02-14 16:49</a></p>
+        <div class="thought-header-main">
+            <span class="user-name">Illya Gerasymchuk</span>
+            <p class="thought-date-time"><a href="how-usa-profited-70-on-gold-in-1-year" class="thought-permalink meta-pill">2026-02-14 16:49</a></p>
+        </div>
     </div>
     <div class="thought-content">
         <p>How USA Profited 70% On Gold In 1 Year<br><br>In 1933, the U.S. government purchased gold at $20.67/oz. In 1934, gold was valued at $35/oz, or ≈70% higher!<br><br>How did they do it? Easy:<br><br>1️⃣ Force public to liquidate gold at $20.67/oz<br>2️⃣ Raise the official gold price to $35/oz<br>3️⃣ Instant 70% profit 😄<br><br>Had the United States citizens not surrendered their gold in 1933 (which would be illegal to do!), they would be 70% richer just a year later. Instead, that wealth was forcefully transferred to the government, and the people who surrendered their gold became 40% poorer just a year later.</p>
@@ -1644,11 +1839,10 @@ a:visited {
     </div>
 </div>
 
-        
-        <nav class="pagination"><a href="index.html" class="newer">← Newer</a><span class="page-info">Page 2 of 47</span><a href="45.html" class="older">Older →</a></nav>
+            <nav class="pagination"><a href="index.html" class="newer">← Newer</a><span class="page-info">Page 2 of 47</span><a href="45.html" class="older">Older →</a></nav>
+        </main>
     </div>
 
-    <!-- Lightbox Structure (Initially Hidden) -->
     <div id="lightbox" class="lightbox-overlay">
         <div class="lightbox-content">
             <button class="lightbox-close" aria-label="Close">&times;</button>
@@ -1665,71 +1859,62 @@ a:visited {
 
             triggers.forEach(trigger => {
                 trigger.addEventListener('click', (e) => {
-                    e.preventDefault(); // Prevent default link behavior
+                    e.preventDefault();
                     const imgSrc = trigger.getAttribute('href');
                     lightboxImg.setAttribute('src', imgSrc);
                     lightbox.classList.add('visible');
-                    document.body.style.overflow = 'hidden'; // Prevent scrolling background
+                    document.body.style.overflow = 'hidden';
                 });
             });
 
-            // Check if we're on an individual thought page (robust across URL modes)
             const isIndividualThoughtPage = !!document.querySelector('.individual-thought-navigation');
-            
-            // Handle quoted thought box clicks for navigation (always clickable)
+
             const quotedThoughts = document.querySelectorAll('.quoted-thought-box');
             quotedThoughts.forEach(quotedBox => {
                 quotedBox.addEventListener('click', (e) => {
-                    // Don't navigate if clicking on an image or link within the quoted thought
                     if (e.target.tagName === 'IMG' || e.target.tagName === 'A') {
                         return;
                     }
                     e.preventDefault();
-                    // Find the permalink within this quoted thought
                     const permalink = quotedBox.querySelector('.quoted-thought-permalink');
                     if (permalink) {
                         window.location.href = permalink.getAttribute('href');
                     }
                 });
-                
-                // Add cursor pointer to indicate clickability
+
                 quotedBox.style.cursor = 'pointer';
             });
 
-            // Handle main thought box clicks (only in timeline/list views, not on individual pages)
             if (!isIndividualThoughtPage) {
                 const mainThoughts = document.querySelectorAll('.thought-box');
                 mainThoughts.forEach(thoughtBox => {
-                    // Skip if this is a quoted thought box (already handled above)
                     if (thoughtBox.closest('.quoted-thought-container')) {
                         return;
                     }
-                    
+
                     thoughtBox.addEventListener('click', (e) => {
-                        // Don't navigate if clicking on an image, link, quoted thought, or action buttons within the main thought
-                        if (e.target.tagName === 'IMG' || 
-                            e.target.tagName === 'A' || 
+                        if (
+                            e.target.tagName === 'IMG' ||
+                            e.target.tagName === 'A' ||
                             e.target.closest('.quoted-thought-container') ||
-                            e.target.closest('.thought-actions')) {
+                            e.target.closest('.thought-actions')
+                        ) {
                             return;
                         }
                         e.preventDefault();
-                        // Find the permalink within this main thought
                         const permalink = thoughtBox.querySelector('.thought-permalink');
                         if (permalink) {
                             window.location.href = permalink.getAttribute('href');
                         }
                     });
-                    
-                    // Add cursor pointer and clickable class to indicate clickability
+
                     thoughtBox.style.cursor = 'pointer';
                     thoughtBox.classList.add('clickable');
                 });
             }
 
-            // --- Share button logic with single vs double-click ---
             const shareButtons = document.querySelectorAll('.share-button');
-            const DOUBLE_THRESHOLD = 500; // ms
+            const DOUBLE_THRESHOLD = 500;
 
             shareButtons.forEach(btn => {
                 let clickTimer = null;
@@ -1743,15 +1928,13 @@ a:visited {
                         url: btn.dataset.shareUrl
                     };
 
-                    // If this is the second click within threshold → double-click
                     if (clickTimer) {
                         clearTimeout(clickTimer);
                         clickTimer = null;
-                        performCopy(shareData.url); // Double-click action
+                        performCopy(shareData.url);
                         return;
                     }
 
-                    // First click – set up timer for single-click action
                     clickTimer = setTimeout(() => {
                         clickTimer = null;
                         showNativeShare(shareData);
@@ -1765,14 +1948,13 @@ a:visited {
                         await navigator.share(shareData);
                         return;
                     } catch (err) {
-                        // Ignore user cancellation; fallback otherwise
                         if (!err || (err.name !== 'AbortError' && err.name !== 'NotAllowedError')) {
                             performCopy(shareData.url);
                         }
                         return;
                     }
                 }
-                performCopy(shareData.url); // Fallback when Web Share not available
+                performCopy(shareData.url);
             }
 
             function performCopy(url) {
@@ -1787,7 +1969,6 @@ a:visited {
                 }
             }
 
-            // Simple toast helper
             function toast(msg) {
                 const old = document.querySelector('.share-feedback');
                 if (old) old.remove();
@@ -1800,21 +1981,18 @@ a:visited {
 
             function closeLightbox() {
                 lightbox.classList.remove('visible');
-                lightboxImg.setAttribute('src', ''); // Clear image src
-                document.body.style.overflow = ''; // Restore scrolling
+                lightboxImg.setAttribute('src', '');
+                document.body.style.overflow = '';
             }
 
-            // Close on button click
             lightboxClose.addEventListener('click', closeLightbox);
 
-            // Close on clicking overlay background
             lightbox.addEventListener('click', (e) => {
-                if (e.target === lightbox) { // Only close if overlay itself is clicked
+                if (e.target === lightbox) {
                     closeLightbox();
                 }
             });
 
-            // Close on Escape key press
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape' && lightbox.classList.contains('visible')) {
                     closeLightbox();
@@ -1822,99 +2000,5 @@ a:visited {
             });
         });
     </script>
-
-    <script>
-        // Dark Mode Toggle Logic
-        document.addEventListener('DOMContentLoaded', () => {
-            const body = document.body;
-            const profileImg = document.querySelector('.profile-img');
-            const feedbackElement = document.getElementById('theme-feedback');
-            const themeLocalStorageKey = 'themePreference'; // Stores 'auto', 'light', or 'dark'
-            let feedbackTimeout;
-
-            function applyTheme(theme) {
-                // Remove specific mode classes first
-                body.classList.remove('light-mode', 'dark-mode');
-                let actualTheme = theme;
-
-                if (theme === 'auto') {
-                    // Check system preference if auto
-                    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                    actualTheme = prefersDark ? 'dark' : 'light';
-                } 
-
-                // Apply the determined theme class
-                if (actualTheme === 'dark') {
-                    body.classList.add('dark-mode');
-                } else {
-                    body.classList.add('light-mode'); 
-                }
-            }
-
-            function showFeedback(message) {
-                if (!feedbackElement) return;
-                
-                // Clear any existing timeout to prevent overlap
-                if (feedbackTimeout) {
-                    clearTimeout(feedbackTimeout);
-                }
-
-                feedbackElement.innerHTML = message;
-                feedbackElement.classList.add('visible');
-
-                // Hide feedback after a delay
-                feedbackTimeout = setTimeout(() => {
-                    feedbackElement.classList.remove('visible');
-                }, 1700); // 1.7 seconds
-            }
-
-            function setThemePreference(theme) {
-                localStorage.setItem(themeLocalStorageKey, theme);
-                applyTheme(theme);
-                // Show feedback based on the *newly set* preference
-                let feedbackMessage = '';
-                if (theme === 'light') {
-                    feedbackMessage = '💡 Light Mode Activated';
-                } else if (theme === 'dark') {
-                    feedbackMessage = '🌙 Dark Mode Activated';
-                } else {
-                    feedbackMessage = '⚙️ Auto Mode Activated';
-                }
-                 showFeedback(feedbackMessage);
-            }
-
-            function cycleTheme() {
-                const currentPreference = localStorage.getItem(themeLocalStorageKey) || 'auto'; // Default to auto
-                let nextPreference;
-
-                if (currentPreference === 'auto') {
-                    nextPreference = 'light';
-                } else if (currentPreference === 'light') {
-                    nextPreference = 'dark';
-                } else { // currentPreference === 'dark'
-                    nextPreference = 'auto';
-                }
-                setThemePreference(nextPreference);
-            }
-
-            // Set initial theme
-            const savedTheme = localStorage.getItem(themeLocalStorageKey) || 'auto'; // Default to auto
-            applyTheme(savedTheme);
-
-            // Add click listener to profile image
-            if (profileImg) {
-                profileImg.addEventListener('click', cycleTheme);
-            }
-
-             // Listen for system theme changes
-             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-                 // Only apply change if the current preference is 'auto'
-                 if (localStorage.getItem(themeLocalStorageKey) === 'auto' || !localStorage.getItem(themeLocalStorageKey)) {
-                     applyTheme('auto'); // Re-apply auto theme to respect the change
-                 }
-             });
-        });
-    </script>
-
 </body>
 </html>
