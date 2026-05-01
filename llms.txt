@@ -18,6 +18,26 @@ Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financ
 - Threads RSS: https://illya.sh/threads/feed.xml
 
 ## Latest Thoughts (30)
+- https://illya.sh/thoughts/portugal-real-estate-credit-not-immigration-drives-the
+- https://illya.sh/thoughts/if-you-like-seatbelts-youll-like-addw
+- https://illya.sh/thoughts/iran-to-require-rial-for-hormuz-toll-payments
+- https://illya.sh/thoughts/are-us-financial-policies-mirroring-the-1720-mississippi
+- https://illya.sh/thoughts/physical-spot-dated-brent-indeed-surpassed-100-per-barrel
+- https://illya.sh/thoughts/iran-war-escalates-once-again-and-the-market-moves
+- https://illya.sh/thoughts/although-s-p-500-is-unlikely-to-open-green-today-due-to
+- https://illya.sh/thoughts/so-i-guess-brent-will-go-above-100-barrel-once-again-over
+- https://illya.sh/thoughts/iran-is-the-legal-owner-of-frozen-assets
+- https://illya.sh/thoughts/straight-of-hormuz-reopens-partially-and-markets-signal-de
+- https://illya.sh/thoughts/bond-markets-signal-an-escalation-in-iran-war
+- https://illya.sh/thoughts/bitcoin-cant-become-a-reserve-asset-without-protocol-changes
+- https://illya.sh/thoughts/why-physical-oil-trades-above-paper-oil
+- https://illya.sh/thoughts/iran-ceasefire-has-already-been-broken
+- https://illya.sh/thoughts/iran-wont-accept-bitcoin-for-hormuz-tolls
+- https://illya.sh/thoughts/as-i-correctly-explained-there-would-be-no-attacks-on-iran
+- https://illya.sh/thoughts/unsurprisingly-the-deadline-for-iran-attack-had-been
+- https://illya.sh/thoughts/the-iran-attack-deadline-will-be-extended
+- https://illya.sh/thoughts/no-gold-is-not-in-a-bear-market
+- https://illya.sh/thoughts/the-best-part-about-carefully-instructing-an-agent-to
 - https://illya.sh/thoughts/dont-expect-60-oil-in-2026
 - https://illya.sh/thoughts/and-just-like-that-highest-oil-prices-since-2022-just-a-few
 - https://illya.sh/thoughts/going-long-on-bitcoin-now-at-68k-is-very-risky-and-maybe
@@ -28,28 +48,19 @@ Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financ
 - https://illya.sh/thoughts/who-wouldve-thought-that-reordering-5-billion-rows-in-a
 - https://illya.sh/thoughts/2-billion-rows-and-counting-added-to-the-duckdb-table
 - https://illya.sh/thoughts/using-duckdb-to-train-a-neural-network-on-500gb-of-price
-- https://illya.sh/thoughts/fingerprinting-and-loading-500gb-of-bitcoin-l1-lob
-- https://illya.sh/thoughts/the-problem-with-granular-historical-limit-order-book-lob
-- https://illya.sh/thoughts/random-forest-cat-an-ml-trading-factory
-- https://illya.sh/thoughts/very-excited-for-the-upcoming-price-rebound-in-commodity
-- https://illya.sh/thoughts/cusum-filter-visualized
-- https://illya.sh/thoughts/ive-been-calling-for-new-local-heights-for-oil-prices-for
-- https://illya.sh/thoughts/why-high-oil-prices-are-bad-for-usd-hint-china-credit
-- https://illya.sh/thoughts/crude-oil-prices-continue-to-increase
-- https://illya.sh/thoughts/so-i-extended-my-mcp-server-with-a-tool-to-execute-arbitrary
-- https://illya.sh/thoughts/using-neural-networks-to-find-imbalances-in-limit-order
-- https://illya.sh/thoughts/ive-been-running-live-a-tuned-model-designed-to-predict
-- https://illya.sh/thoughts/the-model-factory-has-been-refactored-to-use-a-dsl-for
-- https://illya.sh/thoughts/crypto-is-not-cryptocurrency
-- https://illya.sh/thoughts/ill-be-using-paxg-prices-as-a-proxy-for-gold-prices-the
-- https://illya.sh/thoughts/the-random-forests-features-have-been-heavily-refactored-i
-- https://illya.sh/thoughts/as-a-result-of-the-first-step-in-optimizing-prioritizing-the
-- https://illya.sh/thoughts/out-of-sample-permutation-feature-importance-for-random
-- https://illya.sh/thoughts/the-time-to-optimize-hyperparameters-of-the-random-forest
-- https://illya.sh/thoughts/the-models-first-live-data-trade-was-a-successful-bitcoin
-- https://illya.sh/thoughts/added-a-connection-to-binances-futures-api-and-now-i-have
 
 ## Latest Threads (30)
+- https://illya.sh/threads/portugal-real-estate-credit-not-immigration-drives-the
+- https://illya.sh/threads/if-you-like-seatbelts-youll-like-addw
+- https://illya.sh/threads/iran-wont-accept-bitcoin-for-hormuz-tolls
+- https://illya.sh/threads/are-us-financial-policies-mirroring-the-1720-mississippi
+- https://illya.sh/threads/so-i-guess-brent-will-go-above-100-barrel-once-again-over
+- https://illya.sh/threads/bond-markets-signal-an-escalation-in-iran-war
+- https://illya.sh/threads/iran-is-the-legal-owner-of-frozen-assets
+- https://illya.sh/threads/bitcoin-cant-become-a-reserve-asset-without-protocol-changes
+- https://illya.sh/threads/iran-ceasefire-has-already-been-broken
+- https://illya.sh/threads/as-i-correctly-explained-there-would-be-no-attacks-on-iran
+- https://illya.sh/threads/the-iran-attack-deadline-will-be-extended
 - https://illya.sh/threads/dont-expect-60-oil-in-2026
 - https://illya.sh/threads/crude-oil-prices-continue-to-increase
 - https://illya.sh/threads/crue-oil-united-states-acts-russia-benefits-once-again
@@ -69,14 +80,3 @@ Articles by Illya Gerasymchuk on finance, central banks, liquidity flows, financ
 - https://illya.sh/threads/overfitting-in-machine-learning-models-visualized
 - https://illya.sh/threads/fact-check-russia-moving-back-to-usd
 - https://illya.sh/threads/my-trading-ml-factory-yielded-22-return-on-gold-on-a-daily
-- https://illya.sh/threads/scarcity-doesnt-make-bitcoin-better-than-gold
-- https://illya.sh/threads/dont-be-fooled-by-backtest-performance
-- https://illya.sh/threads/no-agi-with-llms-in-their-current-form
-- https://illya.sh/threads/ai-will-follow-a-much-more-logarithmic-growth-than-the-hype
-- https://illya.sh/threads/metropolitan-capital-bank-trust-is-the-first-us-bank-to-fail
-- https://illya.sh/threads/palladium-is-a-great-investment-in-2026
-- https://illya.sh/threads/copper-extends-its-gains-to-9-on-the-day-and-its
-- https://illya.sh/threads/todays-commodity-miners-sell-off-is-a-buying-opportunity
-- https://illya.sh/threads/natural-gas-prices-are-very-volatile
-- https://illya.sh/threads/silver-miners-are-up-12-since-my-recommendation-from-4-days
-- https://illya.sh/threads/dont-overthink-commodity-miners-investments
